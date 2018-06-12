@@ -1,0 +1,181 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("C_CTYPE_H" variable (:constant-flag t) nil [983 992])
+            ("stdbool.h" include (:system-flag t) nil [994 1014])
+            ("C_CTYPE_INLINE" variable (:constant-flag t) nil [1152 1166])
+            ("c_toupper" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [9291 9297]))                  )
+                (reparse-symbol extern-c-contents) [9276 9403])
+            ("c_tolower" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [9147 9153]))                  )
+                (reparse-symbol extern-c-contents) [9132 9259])
+            ("c_isxdigit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8985 8991]))                  )
+                (reparse-symbol extern-c-contents) [8968 9115])
+            ("c_isupper" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8844 8850]))                  )
+                (reparse-symbol extern-c-contents) [8828 8951])
+            ("c_isspace" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8655 8661]))                  )
+                (reparse-symbol extern-c-contents) [8639 8811])
+            ("c_ispunct" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8515 8521]))                  )
+                (reparse-symbol extern-c-contents) [8499 8622])
+            ("c_isprint" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8301 8307]))                  )
+                (reparse-symbol extern-c-contents) [8285 8482])
+            ("c_islower" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [8161 8167]))                  )
+                (reparse-symbol extern-c-contents) [8145 8268])
+            ("c_isgraph" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7961 7967]))                  )
+                (reparse-symbol extern-c-contents) [7945 8128])
+            ("c_isdigit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7821 7827]))                  )
+                (reparse-symbol extern-c-contents) [7805 7928])
+            ("c_iscntrl" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7681 7687]))                  )
+                (reparse-symbol extern-c-contents) [7665 7788])
+            ("c_isblank" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7606 7612]))                  )
+                (reparse-symbol extern-c-contents) [7590 7648])
+            ("c_isascii" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7372 7378]))                  )
+                (reparse-symbol extern-c-contents) [7356 7573])
+            ("c_isalpha" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [7122 7128]))                  )
+                (reparse-symbol extern-c-contents) [7106 7249])
+            ("c_isalnum" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [6942 6948]))                  )
+                (reparse-symbol extern-c-contents) [6926 7089])
+            ("_C_CTYPE_UPPER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6277 6291])
+            ("_C_CTYPE_PUNCT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5888 5902])
+            ("_C_CTYPE_LOWER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5844 5858])
+            ("_C_CTYPE_DIGIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5687 5701])
+            ("_C_CTYPE_A_THRU_F" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5582 5599])
+            ("_C_CTYPE_LOWER_N" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5110 5126])
+            ("_C_CTYPE_LOWER_A_THRU_F_N" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4968 4993])
+            ("_C_CTYPE_OTHER_CNTRL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4471 4491])
+            ("_C_CTYPE_CNTRL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3686 3700]))          
+      :file "c-ctype.h"
+      :pointmax 9480
+      :fsize 9479
+      :lastmodtime '(23150 33450 0 0)
+      :unmatched-syntax '((symbol 9434 . 9455) (symbol "_GL_INLINE" 9261 . 9275) (symbol "_GL_INLINE" 9117 . 9131) (symbol "_GL_INLINE" 8953 . 8967) (symbol "_GL_INLINE" 8813 . 8827) (symbol "_GL_INLINE" 8624 . 8638) (symbol "_GL_INLINE" 8484 . 8498) (symbol "_GL_INLINE" 8270 . 8284) (symbol "_GL_INLINE" 8130 . 8144) (symbol "_GL_INLINE" 7930 . 7944) (symbol "_GL_INLINE" 7790 . 7804) (symbol "_GL_INLINE" 7650 . 7664) (symbol "_GL_INLINE" 7575 . 7589) (symbol "_GL_INLINE" 7341 . 7355) (symbol "_GL_INLINE" 7091 . 7105) (symbol "_GL_INLINE" 6911 . 6925) (symbol 1096 . 1119) (string 1056 . 1088) (symbol 1050 . 1055) (punctuation 1049 . 1050))
+      :lexical-table 
+        '(("_C_CTYPE_LOWER_N" (spp-arg-list ("N") 5126 . 5129) . 
+              ((symbol "_C_CTYPE_LOWER_A_THRU_F_N" 5135 . 5160) (semantic-list "(N)" 5160 . 5163) (punctuation ":" 5163 . 5164) (CASE "case" 5170 . 5174) (string "'g'" 5175 . 5178) (punctuation "+" 5179 . 5180) (semantic-list "(N)" 5181 . 5184) (punctuation ":" 5184 . 5185) (CASE "case" 5186 . 5190) (string "'h'" 5191 . 5194) (punctuation "+" 5195 . 5196) (semantic-list "(N)" 5197 . 5200) (punctuation ":" 5200 . 5201) (CASE "case" 5202 . 5206) (string "'i'" 5207 . 5210) (punctuation "+" 5211 . 5212) (semantic-list "(N)" 5213 . 5216) (punctuation ":" 5216 . 5217) (CASE "case" 5218 . 5222) (string "'j'" 5223 . 5226) (punctuation "+" 5227 . 5228) (semantic-list "(N)" 5229 . 5232) (punctuation ":" 5232 . 5233) (CASE "case" 5239 . 5243) (string "'k'" 5244 . 5247) (punctuation "+" 5248 . 5249) (semantic-list "(N)" 5250 . 5253) (punctuation ":" 5253 . 5254) (CASE "case" 5255 . 5259) (string "'l'" 5260 . 5263) (punctuation "+" 5264 . 5265) (semantic-list "(N)" 5266 . 5269) (punctuation ":" 5269 . 5270) (CASE "case" 5271 . 5275) (string "'m'" 5276 . 5279) (punctuation "+" 5280 . 5281) (semantic-list "(N)" 5282 . 5285) (punctuation ":" 5285 . 5286) (CASE "case" 5287 . 5291) (string "'n'" 5292 . 5295) (punctuation "+" 5296 . 5297) (semantic-list "(N)" 5298 . 5301) (punctuation ":" 5301 . 5302) (CASE "case" 5308 . 5312) (string "'o'" 5313 . 5316) (punctuation "+" 5317 . 5318) (semantic-list "(N)" 5319 . 5322) (punctuation ":" 5322 . 5323) (CASE "case" 5324 . 5328) (string "'p'" 5329 . 5332) (punctuation "+" 5333 . 5334) (semantic-list "(N)" 5335 . 5338) (punctuation ":" 5338 . 5339) (CASE "case" 5340 . 5344) (string "'q'" 5345 . 5348) (punctuation "+" 5349 . 5350) (semantic-list "(N)" 5351 . 5354) (punctuation ":" 5354 . 5355) (CASE "case" 5356 . 5360) (string "'r'" 5361 . 5364) (punctuation "+" 5365 . 5366) (semantic-list "(N)" 5367 . 5370) (punctuation ":" 5370 . 5371) (CASE "case" 5377 . 5381) (string "'s'" 5382 . 5385) (punctuation "+" 5386 . 5387) (semantic-list "(N)" 5388 . 5391) (punctuation ":" 5391 . 5392) (CASE "case" 5393 . 5397) (string "'t'" 5398 . 5401) (punctuation "+" 5402 . 5403) (semantic-list "(N)" 5404 . 5407) (punctuation ":" 5407 . 5408) (CASE "case" 5409 . 5413) (string "'u'" 5414 . 5417) (punctuation "+" 5418 . 5419) (semantic-list "(N)" 5420 . 5423) (punctuation ":" 5423 . 5424) (CASE "case" 5425 . 5429) (string "'v'" 5430 . 5433) (punctuation "+" 5434 . 5435) (semantic-list "(N)" 5436 . 5439) (punctuation ":" 5439 . 5440) (CASE "case" 5446 . 5450) (string "'w'" 5451 . 5454) (punctuation "+" 5455 . 5456) (semantic-list "(N)" 5457 . 5460) (punctuation ":" 5460 . 5461) (CASE "case" 5462 . 5466) (string "'x'" 5467 . 5470) (punctuation "+" 5471 . 5472) (semantic-list "(N)" 5473 . 5476) (punctuation ":" 5476 . 5477) (CASE "case" 5478 . 5482) (string "'y'" 5483 . 5486) (punctuation "+" 5487 . 5488) (semantic-list "(N)" 5489 . 5492) (punctuation ":" 5492 . 5493) (CASE "case" 5494 . 5498) (string "'z'" 5499 . 5502) (punctuation "+" 5503 . 5504) (semantic-list "(N)" 5505 . 5508)))
+          ("_C_CTYPE_LOWER" . ((symbol "_C_CTYPE_LOWER_N" 5859 . 5875) (semantic-list "(0)" 5876 . 5879)))
+          ("C_CTYPE_INLINE" . ((symbol "_GL_INLINE" 1167 . 1177)))
+          ("_C_CTYPE_A_THRU_F" . 
+              ((symbol "_C_CTYPE_LOWER_A_THRU_F_N" 5605 . 5630) (semantic-list "(0)" 5631 . 5634) (punctuation ":" 5634 . 5635) (symbol "_C_CTYPE_LOWER_A_THRU_F_N" 5641 . 5666) (semantic-list "('A' - 'a')" 5667 . 5678)))
+          ("_C_CTYPE_CNTRL" . 
+              ((CASE "case" 3706 . 3710) (string "'\\a'" 3711 . 3715) (punctuation ":" 3715 . 3716) (CASE "case" 3717 . 3721) (string "'\\b'" 3722 . 3726) (punctuation ":" 3726 . 3727) (CASE "case" 3728 . 3732) (string "'\\f'" 3733 . 3737) (punctuation ":" 3737 . 3738) (CASE "case" 3739 . 3743) (string "'\\n'" 3744 . 3748) (punctuation ":" 3748 . 3749) (CASE "case" 3755 . 3759) (string "'\\r'" 3760 . 3764) (punctuation ":" 3764 . 3765) (CASE "case" 3766 . 3770) (string "'\\t'" 3771 . 3775) (punctuation ":" 3775 . 3776) (CASE "case" 3777 . 3781) (string "'\\v'" 3782 . 3786) (punctuation ":" 3786 . 3787) (symbol "_C_CTYPE_OTHER_CNTRL" 3793 . 3813)))
+          ("_C_CTYPE_UPPER" . ((symbol "_C_CTYPE_LOWER_N" 6292 . 6308) (semantic-list "('A' - 'a')" 6309 . 6320)))
+          ("_C_CTYPE_LOWER_A_THRU_F_N" (spp-arg-list ("N") 4993 . 4996) . 
+              ((CASE "case" 5002 . 5006) (string "'a'" 5007 . 5010) (punctuation "+" 5011 . 5012) (semantic-list "(N)" 5013 . 5016) (punctuation ":" 5016 . 5017) (CASE "case" 5018 . 5022) (string "'b'" 5023 . 5026) (punctuation "+" 5027 . 5028) (semantic-list "(N)" 5029 . 5032) (punctuation ":" 5032 . 5033) (CASE "case" 5034 . 5038) (string "'c'" 5039 . 5042) (punctuation "+" 5043 . 5044) (semantic-list "(N)" 5045 . 5048) (punctuation ":" 5048 . 5049) (CASE "case" 5050 . 5054) (string "'d'" 5055 . 5058) (punctuation "+" 5059 . 5060) (semantic-list "(N)" 5061 . 5064) (punctuation ":" 5064 . 5065) (CASE "case" 5071 . 5075) (string "'e'" 5076 . 5079) (punctuation "+" 5080 . 5081) (semantic-list "(N)" 5082 . 5085) (punctuation ":" 5085 . 5086) (CASE "case" 5087 . 5091) (string "'f'" 5092 . 5095) (punctuation "+" 5096 . 5097) (semantic-list "(N)" 5098 . 5101)))
+          ("C_CTYPE_H")
+          ("_C_CTYPE_OTHER_CNTRL" . 
+              ((CASE "case" 4498 . 4502) (string "'\\x00'" 4503 . 4509) (punctuation ":" 4509 . 4510) (CASE "case" 4511 . 4515) (string "'\\x01'" 4516 . 4522) (punctuation ":" 4522 . 4523) (CASE "case" 4524 . 4528) (string "'\\x02'" 4529 . 4535) (punctuation ":" 4535 . 4536) (CASE "case" 4537 . 4541) (string "'\\x03'" 4542 . 4548) (punctuation ":" 4548 . 4549) (CASE "case" 4556 . 4560) (string "'\\x07'" 4561 . 4567) (punctuation ":" 4567 . 4568) (CASE "case" 4569 . 4573) (string "'\\x0e'" 4574 . 4580) (punctuation ":" 4580 . 4581) (CASE "case" 4582 . 4586) (string "'\\x0f'" 4587 . 4593) (punctuation ":" 4593 . 4594) (CASE "case" 4595 . 4599) (string "'\\x10'" 4600 . 4606) (punctuation ":" 4606 . 4607) (CASE "case" 4614 . 4618) (string "'\\x11'" 4619 . 4625) (punctuation ":" 4625 . 4626) (CASE "case" 4627 . 4631) (string "'\\x12'" 4632 . 4638) (punctuation ":" 4638 . 4639) (CASE "case" 4640 . 4644) (string "'\\x13'" 4645 . 4651) (punctuation ":" 4651 . 4652) (CASE "case" 4653 . 4657) (string "'\\x18'" 4658 . 4664) (punctuation ":" 4664 . 4665) (CASE "case" 4672 . 4676) (string "'\\x19'" 4677 . 4683) (punctuation ":" 4683 . 4684) (CASE "case" 4685 . 4689) (string "'\\x1c'" 4690 . 4696) (punctuation ":" 4696 . 4697) (CASE "case" 4698 . 4702) (string "'\\x1d'" 4703 . 4709) (punctuation ":" 4709 . 4710) (CASE "case" 4711 . 4715) (string "'\\x1e'" 4716 . 4722) (punctuation ":" 4722 . 4723) (CASE "case" 4730 . 4734) (string "'\\x1f'" 4735 . 4741) (punctuation ":" 4741 . 4742) (CASE "case" 4743 . 4747) (string "'\\x26'" 4748 . 4754) (punctuation ":" 4754 . 4755) (CASE "case" 4756 . 4760) (string "'\\x27'" 4761 . 4767) (punctuation ":" 4767 . 4768) (CASE "case" 4769 . 4773) (string "'\\x2d'" 4774 . 4780) (punctuation ":" 4780 . 4781) (CASE "case" 4788 . 4792) (string "'\\x2e'" 4793 . 4799) (punctuation ":" 4799 . 4800) (CASE "case" 4801 . 4805) (string "'\\x32'" 4806 . 4812) (punctuation ":" 4812 . 4813) (CASE "case" 4814 . 4818) (string "'\\x37'" 4819 . 4825) (punctuation ":" 4825 . 4826) (CASE "case" 4827 . 4831) (string "'\\x3c'" 4832 . 4838) (punctuation ":" 4838 . 4839) (CASE "case" 4846 . 4850) (string "'\\x3d'" 4851 . 4857) (punctuation ":" 4857 . 4858) (CASE "case" 4859 . 4863) (string "'\\x3f'" 4864 . 4870)))
+          ("_C_CTYPE_DIGIT" . 
+              ((CASE "case" 5727 . 5731) (string "'0'" 5732 . 5735) (punctuation ":" 5735 . 5736) (CASE "case" 5737 . 5741) (string "'1'" 5742 . 5745) (punctuation ":" 5745 . 5746) (CASE "case" 5747 . 5751) (string "'2'" 5752 . 5755) (punctuation ":" 5755 . 5756) (CASE "case" 5757 . 5761) (string "'3'" 5762 . 5765) (punctuation ":" 5765 . 5766) (CASE "case" 5772 . 5776) (string "'4'" 5777 . 5780) (punctuation ":" 5780 . 5781) (CASE "case" 5782 . 5786) (string "'5'" 5787 . 5790) (punctuation ":" 5790 . 5791) (CASE "case" 5792 . 5796) (string "'6'" 5797 . 5800) (punctuation ":" 5800 . 5801) (CASE "case" 5802 . 5806) (string "'7'" 5807 . 5810) (punctuation ":" 5810 . 5811) (CASE "case" 5817 . 5821) (string "'8'" 5822 . 5825) (punctuation ":" 5825 . 5826) (CASE "case" 5827 . 5831) (string "'9'" 5832 . 5835)))
+          ("_C_CTYPE_PUNCT" . 
+              ((CASE "case" 5908 . 5912) (string "'!'" 5913 . 5916) (punctuation ":" 5916 . 5917) (CASE "case" 5918 . 5922) (string "'\"'" 5923 . 5926) (punctuation ":" 5926 . 5927) (CASE "case" 5928 . 5932) (string "'#'" 5933 . 5936) (punctuation ":" 5936 . 5937) (CASE "case" 5938 . 5942) (string "'$'" 5943 . 5946) (punctuation ":" 5946 . 5947) (CASE "case" 5954 . 5958) (string "'%'" 5959 . 5962) (punctuation ":" 5962 . 5963) (CASE "case" 5964 . 5968) (string "'&'" 5969 . 5972) (punctuation ":" 5972 . 5973) (CASE "case" 5974 . 5978) (string "'\\''" 5979 . 5983) (punctuation ":" 5983 . 5984) (CASE "case" 5985 . 5989) (string "'('" 5990 . 5993) (punctuation ":" 5993 . 5994) (CASE "case" 6000 . 6004) (string "')'" 6005 . 6008) (punctuation ":" 6008 . 6009) (CASE "case" 6010 . 6014) (string "'*'" 6015 . 6018) (punctuation ":" 6018 . 6019) (CASE "case" 6020 . 6024) (string "'+'" 6025 . 6028) (punctuation ":" 6028 . 6029) (CASE "case" 6030 . 6034) (string "','" 6035 . 6038) (punctuation ":" 6038 . 6039) (CASE "case" 6046 . 6050) (string "'-'" 6051 . 6054) (punctuation ":" 6054 . 6055) (CASE "case" 6056 . 6060) (string "'.'" 6061 . 6064) (punctuation ":" 6064 . 6065) (CASE "case" 6066 . 6070) (string "'/'" 6071 . 6074) (punctuation ":" 6074 . 6075) (CASE "case" 6076 . 6080) (string "':'" 6081 . 6084) (punctuation ":" 6084 . 6085) (CASE "case" 6092 . 6096) (string "';'" 6097 . 6100) (punctuation ":" 6100 . 6101) (CASE "case" 6102 . 6106) (string "'<'" 6107 . 6110) (punctuation ":" 6110 . 6111) (CASE "case" 6112 . 6116) (string "'='" 6117 . 6120) (punctuation ":" 6120 . 6121) (CASE "case" 6122 . 6126) (string "'>'" 6127 . 6130) (punctuation ":" 6130 . 6131) (CASE "case" 6138 . 6142) (string "'?'" 6143 . 6146) (punctuation ":" 6146 . 6147) (CASE "case" 6148 . 6152) (string "'@'" 6153 . 6156) (punctuation ":" 6156 . 6157) (CASE "case" 6158 . 6162) (string "'['" 6163 . 6166) (punctuation ":" 6166 . 6167) (CASE "case" 6168 . 6172) (string "'\\\\'" 6173 . 6177) (punctuation ":" 6177 . 6178) (CASE "case" 6184 . 6188) (string "']'" 6189 . 6192) (punctuation ":" 6192 . 6193) (CASE "case" 6194 . 6198) (string "'^'" 6199 . 6202) (punctuation ":" 6202 . 6203) (CASE "case" 6204 . 6208) (string "'_'" 6209 . 6212) (punctuation ":" 6212 . 6213) (CASE "case" 6214 . 6218) (string "'`'" 6219 . 6222) (punctuation ":" 6222 . 6223) (CASE "case" 6230 . 6234) (string "'{'" 6235 . 6238) (punctuation ":" 6238 . 6239) (CASE "case" 6240 . 6244) (string "'|'" 6245 . 6248) (punctuation ":" 6248 . 6249) (CASE "case" 6250 . 6254) (string "'}'" 6255 . 6258) (punctuation ":" 6258 . 6259) (CASE "case" 6260 . 6264) (string "'~'" 6265 . 6268)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("config.h" include (:system-flag t) nil [1 20])
+            ("C_CTYPE_INLINE" variable (:constant-flag t) nil [29 43])
+            ("c-ctype.h" include nil nil [62 82]))          
+      :file "c-ctype.c"
+      :pointmax 83
+      :fsize 82
+      :lastmodtime '(23150 33450 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("C_CTYPE_INLINE" . ((symbol "_GL_EXTERN_INLINE" 44 . 61)))
+          )
+))
+  :file "!home!workbench-lk!Emacs27!emacs27-master-src!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

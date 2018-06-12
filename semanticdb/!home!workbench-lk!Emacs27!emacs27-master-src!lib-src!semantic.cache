@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CTAGS" variable (:constant-flag t) nil [9 14])
+            ("etags.c" include nil nil [17 35]))          
+      :file "ctags.c"
+      :pointmax 36
+      :fsize 35
+      :lastmodtime '(23150 33450 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CTAGS" . ((number "1" 15 . 16)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "etags.c"
+      :fsize 191361
+      :lastmodtime '(23150 33450 0 0)))
+  :file "!home!workbench-lk!Emacs27!emacs27-master-src!lib-src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

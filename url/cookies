@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".racket-lang.org"
+  [url-cookie "__cfduid" "d3d2790c4738fe1c9e31d4a1b145fd0cc1517257223" "Tue, 29-Jan-19 20:20:23 GMT" "/" ".racket-lang.org" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

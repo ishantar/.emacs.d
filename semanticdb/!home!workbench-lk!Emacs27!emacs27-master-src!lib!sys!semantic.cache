@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_GL_INCLUDING_SYS_TYPES_H" variable (:constant-flag t) nil [929 954])
+            ("_GL_SYS_TYPES_H" variable (:constant-flag t) nil [1050 1065]))          
+      :file "types.h"
+      :pointmax 2720
+      :fsize 2719
+      :lastmodtime '(23153 38575 753408 950000)
+      :unmatched-syntax '((punctuation 981 . 982) (symbol 980 . 981) (punctuation 979 . 980) (symbol 974 . 979) (punctuation 973 . 974) (symbol 970 . 973) (punctuation 969 . 970) (symbol 956 . 968) (punctuation 955 . 956) (symbol 807 . 820) (symbol 803 . 806) (symbol 796 . 802) (punctuation 795 . 796))
+      :lexical-table 
+        '(("_GL_SYS_TYPES_H")
+          )
+))
+  :file "!home!workbench-lk!Emacs27!emacs27-master-src!lib!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

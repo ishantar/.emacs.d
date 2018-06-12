@@ -1,0 +1,577 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_CRYPTO_BACKEND_H" variable (:constant-flag t) nil [914 931])
+            ("stdint.h" include (:system-flag t) nil [933 952])
+            ("string.h" include (:system-flag t) nil [953 972])
+            ("crypt_device" type
+               (:prototype t
+                :type "struct")
+                nil [974 994])
+            ("crypt_hash" type
+               (:prototype t
+                :type "struct")
+                nil [995 1013])
+            ("crypt_hmac" type
+               (:prototype t
+                :type "struct")
+                nil [1014 1032])
+            ("crypt_cipher" type
+               (:prototype t
+                :type "struct")
+                nil [1033 1053])
+            ("crypt_storage" type
+               (:prototype t
+                :type "struct")
+                nil [1054 1075])
+            ("crypt_backend_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1100 1125]))                  
+                :type "int")
+                nil [1077 1126])
+            ("CRYPT_BACKEND_KERNEL" variable (:constant-flag t) nil [1136 1156])
+            ("crypt_backend_flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1241 1246]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1212 1247])
+            ("crypt_backend_version" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1282 1287]))                  
+                :type "char")
+                nil [1248 1288])
+            ("crypt_hash_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1321 1338]))                  
+                :type "int")
+                nil [1301 1339])
+            ("crypt_hash_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 2
+                        :type ("crypt_hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1360 1384])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1385 1402]))                  
+                :type "int")
+                nil [1340 1403])
+            ("crypt_hash_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1425 1448])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1449 1468])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1469 1483]))                  
+                :type "int")
+                nil [1404 1484])
+            ("crypt_hash_final" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1506 1529])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1530 1543])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1544 1558]))                  
+                :type "int")
+                nil [1485 1559])
+            ("crypt_hash_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hash" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1583 1606]))                  
+                :type "int")
+                nil [1560 1607])
+            ("crypt_hmac_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1640 1657]))                  
+                :type "int")
+                nil [1620 1658])
+            ("crypt_hmac_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 2
+                        :type ("crypt_hmac" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1679 1703])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1704 1721])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1728 1747])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1748 1762]))                  
+                :type "int")
+                nil [1659 1763])
+            ("crypt_hmac_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hmac" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1785 1808])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1809 1828])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1829 1843]))                  
+                :type "int")
+                nil [1764 1844])
+            ("crypt_hmac_final" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hmac" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1866 1889])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1890 1903])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1918]))                  
+                :type "int")
+                nil [1845 1919])
+            ("crypt_hmac_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_hmac" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1943 1966]))                  
+                :type "int")
+                nil [1920 1967])
+            ("" type
+               (:members 
+                  ( ("CRYPT_RND_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (2059 2060)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2040 2060])
+                    ("CRYPT_RND_KEY" variable
+                       (:constant-flag t
+                        :default-value (2078 2079)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2062 2079])
+                    ("CRYPT_RND_SALT" variable
+                       (:constant-flag t
+                        :default-value (2098 2099)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2081 2099]))                  
+                :type "enum")
+                nil [2033 2102])
+            ("crypt_backend_rng" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2125 2138])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2139 2153])
+                    ("quality" variable (:type "int") (reparse-symbol arg-sub-list) [2154 2166])
+                    ("fips" variable (:type "int") (reparse-symbol arg-sub-list) [2167 2176]))                  
+                :type "int")
+                nil [2103 2177])
+            ("crypt_pbkdf_check" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("kdf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2212 2228])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2229 2246])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2255 2276])
+                    ("password_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2277 2300])
+                    ("salt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2309 2326])
+                    ("salt_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2327 2346])
+                    ("key_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2355 2373])
+                    ("iter_secs" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2374 2394]))                  
+                :type "int")
+                nil [2190 2395])
+            ("crypt_pbkdf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("kdf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2412 2428])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2429 2446])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2449 2470])
+                    ("password_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2471 2494])
+                    ("salt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2497 2514])
+                    ("salt_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2515 2534])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2537 2547])
+                    ("key_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2566])
+                    ("iterations" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2569 2589])
+                    ("memory" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2590 2606])
+                    ("parallel" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2607 2625]))                  
+                :type "int")
+                nil [2396 2626])
+            ("argon2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2893 2914])
+                    ("password_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2915 2938])
+                    ("salt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2943 2960])
+                    ("salt_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2961 2980])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2985 2995])
+                    ("key_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2996 3014])
+                    ("iterations" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3019 3039])
+                    ("memory" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3040 3056])
+                    ("parallel" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3057 3075]))                  
+                :type "int")
+                nil [2882 3076])
+            ("crypt_argon2_check" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3100 3121])
+                    ("password_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3122 3145])
+                    ("salt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3154 3171])
+                    ("salt_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3172 3191])
+                    ("key_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3200 3218])
+                    ("m_cost" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3219 3235])
+                    ("p_cost" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3236 3252])
+                    ("iter_msec" variable (:type "int") (reparse-symbol arg-sub-list) [3261 3275])
+                    ("t_cost" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3277 3294]))                  
+                :type "int")
+                nil [3077 3295])
+            ("crypt_crc32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3330 3344])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3345 3370])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3371 3382]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3309 3383])
+            ("crypt_cipher_blocksize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3426 3443]))                  
+                :type "int")
+                nil [3399 3444])
+            ("crypt_cipher_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 2
+                        :type ("crypt_cipher" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3467 3493])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3494 3511])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3518 3535])
+                    ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3536 3555])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3556 3570]))                  
+                :type "int")
+                nil [3445 3571])
+            ("crypt_cipher_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_cipher" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3597 3622]))                  
+                :type "int")
+                nil [3572 3623])
+            ("crypt_cipher_encrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_cipher" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3649 3674])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3679 3694])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3695 3705])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3706 3720])
+                    ("iv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3725 3740])
+                    ("iv_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3741 3758]))                  
+                :type "int")
+                nil [3624 3759])
+            ("crypt_cipher_decrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_cipher" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3785 3810])
+                    ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3815 3830])
+                    ("out" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3831 3841])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3842 3856])
+                    ("iv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3861 3876])
+                    ("iv_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3877 3894]))                  
+                :type "int")
+                nil [3760 3895])
+            ("crypt_storage_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 2
+                        :type ("crypt_storage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3954 3981])
+                    ("sector_start" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3982 4004])
+                    ("cipher" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4014 4033])
+                    ("cipher_mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4034 4058])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4068 4078])
+                    ("key_length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4079 4097]))                  
+                :type "int")
+                nil [3931 4098])
+            ("crypt_storage_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_storage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4125 4151]))                  
+                :type "int")
+                nil [4099 4152])
+            ("crypt_storage_decrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_storage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4179 4205])
+                    ("sector" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4206 4222])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4228 4241])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4242 4255]))                  
+                :type "int")
+                nil [4153 4256])
+            ("crypt_storage_encrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("crypt_storage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4283 4309])
+                    ("sector" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4310 4326])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4332 4345])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4346 4359]))                  
+                :type "int")
+                nil [4257 4360])
+            ("crypt_backend_memzero" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4463 4471])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4472 4481]))                  
+                :type "void")
+                nil [4422 4553]))          
+      :file "crypto_backend.h"
+      :pointmax 4586
+      :fsize 4583
+      :lastmodtime '(23086 37486 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CRYPTO_BACKEND_H")
+          ("CRYPT_BACKEND_KERNEL" . ((semantic-list "(1 << 0)" 1157 . 1165)))
+          )
+))
+  :file "!home!workbench-lk!luks!SubModuleImpls!pbkdf2_cryptsetup_test!gitrepo!pbkdf2_cryptsetup_test-master!backend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
