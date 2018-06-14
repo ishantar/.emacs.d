@@ -1,0 +1,12 @@
+
+# ## local state ##
+
+auto-save-list/**
+auto-backup-list/**
+
+
+# ## private data ##
+
+emms/history
+eshell/history
+elpa/gnupg/**
