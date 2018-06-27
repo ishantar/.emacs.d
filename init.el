@@ -3,15 +3,15 @@
 ;; (require 'package)
 
 (let* (  (no-ssl (and (memq system-type '(windows-nt ms-dos))
-                      (not (gnutls-available-p)) )) 
+                      (not (gnutls-available-p)) ))
          (proto (if no-ssl "http" "https")) )
-      (add-to-list 'package-archives  
+      (add-to-list 'package-archives
          (cons "melpa" (concat proto "://melpa.org/packages/")) t)
-      (when  (< emacs-major-version 24)               
-         (add-to-list 'package-archives  
+      (when  (< emacs-major-version 24)
+         (add-to-list 'package-archives
             '("gnu" . (concat proto "://elpa.gnu.org/packages/"))) )  )
 
-       ; (add-to-list 'package-archives 
+       ; (add-to-list 'package-archives
        ; (cons "melpa-stable" (concat proto"://stable.melpa.org/packages/")) t))
  
 ;; (package-initialize)
@@ -215,9 +215,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;
 
-(defun  term-window-setup  ()     
+(defun  term-window-setup  ()
    (interactive)
-   (progn  
+   (progn
      (setenv "LINES" (string (- (window-height) 8) ))
      (setenv "COLUMNS" (string (- (window-width) 4) ))
      (shell-command "PS1=$(echo '[$?] [${PWD}] $ \n' )")
@@ -226,19 +226,19 @@
 
 ;; ;
 
-(defun lk-windowsize          (HORIZONTAL?  TOP/LEFT?  AMOUNT)   
+(defun lk-windowsize          (HORIZONTAL?  TOP/LEFT?  AMOUNT)
 "Resizes the window of the current buffer by moving one of its edges.
 
-If HORIZONTAL? evaluates to true, a horizontal edge will be chosen. 
+If HORIZONTAL? evaluates to true, a horizontal edge will be chosen.
 If TOP/LEFT? evaluates to true, the appropriate edge is selected.
 If the above specify a frame border, the command wraps to the window's opposite edge.
 
 AMOUNT specifies the movement distance (in lines/columns).  Positive values specify downard/rightward motion, and negative values specify leftward/upward motion."
-(interactive)      
+(interactive)
   (adjust-window-trailing-edge
-        (window-in-direction  
+        (window-in-direction
                 (or  (and  HORIZONTAL? 'left) 'above)
-                (and  TOP/LEFT? (window-in-direction  
+                (and  TOP/LEFT? (window-in-direction
                                   (or  (and HORIZONTAL? 'right) 'below) )) )
         AMOUNT  HORIZONTAL? ) )
 
@@ -271,7 +271,7 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
   (interactive "P")
   (lk-windowsize  't  't  (or DISTANCE 1) ))
  ;
-(defun winlk-right-in  (&optional DISTANCE)      
+(defun winlk-right-in  (&optional DISTANCE)
   (interactive "P")
   (lk-windowsize  't  't  (* '-1 (or DISTANCE 1)) ))
 
@@ -286,7 +286,7 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
 ;;
 
 
-; ;  hacking unicode 
+; ;  hacking unicode
  (fset  'λ (symbol-function 'lambda) )
 
  (global-set-key         (kbd "s-("  )
@@ -388,8 +388,6 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
 
 ; ;  autocompletion?
  (global-set-key    (kbd "C-<tab>")   'company-complete)
-
-
 
 
 

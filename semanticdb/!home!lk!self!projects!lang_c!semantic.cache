@@ -1,0 +1,9 @@
+;; Object semanticdb-project-database-file-18c1990
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18c1990"
+  :tables
+  (list
+)
+  :file "!home!lk!self!projects!lang_c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
