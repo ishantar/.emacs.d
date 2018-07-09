@@ -1,0 +1,215 @@
+;; Object semanticdb-project-database-file-18e77e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18e77e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18814d4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("Cell" type
+               (:typedef ("Cell" type (:type "union") nil nil)
+                :type "typedef")
+                nil [205 229])
+            ("list_atom" type
+               (:typedef ("list_atom" type (:type "union") nil nil)
+                :type "typedef")
+                nil [275 309])
+            ("Cons" type
+               (:members 
+                  ( ("car" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [371 381])
+                    ("cdr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [383 393]))                  
+                :type "struct")
+                nil [357 395])
+            ("Node" type
+               (:members 
+                  ( ("car" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [460 470])
+                    ("cdr" variable
+                       (:pointer 1
+                        :type ("list_atom" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [472 487]))                  
+                :type "struct")
+                nil [446 489])
+            ("Pair" variable (:type "int") nil [536 541])
+            ("Pair" type
+               (:members 
+                  ( ("cons" variable (:type ("Cons" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [628 645])
+                    ("node" variable (:type ("Node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [649 666]))                  
+                :type "union")
+                nil [543 669])
+            ("empty_list" type
+               (:members 
+                  ( ("car" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [814 824])
+                    ("cdr" variable
+                       (:pointer 1
+                        :type ("empty_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [826 849]))                  
+                :type "struct")
+                nil [717 851])
+            ("list_atom" type
+               (:members 
+                  ( ("nil" variable (:type ("empty_list" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [960 982])
+                    ("node" variable (:type ("Node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [987 1004]))                  
+                :type "union")
+                nil [873 1007])
+            ("Cell" type
+               (:members 
+                  ( ("pair" variable (:type ("Pair" type (:type "union") nil nil)) (reparse-symbol classsubparts) [1159 1175])
+                    ("node" variable (:type ("Node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1179 1196])
+                    ("cons" variable (:type ("Cons" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1200 1217])
+                    ("nil" variable (:type ("empty_list" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1221 1243]))                  
+                :type "union")
+                nil [1071 1246])
+            ("main" function (:type "int") nil [1253 2102]))          
+      :file "lispinc-scratch.c"
+      :pointmax 2362
+      :fsize 2362
+      :lastmodtime '(23313 42913 859134 574000)
+      :unmatched-syntax '((punctuation 2102 . 2103) (symbol 1067 . 1068) (UNION 530 . 535)))
+    (semanticdb-table "semanticdb-table-1c0ddf8"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("node" type
+               (:typedef ("void")
+                :pointer 1
+                :type "typedef")
+                nil [60 82])
+            ("main" function (:type "int") nil [85 1686]))          
+      :file "cirqueue.c"
+      :pointmax 2027
+      :fsize 2026
+      :lastmodtime '(23313 42913 852467 907000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c6b20c"
+      :major-mode c-mode
+      :tags 
+        '( ("limits.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("intv" variable
+               (:default-value "8"
+                :type "int")
+                nil [41 54])
+            ("intarrel1" variable
+               (:dereference 1
+                :default-value "{8}"
+                :type "int")
+                nil [56 79])
+            ("intarrel2" variable
+               (:dereference 1
+                :default-value "{8, 15}"
+                :type "int")
+                nil [80 107])
+            ("intptv" variable
+               (:pointer 1
+                :default-value "&intv"
+                :type "int")
+                nil [109 129])
+            ("iarrptv0" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{&intarrel1}"
+                :type "int")
+                nil [130 161])
+            ("iarrptv1" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{&intarrel2}"
+                :type "int")
+                nil [162 193])
+            ("nullptv" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type "int")
+                nil [194 214])
+            ("Cons" type
+               (:members 
+                  ( ("Ccar" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [240 250])
+                    ("Ccdr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [253 263]))                  
+                :type "struct")
+                nil [216 271])
+            ("cons" type
+               (:typedef ("Cons" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [216 271])
+            ("consarr" variable (:type ("Arrcons" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [273 317])
+            ("Arrcons" type
+               (:members 
+                  ( ("ccell" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [292 306]))                  
+                :type "struct")
+                nil [273 317])
+            ("offchku" variable (:type ("Offstchk" type
+                 (:prototype t
+                  :type "union")
+                  nil nil)) nil [319 376])
+            ("Offstchk" type
+               (:members 
+                  ( ("fcons" variable (:type ("cons" type (:type "class") nil nil)) (reparse-symbol classsubparts) [338 349])
+                    ("dotp" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [352 365]))                  
+                :type "union")
+                nil [319 376])
+            ("main" function (:type "int") nil [378 1277]))          
+      :file "cacclim.c"
+      :pointmax 1279
+      :fsize 1278
+      :lastmodtime '(23313 42913 852467 907000)
+      :unmatched-syntax '((thing 1277 . 1278))))
+  :file "!home!lk!self!projects!lang_c!lisplayout!old!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

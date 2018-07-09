@@ -51,69 +51,6 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yatemplate-20180617.252/yatemplate-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yatemplate-20180617.252/yatemplate-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "test-yatemplate" '("touch" "yatemplate")))
-
-
-
-(defvar yatemplate-dir (locate-user-emacs-file "templates") "\
-The directory containing file templates.")
-
-(custom-autoload 'yatemplate-dir "yatemplate" t)
-
-(defvar yatemplate-separator ":" "\
-Separator used for splitting filenames.
-
-This is the separator that is used to split template filenames into
-the ordering and regular expression parts.
-
-Note that this will be used as the SEPARATORS argument of
-`split-string', so be careful when setting this to a value that
-has special meaning in regular expressions.")
-
-(custom-autoload 'yatemplate-separator "yatemplate" t)
-
-(put 'yatemplate-owner 'safe-local-variable #'stringp)
-
-(put 'yatemplate-license 'safe-local-variable #'stringp)
-
-(autoload 'yatemplate-fill-alist "yatemplate" "\
-Fill `auto-insert-alist'.
-
-\(fn)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yatemplate" '("yatemplate-")))
-
-
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180616.1005/yasnippet-snippets-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180616.1005/yasnippet-snippets-autoloads.el") (car load-path))))
-
-
-
-(autoload 'yasnippet-snippets-initialize "yasnippet-snippets" "\
-
-
-\(fn)" nil nil)
-
-(eval-after-load 'yasnippet '(yasnippet-snippets-initialize))
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yasnippet-snippets" '("yasnippet-snippets-dir")))
-
-
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/yafolding-20170304.1917/yafolding-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -1197,6 +1134,1041 @@ on `kill-emacs' and send it to coveralls.io.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180703.829/clojure-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180703.829/clojure-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'clojure-mode "clojure-mode" "\
+Major mode for editing Clojure code.
+
+\\{clojure-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'clojure-unwind "clojure-mode" "\
+Unwind thread at point or above point by one level.
+Return nil if there are no more levels to unwind.
+
+\(fn)" t nil)
+
+(autoload 'clojure-unwind-all "clojure-mode" "\
+Fully unwind thread at point or above point.
+
+\(fn)" t nil)
+
+(autoload 'clojure-thread "clojure-mode" "\
+Thread by one more level an existing threading macro.
+
+\(fn)" t nil)
+
+(autoload 'clojure-thread-first-all "clojure-mode" "\
+Fully thread the form at point using ->.
+
+When BUT-LAST is non-nil, the last expression is not threaded.
+Default value is `clojure-thread-all-but-last'.
+
+\(fn BUT-LAST)" t nil)
+
+(autoload 'clojure-thread-last-all "clojure-mode" "\
+Fully thread the form at point using ->>.
+
+When BUT-LAST is non-nil, the last expression is not threaded.
+Default value is `clojure-thread-all-but-last'.
+
+\(fn BUT-LAST)" t nil)
+
+(autoload 'clojure-cycle-privacy "clojure-mode" "\
+Make public the current private def, or vice-versa.
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-privacy
+
+\(fn)" t nil)
+
+(autoload 'clojure-convert-collection-to-list "clojure-mode" "\
+Convert collection at (point) to list.
+
+\(fn)" t nil)
+
+(autoload 'clojure-convert-collection-to-quoted-list "clojure-mode" "\
+Convert collection at (point) to quoted list.
+
+\(fn)" t nil)
+
+(autoload 'clojure-convert-collection-to-map "clojure-mode" "\
+Convert collection at (point) to map.
+
+\(fn)" t nil)
+
+(autoload 'clojure-convert-collection-to-vector "clojure-mode" "\
+Convert collection at (point) to vector.
+
+\(fn)" t nil)
+
+(autoload 'clojure-convert-collection-to-set "clojure-mode" "\
+Convert collection at (point) to set.
+
+\(fn)" t nil)
+
+(autoload 'clojure-cycle-if "clojure-mode" "\
+Change a surrounding if to if-not, or vice-versa.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-if
+
+\(fn)" t nil)
+
+(autoload 'clojure-cycle-when "clojure-mode" "\
+Change a surrounding when to when-not, or vice-versa.
+
+\(fn)" t nil)
+
+(autoload 'clojure-let-backward-slurp-sexp "clojure-mode" "\
+Slurp the s-expression before the let form into the let form.
+With a numberic prefix argument slurp the previous N s-expression into the let form.
+
+\(fn &optional N)" t nil)
+
+(autoload 'clojure-let-forward-slurp-sexp "clojure-mode" "\
+Slurp the next s-expression after the let form into the let form.
+With a numeric prefix argument slurp the next N s-expressions into the let form.
+
+\(fn &optional N)" t nil)
+
+(autoload 'clojure-introduce-let "clojure-mode" "\
+Create a let form, binding the form at point.
+With a numeric prefix argument the let is introduced N lists up.
+
+\(fn &optional N)" t nil)
+
+(autoload 'clojure-move-to-let "clojure-mode" "\
+Move the form at point to a binding in the nearest let.
+
+\(fn)" t nil)
+
+(autoload 'clojurescript-mode "clojure-mode" "\
+Major mode for editing ClojureScript code.
+
+\\{clojurescript-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'clojurec-mode "clojure-mode" "\
+Major mode for editing ClojureC code.
+
+\\{clojurec-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.\\(clj\\|dtm\\|edn\\)\\'" . clojure-mode))
+
+(add-to-list 'auto-mode-alist '("\\.cljc\\'" . clojurec-mode))
+
+(add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojurescript-mode))
+
+(add-to-list 'auto-mode-alist '("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-mode" '("add-custom-clojure-indents" "clojure" "define-clojure-indent" "put-clojure-indent")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/epl-20180205.1249/epl-autoloads.el"))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/epl-20180205.1249/epl-autoloads.el") (car load-path))))
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el"))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el") (car load-path))))
+
+
+(autoload 'pkg-info-library-original-version "pkg-info" "\
+Get the original version in the header of LIBRARY.
+
+The original version is stored in the X-Original-Version header.
+This header is added by the MELPA package archive to preserve
+upstream version numbers.
+
+LIBRARY is either a symbol denoting a named feature, or a library
+name as string.
+
+If SHOW is non-nil, show the version in the minibuffer.
+
+Return the version from the header of LIBRARY as list.  Signal an
+error if the LIBRARY was not found or had no X-Original-Version
+header.
+
+See Info node `(elisp)Library Headers' for more information
+about library headers.
+
+\(fn LIBRARY &optional SHOW)" t nil)
+
+(autoload 'pkg-info-library-version "pkg-info" "\
+Get the version in the header of LIBRARY.
+
+LIBRARY is either a symbol denoting a named feature, or a library
+name as string.
+
+If SHOW is non-nil, show the version in the minibuffer.
+
+Return the version from the header of LIBRARY as list.  Signal an
+error if the LIBRARY was not found or had no proper header.
+
+See Info node `(elisp)Library Headers' for more information
+about library headers.
+
+\(fn LIBRARY &optional SHOW)" t nil)
+
+(autoload 'pkg-info-defining-library-original-version "pkg-info" "\
+Get the original version of the library defining FUNCTION.
+
+The original version is stored in the X-Original-Version header.
+This header is added by the MELPA package archive to preserve
+upstream version numbers.
+
+If SHOW is non-nil, show the version in mini-buffer.
+
+This function is mainly intended to find the version of a major
+or minor mode, i.e.
+
+   (pkg-info-defining-library-version 'flycheck-mode)
+
+Return the version of the library defining FUNCTION.  Signal an
+error if FUNCTION is not a valid function, if its defining
+library was not found, or if the library had no proper version
+header.
+
+\(fn FUNCTION &optional SHOW)" t nil)
+
+(autoload 'pkg-info-defining-library-version "pkg-info" "\
+Get the version of the library defining FUNCTION.
+
+If SHOW is non-nil, show the version in mini-buffer.
+
+This function is mainly intended to find the version of a major
+or minor mode, i.e.
+
+   (pkg-info-defining-library-version 'flycheck-mode)
+
+Return the version of the library defining FUNCTION.  Signal an
+error if FUNCTION is not a valid function, if its defining
+library was not found, or if the library had no proper version
+header.
+
+\(fn FUNCTION &optional SHOW)" t nil)
+
+(autoload 'pkg-info-package-version "pkg-info" "\
+Get the version of an installed PACKAGE.
+
+If SHOW is non-nil, show the version in the minibuffer.
+
+Return the version as list, or nil if PACKAGE is not installed.
+
+\(fn PACKAGE &optional SHOW)" t nil)
+
+(autoload 'pkg-info-version-info "pkg-info" "\
+Obtain complete version info for LIBRARY and PACKAGE.
+
+LIBRARY is a symbol denoting a named feature, or a library name
+as string.  PACKAGE is a symbol denoting an ELPA package.  If
+omitted or nil, default to LIBRARY.
+
+If SHOW is non-nil, show the version in the minibuffer.
+
+When called interactively, prompt for LIBRARY.  When called
+interactively with prefix argument, prompt for PACKAGE as well.
+
+Return a string with complete version information for LIBRARY.
+This version information contains the version from the headers of
+LIBRARY, and the version of the installed PACKAGE, the LIBRARY is
+part of.  If PACKAGE is not installed, or if the PACKAGE version
+is the same as the LIBRARY version, do not include a package
+version.
+
+\(fn LIBRARY &optional PACKAGE SHOW)" t nil)
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/queue-0.2/queue-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/queue-0.2/queue-autoloads.el") (car load-path))))
+
+
+
+(defalias 'make-queue 'queue-create "\
+Create an empty queue data structure.")
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "queue" '("queue")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/spinner-1.7.3/spinner-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/spinner-1.7.3/spinner-autoloads.el") (car load-path))))
+
+
+
+(autoload 'spinner-create "spinner" "\
+Create a spinner of the given TYPE.
+The possible TYPEs are described in `spinner--type-to-frames'.
+
+FPS, if given, is the number of desired frames per second.
+Default is `spinner-frames-per-second'.
+
+If BUFFER-LOCAL is non-nil, the spinner will be automatically
+deactivated if the buffer is killed.  If BUFFER-LOCAL is a
+buffer, use that instead of current buffer.
+
+When started, in order to function properly, the spinner runs a
+timer which periodically calls `force-mode-line-update' in the
+curent buffer.  If BUFFER-LOCAL was set at creation time, then
+`force-mode-line-update' is called in that buffer instead.  When
+the spinner is stopped, the timer is deactivated.
+
+DELAY, if given, is the number of seconds to wait after starting
+the spinner before actually displaying it. It is safe to cancel
+the spinner before this time, in which case it won't display at
+all.
+
+\(fn &optional TYPE BUFFER-LOCAL FPS DELAY)" nil nil)
+
+(autoload 'spinner-start "spinner" "\
+Start a mode-line spinner of given TYPE-OR-OBJECT.
+If TYPE-OR-OBJECT is an object created with `make-spinner',
+simply activate it.  This method is designed for minor modes, so
+they can use the spinner as part of their lighter by doing:
+    \\='(:eval (spinner-print THE-SPINNER))
+To stop this spinner, call `spinner-stop' on it.
+
+If TYPE-OR-OBJECT is anything else, a buffer-local spinner is
+created with this type, and it is displayed in the
+`mode-line-process' of the buffer it was created it.  Both
+TYPE-OR-OBJECT and FPS are passed to `make-spinner' (which see).
+To stop this spinner, call `spinner-stop' in the same buffer.
+
+Either way, the return value is a function which can be called
+anywhere to stop this spinner.  You can also call `spinner-stop'
+in the same buffer where the spinner was created.
+
+FPS, if given, is the number of desired frames per second.
+Default is `spinner-frames-per-second'.
+
+DELAY, if given, is the number of seconds to wait until actually
+displaying the spinner. It is safe to cancel the spinner before
+this time, in which case it won't display at all.
+
+\(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spinner" '("spinner")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180628.659/sesman-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180628.659/sesman-autoloads.el") (car load-path))))
+
+
+
+(autoload 'sesman-start "sesman" "\
+Start sesman session.
+
+\(fn)" t nil)
+
+(autoload 'sesman-restart "sesman" "\
+Restart sesman session.
+
+\(fn)" t nil)
+
+(autoload 'sesman-quit "sesman" "\
+Terminate sesman session.
+When WHICH is nil, kill only the current session; when a single
+universal argument or 'linked, kill all linked session; when a
+double universal argument, t or 'all, kill all sessions.
+
+\(fn WHICH)" t nil)
+
+(autoload 'sesman-show-session-info "sesman" "\
+Display session(s) info.
+When WHICH is nil, show info for current session; when a single
+universal argument or 'linked, show info for all linked session;
+when a double universal argument or 'all, show info for all
+sessions.
+
+\(fn WHICH)" t nil)
+
+(autoload 'sesman-show-links "sesman" "\
+Display links active in the current context.
+
+\(fn)" t nil)
+
+(autoload 'sesman-link-with-buffer "sesman" "\
+Associate a session with current buffer.
+
+\(fn)" t nil)
+
+(autoload 'sesman-link-with-directory "sesman" "\
+Associate a session with current directory.
+
+\(fn)" t nil)
+
+(autoload 'sesman-link-with-project "sesman" "\
+Associate a session with current project.
+
+\(fn)" t nil)
+
+(autoload 'sesman-unlink "sesman" "\
+Break any of the previously created links.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman" '("sesman-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180705.2320/cider-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180705.2320/cider-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cider-version "cider" "\
+Display CIDER's version.
+
+\(fn)" t nil)
+
+(autoload 'cider-jack-in-clj "cider" "\
+Start an nREPL server for the current project and connect to it.
+Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
+
+\(fn &optional DO-PROMPT)" t nil)
+
+(autoload 'cider-jack-in-cljs "cider" "\
+Start an nREPL server for the current project and connect to it.
+Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
+
+\(fn &optional DO-PROMPT)" t nil)
+
+(autoload 'cider-jack-in-clj&cljs "cider" "\
+Start an nREPL server and connect with clj and cljs REPLs.
+Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
+When SOFT-CLJS-START is non-nil, start cljs REPL only when the
+ClojureScript dependencies are met.
+
+\(fn &optional DO-PROMPT SOFT-CLJS-START)" t nil)
+
+(autoload 'cider-connect-sibling-clj "cider" "\
+Create a Clojure REPL with the same server as OTHER-REPL.
+OTHER-REPL can also be a server buffer, in which case a new session with a
+REPL for that server is created.
+
+\(fn OTHER-REPL)" t nil)
+
+(autoload 'cider-connect-sibling-cljs "cider" "\
+Create a ClojureScript REPL with the same server as OTHER-REPL.
+Normally this would prompt for the ClojureScript REPL to start (e.g. Node,
+Figwheel, etc), unless you've set `cider-default-cljs-repl'.  OTHER-REPL
+can also be a server buffer, in which case a new session with a REPL for
+that server is created.
+
+\(fn OTHER-REPL)" t nil)
+
+(autoload 'cider-connect-clj "cider" "\
+Initialize a CLJ connection to an nREPL server at HOST and PORT.
+
+\(fn HOST PORT)" t nil)
+
+(autoload 'cider-connect-cljs "cider" "\
+Initialize a CLJS connection to an nREPL server at HOST and PORT.
+
+\(fn HOST PORT)" t nil)
+
+(autoload 'cider-connect-clj&cljs "cider" "\
+Initialize a CLJ and CLJS connection to an nREPL server at HOST and PORT.
+When SOFT-CLJS-START is non-nil, don't start if ClojureScript requirements
+are not met.
+
+\(fn HOST PORT &optional SOFT-CLJS-START)" t nil)
+
+(autoload 'cider "cider" "\
+Start a connection of any type interactively.
+
+\(fn)" t nil)
+
+(defalias 'cider-jack-in #'cider-jack-in-clj)
+
+(defalias 'cider-jack-in-clojure #'cider-jack-in-clj)
+
+(defalias 'cider-jack-in-clojurescript #'cider-jack-in-cljs)
+
+(defalias 'cider-connect #'cider-connect-clj)
+
+(defalias 'cider-connect-clojure #'cider-connect-clj)
+
+(defalias 'cider-connect-clojurescript #'cider-connect-cljs)
+
+(defalias 'cider-connect-sibling-clojure #'cider-connect-sibling-clj)
+
+(defalias 'cider-connect-sibling-clojurescript #'cider-connect-sibling-cljs)
+
+(eval-after-load 'clojure-mode '(progn (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c M-s") #'cider-connect-sibling-clj) (define-key clojure-mode-map (kbd "C-c M-S") #'cider-connect-sibling-cljs) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map)))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider" '("cider-")))
+
+
+
+(autoload 'cider-apropos "cider-apropos" "\
+Show all symbols whose names match QUERY, a regular expression.
+QUERY can also be a list of space-separated words (e.g. take while) which
+will be converted to a regular expression (like take.+while) automatically
+behind the scenes.  The search may be limited to the namespace NS, and may
+optionally search doc strings (based on DOCS-P), include private vars
+\(based on PRIVATES-P), and be case-sensitive (based on CASE-SENSITIVE-P).
+
+\(fn QUERY &optional NS DOCS-P PRIVATES-P CASE-SENSITIVE-P)" t nil)
+
+(autoload 'cider-apropos-documentation "cider-apropos" "\
+Shortcut for (cider-apropos <query> nil t).
+
+\(fn)" t nil)
+
+(autoload 'cider-apropos-select "cider-apropos" "\
+Similar to `cider-apropos', but presents the results in a completing read.
+Show all symbols whose names match QUERY, a regular expression.
+QUERY can also be a list of space-separated words (e.g. take while) which
+will be converted to a regular expression (like take.+while) automatically
+behind the scenes.  The search may be limited to the namespace NS, and may
+optionally search doc strings (based on DOCS-P), include private vars
+\(based on PRIVATES-P), and be case-sensitive (based on CASE-SENSITIVE-P).
+
+\(fn QUERY &optional NS DOCS-P PRIVATES-P CASE-SENSITIVE-P)" t nil)
+
+(autoload 'cider-apropos-documentation-select "cider-apropos" "\
+Shortcut for (cider-apropos-select <query> nil t).
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-apropos" '("apropos-special-form" "cider-")))
+
+
+
+(autoload 'cider-browse-ns "cider-browse-ns" "\
+List all NAMESPACE's vars in BUFFER.
+
+\(fn NAMESPACE)" t nil)
+
+(autoload 'cider-browse-ns-all "cider-browse-ns" "\
+List all loaded namespaces in BUFFER.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-ns" '("cider-browse-ns-")))
+
+
+
+(autoload 'cider-browse-spec "cider-browse-spec" "\
+Browse SPEC definition.
+
+\(fn SPEC)" t nil)
+
+(autoload 'cider-browse-spec-all "cider-browse-spec" "\
+Open list of specs in a popup buffer.
+
+With a prefix argument ARG, prompts for a regexp to filter specs.
+No filter applied if the regexp is the empty string.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-spec" '("cider-")))
+
+
+
+(autoload 'cider-cheatsheet "cider-cheatsheet" "\
+Navigate `cider-cheatsheet-hierarchy' with `completing-read'.
+
+When you make it to a Clojure var its doc buffer gets displayed.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-cheatsheet" '("cider-cheatsheet-")))
+
+
+
+(autoload 'cider-classpath "cider-classpath" "\
+List all classpath entries.
+
+\(fn)" t nil)
+
+(autoload 'cider-open-classpath-entry "cider-classpath" "\
+Open a classpath entry.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-classpath" '("cider-classpath-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-client" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-common" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-completion" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-connection" '("cider-")))
+
+
+
+(autoload 'cider-debug-defun-at-point "cider-debug" "\
+Instrument the \"top-level\" expression at point.
+If it is a defn, dispatch the instrumented definition.  Otherwise,
+immediately evaluate the instrumented expression.
+
+While debugged code is being evaluated, the user is taken through the
+source code and displayed the value of various expressions.  At each step,
+a number of keys will be prompted to the user.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-debug" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-doc" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eldoc" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eval" '("cider-")))
+
+
+
+(autoload 'cider-find-var "cider-find" "\
+Find definition for VAR at LINE.
+Prompt according to prefix ARG and `cider-prompt-for-symbol'.
+A single or double prefix argument inverts the meaning of
+`cider-prompt-for-symbol'.  A prefix of `-` or a double prefix argument causes
+the results to be displayed in a different window.  The default value is
+thing at point.
+
+\(fn &optional ARG VAR LINE)" t nil)
+
+(autoload 'cider-find-dwim "cider-find" "\
+Find and display the SYMBOL-FILE at point.
+SYMBOL-FILE could be a var or a resource.  If thing at point is empty then
+show dired on project.  If var is not found, try to jump to resource of the
+same name.  When called interactively, a prompt is given according to the
+variable `cider-prompt-for-symbol'.  A single or double prefix argument
+inverts the meaning.  A prefix of `-' or a double prefix argument causes
+the results to be displayed in a different window.  A default value of thing
+at point is given when prompted.
+
+\(fn SYMBOL-FILE)" t nil)
+
+(autoload 'cider-find-resource "cider-find" "\
+Find the resource at PATH.
+Prompt for input as indicated by the variable `cider-prompt-for-symbol'.
+A single or double prefix argument inverts the meaning of
+`cider-prompt-for-symbol'.  A prefix argument of `-` or a double prefix
+argument causes the results to be displayed in other window.  The default
+value is thing at point.
+
+\(fn PATH)" t nil)
+
+(autoload 'cider-find-ns "cider-find" "\
+Find the file containing NS.
+A prefix ARG of `-` or a double prefix argument causes
+the results to be displayed in a different window.
+
+\(fn &optional ARG NS)" t nil)
+
+(autoload 'cider-find-keyword "cider-find" "\
+Find the namespace of the keyword at point and its first occurrence there.
+
+For instance - if the keyword at point is \":cider.demo/keyword\", this command
+would find the namespace \"cider.demo\" and afterwards find the first mention
+of \"::keyword\" there.
+
+Prompt according to prefix ARG and `cider-prompt-for-symbol'.
+A single or double prefix argument inverts the meaning of
+`cider-prompt-for-symbol'.  A prefix of `-` or a double prefix argument causes
+the results to be displayed in a different window.  The default value is
+thing at point.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-find" '("cider-")))
+
+
+
+(autoload 'cider-format-region "cider-format" "\
+Format the Clojure code in the current region.
+START and END represent the region's boundaries.
+
+\(fn START END)" t nil)
+
+(autoload 'cider-format-defun "cider-format" "\
+Format the code in the current defun.
+
+\(fn)" t nil)
+
+(autoload 'cider-format-buffer "cider-format" "\
+Format the Clojure code in the current buffer.
+
+\(fn)" t nil)
+
+(autoload 'cider-format-edn-buffer "cider-format" "\
+Format the EDN data in the current buffer.
+
+\(fn)" t nil)
+
+(autoload 'cider-format-edn-region "cider-format" "\
+Format the EDN data in the current region.
+START and END represent the region's boundaries.
+
+\(fn START END)" t nil)
+
+(autoload 'cider-format-edn-last-sexp "cider-format" "\
+Format the EDN data of the last sexp.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-format" '("cider--format-")))
+
+
+
+(autoload 'cider-grimoire-web "cider-grimoire" "\
+Open grimoire documentation in the default web browser.
+
+Prompts for the symbol to use, or uses the symbol at point, depending on
+the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
+opposite of what that option dictates.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'cider-grimoire "cider-grimoire" "\
+Open grimoire documentation in a popup buffer.
+
+Prompts for the symbol to use, or uses the symbol at point, depending on
+the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
+opposite of what that option dictates.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-grimoire" '("cider-")))
+
+
+
+(autoload 'cider-inspect-last-sexp "cider-inspector" "\
+Inspect the result of the the expression preceding point.
+
+\(fn)" t nil)
+
+(autoload 'cider-inspect-defun-at-point "cider-inspector" "\
+Inspect the result of the \"top-level\" expression at point.
+
+\(fn)" t nil)
+
+(autoload 'cider-inspect-last-result "cider-inspector" "\
+Inspect the most recent eval result.
+
+\(fn)" t nil)
+
+(autoload 'cider-inspect "cider-inspector" "\
+Inspect the result of the preceding sexp.
+
+With a prefix argument ARG it inspects the result of the \"top-level\" form.
+With a second prefix argument it prompts for an expression to eval and inspect.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'cider-inspect-expr "cider-inspector" "\
+Evaluate EXPR in NS and inspect its value.
+Interactively, EXPR is read from the minibuffer, and NS the
+current buffer's namespace.
+
+\(fn EXPR NS)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-inspector" '("cider-")))
+
+
+
+(autoload 'cider-macroexpand-1 "cider-macroexpansion" "\
+Invoke \\=`macroexpand-1\\=` on the expression preceding point.
+If invoked with a PREFIX argument, use \\=`macroexpand\\=` instead of
+\\=`macroexpand-1\\=`.
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'cider-macroexpand-all "cider-macroexpansion" "\
+Invoke \\=`macroexpand-all\\=` on the expression preceding point.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-macroexpansion" '("cider-")))
+
+
+
+(defvar cider-mode-line '(:eval (format " cider[%s]" (cider--modeline-info))) "\
+Mode line lighter for cider mode.
+
+The value of this variable is a mode line template as in
+`mode-line-format'.  See Info Node `(elisp)Mode Line Format' for details
+about mode line templates.
+
+Customize this variable to change how cider mode displays its status in the
+mode line.  The default value displays the current connection.  Set this
+variable to nil to disable the mode line entirely.")
+
+(custom-autoload 'cider-mode-line "cider-mode" t)
+
+(eval-after-load 'clojure-mode '(easy-menu-define cider-clojure-mode-menu-open clojure-mode-map "Menu for Clojure mode.\n  This is displayed in `clojure-mode' buffers, if `cider-mode' is not active." `("CIDER" :visible (not cider-mode) ["Start a Clojure REPL" cider-jack-in :help "Starts an nREPL server (with Leiningen, Boot, or Gradle) and connects a REPL to it."] ["Connect to a Clojure REPL" cider-connect :help "Connects to a REPL that's already running."] ["Connect to a ClojureScript REPL" cider-connect-clojurescript :help "Connects to a ClojureScript REPL that's already running."] ["Start a Clojure REPL, and a ClojureScript REPL" cider-jack-in-clojurescript :help "Starts an nREPL server, connects a Clojure REPL to it, and then a ClojureScript REPL."] "--" ["View manual online" cider-view-manual])))
+
+(autoload 'cider-mode "cider-mode" "\
+Minor mode for REPL interaction from a Clojure buffer.
+
+If called interactively, enable Cider mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{cider-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-mode" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-overlays" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-popup" '("cider-")))
+
+
+
+(autoload 'cider-profile-samples "cider-profile" "\
+Displays current max-sample-count.
+If optional QUERY is specified, set max-sample-count and display new value.
+
+\(fn &optional QUERY)" t nil)
+
+(autoload 'cider-profile-var-profiled-p "cider-profile" "\
+Displays the profiling status of var under point.
+Prompts for var if none under point or QUERY is present.
+
+\(fn QUERY)" t nil)
+
+(autoload 'cider-profile-ns-toggle "cider-profile" "\
+Toggle profiling for the ns associated with optional QUERY.
+
+If optional argument QUERY is non-nil, prompt for ns.  Otherwise use
+current ns.
+
+\(fn &optional QUERY)" t nil)
+
+(autoload 'cider-profile-toggle "cider-profile" "\
+Toggle profiling for the given QUERY.
+Defaults to the symbol at point.
+With prefix arg or no symbol at point, prompts for a var.
+
+\(fn QUERY)" t nil)
+
+(autoload 'cider-profile-summary "cider-profile" "\
+Display a summary of currently collected profile data.
+
+\(fn)" t nil)
+
+(autoload 'cider-profile-var-summary "cider-profile" "\
+Display profile data for var under point QUERY.
+Defaults to the symbol at point.  With prefix arg or no symbol at point,
+prompts for a var.
+
+\(fn QUERY)" t nil)
+
+(autoload 'cider-profile-clear "cider-profile" "\
+Clear any collected profile data.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-profile" '("cider-profile-")))
+
+
+
+(autoload 'cider-refresh "cider-refresh" "\
+Reload modified and unloaded namespaces on the classpath.
+
+With a single prefix argument, or if MODE is `refresh-all', reload all
+namespaces on the classpath unconditionally.
+
+With a double prefix argument, or if MODE is `clear', clear the state of
+the namespace tracker before reloading.  This is useful for recovering from
+some classes of error (for example, those caused by circular dependencies)
+that a normal reload would not otherwise recover from.  The trade-off of
+clearing is that stale code from any deleted files may not be completely
+unloaded.
+
+With a negative prefix argument, or if MODE is `inhibit-fns', prevent any
+refresh functions (defined in `cider-refresh-before-fn' and
+`cider-refresh-after-fn') from being invoked.
+
+\(fn &optional MODE)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-refresh" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl" '("cider-")))
+
+
+
+(autoload 'cider-repl-history "cider-repl-history" "\
+Display items in the CIDER command history in another buffer.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl-history" '("cider-repl-history-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-resolve" '("cider-resolve-")))
+
+
+
+(autoload 'cider-scratch "cider-scratch" "\
+Go to the scratch buffer named `cider-scratch-buffer-name'.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-scratch" '("cider-")))
+
+
+
+(autoload 'cider-selector "cider-selector" "\
+Select a new buffer by type, indicated by a single character.
+The user is prompted for a single character indicating the method by
+which to choose a new buffer.  The `?' character describes then
+available methods.  OTHER-WINDOW provides an optional target.
+See `def-cider-selector-method' for defining new methods.
+
+\(fn &optional OTHER-WINDOW)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-selector" '("??" "?c" "?d" "?e" "?m" "?q" "?r" "?s" "?x" "cider-" "def-cider-selector-method")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-stacktrace" '("cider-")))
+
+
+
+(defvar cider-auto-test-mode nil "\
+Non-nil if Cider-Auto-Test mode is enabled.
+See the `cider-auto-test-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `cider-auto-test-mode'.")
+
+(custom-autoload 'cider-auto-test-mode "cider-test" nil)
+
+(autoload 'cider-auto-test-mode "cider-test" "\
+Toggle automatic testing of Clojure files.
+
+If called interactively, enable Cider-Auto-Test mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+When enabled this reruns tests every time a Clojure file is loaded.
+Only runs tests corresponding to the loaded file's namespace and does
+nothing if no tests are defined or if the file failed to load.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-test" '("cider-")))
+
+
+
+(autoload 'cider-toggle-trace-var "cider-tracing" "\
+Toggle var tracing.
+Prompts for the symbol to use, or uses the symbol at point, depending on
+the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
+opposite of what that option dictates.
+
+\(fn ARG)" t nil)
+
+(autoload 'cider-toggle-trace-ns "cider-tracing" "\
+Toggle ns tracing.
+Defaults to the current ns.  With prefix arg QUERY, prompts for a ns.
+
+\(fn QUERY)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-tracing" '("cider-")))
+
+
+
+(autoload 'cider-view-manual "cider-util" "\
+View the manual in your default browser.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-util" '("cider-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-client" '("cider-enlighten-mode" "nrepl-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-dict" '("nrepl-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/typed-clojure-mode-20151003.1122/typed-clojure-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/typed-clojure-mode-20151003.1122/typed-clojure-mode-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "typed-clojure-error-mode" '("typed-clojure-error-mode")))
+
+
+
+(autoload 'typed-clojure-mode "typed-clojure-mode" "\
+The official minor mode for editing Typed Clojure. Provides
+namespace typechecking, error navigation, display of type data,
+and annotation snippets.
+
+If called interactively, enable Typed-Clojure mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{typed-clojure-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "typed-clojure-mode" '("typed-clojure-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/tree-mode-20151104.531/tree-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -1809,68 +2781,6 @@ how ssh X display tunelling interacts with frames on remote displays.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/spinner-1.7.3/spinner-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/spinner-1.7.3/spinner-autoloads.el") (car load-path))))
-
-
-
-(autoload 'spinner-create "spinner" "\
-Create a spinner of the given TYPE.
-The possible TYPEs are described in `spinner--type-to-frames'.
-
-FPS, if given, is the number of desired frames per second.
-Default is `spinner-frames-per-second'.
-
-If BUFFER-LOCAL is non-nil, the spinner will be automatically
-deactivated if the buffer is killed.  If BUFFER-LOCAL is a
-buffer, use that instead of current buffer.
-
-When started, in order to function properly, the spinner runs a
-timer which periodically calls `force-mode-line-update' in the
-curent buffer.  If BUFFER-LOCAL was set at creation time, then
-`force-mode-line-update' is called in that buffer instead.  When
-the spinner is stopped, the timer is deactivated.
-
-DELAY, if given, is the number of seconds to wait after starting
-the spinner before actually displaying it. It is safe to cancel
-the spinner before this time, in which case it won't display at
-all.
-
-\(fn &optional TYPE BUFFER-LOCAL FPS DELAY)" nil nil)
-
-(autoload 'spinner-start "spinner" "\
-Start a mode-line spinner of given TYPE-OR-OBJECT.
-If TYPE-OR-OBJECT is an object created with `make-spinner',
-simply activate it.  This method is designed for minor modes, so
-they can use the spinner as part of their lighter by doing:
-    \\='(:eval (spinner-print THE-SPINNER))
-To stop this spinner, call `spinner-stop' on it.
-
-If TYPE-OR-OBJECT is anything else, a buffer-local spinner is
-created with this type, and it is displayed in the
-`mode-line-process' of the buffer it was created it.  Both
-TYPE-OR-OBJECT and FPS are passed to `make-spinner' (which see).
-To stop this spinner, call `spinner-stop' in the same buffer.
-
-Either way, the return value is a function which can be called
-anywhere to stop this spinner.  You can also call `spinner-stop'
-in the same buffer where the spinner was created.
-
-FPS, if given, is the number of desired frames per second.
-Default is `spinner-frames-per-second'.
-
-DELAY, if given, is the number of seconds to wait until actually
-displaying the spinner. It is safe to cancel the spinner before
-this time, in which case it won't display at all.
-
-\(fn &optional TYPE-OR-OBJECT FPS DELAY)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spinner" '("spinner")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/sotlisp-20180706.1049/sotlisp-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -2470,6 +3380,39 @@ all lines marked for deletion.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/simple-httpd-20180528.903/simple-httpd-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/simple-httpd-20180528.903/simple-httpd-autoloads.el") (car load-path))))
+
+
+
+(autoload 'httpd-start "simple-httpd" "\
+Start the web server process. If the server is already
+running, this will restart the server. There is only one server
+instance per Emacs instance.
+
+\(fn)" t nil)
+
+(autoload 'httpd-stop "simple-httpd" "\
+Stop the web server if it is currently running, otherwise do nothing.
+
+\(fn)" t nil)
+
+(autoload 'httpd-running-p "simple-httpd" "\
+Return non-nil if the simple-httpd server is running.
+
+\(fn)" nil nil)
+
+(autoload 'httpd-serve-directory "simple-httpd" "\
+Start the web server with given `directory' as `httpd-root'.
+
+\(fn DIRECTORY)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "simple-httpd" '("defservlet" "httpd" "with-httpd-buffer")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/signal-20160816.738/signal-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -2619,69 +3562,6 @@ The commands are `shell-command', `shell-command-on-region', `grep',
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "shell-command" '("shell-command" "compile-prompt" "grep-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180628.659/sesman-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180628.659/sesman-autoloads.el") (car load-path))))
-
-
-
-(autoload 'sesman-start "sesman" "\
-Start sesman session.
-
-\(fn)" t nil)
-
-(autoload 'sesman-restart "sesman" "\
-Restart sesman session.
-
-\(fn)" t nil)
-
-(autoload 'sesman-quit "sesman" "\
-Terminate sesman session.
-When WHICH is nil, kill only the current session; when a single
-universal argument or 'linked, kill all linked session; when a
-double universal argument, t or 'all, kill all sessions.
-
-\(fn WHICH)" t nil)
-
-(autoload 'sesman-show-session-info "sesman" "\
-Display session(s) info.
-When WHICH is nil, show info for current session; when a single
-universal argument or 'linked, show info for all linked session;
-when a double universal argument or 'all, show info for all
-sessions.
-
-\(fn WHICH)" t nil)
-
-(autoload 'sesman-show-links "sesman" "\
-Display links active in the current context.
-
-\(fn)" t nil)
-
-(autoload 'sesman-link-with-buffer "sesman" "\
-Associate a session with current buffer.
-
-\(fn)" t nil)
-
-(autoload 'sesman-link-with-directory "sesman" "\
-Associate a session with current directory.
-
-\(fn)" t nil)
-
-(autoload 'sesman-link-with-project "sesman" "\
-Associate a session with current project.
-
-\(fn)" t nil)
-
-(autoload 'sesman-unlink "sesman" "\
-Break any of the previously created links.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman" '("sesman-")))
 
 
 )
@@ -3602,140 +4482,9 @@ Return the number of overlays hidden.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/queue-0.2/queue-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/queue-0.2/queue-autoloads.el") (car load-path))))
-
-
-
-(defalias 'make-queue 'queue-create "\
-Create an empty queue data structure.")
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "queue" '("queue")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el") (car load-path))))
 
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/epl-20180205.1249/epl-autoloads.el"))
-(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/epl-20180205.1249/epl-autoloads.el") (car load-path))))
-
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el"))
-(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el") (car load-path))))
-
-
-(autoload 'pkg-info-library-original-version "pkg-info" "\
-Get the original version in the header of LIBRARY.
-
-The original version is stored in the X-Original-Version header.
-This header is added by the MELPA package archive to preserve
-upstream version numbers.
-
-LIBRARY is either a symbol denoting a named feature, or a library
-name as string.
-
-If SHOW is non-nil, show the version in the minibuffer.
-
-Return the version from the header of LIBRARY as list.  Signal an
-error if the LIBRARY was not found or had no X-Original-Version
-header.
-
-See Info node `(elisp)Library Headers' for more information
-about library headers.
-
-\(fn LIBRARY &optional SHOW)" t nil)
-
-(autoload 'pkg-info-library-version "pkg-info" "\
-Get the version in the header of LIBRARY.
-
-LIBRARY is either a symbol denoting a named feature, or a library
-name as string.
-
-If SHOW is non-nil, show the version in the minibuffer.
-
-Return the version from the header of LIBRARY as list.  Signal an
-error if the LIBRARY was not found or had no proper header.
-
-See Info node `(elisp)Library Headers' for more information
-about library headers.
-
-\(fn LIBRARY &optional SHOW)" t nil)
-
-(autoload 'pkg-info-defining-library-original-version "pkg-info" "\
-Get the original version of the library defining FUNCTION.
-
-The original version is stored in the X-Original-Version header.
-This header is added by the MELPA package archive to preserve
-upstream version numbers.
-
-If SHOW is non-nil, show the version in mini-buffer.
-
-This function is mainly intended to find the version of a major
-or minor mode, i.e.
-
-   (pkg-info-defining-library-version 'flycheck-mode)
-
-Return the version of the library defining FUNCTION.  Signal an
-error if FUNCTION is not a valid function, if its defining
-library was not found, or if the library had no proper version
-header.
-
-\(fn FUNCTION &optional SHOW)" t nil)
-
-(autoload 'pkg-info-defining-library-version "pkg-info" "\
-Get the version of the library defining FUNCTION.
-
-If SHOW is non-nil, show the version in mini-buffer.
-
-This function is mainly intended to find the version of a major
-or minor mode, i.e.
-
-   (pkg-info-defining-library-version 'flycheck-mode)
-
-Return the version of the library defining FUNCTION.  Signal an
-error if FUNCTION is not a valid function, if its defining
-library was not found, or if the library had no proper version
-header.
-
-\(fn FUNCTION &optional SHOW)" t nil)
-
-(autoload 'pkg-info-package-version "pkg-info" "\
-Get the version of an installed PACKAGE.
-
-If SHOW is non-nil, show the version in the minibuffer.
-
-Return the version as list, or nil if PACKAGE is not installed.
-
-\(fn PACKAGE &optional SHOW)" t nil)
-
-(autoload 'pkg-info-version-info "pkg-info" "\
-Obtain complete version info for LIBRARY and PACKAGE.
-
-LIBRARY is a symbol denoting a named feature, or a library name
-as string.  PACKAGE is a symbol denoting an ELPA package.  If
-omitted or nil, default to LIBRARY.
-
-If SHOW is non-nil, show the version in the minibuffer.
-
-When called interactively, prompt for LIBRARY.  When called
-interactively with prefix argument, prompt for PACKAGE as well.
-
-Return a string with complete version information for LIBRARY.
-This version information contains the version from the headers of
-LIBRARY, and the version of the installed PACKAGE, the LIBRARY is
-part of.  If PACKAGE is not installed, or if the PACKAGE version
-is the same as the LIBRARY version, do not include a package
-version.
-
-\(fn LIBRARY &optional PACKAGE SHOW)" t nil)
 
 
 )
@@ -4948,6 +5697,17 @@ on failure, without throwing an error.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/peg-20150707.2341/peg-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/peg-20150707.2341/peg-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "peg" '("peg-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/pcmpl-git-20170120.1659/pcmpl-git-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/pcmpl-git-20170120.1659/pcmpl-git-autoloads.el") (car load-path))))
 
@@ -4965,6 +5725,83 @@ Completion rules for the `git' command.
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/pcmpl-args-20120911.2224/pcmpl-args-autoloads.el") (car load-path))))
 
  (dolist (func '(pcomplete/chgrp pcomplete/chmod pcomplete/chown pcomplete/chroot pcomplete/cp pcomplete/date pcomplete/dd pcomplete/dir pcomplete/echo pcomplete/env pcomplete/false pcomplete/groups pcomplete/id pcomplete/ln pcomplete/ls pcomplete/mv pcomplete/nice pcomplete/nohup pcomplete/printenv pcomplete/printf pcomplete/rm pcomplete/rmdir pcomplete/sort pcomplete/stat pcomplete/test pcomplete/true pcomplete/vdir pcomplete/basename pcomplete/cat pcomplete/cksum pcomplete/comm pcomplete/csplit pcomplete/cut pcomplete/df pcomplete/dircolors pcomplete/dirname pcomplete/du pcomplete/expand pcomplete/expr pcomplete/factor pcomplete/fmt pcomplete/fold pcomplete/head pcomplete/hostid pcomplete/install pcomplete/join pcomplete/link pcomplete/logname pcomplete/md5sum pcomplete/mkdir pcomplete/mkfifo pcomplete/mknod pcomplete/mktemp pcomplete/nl pcomplete/od pcomplete/paste pcomplete/pathchk pcomplete/pinky pcomplete/pr pcomplete/ptx pcomplete/pwd pcomplete/readlink pcomplete/seq pcomplete/sha1sum pcomplete/shred pcomplete/sleep pcomplete/split pcomplete/stty pcomplete/sum pcomplete/sync pcomplete/tac pcomplete/tail pcomplete/tee pcomplete/touch pcomplete/tr pcomplete/tsort pcomplete/tty pcomplete/uname pcomplete/unexpand pcomplete/uniq pcomplete/unlink pcomplete/users pcomplete/wc pcomplete/whoami pcomplete/who pcomplete/yes pcomplete/man pcomplete/info pcomplete/find pcomplete/command pcomplete/time pcomplete/which pcomplete/coproc pcomplete/do pcomplete/elif pcomplete/else pcomplete/exec pcomplete/if pcomplete/then pcomplete/until pcomplete/whatis pcomplete/whence pcomplete/where pcomplete/whereis pcomplete/while pcomplete/gzip pcomplete/bzip2 pcomplete/xz pcomplete/tar pcomplete/perl pcomplete/python pcomplete/bzr pcomplete/hg pcomplete/git pcomplete/etags pcomplete/ctags pcomplete/ctags-exuberant pcomplete/cmp pcomplete/curl pcomplete/dict pcomplete/enscript pcomplete/gcc pcomplete/gdb pcomplete/gprof pcomplete/grep pcomplete/egrep pcomplete/fgrep pcomplete/rgrep pcomplete/make pcomplete/rsync pcomplete/sudo pcomplete/vlc pcomplete/xargs pcomplete/configure pcomplete/nosetests pcomplete/a2ps pcomplete/ack-grep pcomplete/agrep pcomplete/automake pcomplete/awk pcomplete/bash pcomplete/bc pcomplete/bison pcomplete/cal pcomplete/dc pcomplete/diff pcomplete/emacs pcomplete/gawk pcomplete/gperf pcomplete/indent pcomplete/locate pcomplete/ld pcomplete/ldd pcomplete/m4 pcomplete/ncal pcomplete/netstat pcomplete/nm pcomplete/objcopy pcomplete/objdump pcomplete/patch pcomplete/pgrep pcomplete/ps pcomplete/readelf pcomplete/sed pcomplete/shar pcomplete/strip pcomplete/texindex pcomplete/traceroute pcomplete/wget)) (autoload func "pcmpl-args"))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/a-20170720.553/a-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/a-20170720.553/a-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "a" '("a-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/parseclj-20180602.1306/parseclj-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/parseclj-20180602.1306/parseclj-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj" '("parseclj-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-ast" '("parseclj-ast-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-lex" '("parseclj-lex-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parseclj-parser" '("parseclj-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/parinfer-20180226.2134/parinfer-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/parinfer-20180226.2134/parinfer-autoloads.el") (car load-path))))
+
+
+
+(autoload 'parinfer-mode "parinfer" "\
+Parinfer mode.
+
+If called interactively, enable Parinfer mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'parinfer-region-mode "parinfer" "\
+Available when region is active.
+
+If called interactively, enable Parinfer-Region mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parinfer" '("parinfer-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parinfer-ext" '("parinfer-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "parinferlib" '("parinferlib-")))
+
+
 
 
 )
@@ -5103,754 +5940,6 @@ Major mode for opencl kernel editing
 \(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "opencl-mode" '("opencl-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180703.829/clojure-mode-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180703.829/clojure-mode-autoloads.el") (car load-path))))
-
-
-
-(autoload 'clojure-mode "clojure-mode" "\
-Major mode for editing Clojure code.
-
-\\{clojure-mode-map}
-
-\(fn)" t nil)
-
-(autoload 'clojure-unwind "clojure-mode" "\
-Unwind thread at point or above point by one level.
-Return nil if there are no more levels to unwind.
-
-\(fn)" t nil)
-
-(autoload 'clojure-unwind-all "clojure-mode" "\
-Fully unwind thread at point or above point.
-
-\(fn)" t nil)
-
-(autoload 'clojure-thread "clojure-mode" "\
-Thread by one more level an existing threading macro.
-
-\(fn)" t nil)
-
-(autoload 'clojure-thread-first-all "clojure-mode" "\
-Fully thread the form at point using ->.
-
-When BUT-LAST is non-nil, the last expression is not threaded.
-Default value is `clojure-thread-all-but-last'.
-
-\(fn BUT-LAST)" t nil)
-
-(autoload 'clojure-thread-last-all "clojure-mode" "\
-Fully thread the form at point using ->>.
-
-When BUT-LAST is non-nil, the last expression is not threaded.
-Default value is `clojure-thread-all-but-last'.
-
-\(fn BUT-LAST)" t nil)
-
-(autoload 'clojure-cycle-privacy "clojure-mode" "\
-Make public the current private def, or vice-versa.
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-privacy
-
-\(fn)" t nil)
-
-(autoload 'clojure-convert-collection-to-list "clojure-mode" "\
-Convert collection at (point) to list.
-
-\(fn)" t nil)
-
-(autoload 'clojure-convert-collection-to-quoted-list "clojure-mode" "\
-Convert collection at (point) to quoted list.
-
-\(fn)" t nil)
-
-(autoload 'clojure-convert-collection-to-map "clojure-mode" "\
-Convert collection at (point) to map.
-
-\(fn)" t nil)
-
-(autoload 'clojure-convert-collection-to-vector "clojure-mode" "\
-Convert collection at (point) to vector.
-
-\(fn)" t nil)
-
-(autoload 'clojure-convert-collection-to-set "clojure-mode" "\
-Convert collection at (point) to set.
-
-\(fn)" t nil)
-
-(autoload 'clojure-cycle-if "clojure-mode" "\
-Change a surrounding if to if-not, or vice-versa.
-
-See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-if
-
-\(fn)" t nil)
-
-(autoload 'clojure-cycle-when "clojure-mode" "\
-Change a surrounding when to when-not, or vice-versa.
-
-\(fn)" t nil)
-
-(autoload 'clojure-let-backward-slurp-sexp "clojure-mode" "\
-Slurp the s-expression before the let form into the let form.
-With a numberic prefix argument slurp the previous N s-expression into the let form.
-
-\(fn &optional N)" t nil)
-
-(autoload 'clojure-let-forward-slurp-sexp "clojure-mode" "\
-Slurp the next s-expression after the let form into the let form.
-With a numeric prefix argument slurp the next N s-expressions into the let form.
-
-\(fn &optional N)" t nil)
-
-(autoload 'clojure-introduce-let "clojure-mode" "\
-Create a let form, binding the form at point.
-With a numeric prefix argument the let is introduced N lists up.
-
-\(fn &optional N)" t nil)
-
-(autoload 'clojure-move-to-let "clojure-mode" "\
-Move the form at point to a binding in the nearest let.
-
-\(fn)" t nil)
-
-(autoload 'clojurescript-mode "clojure-mode" "\
-Major mode for editing ClojureScript code.
-
-\\{clojurescript-mode-map}
-
-\(fn)" t nil)
-
-(autoload 'clojurec-mode "clojure-mode" "\
-Major mode for editing ClojureC code.
-
-\\{clojurec-mode-map}
-
-\(fn)" t nil)
-
-(add-to-list 'auto-mode-alist '("\\.\\(clj\\|dtm\\|edn\\)\\'" . clojure-mode))
-
-(add-to-list 'auto-mode-alist '("\\.cljc\\'" . clojurec-mode))
-
-(add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojurescript-mode))
-
-(add-to-list 'auto-mode-alist '("\\(?:build\\|profile\\)\\.boot\\'" . clojure-mode))
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-mode" '("add-custom-clojure-indents" "clojure" "define-clojure-indent" "put-clojure-indent")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180705.2320/cider-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180705.2320/cider-autoloads.el") (car load-path))))
-
-
-
-(autoload 'cider-version "cider" "\
-Display CIDER's version.
-
-\(fn)" t nil)
-
-(autoload 'cider-jack-in-clj "cider" "\
-Start an nREPL server for the current project and connect to it.
-Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
-
-\(fn &optional DO-PROMPT)" t nil)
-
-(autoload 'cider-jack-in-cljs "cider" "\
-Start an nREPL server for the current project and connect to it.
-Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
-
-\(fn &optional DO-PROMPT)" t nil)
-
-(autoload 'cider-jack-in-clj&cljs "cider" "\
-Start an nREPL server and connect with clj and cljs REPLs.
-Prompt for the project and nREPL server command when DO-PROMPT is non-nil.
-When SOFT-CLJS-START is non-nil, start cljs REPL only when the
-ClojureScript dependencies are met.
-
-\(fn &optional DO-PROMPT SOFT-CLJS-START)" t nil)
-
-(autoload 'cider-connect-sibling-clj "cider" "\
-Create a Clojure REPL with the same server as OTHER-REPL.
-OTHER-REPL can also be a server buffer, in which case a new session with a
-REPL for that server is created.
-
-\(fn OTHER-REPL)" t nil)
-
-(autoload 'cider-connect-sibling-cljs "cider" "\
-Create a ClojureScript REPL with the same server as OTHER-REPL.
-Normally this would prompt for the ClojureScript REPL to start (e.g. Node,
-Figwheel, etc), unless you've set `cider-default-cljs-repl'.  OTHER-REPL
-can also be a server buffer, in which case a new session with a REPL for
-that server is created.
-
-\(fn OTHER-REPL)" t nil)
-
-(autoload 'cider-connect-clj "cider" "\
-Initialize a CLJ connection to an nREPL server at HOST and PORT.
-
-\(fn HOST PORT)" t nil)
-
-(autoload 'cider-connect-cljs "cider" "\
-Initialize a CLJS connection to an nREPL server at HOST and PORT.
-
-\(fn HOST PORT)" t nil)
-
-(autoload 'cider-connect-clj&cljs "cider" "\
-Initialize a CLJ and CLJS connection to an nREPL server at HOST and PORT.
-When SOFT-CLJS-START is non-nil, don't start if ClojureScript requirements
-are not met.
-
-\(fn HOST PORT &optional SOFT-CLJS-START)" t nil)
-
-(autoload 'cider "cider" "\
-Start a connection of any type interactively.
-
-\(fn)" t nil)
-
-(defalias 'cider-jack-in #'cider-jack-in-clj)
-
-(defalias 'cider-jack-in-clojure #'cider-jack-in-clj)
-
-(defalias 'cider-jack-in-clojurescript #'cider-jack-in-cljs)
-
-(defalias 'cider-connect #'cider-connect-clj)
-
-(defalias 'cider-connect-clojure #'cider-connect-clj)
-
-(defalias 'cider-connect-clojurescript #'cider-connect-cljs)
-
-(defalias 'cider-connect-sibling-clojure #'cider-connect-sibling-clj)
-
-(defalias 'cider-connect-sibling-clojurescript #'cider-connect-sibling-cljs)
-
-(eval-after-load 'clojure-mode '(progn (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c M-s") #'cider-connect-sibling-clj) (define-key clojure-mode-map (kbd "C-c M-S") #'cider-connect-sibling-cljs) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map)))
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider" '("cider-")))
-
-
-
-(autoload 'cider-apropos "cider-apropos" "\
-Show all symbols whose names match QUERY, a regular expression.
-QUERY can also be a list of space-separated words (e.g. take while) which
-will be converted to a regular expression (like take.+while) automatically
-behind the scenes.  The search may be limited to the namespace NS, and may
-optionally search doc strings (based on DOCS-P), include private vars
-\(based on PRIVATES-P), and be case-sensitive (based on CASE-SENSITIVE-P).
-
-\(fn QUERY &optional NS DOCS-P PRIVATES-P CASE-SENSITIVE-P)" t nil)
-
-(autoload 'cider-apropos-documentation "cider-apropos" "\
-Shortcut for (cider-apropos <query> nil t).
-
-\(fn)" t nil)
-
-(autoload 'cider-apropos-select "cider-apropos" "\
-Similar to `cider-apropos', but presents the results in a completing read.
-Show all symbols whose names match QUERY, a regular expression.
-QUERY can also be a list of space-separated words (e.g. take while) which
-will be converted to a regular expression (like take.+while) automatically
-behind the scenes.  The search may be limited to the namespace NS, and may
-optionally search doc strings (based on DOCS-P), include private vars
-\(based on PRIVATES-P), and be case-sensitive (based on CASE-SENSITIVE-P).
-
-\(fn QUERY &optional NS DOCS-P PRIVATES-P CASE-SENSITIVE-P)" t nil)
-
-(autoload 'cider-apropos-documentation-select "cider-apropos" "\
-Shortcut for (cider-apropos-select <query> nil t).
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-apropos" '("apropos-special-form" "cider-")))
-
-
-
-(autoload 'cider-browse-ns "cider-browse-ns" "\
-List all NAMESPACE's vars in BUFFER.
-
-\(fn NAMESPACE)" t nil)
-
-(autoload 'cider-browse-ns-all "cider-browse-ns" "\
-List all loaded namespaces in BUFFER.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-ns" '("cider-browse-ns-")))
-
-
-
-(autoload 'cider-browse-spec "cider-browse-spec" "\
-Browse SPEC definition.
-
-\(fn SPEC)" t nil)
-
-(autoload 'cider-browse-spec-all "cider-browse-spec" "\
-Open list of specs in a popup buffer.
-
-With a prefix argument ARG, prompts for a regexp to filter specs.
-No filter applied if the regexp is the empty string.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-browse-spec" '("cider-")))
-
-
-
-(autoload 'cider-cheatsheet "cider-cheatsheet" "\
-Navigate `cider-cheatsheet-hierarchy' with `completing-read'.
-
-When you make it to a Clojure var its doc buffer gets displayed.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-cheatsheet" '("cider-cheatsheet-")))
-
-
-
-(autoload 'cider-classpath "cider-classpath" "\
-List all classpath entries.
-
-\(fn)" t nil)
-
-(autoload 'cider-open-classpath-entry "cider-classpath" "\
-Open a classpath entry.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-classpath" '("cider-classpath-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-client" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-common" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-completion" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-connection" '("cider-")))
-
-
-
-(autoload 'cider-debug-defun-at-point "cider-debug" "\
-Instrument the \"top-level\" expression at point.
-If it is a defn, dispatch the instrumented definition.  Otherwise,
-immediately evaluate the instrumented expression.
-
-While debugged code is being evaluated, the user is taken through the
-source code and displayed the value of various expressions.  At each step,
-a number of keys will be prompted to the user.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-debug" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-doc" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eldoc" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-eval" '("cider-")))
-
-
-
-(autoload 'cider-find-var "cider-find" "\
-Find definition for VAR at LINE.
-Prompt according to prefix ARG and `cider-prompt-for-symbol'.
-A single or double prefix argument inverts the meaning of
-`cider-prompt-for-symbol'.  A prefix of `-` or a double prefix argument causes
-the results to be displayed in a different window.  The default value is
-thing at point.
-
-\(fn &optional ARG VAR LINE)" t nil)
-
-(autoload 'cider-find-dwim "cider-find" "\
-Find and display the SYMBOL-FILE at point.
-SYMBOL-FILE could be a var or a resource.  If thing at point is empty then
-show dired on project.  If var is not found, try to jump to resource of the
-same name.  When called interactively, a prompt is given according to the
-variable `cider-prompt-for-symbol'.  A single or double prefix argument
-inverts the meaning.  A prefix of `-' or a double prefix argument causes
-the results to be displayed in a different window.  A default value of thing
-at point is given when prompted.
-
-\(fn SYMBOL-FILE)" t nil)
-
-(autoload 'cider-find-resource "cider-find" "\
-Find the resource at PATH.
-Prompt for input as indicated by the variable `cider-prompt-for-symbol'.
-A single or double prefix argument inverts the meaning of
-`cider-prompt-for-symbol'.  A prefix argument of `-` or a double prefix
-argument causes the results to be displayed in other window.  The default
-value is thing at point.
-
-\(fn PATH)" t nil)
-
-(autoload 'cider-find-ns "cider-find" "\
-Find the file containing NS.
-A prefix ARG of `-` or a double prefix argument causes
-the results to be displayed in a different window.
-
-\(fn &optional ARG NS)" t nil)
-
-(autoload 'cider-find-keyword "cider-find" "\
-Find the namespace of the keyword at point and its first occurrence there.
-
-For instance - if the keyword at point is \":cider.demo/keyword\", this command
-would find the namespace \"cider.demo\" and afterwards find the first mention
-of \"::keyword\" there.
-
-Prompt according to prefix ARG and `cider-prompt-for-symbol'.
-A single or double prefix argument inverts the meaning of
-`cider-prompt-for-symbol'.  A prefix of `-` or a double prefix argument causes
-the results to be displayed in a different window.  The default value is
-thing at point.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-find" '("cider-")))
-
-
-
-(autoload 'cider-format-region "cider-format" "\
-Format the Clojure code in the current region.
-START and END represent the region's boundaries.
-
-\(fn START END)" t nil)
-
-(autoload 'cider-format-defun "cider-format" "\
-Format the code in the current defun.
-
-\(fn)" t nil)
-
-(autoload 'cider-format-buffer "cider-format" "\
-Format the Clojure code in the current buffer.
-
-\(fn)" t nil)
-
-(autoload 'cider-format-edn-buffer "cider-format" "\
-Format the EDN data in the current buffer.
-
-\(fn)" t nil)
-
-(autoload 'cider-format-edn-region "cider-format" "\
-Format the EDN data in the current region.
-START and END represent the region's boundaries.
-
-\(fn START END)" t nil)
-
-(autoload 'cider-format-edn-last-sexp "cider-format" "\
-Format the EDN data of the last sexp.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-format" '("cider--format-")))
-
-
-
-(autoload 'cider-grimoire-web "cider-grimoire" "\
-Open grimoire documentation in the default web browser.
-
-Prompts for the symbol to use, or uses the symbol at point, depending on
-the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
-opposite of what that option dictates.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'cider-grimoire "cider-grimoire" "\
-Open grimoire documentation in a popup buffer.
-
-Prompts for the symbol to use, or uses the symbol at point, depending on
-the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
-opposite of what that option dictates.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-grimoire" '("cider-")))
-
-
-
-(autoload 'cider-inspect-last-sexp "cider-inspector" "\
-Inspect the result of the the expression preceding point.
-
-\(fn)" t nil)
-
-(autoload 'cider-inspect-defun-at-point "cider-inspector" "\
-Inspect the result of the \"top-level\" expression at point.
-
-\(fn)" t nil)
-
-(autoload 'cider-inspect-last-result "cider-inspector" "\
-Inspect the most recent eval result.
-
-\(fn)" t nil)
-
-(autoload 'cider-inspect "cider-inspector" "\
-Inspect the result of the preceding sexp.
-
-With a prefix argument ARG it inspects the result of the \"top-level\" form.
-With a second prefix argument it prompts for an expression to eval and inspect.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'cider-inspect-expr "cider-inspector" "\
-Evaluate EXPR in NS and inspect its value.
-Interactively, EXPR is read from the minibuffer, and NS the
-current buffer's namespace.
-
-\(fn EXPR NS)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-inspector" '("cider-")))
-
-
-
-(autoload 'cider-macroexpand-1 "cider-macroexpansion" "\
-Invoke \\=`macroexpand-1\\=` on the expression preceding point.
-If invoked with a PREFIX argument, use \\=`macroexpand\\=` instead of
-\\=`macroexpand-1\\=`.
-
-\(fn &optional PREFIX)" t nil)
-
-(autoload 'cider-macroexpand-all "cider-macroexpansion" "\
-Invoke \\=`macroexpand-all\\=` on the expression preceding point.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-macroexpansion" '("cider-")))
-
-
-
-(defvar cider-mode-line '(:eval (format " cider[%s]" (cider--modeline-info))) "\
-Mode line lighter for cider mode.
-
-The value of this variable is a mode line template as in
-`mode-line-format'.  See Info Node `(elisp)Mode Line Format' for details
-about mode line templates.
-
-Customize this variable to change how cider mode displays its status in the
-mode line.  The default value displays the current connection.  Set this
-variable to nil to disable the mode line entirely.")
-
-(custom-autoload 'cider-mode-line "cider-mode" t)
-
-(eval-after-load 'clojure-mode '(easy-menu-define cider-clojure-mode-menu-open clojure-mode-map "Menu for Clojure mode.\n  This is displayed in `clojure-mode' buffers, if `cider-mode' is not active." `("CIDER" :visible (not cider-mode) ["Start a Clojure REPL" cider-jack-in :help "Starts an nREPL server (with Leiningen, Boot, or Gradle) and connects a REPL to it."] ["Connect to a Clojure REPL" cider-connect :help "Connects to a REPL that's already running."] ["Connect to a ClojureScript REPL" cider-connect-clojurescript :help "Connects to a ClojureScript REPL that's already running."] ["Start a Clojure REPL, and a ClojureScript REPL" cider-jack-in-clojurescript :help "Starts an nREPL server, connects a Clojure REPL to it, and then a ClojureScript REPL."] "--" ["View manual online" cider-view-manual])))
-
-(autoload 'cider-mode "cider-mode" "\
-Minor mode for REPL interaction from a Clojure buffer.
-
-If called interactively, enable Cider mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
-\\{cider-mode-map}
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-mode" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-overlays" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-popup" '("cider-")))
-
-
-
-(autoload 'cider-profile-samples "cider-profile" "\
-Displays current max-sample-count.
-If optional QUERY is specified, set max-sample-count and display new value.
-
-\(fn &optional QUERY)" t nil)
-
-(autoload 'cider-profile-var-profiled-p "cider-profile" "\
-Displays the profiling status of var under point.
-Prompts for var if none under point or QUERY is present.
-
-\(fn QUERY)" t nil)
-
-(autoload 'cider-profile-ns-toggle "cider-profile" "\
-Toggle profiling for the ns associated with optional QUERY.
-
-If optional argument QUERY is non-nil, prompt for ns.  Otherwise use
-current ns.
-
-\(fn &optional QUERY)" t nil)
-
-(autoload 'cider-profile-toggle "cider-profile" "\
-Toggle profiling for the given QUERY.
-Defaults to the symbol at point.
-With prefix arg or no symbol at point, prompts for a var.
-
-\(fn QUERY)" t nil)
-
-(autoload 'cider-profile-summary "cider-profile" "\
-Display a summary of currently collected profile data.
-
-\(fn)" t nil)
-
-(autoload 'cider-profile-var-summary "cider-profile" "\
-Display profile data for var under point QUERY.
-Defaults to the symbol at point.  With prefix arg or no symbol at point,
-prompts for a var.
-
-\(fn QUERY)" t nil)
-
-(autoload 'cider-profile-clear "cider-profile" "\
-Clear any collected profile data.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-profile" '("cider-profile-")))
-
-
-
-(autoload 'cider-refresh "cider-refresh" "\
-Reload modified and unloaded namespaces on the classpath.
-
-With a single prefix argument, or if MODE is `refresh-all', reload all
-namespaces on the classpath unconditionally.
-
-With a double prefix argument, or if MODE is `clear', clear the state of
-the namespace tracker before reloading.  This is useful for recovering from
-some classes of error (for example, those caused by circular dependencies)
-that a normal reload would not otherwise recover from.  The trade-off of
-clearing is that stale code from any deleted files may not be completely
-unloaded.
-
-With a negative prefix argument, or if MODE is `inhibit-fns', prevent any
-refresh functions (defined in `cider-refresh-before-fn' and
-`cider-refresh-after-fn') from being invoked.
-
-\(fn &optional MODE)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-refresh" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl" '("cider-")))
-
-
-
-(autoload 'cider-repl-history "cider-repl-history" "\
-Display items in the CIDER command history in another buffer.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-repl-history" '("cider-repl-history-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-resolve" '("cider-resolve-")))
-
-
-
-(autoload 'cider-scratch "cider-scratch" "\
-Go to the scratch buffer named `cider-scratch-buffer-name'.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-scratch" '("cider-")))
-
-
-
-(autoload 'cider-selector "cider-selector" "\
-Select a new buffer by type, indicated by a single character.
-The user is prompted for a single character indicating the method by
-which to choose a new buffer.  The `?' character describes then
-available methods.  OTHER-WINDOW provides an optional target.
-See `def-cider-selector-method' for defining new methods.
-
-\(fn &optional OTHER-WINDOW)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-selector" '("??" "?c" "?d" "?e" "?m" "?q" "?r" "?s" "?x" "cider-" "def-cider-selector-method")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-stacktrace" '("cider-")))
-
-
-
-(defvar cider-auto-test-mode nil "\
-Non-nil if Cider-Auto-Test mode is enabled.
-See the `cider-auto-test-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `cider-auto-test-mode'.")
-
-(custom-autoload 'cider-auto-test-mode "cider-test" nil)
-
-(autoload 'cider-auto-test-mode "cider-test" "\
-Toggle automatic testing of Clojure files.
-
-If called interactively, enable Cider-Auto-Test mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
-When enabled this reruns tests every time a Clojure file is loaded.
-Only runs tests corresponding to the loaded file's namespace and does
-nothing if no tests are defined or if the file failed to load.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-test" '("cider-")))
-
-
-
-(autoload 'cider-toggle-trace-var "cider-tracing" "\
-Toggle var tracing.
-Prompts for the symbol to use, or uses the symbol at point, depending on
-the value of `cider-prompt-for-symbol'.  With prefix arg ARG, does the
-opposite of what that option dictates.
-
-\(fn ARG)" t nil)
-
-(autoload 'cider-toggle-trace-ns "cider-tracing" "\
-Toggle ns tracing.
-Defaults to the current ns.  With prefix arg QUERY, prompts for a ns.
-
-\(fn QUERY)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-tracing" '("cider-")))
-
-
-
-(autoload 'cider-view-manual "cider-util" "\
-View the manual in your default browser.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider-util" '("cider-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-client" '("cider-enlighten-mode" "nrepl-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nrepl-dict" '("nrepl-")))
-
-
 
 
 )
@@ -7658,10 +7747,10 @@ Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180706.946/helm-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180707.54/helm-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180706.946/helm-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180707.54/helm-autoloads.el") (car load-path))))
 
 
 
@@ -10440,6 +10529,31 @@ Display inline docs FORMAT-STRING under point with extra ARGS.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/inflections-20170913.216/inflections-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/inflections-20170913.216/inflections-autoloads.el") (car load-path))))
+
+
+
+(autoload 'inflection-singularize-string "inflections" "\
+Return the singularized version of STR.
+
+\(fn STR)" nil nil)
+
+(define-obsolete-function-alias 'singularize-string 'inflection-singularize-string)
+
+(autoload 'inflection-pluralize-string "inflections" "\
+Return the pluralized version of STR.
+
+\(fn STR)" nil nil)
+
+(define-obsolete-function-alias 'pluralize-string 'inflection-pluralize-string)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inflections" '("define-inflectors" "inflection-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/inf-clojure-20180402.1403/inf-clojure-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -11269,6 +11383,113 @@ the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "highlight-defined" '("highlight-defined--")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/edn-20160215.419/edn-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/edn-20160215.419/edn-autoloads.el") (car load-path))))
+
+
+
+(autoload 'edn-time-to-inst "edn" "\
+Turn a `time-date' TIME into our internal representation of an inst.
+
+\(fn TIME)" nil nil)
+
+(autoload 'edn-inst-to-time "edn" "\
+Turn an `edn-inst', INST, into a TIME from `time-date'.
+
+\(fn INST)" nil nil)
+
+(autoload 'edn-string-to-uuid "edn" "\
+Create an `edn-uuid' from a string, S, containing a uuid.
+
+\(fn S)" nil nil)
+
+(autoload 'edn-uuid-to-string "edn" "\
+Turn our internal representation of a UUID into a string.
+
+\(fn UUID)" nil nil)
+
+(autoload 'edn-read "edn" "\
+Read one edn value from SOURCE.
+
+SOURCE is either a string of edn data or nil.  If no source is
+given the next edn value will be read from POINT in the current
+buffer.
+
+You can use `edn-add-reader' to add your own readers for unknown
+tags.
+
+\(fn &optional SOURCE)" nil nil)
+
+(autoload 'edn-list-to-set "edn" "\
+Turn a list into `edn''s internal set representation.
+
+If COMPARE-FN is provided this function is used to uniquify the
+list.  Otherwise it's expected that l is without duplicates.
+
+\(fn L &optional COMPARE-FN)" nil nil)
+
+(autoload 'edn-set-to-list "edn" "\
+Turn `edn''s internal set representation into a list.
+
+\(fn S)" nil nil)
+
+(autoload 'edn-add-reader "edn" "\
+Add a READER function for TAG.
+
+TAG is either a string, symbol or keyword. e.g. :my/type
+
+\(fn TAG READER)" nil nil)
+
+(autoload 'edn-add-writer "edn" "\
+Add a WRITER function for types satisfying PRED.
+
+\(fn PRED WRITER)" nil nil)
+
+(autoload 'edn-remove-reader "edn" "\
+Remove a previously registered handler for TAG.
+
+\(fn TAG)" nil nil)
+
+(autoload 'edn-remove-writer "edn" "\
+The remove the writer WRITER.
+
+\(fn WRITER)" nil nil)
+
+(autoload 'edn-print-string "edn" "\
+Serialize the lisp form DATUM into edn.
+
+You can use `edn-add-writer' to add writers capable of writing
+your own tagged data.
+
+\(fn DATUM)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "edn" '("edn--" "hash-table-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-clojuredocs-20160405.23/helm-clojuredocs-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-clojuredocs-20160405.23/helm-clojuredocs-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-clojuredocs "helm-clojuredocs" "\
+Preconfigured `helm' for searching in clojuredocs.org
+
+\(fn)" t nil)
+
+(autoload 'helm-clojuredocs-at-point "helm-clojuredocs" "\
+Preconfigured `helm' for searching in clojuredocs.org with symbol at point
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-clojuredocs" '("helm-")))
 
 
 )
@@ -13372,6 +13593,253 @@ See `eldoc-overlay-mode' for more information on Eldoc-Overlay mode.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/el-autoyas-20120918.617/el-autoyas-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/el-autoyas-20120918.617/el-autoyas-autoloads.el") (car load-path))))
+
+
+
+(autoload 'el-autoyas-enable "el-autoyas" "\
+Load and activate package.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-autoyas" '("el-autoyas-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clomacs-20180628.750/clomacs-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clomacs-20180628.750/clomacs-autoloads.el") (car load-path))))
+
+
+
+(autoload 'clomacs-def "clomacs" "\
+Wrap CL-ENTITY-NAME, evaluated on clojure side by EL-ENTITY-NAME.
+DOC - optional elisp function docstring (when nil it constructed from
+underlying clojure entity docstring if possible).
+TYPE possible values are listed in the CLOMACS-POSSIBLE-RETURN-TYPES,
+or it may be a custom function (:string by default).
+
+\(fn EL-ENTITY-NAME CL-ENTITY-NAME &key (DOC nil) (TYPE :string) LIB-NAME NAMESPACE)" nil t)
+
+(autoload 'clomacs-defun "clomacs" "\
+Wrap CL-FUNC-NAME, evaluated on clojure side by EL-FUNC-NAME.
+CALL-TYPE - call Clojure side :sync or :async.
+CALLBACK - callback function for :async CALL-TYPE case.
+DOC - optional elisp function docstring (when nil it constructed from
+underlying clojure entity docstring if possible).
+RETURN-TYPE possible values are listed in the CLOMACS-POSSIBLE-RETURN-TYPES,
+or it may be a custom function (:string by default).
+RETURN-VALUE may be :value or :stdout (:value by default).
+HTTPD-STARTER - in the case Clojure side code needs to call Elisp side code,
+http-server should be started to pass http requests from Clojure REPL
+to Emacs. This parameter is Elisp function to do it. Such function can
+looks like `clomacs-httpd-start'.
+
+\(fn EL-FUNC-NAME CL-FUNC-NAME &key (CALL-TYPE :sync) (CALLBACK nil) (DOC nil) (RETURN-TYPE :string) (RETURN-VALUE :value) LIB-NAME NAMESPACE (HTTPD-STARTER nil))" nil t)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clomacs" '("clomacs-" "execute")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-autoloads.el"))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-autoloads.el") (car load-path))))
+
+
+(autoload 'auto-complete "auto-complete" "\
+Start auto-completion at current point.
+
+\(fn &optional SOURCES)" t nil)
+
+(autoload 'auto-complete-mode "auto-complete" "\
+AutoComplete mode
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-auto-complete-mode nil "\
+Non-nil if Global Auto-Complete mode is enabled.
+See the `global-auto-complete-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-auto-complete-mode'.")
+
+(custom-autoload 'global-auto-complete-mode "auto-complete" nil)
+
+(autoload 'global-auto-complete-mode "auto-complete" "\
+Toggle Auto-Complete mode in all buffers.
+With prefix ARG, enable Global Auto-Complete mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Auto-Complete mode is enabled in all buffers where
+`auto-complete-mode-maybe' would do it.
+See `auto-complete-mode' for more information on Auto-Complete mode.
+
+\(fn &optional ARG)" t nil)
+
+
+
+(autoload 'ac-config-default "auto-complete-config" "\
+
+
+\(fn)" nil nil)
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/direx-20170422.627/direx-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/direx-20170422.627/direx-autoloads.el") (car load-path))))
+
+
+
+(autoload 'direx:jump-to-directory "direx" "\
+
+
+\(fn)" t nil)
+
+(autoload 'direx:jump-to-directory-other-window "direx" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "direx" '("direx:")))
+
+
+
+(autoload 'direx-project:jump-to-project-root "direx-project" "\
+
+
+\(fn)" t nil)
+
+(autoload 'direx-project:jump-to-project-root-other-window "direx-project" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "direx-project" '("direx-project:")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ejc-sql-20180701.1105/ejc-sql-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ejc-sql-20180701.1105/ejc-sql-autoloads.el") (car load-path))))
+
+
+
+(autoload 'ejc-owners-candidates "ejc-autocomplete" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'ejc-tables-candidates "ejc-autocomplete" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'ejc-colomns-candidates "ejc-autocomplete" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'ejc-ac-setup "ejc-autocomplete" "\
+Add the completion sources to the front of `ac-sources'.
+This affects only the current buffer.
+
+Check against following cases:
+prefix-2.prefix-1.#
+prefix-1.#
+something#
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-autocomplete" '("ac-" "ejc-")))
+
+
+
+(autoload 'ejc-direx:pop-to-buffer "ejc-direx" "\
+
+
+\(fn)" t nil)
+
+(autoload 'ejc-direx:switch-to-buffer "ejc-direx" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-direx" '("direx" "ejc-direx:")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-doc" '("ejc-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-format" '("ejc-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-interaction" '("ejc-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-lib" '("ejc-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-result-mode" '("ejc-result-")))
+
+
+
+(autoload 'ejc-sql-mode "ejc-sql" "\
+Toggle ejc-sql mode.
+
+If called interactively, enable Ejc-Sql mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'ejc-create-menu "ejc-sql" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'ejc-connect "ejc-sql" "\
+Connect to selected db.
+
+\(fn CONNECTION-NAME)" t nil)
+
+(autoload 'ejc-connect-existing-repl "ejc-sql" "\
+Connect to existing ejc-sql nREPL running process.
+You can `cd` to your ejc-sql project folder (typically
+'~/.emacs.d/elpa/ejc-sql-<version>') and launch nREPL via `lein run`.
+Then run in Emacs `ejc-connect-existing-repl', type HOST and PORT
+from your `lein run` console output. Finally, use `ejc-connect' from
+any SQL buffer to connect to exact database, as always. 
+
+\(fn HOST PORT)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ejc-sql" '("ejc-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/eide-20180626.1259/eide-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -13551,53 +14019,6 @@ Sets `compilation-last-buffer' and `compilation-window-height'.
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-svn" '("egg-" "with-egg-temp-direct-mapping")))
-
-
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-autoloads.el"))
-(add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-autoloads.el") (car load-path))))
-
-
-(autoload 'auto-complete "auto-complete" "\
-Start auto-completion at current point.
-
-\(fn &optional SOURCES)" t nil)
-
-(autoload 'auto-complete-mode "auto-complete" "\
-AutoComplete mode
-
-\(fn &optional ARG)" t nil)
-
-(defvar global-auto-complete-mode nil "\
-Non-nil if Global Auto-Complete mode is enabled.
-See the `global-auto-complete-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-auto-complete-mode'.")
-
-(custom-autoload 'global-auto-complete-mode "auto-complete" nil)
-
-(autoload 'global-auto-complete-mode "auto-complete" "\
-Toggle Auto-Complete mode in all buffers.
-With prefix ARG, enable Global Auto-Complete mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Auto-Complete mode is enabled in all buffers where
-`auto-complete-mode-maybe' would do it.
-See `auto-complete-mode' for more information on Auto-Complete mode.
-
-\(fn &optional ARG)" t nil)
-
-
-
-(autoload 'ac-config-default "auto-complete-config" "\
-
-
-\(fn)" nil nil)
 
 
 
@@ -15060,6 +15481,394 @@ Finds a Clojure library from clojars.org, and copies selected
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cljsbuild-mode-20160402.1000/cljsbuild-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cljsbuild-mode-20160402.1000/cljsbuild-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cljsbuild-mode "cljsbuild-mode" "\
+ClojureScript Build mode
+
+If called interactively, enable Cljsbuild mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'cljsbuild-start "cljsbuild-mode" "\
+Runs cljsbuild.
+
+\(fn COMMAND)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cljsbuild-mode" '("cljsbuild-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clj-refactor-20180526.803/clj-refactor-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clj-refactor-20180526.803/clj-refactor-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cljr-add-keybindings-with-prefix "clj-refactor" "\
+Bind keys in `cljr--all-helpers' under a PREFIX key.
+
+\(fn PREFIX)" nil nil)
+
+(autoload 'cljr-add-keybindings-with-modifier "clj-refactor" "\
+Bind keys in `cljr--all-helpers' under a MODIFIER key.
+
+\(fn MODIFIER)" nil nil)
+
+(autoload 'cljr-rename-file-or-dir "clj-refactor" "\
+Rename a file or directory of files.
+Buffers visiting any affected file are killed and the
+corresponding files are revisited.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-rename-file-or-dir
+
+\(fn OLD-PATH NEW-PATH)" t nil)
+
+(autoload 'cljr-rename-file "clj-refactor" "\
+
+
+\(fn NEW-PATH)" t nil)
+
+(autoload 'cljr-add-require-to-ns "clj-refactor" "\
+Add a require statement to the ns form in current buffer.
+
+With a prefix act on the cljs part of the ns declaration.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-require-to-ns
+
+\(fn CLJS\\=\\?)" t nil)
+
+(autoload 'cljr-add-use-to-ns "clj-refactor" "\
+Add a use statement to the buffer's ns form.
+
+With a prefix act on the cljs part of the ns declaration.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-use-to-ns
+
+\(fn CLJS\\=\\?)" t nil)
+
+(autoload 'cljr-add-import-to-ns "clj-refactor" "\
+Add an import statement to the buffer's ns form.
+
+With a prefix act on the cljs part of the ns declaration.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-import-to-ns
+
+\(fn &optional CLJS\\=\\?)" t nil)
+
+(autoload 'cljr-require-macro "clj-refactor" "\
+Add a require statement for a macro to the ns form in current buffer.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-require-macro
+
+\(fn)" t nil)
+
+(autoload 'cljr-stop-referring "clj-refactor" "\
+Stop referring to vars in the namespace at point.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-stop-referring
+
+\(fn)" t nil)
+
+(autoload 'cljr-move-form "clj-refactor" "\
+Move the form containing POINT to a new namespace.
+
+If REGION is active, move all forms contained by region.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-move-form
+
+\(fn)" t nil)
+
+(autoload 'cljr-add-declaration "clj-refactor" "\
+Add a declare for the current def near the top of the buffer.
+
+With a prefix add a declaration for the symbol under the cursor instead.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-declaration
+
+\(fn FOR-THING-AT-POINT-P)" t nil)
+
+(autoload 'cljr-extract-constant "clj-refactor" "\
+Extract form at (or above) point as a constant.
+Create a def for it at the top level, and replace its current
+occurrence with the defined name.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-extract-constant
+
+\(fn)" t nil)
+
+(autoload 'cljr-extract-def "clj-refactor" "\
+Extract form at (or above) point as a def.
+Create a def for it at the top level, and replace its current
+occurrence with the defined name.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-extract-def
+
+\(fn)" t nil)
+
+(autoload 'cljr-cycle-thread "clj-refactor" "\
+Cycle a threading macro between -> and ->>.
+Also applies to other versions of the macros, like cond->.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-cycle-thread
+
+\(fn)" t nil)
+
+(autoload 'cljr-introduce-let "clj-refactor" "\
+Create a let form, binding the form at point.
+The resulting let form can then be expanded with `\\[cljr-expand-let]'.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-introduce-let
+
+\(fn &optional N)" t nil)
+
+(autoload 'cljr-expand-let "clj-refactor" "\
+Expand the let form above point by one level.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-expand-let
+
+\(fn)" t nil)
+
+(autoload 'cljr-move-to-let "clj-refactor" "\
+Move the form at point to a binding in the nearest let.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-move-to-let
+
+\(fn)" t nil)
+
+(autoload 'cljr-destructure-keys "clj-refactor" "\
+Change a symbol binding at point to a destructuring bind.
+Keys to use in the destructuring are inferred from the code, and
+their usage is replaced with the new local variables.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-destructure-keys
+
+\(fn)" t nil)
+
+(autoload 'cljr-raise-sexp "clj-refactor" "\
+Like paredit-raise-sexp, but removes # in front of function literals and sets.
+
+\(fn &optional ARGUMENT)" t nil)
+
+(autoload 'cljr-splice-sexp-killing-backward "clj-refactor" "\
+Like paredit-splice-sexp-killing-backward, but removes # in
+front of function literals and sets.
+
+\(fn &optional ARGUMENT)" t nil)
+
+(autoload 'cljr-splice-sexp-killing-forward "clj-refactor" "\
+Like paredit-splice-sexp-killing-backward, but removes # in
+front of function literals and sets.
+
+\(fn &optional ARGUMENT)" t nil)
+
+(autoload 'cljr-slash "clj-refactor" "\
+Inserts / as normal, but also checks for common namespace shorthands to require.
+If `cljr-magic-require-namespaces' is non-nil, typing one of the
+short aliases listed in `cljr-magic-requires' followed by this
+command will add the corresponding require statement to the ns
+form.
+
+\(fn)" t nil)
+
+(autoload 'cljr-project-clean "clj-refactor" "\
+Run `cljr-project-clean-functions' on every clojure file, then
+sorts the project's dependency vectors.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-project-clean
+
+\(fn)" t nil)
+
+(autoload 'cljr-sort-project-dependencies "clj-refactor" "\
+Sorts all dependency vectors in project.clj
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-sort-project-dependencies
+
+\(fn)" t nil)
+
+(autoload 'cljr-add-project-dependency "clj-refactor" "\
+Add a dependency to the project.clj file.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-project-dependency
+
+\(fn FORCE)" t nil)
+
+(autoload 'cljr-update-project-dependency "clj-refactor" "\
+Update the version of the dependency at point.
+
+\(fn &optional VERSION)" t nil)
+
+(autoload 'cljr-update-project-dependencies "clj-refactor" "\
+Update all project dependencies.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-update-project-dependencies
+
+\(fn)" t nil)
+
+(autoload 'cljr-promote-function "clj-refactor" "\
+Promote a function literal to an fn, or an fn to a defn.
+With prefix PROMOTE-TO-DEFN, promote to a defn even if it is a
+function literal.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-promote-function
+
+\(fn PROMOTE-TO-DEFN)" t nil)
+
+(autoload 'cljr-find-usages "clj-refactor" "\
+Find all usages of the symbol at point in the project.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-find-usages
+
+\(fn)" t nil)
+
+(autoload 'cljr-rename-symbol "clj-refactor" "\
+Rename the symbol at point and all of its occurrences.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-rename-symbol
+
+\(fn &optional NEW-NAME)" t nil)
+
+(autoload 'cljr-clean-ns "clj-refactor" "\
+Clean the ns form for the current buffer.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-clean-ns
+
+\(fn)" t nil)
+
+(autoload 'cljr-add-missing-libspec "clj-refactor" "\
+Requires or imports the symbol at point.
+
+If the symbol at point is of the form str/join then the ns
+containing join will be aliased to str.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-missing-libspec
+
+\(fn)" t nil)
+
+(autoload 'cljr-hotload-dependency "clj-refactor" "\
+Download a dependency (if needed) and hotload it into the current repl session.
+
+Defaults to the dependency vector at point, but prompts if none is found.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-hotload-dependency
+
+\(fn)" t nil)
+
+(autoload 'cljr-extract-function "clj-refactor" "\
+Extract the form at (or above) point as a top-level defn.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-extract-function
+
+\(fn)" t nil)
+
+(autoload 'cljr-add-stubs "clj-refactor" "\
+Adds implementation stubs for the interface or protocol at point.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-stubs
+
+\(fn)" t nil)
+
+(autoload 'cljr-inline-symbol "clj-refactor" "\
+Inline the symbol at point.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-inline-symbol
+
+\(fn)" t nil)
+
+(autoload 'cljr-version "clj-refactor" "\
+Returns the version of the middleware as well as this package.
+
+\(fn)" t nil)
+
+(autoload 'cljr-toggle-debug-mode "clj-refactor" "\
+
+
+\(fn)" t nil)
+
+(autoload 'cljr-create-fn-from-example "clj-refactor" "\
+Create a top-level defn for the symbol at point.
+The context in which symbol is being used should be that of a
+function, and the arglist of the defn is guessed from this
+context.
+
+For instance, if the symbol is the first argument of a `map'
+call, the defn is created with one argument. If it is the first
+argument of a `reduce', the defn will take two arguments.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-create-fn-from-example
+
+\(fn)" t nil)
+
+(autoload 'cljr-describe-refactoring "clj-refactor" "\
+Show the wiki page, in emacs, for one of the available refactorings.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-describe-refactoring
+
+\(fn CLJR-FN)" t nil)
+
+(autoload 'cljr-change-function-signature "clj-refactor" "\
+Change the function signature of the function at point.
+
+See: https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-change-function-signature
+
+\(fn)" t nil)
+
+(autoload 'cljr--inject-middleware-p "clj-refactor" "\
+Return non-nil if nREPL middleware should be injected.
+
+\(fn &rest _)" nil nil)
+
+(autoload 'cljr--inject-jack-in-dependencies "clj-refactor" "\
+Inject the REPL dependencies of clj-refactor at `cider-jack-in'.
+If injecting the dependencies is not preferred set `cljr-inject-dependencies-at-jack-in' to nil.
+
+\(fn)" nil nil)
+
+(eval-after-load 'cider '(cljr--inject-jack-in-dependencies))
+
+(autoload 'clj-refactor-mode "clj-refactor" "\
+A mode to keep the clj-refactor keybindings.
+
+If called interactively, enable Clj-Refactor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{clj-refactor-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clj-refactor" '("*cljr--noninteractive*" "cjr--occurrence-count" "clj" "hydra-cljr-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cljr-helm-20160913.128/cljr-helm-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cljr-helm-20160913.128/cljr-helm-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cljr-helm "cljr-helm" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cljr-helm" '("cljr-helm-candidates" "helm-source-cljr")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/clang-format-20180406.814/clang-format-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/clang-format-20180406.814/clang-format-autoloads.el") (car load-path))))
 
@@ -16109,7 +16918,7 @@ Sends the first answer to 4clojure and gets a message back
 )
 (setq package-activated-list
   (append
-    '(yasnippet yatemplate yasnippet-snippets yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh spinner sotlisp snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment signal shell-toggle shell-switcher shell-command sesman scheme-here scheme-complete rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode quick-peek queue quack epl pkg-info projectile preproc-font-lock pos-tip popwin popup popup-complete pcache list-utils persistent-soft pcmpl-git pcmpl-args paren-face paredit packed package-safe-delete opencl-mode clojure-mode cider nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode f malinka makey makefile-executor macrostep macro-math ht list-packages-ext lfe-mode language-detection kv json-snatcher json-reformat json-mode javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined heap google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-commit git-command git-auto-commit-mode git-attr git function-args foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-cursor flymake-cppcheck flycheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rtags flycheck-rebar3 flycheck-pkg-config flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge eide egg auto-complete auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major discover diffview delim-kill db dash-functional ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
+    '(yasnippet yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover clojure-mode epl pkg-info queue spinner sesman cider typed-clojure-mode tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh sotlisp snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment simple-httpd signal shell-toggle shell-switcher shell-command scheme-here scheme-complete rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode quick-peek quack projectile preproc-font-lock pos-tip popwin popup popup-complete pcache list-utils persistent-soft peg pcmpl-git pcmpl-args a parseclj parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode f malinka makey makefile-executor macrostep macro-math ht list-packages-ext lfe-mode language-detection kv json-snatcher json-reformat json-mode javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs heap google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-commit git-command git-auto-commit-mode git-attr git function-args foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-cursor flymake-cppcheck flycheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rtags flycheck-rebar3 flycheck-pkg-config flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major discover diffview delim-kill db dash-functional ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode clj-refactor cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
     package-activated-list))
 (progn
   (require 'info)

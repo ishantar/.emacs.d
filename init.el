@@ -37,6 +37,7 @@
  '(beacon-mode t)
  '(blink-cursor-delay 0.45)
  '(blink-cursor-interval 0.45)
+ '(buffer-face-mode-face 'fixed-pitch)
  '(c-basic-offset 3)
  '(c-default-style
     '((c-mode . "linux")
@@ -48,6 +49,7 @@
     '(completion-c-mode-hook macrostep-c-mode-hook cwarn-mode flycheck-mode electric-pair-mode) t)
  '(c-tab-always-indent nil)
  '(cider-allow-jack-in-without-project 'warn)
+ '(cider-auto-mode 't)
  '(cider-auto-select-error-buffer nil)
  '(cider-auto-test-mode t)
  '(cider-comment-postfix "")
@@ -55,9 +57,11 @@
  '(cider-connected-hook
     '(smartparens-mode smart-comment eldoc-mode company-mode flycheck-clojure-setup flycheck-mode yas-minor-mode))
  '(cider-debug-display-locals t)
+ '(cider-default-repl-command "clj")
  '(cider-eldoc-display-context-dependent-info t)
  '(cider-jack-in-auto-inject-clojure ''latest)
  '(cider-jdk-src-paths '("/usr/lib/jvm/java-10-openjdk/bin "))
+ '(cider-preferred-build-tool "lein")
  '(cider-repl-history-size 4096)
  '(cider-repl-scroll-on-output nil)
  '(clojure-comment-regexp 'clojure--reader-and-comment-regexp)
@@ -85,7 +89,7 @@
  '(cua-normal-cursor-color "light grey")
  '(cursor-in-non-selected-windows 'hollow)
  '(custom-safe-themes
-    '("29a47a1805a9a763f0bfe04306b6a3fdc3801f8b4d55fbc01521b1421d0b25d0" "c1f975bd275528dcb916cb4bfdec66f04162ab2d4cf9554635ce9d6dc795e67c" default))
+    '("6aa15287ed7f2ddf73e6177a03308488f2928f3763f7809da60294ef212c008a" "04294d4d1e38081f2d2f0f2781f8f05b9b3f8a46dba083ba59278c4cb22dfa23" "8e87db652bb1e95e2e474bfdd83d62b4edef1bb73f6f5b390dc5f43850fe86b0" "29a47a1805a9a763f0bfe04306b6a3fdc3801f8b4d55fbc01521b1421d0b25d0" "c1f975bd275528dcb916cb4bfdec66f04162ab2d4cf9554635ce9d6dc795e67c" default))
  '(dired-hide-details-hide-information-lines nil)
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "-alh")
@@ -102,6 +106,12 @@
  '(explicit-shell-file-name "/bin/bash")
  '(fci-rule-color "#073642")
  '(flycheck-clang-warnings '("all" "extra" "padded"))
+ '(flycheck-color-mode-line-face-to-color 'mode-line)
+ '(flycheck-display-errors-delay 0.7)
+ '(flycheck-inline-mode t nil (flycheck-inline))
+ '(flycheck-mode-hook
+    '(flycheck-color-mode-line-mode flycheck-mode-set-explicitly))
+ '(flycheck-mode-line-prefix "FlC")
  '(garbage-collection-messages nil)
  '(generic-extras-enable-list
     '(alias-generic-mode apache-conf-generic-mode apache-log-generic-mode bat-generic-mode etc-fstab-generic-mode etc-modules-conf-generic-mode etc-passwd-generic-mode etc-services-generic-mode etc-sudoers-generic-mode fvwm-generic-mode hosts-generic-mode inetd-conf-generic-mode inf-generic-mode ini-generic-mode java-manifest-generic-mode java-properties-generic-mode javascript-generic-mode mailagent-rules-generic-mode mailrc-generic-mode named-boot-generic-mode named-database-generic-mode prototype-generic-mode rc-generic-mode resolve-conf-generic-mode samba-generic-mode show-tabs-generic-mode vrml-generic-mode x-resource-generic-mode xmodmap-generic-mode))
@@ -115,7 +125,7 @@
  '(global-semantic-idle-completions-mode t nil (semantic/idle))
  '(global-visual-line-mode t)
  '(gnus-init-file "~/.emacs.d/.gnus")
- '(gnus-secondary-select-methods '((nntp "news.gnus.org")) )
+ '(gnus-secondary-select-methods '((nntp "news.gnus.org")))
  '(gnus-select-method '(nntp "news.gnus.org"))
  '(gnus-startup-file "~/.emacs.d/.newsrc.gnus")
  '(hl-line-face 'hl-line)
@@ -124,7 +134,7 @@
  '(indent-tabs-mode nil)
  '(initial-buffer-choice t)
  '(line-number-display-limit-width 14)
- '(line-spacing 0.12)
+ '(line-spacing 0.11)
  '(linum-format "%4d")
  '(lisp-body-indent 3)
  '(lisp-indent-offset 2)
@@ -132,7 +142,7 @@
  '(mc/edit-lines-empty-lines 'ignore)
  '(mm-external-terminal-program "xterm-24bit")
  '(normal-erase-is-backspace t)
- '(overline-margin 1)
+ '(overline-margin 0)
  '(package-enable-at-startup t)
  '(package-hidden-regexps
     '("\\(.\\+available[^-]\\)" "\\(.\\+available[^-]\\+\\)" "available\\t" "' available '"))
@@ -140,7 +150,7 @@
  '(package-quickstart t)
  '(package-quickstart-file "~/.emacs.d/package-quickstart.el")
  '(package-selected-packages
-    '(4clojure eldoc-overlay mc-extras ac-cider cider-decompile cider-eval-sexp-fu cider-spy evalator-clojure javap-mode nrepl-eval-sexp-fu cider-hydra clojars clojure-cheatsheet clojure-quick-repls flycheck-clojure nrepl-sync smartparens monroe eterm-256color align-cljlet clojure-mode clojure-mode-extra-font-locking clojure-snippets inf-clojure foreign-regexp unkillable-scratch visual-regexp visual-regexp-steroids hungry-delete delim-kill company-math company-statistics counsel-etags ac-capf auto-minor-mode beacon better-shell readline-complete repl-toggle shell-command ssh ssh-agency ssh-config-mode ssh-tunnels test-simple undercover undohist yafolding ac-c-headers build-helper build-status company-erlang diffview edts egg flycheck flycheck-dialyzer flycheck-swiftlint flymake-shell function-args git git-attr git-auto-commit-mode git-command git-commit git-commit-insert-issue git-dwim git-io git-lens git-link git-messenger git-msg-prefix git-timemachine git-wip-timemachine gitconfig gitconfig-mode gited ido-at-point ipretty ivy-dired-history ivy-erlang-complete json-mode makefile-executor math-symbol-lists math-symbols matlab-mode modern-cpp-font-lock package-safe-delete pcmpl-args pcmpl-git popup-complete company-c-headers company window-layout window-purpose vkill with-simulated-input xterm-frobs xterm-title paren-face scheme-complete shell-switcher shell-toggle signal smart-comment smart-compile smart-cursor-color smart-forward snippet sotlisp strace-mode stream string-edit sudo-edit sudo-ext tco iedit lfe-mode list-packages-ext macro-math macrostep manage-minor-mode maxframe mic-paren minimal-session-saver mmt es-lib eval-expr eval-in-repl eval-sexp-fu flycheck-rebar3 flycheck-rtags heap highlight-defined highlight-escape-sequences highlight-function-calls highlight-indent-guides highlight-indentation highlight-operators highlight-parentheses highlight-quoted highlight-refontification highlight-stages highlight-symbol highlight-thing highlight-unique-symbol hippie-exp-ext hippie-namespace ctable ctags-update dash-functional db discover discover-my-major dr-racket-like-unicode eacl ecb ede-compdb edebug-x eide el-sprunge elf-mode elisp-lint elisp-sandbox elmacro auto-compile auto-complete-chunk auto-complete-distel auto-highlight-symbol auto-shell-command autodisass-llvm-bitcode bshell c-eldoc cd-compile cedit cff chapel-mode charmap cl-format cl-generic cl-lib cl-lib-highlight cl-print codebug codesearch comint-intercept commenter common-lisp-snippets auto-complete-c-headers google-c-style malinka opencl-mode preproc-font-lock basic-c-compile cpputils-cmake flycheck-pkg-config flycheck-tip flycheck-title flymake-cursor ivy-hydra language-detection mark-multiple scheme-here term+ term+mux term-manager test-c test-case-mode tree-mode xterm-color xterm-keybinder xtest quack isend-mode racket-mode hlinum golden-ratio-scroll-screen font-lock-studio font-lock+ flyparens flymake-cppcheck flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms cmake-project cmake-font-lock clang-format auto-complete-clang-async auto-complete-clang ac-clang))
+    '(cider clj-refactor cljr-helm cljsbuild-mode clomacs ejc-sql el-autoyas helm-clojuredocs parinfer parseclj typed-clojure-mode 4clojure eldoc-overlay mc-extras ac-cider cider-decompile cider-eval-sexp-fu cider-spy evalator-clojure javap-mode nrepl-eval-sexp-fu cider-hydra clojars clojure-cheatsheet clojure-quick-repls flycheck-clojure nrepl-sync smartparens monroe eterm-256color align-cljlet clojure-mode clojure-mode-extra-font-locking clojure-snippets inf-clojure foreign-regexp unkillable-scratch visual-regexp visual-regexp-steroids hungry-delete delim-kill company-math company-statistics counsel-etags ac-capf auto-minor-mode beacon better-shell readline-complete repl-toggle shell-command ssh ssh-agency ssh-config-mode ssh-tunnels test-simple undercover undohist yafolding ac-c-headers build-helper build-status company-erlang diffview edts egg flycheck flycheck-dialyzer flycheck-swiftlint flymake-shell function-args git git-attr git-auto-commit-mode git-command git-commit git-commit-insert-issue git-dwim git-io git-lens git-link git-messenger git-msg-prefix git-timemachine git-wip-timemachine gitconfig gitconfig-mode gited ido-at-point ipretty ivy-dired-history ivy-erlang-complete json-mode makefile-executor math-symbol-lists math-symbols matlab-mode modern-cpp-font-lock package-safe-delete pcmpl-args pcmpl-git popup-complete company-c-headers company window-layout window-purpose vkill with-simulated-input xterm-frobs xterm-title paren-face scheme-complete shell-switcher shell-toggle signal smart-comment smart-compile smart-cursor-color smart-forward snippet sotlisp strace-mode stream string-edit sudo-edit sudo-ext tco iedit lfe-mode list-packages-ext macro-math macrostep manage-minor-mode maxframe mic-paren minimal-session-saver mmt es-lib eval-expr eval-in-repl eval-sexp-fu flycheck-rebar3 flycheck-rtags heap highlight-defined highlight-escape-sequences highlight-function-calls highlight-indent-guides highlight-indentation highlight-operators highlight-parentheses highlight-quoted highlight-refontification highlight-stages highlight-symbol highlight-thing highlight-unique-symbol hippie-exp-ext hippie-namespace ctable ctags-update dash-functional db discover discover-my-major dr-racket-like-unicode eacl ecb ede-compdb edebug-x eide el-sprunge elf-mode elisp-lint elisp-sandbox elmacro auto-compile auto-complete-chunk auto-complete-distel auto-highlight-symbol auto-shell-command autodisass-llvm-bitcode bshell c-eldoc cd-compile cedit cff chapel-mode charmap cl-format cl-generic cl-lib cl-lib-highlight cl-print codebug codesearch comint-intercept commenter common-lisp-snippets auto-complete-c-headers google-c-style malinka opencl-mode preproc-font-lock basic-c-compile cpputils-cmake flycheck-pkg-config flycheck-tip flycheck-title flymake-cursor ivy-hydra language-detection mark-multiple scheme-here term+ term+mux term-manager test-c test-case-mode tree-mode xterm-color xterm-keybinder xtest quack isend-mode racket-mode hlinum golden-ratio-scroll-screen font-lock-studio font-lock+ flyparens flymake-cppcheck flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms cmake-project cmake-font-lock clang-format auto-complete-clang-async auto-complete-clang ac-clang))
  '(package-user-dir "~/.emacs.d/elpa")
  '(prog-mode-hook
     '(semantic-mode flycheck-mode eldoc-mode company-mode yas-minor-mode egg-minor-mode))
@@ -153,12 +163,16 @@
  '(shell-switcher-ansi-term-shell "/bin/bash")
  '(shell-switcher-mode t)
  '(shell-switcher-new-shell-function 'shell-switcher-make-ansi-term)
- '(show-paren-delay 0.085)
+ '(show-paren-delay 0.06)
  '(show-paren-mode t)
  '(show-paren-style 'mixed)
  '(show-paren-when-point-in-periphery t)
  '(show-paren-when-point-inside-paren t)
  '(smart-cursor-color-mode t nil (smart-cursor-color))
+ '(sp-clojure-modes
+    '(cider-repl-mode clojure-mode clojurec-mode clojurescript-mode clojurex-mode inf-clojure-mode cider-clojure-interaction-mode))
+ '(sp-lisp-modes
+    '(cider-repl-mode clojure-mode clojurec-mode clojurescript-mode clojurex-mode common-lisp-mode emacs-lisp-mode eshell-mode geiser-repl-mode gerbil-mode inf-clojure-mode inferior-emacs-lisp-mode inferior-lisp-mode inferior-scheme-mode lisp-interaction-mode lisp-mode monroe-mode racket-mode racket-repl-mode scheme-interaction-mode scheme-mode slime-repl-mode stumpwm-mode cider-clojure-interaction-mode))
  '(speedbar-directory-unshown-regexp "")
  '(speedbar-file-unshown-regexp "")
  '(tab-always-indent 'nil)
@@ -172,8 +186,9 @@
  '(text-scale-mode-step 1.0)
  '(tls-checktrust 'ask)
  '(tool-bar-mode nil)
- '(tramp-terminal-prompt-regexp "\\(^.[0-9].* [$#] \\)" nil (tramp))
+ '(tramp-terminal-prompt-regexp "\\(^.[0-9].* [$#] \\)")
  '(tramp-terminal-type "xterm-256color")
+ '(underline-minimum-offset 3)
  '(unkillable-scratch t)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -206,13 +221,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+
+
+;; Handwritten section.
+
 (load-theme 'local-faces)
-
- 
-
- ;; Handwritten section.
-
-
 
 
 
@@ -280,10 +296,16 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
   (lk-windowsize  't  't  (* '-1 (or DISTANCE 1)) ))
 
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ; 
+;; ;  
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; manual depairing ' in lisp modes (smartparens-config.el ineffective)
+;; hacky autoload forcing (need sp-local-pair)
+(progn  (smartparens-global-mode)
+        (sp-local-pair sp-lisp-modes  "'" 'nil :actions 'nil)
+        (sp-local-pair sp-lisp-modes  "`" 'nil :actions 'nil)  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;   key mapping section
@@ -328,7 +350,7 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
    (λ () (interactive)      (previous-buffer) ))
  (global-set-key         (kbd "M-s-s")
    (λ () (interactive)      (bury-buffer) ))
- (global-set-key         (kbd "M-s-a")   
+ (global-set-key         (kbd "M-s-a")
    (λ () (interactive)      (kill-this-buffer) ))
  (global-set-key         (kbd "M-s-d")
    (λ () (interactive)      (kill-buffer-and-window) ))
@@ -338,28 +360,28 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
    (λ () (interactive)      (rectangle-mark-mode) ))
 
  (require 'multiple-cursors)
- (define-key mc/keymap (kbd "<return>") 'nil)     
- (global-set-key         (kbd "M-s-<up>")     
-   (λ () (interactive)      (mc/create-fake-cursor-at-point) 
+ (define-key mc/keymap (kbd "<return>") 'nil)
+ (global-set-key         (kbd "M-s-<up>")
+   (λ () (interactive)      (mc/create-fake-cursor-at-point)
                             (mc/freeze-fake-cursors)
                             (previous-line) ))
- (global-set-key         (kbd "M-s-<down>")   
-   (λ () (interactive)      (mc/create-fake-cursor-at-point) 
-                            (mc/freeze-fake-cursors) 
+ (global-set-key         (kbd "M-s-<down>")
+   (λ () (interactive)      (mc/create-fake-cursor-at-point)
+                            (mc/freeze-fake-cursors)
                             (next-line) ))
- (global-set-key         (kbd "M-s-<right>") 
-   (λ () (interactive)      (mc/unfreeze-fake-cursors) 
+ (global-set-key         (kbd "M-s-<right>")
+   (λ () (interactive)      (mc/unfreeze-fake-cursors)
                             (mc/cycle-backward)
                             (mc/remove-current-cursor)
                             (mc/freeze-fake-cursors) ))
- (global-set-key         (kbd "M-s-<left>")   
-   (λ () (interactive)      (mc/unfreeze-fake-cursors) 
+ (global-set-key         (kbd "M-s-<left>")
+   (λ () (interactive)      (mc/unfreeze-fake-cursors)
                             (mc/remove-current-cursor) ))
- (global-set-key         (kbd "M-s-<kp-1>")     
+ (global-set-key         (kbd "M-s-<kp-1>")
    (λ () (interactive)      (mc/freeze-fake-cursors) ))
- (global-set-key         (kbd "M-s-<kp-0>")     
+ (global-set-key         (kbd "M-s-<kp-0>")
    (λ () (interactive)      (mc/unfreeze-fake-cursors) ))
- (global-set-key         (kbd "M-s-<kp-2>")    
+ (global-set-key         (kbd "M-s-<kp-2>")
                             'mc/mark-more-like-this-extended )
 
 

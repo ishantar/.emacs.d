@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-12a54e0
+;; Object semanticdb-project-database-file-11d990c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-12a54e0"
+(semanticdb-project-database-file "semanticdb-project-database-file-11d990c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-176b5f0"
+    (semanticdb-table "semanticdb-table-14076fc"
       :major-mode c-mode
       :tags 
         '( ("features.h" include (:system-flag t) nil [1432 1453])
@@ -23,7 +23,7 @@
           ("__GLIBC_USE_IEC_60559_TYPES_EXT" . ((number "1" 2550 . 2551)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b610"
+    (semanticdb-table "semanticdb-table-140771c"
       :major-mode c-mode
       :tags 
         '( ("sys_nerr" variable
@@ -53,7 +53,7 @@
       :fsize 1215
       :lastmodtime '(23274 6910 0 0)
       :unmatched-syntax '((string 891 . 960) (symbol 885 . 890) (punctuation 883 . 884)))
-    (semanticdb-table "semanticdb-table-176b630"
+    (semanticdb-table "semanticdb-table-140773c"
       :major-mode c-mode
       :tags 
         '( ("_BITS_STDIO_LIM_H" variable (:constant-flag t) nil [824 841])
@@ -78,7 +78,7 @@
           ("L_ctermid" . ((number "9" 1054 . 1055)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b650"
+    (semanticdb-table "semanticdb-table-140775c"
       :major-mode c-mode
       :tags 
         '( ("_BITS_TYPES_H" variable (:constant-flag t) nil [960 973])
@@ -202,7 +202,7 @@
           ("__SLONGWORD_TYPE" . ((LONG "long" 3876 . 3880) (INT "int" 3881 . 3884)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b670"
+    (semanticdb-table "semanticdb-table-140777c"
       :major-mode c-mode
       :tags nil
       :file "stdlib-float.h"
@@ -210,7 +210,7 @@
       :fsize 1114
       :lastmodtime '(23274 6910 0 0)
       :unmatched-syntax '((string 865 . 936) (symbol 859 . 864) (punctuation 857 . 858)))
-    (semanticdb-table "semanticdb-table-176b690"
+    (semanticdb-table "semanticdb-table-140779c"
       :major-mode c-mode
       :tags 
         '( ("_BITS_FLOATN_H" variable (:constant-flag t) nil [876 890])
@@ -233,7 +233,7 @@
           ("__HAVE_FLOAT64X_LONG_DOUBLE" . ((number "1" 2151 . 2152)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b6b0"
+    (semanticdb-table "semanticdb-table-145ae78"
       :major-mode c-mode
       :tags 
         '( ("__WEXITSTATUS" variable (:constant-flag t) nil [1103 1116])
@@ -266,7 +266,7 @@
           ("__WIFSIGNALED" (spp-arg-list ("status") 1560 . 1568) . ((semantic-list "(((signed char) (((status) & 0x7f) + 1) >> 1) > 0)" 1573 . 1623)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b6d0"
+    (semanticdb-table "semanticdb-table-145ae98"
       :major-mode c-mode
       :tags 
         '( ("WNOHANG" variable (:constant-flag t) nil [1030 1037])
@@ -295,7 +295,7 @@
           ("WNOWAIT" . ((number "0x01000000" 1422 . 1432)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b6f0"
+    (semanticdb-table "semanticdb-table-145aeb8"
       :major-mode c-mode
       :tags 
         '( ("__WORDSIZE" variable (:constant-flag t) nil [117 127])
@@ -312,7 +312,7 @@
           ("__WORDSIZE" . ((number "64" 128 . 130)))
           )
 )
-    (semanticdb-table "semanticdb-table-176b710"
+    (semanticdb-table "semanticdb-table-145aed8"
       :major-mode c-mode
       :tags 
         '( ("_BITS_TYPESIZES_H" variable (:constant-flag t) nil [1006 1023])
@@ -401,7 +401,7 @@
           ("__SSIZE_T_TYPE" . ((symbol "__SWORD_TYPE" 2783 . 2795)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5380"
+    (semanticdb-table "semanticdb-table-145aef8"
       :major-mode c-mode
       :tags 
         '( ("_BITS_PTHREADTYPES_COMMON_H" variable (:constant-flag t) nil [897 924])
@@ -551,7 +551,7 @@
           ("_BITS_PTHREADTYPES_COMMON_H" . ((number "1" 925 . 926)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a53a0"
+    (semanticdb-table "semanticdb-table-145af18"
       :major-mode c-mode
       :tags 
         '( ("_BITS_STDINT_INTN_H" variable (:constant-flag t) nil [850 869])
@@ -581,7 +581,7 @@
         '(("_BITS_STDINT_INTN_H" . ((number "1" 870 . 871)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a53c0"
+    (semanticdb-table "semanticdb-table-145af38"
       :major-mode c-mode
       :tags 
         '( ("_THREAD_SHARED_TYPES_H" variable (:constant-flag t) nil [896 918])
@@ -671,7 +671,7 @@
           ("__PTHREAD_SPINS" . ((number "0" 4284 . 4285)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a53e0"
+    (semanticdb-table "semanticdb-table-145af58"
       :major-mode c-mode
       :tags 
         '( ("_BITS_SYSMACROS_H" variable (:constant-flag t) nil [875 892])
@@ -716,7 +716,7 @@
           ("__SYSMACROS_DECLARE_MAKEDEV" (spp-arg-list ("DECL_TEMPL") 2421 . 2433) . ((symbol "DECL_TEMPL" 2440 . 2450) (semantic-list "(__dev_t, makedev, (unsigned int __major, unsigned int __minor))" 2450 . 2514)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5400"
+    (semanticdb-table "semanticdb-table-145af78"
       :major-mode c-mode
       :tags 
         '( ("bits/wordsize.h" include (:system-flag t) nil [898 924])
@@ -747,7 +747,7 @@
           ("__FD_CLR" (spp-arg-list ("d" "set") 1946 . 1954) . ((semantic-list "((void) (__FDS_BITS (set)[__FD_ELT (d)] &= ~__FD_MASK (d)))" 1959 . 2018)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5420"
+    (semanticdb-table "semanticdb-table-145af98"
       :major-mode c-mode
       :tags 
         '( ("__BYTE_ORDER" variable (:constant-flag t) nil [148 160]))          
@@ -760,7 +760,7 @@
         '(("__BYTE_ORDER" . ((symbol "__LITTLE_ENDIAN" 161 . 176)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5440"
+    (semanticdb-table "semanticdb-table-145afb8"
       :major-mode c-mode
       :tags 
         '( ("_BITS_BYTESWAP_H" variable (:constant-flag t) nil [1038 1054])
@@ -806,7 +806,7 @@
       | (((x) & 0x00000000000000ffull) << 56))" 5090 . 5526)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5460"
+    (semanticdb-table "semanticdb-table-145afd8"
       :major-mode c-mode
       :tags 
         '( ("_BITS_UINTN_IDENTITY_H" variable (:constant-flag t) nil [1051 1073])
@@ -835,7 +835,7 @@
         '(("_BITS_UINTN_IDENTITY_H" . ((number "1" 1074 . 1075)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a5480"
+    (semanticdb-table "semanticdb-table-145aff8"
       :major-mode c-mode
       :tags 
         '( ("_BITS_PTHREADTYPES_ARCH_H" variable (:constant-flag t) nil [832 857])
@@ -906,7 +906,7 @@
           ("__PTHREAD_COMPAT_PADDING_MID")
           )
 )
-    (semanticdb-table "semanticdb-table-12a54a0"
+    (semanticdb-table "semanticdb-table-145b018"
       :major-mode c-mode
       :tags 
         '( ("__bswap_16" variable (:constant-flag t) nil [1012 1022]))          
@@ -928,7 +928,7 @@
 	 __v; }))" 1033 . 1390)))
           )
 )
-    (semanticdb-table "semanticdb-table-12a54c0"
+    (semanticdb-table "semanticdb-table-145b038"
       :major-mode c-mode
       :tags nil
       :file "long-double.h"
@@ -936,7 +936,7 @@
       :fsize 923
       :lastmodtime '(23274 6909 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1a79c18"
+    (semanticdb-table "semanticdb-table-145b058"
       :major-mode c-mode
       :tags 
         '( ("_BITS_LIBIO_H" variable (:constant-flag t) nil [1363 1376])
@@ -1652,15 +1652,15 @@
           ("_IO_flockfile" (spp-arg-list ("_fp") 14471 . 14476))
           )
 )
-    (semanticdb-table "semanticdb-table-17c0ef4"
+    (semanticdb-table "semanticdb-table-145b078"
       :file "stdlib.h"
       :fsize 5658
       :lastmodtime '(23274 6910 0 0))
-    (semanticdb-table "semanticdb-table-17c0f14"
+    (semanticdb-table "semanticdb-table-11d98ac"
       :file "stdio.h"
       :fsize 5492
       :lastmodtime '(23274 6910 0 0))
-    (semanticdb-table "semanticdb-table-1629b28"
+    (semanticdb-table "semanticdb-table-11d98cc"
       :major-mode c-mode
       :tags 
         '( ("_BITS_FLOATN_COMMON_H" variable (:constant-flag t) nil [940 961])
@@ -1747,7 +1747,7 @@
           ("__builtin_nanf32" (spp-arg-list ("x") 6504 . 6507) . ((semantic-list "(__builtin_nanf (x))" 6508 . 6528)))
           )
 )
-    (semanticdb-table "semanticdb-table-107a768"
+    (semanticdb-table "semanticdb-table-11d98ec"
       :major-mode c-mode
       :tags 
         '( ("_BITS_G_CONFIG_H" variable (:constant-flag t) nil [166 182])
@@ -1795,6 +1795,54 @@
           ("__need_NULL")
           ("_G_IO_IO_FILE_VERSION" . ((number "0x20001" 1256 . 1263)))
           ("_BITS_G_CONFIG_H" . ((number "1" 183 . 184)))
+          )
+)
+    (semanticdb-table "semanticdb-table-13e46b4"
+      :major-mode c-mode
+      :tags 
+        '( ("_BITS_WCHAR_H" variable (:constant-flag t) nil [857 870])
+            ("__WCHAR_MAX" variable (:constant-flag t) nil [1572 1583])
+            ("__WCHAR_MAX" variable (:constant-flag t) nil [1676 1687])
+            ("__WCHAR_MIN" variable (:constant-flag t) nil [1841 1852]))          
+      :file "wchar.h"
+      :pointmax 1906
+      :fsize 1905
+      :lastmodtime '(23274 6911 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_BITS_WCHAR_H" . ((number "1" 871 . 872)))
+          ("__WCHAR_MAX" . ((semantic-list "(0x7fffffff + L'\\0')" 1688 . 1708)))
+          ("__WCHAR_MIN" . ((semantic-list "(-__WCHAR_MAX - 1)" 1853 . 1871)))
+          )
+)
+    (semanticdb-table "semanticdb-table-13e46d4"
+      :major-mode c-mode
+      :tags 
+        '( ("_BITS_STDINT_UINTN_H" variable (:constant-flag t) nil [852 872])
+            ("bits/types.h" include (:system-flag t) nil [876 899])
+            ("uint8_t" type
+               (:typedef ("__uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [901 927])
+            ("uint16_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [928 956])
+            ("uint32_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [957 985])
+            ("uint64_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [986 1014]))          
+      :file "stdint-uintn.h"
+      :pointmax 1049
+      :fsize 1048
+      :lastmodtime '(23274 6910 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_BITS_STDINT_UINTN_H" . ((number "1" 873 . 874)))
           )
 ))
   :file "!usr!include!bits!semantic.cache"
