@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1654fc8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1654fc8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1654fe4"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "makey-autoloads.el"
+      :pointmax 349
+      :fsize 696
+      :lastmodtime '(23398 9705 657749 463000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!makey-20131231.1430!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

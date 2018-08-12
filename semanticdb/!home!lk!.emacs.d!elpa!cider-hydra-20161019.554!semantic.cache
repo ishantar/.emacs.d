@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-117cc20
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-117cc20"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-214a0a8"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "cider-hydra-autoloads.el"
+      :pointmax 361
+      :fsize 924
+      :lastmodtime '(23398 10504 752561 752000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!cider-hydra-20161019.554!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

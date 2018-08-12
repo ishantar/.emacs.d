@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1869d44
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1869d44"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-26605f0"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "xterm-keybinder-autoloads.el"
+      :pointmax 369
+      :fsize 1718
+      :lastmodtime '(23398 9307 340295 436000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!xterm-keybinder-20160523.56!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-262f518
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-262f518"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-24d5ea4"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "undercover-autoloads.el"
+      :pointmax 359
+      :fsize 896
+      :lastmodtime '(23398 9353 187439 680000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!undercover-20180403.1452!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

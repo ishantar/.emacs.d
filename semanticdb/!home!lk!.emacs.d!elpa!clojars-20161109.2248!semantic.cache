@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-34fefd8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-34fefd8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-19f8084"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "clojars-autoloads.el"
+      :pointmax 353
+      :fsize 698
+      :lastmodtime '(23398 10467 638851 791000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!clojars-20161109.2248!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

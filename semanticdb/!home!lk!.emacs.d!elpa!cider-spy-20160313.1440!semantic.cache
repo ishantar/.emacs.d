@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-40cc4a0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-40cc4a0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2fcdd4c"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "cider-spy-autoloads.el"
+      :pointmax 357
+      :fsize 944
+      :lastmodtime '(23398 10500 959189 928000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!cider-spy-20160313.1440!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

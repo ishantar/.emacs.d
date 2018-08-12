@@ -1,13 +1,227 @@
-;; Object semanticdb-project-database-file-51b770
+;; Object semanticdb-project-database-file-15f775c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-51b770"
+(semanticdb-project-database-file "semanticdb-project-database-file-15f775c"
   :tables
   (list
-
-
-
-
-)
+    (semanticdb-table "semanticdb-table-15a56dc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [52 61])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [62 74]))                  
+                :type "int")
+                nil [42 102]))          
+      :file "exitcode.c"
+      :pointmax 103
+      :fsize 102
+      :lastmodtime '(23366 42313 303765 266000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15a56fc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdint.h" include (:system-flag t) nil [40 59])
+            ("stddef.h" include (:system-flag t) nil [60 79])
+            ("assert.h" include (:system-flag t) nil [80 99])
+            ("stdbool.h" include (:system-flag t) nil [100 120])
+            ("test_Node" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [138 143]))                  
+                :type "void")
+                nil [122 144])
+            ("fn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [154 159]))                  
+                :type "void")
+                nil [145 160])
+            ("Node" type
+               (:typedef ("TNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [163 189])
+            ("TNode" type
+               (:members 
+                  ( ("leq" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [209 220])
+                    ("grt" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [224 235])
+                    ("val" variable (:type "int") (reparse-symbol classsubparts) [239 250]))                  
+                :type "struct")
+                nil [191 253])
+            ("coord" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("t" variable
+                               (:suffix ":2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [311 315]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [273 321])
+                    ("i" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [325 334]))                  
+                :type "union")
+                nil [255 337])
+            ("node_alloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [358 366]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [340 572])
+            ("child" type
+               (:members 
+                  ( ("left" variable
+                       (:constant-flag t
+                        :default-value (595 614)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [588 614])
+                    ("right" variable
+                       (:constant-flag t
+                        :default-value (624 643)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [616 643]))                  
+                :type "enum")
+                nil [575 646])
+            ("Node_free_child" function
+               (:arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [670 683])
+                    ("child" variable (:type ("child" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [684 701]))                  
+                :type "void")
+                nil [648 1911])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1925 1930]))                  
+                :type "int")
+                nil [1915 2259])
+            ("test_Node" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2280 2285]))                  
+                :type "void")
+                nil [2264 3054])
+            ("fn" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3066 3071]))                  
+                :type "void")
+                nil [3057 3395]))          
+      :file "inttree.c"
+      :pointmax 3396
+      :fsize 3395
+      :lastmodtime '(23379 6106 463891 934000)
+      :unmatched-syntax '((thing 309 . 310) (thing 309 . 310) (thing 308 . 309) (thing 308 . 309) (thing 307 . 308) (thing 307 . 308) (thing 305 . 306) (thing 305 . 306) (thing 304 . 305) (thing 304 . 305) (thing 303 . 304) (thing 303 . 304) (thing 302 . 303) (thing 302 . 303) (thing 300 . 301) (thing 300 . 301) (thing 299 . 300) (thing 299 . 300) (thing 298 . 299) (thing 298 . 299) (thing 297 . 298) (thing 297 . 298) (thing 289 . 296) (thing 289 . 296)))
+    (semanticdb-table "semanticdb-table-15a571c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stddef.h" include (:system-flag t) nil [40 59])
+            ("stdint.h" include (:system-flag t) nil [60 79])
+            ("s" variable
+               (:default-value "{ {},{}, 266, 267 }"
+                :type ("doodad" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138 346])
+            ("s2" variable
+               (:default-value "{ {},{}, 532, 533 }"
+                :type ("doodad" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138 346])
+            ("s3" variable
+               (:default-value "{ {},{}, 798, 799 }"
+                :type ("doodad" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [138 346])
+            ("doodad" type
+               (:members 
+                  ( ("ar" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [159 175])
+                    ("v" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [179 195])
+                    ("c" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [199 212])
+                    ("d" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [216 229]))                  
+                :type "struct")
+                nil [138 346])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [359 364]))                  
+                :type "int")
+                nil [349 2301]))          
+      :file "index-out.c"
+      :pointmax 6767
+      :fsize 6766
+      :lastmodtime '(23378 31739 885307 453000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15a573c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdint.h" include (:system-flag t) nil [41 60])
+            ("stdio.h" include (:system-flag t) nil [61 79])
+            ("var" variable (:type ("sign" type
+                 (:prototype t
+                  :type "union")
+                  nil nil)) nil [82 127])
+            ("sign" type
+               (:members 
+                  ( ("u" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [98 108])
+                    ("s" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112 121]))                  
+                :type "union")
+                nil [82 127])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [140 145]))                  
+                :type "int")
+                nil [130 501]))          
+      :file "unsignarith.c"
+      :pointmax 502
+      :fsize 501
+      :lastmodtime '(23397 29340 99729 278000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15a575c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdint.h" include (:system-flag t) nil [41 60])
+            ("stdio.h" include (:system-flag t) nil [61 79])
+            ("assert.h" include (:system-flag t) nil [80 99])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [493 499]))                  
+                :type "int")
+                nil [482 1017]))          
+      :file "ptrarith.c"
+      :pointmax 1018
+      :fsize 645
+      :lastmodtime '(23397 42628 88456 838000)
+      :unmatched-syntax nil))
   :file "!home!lk!self!projects!lang_c!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

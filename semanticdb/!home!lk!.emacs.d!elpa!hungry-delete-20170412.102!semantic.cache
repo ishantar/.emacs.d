@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-2510d38
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2510d38"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d5f214"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "hungry-delete-autoloads.el"
+      :pointmax 365
+      :fsize 3513
+      :lastmodtime '(23398 9814 112195 155000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!hungry-delete-20170412.102!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

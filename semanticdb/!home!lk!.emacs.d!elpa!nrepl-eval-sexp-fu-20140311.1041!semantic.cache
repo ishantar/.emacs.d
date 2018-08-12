@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-35d46f0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-35d46f0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-c68f84"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "nrepl-eval-sexp-fu-autoloads.el"
+      :pointmax 375
+      :fsize 703
+      :lastmodtime '(23398 9628 800292 338000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!nrepl-eval-sexp-fu-20140311.1041!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

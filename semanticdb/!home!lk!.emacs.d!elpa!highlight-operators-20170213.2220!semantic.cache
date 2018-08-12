@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-38522f4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-38522f4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1833948"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "highlight-operators-autoloads.el"
+      :pointmax 377
+      :fsize 2001
+      :lastmodtime '(23398 9863 579368 161000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!highlight-operators-20170213.2220!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

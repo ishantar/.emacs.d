@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-37363e0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-37363e0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d35fe8"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "smart-comment-autoloads.el"
+      :pointmax 365
+      :fsize 1500
+      :lastmodtime '(23398 9472 788680 856000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!smart-comment-20160322.1839!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

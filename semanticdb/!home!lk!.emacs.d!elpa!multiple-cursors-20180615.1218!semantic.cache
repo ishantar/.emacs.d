@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-32d4d74
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-32d4d74"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-273938c"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "multiple-cursors-autoloads.el"
+      :pointmax 371
+      :fsize 12284
+      :lastmodtime '(23398 9638 93721 359000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!multiple-cursors-20180615.1218!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

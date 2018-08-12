@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-383a540
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-383a540"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-36cea60"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "xterm-color-autoloads.el"
+      :pointmax 361
+      :fsize 1583
+      :lastmodtime '(23398 9310 653663 330000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!xterm-color-20180202.2318!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

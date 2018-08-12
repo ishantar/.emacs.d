@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file-176b764
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-176b764"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-162f0c4"
+      :major-mode c-mode
+      :tags 
+        '( ("_ASM_X86_UNISTD_H" variable (:constant-flag t) nil [98 115])
+            ("__X32_SYSCALL_BIT" variable (:constant-flag t) nil [152 169])
+            ("asm/unistd_64.h" include (:system-flag t) nil [291 319]))          
+      :file "unistd.h"
+      :pointmax 360
+      :fsize 359
+      :lastmodtime '(23242 29917 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ASM_X86_UNISTD_H")
+          ("__X32_SYSCALL_BIT" . ((number "0x40000000" 170 . 180)))
+          )
+)
+    (semanticdb-table "semanticdb-table-17b6dc8"
+      :file "unistd_64.h"
+      :fsize 8893
+      :lastmodtime '(23242 29917 0 0)))
+  :file "!usr!include!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-360b624
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-360b624"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-267a9ec"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "term+mux-autoloads.el"
+      :pointmax 355
+      :fsize 566
+      :lastmodtime '(23398 9386 461118 779000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!term+mux-20140211.749!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

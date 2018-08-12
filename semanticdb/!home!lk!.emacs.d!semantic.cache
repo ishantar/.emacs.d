@@ -1,15 +1,15 @@
-;; Object semanticdb-project-database-file-17e02d0
+;; Object semanticdb-project-database-file-222bb60
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-17e02d0"
+(semanticdb-project-database-file "semanticdb-project-database-file-222bb60"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1793230"
+    (semanticdb-table "semanticdb-table-21dc804"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "init.el"
-      :pointmax 17698
-      :fsize 17919
-      :lastmodtime '(23336 7570 658973 851000)
+      :pointmax 20989
+      :fsize 21031
+      :lastmodtime '(23398 9292 676809 56000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!semantic.cache"
   :semantic-tag-version "2.0"

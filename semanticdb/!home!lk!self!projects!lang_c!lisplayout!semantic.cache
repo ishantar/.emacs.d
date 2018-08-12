@@ -1,0 +1,265 @@
+;; Object semanticdb-project-database-file-1390948
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1390948"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1390964"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdio.h" include (:system-flag t) nil [41 59])
+            ("assert.h" include (:system-flag t) nil [60 79])
+            ("REQUIRE_SUCCEED" variable (:constant-flag t) nil [89 104])
+            ("tests" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("opts" variable (:type "int") (reparse-symbol arg-sub-list) [197 206]))                  
+                :type "int")
+                nil [187 207])
+            ("header" type
+               (:members 
+                  ( ("large" variable (:type "unsigned short") (reparse-symbol classsubparts) [414 435])
+                    ("small" variable (:type "unsigned char") (reparse-symbol classsubparts) [439 459])
+                    ("" type
+                       (:members 
+                          ( ("bfield" variable
+                               (:suffix ":8"
+                                :type "unsigned char")
+                                (reparse-symbol classsubparts) [474 499]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [461 503]))                  
+                :type "struct")
+                nil [395 506])
+            ("atom" type
+               (:members 
+                  ( ("flex" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [526 543])
+                    ("header" variable (:type ("header" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [568 589])
+                    ("" type
+                       (:members 
+                          ( ("data" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [603 618])
+                            ("pointer" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [623 637]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [591 643]))                  
+                :type "struct")
+                nil [509 647])
+            ("boson" type
+               (:members 
+                  ( ("header" variable (:type ("header" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [690 711])
+                    ("" type
+                       (:members 
+                          ( ("num" variable (:type "int") (reparse-symbol classsubparts) [743 751])
+                            ("text" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [769 783]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [714 794]))                  
+                :type "struct")
+                nil [661 819])
+            ("pair_" type
+               (:members 
+                  ( ("header" variable (:type ("" type
+                         (:members 
+                            ( ("cdr" variable (:type ("header" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1002 1020])
+                              ("car" variable (:type ("header" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1025 1043]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [989 1054])
+                    ("cdr" variable (:type ("" type
+                         (:members 
+                            ( ("data" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1068 1083])
+                              ("pointer" variable
+                                 (:pointer 1
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [1088 1102]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [1056 1112])
+                    ("car" variable (:type ("" type
+                         (:members 
+                            ( ("data" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1126 1141])
+                              ("pointer" variable
+                                 (:pointer 1
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [1146 1160]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [1114 1170]))                  
+                :type "struct")
+                nil [973 1173])
+            ("pairalloc" function
+               (:pointer 1
+                :type ("pair_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1407 1560])
+            ("doalloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("run_type" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1577 1601]))                  
+                :type "void")
+                nil [1563 1701])
+            ("init_alloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1722 1727]))                  
+                :type "void")
+                nil [1704 1789])
+            ("gt_storage" function
+               (:arguments 
+                  ( ("bitmask" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1976 1999]))                  
+                :type "unsigned int")
+                nil [1952 2549])
+            ("gt_base" function
+               (:arguments 
+                  ( ("basemask" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [3125 3149]))                  
+                :type "unsigned short")
+                nil [3101 4370])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4698 4703]))                  
+                :type "int")
+                nil [4688 4816])
+            ("resolve_typesig" function
+               (:arguments 
+                  ( ("bitmask" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [4973 4996]))                  
+                :type "unsigned short")
+                nil [4942 5749])
+            ("testsPAIR" function
+               (:arguments 
+                  ( ("chk" variable
+                       (:pointer 1
+                        :type ("pair_" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6141 6159]))                  
+                :type "int")
+                nil [6126 7035])
+            ("testsGO" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7052 7062])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7063 7072]))                  
+                :type "int")
+                nil [7039 7457])
+            ("tests" function
+               (:arguments 
+                  ( ("opts" variable (:type "int") (reparse-symbol arg-sub-list) [7471 7480]))                  
+                :type "int")
+                nil [7460 7795]))          
+      :file "mini.patience.c"
+      :pointmax 9905
+      :fsize 9904
+      :lastmodtime '(23172 30311 398281 171000)
+      :unmatched-syntax '((thing 1560 . 1561) (thing 1701 . 1702) (thing 1789 . 1790) (thing 2549 . 2550) (thing 4370 . 4371) (thing 4816 . 4817) (thing 5749 . 5750) (thing 7035 . 7036) (thing 7457 . 7458) (thing 7795 . 7796))
+      :lexical-table 
+        '(("REQUIRE_SUCCEED" . ((semantic-list "((ptr) == (NULL) ? \\
+  (printf(\"\\n\\nallocation failure\\n\\n\"), exit(-127)) : (1))" 105 . 185)))
+          )
+)
+    (semanticdb-table "semanticdb-table-145a9cc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stddef.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("data_mask" type
+               (:members 
+                  ( ("data" variable (:type ("" type
+                         (:members 
+                            ( ("i_size" variable (:type "unsigned char") (reparse-symbol classsubparts) [757 778])
+                              ("i_offset" variable (:type "unsigned char") (reparse-symbol classsubparts) [822 845]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [688 892])
+                    ("type" variable (:type ("" type
+                         (:members 
+                            ( ("base" variable
+                                 (:suffix ":6"
+                                  :type "unsigned char")
+                                  (reparse-symbol classsubparts) [963 986])
+                              ("ptr_mask" variable
+                                 (:suffix ":2"
+                                  :type "unsigned char")
+                                  (reparse-symbol classsubparts) [1031 1058]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [894 1104])
+                    ("ref_count" variable (:type "unsigned char") (reparse-symbol classsubparts) [1108 1132]))                  
+                :type "struct")
+                nil [627 1173])
+            ("pair_header" type
+               (:members 
+                  ( ("cdr" variable (:type ("data_mask" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1664 1685])
+                    ("car" variable (:type ("data_mask" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1742 1763]))                  
+                :type "struct")
+                nil [1608 1818])
+            ("pair" type
+               (:members 
+                  ( ("cdr" variable
+                       (:pointer 1
+                        :type ("pair" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2024 2041])
+                    ("header" variable (:type ("pair_header" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2092 2118])
+                    ("car" variable
+                       (:dereference 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2172 2185]))                  
+                :type "struct")
+                nil [2007 2243])
+            ("cons" function
+               (:pointer 1
+                :arguments 
+                  ( ("car" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2265 2276])
+                    ("cdr" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2277 2288])
+                    ("car_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2305]))                  
+                :type ("pair" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2247 2712])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2727 2732]))                  
+                :type "int")
+                nil [2717 5536]))          
+      :file "minilisp.c"
+      :pointmax 5825
+      :fsize 5824
+      :lastmodtime '(23360 39853 288558 443000)
+      :unmatched-syntax '((thing 2712 . 2713) (thing 5536 . 5537))))
+  :file "!home!lk!self!projects!lang_c!lisplayout!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-2c2b464
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2c2b464"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2c2b470"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "flycheck-swiftlint-autoloads.el"
+      :pointmax 375
+      :fsize 868
+      :lastmodtime '(23398 10047 481246 26000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!flycheck-swiftlint-20180312.2356!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

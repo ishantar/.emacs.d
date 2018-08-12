@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-37947c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-37947c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-282ffa0"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "flymake-cppcheck-autoloads.el"
+      :pointmax 371
+      :fsize 768
+      :lastmodtime '(23398 10034 727782 666000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!flymake-cppcheck-20140415.1257!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

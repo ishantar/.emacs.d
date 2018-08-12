@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-401a0ac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-401a0ac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-40d2228"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "better-shell-autoloads.el"
+      :pointmax 363
+      :fsize 1508
+      :lastmodtime '(23398 10586 783393 905000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!better-shell-20180625.1316!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

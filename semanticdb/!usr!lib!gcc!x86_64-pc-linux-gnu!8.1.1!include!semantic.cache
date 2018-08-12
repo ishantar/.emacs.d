@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-13fdc74
+;; Object semanticdb-project-database-file-14524f4
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-13fdc74"
+(semanticdb-project-database-file "semanticdb-project-database-file-14524f4"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-17ccd68"
+    (semanticdb-table "semanticdb-table-14524b4"
       :major-mode c-mode
       :tags 
         '( ("_STDDEF_H" variable (:constant-flag t) nil [1632 1641])
@@ -115,7 +115,7 @@
           ("_T_WCHAR_")
           )
 )
-    (semanticdb-table "semanticdb-table-1079d3c"
+    (semanticdb-table "semanticdb-table-14524d4"
       :major-mode c-mode
       :tags 
         '( ("_STDARG_H" variable (:constant-flag t) nil [1097 1106])
@@ -156,6 +156,23 @@
           ("_VA_LIST_")
           ("__GNUC_VA_LIST")
           ("va_arg" (spp-arg-list ("v" "l") 1530 . 1535) . ((symbol "__builtin_va_arg" 1536 . 1552) (semantic-list "(v,l)" 1552 . 1557)))
+          )
+)
+    (semanticdb-table "semanticdb-table-5247c4"
+      :major-mode c-mode
+      :tags 
+        '( ("_STDBOOL_H" variable (:constant-flag t) nil [1055 1065])
+            ("_Bool" variable (:constant-flag t) nil [1223 1228])
+            ("__bool_true_false_are_defined" variable (:constant-flag t) nil [1469 1498]))          
+      :file "stdbool.h"
+      :pointmax 1525
+      :fsize 1524
+      :lastmodtime '(23313 8435 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__bool_true_false_are_defined" . ((number "1" 1499 . 1500)))
+          ("_STDBOOL_H")
+          ("_Bool" . ((BOOL "bool" 1229 . 1233)))
           )
 ))
   :file "!usr!lib!gcc!x86_64-pc-linux-gnu!8.1.1!include!semantic.cache"

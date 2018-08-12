@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-2a8ee8c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2a8ee8c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2a8ee98"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "popwin-autoloads.el"
+      :pointmax 351
+      :fsize 2598
+      :lastmodtime '(23398 9561 242929 105000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!popwin-20150315.1300!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

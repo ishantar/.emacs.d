@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-fecc20
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-fecc20"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-fecc3c"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "erlang-autoloads.el"
+      :pointmax 351
+      :fsize 7662
+      :lastmodtime '(23398 10168 229142 623000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!erlang-20180618.1257!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

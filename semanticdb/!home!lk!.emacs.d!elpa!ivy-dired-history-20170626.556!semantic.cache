@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-3602274
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3602274"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1530430"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "ivy-dired-history-autoloads.el"
+      :pointmax 373
+      :fsize 637
+      :lastmodtime '(23398 9766 118369 984000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!ivy-dired-history-20170626.556!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

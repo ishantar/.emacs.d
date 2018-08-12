@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-18e5eb4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18e5eb4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1884c88"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "git-dwim-autoloads.el"
+      :pointmax 355
+      :fsize 567
+      :lastmodtime '(23398 9969 757119 817000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!git-dwim-20170126.1214!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
