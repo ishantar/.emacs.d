@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-17c67f8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17c67f8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d0a974"
+      :major-mode c++-mode
+      :tags nil
+      :file "RVNGBinaryData.h"
+      :pointmax 201
+      :fsize 2789
+      :lastmodtime '(23320 22446 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!librevenge-0.0!librevenge!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

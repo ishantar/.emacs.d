@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1b8b190
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b8b190"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b8b1ac"
+      :major-mode c-mode
+      :tags nil
+      :file "gvc.h"
+      :pointmax 201
+      :fsize 4184
+      :lastmodtime '(23393 31969 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d56564"
+      :major-mode c-mode
+      :tags nil
+      :file "gvcext.h"
+      :pointmax 201
+      :fsize 2641
+      :lastmodtime '(23393 31969 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c8e870"
+      :major-mode c-mode
+      :tags nil
+      :file "gvplugin.h"
+      :pointmax 201
+      :fsize 1849
+      :lastmodtime '(23393 31969 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!graphviz!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

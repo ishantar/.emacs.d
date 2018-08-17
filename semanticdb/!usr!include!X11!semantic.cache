@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1af2d54
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1af2d54"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1af2d60"
+      :major-mode c-mode
+      :tags nil
+      :file "InitialI.h"
+      :pointmax 201
+      :fsize 12604
+      :lastmodtime '(23311 30332 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b17e6c"
+      :major-mode c-mode
+      :tags nil
+      :file "Xlibint.h"
+      :pointmax 201
+      :fsize 40468
+      :lastmodtime '(22708 22964 941873 823000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b40968"
+      :major-mode c-mode
+      :tags nil
+      :file "Xproto.h"
+      :pointmax 201
+      :fsize 56959
+      :lastmodtime '(23190 56467 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!X11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file-1dc695c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dc695c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1de28d0"
+      :major-mode c-mode
+      :tags nil
+      :file "qquickaccessibleattached_p.h"
+      :pointmax 201
+      :fsize 9035
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d829ec"
+      :major-mode c-mode
+      :tags nil
+      :file "qquickdraghandler_p.h"
+      :pointmax 201
+      :fsize 4881
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e146cc"
+      :major-mode c-mode
+      :tags nil
+      :file "qquickevents_p_p.h"
+      :pointmax 201
+      :fsize 25183
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6187c"
+      :major-mode c-mode
+      :tags nil
+      :file "qquickimagebase_p.h"
+      :pointmax 201
+      :fsize 4742
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d61c10"
+      :major-mode c-mode
+      :tags nil
+      :file "qquickspriteengine_p.h"
+      :pointmax 201
+      :fsize 10375
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-188ddcc"
+      :major-mode c-mode
+      :tags nil
+      :file "qquicktextutil_p.h"
+      :pointmax 201
+      :fsize 4630
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b37e5c"
+      :major-mode c-mode
+      :tags nil
+      :file "qsgcontext_p.h"
+      :pointmax 201
+      :fsize 7169
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtQuick!5.11.1!QtQuick!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

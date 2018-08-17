@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1d2d218
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d2d218"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d4d7a8"
+      :major-mode c-mode
+      :tags nil
+      :file "Decrypt.h"
+      :pointmax 201
+      :fsize 5044
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ca9174"
+      :major-mode c-mode
+      :tags nil
+      :file "Dict.h"
+      :pointmax 201
+      :fsize 3385
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b9f2c0"
+      :major-mode c-mode
+      :tags nil
+      :file "GfxState.h"
+      :pointmax 201
+      :fsize 57098
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d91708"
+      :major-mode c-mode
+      :tags nil
+      :file "StructElement.h"
+      :pointmax 201
+      :fsize 10448
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1aa7700"
+      :major-mode c-mode
+      :tags nil
+      :file "XRef.h"
+      :pointmax 201
+      :fsize 10535
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!poppler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d01134
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d01134"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d01140"
+      :major-mode c-mode
+      :tags nil
+      :file "qgl_p.h"
+      :pointmax 201
+      :fsize 16525
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d91cc0"
+      :major-mode c-mode
+      :tags nil
+      :file "qglengineshadersource_p.h"
+      :pointmax 201
+      :fsize 21091
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtOpenGL!5.11.1!QtOpenGL!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -6,4 +6,4 @@
 ;;    If it is t, the completion will never be pruned from the file.
 ;;    Otherwise it is in hours since origin.
 
-("bits_wchar_h" . 425316)
+("cider-result-overlay-face" . 426248)

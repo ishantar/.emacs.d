@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d81808
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d81808"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d81824"
+      :major-mode c-mode
+      :tags nil
+      :file "PluginInputDomainAdapter.h"
+      :pointmax 201
+      :fsize 8765
+      :lastmodtime '(23199 50851 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e3d0e8"
+      :major-mode c-mode
+      :tags nil
+      :file "PluginLoader.h"
+      :pointmax 201
+      :fsize 10391
+      :lastmodtime '(23199 50851 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!vamp-hostsdk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

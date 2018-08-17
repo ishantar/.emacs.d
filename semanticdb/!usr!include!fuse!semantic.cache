@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1b07480
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b07480"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ae2b50"
+      :major-mode c-mode
+      :tags nil
+      :file "fuse.h"
+      :pointmax 201
+      :fsize 34620
+      :lastmodtime '(23391 6439 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-172e164"
+      :major-mode c-mode
+      :tags nil
+      :file "fuse_common.h"
+      :pointmax 201
+      :fsize 12616
+      :lastmodtime '(23391 6439 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b10f14"
+      :major-mode c-mode
+      :tags nil
+      :file "fuse_lowlevel.h"
+      :pointmax 201
+      :fsize 53273
+      :lastmodtime '(23391 6439 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dc9f2c"
+      :major-mode c-mode
+      :tags nil
+      :file "fuse_opt.h"
+      :pointmax 201
+      :fsize 7477
+      :lastmodtime '(23391 6439 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!fuse!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

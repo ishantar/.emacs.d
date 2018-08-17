@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-189efc8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-189efc8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1894a0c"
+      :major-mode c-mode
+      :tags nil
+      :file "lookup.h"
+      :pointmax 201
+      :fsize 11112
+      :lastmodtime '(23374 56123 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b111ac"
+      :major-mode c-mode
+      :tags nil
+      :file "publish.h"
+      :pointmax 201
+      :fsize 8889
+      :lastmodtime '(23374 56123 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!avahi-client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

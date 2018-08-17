@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1cbedcc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1cbedcc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1cbf668"
+      :major-mode c-mode
+      :tags nil
+      :file "iec61883.h"
+      :pointmax 201
+      :fsize 35855
+      :lastmodtime '(23315 45077 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libiec61883!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

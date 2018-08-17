@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file-1b7e074
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b7e074"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d7860c"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-connection.h"
+      :pointmax 200
+      :fsize 22236
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d2a214"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-data-model-iter.h"
+      :pointmax 201
+      :fsize 7246
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-184d1b0"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-data-model.h"
+      :pointmax 201
+      :fsize 13528
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1571b08"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-data-select.h"
+      :pointmax 201
+      :fsize 8822
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16901f0"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-enums.h"
+      :pointmax 201
+      :fsize 2584
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-125b29c"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-meta-struct.h"
+      :pointmax 201
+      :fsize 20116
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-185edb8"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-mutex.h"
+      :pointmax 198
+      :fsize 2227
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cfd4d0"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-server-operation.h"
+      :pointmax 201
+      :fsize 12665
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b10534"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-statement.h"
+      :pointmax 201
+      :fsize 8453
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libgda-5.0!libgda!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

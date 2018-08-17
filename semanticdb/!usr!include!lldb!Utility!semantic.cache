@@ -1,0 +1,1305 @@
+;; Object semanticdb-project-database-file-16ecae0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16ecae0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16ecafc"
+      :major-mode c++-mode
+      :tags 
+        '( ("liblldb_ConstString_h_" variable (:constant-flag t) nil [382 404])
+            ("llvm/ADT/StringRef.h" include nil nil [406 437])
+            ("llvm/Support/FormatVariadic.h" include nil nil [438 478])
+            ("stddef.h" include (:system-flag t) nil [503 522])
+            ("lldb_private" type
+               (:members 
+                  ( ("Stream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [563 576]))                  
+                :type "namespace")
+                nil [538 578])
+            ("llvm" type
+               (:members 
+                  ( ("raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [596 614]))                  
+                :type "namespace")
+                nil [579 616])
+            ("lldb_private" type
+               (:members 
+                  ( ("ConstString" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1425 1432])
+                            ("ConstString" function
+                               (:constructor-flag t
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1658 1694])
+                            ("ConstString" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2007 2030]))                                  
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1995 2058])
+                            ("ConstString" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::StringRef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2083 2108]))                                  
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2071 2109])
+                            ("ConstString" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cstr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2596 2613]))                                  
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2584 2614])
+                            ("ConstString" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cstr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3795 3812])
+                                    ("max_cstr_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3813 3833]))                                  
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3783 3834])
+                            ("StringIsEqual" type
+                               (:members 
+                                  ( ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("lhs" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4881 4897])
+                                            ("rhs" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4898 4914]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4865 4953]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [4377 4958])
+                            ("=" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5953 5976]))                                  
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5924 6029])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6658 6681]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6642 6859])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7496 7519]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7480 7568])
+                            ("<" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7587 7610]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7572 7617])
+                            ("AsCString" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("value_if_empty" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "nullptr"
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8141 8177]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [8119 8242])
+                            ("GetStringRef" function
+                               (:methodconst-flag t
+                                :type ("llvm::StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8545 8638])
+                            ("GetCString" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [9261 9312])
+                            ("GetLength" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9792 9817])
+                            ("Clear" function (:type "void") (reparse-symbol classsubparts) [10091 10127])
+                            ("Equals" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11062 11085])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11086 11109])
+                                    ("case_sensitive" variable
+                                       (:constant-flag t
+                                        :default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [11131 11163]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11043 11165])
+                            ("Compare" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12211 12234])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12235 12258])
+                                    ("case_sensitive" variable
+                                       (:constant-flag t
+                                        :default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [12280 12312]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [12192 12314])
+                            ("Dump" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type ("Stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12992 13002])
+                                    ("value_if_empty" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "nullptr"
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [13003 13039]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12982 13047])
+                            ("DumpDebug" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type ("Stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13357 13367]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13342 13374])
+                            ("IsEmpty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13686 13761])
+                            ("SetCString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cstr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [14356 14373]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14340 14374])
+                            ("SetString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::StringRef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14393 14418]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14378 14419])
+                            ("SetCStringWithMangledCounterpart" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("demangled" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [15326 15348])
+                                    ("mangled" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15389 15416]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15288 15417])
+                            ("GetMangledCounterpart" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("counterpart" variable
+                                       (:reference 1
+                                        :type ("ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16363 16388]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16336 16395])
+                            ("SetCStringWithLength" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cstr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [17287 17304])
+                                    ("cstr_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17305 17321]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17261 17322])
+                            ("SetTrimmedCStringWithLength" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cstr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [17810 17827])
+                                    ("fixed_cstr_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17828 17850]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17777 17851])
+                            ("MemorySize" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18375 18432])
+                            ("StaticMemorySize" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18905 18938])
+                            ("protected" label nil (reparse-symbol classsubparts) [18940 18950])
+                            ("m_string" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [19117 19138]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1405 19141])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19354 19364])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ConstString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19365 19388]))                          
+                        :type ("Stream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19335 19389]))                  
+                :type "namespace")
+                nil [618 19392])
+            ("llvm" type
+               (:members 
+                  ( ("format_provider" type
+                       (:type "struct"
+                        :members 
+                          ( ("format" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("CS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("lldb_private::ConstString" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19522 19558])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("llvm::raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19559 19581])
+                                    ("Options" variable (:type ("llvm::StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19603 19627]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19503 19628]))                          
+                        :template-specifier 
+                          ( ("lldb_private::ConstString" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [19437 19631]))                  
+                :type "namespace")
+                nil [19420 19633]))          
+      :file "ConstString.h"
+      :pointmax 19668
+      :fsize 19667
+      :lastmodtime '(23362 17391 0 0)
+      :unmatched-syntax '((semantic-list 5494 . 5529) (CONST 5488 . 5493) (semantic-list 5485 . 5487) (BOOL 5481 . 5485) (OPERATOR 5472 . 5480) (EXPLICIT 5463 . 5471) (punctuation 4134 . 4135) (DEFAULT 4127 . 4134) (punctuation 4125 . 4126) (semantic-list 4122 . 4124) (symbol 4111 . 4122) (punctuation 4110 . 4111) (EXPLICIT 3774 . 3782) (EXPLICIT 2575 . 2583) (EXPLICIT 2062 . 2070))
+      :lexical-table 
+        '(("liblldb_ConstString_h_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1716bb8"
+      :major-mode c++-mode
+      :tags 
+        '( ("liblldb_UserID_h_" variable (:constant-flag t) nil [377 394])
+            ("lldb/lldb-defines.h" include nil nil [396 426])
+            ("lldb/lldb-types.h" include nil nil [451 479])
+            ("lldb_private" type
+               (:members 
+                  ( ("Stream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [524 537]))                  
+                :type "namespace")
+                nil [499 539])
+            ("lldb_private" type
+               (:members 
+                  ( ("UserID" type
+                       (:members 
+                          ( ("UserID" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("uid" variable
+                                       (:default-value "LLDB_INVALID_UID"
+                                        :type ("lldb::user_id_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1541 1579]))                                  
+                                :type ("UserID" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1534 1596])
+                            ("UserID" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1760 1772])
+                            ("Clear" function (:type "void") (reparse-symbol classsubparts) [2021 2063])
+                            ("GetID" function
+                               (:methodconst-flag t
+                                :type ("lldb::user_id_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2288 2335])
+                            ("SetID" function
+                               (:arguments 
+                                  ( ("uid" variable (:type ("lldb::user_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2582 2602]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2571 2619])
+                            ("IDMatches" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [3088 3095])
+                                    ("IDMatches" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("uid" variable (:type ("lldb::user_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3296 3316]))                                          
+                                        :type ("IDMatches" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3286 3332])
+                                    ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("UserID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3542 3560]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3526 3599])
+                                    ("private" label nil (reparse-symbol classsubparts) [3603 3611])
+                                    ("m_uid" variable
+                                       (:constant-flag t
+                                        :type ("lldb::user_id_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3779 3807]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [3068 3848])
+                            ("protected" label nil (reparse-symbol classsubparts) [3850 3860])
+                            ("m_uid" variable (:type ("lldb::user_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4028 4050]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1335 4106])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UserID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4131 4149])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UserID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4150 4168]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4108 4209])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UserID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4234 4252])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UserID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4253 4271]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4211 4312])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4505 4518])
+                            ("uid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UserID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4519 4537]))                          
+                        :type ("Stream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4486 4538]))                  
+                :type "namespace")
+                nil [541 4541]))          
+      :file "UserID.h"
+      :pointmax 4597
+      :fsize 4596
+      :lastmodtime '(23362 17391 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("liblldb_UserID_h_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1030edc"
+      :file "FileSpec.h"
+      :fsize 23520
+      :lastmodtime '(23362 17391 0 0))
+    (semanticdb-table "semanticdb-table-178a6c0"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLDB_UTILITY_DATAEXTRACTOR_H" variable (:constant-flag t) nil [388 416])
+            ("lldb/lldb-defines.h" include nil nil [418 448])
+            ("lldb/lldb-enumerations.h" include nil nil [449 484])
+            ("lldb/lldb-forward.h" include nil nil [502 532])
+            ("lldb/lldb-types.h" include nil nil [558 586])
+            ("cassert" include (:system-flag t) nil [588 606])
+            ("stdint.h" include (:system-flag t) nil [607 626])
+            ("string.h" include (:system-flag t) nil [627 646])
+            ("lldb_private" type
+               (:members 
+                  ( ("Log" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [673 683]))                  
+                :type "namespace")
+                nil [648 685])
+            ("lldb_private" type
+               (:members 
+                  ( ("Stream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [711 724]))                  
+                :type "namespace")
+                nil [686 726])
+            ("llvm" type
+               (:members 
+                  ( ("SmallVectorImpl" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [744 788]))                  
+                :type "namespace")
+                nil [727 790])
+            ("lldb_private" type
+               (:members 
+                  ( ("DataExtractor" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1595 1602])
+                            ("Type" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("TypeUInt8" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [1859 1869])
+                                          ("TypeChar" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [1922 1931])
+                                          ("TypeUInt16" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [1972 1983])
+                                          ("TypeUInt32" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [2036 2047])
+                                          ("TypeUInt64" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [2100 2111])
+                                          ("TypePointer" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [2164 2176])
+                                          ("TypeULEB128" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [2212 2224])
+                                          ("TypeSLEB128" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [2267 2321]))                                        
+                                      :type "enum")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1840 2327])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2561 2577])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [3360 3377])
+                                    ("data_length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3378 3405])
+                                    ("byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3422 3449])
+                                    ("addr_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3450 3469])
+                                    ("target_byte_size" variable
+                                       (:default-value "1"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3486 3515]))                                  
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3346 3517])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("data_sp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("lldb::DataBufferSP" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4310 4344])
+                                    ("byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4345 4372])
+                                    ("addr_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4389 4408])
+                                    ("target_byte_size" variable
+                                       (:default-value "1"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4409 4438]))                                  
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4296 4440])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5631 5657])
+                                    ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5658 5680])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5697 5719])
+                                    ("target_byte_size" variable
+                                       (:default-value "1"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5720 5749]))                                  
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5617 5751])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5769 5794]))                                  
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5755 5795])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6325 6350]))                                  
+                                :type ("DataExtractor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6294 6351])
+                            ("DataExtractor" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6683 6708])
+                            ("getTargetByteSize" function
+                               (:methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6712 6777])
+                            ("Clear" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7110 7123])
+                            ("PutToLog" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("log" variable
+                                       (:pointer 1
+                                        :type ("Log" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8562 8571])
+                                    ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8572 8594])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8621 8643])
+                                    ("base_addr" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8644 8663])
+                                    ("num_per_line" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8690 8712])
+                                    ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8713 8723])
+                                    ("type_format" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "nullptr"
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8750 8783]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8538 8791])
+                            ("DumpUUID" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type ("Stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9381 9391])
+                                    ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9392 9414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9367 9421])
+                            ("ExtractBytes" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10600 10622])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10623 10645])
+                                    ("dst_byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10668 10699])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [10700 10710]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10580 10717])
+                            ("GetAddress" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11597 11624]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11577 11631])
+                            ("GetAddress_unchecked" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11665 11692]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11635 11699])
+                            ("GetAddressByteSize" function
+                               (:methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12062 12121])
+                            ("GetByteSize" function
+                               (:methodconst-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12410 12466])
+                            ("GetCStr" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13568 13595]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [13548 13602])
+                            ("GetCStr" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14733 14760])
+                                    ("len" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14761 14780]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [14713 14787])
+                            ("GetData" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15903 15930])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15931 15953]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15883 16079])
+                            ("CopyData" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16692 16714])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16715 16737])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [16764 16774]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16668 16781])
+                            ("CopyByteOrderedData" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("src_offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18481 18507])
+                                    ("src_len" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18545 18568])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [18569 18579])
+                                    ("dst_len" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18617 18640])
+                                    ("dst_byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18678 18709]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18446 18716])
+                            ("GetDataEnd" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19049 19100])
+                            ("GetSharedDataOffset" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19526 19561])
+                            ("GetDataStart" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19897 19952])
+                            ("GetFloat" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20628 20655]))                                  
+                                :type "float")
+                                (reparse-symbol classsubparts) [20613 20662])
+                            ("GetDouble" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20683 20710]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [20666 20717])
+                            ("GetLongDouble" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20747 20774]))                                  
+                                :type "long double")
+                                (reparse-symbol classsubparts) [20721 20781])
+                            ("GetMaxU32" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21808 21835])
+                                    ("byte_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21836 21853]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21789 21860])
+                            ("GetMaxU64" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22978 23005])
+                                    ("byte_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23006 23023]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22959 23030])
+                            ("GetMaxU64_unchecked" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23063 23090])
+                                    ("byte_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23122 23139]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23034 23146])
+                            ("GetMaxS64" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24300 24327])
+                                    ("byte_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24328 24345]))                                  
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [24282 24352])
+                            ("GetMaxU64Bitfield" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [26082 26109])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26110 26122])
+                                    ("bitfield_bit_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26152 26179])
+                                    ("bitfield_bit_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26209 26238]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [26055 26245])
+                            ("GetMaxS64Bitfield" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28025 28052])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28053 28065])
+                                    ("bitfield_bit_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28094 28121])
+                                    ("bitfield_bit_offset" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28150 28179]))                                  
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [27999 28186])
+                            ("GetPointer" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29082 29109]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29062 29116])
+                            ("GetByteOrder" function
+                               (:methodconst-flag t
+                                :type ("lldb::ByteOrder" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29406 29467])
+                            ("GetU8" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30220 30247]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30206 30254])
+                            ("GetU8_unchecked" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30282 30309]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30258 30399])
+                            ("GetU16_unchecked" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30429 30456]))                                  
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30403 30463])
+                            ("GetU32_unchecked" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30493 30520]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30467 30527])
+                            ("GetU64_unchecked" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30557 30584]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [30531 30591])
+                            ("GetU8" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31695 31722])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [31723 31733])
+                                    ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31734 31749]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31683 31756])
+                            ("GetU16" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32513 32540]))                                  
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32497 32547])
+                            ("GetU16" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33657 33684])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [33685 33695])
+                                    ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33696 33711]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [33644 33718])
+                            ("GetU32" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [34475 34502]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [34459 34509])
+                            ("GetU32" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35619 35646])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [35647 35657])
+                                    ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35658 35673]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [35606 35680])
+                            ("GetU64" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [36437 36464]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [36421 36471])
+                            ("GetU64" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37581 37608])
+                                    ("dst" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [37609 37619])
+                                    ("count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37620 37635]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [37568 37642])
+                            ("GetSLEB128" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38528 38555]))                                  
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [38509 38562])
+                            ("GetULEB128" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39455 39482]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [39435 39489])
+                            ("GetSharedDataBuffer" function (:type ("lldb::DataBufferSP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39493 39556])
+                            ("PeekCStr" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40164 40186]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [40143 40193])
+                            ("PeekData" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40720 40742])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40743 40765]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [40696 40878])
+                            ("SetAddressByteSize" function
+                               (:arguments 
+                                  ( ("addr_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41317 41336]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [41293 41456])
+                            ("SetData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("bytes" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [42294 42312])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42313 42335])
+                                    ("byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42361 42388]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [42271 42389])
+                            ("SetData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43566 43592])
+                                    ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43593 43615])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43641 43663]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [43543 43664])
+                            ("SetData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("data_sp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("lldb::DataBufferSP" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44822 44856])
+                                    ("offset" variable
+                                       (:default-value "0"
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44882 44907])
+                                    ("length" variable
+                                       (:default-value "LLDB_INVALID_OFFSET"
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44934 44977]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [44799 44979])
+                            ("SetByteOrder" function
+                               (:arguments 
+                                  ( ("byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45392 45419]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [45374 45450])
+                            ("Skip_LEB128" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("offset_ptr" variable
+                                       (:pointer 1
+                                        :type ("lldb::offset_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [46354 46381]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [46333 46388])
+                            ("ValidOffset" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46718 46740]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [46701 46787])
+                            ("ValidOffsetForDataOfSize" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47189 47211])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47244 47266]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47159 47318])
+                            ("Copy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("dest_data" variable
+                                       (:reference 1
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47334 47359]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [47322 47366])
+                            ("Append" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :type ("DataExtractor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47382 47401]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47370 47402])
+                            ("Append" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("bytes" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [47418 47430])
+                                    ("length" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47431 47453]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [47406 47454])
+                            ("BytesLeft" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("offset" variable (:type ("lldb::offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47483 47505]))                                  
+                                :type ("lldb::offset_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [47458 47629])
+                            ("Checksum" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dest" variable
+                                       (:reference 1
+                                        :type ("llvm::SmallVectorImpl" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [47647 47684])
+                                    ("max_data" variable
+                                       (:default-value "0"
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [47685 47706]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [47633 47708])
+                            ("protected" label nil (reparse-symbol classsubparts) [47710 47720])
+                            ("m_start" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [47887 47910])
+                            ("m_end" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [47955 47982])
+                            ("m_byte_order" variable (:type ("lldb::ByteOrder" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48046 48081])
+                            ("m_addr_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48144 48165])
+                            ("m_data_sp" variable
+                               (:typemodifiers ("mutable")
+                                :type ("lldb::DataBufferSP" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [48263 48300])
+                            ("m_target_byte_size" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [48423 48457]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1573 48460]))                  
+                :type "namespace")
+                nil [809 48463]))          
+      :file "DataExtractor.h"
+      :pointmax 48526
+      :fsize 48525
+      :lastmodtime '(23362 17391 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLDB_UTILITY_DATAEXTRACTOR_H")
+          )
+))
+  :file "!usr!include!lldb!Utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

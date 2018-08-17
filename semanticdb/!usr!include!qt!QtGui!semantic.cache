@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-17db8a8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17db8a8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b46e38"
+      :major-mode c-mode
+      :tags nil
+      :file "qaccessible.h"
+      :pointmax 201
+      :fsize 34345
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b0ec34"
+      :major-mode c-mode
+      :tags nil
+      :file "qevent.h"
+      :pointmax 201
+      :fsize 34470
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d5db04"
+      :major-mode c-mode
+      :tags nil
+      :file "qimage.h"
+      :pointmax 201
+      :fsize 16757
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1800074"
+      :major-mode c-mode
+      :tags nil
+      :file "qopengl.h"
+      :pointmax 201
+      :fsize 9862
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6ac0c"
+      :major-mode c-mode
+      :tags nil
+      :file "qtextformat.h"
+      :pointmax 201
+      :fsize 32657
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtGui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

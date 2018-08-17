@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-16d4bb8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16d4bb8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16d4bd4"
+      :major-mode c-mode
+      :tags nil
+      :file "avahi-ui.h"
+      :pointmax 201
+      :fsize 7128
+      :lastmodtime '(23374 56123 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!avahi-ui!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

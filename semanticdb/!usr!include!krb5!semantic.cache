@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1895d9c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1895d9c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1745848"
+      :major-mode c-mode
+      :tags nil
+      :file "krb5.h"
+      :pointmax 201
+      :fsize 342041
+      :lastmodtime '(23282 13742 675450 166000)
+      :unmatched-syntax nil))
+  :file "!usr!include!krb5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

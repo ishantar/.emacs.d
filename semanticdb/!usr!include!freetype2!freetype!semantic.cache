@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-1b666e0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b666e0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d04010"
+      :major-mode c-mode
+      :tags nil
+      :file "freetype.h"
+      :pointmax 201
+      :fsize 294004
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-184cab0"
+      :major-mode c-mode
+      :tags nil
+      :file "ftbdf.h"
+      :pointmax 201
+      :fsize 6793
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dda710"
+      :major-mode c-mode
+      :tags nil
+      :file "ftcache.h"
+      :pointmax 201
+      :fsize 56579
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b18f94"
+      :major-mode c-mode
+      :tags nil
+      :file "ftfntfmt.h"
+      :pointmax 201
+      :fsize 4976
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dda458"
+      :major-mode c-mode
+      :tags nil
+      :file "ftglyph.h"
+      :pointmax 201
+      :fsize 39385
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1840824"
+      :major-mode c-mode
+      :tags nil
+      :file "ftimage.h"
+      :pointmax 201
+      :fsize 75672
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a8b0f0"
+      :major-mode c-mode
+      :tags nil
+      :file "ftmac.h"
+      :pointmax 201
+      :fsize 17137
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-186ad18"
+      :major-mode c-mode
+      :tags nil
+      :file "ftmodapi.h"
+      :pointmax 201
+      :fsize 38009
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18a88bc"
+      :major-mode c-mode
+      :tags nil
+      :file "ftrender.h"
+      :pointmax 201
+      :fsize 11320
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d2d9ac"
+      :major-mode c-mode
+      :tags nil
+      :file "ftstroke.h"
+      :pointmax 201
+      :fsize 22293
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d565b4"
+      :major-mode c-mode
+      :tags nil
+      :file "ftsystem.h"
+      :pointmax 201
+      :fsize 10554
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1891c00"
+      :major-mode c-mode
+      :tags nil
+      :file "tttables.h"
+      :pointmax 201
+      :fsize 45716
+      :lastmodtime '(23273 40390 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!freetype2!freetype!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

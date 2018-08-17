@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-27ddf00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-27ddf00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-27de1d8"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "tNFA-autoloads.el"
+      :pointmax 347
+      :fsize 2808
+      :lastmodtime '(23408 60054 246057 589000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!tNFA-0.1.1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d3bb58
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d3bb58"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d4d258"
+      :major-mode c-mode
+      :tags nil
+      :file "WebKitFindController.h"
+      :pointmax 201
+      :fsize 4876
+      :lastmodtime '(23409 56509 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd6844"
+      :major-mode c-mode
+      :tags nil
+      :file "WebKitWebContext.h"
+      :pointmax 201
+      :fsize 14225
+      :lastmodtime '(23409 56509 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!webkitgtk-4.0!webkit2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

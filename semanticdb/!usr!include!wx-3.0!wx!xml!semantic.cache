@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d913b0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d913b0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d91ab8"
+      :major-mode c-mode
+      :tags nil
+      :file "xml.h"
+      :pointmax 201
+      :fsize 11950
+      :lastmodtime '(23202 58737 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!wx-3.0!wx!xml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

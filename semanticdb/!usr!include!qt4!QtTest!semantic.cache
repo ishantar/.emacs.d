@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1c9b22c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c9b22c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c8e84c"
+      :major-mode c-mode
+      :tags nil
+      :file "qtestmouse.h"
+      :pointmax 201
+      :fsize 6048
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dc9d20"
+      :major-mode c-mode
+      :tags nil
+      :file "qtestspontaneevent.h"
+      :pointmax 201
+      :fsize 3505
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt4!QtTest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

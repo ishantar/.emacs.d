@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-1de81c0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1de81c0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d91c88"
+      :major-mode c-mode
+      :tags nil
+      :file "EHPersonalities.h"
+      :pointmax 201
+      :fsize 2855
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1871ea0"
+      :major-mode c++-mode
+      :tags nil
+      :file "GlobalsModRef.h"
+      :pointmax 201
+      :fsize 5651
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-188cfd0"
+      :major-mode c-mode
+      :tags nil
+      :file "Loads.h"
+      :pointmax 201
+      :fsize 6455
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dc67f8"
+      :major-mode c++-mode
+      :tags nil
+      :file "LoopAccessAnalysis.h"
+      :pointmax 201
+      :fsize 30492
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5c19c"
+      :major-mode c-mode
+      :tags nil
+      :file "LoopPass.h"
+      :pointmax 201
+      :fsize 6462
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d76568"
+      :major-mode c++-mode
+      :tags nil
+      :file "MemoryDependenceAnalysis.h"
+      :pointmax 201
+      :fsize 21628
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-172e0a0"
+      :major-mode c-mode
+      :tags nil
+      :file "SparsePropagation.h"
+      :pointmax 201
+      :fsize 19867
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1888a54"
+      :major-mode c++-mode
+      :tags nil
+      :file "TargetLibraryInfo.h"
+      :pointmax 201
+      :fsize 14291
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!Analysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

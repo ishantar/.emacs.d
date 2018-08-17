@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d573d0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d573d0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1792ccc"
+      :major-mode c-mode
+      :tags nil
+      :file "gdkevents.h"
+      :pointmax 201
+      :fsize 55345
+      :lastmodtime '(23253 24814 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b3e258"
+      :major-mode c-mode
+      :tags nil
+      :file "gdkwindow.h"
+      :pointmax 201
+      :fsize 46415
+      :lastmodtime '(23253 24814 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gtk-3.0!gdk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

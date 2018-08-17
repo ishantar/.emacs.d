@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b1a650
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b1a650"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b08ca8"
+      :major-mode c-mode
+      :tags nil
+      :file "cdda.h"
+      :pointmax 201
+      :fsize 15361
+      :lastmodtime '(23127 39776 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!cdio!paranoia!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

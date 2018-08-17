@@ -1,0 +1,120 @@
+;; Object semanticdb-project-database-file-17eaa2c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17eaa2c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1af5bcc"
+      :major-mode c-mode
+      :tags nil
+      :file "client_plugin.h"
+      :pointmax 201
+      :fsize 6227
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d11e5c"
+      :major-mode c-mode
+      :tags nil
+      :file "m_ctype.h"
+      :pointmax 201
+      :fsize 42472
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cbbc1c"
+      :major-mode c-mode
+      :tags nil
+      :file "my_config.h"
+      :pointmax 201
+      :fsize 17451
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6e664"
+      :major-mode c-mode
+      :tags nil
+      :file "my_global.h"
+      :pointmax 201
+      :fsize 34183
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d74818"
+      :major-mode c-mode
+      :tags nil
+      :file "my_pthread.h"
+      :pointmax 201
+      :fsize 28543
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8e424"
+      :major-mode c-mode
+      :tags nil
+      :file "my_sys.h"
+      :pointmax 201
+      :fsize 42312
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e4761c"
+      :major-mode c-mode
+      :tags nil
+      :file "mysql.h"
+      :pointmax 201
+      :fsize 39108
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dc6bf0"
+      :major-mode c-mode
+      :tags nil
+      :file "mysql_com.h"
+      :pointmax 201
+      :fsize 26135
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d88ff0"
+      :major-mode c-mode
+      :tags nil
+      :file "plugin_audit.h"
+      :pointmax 201
+      :fsize 5659
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cf5fd0"
+      :major-mode c-mode
+      :tags nil
+      :file "plugin_auth_common.h"
+      :pointmax 201
+      :fsize 4509
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d60210"
+      :major-mode c-mode
+      :tags nil
+      :file "plugin_encryption.h"
+      :pointmax 201
+      :fsize 4433
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ca9b94"
+      :major-mode c-mode
+      :tags nil
+      :file "service_debug_sync.h"
+      :pointmax 201
+      :fsize 13495
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e3a878"
+      :major-mode c-mode
+      :tags nil
+      :file "service_thd_specifics.h"
+      :pointmax 201
+      :fsize 3686
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1db71b4"
+      :major-mode c-mode
+      :tags nil
+      :file "sslopt-case.h"
+      :pointmax 201
+      :fsize 1350
+      :lastmodtime '(23401 58624 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

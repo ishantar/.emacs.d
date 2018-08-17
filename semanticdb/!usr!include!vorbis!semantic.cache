@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d904c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d904c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d9045c"
+      :major-mode c-mode
+      :tags nil
+      :file "vorbisfile.h"
+      :pointmax 201
+      :fsize 7990
+      :lastmodtime '(23212 5554 976156 871000)
+      :unmatched-syntax nil))
+  :file "!usr!include!vorbis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

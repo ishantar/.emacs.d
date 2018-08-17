@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-109a510
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-109a510"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16a2d3c"
+      :major-mode c-mode
+      :tags nil
+      :file "hb-blob.h"
+      :pointmax 200
+      :fsize 3680
+      :lastmodtime '(23403 60765 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d11d48"
+      :major-mode c-mode
+      :tags nil
+      :file "hb-buffer.h"
+      :pointmax 198
+      :fsize 18293
+      :lastmodtime '(23403 60765 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!harfbuzz!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

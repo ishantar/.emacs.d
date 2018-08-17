@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d2d278
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d2d278"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-187f638"
+      :major-mode c-mode
+      :tags nil
+      :file "dvd_reader.h"
+      :pointmax 199
+      :fsize 11843
+      :lastmodtime '(23172 5695 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!dvdread!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

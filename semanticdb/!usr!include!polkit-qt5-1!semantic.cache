@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1dcdaec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dcdaec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1dfddf8"
+      :major-mode c-mode
+      :tags nil
+      :file "polkitqt1-authority.h"
+      :pointmax 201
+      :fsize 20518
+      :lastmodtime '(23165 34422 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e47598"
+      :major-mode c-mode
+      :tags nil
+      :file "polkitqt1-gui-action.h"
+      :pointmax 201
+      :fsize 9373
+      :lastmodtime '(23165 34422 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-185cd94"
+      :major-mode c-mode
+      :tags nil
+      :file "polkitqt1-gui-actionbutton.h"
+      :pointmax 201
+      :fsize 5028
+      :lastmodtime '(23165 34422 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-187f680"
+      :major-mode c-mode
+      :tags nil
+      :file "polkitqt1-gui-actionbuttons.h"
+      :pointmax 201
+      :fsize 3741
+      :lastmodtime '(23165 34422 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!polkit-qt5-1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

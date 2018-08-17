@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1d61630
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d61630"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1cd7174"
+      :major-mode c-mode
+      :tags nil
+      :file "va.h"
+      :pointmax 201
+      :fsize 175517
+      :lastmodtime '(23369 40441 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18931a0"
+      :major-mode c-mode
+      :tags nil
+      :file "va_enc_hevc.h"
+      :pointmax 201
+      :fsize 30156
+      :lastmodtime '(23369 40441 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cc7778"
+      :major-mode c-mode
+      :tags nil
+      :file "va_enc_vp9.h"
+      :pointmax 201
+      :fsize 23109
+      :lastmodtime '(23369 40441 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e3b6cc"
+      :major-mode c-mode
+      :tags nil
+      :file "va_fei.h"
+      :pointmax 201
+      :fsize 6943
+      :lastmodtime '(23369 40441 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d3bdd8"
+      :major-mode c-mode
+      :tags nil
+      :file "va_vpp.h"
+      :pointmax 201
+      :fsize 42658
+      :lastmodtime '(23369 40441 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!va!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

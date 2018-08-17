@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-1ca2b08
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ca2b08"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c899cc"
+      :major-mode c-mode
+      :tags nil
+      :file "dane.h"
+      :pointmax 201
+      :fsize 11267
+      :lastmodtime '(23052 50552 99999 999000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8d008"
+      :major-mode c-mode
+      :tags nil
+      :file "dname.h"
+      :pointmax 201
+      :fsize 6510
+      :lastmodtime '(23052 50552 116666 666000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6ea4c"
+      :major-mode c-mode
+      :tags nil
+      :file "host2str.h"
+      :pointmax 201
+      :fsize 31518
+      :lastmodtime '(23052 50552 263333 332000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ba2974"
+      :major-mode c-mode
+      :tags nil
+      :file "host2wire.h"
+      :pointmax 201
+      :fsize 6544
+      :lastmodtime '(23052 50552 286666 666000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b4ba00"
+      :major-mode c-mode
+      :tags nil
+      :file "keys.h"
+      :pointmax 201
+      :fsize 17939
+      :lastmodtime '(23052 50552 300000 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c86970"
+      :major-mode c-mode
+      :tags nil
+      :file "rdata.h"
+      :pointmax 201
+      :fsize 12222
+      :lastmodtime '(23052 50552 356666 666000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5c7f8"
+      :major-mode c-mode
+      :tags nil
+      :file "resolver.h"
+      :pointmax 201
+      :fsize 24989
+      :lastmodtime '(23052 50552 366666 665000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0e548"
+      :major-mode c-mode
+      :tags nil
+      :file "rr.h"
+      :pointmax 201
+      :fsize 27747
+      :lastmodtime '(23052 50552 383333 333000)
+      :unmatched-syntax nil))
+  :file "!usr!include!ldns!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

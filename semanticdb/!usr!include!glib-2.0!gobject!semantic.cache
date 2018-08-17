@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1d13e28
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d13e28"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d6925c"
+      :major-mode c-mode
+      :tags nil
+      :file "gparam.h"
+      :pointmax 201
+      :fsize 16380
+      :lastmodtime '(23240 39290 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1868fbc"
+      :major-mode c-mode
+      :tags nil
+      :file "gtype.h"
+      :pointmax 201
+      :fsize 89736
+      :lastmodtime '(23240 39290 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1840b18"
+      :major-mode c-mode
+      :tags nil
+      :file "gtypemodule.h"
+      :pointmax 201
+      :fsize 10773
+      :lastmodtime '(23240 39290 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d3ab00"
+      :major-mode c-mode
+      :tags nil
+      :file "gvaluecollector.h"
+      :pointmax 201
+      :fsize 9557
+      :lastmodtime '(23240 39290 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!glib-2.0!gobject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

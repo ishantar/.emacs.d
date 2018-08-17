@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-183b818
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-183b818"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-183b834"
+      :major-mode c-mode
+      :tags nil
+      :file "bytestream.h"
+      :pointmax 201
+      :fsize 11609
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b70e3c"
+      :major-mode c-mode
+      :tags nil
+      :file "callback.h"
+      :pointmax 201
+      :fsize 16732
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-171ed1c"
+      :major-mode c-mode
+      :tags nil
+      :file "fastmem.h"
+      :pointmax 201
+      :fsize 5930
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddd830"
+      :major-mode c-mode
+      :tags nil
+      :file "hash.h"
+      :pointmax 201
+      :fsize 15300
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0decc"
+      :major-mode c-mode
+      :tags nil
+      :file "logging.h"
+      :pointmax 201
+      :fsize 8910
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d4ca34"
+      :major-mode c-mode
+      :tags nil
+      :file "macros.h"
+      :pointmax 201
+      :fsize 6625
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd4a94"
+      :major-mode c-mode
+      :tags nil
+      :file "stl_util.h"
+      :pointmax 201
+      :fsize 5190
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-180740c"
+      :major-mode c-mode
+      :tags nil
+      :file "stringpiece.h"
+      :pointmax 201
+      :fsize 17661
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!google!protobuf!stubs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

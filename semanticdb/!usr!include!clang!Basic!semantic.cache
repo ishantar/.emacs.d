@@ -1,0 +1,2994 @@
+;; Object semanticdb-project-database-file-1666f90
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1666f90"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1666fac"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_ADDRESSSPACES_H" variable (:constant-flag t) nil [577 609])
+            ("assert.h" include (:system-flag t) nil [611 630])
+            ("clang" type
+               (:members 
+                  ( ("LangASMap" type
+                       (:typedef ("unsigned int")
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1720 1790])
+                    ("isTargetAddressSpace" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("AS" variable (:type ("LangAS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1928 1938]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1895 2010])
+                    ("toTargetAddressSpace" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("AS" variable (:type ("LangAS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2049 2059]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [2012 2166])
+                    ("getLangASFromTargetAS" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("TargetAS" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2204 2222]))                          
+                        :type ("LangAS" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2168 2341]))                  
+                :type "namespace")
+                nil [632 2344]))          
+      :file "AddressSpaces.h"
+      :pointmax 2372
+      :fsize 2371
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax '((punctuation 1608 . 1609) (semantic-list 781 . 1608) (UNSIGNED 772 . 780) (punctuation 770 . 771) (symbol 763 . 769) (CLASS 757 . 762) (ENUM 752 . 756))
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_ADDRESSSPACES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1666fe4"
+      :file "Diagnostic.h"
+      :fsize 56238
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-166701c"
+      :file "IdentifierTable.h"
+      :fsize 32184
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d2900"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_LLVM_H" variable (:constant-flag t) nil [592 615])
+            ("llvm/Support/Casting.h" include nil nil [781 814])
+            ("llvm/ADT/None.h" include nil nil [930 956])
+            ("llvm" type
+               (:members 
+                  ( ("StringRef" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [989 1005])
+                    ("Twine" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1008 1020])
+                    ("ArrayRef" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1023 1059])
+                    ("MutableArrayRef" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1062 1105])
+                    ("OwningArrayRef" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1108 1150])
+                    ("SmallString" type
+                       (:template 
+                          ( ("unsigned int" type (:typevar "InternalLen") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1153 1202])
+                    ("SmallVector" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("unsigned int" type (:typevar "N") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1205 1256])
+                    ("SmallVectorImpl" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1259 1302])
+                    ("Optional" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1305 1341])
+                    ("Expected" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1344 1378])
+                    ("SaveAndRestore" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1382 1427])
+                    ("IntrusiveRefCntPtr" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1456 1503])
+                    ("IntrusiveRefCntPtrInfo" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1506 1558])
+                    ("RefCountedBase" type
+                       (:template 
+                          ( ("Derived" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1561 1607])
+                    ("raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1611 1629])
+                    ("raw_pwrite_stream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1632 1656]))                  
+                :type "namespace")
+                nil [958 1683])
+            ("clang" type
+               (:members 
+                  ( ("llvm::isa" using (:type ("llvm::isa" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1730 1746])
+                    ("llvm::cast" using (:type ("llvm::cast" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1749 1766])
+                    ("llvm::dyn_cast" using (:type ("llvm::dyn_cast" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1769 1790])
+                    ("llvm::dyn_cast_or_null" using (:type ("llvm::dyn_cast_or_null" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1793 1822])
+                    ("llvm::cast_or_null" using (:type ("llvm::cast_or_null" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1825 1850])
+                    ("llvm::None" using (:type ("llvm::None" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1868 1885])
+                    ("llvm::Optional" using (:type ("llvm::Optional" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1888 1909])
+                    ("llvm::StringRef" using (:type ("llvm::StringRef" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1912 1934])
+                    ("llvm::Twine" using (:type ("llvm::Twine" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1937 1955])
+                    ("llvm::ArrayRef" using (:type ("llvm::ArrayRef" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1958 1979])
+                    ("llvm::MutableArrayRef" using (:type ("llvm::MutableArrayRef" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1982 2010])
+                    ("llvm::OwningArrayRef" using (:type ("llvm::OwningArrayRef" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2013 2040])
+                    ("llvm::SmallString" using (:type ("llvm::SmallString" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2043 2067])
+                    ("llvm::SmallVector" using (:type ("llvm::SmallVector" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2070 2094])
+                    ("llvm::SmallVectorImpl" using (:type ("llvm::SmallVectorImpl" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2097 2125])
+                    ("llvm::SaveAndRestore" using (:type ("llvm::SaveAndRestore" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2128 2155])
+                    ("llvm::Expected" using (:type ("llvm::Expected" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2180 2201])
+                    ("llvm::IntrusiveRefCntPtr" using (:type ("llvm::IntrusiveRefCntPtr" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2230 2261])
+                    ("llvm::IntrusiveRefCntPtrInfo" using (:type ("llvm::IntrusiveRefCntPtrInfo" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2264 2299])
+                    ("llvm::RefCountedBase" using (:type ("llvm::RefCountedBase" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2302 2329])
+                    ("llvm::raw_ostream" using (:type ("llvm::raw_ostream" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2333 2357])
+                    ("llvm::raw_pwrite_stream" using (:type ("llvm::raw_pwrite_stream" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2360 2390]))                  
+                :type "namespace")
+                nil [1686 2392]))          
+      :file "LLVM.h"
+      :pointmax 2425
+      :fsize 2424
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_LLVM_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-17d2938"
+      :file "Linkage.h"
+      :fsize 4112
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d2970"
+      :file "OperatorKinds.h"
+      :fsize 1162
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d29a8"
+      :file "PartialDiagnostic.h"
+      :fsize 13315
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d29e0"
+      :file "PragmaKinds.h"
+      :fsize 840
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d2a18"
+      :file "SourceLocation.h"
+      :fsize 15474
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17d2a50"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_SPECIFIERS_H" variable (:constant-flag t) nil [579 608])
+            ("llvm/ADT/StringRef.h" include nil nil [610 641])
+            ("llvm/Support/DataTypes.h" include nil nil [642 677])
+            ("llvm/Support/ErrorHandling.h" include nil nil [678 717])
+            ("clang" type
+               (:members 
+                  ( ("TypeSpecifierWidth" type
+                       (:members 
+                          ( ("TSW_unspecified" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [846 862])
+                            ("TSW_short" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [867 877])
+                            ("TSW_long" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [882 891])
+                            ("TSW_longlong" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [896 912]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [816 913])
+                    ("TypeSpecifierSign" type
+                       (:members 
+                          ( ("TSS_unspecified" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1023 1039])
+                            ("TSS_signed" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1044 1055])
+                            ("TSS_unsigned" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1060 1076]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [994 1077])
+                    ("TypeSpecifiersPipe" type
+                       (:members 
+                          ( ("TSP_unspecified" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1113 1129])
+                            ("TSP_pipe" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1134 1146]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1083 1147])
+                    ("TypeSpecifierType" type
+                       (:members 
+                          ( ("TST_unspecified" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1221 1237])
+                            ("TST_void" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1242 1251])
+                            ("TST_char" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1256 1265])
+                            ("TST_wchar" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1270 1280])
+                            ("TST_char16" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1307 1318])
+                            ("TST_char32" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1347 1358])
+                            ("TST_int" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1387 1395])
+                            ("TST_int128" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1400 1411])
+                            ("TST_half" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1416 1425])
+                            ("TST_Float16" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1470 1482])
+                            ("TST_float" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1528 1538])
+                            ("TST_double" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1543 1554])
+                            ("TST_float128" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1559 1572])
+                            ("TST_bool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1577 1586])
+                            ("TST_decimal32" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1608 1622])
+                            ("TST_decimal64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1644 1658])
+                            ("TST_decimal128" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1680 1695])
+                            ("TST_enum" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1717 1726])
+                            ("TST_union" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1731 1741])
+                            ("TST_struct" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1746 1757])
+                            ("TST_class" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1762 1772])
+                            ("TST_interface" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1802 1816])
+                            ("TST_typename" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1869 1882])
+                            ("TST_typeofType" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1937 1952])
+                            ("TST_typeofExpr" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1957 1972])
+                            ("TST_decltype" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1977 1990])
+                            ("TST_underlyingType" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2021 2040])
+                            ("TST_auto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2078 2087])
+                            ("TST_decltype_auto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2118 2136])
+                            ("TST_auto_type" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2168 2182])
+                            ("TST_unknown_anytype" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2219 2239])
+                            ("TST_atomic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2276 2287])
+                            ("TST_error" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2442 2473]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1192 2474])
+                    ("WrittenBuiltinSpecs" type
+                       (:members 
+                          ( ("static_assert" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("TST_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2662 2673]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2648 2723])
+                            ("Type" variable
+                               (:suffix ":6"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2746 2765])
+                            ("Sign" variable
+                               (:suffix ":2"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2788 2807])
+                            ("Width" variable
+                               (:suffix ":2"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2830 2849])
+                            ("ModeAttr" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2854 2876]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2615 2881])
+                    ("AccessSpecifier" type
+                       (:members 
+                          ( ("AS_public" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3066 3076])
+                            ("AS_protected" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3081 3094])
+                            ("AS_private" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3099 3110])
+                            ("AS_none" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3115 3126]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3039 3127])
+                    ("ExprValueKind" type
+                       (:members 
+                          ( ("VK_RValue" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3362 3372])
+                            ("VK_LValue" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3477 3487])
+                            ("VK_XValue" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3674 3687]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3229 3688])
+                    ("ExprObjectKind" type
+                       (:members 
+                          ( ("OK_Ordinary" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3884 3896])
+                            ("OK_BitField" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3964 3976])
+                            ("OK_VectorComponent" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4057 4076])
+                            ("OK_ObjCProperty" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4222 4238])
+                            ("OK_ObjCSubscript" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4423 4443]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3795 4444])
+                    ("TemplateSpecializationKind" type
+                       (:members 
+                          ( ("TSK_Undeclared" variable
+                               (:constant-flag t
+                                :default-value (4766 4767)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4749 4767])
+                            ("TSK_ImplicitInstantiation" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4882 4908])
+                            ("TSK_ExplicitSpecialization" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5094 5121])
+                            ("TSK_ExplicitInstantiationDeclaration" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5290 5327])
+                            ("TSK_ExplicitInstantiationDefinition" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5493 5532]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [4579 5533])
+                    ("isTemplateInstantiation" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("Kind" variable (:type ("TemplateSpecializationKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5752 5784]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5716 5863])
+                    ("isTemplateExplicitInstantiationOrSpecialization" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("Kind" variable (:type ("TemplateSpecializationKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6106 6138]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6039 6459])
+                    ("ThreadStorageClassSpecifier" type
+                       (:members 
+                          ( ("TSCS_unspecified" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6547 6564])
+                            ("TSCS___thread" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6591 6605])
+                            ("TSCS_thread_local" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6703 6721])
+                            ("TSCS__Thread_local" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6835 6857]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6508 6858])
+                    ("StorageClass" type
+                       (:members 
+                          ( ("SC_None" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6972 6980])
+                            ("SC_Extern" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6985 6995])
+                            ("SC_Static" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7000 7010])
+                            ("SC_PrivateExtern" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7015 7032])
+                            ("SC_Auto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7080 7088])
+                            ("SC_Register" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7093 7108]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6892 7109])
+                    ("isLegalForFunction" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("SC" variable (:type ("StorageClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7220 7236]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7189 7277])
+                    ("isLegalForVariable" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("SC" variable (:type ("StorageClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7388 7404]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [7357 7427])
+                    ("InClassInitStyle" type
+                       (:members 
+                          ( ("ICIS_NoInit" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7532 7544])
+                            ("ICIS_CopyInit" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7581 7595])
+                            ("ICIS_ListInit" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7626 7677]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [7504 7678])
+                    ("CallingConv" type
+                       (:members 
+                          ( ("CC_C" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7787 7792])
+                            ("CC_X86StdCall" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7833 7847])
+                            ("CC_X86FastCall" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7881 7896])
+                            ("CC_X86ThisCall" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7930 7945])
+                            ("CC_X86VectorCall" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7979 7996])
+                            ("CC_X86Pascal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8032 8045])
+                            ("CC_Win64" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8079 8088])
+                            ("CC_X86_64SysV" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8126 8140])
+                            ("CC_X86RegCall" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8175 8189])
+                            ("CC_AAPCS" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8222 8231])
+                            ("CC_AAPCS_VFP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8275 8288])
+                            ("CC_IntelOclBicc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8332 8348])
+                            ("CC_SpirFunction" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8388 8404])
+                            ("CC_OpenCLKernel" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8456 8472])
+                            ("CC_Swift" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8508 8517])
+                            ("CC_PreserveMost" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8559 8575])
+                            ("CC_PreserveAll" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8614 8629]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [7764 8668])
+                    ("supportsVariadicCall" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("CC" variable (:type ("CallingConv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8846 8861]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8813 9162])
+                    ("StorageDuration" type
+                       (:members 
+                          ( ("SD_FullExpression" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9264 9282])
+                            ("SD_Automatic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9344 9357])
+                            ("SD_Thread" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9423 9433])
+                            ("SD_Static" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9476 9486])
+                            ("SD_Dynamic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9529 9582]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9237 9583])
+                    ("NullabilityKind" type
+                       (:superclasses 
+                          ( ("uint8_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9646 10058])
+                    ("getNullabilitySpelling" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("kind" variable (:type ("NullabilityKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10160 10181])
+                            ("isContextSensitive" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10223 10254]))                          
+                        :type ("llvm::StringRef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10121 10256])
+                    ("ParameterABI" type (:type "class") (reparse-symbol namespacesubparts) [10302 10989])
+                    ("getParameterABISpelling" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("kind" variable (:type ("ParameterABI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11033 11051]))                          
+                        :type ("llvm::StringRef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10993 11052]))                  
+                :type "namespace")
+                nil [719 11054]))          
+      :file "Specifiers.h"
+      :pointmax 11119
+      :fsize 11118
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax '((symbol 10972 . 10984) (punctuation 10759 . 10760) (symbol 10743 . 10759) (punctuation 10522 . 10523) (symbol 10503 . 10522) (punctuation 10396 . 10397) (symbol 10388 . 10396) (ENUM 10297 . 10301) (symbol 10042 . 10053) (punctuation 9797 . 9798) (symbol 9789 . 9797) (punctuation 9742 . 9743) (number 9741 . 9742) (punctuation 9739 . 9740) (symbol 9731 . 9738) (ENUM 9641 . 9645) (string 2682 . 2721) (number 2679 . 2680) (punctuation 2677 . 2678) (punctuation 2676 . 2677) (number 2674 . 2675) (punctuation 2672 . 2673) (spp-include "clang/Basic/OpenCLImageTypes.def" 2394 . 2437) (spp-macro-def 2321 . 2339))
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_SPECIFIERS_H")
+          ("GENERIC_IMAGE_TYPE" (spp-arg-list ("ImgType" "Id") 2339 . 2352) . ((spp-symbol-merge ((spp-symbol-merge ((symbol "TST_" 2353 . 2357) (symbol "ImgType" 2359 . 2366)) 2353 . 2366) (symbol "_t" 2368 . 2370)) 2353 . 2370) (punctuation "," 2370 . 2371)))
+          )
+)
+    (semanticdb-table "semanticdb-table-17d2a88"
+      :file "Visibility.h"
+      :fsize 4458
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-18bcedc"
+      :file "ExceptionSpecificationType.h"
+      :fsize 2115
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-17cbb7c"
+      :file "OpenCLImageTypes.def"
+      :fsize 4167
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-1821cd0"
+      :file "DebugInfoOptions.h"
+      :fsize 1674
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-1821d08"
+      :file "Sanitizers.h"
+      :fsize 2825
+      :lastmodtime '(23369 1979 0 0))
+    (semanticdb-table "semanticdb-table-16246c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_TARGETINFO_H" variable (:constant-flag t) nil [540 569])
+            ("clang/Basic/AddressSpaces.h" include nil nil [571 609])
+            ("clang/Basic/LLVM.h" include nil nil [610 639])
+            ("clang/Basic/Specifiers.h" include nil nil [640 675])
+            ("clang/Basic/TargetCXXABI.h" include nil nil [676 713])
+            ("clang/Basic/TargetOptions.h" include nil nil [714 752])
+            ("clang/Basic/VersionTuple.h" include nil nil [753 790])
+            ("llvm/ADT/APInt.h" include nil nil [791 818])
+            ("llvm/ADT/IntrusiveRefCntPtr.h" include nil nil [819 859])
+            ("llvm/ADT/Optional.h" include nil nil [860 890])
+            ("llvm/ADT/SmallSet.h" include nil nil [891 921])
+            ("llvm/ADT/StringMap.h" include nil nil [922 953])
+            ("llvm/ADT/StringRef.h" include nil nil [954 985])
+            ("llvm/ADT/Triple.h" include nil nil [986 1014])
+            ("llvm/IR/DataLayout.h" include nil nil [1015 1046])
+            ("llvm/Support/DataTypes.h" include nil nil [1047 1082])
+            ("cassert" include (:system-flag t) nil [1083 1101])
+            ("string" include (:system-flag t) nil [1102 1119])
+            ("vector" include (:system-flag t) nil [1120 1137])
+            ("llvm" type
+               (:members 
+                  ( ("fltSemantics" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1156 1176]))                  
+                :type "namespace")
+                nil [1139 1178])
+            ("clang" type
+               (:members 
+                  ( ("DiagnosticsEngine" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1198 1222])
+                    ("LangOptions" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1223 1241])
+                    ("CodeGenOptions" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1242 1263])
+                    ("MacroBuilder" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1264 1283])
+                    ("QualType" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1284 1299])
+                    ("SourceLocation" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1300 1321])
+                    ("SourceManager" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1322 1342])
+                    ("Builtin" type
+                       (:members 
+                          ( ("Info" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1364 1376]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1344 1378])
+                    ("TargetInfo" type
+                       (:superclasses 
+                          ( ("RefCountedBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("TargetOpts" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("TargetOptions" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1498 1540])
+                            ("Triple" variable (:type ("llvm::Triple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1543 1563])
+                            ("protected" label nil (reparse-symbol classsubparts) [1564 1574])
+                            ("BigEndian" variable (:type "bool") (reparse-symbol classsubparts) [1715 1730])
+                            ("TLSSupported" variable (:type "bool") (reparse-symbol classsubparts) [1733 1751])
+                            ("VLASupported" variable (:type "bool") (reparse-symbol classsubparts) [1754 1772])
+                            ("NoAsmVariants" variable (:type "bool") (reparse-symbol classsubparts) [1775 1794])
+                            ("HasFloat128" variable (:type "bool") (reparse-symbol classsubparts) [1836 1853])
+                            ("PointerWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [1856 1897])
+                            ("PointerAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [1856 1897])
+                            ("BoolWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [1900 1935])
+                            ("BoolAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [1900 1935])
+                            ("IntWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [1938 1971])
+                            ("IntAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [1938 1971])
+                            ("HalfWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [1974 2009])
+                            ("HalfAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [1974 2009])
+                            ("FloatWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2012 2049])
+                            ("FloatAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2012 2049])
+                            ("DoubleWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2052 2091])
+                            ("DoubleAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2052 2091])
+                            ("LongDoubleWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2094 2156])
+                            ("LongDoubleAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2094 2156])
+                            ("Float128Align" variable (:type "unsigned char") (reparse-symbol classsubparts) [2094 2156])
+                            ("LargeArrayMinWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2159 2209])
+                            ("LargeArrayAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2159 2209])
+                            ("LongWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2212 2247])
+                            ("LongAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2212 2247])
+                            ("LongLongWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2250 2293])
+                            ("LongLongAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2250 2293])
+                            ("SuitableAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2296 2324])
+                            ("DefaultAlignForAttributeAligned" variable (:type "unsigned char") (reparse-symbol classsubparts) [2327 2373])
+                            ("MinGlobalAlign" variable (:type "unsigned char") (reparse-symbol classsubparts) [2376 2405])
+                            ("MaxAtomicPromoteWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2408 2466])
+                            ("MaxAtomicInlineWidth" variable (:type "unsigned char") (reparse-symbol classsubparts) [2408 2466])
+                            ("MaxVectorAlign" variable (:type "unsigned short") (reparse-symbol classsubparts) [2469 2499])
+                            ("MaxTLSAlign" variable (:type "unsigned short") (reparse-symbol classsubparts) [2502 2529])
+                            ("SimdDefaultAlign" variable (:type "unsigned short") (reparse-symbol classsubparts) [2532 2564])
+                            ("NewAlign" variable (:type "unsigned short") (reparse-symbol classsubparts) [2567 2591])
+                            ("DataLayout" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("llvm::DataLayout" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2594 2639])
+                            ("MCountName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2642 2665])
+                            ("HalfFormat" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2774])
+                            ("FloatFormat" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2774])
+                            ("DoubleFormat" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2774])
+                            ("LongDoubleFormat" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2774])
+                            ("Float128Format" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2668 2774])
+                            ("RegParmMax" variable (:type "unsigned char") (reparse-symbol classsubparts) [2777 2817])
+                            ("SSERegParmMax" variable (:type "unsigned char") (reparse-symbol classsubparts) [2777 2817])
+                            ("TheCXXABI" variable (:type ("TargetCXXABI" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2820 2843])
+                            ("AddrSpaceMap" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("LangASMap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2846 2876])
+                            ("PlatformName" variable
+                               (:typemodifiers ("mutable")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2880 2911])
+                            ("PlatformMinVersion" variable
+                               (:typemodifiers ("mutable")
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2914 2954])
+                            ("HasAlignMac68kSupport" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2958 2993])
+                            ("RealTypeUsesObjCFPRet" variable
+                               (:suffix ":3"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2996 3031])
+                            ("ComplexLongDoubleUsesFP2Ret" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [3034 3075])
+                            ("HasBuiltinMSVaList" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [3079 3111])
+                            ("IsRenderScriptTarget" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [3115 3149])
+                            ("TargetInfo" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("T" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::Triple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3226 3248]))                                  
+                                :type ("TargetInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3215 3249])
+                            ("resetDataLayout" function
+                               (:arguments 
+                                  ( ("DL" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3274 3287]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3253 3341])
+                            ("public" label nil (reparse-symbol classsubparts) [3343 3350])
+                            ("CreateTargetInfo" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("Diags" variable
+                                       (:reference 1
+                                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3646 3671])
+                                    ("Opts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("TargetOptions" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3691 3734]))                                  
+                                :type ("TargetInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3607 3735])
+                            ("TargetInfo" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3739 3761])
+                            ("getTargetOpts" function
+                               (:methodconst-flag t
+                                :type ("TargetOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3807 3925])
+                            ("IntType" type
+                               (:members 
+                                  ( ("NoInt" variable
+                                       (:constant-flag t
+                                        :default-value (4037 4038)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4029 4038])
+                                    ("SignedChar" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4044 4055])
+                                    ("UnsignedChar" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4060 4073])
+                                    ("SignedShort" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4078 4090])
+                                    ("UnsignedShort" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4095 4109])
+                                    ("SignedInt" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4114 4124])
+                                    ("UnsignedInt" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4129 4141])
+                                    ("SignedLong" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4146 4157])
+                                    ("UnsignedLong" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4162 4175])
+                                    ("SignedLongLong" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4180 4195])
+                                    ("UnsignedLongLong" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4200 4220]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [4010 4221])
+                            ("RealType" type
+                               (:members 
+                                  ( ("NoFloat" variable
+                                       (:constant-flag t
+                                        :default-value (4255 4258)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4245 4258])
+                                    ("Float" variable
+                                       (:constant-flag t
+                                        :default-value (4272 4273)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4264 4273])
+                                    ("Double" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4279 4286])
+                                    ("LongDouble" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4291 4302])
+                                    ("Float128" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4307 4319]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [4225 4320])
+                            ("BuiltinVaListKind" type
+                               (:members 
+                                  ( ("CharPtrBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :default-value (4521 4522)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4498 4522])
+                                    ("VoidPtrBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4570 4591])
+                                    ("AArch64ABIBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4740 4764])
+                                    ("PNaClABIBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4906 4928])
+                                    ("PowerABIBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5099 5121])
+                                    ("X86_64ABIBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5245 5268])
+                                    ("AAPCSABIBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5428 5450])
+                                    ("SystemZBuiltinVaList" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5644 5668]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [4428 5669])
+                            ("protected" label nil (reparse-symbol classsubparts) [5671 5681])
+                            ("SizeType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("IntMaxType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("PtrDiffType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("IntPtrType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("WCharType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("WIntType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("Char16Type" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("Char32Type" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("Int64Type" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("SigAtomicType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("ProcessIDType" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5684 5844])
+                            ("UseSignedCharForObjCBool" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [6026 6064])
+                            ("UseBitFieldTypeAlignment" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [6394 6432])
+                            ("UseZeroLengthBitfieldAlignment" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [6723 6767])
+                            ("UseExplicitBitFieldAlignment" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [6846 6888])
+                            ("ZeroLengthBitfieldBoundary" variable (:type "unsigned int") (reparse-symbol classsubparts) [7044 7080])
+                            ("UseAddrSpaceMapMangling" variable (:type "bool") (reparse-symbol classsubparts) [7209 7238])
+                            ("public" label nil (reparse-symbol classsubparts) [7240 7247])
+                            ("getSizeType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7250 7298])
+                            ("getSignedSizeType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7301 7627])
+                            ("getIntMaxType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7630 7682])
+                            ("getUIntMaxType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7685 7774])
+                            ("getPtrDiffType" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7800 7819]))                                  
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7777 7901])
+                            ("getUnsignedPtrDiffType" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7935 7954]))                                  
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7904 8034])
+                            ("getIntPtrType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8037 8089])
+                            ("getUIntPtrType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8092 8181])
+                            ("getWCharType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8184 8234])
+                            ("getWIntType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8237 8285])
+                            ("getChar16Type" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8288 8340])
+                            ("getChar32Type" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8343 8395])
+                            ("getInt64Type" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8398 8448])
+                            ("getUInt64Type" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8451 8538])
+                            ("getSigAtomicType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8541 8599])
+                            ("getProcessIDType" function
+                               (:methodconst-flag t
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8602 8660])
+                            ("getCorrespondingUnsignedType" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8708 8718]))                                  
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8664 9066])
+                            ("getTypeWidth" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9221 9231]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [9199 9238])
+                            ("getIntTypeByWidth" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("BitWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9331 9349])
+                                    ("IsSigned" variable (:type "bool") (reparse-symbol arg-sub-list) [9350 9364]))                                  
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9297 9371])
+                            ("getLeastIntTypeByWidth" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("BitWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9495 9513])
+                                    ("IsSigned" variable (:type "bool") (reparse-symbol arg-sub-list) [9555 9569]))                                  
+                                :type ("IntType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9456 9576])
+                            ("getRealTypeByWidth" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("BitWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9670 9688]))                                  
+                                :type ("RealType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9642 9695])
+                            ("getTypeAlign" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9854 9864]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [9832 9871])
+                            ("isTypeSigned" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9966 9976]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9941 9977])
+                            ("getPointerWidth" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10103 10122]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10078 10206])
+                            ("getPointerAlign" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10234 10253]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10209 10337])
+                            ("getMaxPointerWidth" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10407 10481])
+                            ("getNullPointerValue" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type ("LangAS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10639 10656]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10602 10676])
+                            ("getBoolWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [10761 10812])
+                            ("getBoolAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [10893 10944])
+                            ("getCharWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [10948 10991])
+                            ("getCharAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11003 11046])
+                            ("getShortWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11159 11204])
+                            ("getShortAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11313 11358])
+                            ("getIntWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11480 11529])
+                            ("getIntAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11532 11581])
+                            ("getLongWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11697 11748])
+                            ("getLongAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11751 11802])
+                            ("getLongLongWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11932 11991])
+                            ("getLongLongAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [11994 12053])
+                            ("hasInt128Type" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12135 12212])
+                            ("hasFloat128Type" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12305 12365])
+                            ("getSuitableAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12491 12550])
+                            ("getDefaultAlignForAttributeAligned" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12694 12795])
+                            ("getMinGlobalAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [12941 13002])
+                            ("getNewAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13175 13284])
+                            ("getWCharWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13377 13443])
+                            ("getWCharAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13446 13512])
+                            ("getChar16Width" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13607 13675])
+                            ("getChar16Align" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13678 13746])
+                            ("getChar32Width" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13841 13909])
+                            ("getChar32Align" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [13912 13980])
+                            ("getHalfWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14058 14109])
+                            ("getHalfAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14112 14163])
+                            ("getHalfFormat" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14166 14237])
+                            ("getFloatWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14317 14370])
+                            ("getFloatAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14373 14426])
+                            ("getFloatFormat" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14429 14502])
+                            ("getDoubleWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14584 14639])
+                            ("getDoubleAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14642 14697])
+                            ("getDoubleFormat" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14700 14775])
+                            ("getLongDoubleWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14872 14935])
+                            ("getLongDoubleAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [14938 15001])
+                            ("getLongDoubleFormat" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15004 15093])
+                            ("getFloat128Width" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [15187 15236])
+                            ("getFloat128Align" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [15239 15298])
+                            ("getFloat128Format" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::fltSemantics" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15301 15386])
+                            ("useFloat128ManglingForLongDouble" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15482 15553])
+                            ("getFloatEvalMethod" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [15622 15679])
+                            ("getLargeArrayMinWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [15788 15857])
+                            ("getLargeArrayAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [15860 15923])
+                            ("getMaxAtomicPromoteWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [16048 16123])
+                            ("getMaxAtomicInlineWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [16268 16341])
+                            ("setMaxAtomicWidth" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [16452 16487])
+                            ("hasBuiltinAtomic" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AtomicSizeInBits" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16647 16673])
+                                    ("AlignmentInBits" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16706 16731]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16617 16972])
+                            ("getMaxVectorAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17057 17118])
+                            ("getSimdDefaultAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17313 17378])
+                            ("getIntMaxTWidth" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17463 17538])
+                            ("getUnwindWordWidth" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17595 17669])
+                            ("getRegisterWidth" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [17740 17984])
+                            ("getMCountName" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [18058 18120])
+                            ("useSignedCharForObjCBool" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18335 18415])
+                            ("noSignedCharForObjCBool" function (:type "void") (reparse-symbol classsubparts) [18418 18492])
+                            ("useBitFieldTypeAlignment" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18603 18683])
+                            ("useZeroLengthBitfieldAlignment" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18785 18877])
+                            ("getZeroLengthBitfieldBoundary" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [18988 19079])
+                            ("useExplicitBitFieldAlignment" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19222 19310])
+                            ("hasAlignMac68kSupport" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19394 19468])
+                            ("getTypeName" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19625 19635]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [19594 19636])
+                            ("getTypeConstantSuffix" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19795 19805]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [19761 19812])
+                            ("getTypeFormatModifier" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("IntType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19991 20001]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [19950 20002])
+                            ("useObjCFPRetForRealType" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("RealType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20165 20176]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20136 20233])
+                            ("useObjCFP2RetForComplexLongDouble" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20369 20461])
+                            ("useFP16ConversionIntrinsics" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20688 20759])
+                            ("useAddressSpaceMapMangling" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20888 20969])
+                            ("getTargetDefines" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Opts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LangOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21193 21217])
+                                    ("Builder" variable
+                                       (:reference 1
+                                        :type ("MacroBuilder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21250 21272]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21163 21283])
+                            ("getTargetBuiltins" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ArrayRef" type
+                                     (:template-specifier 
+                                        ( ("Builtin::Info" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [21492 21554])
+                            ("isCLZForZeroUndef" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [21897 21952])
+                            ("getBuiltinVaListKind" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("BuiltinVaListKind" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22056 22115])
+                            ("hasBuiltinMSVaList" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22217 22279])
+                            ("isRenderScriptTarget" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22320 22386])
+                            ("isValidClobber" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22547 22562]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22527 22569])
+                            ("isValidGCCRegisterName" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22760 22775]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22732 22782])
+                            ("getNormalizedGCCRegisterName" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23096 23111])
+                                    ("ReturnCanonical" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [23153 23181]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23057 23189])
+                            ("getConstraintRegister" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Constraint" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringRef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23234 23262])
+                                    ("Expression" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StringRef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23305 23333]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23194 23360])
+                            ("ConstraintInfo" type
+                               (:members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("CI_None" variable
+                                               (:constant-flag t
+                                                :default-value (23415 23419)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23405 23419])
+                                            ("CI_AllowsMemory" variable
+                                               (:constant-flag t
+                                                :default-value (23445 23449)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23427 23449])
+                                            ("CI_AllowsRegister" variable
+                                               (:constant-flag t
+                                                :default-value (23477 23481)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23457 23481])
+                                            ("CI_ReadWrite" variable
+                                               (:constant-flag t
+                                                :default-value (23504 23508)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23489 23508])
+                                            ("CI_HasMatchingInput" variable
+                                               (:constant-flag t
+                                                :default-value (23590 23594)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23568 23594])
+                                            ("CI_ImmediateConstant" variable
+                                               (:constant-flag t
+                                                :default-value (23671 23675)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23648 23675])
+                                            ("CI_EarlyClobber" variable
+                                               (:constant-flag t
+                                                :default-value (23747 23751)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [23729 23751]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [23392 23806])
+                                    ("Flags" variable (:type "unsigned int") (reparse-symbol classsubparts) [23811 23826])
+                                    ("TiedOperand" variable (:type "int") (reparse-symbol classsubparts) [23831 23847])
+                                    ("ImmRange" variable (:type ("" type
+                                         (:members 
+                                            ( ("Min" variable (:type "int") (reparse-symbol classsubparts) [23867 23875])
+                                              ("Max" variable (:type "int") (reparse-symbol classsubparts) [23882 23890]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [23852 23906])
+                                    ("ImmSet" variable (:type ("llvm::SmallSet" type
+                                         (:template-specifier 
+                                            ( ("int" type nil nil nil)
+                                              ("4"))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [23911 23941])
+                                    ("ConstraintStr" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23947 23973])
+                                    ("Name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24000 24017])
+                                    ("public" label nil (reparse-symbol classsubparts) [24067 24074])
+                                    ("ConstraintInfo" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("ConstraintStr" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24094 24118])
+                                            ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24119 24134]))                                          
+                                        :type ("ConstraintInfo" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [24079 24281])
+                                    ("getConstraintStr" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [24287 24356])
+                                    ("getName" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [24361 24412])
+                                    ("isReadWrite" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [24417 24481])
+                                    ("earlyClobber" function (:type "bool") (reparse-symbol classsubparts) [24486 24548])
+                                    ("allowsRegister" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [24553 24625])
+                                    ("allowsMemory" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [24630 24698])
+                                    ("hasMatchingInput" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [24799 24875])
+                                    ("hasTiedOperand" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [25115 25172])
+                                    ("getTiedOperand" function
+                                       (:methodconst-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [25177 25310])
+                                    ("requiresImmediateConstant" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [25316 25412])
+                                    ("isValidAsmImmediate" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("Value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("llvm::APInt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25442 25467]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [25417 25604])
+                                    ("setIsReadWrite" function (:type "void") (reparse-symbol classsubparts) [25610 25658])
+                                    ("setEarlyClobber" function (:type "void") (reparse-symbol classsubparts) [25663 25715])
+                                    ("setAllowsMemory" function (:type "void") (reparse-symbol classsubparts) [25720 25772])
+                                    ("setAllowsRegister" function (:type "void") (reparse-symbol classsubparts) [25777 25833])
+                                    ("setHasMatchingInput" function (:type "void") (reparse-symbol classsubparts) [25838 25898])
+                                    ("setRequiresImmediate" function
+                                       (:arguments 
+                                          ( ("Min" variable (:type "int") (reparse-symbol arg-sub-list) [25929 25937])
+                                            ("Max" variable (:type "int") (reparse-symbol arg-sub-list) [25938 25946]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [25903 26043])
+                                    ("setRequiresImmediate" function
+                                       (:arguments 
+                                          ( ("Exacts" variable (:type ("llvm::ArrayRef" type
+                                                 (:template-specifier 
+                                                    ( ("int" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [26074 26101]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26048 26207])
+                                    ("setRequiresImmediate" function
+                                       (:arguments 
+                                          ( ("Exact" variable (:type "int") (reparse-symbol arg-sub-list) [26238 26248]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26212 26321])
+                                    ("setRequiresImmediate" function (:type "void") (reparse-symbol classsubparts) [26326 26458])
+                                    ("setTiedOperand" function
+                                       (:arguments 
+                                          ( ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26670 26681])
+                                            ("Output" variable
+                                               (:reference 1
+                                                :type ("ConstraintInfo" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26682 26705]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [26650 26847]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [23364 26852])
+                            ("validateGlobalRegisterVariable" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("RegName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27248 27266])
+                                    ("RegSize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27313 27330])
+                                    ("HasSizeMismatch" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [27377 27399]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27204 27457])
+                            ("validateOutputConstraint" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("Info" variable
+                                       (:reference 1
+                                        :type ("ConstraintInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27695 27716]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27665 27723])
+                            ("validateInputConstraint" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("OutputConstraints" variable (:type ("MutableArrayRef" type
+                                         (:template-specifier 
+                                            ( ("ConstraintInfo" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [27755 27805])
+                                    ("info" variable
+                                       (:reference 1
+                                        :type ("ConstraintInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [27837 27858]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27726 27865])
+                            ("validateOutputSize" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27901 27926])
+                                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27961 27979]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27869 28008])
+                            ("validateInputSize" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28043 28068])
+                                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28102 28120]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [28012 28149])
+                            ("validateConstraintModifier" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28194 28219])
+                                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [28249 28267])
+                                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28297 28315])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28345 28380]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [28152 28409])
+                            ("validateAsmConstraint" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [28449 28462])
+                                    ("" variable (:type ("Name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28462 28467])
+                                    ("info" variable
+                                       (:reference 1
+                                        :type ("TargetInfo::ConstraintInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [28492 28525]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [28412 28536])
+                            ("resolveSymbolicName" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [28565 28578])
+                                    ("" variable (:type ("Name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28578 28583])
+                                    ("OutputConstraints" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("ConstraintInfo" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [28611 28654])
+                                    ("Index" variable
+                                       (:reference 1
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [28682 28698]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [28540 28705])
+                            ("convertConstraint" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [28927 28940])
+                                    ("" variable (:type ("Constraint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28940 28951]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28889 29124])
+                            ("getClobbers" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [29203 29247])
+                            ("isNan2008" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [29356 29409])
+                            ("getTriple" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::Triple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29475 29537])
+                            ("getDataLayout" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("llvm::DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29541 29671])
+                            ("GCCRegAlias" type
+                               (:members 
+                                  ( ("Aliases" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [29700 29730])
+                                    ("Register" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [29735 29763]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [29675 29768])
+                            ("AddlRegName" type
+                               (:members 
+                                  ( ("Names" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [29797 29825])
+                                    ("RegNum" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [29830 29852]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [29772 29857])
+                            ("hasProtectedVisibility" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [30466 30526])
+                            ("isValidSectionSpecifier" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("SR" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31112 31125]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31068 31152])
+                            ("adjust" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Opts" variable
+                                       (:reference 1
+                                        :type ("LangOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31431 31449]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31411 31450])
+                            ("adjustTargetOptions" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("CGOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31548 31577])
+                                    ("TargetOpts" variable
+                                       (:reference 1
+                                        :type ("TargetOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31613 31639]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31515 31648])
+                            ("initFeatureMap" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Features" variable
+                                       (:reference 1
+                                        :type ("llvm::StringMap" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [31886 31918])
+                                    ("Diags" variable
+                                       (:reference 1
+                                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31949 31974])
+                                    ("CPU" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31975 31989])
+                                    ("FeatureVec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [32020 32063]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31858 32070])
+                            ("getABI" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32117 32173])
+                            ("getCXXABI" function
+                               (:methodconst-flag t
+                                :type ("TargetCXXABI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32224 32282])
+                            ("setCPU" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32401 32425]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32381 32449])
+                            ("isValidCPUName" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32556 32571]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32528 32600])
+                            ("setABI" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [32715 32739]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32695 32763])
+                            ("setFPMath" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32895 32910]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [32872 32934])
+                            ("setFeatureEnabled" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Features" variable
+                                       (:reference 1
+                                        :type ("llvm::StringMap" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33065 33097])
+                                    ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33131 33146])
+                                    ("Enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [33180 33193]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [33034 33235])
+                            ("isValidFeatureName" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Feature" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33346 33364]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33314 33393])
+                            ("handleTargetFeatures" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Features" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33897 33932])
+                                    ("Diags" variable
+                                       (:reference 1
+                                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33969 33994]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [33863 34017])
+                            ("hasFeature" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Feature" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34116 34134]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34092 34164])
+                            ("validateCpuSupports" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34293 34308]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34260 34332])
+                            ("validateCpuIs" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34449 34464]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34422 34488])
+                            ("getRegParmMax" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [34556 34695])
+                            ("isTLSSupported" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34762 34820])
+                            ("getMaxTLSAlign" function
+                               (:methodconst-flag t
+                                :type "unsigned short")
+                                (reparse-symbol classsubparts) [35028 35095])
+                            ("isVLASupported" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35160 35212])
+                            ("isSEHTrySupported" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35268 35462])
+                            ("hasNoAsmVariants" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35774 35835])
+                            ("getEHDataRegisterNumber" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("RegNo" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [36122 36137]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [36086 36164])
+                            ("getStaticInitSectionSpecifier" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [36248 36331])
+                            ("getAddressSpaceMap" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("LangASMap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [36335 36404])
+                            ("getConstantAddressSpace" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("llvm::Optional" type
+                                     (:template-specifier 
+                                        ( ("LangAS" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [36711 36807])
+                            ("getPlatformName" function
+                               (:methodconst-flag t
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [36909 36967])
+                            ("getPlatformMinVersion" function
+                               (:methodconst-flag t
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [37085 37158])
+                            ("isBigEndian" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37162 37208])
+                            ("isLittleEndian" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [37211 37261])
+                            ("CallingConvMethodType" type
+                               (:members 
+                                  ( ("CCMT_Unknown" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37298 37311])
+                                    ("CCMT_Member" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37316 37328])
+                                    ("CCMT_NonMember" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37333 37351]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [37265 37352])
+                            ("getDefaultCallingConv" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("MT" variable (:type ("CallingConvMethodType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37499 37524]))                                  
+                                :type ("CallingConv" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [37457 37746])
+                            ("CallingConvCheckResult" type
+                               (:members 
+                                  ( ("CCCR_OK" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37784 37792])
+                                    ("CCCR_Warning" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37797 37810])
+                                    ("CCCR_Ignore" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [37815 37827]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [37750 37832])
+                            ("checkCallingConvention" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("CC" variable (:type ("CallingConv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38194 38209]))                                  
+                                :type ("CallingConvCheckResult" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [38140 38330])
+                            ("hasSjLjLowering" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38457 38517])
+                            ("allowsLargerPreferedTypeAlignment" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [38603 38674])
+                            ("setSupportedOpenCLOpts" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [38751 38791])
+                            ("setOpenCLExtensionOpts" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [38867 39047])
+                            ("getSupportedOpenCLOpts" function (:type ("OpenCLOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [39124 39220])
+                            ("getSupportedOpenCLOpts" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("OpenCLOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [39303 39413])
+                            ("OpenCLTypeKind" type
+                               (:members 
+                                  ( ("OCLTK_Default" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39443 39457])
+                                    ("OCLTK_ClkEvent" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39462 39477])
+                                    ("OCLTK_Event" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39482 39494])
+                                    ("OCLTK_Image" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39499 39511])
+                                    ("OCLTK_Pipe" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39516 39527])
+                                    ("OCLTK_Queue" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39532 39544])
+                                    ("OCLTK_ReserveID" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39549 39565])
+                                    ("OCLTK_Sampler" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [39570 39584]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [39417 39589])
+                            ("getOpenCLTypeAddrSpace" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("TK" variable (:type ("OpenCLTypeKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39679 39697]))                                  
+                                :type ("LangAS" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [39641 39704])
+                            ("getVtblPtrAddressSpace" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [39763 39830])
+                            ("getDWARFAddressSpace" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AddressSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40197 40219]))                                  
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [40149 40248])
+                            ("validateTarget" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("Diags" variable
+                                       (:reference 1
+                                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [40350 40375]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [40322 40404])
+                            ("protected" label nil (reparse-symbol classsubparts) [40406 40416])
+                            ("getPointerWidthV" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40453 40472]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [40419 40509])
+                            ("getPointerAlignV" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40546 40565]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [40512 40602])
+                            ("getPtrDiffTypeV" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("AddrSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [40642 40661]))                                  
+                                :type ("IntType" type (:type "enum") nil nil))
+                                (reparse-symbol classsubparts) [40605 40697])
+                            ("getGCCRegNames" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ArrayRef" type
+                                     (:template-specifier 
+                                        ( ("char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [40700 40758])
+                            ("getGCCRegAliases" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ArrayRef" type
+                                     (:template-specifier 
+                                        ( ("GCCRegAlias" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [40761 40820])
+                            ("getGCCAddlRegNames" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("ArrayRef" type
+                                     (:template-specifier 
+                                        ( ("AddlRegName" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [40823 40902]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1441 40905]))                  
+                :type "namespace")
+                nil [1180 40908]))          
+      :file "TargetInfo.h"
+      :pointmax 40941
+      :fsize 40940
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax '((thing 28461 . 28462) (thing 28577 . 28578) (thing 28939 . 28940))
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_TARGETINFO_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-17ef980"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_TARGETCXXABI_H" variable (:constant-flag t) nil [598 629])
+            ("llvm/Support/ErrorHandling.h" include nil nil [631 670])
+            ("clang" type
+               (:members 
+                  ( ("TargetCXXABI" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [769 776])
+                            ("Kind" type
+                               (:members 
+                                  ( ("GenericItanium" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1114 1129])
+                                    ("GenericARM" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1894 1905])
+                                    ("iOS" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2317 2321])
+                                    ("iOS64" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2617 2623])
+                                    ("WatchOS" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2845 2853])
+                                    ("GenericAArch64" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3193 3208])
+                                    ("GenericMIPS" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3441 3453])
+                                    ("WebAssembly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4185 4197])
+                                    ("Microsoft" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4460 4473]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [816 4474])
+                            ("private" label nil (reparse-symbol classsubparts) [4476 4484])
+                            ("TheKind" variable (:type ("Kind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4673 4686])
+                            ("public" label nil (reparse-symbol classsubparts) [4688 4695])
+                            ("TargetCXXABI" function
+                               (:constructor-flag t
+                                :type ("TargetCXXABI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4748 4791])
+                            ("TargetCXXABI" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("kind" variable (:type ("Kind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4808 4818]))                                  
+                                :type ("TargetCXXABI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4795 4837])
+                            ("set" function
+                               (:arguments 
+                                  ( ("kind" variable (:type ("Kind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4850 4860]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4841 4886])
+                            ("getKind" function
+                               (:methodconst-flag t
+                                :type ("Kind" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4890 4930])
+                            ("isItaniumFamily" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5009 5335])
+                            ("isMicrosoft" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5388 5710])
+                            ("areMemberFunctionsAligned" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6268 6915])
+                            ("isMemberFunctionCCDefault" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7036 7161])
+                            ("areArgsDestroyedLeftToRightInCallee" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7640 7720])
+                            ("hasConstructorVariants" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7837 7908])
+                            ("hasPrimaryVBases" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7987 8052])
+                            ("hasKeyFunctions" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8222 8286])
+                            ("canKeyFunctionBeInline" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9897 10278])
+                            ("TailPaddingUseRules" type
+                               (:members 
+                                  ( ("AlwaysUseTailPadding" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11320 11341])
+                                    ("UseTailPaddingUnlessPOD03" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11540 11566])
+                                    ("UseTailPaddingUnlessPOD11" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11708 11737]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [11124 11738])
+                            ("getTailPaddingUseRules" function
+                               (:methodconst-flag t
+                                :type ("TailPaddingUseRules" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11741 12616])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("left" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetCXXABI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12643 12668])
+                                    ("right" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetCXXABI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12669 12695]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12620 12747])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("left" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetCXXABI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12774 12799])
+                                    ("right" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetCXXABI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12800 12826]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12751 12861]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [748 12864]))                  
+                :type "namespace")
+                nil [672 12867]))          
+      :file "TargetCXXABI.h"
+      :pointmax 12900
+      :fsize 12899
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_TARGETCXXABI_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-17ef9b8"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_TARGETOPTIONS_H" variable (:constant-flag t) nil [542 574])
+            ("string" include (:system-flag t) nil [576 593])
+            ("vector" include (:system-flag t) nil [594 611])
+            ("clang/Basic/OpenCLOptions.h" include nil nil [612 650])
+            ("llvm/Target/TargetOptions.h" include nil nil [651 689])
+            ("clang" type
+               (:members 
+                  ( ("TargetOptions" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [779 786])
+                            ("Triple" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [841 860])
+                            ("HostTriple" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [962 985])
+                            ("CPU" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1054 1070])
+                            ("FPMath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1131 1150])
+                            ("ABI" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1205 1221])
+                            ("EABIVersion" variable (:type ("llvm::EABI" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1255 1278])
+                            ("LinkerVersion" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1339 1365])
+                            ("FeaturesAsWritten" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1473 1516])
+                            ("Features" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1655 1689])
+                            ("SupportedOpenCLOptions" variable (:type ("OpenCLOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1755 1792])
+                            ("OpenCLExtensionsAsWritten" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1899 1950]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [757 1953]))                  
+                :type "namespace")
+                nil [691 1956]))          
+      :file "TargetOptions.h"
+      :pointmax 1989
+      :fsize 1988
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_TARGETOPTIONS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-17ef9f0"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_CLANG_BASIC_VERSIONTUPLE_H" variable (:constant-flag t) nil [608 639])
+            ("clang/Basic/LLVM.h" include nil nil [641 670])
+            ("llvm/ADT/Optional.h" include nil nil [671 701])
+            ("string" include (:system-flag t) nil [702 719])
+            ("tuple" include (:system-flag t) nil [720 736])
+            ("clang" type
+               (:members 
+                  ( ("VersionTuple" type
+                       (:members 
+                          ( ("Major" variable
+                               (:suffix ":31"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [865 885])
+                            ("UsesUnderscores" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [889 918])
+                            ("Minor" variable
+                               (:suffix ":31"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [922 942])
+                            ("HasMinor" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [945 967])
+                            ("Subminor" variable
+                               (:suffix ":31"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [971 994])
+                            ("HasSubminor" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [997 1022])
+                            ("Build" variable
+                               (:suffix ":31"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [1026 1046])
+                            ("HasBuild" variable
+                               (:suffix ":1"
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [1049 1071])
+                            ("public" label nil (reparse-symbol classsubparts) [1073 1080])
+                            ("VersionTuple" function
+                               (:constructor-flag t
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1083 1236])
+                            ("VersionTuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Major" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1262 1277]))                                  
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1249 1420])
+                            ("VersionTuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Major" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1446 1461])
+                                    ("Minor" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1462 1477])
+                                    ("UsesUnderscores" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1502 1530]))                                  
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1433 1695])
+                            ("VersionTuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Major" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1721 1736])
+                                    ("Minor" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1737 1752])
+                                    ("Subminor" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1753 1771])
+                                    ("UsesUnderscores" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1796 1824]))                                  
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1708 1995])
+                            ("VersionTuple" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Major" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2021 2036])
+                                    ("Minor" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2037 2052])
+                                    ("Subminor" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2053 2071])
+                                    ("Build" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2096 2111])
+                                    ("UsesUnderscores" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2112 2140]))                                  
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2008 2314])
+                            ("empty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2430 2522])
+                            ("getMajor" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2574 2617])
+                            ("getMinor" function
+                               (:methodconst-flag t
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2682 2779])
+                            ("getSubminor" function
+                               (:methodconst-flag t
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2847 2953])
+                            ("getBuild" function
+                               (:methodconst-flag t
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3018 3115])
+                            ("usesUnderscores" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3119 3181])
+                            ("UseDotAsSeparator" function (:type "void") (reparse-symbol classsubparts) [3185 3244])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3420 3442])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3443 3465]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3397 3585])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3776 3798])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3799 3821]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3753 3849])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4040 4062])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4063 4085]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4018 4212])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4402 4424])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4425 4447]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4380 4471])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4690 4712])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4713 4735]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4667 4762])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("X" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4979 5001])
+                                    ("Y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VersionTuple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5002 5024]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4956 5051])
+                            ("getAsString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5124 5156])
+                            ("tryParse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("string" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5343 5360]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5329 5361]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [842 5364])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("Out" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5425 5442])
+                            ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VersionTuple" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5443 5465]))                          
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5401 5466]))                  
+                :type "namespace")
+                nil [738 5469]))          
+      :file "VersionTuple.h"
+      :pointmax 5535
+      :fsize 5534
+      :lastmodtime '(23369 1979 0 0)
+      :unmatched-syntax '((EXPLICIT 1999 . 2007) (EXPLICIT 1699 . 1707) (EXPLICIT 1424 . 1432) (EXPLICIT 1240 . 1248))
+      :lexical-table 
+        '(("LLVM_CLANG_BASIC_VERSIONTUPLE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1460868"
+      :file "OpenCLOptions.h"
+      :fsize 4094
+      :lastmodtime '(23369 1979 0 0)))
+  :file "!usr!include!clang!Basic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

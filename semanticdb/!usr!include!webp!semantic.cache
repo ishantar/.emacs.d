@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1bb0414
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1bb0414"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b84b54"
+      :major-mode c-mode
+      :tags nil
+      :file "decode.h"
+      :pointmax 201
+      :fsize 23150
+      :lastmodtime '(23268 60800 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d24930"
+      :major-mode c-mode
+      :tags nil
+      :file "demux.h"
+      :pointmax 201
+      :fsize 15606
+      :lastmodtime '(23268 60800 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df4b48"
+      :major-mode c-mode
+      :tags nil
+      :file "encode.h"
+      :pointmax 201
+      :fsize 27481
+      :lastmodtime '(23268 60800 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df9688"
+      :major-mode c-mode
+      :tags nil
+      :file "mux.h"
+      :pointmax 201
+      :fsize 22824
+      :lastmodtime '(23268 60800 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!webp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

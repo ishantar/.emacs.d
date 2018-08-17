@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1bb5eb8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1bb5eb8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b0c864"
+      :major-mode c-mode
+      :tags nil
+      :file "decode.h"
+      :pointmax 201
+      :fsize 14323
+      :lastmodtime '(23357 30609 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b0c26c"
+      :major-mode c-mode
+      :tags nil
+      :file "encode.h"
+      :pointmax 201
+      :fsize 16403
+      :lastmodtime '(23357 30609 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b64f20"
+      :major-mode c-mode
+      :tags nil
+      :file "types.h"
+      :pointmax 201
+      :fsize 2615
+      :lastmodtime '(23357 30609 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!brotli!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

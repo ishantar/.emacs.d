@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d657f4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d657f4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d65800"
+      :major-mode c-mode
+      :tags nil
+      :file "PDBTypes.h"
+      :pointmax 201
+      :fsize 9734
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!DebugInfo!PDB!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

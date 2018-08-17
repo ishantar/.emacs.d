@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-16134d0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16134d0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-168ae44"
+      :major-mode c-mode
+      :tags nil
+      :file "gstdmabuf.h"
+      :pointmax 201
+      :fsize 4384
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gstreamer-1.0!gst!allocators!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

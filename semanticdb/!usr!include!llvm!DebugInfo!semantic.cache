@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-168b008
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-168b008"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-168b024"
+      :major-mode c++-mode
+      :tags nil
+      :file "DIContext.h"
+      :pointmax 201
+      :fsize 8613
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!DebugInfo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-185f164
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-185f164"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1af2e38"
+      :major-mode c-mode
+      :tags nil
+      :file "UilSymDef.h"
+      :pointmax 201
+      :fsize 28173
+      :lastmodtime '(23085 43751 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!uil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

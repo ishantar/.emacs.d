@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1d982f4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d982f4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-189ef94"
+      :major-mode c++-mode
+      :tags nil
+      :file "AlreadyAddRefed.h"
+      :pointmax 201
+      :fsize 5077
+      :lastmodtime '(23348 25398 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c86a44"
+      :major-mode c-mode
+      :tags nil
+      :file "double-conversion.h"
+      :pointmax 201
+      :fsize 26367
+      :lastmodtime '(23348 25398 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d77cdc"
+      :major-mode c-mode
+      :tags nil
+      :file "fallible.h"
+      :pointmax 201
+      :fsize 2099
+      :lastmodtime '(23348 25398 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!mozjs-52!mozilla!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

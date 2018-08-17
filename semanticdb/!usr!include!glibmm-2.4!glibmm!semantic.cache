@@ -1,0 +1,200 @@
+;; Object semanticdb-project-database-file-188b568
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-188b568"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d563b8"
+      :major-mode c-mode
+      :tags nil
+      :file "weakref.h"
+      :pointmax 201
+      :fsize 13328
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dc8680"
+      :major-mode c-mode
+      :tags nil
+      :file "ustring.h"
+      :pointmax 201
+      :fsize 52357
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcc2c0"
+      :major-mode c-mode
+      :tags nil
+      :file "threadpool.h"
+      :pointmax 201
+      :fsize 7835
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd0c2c"
+      :major-mode c-mode
+      :tags nil
+      :file "refptr.h"
+      :pointmax 201
+      :fsize 14986
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd6358"
+      :major-mode c-mode
+      :tags nil
+      :file "object.h"
+      :pointmax 201
+      :fsize 9723
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dfc7a8"
+      :major-mode c-mode
+      :tags nil
+      :file "main.h"
+      :pointmax 201
+      :fsize 33916
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e033d4"
+      :major-mode c-mode
+      :tags nil
+      :file "containerhandle_shared.h"
+      :pointmax 201
+      :fsize 12092
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddf89c"
+      :major-mode c-mode
+      :tags nil
+      :file "varianttype.h"
+      :pointmax 201
+      :fsize 19055
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1aecfb4"
+      :major-mode c-mode
+      :tags nil
+      :file "variant.h"
+      :pointmax 201
+      :fsize 66141
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d8c90c"
+      :major-mode c-mode
+      :tags nil
+      :file "unicode.h"
+      :pointmax 201
+      :fsize 17389
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e0c8f4"
+      :major-mode c-mode
+      :tags nil
+      :file "timezone.h"
+      :pointmax 201
+      :fsize 12766
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dfdc84"
+      :major-mode c-mode
+      :tags nil
+      :file "threads.h"
+      :pointmax 201
+      :fsize 24921
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d513bc"
+      :major-mode c-mode
+      :tags nil
+      :file "regex.h"
+      :pointmax 201
+      :fsize 64487
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d91998"
+      :major-mode c-mode
+      :tags nil
+      :file "optioncontext.h"
+      :pointmax 201
+      :fsize 16147
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d84824"
+      :major-mode c-mode
+      :tags nil
+      :file "miscutils.h"
+      :pointmax 201
+      :fsize 26171
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e41550"
+      :major-mode c-mode
+      :tags nil
+      :file "keyfile.h"
+      :pointmax 201
+      :fsize 32017
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af12dc"
+      :major-mode c-mode
+      :tags nil
+      :file "iochannel.h"
+      :pointmax 201
+      :fsize 25597
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d692e4"
+      :major-mode c-mode
+      :tags nil
+      :file "fileutils.h"
+      :pointmax 201
+      :fsize 23577
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcf450"
+      :major-mode c-mode
+      :tags nil
+      :file "enums.h"
+      :pointmax 201
+      :fsize 5011
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dda378"
+      :major-mode c-mode
+      :tags nil
+      :file "datetime.h"
+      :pointmax 201
+      :fsize 31186
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddbce8"
+      :major-mode c-mode
+      :tags nil
+      :file "date.h"
+      :pointmax 201
+      :fsize 17324
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df3e80"
+      :major-mode c-mode
+      :tags nil
+      :file "convert.h"
+      :pointmax 201
+      :fsize 11725
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d511d4"
+      :major-mode c-mode
+      :tags nil
+      :file "checksum.h"
+      :pointmax 201
+      :fsize 7895
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d04510"
+      :major-mode c-mode
+      :tags nil
+      :file "binding.h"
+      :pointmax 201
+      :fsize 26612
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!glibmm-2.4!glibmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

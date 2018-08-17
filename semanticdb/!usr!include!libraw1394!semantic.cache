@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1c82170
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c82170"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d0e614"
+      :major-mode c-mode
+      :tags nil
+      :file "raw1394.h"
+      :pointmax 201
+      :fsize 49177
+      :lastmodtime '(22293 58494 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libraw1394!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

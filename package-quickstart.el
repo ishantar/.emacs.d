@@ -666,10 +666,10 @@ only those in the selected frame.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/window-purpose-20180531.2036/window-purpose-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/window-purpose-20180809.1156/window-purpose-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/window-purpose-20180531.2036/window-purpose-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/window-purpose-20180809.1156/window-purpose-autoloads.el") (car load-path))))
 
 
 
@@ -684,18 +684,22 @@ or call the function `purpose-mode'.")
 (custom-autoload 'purpose-mode "window-purpose" nil)
 
 (autoload 'purpose-mode "window-purpose" "\
-Toggle Purpose mode on or off according to the regular rules.
+Toggle Purpose mode on or off.
 
 If called interactively, enable Purpose mode if ARG is positive, and
 disable it if ARG is zero or negative.  If called from Lisp,
 also enable the mode if ARG is omitted or nil, and toggle it
 if ARG is `toggle'; disable the mode otherwise.
 
+\\{purpose-mode-map}
+
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose" '("find-file-" "purpose-" "switch-buffer-")))
 
 
+
+(eieio-defclass-autoload 'purpose-conf 'nil "window-purpose-configuration" nil)
 
 (autoload 'purpose-set-extension-configuration "window-purpose-configuration" "\
 Set an extension's entry in `purpose-extended-configuration'.
@@ -729,7 +733,7 @@ WINDOW defaults to the selected window.
 
 
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-fixes" '("compilation-next-error-function" "purpose-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-fixes" '("purpose-")))
 
 
 
@@ -883,11 +887,11 @@ current buffer's purpose.
 
 \(fn &optional PURPOSE)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-switch" '("display-buffer" "pop-to-buffer" "purpose-" "switch-to-buffer" "without-purpose")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-switch" '("purpose-" "without-purpose")))
 
 
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-utils" '("define-purpose-compatible-advice" "purpose-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-utils" '("purpose-")))
 
 
 
@@ -985,7 +989,7 @@ This is implemented by overriding `replace-buffer-in-windows' with
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-x" '("purpose-x-" "replace-buffer-in-windows")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-purpose-x" '("purpose-x-")))
 
 
 
@@ -1250,10 +1254,10 @@ on `kill-emacs' and send it to coveralls.io.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180729.943/clojure-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180816.2105/clojure-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180729.943/clojure-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180816.2105/clojure-mode-autoloads.el") (car load-path))))
 
 
 
@@ -1591,10 +1595,10 @@ this time, in which case it won't display at all.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180802.920/sesman-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180809.1043/sesman-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180802.920/sesman-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180809.1043/sesman-autoloads.el") (car load-path))))
 
 
 
@@ -1668,10 +1672,10 @@ Display an interactive session browser.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180802.1919/cider-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180817.1140/cider-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180802.1919/cider-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180817.1140/cider-autoloads.el") (car load-path))))
 
 
 
@@ -2349,6 +2353,229 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/tNFA-0.1.1/tNFA-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/tNFA-0.1.1/tNFA-autoloads.el") (car load-path))))
+
+
+
+(autoload 'tNFA-from-regexp "tNFA" "\
+Create a tagged NFA that recognizes the regular expression REGEXP.
+The return value is the initial state of the tagged NFA.
+
+REGEXP can be any sequence type (vector, list, or string); it
+need not be an actual string. Special characters in REGEXP are
+still just that: elements of the sequence that are characters
+which have a special meaning in regexps.
+
+The :test keyword argument specifies how to test whether two
+individual elements of STRING are identical. The default is `eq'.
+
+Only a subset of the full Emacs regular expression syntax is
+supported. There is no support for regexp constructs that are
+only meaningful for strings (character ranges and character
+classes inside character alternatives, and syntax-related
+backslash constructs). Back-references and non-greedy postfix
+operators are not supported, so `?' after a postfix operator
+loses its special meaning. Also, matches are always anchored, so
+`$' and `^' lose their special meanings (use `.*' at the
+beginning and end of the regexp to get an unanchored match).
+
+\(fn REGEXP &key (test \\='eq))" nil nil)
+
+(autoload 'tNFA-regexp-match "tNFA" "\
+Return non-nil if STRING matches REGEXP, nil otherwise.
+Sets the match data if there was a match; see `match-beginning',
+`match-end' and `match-string'.
+
+REGEXP and STRING can be any sequence type (vector, list, or
+string); they need not be actual strings. Special characters in
+REGEXP are still just that: elements of the sequence that are
+characters which have a special meaning in regexps.
+
+The :test keyword argument specifies how to test whether two
+individual elements of STRING are identical. The default is `eq'.
+
+Only a subset of the full Emacs regular expression syntax is
+supported. There is no support for regexp constructs that are
+only meaningful for strings (character ranges and character
+classes inside character alternatives, and syntax-related
+backslash constructs). Back-references and non-greedy postfix
+operators are not supported, so `?' after a postfix operator
+loses its special meaning. Also, matches are always anchored, so
+`$' and `^' lose their special meanings (use `.*' at the
+beginning and end of the regexp to get an unanchored match).
+
+\(fn REGEXP STRING &key (test \\='eq))" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tNFA" '("tNFA-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/heap-0.5/heap-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/heap-0.5/heap-autoloads.el") (car load-path))))
+
+
+
+(autoload 'make-heap "heap" "\
+Create an empty heap with comparison function COMPARE-FUNCTION.
+
+COMPARE-FUNCTION takes two arguments, A and B, and returns
+non-nil or nil. To implement a max-heap, it should return non-nil
+if A is greater than B. To implemenet a min-heap, it should
+return non-nil if A is less than B.
+
+Optional argument INITIAL-SIZE sets the initial size of the heap,
+defaulting to 10. Optional argument RESIZE-FACTOR sets the factor
+by which the heap's size is increased if it runs out of space,
+defaulting to 2.
+
+\(fn COMPARE-FUNCTION &optional INITIAL-SIZE RESIZE-FACTOR)" nil nil)
+
+(defalias 'heap-create 'make-heap)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "heap" '("heap-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/trie-0.4/trie-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/trie-0.4/trie-autoloads.el") (car load-path))))
+
+
+
+(defalias 'make-trie 'trie--create "\
+Return a new trie that uses comparison function COMPARISON-FUNCTION.
+
+A trie stores sequences (strings, vectors or lists) along with
+associated data. COMPARISON-FUNCTEION should accept two
+arguments, each being an element of such a sequence, and return t
+if the first is strictly smaller than the second.
+
+The optional argument TYPE specifies the type of trie to
+create. However, the only one that is currently implemented is
+the default, so this argument is useless for now.
+
+\(See also `make-trie-custom'.)")
+
+(defalias 'trie-create 'make-trie)
+
+(defalias 'make-trie-custom 'trie--create-custom "\
+Return a new trie that uses comparison function COMPARISON-FUNCTION.
+
+A trie stores sequences (strings, vectors or lists) along with
+associated data. COMPARISON-FUNCTION should accept two arguments,
+each being an element of such a sequence, and return t if the
+first is strictly smaller than the second.
+
+The remaining keyword arguments: :CREATEFUN, :INSERTFUN, :DELETEFUN,
+:LOOKUPFUN, :MAPFUN, :EMPTYFUN, :STACK-CREATEFUN, :STACK-POPFUN,
+:STACK-EMPTYFUN, :TRANSFORM-FOR-PRINT and :TRANSFORM-FROM-READ
+determine the type of trie that is created.
+
+CREATEFUN is called as follows:
+
+  (CREATEFUN COMPARISON-FUNCTION SEQ)
+
+and should return a data structure (\"ARRAY\") that can be used
+as an associative array, where two elements A and B are equal if
+the following is non-nil:
+
+  (and (COMPARISON-FUNCTION b a)
+       (COMPARISON-FUNCTION b a))
+
+The SEQ argument is a vector containing the sequence that will
+correspond to the newly created array in the trie. For most types
+of trie, this value is ignored. It is passed to CREATEFUN only in
+order to allow the creation of \"hybrid\" trie structures, in
+which different types of associative array are used in different
+parts of the trie. For example, the type of associative array
+could be chosen based on the depth in the trie, given by (length
+SEQ). (Note that all the other functions described below must be
+able to correctly handle *any* of the types of associate array
+that might be created by CREATEFUN.)
+
+INSERTFUN, DELETEFUN, LOOKUPFUN, MAPFUN and EMPTYFUN should
+insert, delete, lookup, map over, and check-if-there-exist-any
+elements in an associative array. They are called as follows:
+
+  (INSERTFUN array element &optional updatefun)
+  (DELETEFUN array element &optional predicate nilflag)
+  (LOOKUPFUN array element &optional nilflag)
+  (MAPFUN function array &optional reverse)
+  (EMPTYFUN array)
+
+INSERTFUN should insert ELEMENT into ARRAY and return the new
+element, which will be ELEMENT itself unless UPDATEFUN is
+specified. In that case, if and only if an element matching
+ELEMENT already exists in the associative array, INSERTFUN should
+instead pass ELEMENT and the matching element as arguments to
+UPDATEFUN, replace the matching element with the return value,
+and return that return value.
+
+DELETEFUN should delete the element in the associative array that
+matches ELEMENT, and return the deleted element. However, if
+PREDICATE is specified and a matching element exists in ARRAY,
+DELETEFUN should first pass the matching element as an argument
+to PREDICATE before deleting, and should only delete the element
+if PREDICATE returns non-nil. DELETEFUN should return NILFLAG if
+no element was deleted (either becuase no matching element was
+found, or because TESTFUN returned nil).
+
+LOOKUPFUN should return the element from the associative array
+that matches ELEMENT, or NILFLAG if no matching element exists.
+
+MAPFUN should map FUNCTION over all elements in the order defined by
+COMPARISON-FUNCTION, or in reverse order if REVERSE is non-nil.
+
+
+STACK-CREATEFUN, STACK-POPFUN and STACK-EMPTYFUN should allow the
+associative array to be used as a stack. STACK-CREATEFUN is
+called as follows:
+
+  (STACK-CREATEFUN array)
+
+and should return a data structure (\"STACK\") that behaves like
+a sorted stack of all elements in the associative array. I.e.
+successive calls to
+
+  (STACK-POPFUN stack)
+
+should return elements from the associative array in the order
+defined by COMPARISON-FUNCTION, and
+
+  (STACK-EMPTYFUN stack)
+
+should return non-nil if the stack is empty, nil otherwise.
+
+The stack functions are optional, in that all trie operations
+other than the stack-related ones will work correctly. However,
+any code that makes use of trie-stacks will complain if supplied
+with this type of trie.
+
+
+The :TRANSFORM-FOR-PRINT and :TRANSFORM-FROM-READ arguments are
+optional. If supplied, they can be used to transform the trie
+into a format suitable for passing to Elisp's `print'
+functions (typically used to persistently store the trie by
+writing it to file), and transform from that format back to the
+original usable form.
+
+
+Warning: to avoid nasty dynamic scoping bugs, the supplied
+functions must *never* bind any variables with names commencing
+\"--\".")
+
+(defalias 'trie-create-custom 'make-trie-custom)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "trie" '("Lewenstein-" "edit-distance" "trie-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/tree-mode-20151104.1331/tree-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -2614,10 +2841,10 @@ This function returns the buffer where the process starts running.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180731.1520/ivy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180809.1712/ivy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180731.1520/ivy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180809.1712/ivy-autoloads.el") (car load-path))))
 
 
 
@@ -2749,10 +2976,10 @@ Switch to another buffer in another window.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/swiper-20180731.1549/swiper-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/swiper-20180813.1625/swiper-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/swiper-20180731.1549/swiper-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/swiper-20180813.1625/swiper-autoloads.el") (car load-path))))
 
 
 
@@ -3007,6 +3234,35 @@ how ssh X display tunelling interacts with frames on remote displays.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/srefactor-20180703.1810/srefactor-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/srefactor-20180703.1810/srefactor-autoloads.el") (car load-path))))
+
+
+
+(autoload 'srefactor-refactor-at-point "srefactor" "\
+Offer contextual menu with actions based on current tag in scope.
+
+Each menu item added returns a token for what type of refactoring
+to perform.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "srefactor" '("srefactor-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "srefactor-lisp" '("comment-" "cur-buf" "first-token" "format-type" "ignore-num" "lexemes" "next-token" "orig-format-type" "recursive-p" "second-token" "srefactor-" "tok")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "srefactor-ui" '("srefactor-ui-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/sotlisp-20180706.1749/sotlisp-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -3057,10 +3313,10 @@ If `speed-of-thought-mode' is already on, call ON.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/smartparens-20180725.1032/smartparens-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/smartparens-20180808.1758/smartparens-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/smartparens-20180725.1032/smartparens-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/smartparens-20180808.1758/smartparens-autoloads.el") (car load-path))))
 
 
 
@@ -3323,10 +3579,10 @@ Turn off `show-smartparens-mode'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/expand-region-20180625.1639/expand-region-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/expand-region-20180817.1134/expand-region-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/expand-region-20180625.1639/expand-region-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/expand-region-20180817.1134/expand-region-autoloads.el") (car load-path))))
 
 
 
@@ -3828,10 +4084,756 @@ The commands are `shell-command', `shell-command-on-region', `grep',
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rtags-20180730.654/rtags-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/f-20180106.922/f-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rtags-20180730.654/rtags-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/f-20180106.922/f-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "f" '("f-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180815.2057/projectile-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180815.2057/projectile-autoloads.el") (car load-path))))
+
+
+
+(autoload 'projectile-version "projectile" "\
+Get the Projectile version as string.
+
+If called interactively or if SHOW-VERSION is non-nil, show the
+version in the echo area and the messages buffer.
+
+The returned string includes both, the version from package.el
+and the library version, if both a present and different.
+
+If the version number could not be determined, signal an error,
+if called interactively, or if SHOW-VERSION is non-nil, otherwise
+just return nil.
+
+\(fn &optional SHOW-VERSION)" t nil)
+
+(autoload 'projectile-invalidate-cache "projectile" "\
+Remove the current project's files from `projectile-projects-cache'.
+
+With a prefix argument ARG prompts for the name of the project whose cache
+to invalidate.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-purge-file-from-cache "projectile" "\
+Purge FILE from the cache of the current project.
+
+\(fn FILE)" t nil)
+
+(autoload 'projectile-purge-dir-from-cache "projectile" "\
+Purge DIR from the cache of the current project.
+
+\(fn DIR)" t nil)
+
+(autoload 'projectile-cache-current-file "projectile" "\
+Add the currently visited file to the cache.
+
+\(fn)" t nil)
+
+(autoload 'projectile-discover-projects-in-directory "projectile" "\
+Discover any projects in DIRECTORY and add them to the projectile cache.
+This function is not recursive and only adds projects with roots
+at the top level of DIRECTORY.
+
+\(fn DIRECTORY)" t nil)
+
+(autoload 'projectile-switch-to-buffer "projectile" "\
+Switch to a project buffer.
+
+\(fn)" t nil)
+
+(autoload 'projectile-switch-to-buffer-other-window "projectile" "\
+Switch to a project buffer and show it in another window.
+
+\(fn)" t nil)
+
+(autoload 'projectile-switch-to-buffer-other-frame "projectile" "\
+Switch to a project buffer and show it in another window.
+
+\(fn)" t nil)
+
+(autoload 'projectile-display-buffer "projectile" "\
+Display a project buffer in another window without selecting it.
+
+\(fn)" t nil)
+
+(autoload 'projectile-project-buffers-other-buffer "projectile" "\
+Switch to the most recently selected buffer project buffer.
+Only buffers not visible in windows are returned.
+
+\(fn)" t nil)
+
+(autoload 'projectile-multi-occur "projectile" "\
+Do a `multi-occur' in the project's buffers.
+With a prefix argument, show NLINES of context.
+
+\(fn &optional NLINES)" t nil)
+
+(autoload 'projectile-find-other-file "projectile" "\
+Switch between files with the same name but different extensions.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+\(fn &optional FLEX-MATCHING)" t nil)
+
+(autoload 'projectile-find-other-file-other-window "projectile" "\
+Switch between files with the same name but different extensions in other window.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+\(fn &optional FLEX-MATCHING)" t nil)
+
+(autoload 'projectile-find-other-file-other-frame "projectile" "\
+Switch between files with the same name but different extensions in other window.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+\(fn &optional FLEX-MATCHING)" t nil)
+
+(autoload 'projectile-find-file-dwim "projectile" "\
+Jump to a project's files using completion based on context.
+
+With a prefix ARG invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim' still switches to \"projectile/projectile.el\" immediately
+ because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename like
+ \"projectile/a\", a list of files with character 'a' in that directory is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file-dwim-other-window "projectile" "\
+Jump to a project's files using completion based on context in other window.
+
+With a prefix ARG invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim-other-window' still switches to \"projectile/projectile.el\"
+immediately because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim-other-window' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename
+like \"projectile/a\", a list of files with character 'a' in that directory
+is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file-dwim-other-frame "projectile" "\
+Jump to a project's files using completion based on context in other frame.
+
+With a prefix ARG invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim-other-frame' still switches to \"projectile/projectile.el\"
+immediately because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim-other-frame' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename
+like \"projectile/a\", a list of files with character 'a' in that directory
+is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file "projectile" "\
+Jump to a project's file using completion.
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file-other-window "projectile" "\
+Jump to a project's file using completion and show it in another window.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file-other-frame "projectile" "\
+Jump to a project's file using completion and show it in another frame.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-dir "projectile" "\
+Jump to a project's directory using completion.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-dir-other-window "projectile" "\
+Jump to a project's directory in other window using completion.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-dir-other-frame "projectile" "\
+Jump to a project's directory in other window using completion.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-test-file "projectile" "\
+Jump to a project's test file using completion.
+
+With a prefix ARG invalidates the cache first.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-project-info "projectile" "\
+Display info for current project.
+
+\(fn)" t nil)
+
+(autoload 'projectile-find-implementation-or-test-other-window "projectile" "\
+Open matching implementation or test file in other window.
+
+\(fn)" t nil)
+
+(autoload 'projectile-find-implementation-or-test-other-frame "projectile" "\
+Open matching implementation or test file in other frame.
+
+\(fn)" t nil)
+
+(autoload 'projectile-toggle-between-implementation-and-test "projectile" "\
+Toggle between an implementation file and its test file.
+
+\(fn)" t nil)
+
+(autoload 'projectile-grep "projectile" "\
+Perform rgrep in the project.
+
+With a prefix ARG asks for files (globbing-aware) which to grep in.
+With prefix ARG of `-' (such as `M--'), default the files (without prompt),
+to `projectile-grep-default-files'.
+
+With REGEXP given, don't query the user for a regexp.
+
+\(fn &optional REGEXP ARG)" t nil)
+
+(autoload 'projectile-ag "projectile" "\
+Run an ag search with SEARCH-TERM in the project.
+
+With an optional prefix argument ARG SEARCH-TERM is interpreted as a
+regular expression.
+
+\(fn SEARCH-TERM &optional ARG)" t nil)
+
+(autoload 'projectile-ripgrep "projectile" "\
+Run a Ripgrep search with `SEARCH-TERM' at current project root.
+
+SEARCH-TERM is a regexp.
+
+\(fn SEARCH-TERM)" t nil)
+
+(autoload 'projectile-regenerate-tags "projectile" "\
+Regenerate the project's [e|g]tags.
+
+\(fn)" t nil)
+
+(autoload 'projectile-find-tag "projectile" "\
+Find tag in project.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-command-in-root "projectile" "\
+Invoke `execute-extended-command' in the project's root.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-shell-command-in-root "projectile" "\
+Invoke `shell-command' in the project's root.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-async-shell-command-in-root "projectile" "\
+Invoke `async-shell-command' in the project's root.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-shell "projectile" "\
+Invoke `shell' in the project's root.
+
+Switch to the project specific shell buffer if it already exists.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-eshell "projectile" "\
+Invoke `eshell' in the project's root.
+
+Switch to the project specific eshell buffer if it already exists.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-ielm "projectile" "\
+Invoke `ielm' in the project's root.
+
+Switch to the project specific ielm buffer if it already exists.
+
+\(fn)" t nil)
+
+(autoload 'projectile-run-term "projectile" "\
+Invoke `term' in the project's root.
+
+Switch to the project specific term buffer if it already exists.
+
+\(fn PROGRAM)" t nil)
+
+(autoload 'projectile-replace "projectile" "\
+Replace literal string in project using non-regexp `tags-query-replace'.
+
+With a prefix argument ARG prompts you for a directory on which
+to run the replacement.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-replace-regexp "projectile" "\
+Replace a regexp in the project using `tags-query-replace'.
+
+With a prefix argument ARG prompts you for a directory on which
+to run the replacement.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-kill-buffers "projectile" "\
+Kill all project buffers.
+
+\(fn)" t nil)
+
+(autoload 'projectile-save-project-buffers "projectile" "\
+Save all project buffers.
+
+\(fn)" t nil)
+
+(autoload 'projectile-dired "projectile" "\
+Open `dired' at the root of the project.
+
+\(fn)" t nil)
+
+(autoload 'projectile-dired-other-window "projectile" "\
+Open `dired'  at the root of the project in another window.
+
+\(fn)" t nil)
+
+(autoload 'projectile-dired-other-frame "projectile" "\
+Open `dired' at the root of the project in another frame.
+
+\(fn)" t nil)
+
+(autoload 'projectile-vc "projectile" "\
+Open `vc-dir' at the root of the project.
+
+For git projects `magit-status-internal' is used if available.
+For hg projects `monky-status' is used if available.
+
+If PROJECT-ROOT is given, it is opened instead of the project
+root directory of the current buffer file.  If interactively
+called with a prefix argument, the user is prompted for a project
+directory to open.
+
+\(fn &optional PROJECT-ROOT)" t nil)
+
+(autoload 'projectile-recentf "projectile" "\
+Show a list of recently visited files in a project.
+
+\(fn)" t nil)
+
+(autoload 'projectile-configure-project "projectile" "\
+Run project configure command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-compile-project "projectile" "\
+Run project compilation command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-test-project "projectile" "\
+Run project test command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-run-project "projectile" "\
+Run project run command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+\(fn ARG)" t nil)
+
+(autoload 'projectile-switch-project "projectile" "\
+Switch to a project we have visited before.
+Invokes the command referenced by `projectile-switch-project-action' on switch.
+With a prefix ARG invokes `projectile-commander' instead of
+`projectile-switch-project-action.'
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-switch-open-project "projectile" "\
+Switch to a project we have currently opened.
+Invokes the command referenced by `projectile-switch-project-action' on switch.
+With a prefix ARG invokes `projectile-commander' instead of
+`projectile-switch-project-action.'
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'projectile-find-file-in-directory "projectile" "\
+Jump to a file in a (maybe regular) DIRECTORY.
+
+This command will first prompt for the directory the file is in.
+
+\(fn &optional DIRECTORY)" t nil)
+
+(autoload 'projectile-find-file-in-known-projects "projectile" "\
+Jump to a file in any of the known projects.
+
+\(fn)" t nil)
+
+(autoload 'projectile-cleanup-known-projects "projectile" "\
+Remove known projects that don't exist anymore.
+
+\(fn)" t nil)
+
+(autoload 'projectile-clear-known-projects "projectile" "\
+Clear both `projectile-known-projects' and `projectile-known-projects-file'.
+
+\(fn)" t nil)
+
+(autoload 'projectile-remove-known-project "projectile" "\
+Remove PROJECT from the list of known projects.
+
+\(fn &optional PROJECT)" t nil)
+
+(autoload 'projectile-remove-current-project-from-known-projects "projectile" "\
+Remove the current project from the list of known projects.
+
+\(fn)" t nil)
+
+(autoload 'projectile-ibuffer "projectile" "\
+Open an IBuffer window showing all buffers in the current project.
+
+Let user choose another project when PREFIX is supplied.
+
+\(fn PREFIX)" t nil)
+
+(autoload 'projectile-commander "projectile" "\
+Execute a Projectile command with a single letter.
+The user is prompted for a single character indicating the action to invoke.
+The `?' character describes then
+available actions.
+
+See `def-projectile-commander-method' for defining new methods.
+
+\(fn)" t nil)
+
+(autoload 'projectile-edit-dir-locals "projectile" "\
+Edit or create a .dir-locals.el file of the project.
+
+\(fn)" t nil)
+
+(defvar projectile-mode nil "\
+Non-nil if Projectile mode is enabled.
+See the `projectile-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `projectile-mode'.")
+
+(custom-autoload 'projectile-mode "projectile" nil)
+
+(autoload 'projectile-mode "projectile" "\
+Minor mode to assist project management and navigation.
+
+When called interactively, toggle `projectile-mode'.  With prefix
+ARG, enable `projectile-mode' if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable `projectile-mode' if ARG is omitted,
+nil or positive.  If ARG is `toggle', toggle `projectile-mode'.
+Otherwise behave as if called interactively.
+
+\\{projectile-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0")
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("??" "def-projectile-commander-method" "projectile-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/markdown-mode-20180731.1830/markdown-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/markdown-mode-20180731.1830/markdown-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'markdown-mode "markdown-mode" "\
+Major mode for editing Markdown files.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode" "\
+Major mode for editing GitHub Flavored Markdown files.
+
+\(fn)" t nil)
+
+(autoload 'markdown-view-mode "markdown-mode" "\
+Major mode for viewing Markdown content.
+
+\(fn)" t nil)
+
+(autoload 'gfm-view-mode "markdown-mode" "\
+Major mode for viewing GitHub Flavored Markdown content.
+
+\(fn)" t nil)
+
+(autoload 'markdown-live-preview-mode "markdown-mode" "\
+Toggle native previewing on save for a specific markdown file.
+
+If called interactively, enable Markdown-Live-Preview mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "markdown-mode" '("defun-markdown-" "gfm-" "markdown")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180816.1007/rustic-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180816.1007/rustic-autoloads.el") (car load-path))))
+
+
+
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rustic-mode))
+
+(autoload 'rustic-mode "rustic" "\
+Major mode for Rust code.
+
+\\{rustic-map}
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic" '("rustic")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-babel" '("org-babel-execute:rustic" "rustic-babel-")))
+
+
+
+(autoload 'rustic-cargo-clippy "rustic-cargo" "\
+Run `cargo clippy'.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-test "rustic-cargo" "\
+Run `cargo test'.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-build "rustic-cargo" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-run "rustic-cargo" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-clean "rustic-cargo" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-cargo" '("rustic-")))
+
+
+
+(autoload 'rustic-compile "rustic-compile" "\
+Compile rust project.
+If called without arguments use `rustic-compile-command'.
+
+Otherwise use provided argument ARG and store it in
+`compilation-arguments'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rustic-recompile "rustic-compile" "\
+Re-compile the program using `compilation-arguments'.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-compile" '("rust")))
+
+
+
+(autoload 'rustic-flycheck-setup "rustic-flycheck" "\
+Setup Rust in Flycheck.
+If the current file is part of a Cargo project, configure
+Flycheck according to the Cargo project layout.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-flycheck" '("rustic-flycheck-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-interaction" '("rustic-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-lsp" '("lsp-rust-" "rust")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-racer" '("racer-src-button" "rustic-racer-")))
+
+
+
+(autoload 'rustic-format--enable-format-on-save "rustic-util" "\
+Enable formatting using rustfmt when saving buffer.
+
+\(fn)" t nil)
+
+(autoload 'rustic-format--disable-format-on-save "rustic-util" "\
+Disable formatting using rustfmt when saving buffer.
+
+\(fn)" t nil)
+
+(autoload 'rustic-cargo-fmt "rustic-util" "\
+Use rustfmt via cargo.
+
+\(fn)" t nil)
+
+(autoload 'rustic-playpen "rustic-util" "\
+Create a shareable URL for the contents of the current region, 
+src-block or buffer on the Rust playpen.
+
+\(fn BEGIN END)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic-util" '("rustic-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rust-playground-20180807.1158/rust-playground-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rust-playground-20180807.1158/rust-playground-autoloads.el") (car load-path))))
+
+
+
+(autoload 'rust-playground "rust-playground" "\
+Run playground for Rust language in a new buffer.
+
+\(fn)" t nil)
+
+(autoload 'rust-playground-rm "rust-playground" "\
+Remove files of the current snippet together with directory of this snippet.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rust-playground" '("in-rust-playground" "rust-playground-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rust-mode-20180626.2212/rust-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rust-mode-20180626.2212/rust-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'rust-mode "rust-mode" "\
+Major mode for Rust code.
+
+\\{rust-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rust-mode" '("cargo-compilation-regexps" "rust")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rtags-20180814.1713/rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rtags-20180814.1713/rtags-autoloads.el") (car load-path))))
 
 
 
@@ -4555,10 +5557,10 @@ FUNCTION must return an explanation when the test fails and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180804.126/racket-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180814.221/racket-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180804.126/racket-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180814.221/racket-mode-autoloads.el") (car load-path))))
 
 
 
@@ -4739,6 +5741,53 @@ can turn it off by setting `input-method-highlight-flag' to nil via
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/pos-tip-20150318.1513/pos-tip-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/pos-tip-20150318.1513/pos-tip-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pos-tip" '("pos-tip-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/racer-20180709.625/racer-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racer-20180709.625/racer-autoloads.el") (car load-path))))
+
+
+
+(autoload 'racer-find-definition "racer" "\
+Run the racer find-definition command and process the results.
+
+\(fn)" t nil)
+
+(autoload 'racer-find-definition-other-window "racer" "\
+Run the racer find-definition command and process the results.
+
+\(fn)" t nil)
+
+(autoload 'racer-find-definition-other-frame "racer" "\
+Run the racer find-definition command and process the results.
+
+\(fn)" t nil)
+
+(autoload 'racer-mode "racer" "\
+Minor mode for racer.
+
+If called interactively, enable Racer mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "racer" '("racer-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/quick-peek-20180525.1411/quick-peek-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -4773,534 +5822,6 @@ Return the number of overlays hidden.
 (let ((load-file-name "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el") (car load-path))))
 
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180728.1457/projectile-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180728.1457/projectile-autoloads.el") (car load-path))))
-
-
-
-(autoload 'projectile-version "projectile" "\
-Get the Projectile version as string.
-
-If called interactively or if SHOW-VERSION is non-nil, show the
-version in the echo area and the messages buffer.
-
-The returned string includes both, the version from package.el
-and the library version, if both a present and different.
-
-If the version number could not be determined, signal an error,
-if called interactively, or if SHOW-VERSION is non-nil, otherwise
-just return nil.
-
-\(fn &optional SHOW-VERSION)" t nil)
-
-(autoload 'projectile-invalidate-cache "projectile" "\
-Remove the current project's files from `projectile-projects-cache'.
-
-With a prefix argument ARG prompts for the name of the project whose cache
-to invalidate.
-
-\(fn ARG)" t nil)
-
-(autoload 'projectile-purge-file-from-cache "projectile" "\
-Purge FILE from the cache of the current project.
-
-\(fn FILE)" t nil)
-
-(autoload 'projectile-purge-dir-from-cache "projectile" "\
-Purge DIR from the cache of the current project.
-
-\(fn DIR)" t nil)
-
-(autoload 'projectile-cache-current-file "projectile" "\
-Add the currently visited file to the cache.
-
-\(fn)" t nil)
-
-(autoload 'projectile-discover-projects-in-directory "projectile" "\
-Discover any projects in DIRECTORY and add them to the projectile cache.
-This function is not recursive and only adds projects with roots
-at the top level of DIRECTORY.
-
-\(fn DIRECTORY)" t nil)
-
-(autoload 'projectile-switch-to-buffer "projectile" "\
-Switch to a project buffer.
-
-\(fn)" t nil)
-
-(autoload 'projectile-switch-to-buffer-other-window "projectile" "\
-Switch to a project buffer and show it in another window.
-
-\(fn)" t nil)
-
-(autoload 'projectile-switch-to-buffer-other-frame "projectile" "\
-Switch to a project buffer and show it in another window.
-
-\(fn)" t nil)
-
-(autoload 'projectile-display-buffer "projectile" "\
-Display a project buffer in another window without selecting it.
-
-\(fn)" t nil)
-
-(autoload 'projectile-project-buffers-other-buffer "projectile" "\
-Switch to the most recently selected buffer project buffer.
-Only buffers not visible in windows are returned.
-
-\(fn)" t nil)
-
-(autoload 'projectile-multi-occur "projectile" "\
-Do a `multi-occur' in the project's buffers.
-With a prefix argument, show NLINES of context.
-
-\(fn &optional NLINES)" t nil)
-
-(autoload 'projectile-find-other-file "projectile" "\
-Switch between files with the same name but different extensions.
-With FLEX-MATCHING, match any file that contains the base name of current file.
-Other file extensions can be customized with the variable `projectile-other-file-alist'.
-
-\(fn &optional FLEX-MATCHING)" t nil)
-
-(autoload 'projectile-find-other-file-other-window "projectile" "\
-Switch between files with the same name but different extensions in other window.
-With FLEX-MATCHING, match any file that contains the base name of current file.
-Other file extensions can be customized with the variable `projectile-other-file-alist'.
-
-\(fn &optional FLEX-MATCHING)" t nil)
-
-(autoload 'projectile-find-other-file-other-frame "projectile" "\
-Switch between files with the same name but different extensions in other window.
-With FLEX-MATCHING, match any file that contains the base name of current file.
-Other file extensions can be customized with the variable `projectile-other-file-alist'.
-
-\(fn &optional FLEX-MATCHING)" t nil)
-
-(autoload 'projectile-find-file-dwim "projectile" "\
-Jump to a project's files using completion based on context.
-
-With a prefix ARG invalidates the cache first.
-
-If point is on a filename, Projectile first tries to search for that
-file in project:
-
-- If it finds just a file, it switches to that file instantly.  This works even
-if the filename is incomplete, but there's only a single file in the current project
-that matches the filename at point.  For example, if there's only a single file named
-\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
-`projectile-find-file-dwim' still switches to \"projectile/projectile.el\" immediately
- because this is the only filename that matches.
-
-- If it finds a list of files, the list is displayed for selecting.  A list of
-files is displayed when a filename appears more than one in the project or the
-filename at point is a prefix of more than two files in a project.  For example,
-if `projectile-find-file-dwim' is executed on a filepath like \"projectile/\", it lists
-the content of that directory.  If it is executed on a partial filename like
- \"projectile/a\", a list of files with character 'a' in that directory is presented.
-
-- If it finds nothing, display a list of all files in project for selecting.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file-dwim-other-window "projectile" "\
-Jump to a project's files using completion based on context in other window.
-
-With a prefix ARG invalidates the cache first.
-
-If point is on a filename, Projectile first tries to search for that
-file in project:
-
-- If it finds just a file, it switches to that file instantly.  This works even
-if the filename is incomplete, but there's only a single file in the current project
-that matches the filename at point.  For example, if there's only a single file named
-\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
-`projectile-find-file-dwim-other-window' still switches to \"projectile/projectile.el\"
-immediately because this is the only filename that matches.
-
-- If it finds a list of files, the list is displayed for selecting.  A list of
-files is displayed when a filename appears more than one in the project or the
-filename at point is a prefix of more than two files in a project.  For example,
-if `projectile-find-file-dwim-other-window' is executed on a filepath like \"projectile/\", it lists
-the content of that directory.  If it is executed on a partial filename
-like \"projectile/a\", a list of files with character 'a' in that directory
-is presented.
-
-- If it finds nothing, display a list of all files in project for selecting.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file-dwim-other-frame "projectile" "\
-Jump to a project's files using completion based on context in other frame.
-
-With a prefix ARG invalidates the cache first.
-
-If point is on a filename, Projectile first tries to search for that
-file in project:
-
-- If it finds just a file, it switches to that file instantly.  This works even
-if the filename is incomplete, but there's only a single file in the current project
-that matches the filename at point.  For example, if there's only a single file named
-\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
-`projectile-find-file-dwim-other-frame' still switches to \"projectile/projectile.el\"
-immediately because this is the only filename that matches.
-
-- If it finds a list of files, the list is displayed for selecting.  A list of
-files is displayed when a filename appears more than one in the project or the
-filename at point is a prefix of more than two files in a project.  For example,
-if `projectile-find-file-dwim-other-frame' is executed on a filepath like \"projectile/\", it lists
-the content of that directory.  If it is executed on a partial filename
-like \"projectile/a\", a list of files with character 'a' in that directory
-is presented.
-
-- If it finds nothing, display a list of all files in project for selecting.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file "projectile" "\
-Jump to a project's file using completion.
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file-other-window "projectile" "\
-Jump to a project's file using completion and show it in another window.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file-other-frame "projectile" "\
-Jump to a project's file using completion and show it in another frame.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-dir "projectile" "\
-Jump to a project's directory using completion.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-dir-other-window "projectile" "\
-Jump to a project's directory in other window using completion.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-dir-other-frame "projectile" "\
-Jump to a project's directory in other window using completion.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-test-file "projectile" "\
-Jump to a project's test file using completion.
-
-With a prefix ARG invalidates the cache first.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-project-info "projectile" "\
-Display info for current project.
-
-\(fn)" t nil)
-
-(autoload 'projectile-find-implementation-or-test-other-window "projectile" "\
-Open matching implementation or test file in other window.
-
-\(fn)" t nil)
-
-(autoload 'projectile-find-implementation-or-test-other-frame "projectile" "\
-Open matching implementation or test file in other frame.
-
-\(fn)" t nil)
-
-(autoload 'projectile-toggle-between-implementation-and-test "projectile" "\
-Toggle between an implementation file and its test file.
-
-\(fn)" t nil)
-
-(autoload 'projectile-grep "projectile" "\
-Perform rgrep in the project.
-
-With a prefix ARG asks for files (globbing-aware) which to grep in.
-With prefix ARG of `-' (such as `M--'), default the files (without prompt),
-to `projectile-grep-default-files'.
-
-With REGEXP given, don't query the user for a regexp.
-
-\(fn &optional REGEXP ARG)" t nil)
-
-(autoload 'projectile-ag "projectile" "\
-Run an ag search with SEARCH-TERM in the project.
-
-With an optional prefix argument ARG SEARCH-TERM is interpreted as a
-regular expression.
-
-\(fn SEARCH-TERM &optional ARG)" t nil)
-
-(autoload 'projectile-ripgrep "projectile" "\
-Run a Ripgrep search with `SEARCH-TERM' at current project root.
-
-SEARCH-TERM is a regexp.
-
-\(fn SEARCH-TERM)" t nil)
-
-(autoload 'projectile-regenerate-tags "projectile" "\
-Regenerate the project's [e|g]tags.
-
-\(fn)" t nil)
-
-(autoload 'projectile-find-tag "projectile" "\
-Find tag in project.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-command-in-root "projectile" "\
-Invoke `execute-extended-command' in the project's root.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-shell-command-in-root "projectile" "\
-Invoke `shell-command' in the project's root.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-async-shell-command-in-root "projectile" "\
-Invoke `async-shell-command' in the project's root.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-shell "projectile" "\
-Invoke `shell' in the project's root.
-
-Switch to the project specific shell buffer if it already exists.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-eshell "projectile" "\
-Invoke `eshell' in the project's root.
-
-Switch to the project specific eshell buffer if it already exists.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-ielm "projectile" "\
-Invoke `ielm' in the project's root.
-
-Switch to the project specific ielm buffer if it already exists.
-
-\(fn)" t nil)
-
-(autoload 'projectile-run-term "projectile" "\
-Invoke `term' in the project's root.
-
-Switch to the project specific term buffer if it already exists.
-
-\(fn PROGRAM)" t nil)
-
-(autoload 'projectile-replace "projectile" "\
-Replace literal string in project using non-regexp `tags-query-replace'.
-
-With a prefix argument ARG prompts you for a directory on which
-to run the replacement.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-replace-regexp "projectile" "\
-Replace a regexp in the project using `tags-query-replace'.
-
-With a prefix argument ARG prompts you for a directory on which
-to run the replacement.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-kill-buffers "projectile" "\
-Kill all project buffers.
-
-\(fn)" t nil)
-
-(autoload 'projectile-save-project-buffers "projectile" "\
-Save all project buffers.
-
-\(fn)" t nil)
-
-(autoload 'projectile-dired "projectile" "\
-Open `dired' at the root of the project.
-
-\(fn)" t nil)
-
-(autoload 'projectile-dired-other-window "projectile" "\
-Open `dired'  at the root of the project in another window.
-
-\(fn)" t nil)
-
-(autoload 'projectile-dired-other-frame "projectile" "\
-Open `dired' at the root of the project in another frame.
-
-\(fn)" t nil)
-
-(autoload 'projectile-vc "projectile" "\
-Open `vc-dir' at the root of the project.
-
-For git projects `magit-status-internal' is used if available.
-For hg projects `monky-status' is used if available.
-
-If PROJECT-ROOT is given, it is opened instead of the project
-root directory of the current buffer file.  If interactively
-called with a prefix argument, the user is prompted for a project
-directory to open.
-
-\(fn &optional PROJECT-ROOT)" t nil)
-
-(autoload 'projectile-recentf "projectile" "\
-Show a list of recently visited files in a project.
-
-\(fn)" t nil)
-
-(autoload 'projectile-configure-project "projectile" "\
-Run project configure command.
-
-Normally you'll be prompted for a compilation command, unless
-variable `compilation-read-command'.  You can force the prompt
-with a prefix ARG.
-
-\(fn ARG)" t nil)
-
-(autoload 'projectile-compile-project "projectile" "\
-Run project compilation command.
-
-Normally you'll be prompted for a compilation command, unless
-variable `compilation-read-command'.  You can force the prompt
-with a prefix ARG.
-
-\(fn ARG)" t nil)
-
-(autoload 'projectile-test-project "projectile" "\
-Run project test command.
-
-Normally you'll be prompted for a compilation command, unless
-variable `compilation-read-command'.  You can force the prompt
-with a prefix ARG.
-
-\(fn ARG)" t nil)
-
-(autoload 'projectile-run-project "projectile" "\
-Run project run command.
-
-Normally you'll be prompted for a compilation command, unless
-variable `compilation-read-command'.  You can force the prompt
-with a prefix ARG.
-
-\(fn ARG)" t nil)
-
-(autoload 'projectile-switch-project "projectile" "\
-Switch to a project we have visited before.
-Invokes the command referenced by `projectile-switch-project-action' on switch.
-With a prefix ARG invokes `projectile-commander' instead of
-`projectile-switch-project-action.'
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-switch-open-project "projectile" "\
-Switch to a project we have currently opened.
-Invokes the command referenced by `projectile-switch-project-action' on switch.
-With a prefix ARG invokes `projectile-commander' instead of
-`projectile-switch-project-action.'
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'projectile-find-file-in-directory "projectile" "\
-Jump to a file in a (maybe regular) DIRECTORY.
-
-This command will first prompt for the directory the file is in.
-
-\(fn &optional DIRECTORY)" t nil)
-
-(autoload 'projectile-find-file-in-known-projects "projectile" "\
-Jump to a file in any of the known projects.
-
-\(fn)" t nil)
-
-(autoload 'projectile-cleanup-known-projects "projectile" "\
-Remove known projects that don't exist anymore.
-
-\(fn)" t nil)
-
-(autoload 'projectile-clear-known-projects "projectile" "\
-Clear both `projectile-known-projects' and `projectile-known-projects-file'.
-
-\(fn)" t nil)
-
-(autoload 'projectile-remove-known-project "projectile" "\
-Remove PROJECT from the list of known projects.
-
-\(fn &optional PROJECT)" t nil)
-
-(autoload 'projectile-remove-current-project-from-known-projects "projectile" "\
-Remove the current project from the list of known projects.
-
-\(fn)" t nil)
-
-(autoload 'projectile-ibuffer "projectile" "\
-Open an IBuffer window showing all buffers in the current project.
-
-Let user choose another project when PREFIX is supplied.
-
-\(fn PREFIX)" t nil)
-
-(autoload 'projectile-commander "projectile" "\
-Execute a Projectile command with a single letter.
-The user is prompted for a single character indicating the action to invoke.
-The `?' character describes then
-available actions.
-
-See `def-projectile-commander-method' for defining new methods.
-
-\(fn)" t nil)
-
-(autoload 'projectile-edit-dir-locals "projectile" "\
-Edit or create a .dir-locals.el file of the project.
-
-\(fn)" t nil)
-
-(defvar projectile-mode nil "\
-Non-nil if Projectile mode is enabled.
-See the `projectile-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `projectile-mode'.")
-
-(custom-autoload 'projectile-mode "projectile" nil)
-
-(autoload 'projectile-mode "projectile" "\
-Minor mode to assist project management and navigation.
-
-When called interactively, toggle `projectile-mode'.  With prefix
-ARG, enable `projectile-mode' if ARG is positive, otherwise disable
-it.
-
-When called from Lisp, enable `projectile-mode' if ARG is omitted,
-nil or positive.  If ARG is `toggle', toggle `projectile-mode'.
-Otherwise behave as if called interactively.
-
-\\{projectile-mode-map}
-
-\(fn &optional ARG)" t nil)
-
-(define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0")
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("??" "def-projectile-commander-method" "projectile-")))
 
 
 )
@@ -5349,17 +5870,6 @@ See `preproc-font-lock-mode' for more information on Preproc-Font-Lock mode.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "preproc-font-lock" '("preproc-font-lock-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/pos-tip-20150318.1513/pos-tip-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/pos-tip-20150318.1513/pos-tip-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pos-tip" '("pos-tip-")))
 
 
 )
@@ -5460,6 +5970,36 @@ Display *Messages* buffer in a popup window.
 (add-hook 'completion-in-region-functions 'popup-complete--in-region)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "popup-complete" '("popup-complete-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/picolisp-mode-20150516.855/picolisp-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/picolisp-mode-20150516.855/picolisp-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'picolisp-mode "picolisp-mode" "\
+Major mode for PicoLisp programming. Derived from lisp-mode.
+
+\\{picolisp-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'picolisp-repl-mode "picolisp-mode" "\
+Major mode for `pil' REPL sessions. Derived from comint-mode.
+
+\\{picolisp-repl-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'picolisp-repl "picolisp-mode" "\
+Start a `pil' session in a new `picolisp-repl-mode' buffer.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "picolisp-mode" '("picolisp-")))
 
 
 )
@@ -6063,10 +6603,10 @@ Completion rules for the `git' command.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/a-20170720.1253/a-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/a-20180806.851/a-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/a-20170720.1253/a-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/a-20180806.851/a-autoloads.el") (car load-path))))
 
 
 
@@ -8155,10 +8695,10 @@ Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180802.1223/helm-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180810.507/helm-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180802.1223/helm-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180810.507/helm-autoloads.el") (car load-path))))
 
 
 
@@ -8830,8 +9370,13 @@ Toggle generic helm completion.
 All functions in Emacs that use `completing-read'
 or `read-file-name' and friends will use helm interface
 when this mode is turned on.
+
 However you can modify this behavior for functions of your choice
 with `helm-completing-read-handlers-alist'.
+
+Also commands using `completion-in-region' will be helmized when
+`helm-mode-handle-completion-in-region' is non nil, you can modify
+this behavior with `helm-mode-no-completion-in-region-in-modes'.
 
 Called with a positive arg, turn on unconditionally, with a
 negative arg turn off.
@@ -8844,8 +9389,8 @@ with a nil value.
 
 About `ido-mode':
 When you are using `helm-mode', DO NOT use `ido-mode', instead if you
-want some commands use `ido' add these commands to
-`helm-completing-read-handlers-alist' with ido as value.
+want some commands use `ido', add these commands to
+`helm-completing-read-handlers-alist' with `ido' as value.
 
 Note: This mode is incompatible with Emacs23.
 
@@ -9519,17 +10064,6 @@ However, don't worry, restore command exists:
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/f-20180106.922/f-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/f-20180106.922/f-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "f" '("f-")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/malinka-20171202.1021/malinka-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -9715,6 +10249,433 @@ If DIGITS is nil, `macro-math-rounding-precision' will be used.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/dash-functional-20180107.1618/dash-functional-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/dash-functional-20180107.1618/dash-functional-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dash-functional" '("-a" "-c" "-f" "-iteratefn" "-juxt" "-not" "-o" "-p" "-rpartial")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flycheck-manual "flycheck" "\
+Open the Flycheck manual.
+
+\(fn)" t nil)
+
+(autoload 'flycheck-mode "flycheck" "\
+Minor mode for on-the-fly syntax checking.
+
+When called interactively, toggle `flycheck-mode'.  With prefix
+ARG, enable `flycheck-mode' if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable `flycheck-mode' if ARG is omitted,
+nil or positive.  If ARG is `toggle', toggle `flycheck-mode'.
+Otherwise behave as if called interactively.
+
+In `flycheck-mode' the buffer is automatically syntax-checked
+using the first suitable syntax checker from `flycheck-checkers'.
+Use `flycheck-select-checker' to select a checker for the current
+buffer manually.
+
+\\{flycheck-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-flycheck-mode nil "\
+Non-nil if Global Flycheck mode is enabled.
+See the `global-flycheck-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-flycheck-mode'.")
+
+(custom-autoload 'global-flycheck-mode "flycheck" nil)
+
+(autoload 'global-flycheck-mode "flycheck" "\
+Toggle Flycheck mode in all buffers.
+With prefix ARG, enable Global Flycheck mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Flycheck mode is enabled in all buffers where
+`flycheck-mode-on-safe' would do it.
+See `flycheck-mode' for more information on Flycheck mode.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'flycheck-define-error-level "flycheck" "\
+Define a new error LEVEL with PROPERTIES.
+
+The following PROPERTIES constitute an error level:
+
+`:severity SEVERITY'
+     A number denoting the severity of this level.  The higher
+     the number, the more severe is this level compared to other
+     levels.  Defaults to 0.
+
+     The severity is used by `flycheck-error-level-<' to
+     determine the ordering of errors according to their levels.
+
+`:compilation-level LEVEL'
+
+     A number indicating the broad class of messages that errors
+     at this level belong to: one of 0 (info), 1 (warning), or
+     2 or nil (error).  Defaults to nil.
+
+     This is used by `flycheck-checker-pattern-to-error-regexp'
+     to map error levels into `compilation-mode''s hierarchy and
+     to get proper highlighting of errors in `compilation-mode'.
+
+`:overlay-category CATEGORY'
+     A symbol denoting the overlay category to use for error
+     highlight overlays for this level.  See Info
+     node `(elisp)Overlay Properties' for more information about
+     overlay categories.
+
+     A category for an error level overlay should at least define
+     the `face' property, for error highlighting.  Another useful
+     property for error level categories is `priority', to
+     influence the stacking of multiple error level overlays.
+
+`:fringe-bitmap BITMAP'
+     A fringe bitmap symbol denoting the bitmap to use for fringe
+     indicators for this level.  See Info node `(elisp)Fringe
+     Bitmaps' for more information about fringe bitmaps,
+     including a list of built-in fringe bitmaps.
+
+`:fringe-face FACE'
+     A face symbol denoting the face to use for fringe indicators
+     for this level.
+
+`:error-list-face FACE'
+     A face symbol denoting the face to use for messages of this
+     level in the error list.  See `flycheck-list-errors'.
+
+\(fn LEVEL &rest PROPERTIES)" nil nil)
+
+(function-put 'flycheck-define-error-level 'lisp-indent-function '1)
+
+(autoload 'flycheck-define-command-checker "flycheck" "\
+Define SYMBOL as syntax checker to run a command.
+
+Define SYMBOL as generic syntax checker via
+`flycheck-define-generic-checker', which uses an external command
+to check the buffer.  SYMBOL and DOCSTRING are the same as for
+`flycheck-define-generic-checker'.
+
+In addition to the properties understood by
+`flycheck-define-generic-checker', the following PROPERTIES
+constitute a command syntax checker.  Unless otherwise noted, all
+properties are mandatory.  Note that the default `:error-filter'
+of command checkers is `flycheck-sanitize-errors'.
+
+`:command COMMAND'
+     The command to run for syntax checking.
+
+     COMMAND is a list of the form `(EXECUTABLE [ARG ...])'.
+
+     EXECUTABLE is a string with the executable of this syntax
+     checker.  It can be overridden with the variable
+     `flycheck-SYMBOL-executable'.  Note that this variable is
+     NOT implicitly defined by this function.  Use
+     `flycheck-def-executable-var' to define this variable.
+
+     Each ARG is an argument to the executable, either as string,
+     or as special symbol or form for
+     `flycheck-substitute-argument', which see.
+
+`:error-patterns PATTERNS'
+     A list of patterns to parse the output of the `:command'.
+
+     Each ITEM in PATTERNS is a list `(LEVEL SEXP ...)', where
+     LEVEL is a Flycheck error level (see
+     `flycheck-define-error-level'), followed by one or more RX
+     `SEXP's which parse an error of that level and extract line,
+     column, file name and the message.
+
+     See `rx' for general information about RX, and
+     `flycheck-rx-to-string' for some special RX forms provided
+     by Flycheck.
+
+     All patterns are applied in the order of declaration to the
+     whole output of the syntax checker.  Output already matched
+     by a pattern will not be matched by subsequent patterns.  In
+     other words, the first pattern wins.
+
+     This property is optional.  If omitted, however, an
+     `:error-parser' is mandatory.
+
+`:error-parser FUNCTION'
+     A function to parse errors with.
+
+     The function shall accept three arguments OUTPUT CHECKER
+     BUFFER.  OUTPUT is the syntax checker output as string,
+     CHECKER the syntax checker that was used, and BUFFER a
+     buffer object representing the checked buffer.  The function
+     must return a list of `flycheck-error' objects parsed from
+     OUTPUT.
+
+     This property is optional.  If omitted, it defaults to
+     `flycheck-parse-with-patterns'.  In this case,
+     `:error-patterns' is mandatory.
+
+`:standard-input t'
+     Whether to send the buffer contents on standard input.
+
+     If this property is given and has a non-nil value, send the
+     contents of the buffer on standard input.
+
+     Defaults to nil.
+
+Note that you may not give `:start', `:interrupt', and
+`:print-doc' for a command checker.  You can give a custom
+`:verify' function, though, whose results will be appended to the
+default `:verify' function of command checkers.
+
+\(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil nil)
+
+(function-put 'flycheck-define-command-checker 'lisp-indent-function '1)
+
+(function-put 'flycheck-define-command-checker 'doc-string-elt '2)
+
+(autoload 'flycheck-def-config-file-var "flycheck" "\
+Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
+
+SYMBOL is declared as customizable variable using `defcustom', to
+provide a configuration file for the given syntax CHECKER.
+CUSTOM-ARGS are forwarded to `defcustom'.
+
+FILE-NAME is the initial value of the new variable.  If omitted,
+the default value is nil.
+
+Use this together with the `config-file' form in the `:command'
+argument to `flycheck-define-checker'.
+
+\(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t)
+
+(function-put 'flycheck-def-config-file-var 'lisp-indent-function '3)
+
+(autoload 'flycheck-def-option-var "flycheck" "\
+Define SYMBOL as option variable with INIT-VALUE for CHECKER.
+
+SYMBOL is declared as customizable variable using `defcustom', to
+provide an option for the given syntax CHECKERS (a checker or a
+list of checkers).  INIT-VALUE is the initial value of the
+variable, and DOCSTRING is its docstring.  CUSTOM-ARGS are
+forwarded to `defcustom'.
+
+Use this together with the `option', `option-list' and
+`option-flag' forms in the `:command' argument to
+`flycheck-define-checker'.
+
+\(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t)
+
+(function-put 'flycheck-def-option-var 'lisp-indent-function '3)
+
+(function-put 'flycheck-def-option-var 'doc-string-elt '4)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("contains-rebar-config" "flycheck-" "help-flycheck-checker-d" "list-flycheck-errors" "locate-rebar3-project-root" "read-flycheck-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-er")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180812.522/lsp-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180812.522/lsp-mode-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-common" '("lsp-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-imenu" '("lsp-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-io" '("lsp-")))
+
+
+
+(let ((loads (get 'lsp-mode 'custom-loads))) (if (member '"lsp-methods" loads) nil (put 'lsp-mode 'custom-loads (cons '"lsp-methods" loads))))
+
+(let ((loads (get 'lsp-faces 'custom-loads))) (if (member '"lsp-methods" loads) nil (put 'lsp-faces 'custom-loads (cons '"lsp-methods" loads))))
+
+(defvar lsp-document-sync-method nil "\
+How to sync the document with the language server.")
+
+(custom-autoload 'lsp-document-sync-method "lsp-methods" t)
+
+(defvar lsp-project-blacklist nil "\
+A list of project directory regexps for which LSP shouldn't be initialized.
+LSP should be initialized if the given project root matches one pattern in the
+whitelist, or does not match any pattern in the blacklist.")
+
+(custom-autoload 'lsp-project-blacklist "lsp-methods" t)
+
+(defvar lsp-enable-eldoc t "\
+Enable `eldoc-mode' integration.")
+
+(custom-autoload 'lsp-enable-eldoc "lsp-methods" t)
+
+(defvar lsp-eldoc-render-all t "\
+Define whether all of the returned by document/onHover will be displayed.
+
+If `lsp-markup-display-all' is set to nil `eldoc' will show only
+the symbol information.")
+
+(custom-autoload 'lsp-eldoc-render-all "lsp-methods" t)
+
+(defvar lsp-highlight-symbol-at-point t "\
+Highlight the symbol under the point.")
+
+(custom-autoload 'lsp-highlight-symbol-at-point "lsp-methods" t)
+
+(defvar lsp-enable-codeaction t "\
+Enable code action processing.")
+
+(custom-autoload 'lsp-enable-codeaction "lsp-methods" t)
+
+(defvar lsp-enable-completion-at-point t "\
+Enable `completion-at-point' integration.")
+
+(custom-autoload 'lsp-enable-completion-at-point "lsp-methods" t)
+
+(defvar lsp-enable-xref t "\
+Enable xref integration.")
+
+(custom-autoload 'lsp-enable-xref "lsp-methods" t)
+
+(defvar lsp-enable-indentation t "\
+Indent regions using the file formatting functionality provided by the language server.")
+
+(custom-autoload 'lsp-enable-indentation "lsp-methods" t)
+
+(defvar lsp-before-save-edits t "\
+If non-nil, `lsp-mode' will apply edits suggested by the language server
+before saving a document.")
+
+(custom-autoload 'lsp-before-save-edits "lsp-methods" t)
+
+(defvar lsp-hover-text-function 'lsp--text-document-hover-string "\
+The LSP method to use to display text on hover.")
+
+(custom-autoload 'lsp-hover-text-function "lsp-methods" t)
+
+(defface lsp-face-highlight-textual '((((background dark)) :background "saddle brown") (((background light)) :background "yellow")) "\
+Face used for textual occurances of symbols." :group 'lsp-faces)
+
+(defface lsp-face-highlight-read '((((background dark)) :background "firebrick") (((background light)) :background "red")) "\
+Face used for highlighting symbols being read." :group 'lsp-faces)
+
+(defface lsp-face-highlight-write '((((background dark)) :background "sea green") (((background light)) :background "green")) "\
+Face used for highlighting symbols being written to." :group 'lsp-faces)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-methods" '("lsp-")))
+
+
+
+(autoload 'lsp-mode "lsp-mode" "\
+
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-mode" '("lsp-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-notifications" '("lsp-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180619.251/lsp-ui-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180619.251/lsp-ui-autoloads.el") (car load-path))))
+
+
+
+(autoload 'lsp-ui-mode "lsp-ui" "\
+Toggle language server UI mode on or off.
+‘lsp-ui-mode’ is a minor mode that contains a series of useful UI
+integrations for ‘lsp-mode’.  With a prefix argument ARG, enable
+language server UI mode if ARG is positive, and disable it
+otherwise.  If called from Lisp, enable the mode if ARG is
+omitted or nil, and toggle it if ARG is ‘toggle’.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui" '("lsp-ui-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui-doc" '("lsp-ui-doc-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui-flycheck" '("lsp-ui-flycheck-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui-imenu" '("lsp-ui-imenu")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui-peek" '("lsp-ui-peek-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-ui-sideline" '("lsp-ui-sideline")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-rust-20180305.1308/lsp-rust-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-rust-20180305.1308/lsp-rust-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-rust" '("lsp-rust-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-clangd-20180701.134/lsp-clangd-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-clangd-20180701.134/lsp-clangd-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-clangd" '("lsp-clangd-executable")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/ht-20180129.2234/ht-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -9840,6 +10801,54 @@ Refreshes the buffer.
 \(fn)" nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "list-packages-ext" '("list-packages-ext-mode-" "lpe:")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20160930.1927/lisp-extra-font-lock-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20160930.1927/lisp-extra-font-lock-autoloads.el") (car load-path))))
+
+
+
+(defvar lisp-extra-font-lock-modes '(emacs-lisp-mode lisp-mode) "\
+List of modes where Lisp Extra Font Lock Global mode should be enabled.")
+
+(custom-autoload 'lisp-extra-font-lock-modes "lisp-extra-font-lock" t)
+
+(autoload 'lisp-extra-font-lock-mode "lisp-extra-font-lock" "\
+Minor mode that highlights bound variables and quoted expressions in lisp.
+
+If called interactively, enable Lisp-Extra-Font-Lock mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(defvar lisp-extra-font-lock-global-mode nil "\
+Non-nil if Lisp-Extra-Font-Lock-Global mode is enabled.
+See the `lisp-extra-font-lock-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `lisp-extra-font-lock-global-mode'.")
+
+(custom-autoload 'lisp-extra-font-lock-global-mode "lisp-extra-font-lock" nil)
+
+(autoload 'lisp-extra-font-lock-global-mode "lisp-extra-font-lock" "\
+Toggle Lisp-Extra-Font-Lock mode in all buffers.
+With prefix ARG, enable Lisp-Extra-Font-Lock-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Lisp-Extra-Font-Lock mode is enabled in all buffers where
+`(lambda nil (when (apply 'derived-mode-p lisp-extra-font-lock-modes) (lisp-extra-font-lock-mode 1)))' would do it.
+See `lisp-extra-font-lock-mode' for more information on Lisp-Extra-Font-Lock mode.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lisp-extra-font-lock" '("lisp-extra-font-lock-")))
 
 
 )
@@ -10031,6 +11040,65 @@ Beautify / pretty-print the active region (or the entire buffer if no active reg
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/jdecomp-20170224.2200/jdecomp-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/jdecomp-20170224.2200/jdecomp-autoloads.el") (car load-path))))
+
+
+
+(autoload 'jdecomp-preview-mode "jdecomp" "\
+Major mode for previewing decompiled Java class files.
+
+\\{jdecomp-preview-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'jdecomp-decompile "jdecomp" "\
+Decompile FILE and return buffer of decompiled contents.
+
+FILE must be a Java class file.
+
+Optional parameter JAR is the name of the JAR archive FILE is
+in.
+
+\(fn FILE &optional JAR)" nil nil)
+
+(autoload 'jdecomp-decompile-and-view "jdecomp" "\
+Decompile FILE and view buffer of decompiled contents.
+
+FILE must be a Java class file.  If called interactively, FILE is
+the name of the file the current buffer is visiting.
+
+Optional parameter JAR is the JAR file containing FILE, if
+applicable.
+
+\(fn FILE &optional JAR)" t nil)
+
+(defvar jdecomp-mode nil "\
+Non-nil if Jdecomp mode is enabled.
+See the `jdecomp-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `jdecomp-mode'.")
+
+(custom-autoload 'jdecomp-mode "jdecomp" nil)
+
+(autoload 'jdecomp-mode "jdecomp" "\
+Automatically decompile Java class files.
+
+If called interactively, enable Jdecomp mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "jdecomp" '("jdecomp-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/javap-mode-20120223.2208/javap-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -10139,10 +11207,10 @@ result of `defhydra'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180731.1617/counsel-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180813.2122/counsel-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180731.1617/counsel-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180813.2122/counsel-autoloads.el") (car load-path))))
 
 
 
@@ -10203,7 +11271,7 @@ With a prefix arg, restrict list to variables defined using
 
 (autoload 'counsel-apropos "counsel" "\
 Show all matching symbols.
-See `apropos' for further information about what is considered
+See `apropos' for further information on what is considered
 a symbol and how to search for them.
 
 \(fn)" t nil)
@@ -10301,6 +11369,14 @@ Find a file on `recentf-list'.
 
 (autoload 'counsel-bookmark "counsel" "\
 Forward to `bookmark-jump' or `bookmark-set' if bookmark doesn't exist.
+
+\(fn)" t nil)
+
+(autoload 'counsel-bookmarked-directory "counsel" "\
+Ivy interface for bookmarked directories.
+
+With a prefix argument, this command creates a new bookmark which points to the
+current value of `default-directory'.
 
 \(fn)" t nil)
 
@@ -10410,7 +11486,7 @@ Set tags for the current agenda item.
 
 \(fn)" t nil)
 
-(defalias 'counsel-org-goto 'counsel-outline)
+(defalias 'counsel-org-goto #'counsel-outline)
 
 (autoload 'counsel-org-goto-all "counsel" "\
 Go to a different location in any org file.
@@ -10491,7 +11567,7 @@ Browse shell history.
 \(fn)" t nil)
 
 (autoload 'counsel-outline "counsel" "\
-Jump to outline with completion.
+Jump to an outline heading with completion.
 
 \(fn)" t nil)
 
@@ -10560,10 +11636,10 @@ replacements.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/erlang-20180618.1257/erlang-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/erlang-20180816.1134/erlang-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/erlang-20180618.1257/erlang-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/erlang-20180816.1134/erlang-autoloads.el") (car load-path))))
 
 
 
@@ -12073,34 +13149,6 @@ Preconfigured `helm' for searching in clojuredocs.org with symbol at point
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/heap-0.5/heap-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/heap-0.5/heap-autoloads.el") (car load-path))))
-
-
-
-(autoload 'make-heap "heap" "\
-Create an empty heap with comparison function COMPARE-FUNCTION.
-
-COMPARE-FUNCTION takes two arguments, A and B, and returns
-non-nil or nil. To implement a max-heap, it should return non-nil
-if A is greater than B. To implemenet a min-heap, it should
-return non-nil if A is less than B.
-
-Optional argument INITIAL-SIZE sets the initial size of the heap,
-defaulting to 10. Optional argument RESIZE-FACTOR sets the factor
-by which the heap's size is increased if it runs out of space,
-defaulting to 2.
-
-\(fn COMPARE-FUNCTION &optional INITIAL-SIZE RESIZE-FACTOR)" nil nil)
-
-(defalias 'heap-create 'make-heap)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "heap" '("heap-")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/google-c-style-20180130.1736/google-c-style-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -12806,6 +13854,17 @@ Configure flymake mode to check the current buffer's shell-script syntax.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flymake-rust-20170729.2139/flymake-rust-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flymake-rust-20170729.2139/flymake-rust-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-rust" '("flymake-rust-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/flymake-cursor-20120322.1757/flymake-cursor-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -12842,245 +13901,6 @@ Configure flymake mode to check the current buffer's C/C++ source.
 \(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-cppcheck" '("flymake-cppcheck-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el") (car load-path))))
-
-
-
-(autoload 'flycheck-manual "flycheck" "\
-Open the Flycheck manual.
-
-\(fn)" t nil)
-
-(autoload 'flycheck-mode "flycheck" "\
-Minor mode for on-the-fly syntax checking.
-
-When called interactively, toggle `flycheck-mode'.  With prefix
-ARG, enable `flycheck-mode' if ARG is positive, otherwise disable
-it.
-
-When called from Lisp, enable `flycheck-mode' if ARG is omitted,
-nil or positive.  If ARG is `toggle', toggle `flycheck-mode'.
-Otherwise behave as if called interactively.
-
-In `flycheck-mode' the buffer is automatically syntax-checked
-using the first suitable syntax checker from `flycheck-checkers'.
-Use `flycheck-select-checker' to select a checker for the current
-buffer manually.
-
-\\{flycheck-mode-map}
-
-\(fn &optional ARG)" t nil)
-
-(defvar global-flycheck-mode nil "\
-Non-nil if Global Flycheck mode is enabled.
-See the `global-flycheck-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-flycheck-mode'.")
-
-(custom-autoload 'global-flycheck-mode "flycheck" nil)
-
-(autoload 'global-flycheck-mode "flycheck" "\
-Toggle Flycheck mode in all buffers.
-With prefix ARG, enable Global Flycheck mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Flycheck mode is enabled in all buffers where
-`flycheck-mode-on-safe' would do it.
-See `flycheck-mode' for more information on Flycheck mode.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'flycheck-define-error-level "flycheck" "\
-Define a new error LEVEL with PROPERTIES.
-
-The following PROPERTIES constitute an error level:
-
-`:severity SEVERITY'
-     A number denoting the severity of this level.  The higher
-     the number, the more severe is this level compared to other
-     levels.  Defaults to 0.
-
-     The severity is used by `flycheck-error-level-<' to
-     determine the ordering of errors according to their levels.
-
-`:compilation-level LEVEL'
-
-     A number indicating the broad class of messages that errors
-     at this level belong to: one of 0 (info), 1 (warning), or
-     2 or nil (error).  Defaults to nil.
-
-     This is used by `flycheck-checker-pattern-to-error-regexp'
-     to map error levels into `compilation-mode''s hierarchy and
-     to get proper highlighting of errors in `compilation-mode'.
-
-`:overlay-category CATEGORY'
-     A symbol denoting the overlay category to use for error
-     highlight overlays for this level.  See Info
-     node `(elisp)Overlay Properties' for more information about
-     overlay categories.
-
-     A category for an error level overlay should at least define
-     the `face' property, for error highlighting.  Another useful
-     property for error level categories is `priority', to
-     influence the stacking of multiple error level overlays.
-
-`:fringe-bitmap BITMAP'
-     A fringe bitmap symbol denoting the bitmap to use for fringe
-     indicators for this level.  See Info node `(elisp)Fringe
-     Bitmaps' for more information about fringe bitmaps,
-     including a list of built-in fringe bitmaps.
-
-`:fringe-face FACE'
-     A face symbol denoting the face to use for fringe indicators
-     for this level.
-
-`:error-list-face FACE'
-     A face symbol denoting the face to use for messages of this
-     level in the error list.  See `flycheck-list-errors'.
-
-\(fn LEVEL &rest PROPERTIES)" nil nil)
-
-(function-put 'flycheck-define-error-level 'lisp-indent-function '1)
-
-(autoload 'flycheck-define-command-checker "flycheck" "\
-Define SYMBOL as syntax checker to run a command.
-
-Define SYMBOL as generic syntax checker via
-`flycheck-define-generic-checker', which uses an external command
-to check the buffer.  SYMBOL and DOCSTRING are the same as for
-`flycheck-define-generic-checker'.
-
-In addition to the properties understood by
-`flycheck-define-generic-checker', the following PROPERTIES
-constitute a command syntax checker.  Unless otherwise noted, all
-properties are mandatory.  Note that the default `:error-filter'
-of command checkers is `flycheck-sanitize-errors'.
-
-`:command COMMAND'
-     The command to run for syntax checking.
-
-     COMMAND is a list of the form `(EXECUTABLE [ARG ...])'.
-
-     EXECUTABLE is a string with the executable of this syntax
-     checker.  It can be overridden with the variable
-     `flycheck-SYMBOL-executable'.  Note that this variable is
-     NOT implicitly defined by this function.  Use
-     `flycheck-def-executable-var' to define this variable.
-
-     Each ARG is an argument to the executable, either as string,
-     or as special symbol or form for
-     `flycheck-substitute-argument', which see.
-
-`:error-patterns PATTERNS'
-     A list of patterns to parse the output of the `:command'.
-
-     Each ITEM in PATTERNS is a list `(LEVEL SEXP ...)', where
-     LEVEL is a Flycheck error level (see
-     `flycheck-define-error-level'), followed by one or more RX
-     `SEXP's which parse an error of that level and extract line,
-     column, file name and the message.
-
-     See `rx' for general information about RX, and
-     `flycheck-rx-to-string' for some special RX forms provided
-     by Flycheck.
-
-     All patterns are applied in the order of declaration to the
-     whole output of the syntax checker.  Output already matched
-     by a pattern will not be matched by subsequent patterns.  In
-     other words, the first pattern wins.
-
-     This property is optional.  If omitted, however, an
-     `:error-parser' is mandatory.
-
-`:error-parser FUNCTION'
-     A function to parse errors with.
-
-     The function shall accept three arguments OUTPUT CHECKER
-     BUFFER.  OUTPUT is the syntax checker output as string,
-     CHECKER the syntax checker that was used, and BUFFER a
-     buffer object representing the checked buffer.  The function
-     must return a list of `flycheck-error' objects parsed from
-     OUTPUT.
-
-     This property is optional.  If omitted, it defaults to
-     `flycheck-parse-with-patterns'.  In this case,
-     `:error-patterns' is mandatory.
-
-`:standard-input t'
-     Whether to send the buffer contents on standard input.
-
-     If this property is given and has a non-nil value, send the
-     contents of the buffer on standard input.
-
-     Defaults to nil.
-
-Note that you may not give `:start', `:interrupt', and
-`:print-doc' for a command checker.  You can give a custom
-`:verify' function, though, whose results will be appended to the
-default `:verify' function of command checkers.
-
-\(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil nil)
-
-(function-put 'flycheck-define-command-checker 'lisp-indent-function '1)
-
-(function-put 'flycheck-define-command-checker 'doc-string-elt '2)
-
-(autoload 'flycheck-def-config-file-var "flycheck" "\
-Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
-
-SYMBOL is declared as customizable variable using `defcustom', to
-provide a configuration file for the given syntax CHECKER.
-CUSTOM-ARGS are forwarded to `defcustom'.
-
-FILE-NAME is the initial value of the new variable.  If omitted,
-the default value is nil.
-
-Use this together with the `config-file' form in the `:command'
-argument to `flycheck-define-checker'.
-
-\(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t)
-
-(function-put 'flycheck-def-config-file-var 'lisp-indent-function '3)
-
-(autoload 'flycheck-def-option-var "flycheck" "\
-Define SYMBOL as option variable with INIT-VALUE for CHECKER.
-
-SYMBOL is declared as customizable variable using `defcustom', to
-provide an option for the given syntax CHECKERS (a checker or a
-list of checkers).  INIT-VALUE is the initial value of the
-variable, and DOCSTRING is its docstring.  CUSTOM-ARGS are
-forwarded to `defcustom'.
-
-Use this together with the `option', `option-list' and
-`option-flag' forms in the `:command' argument to
-`flycheck-define-checker'.
-
-\(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t)
-
-(function-put 'flycheck-def-option-var 'lisp-indent-function '3)
-
-(function-put 'flycheck-def-option-var 'doc-string-elt '4)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck" '("contains-rebar-config" "flycheck-" "help-flycheck-checker-d" "list-flycheck-errors" "locate-rebar3-project-root" "read-flycheck-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-buttercup" '("flycheck-buttercup-format-error-list")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-ert" '("flycheck-er")))
-
-
 
 
 )
@@ -13203,6 +14023,25 @@ Automatically fix Swiftlint errors.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-rust-20180327.1645/flycheck-rust-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-rust-20180327.1645/flycheck-rust-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flycheck-rust-setup "flycheck-rust" "\
+Setup Rust in Flycheck.
+
+If the current file is part of a Cargo project, configure
+Flycheck according to the Cargo project layout.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-rust" '("flycheck-rust-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-rtags-20180619.824/flycheck-rtags-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -13214,10 +14053,10 @@ Automatically fix Swiftlint errors.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-rebar3-20161030.1315/flycheck-rebar3-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-rebar3-20180806.2103/flycheck-rebar3-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-rebar3-20161030.1315/flycheck-rebar3-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-rebar3-20180806.2103/flycheck-rebar3-autoloads.el") (car load-path))))
 
 
 
@@ -13392,10 +14231,10 @@ Setup Flycheck clang-tidy.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180226.439/flycheck-clang-analyzer-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180815.455/flycheck-clang-analyzer-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180226.439/flycheck-clang-analyzer-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180815.455/flycheck-clang-analyzer-autoloads.el") (car load-path))))
 
 
 
@@ -13555,10 +14394,10 @@ expression of the session to be generated through
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/avy-20180615.1501/avy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/avy-20180814.2121/avy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/avy-20180615.1501/avy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/avy-20180814.2121/avy-autoloads.el") (car load-path))))
 
 
 
@@ -13717,6 +14556,11 @@ When BOTTOM-UP is non-nil, display avy candidates from top to bottom
 
 \(fn &optional OFFSET BOTTOM-UP)" t nil)
 
+(autoload 'avy-goto-end-of-line "avy" "\
+Call `avy-goto-line' and move to the end of the line.
+
+\(fn &optional ARG)" t nil)
+
 (autoload 'avy-copy-line "avy" "\
 Copy a selected line above the current line.
 ARG lines can be used.
@@ -13803,10 +14647,10 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ace-window-20180607.1923/ace-window-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ace-window-20180814.1516/ace-window-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ace-window-20180607.1923/ace-window-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ace-window-20180814.1516/ace-window-autoloads.el") (car load-path))))
 
 
 
@@ -14456,10 +15300,10 @@ Load and activate package.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clomacs-20180722.1457/clomacs-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clomacs-20180816.1836/clomacs-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clomacs-20180722.1457/clomacs-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clomacs-20180816.1836/clomacs-autoloads.el") (car load-path))))
 
 
 
@@ -14478,6 +15322,8 @@ CALL-TYPE - call Clojure side :sync or :async.
 CALLBACK - callback function for :async CALL-TYPE case.
 DOC - optional elisp function docstring (when nil it constructed from
 underlying clojure entity docstring if possible).
+INTERACTIVE - when defined and is a boolean `t` mark function (interactive),
+if not boolean - insert interactive value into the function beginning as is.
 RETURN-TYPE possible values are listed in the CLOMACS-POSSIBLE-RETURN-TYPES,
 or it may be a custom function (:string by default).
 RETURN-VALUE may be :value or :stdout (:value by default).
@@ -14486,9 +15332,9 @@ http-server should be started to pass http requests from Clojure REPL
 to Emacs. This parameter is Elisp function to do it. Such function can
 looks like `clomacs-httpd-start'.
 
-\(fn EL-FUNC-NAME CL-FUNC-NAME &key (CALL-TYPE :sync) (CALLBACK nil) (DOC nil) (RETURN-TYPE :string) (RETURN-VALUE :value) LIB-NAME NAMESPACE (HTTPD-STARTER nil))" nil t)
+\(fn EL-FUNC-NAME CL-FUNC-NAME &key (CALL-TYPE :sync) (CALLBACK nil) (DOC nil) (INTERACTIVE nil) (RETURN-TYPE :string) (RETURN-VALUE :value) LIB-NAME NAMESPACE (HTTPD-STARTER nil))" nil t)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clomacs" '("clomacs-" "execute")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clomacs" '("clo" "execute")))
 
 
 )
@@ -15524,17 +16370,6 @@ This is useful for reading patches from mailing lists.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/dash-functional-20180107.1618/dash-functional-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/dash-functional-20180107.1618/dash-functional-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dash-functional" '("-a" "-c" "-f" "-iteratefn" "-juxt" "-not" "-o" "-p" "-rpartial")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/ctags-update-20170728.758/ctags-update-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -15642,10 +16477,10 @@ Reload and reproduce everything.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-etags-20180605.1313/counsel-etags-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-etags-20180807.555/counsel-etags-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-etags-20180605.1313/counsel-etags-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-etags-20180807.555/counsel-etags-autoloads.el") (car load-path))))
 
 
 
@@ -16116,10 +16951,10 @@ Init company erlang backend.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/company-c-headers-20170531.2030/company-c-headers-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-c-headers-20180814.1730/company-c-headers-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-c-headers-20170531.2030/company-c-headers-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-c-headers-20180814.1730/company-c-headers-autoloads.el") (car load-path))))
 
 
 
@@ -16459,10 +17294,10 @@ Runs cljsbuild.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clj-refactor-20180725.1258/clj-refactor-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clj-refactor-20180808.606/clj-refactor-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clj-refactor-20180725.1258/clj-refactor-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clj-refactor-20180808.606/clj-refactor-autoloads.el") (car load-path))))
 
 
 
@@ -17281,6 +18116,197 @@ non-nil; otherwise prompts the user to enter the directory.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cargo-20180812.1218/cargo-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cargo-20180812.1218/cargo-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cargo-minor-mode "cargo" "\
+Cargo minor mode. Used to hold keybindings for cargo-mode.
+
+If called interactively, enable cargo minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{cargo-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cargo" '("cargo-minor-mode")))
+
+
+
+(autoload 'cargo-process-bench "cargo-process" "\
+Run the Cargo bench command.
+With the prefix argument, modify the command's invocation.
+Cargo: Run the benchmarks.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-build "cargo-process" "\
+Run the Cargo build command.
+With the prefix argument, modify the command's invocation.
+Cargo: Compile the current project.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-clean "cargo-process" "\
+Run the Cargo clean command.
+With the prefix argument, modify the command's invocation.
+Cargo: Remove the target directory.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-doc "cargo-process" "\
+Run the Cargo doc command.
+With the prefix argument, modify the command's invocation.
+Cargo: Build this project's and its dependencies' documentation.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-doc-open "cargo-process" "\
+Run the Cargo doc command with the --open switch.
+With the prefix argument, modify the command's invocation.
+Cargo: Open this project's documentation.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-new "cargo-process" "\
+Run the Cargo new command.
+With the prefix argument, modify the command's invocation.
+NAME is the name of your application.
+If BIN is t then create a binary application, otherwise a library.
+Cargo: Create a new cargo project.
+
+\(fn NAME &optional BIN)" t nil)
+
+(autoload 'cargo-process-init "cargo-process" "\
+Run the Cargo init command.
+With the prefix argument, modify the command's invocation.
+DIRECTORY is the directory you want to create a cargo project in.
+If BIN is t then create a binary application, otherwise a library.
+Cargo: Create a new cargo project in current directory.
+
+\(fn DIRECTORY &optional BIN)" t nil)
+
+(autoload 'cargo-process-run "cargo-process" "\
+Run the Cargo run command.
+With the prefix argument, modify the command's invocation.
+Cargo: Build and execute src/main.rs.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-run-bin "cargo-process" "\
+Run the Cargo run command --bin <name>.
+With the prefix argument, modify the command's invocation.
+Cargo: Build and execute a specific binary
+
+\(fn COMMAND)" t nil)
+
+(autoload 'cargo-process-run-example "cargo-process" "\
+Run the Cargo run command --example <name>.
+With the prefix argument, modify the command's invocation.
+Cargo: Build and execute with --example <name>.
+
+\(fn COMMAND)" t nil)
+
+(autoload 'cargo-process-search "cargo-process" "\
+Run the Cargo search command.
+With the prefix argument, modify the command's invocation.
+SEARCH-TERM is used as the search term for the Cargo registry.
+Cargo: Search registry for crates.
+
+\(fn SEARCH-TERM)" t nil)
+
+(autoload 'cargo-process-test "cargo-process" "\
+Run the Cargo test command.
+With the prefix argument, modify the command's invocation.
+Cargo: Run the tests.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-current-test "cargo-process" "\
+Run the Cargo test command for the current test.
+With the prefix argument, modify the command's invocation.
+Cargo: Run the tests.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-current-file-tests "cargo-process" "\
+Run the Cargo test command for the current file.
+With the prefix argument, modify the command's invocation.
+Cargo: Run the tests.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-update "cargo-process" "\
+Run the Cargo update command.
+With the prefix argument, modify the command's invocation.
+Cargo: Update dependencies listed in Cargo.lock.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-fmt "cargo-process" "\
+Run the Cargo fmt command.
+With the prefix argument, modify the command's invocation.
+Requires Cargo Fmt to be installed.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-check "cargo-process" "\
+Run the Cargo check command.
+With the prefix argument, modify the command's invocation.
+Cargo: Check compile the current project.
+Requires cargo-check to be installed.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-clippy "cargo-process" "\
+Run the Cargo clippy command.
+With the prefix argument, modify the command's invocation.
+Cargo: Clippy compile the current project.
+Requires Cargo clippy to be installed.
+
+\(fn)" t nil)
+
+(autoload 'cargo-process-add "cargo-process" "\
+Run the Cargo add command.
+With the prefix argument, modify the command's invocation.
+CRATES is the name of the crate to add.
+Cargo: This command allows you to add a dependency to a Cargo.toml manifest file.
+
+\(fn CRATE)" t nil)
+
+(autoload 'cargo-process-rm "cargo-process" "\
+Run the Cargo rm command.
+With the prefix argument, modify the command's invocation.
+CRATE is the name of the crate to remove.
+Cargo: Remove a dependency from a Cargo.toml manifest file.
+
+\(fn CRATE)" t nil)
+
+(autoload 'cargo-process-upgrade "cargo-process" "\
+Run the Cargo update command.
+With the prefix argument, modify the command's invocation.
+If ALL is t then update all crates, otherwise specify CRATES.
+Cargo: Upgrade dependencies as specified in the local manifest file
+
+\(fn &optional ALL CRATES)" t nil)
+
+(autoload 'cargo-process-repeat "cargo-process" "\
+Run the last cargo-process command.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cargo-process" '("cargo-process-" "manifest-path-argument" "rustc-errno" "set-rust-backtrace")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/c-eldoc-20170917.2202/c-eldoc-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -17548,10 +18574,10 @@ compiled before it is run.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/auto-shell-command-20160604.238/auto-shell-command-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/auto-shell-command-20180817.1502/auto-shell-command-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/auto-shell-command-20160604.238/auto-shell-command-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/auto-shell-command-20180817.1502/auto-shell-command-autoloads.el") (car load-path))))
 
 
 
@@ -17951,8 +18977,15 @@ Sends the first answer to 4clojure and gets a message back
 )
 (setq package-activated-list
   (append
-    '(yasnippet yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover clojure-mode epl pkg-info queue spinner sesman cider typed-clojure-mode tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh sotlisp snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment simple-httpd signal shell-toggle shell-switcher shell-command scheme-here scheme-complete rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode quick-peek quack projectile preproc-font-lock pos-tip popwin popup popup-complete pcache list-utils persistent-soft peg pcmpl-git pcmpl-args a parseclj parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode f malinka makey makefile-executor macrostep macro-math ht list-packages-ext lfe-mode language-detection kv json-snatcher json-reformat json-mode javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs heap google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-commit git-command git-auto-commit-mode git-attr git function-args foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-cursor flymake-cppcheck flycheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rtags flycheck-rebar3 flycheck-pkg-config flycheck-joker flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major discover diffview delim-kill db dash-functional ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode clj-refactor cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
+    '(yasnippet yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover clojure-mode epl pkg-info queue spinner sesman cider typed-clojure-mode tNFA heap trie tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh srefactor sotlisp snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment simple-httpd signal shell-toggle shell-switcher shell-command scheme-here scheme-complete f projectile markdown-mode rustic rust-playground rust-mode rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode pos-tip racer quick-peek quack preproc-font-lock popwin popup popup-complete picolisp-mode pcache list-utils persistent-soft peg pcmpl-git pcmpl-args a parseclj parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode malinka makey makefile-executor macrostep macro-math dash-functional flycheck lsp-mode lsp-ui lsp-rust lsp-clangd ht list-packages-ext lisp-extra-font-lock lfe-mode language-detection kv json-snatcher json-reformat json-mode jdecomp javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-commit git-command git-auto-commit-mode git-attr git function-args foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-rust flymake-cursor flymake-cppcheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rust flycheck-rtags flycheck-rebar3 flycheck-pkg-config flycheck-joker flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major discover diffview delim-kill db ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode clj-refactor cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile cargo c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
     package-activated-list))
+(progn
+  (require 'info)
+  (info-initialize)
+  (setq Info-directory-list
+    (append
+      '("/home/lk/.emacs.d/elpa/ivy-20180809.1712")
+      Info-directory-list)))
 
 ;; Local Variables:
 ;; version-control: never

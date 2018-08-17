@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d6ccc0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d6ccc0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-187119c"
+      :major-mode c-mode
+      :tags nil
+      :file "libusb.h"
+      :pointmax 198
+      :fsize 72802
+      :lastmodtime '(23224 37638 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libusb-1.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

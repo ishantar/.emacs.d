@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1825518
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1825518"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1afa104"
+      :major-mode c-mode
+      :tags nil
+      :file "svc.h"
+      :pointmax 201
+      :fsize 14589
+      :lastmodtime '(23281 55249 963263 957000)
+      :unmatched-syntax nil))
+  :file "!usr!include!tirpc!rpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

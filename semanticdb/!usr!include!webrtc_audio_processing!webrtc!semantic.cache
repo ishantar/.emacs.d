@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d87518
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d87518"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d03f78"
+      :major-mode c-mode
+      :tags nil
+      :file "common_types.h"
+      :pointmax 201
+      :fsize 27807
+      :lastmodtime '(23384 26839 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0e34c"
+      :major-mode c-mode
+      :tags nil
+      :file "typedefs.h"
+      :pointmax 201
+      :fsize 3682
+      :lastmodtime '(23384 26839 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!webrtc_audio_processing!webrtc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

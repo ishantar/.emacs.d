@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b3e43c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b3e43c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1250f88"
+      :major-mode c-mode
+      :tags nil
+      :file "qqmlprofilerevent_p.h"
+      :pointmax 201
+      :fsize 11567
+      :lastmodtime '(23335 57068 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtQmlDebug!5.11.1!QtQmlDebug!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

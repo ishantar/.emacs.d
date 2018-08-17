@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1c81f4c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c81f4c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d5beb0"
+      :major-mode c-mode
+      :tags nil
+      :file "gssapi_ext.h"
+      :pointmax 201
+      :fsize 19240
+      :lastmodtime '(23282 13743 328782 789000)
+      :unmatched-syntax nil))
+  :file "!usr!include!gssapi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

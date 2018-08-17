@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-188ae68
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-188ae68"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b6ceb8"
+      :major-mode c-mode
+      :tags nil
+      :file "arm_v6.h"
+      :pointmax 201
+      :fsize 7337
+      :lastmodtime '(23405 49472 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!atomic_ops!sysdeps!armcc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

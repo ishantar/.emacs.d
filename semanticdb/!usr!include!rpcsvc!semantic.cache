@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d719c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d719c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1bbc058"
+      :major-mode c-mode
+      :tags nil
+      :file "nislib.h"
+      :pointmax 201
+      :fsize 12340
+      :lastmodtime '(23245 3694 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-12508bc"
+      :major-mode c-mode
+      :tags nil
+      :file "yp_prot.h"
+      :pointmax 201
+      :fsize 14920
+      :lastmodtime '(23245 3694 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!rpcsvc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1e4276c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1e4276c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d4f544"
+      :major-mode c-mode
+      :tags nil
+      :file "value.h"
+      :pointmax 201
+      :fsize 8205
+      :lastmodtime '(22756 63561 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-172e0f0"
+      :major-mode c-mode
+      :tags nil
+      :file "text.h"
+      :pointmax 201
+      :fsize 33272
+      :lastmodtime '(22756 63561 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d00d60"
+      :major-mode c-mode
+      :tags nil
+      :file "object.h"
+      :pointmax 201
+      :fsize 24602
+      :lastmodtime '(22756 63561 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d47574"
+      :major-mode c-mode
+      :tags nil
+      :file "component.h"
+      :pointmax 201
+      :fsize 14166
+      :lastmodtime '(22756 63561 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!atkmm-1.6!atkmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

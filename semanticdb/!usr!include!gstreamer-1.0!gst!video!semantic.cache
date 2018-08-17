@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1dd8ca0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dd8ca0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1dd8cbc"
+      :major-mode c-mode
+      :tags nil
+      :file "gstvideodecoder.h"
+      :pointmax 201
+      :fsize 18222
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d3a964"
+      :major-mode c-mode
+      :tags nil
+      :file "video-frame.h"
+      :pointmax 201
+      :fsize 9220
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1253c30"
+      :major-mode c-mode
+      :tags nil
+      :file "video-info.h"
+      :pointmax 201
+      :fsize 18392
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1884500"
+      :major-mode c-mode
+      :tags nil
+      :file "video-overlay-composition.h"
+      :pointmax 200
+      :fsize 12931
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-189842c"
+      :major-mode c-mode
+      :tags nil
+      :file "video-tile.h"
+      :pointmax 201
+      :fsize 3779
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gstreamer-1.0!gst!video!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

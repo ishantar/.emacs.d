@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1b5e46c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b5e46c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b5e778"
+      :major-mode c-mode
+      :tags nil
+      :file "xkbcommon-compose.h"
+      :pointmax 200
+      :fsize 16193
+      :lastmodtime '(23399 37788 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d64264"
+      :major-mode c-mode
+      :tags nil
+      :file "xkbcommon.h"
+      :pointmax 201
+      :fsize 62680
+      :lastmodtime '(23399 37788 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!xkbcommon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

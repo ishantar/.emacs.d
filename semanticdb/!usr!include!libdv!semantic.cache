@@ -1,0 +1,734 @@
+;; Object semanticdb-project-database-file-15ad520
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15ad520"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1424df8"
+      :major-mode c-mode
+      :tags 
+        '( ("DV_TYPES_H" variable (:constant-flag t) nil [998 1008])
+            ("stdlib.h" include (:system-flag t) nil [1116 1135])
+            ("inttypes.h" include (:system-flag t) nil [1136 1157])
+            ("stdio.h" include (:system-flag t) nil [1158 1176])
+            ("time.h" include (:system-flag t) nil [1177 1194])
+            ("FALSE" variable (:constant-flag t) nil [1380 1385])
+            ("TRUE" variable (:constant-flag t) nil [1416 1420])
+            ("MIN" variable (:constant-flag t) nil [1450 1453])
+            ("MAX" variable (:constant-flag t) nil [1504 1507])
+            ("CLAMP" variable (:constant-flag t) nil [1560 1565])
+            ("ALIGN64" variable (:constant-flag t) nil [1923 1930])
+            ("ALIGN32" variable (:constant-flag t) nil [1939 1946])
+            ("ALIGN8" variable (:constant-flag t) nil [1955 1961])
+            ("__inline__" variable (:constant-flag t) nil [1970 1980])
+            ("__FUNCTION__" variable (:constant-flag t) nil [1996 2008])
+            ("DV_AUDIO_MAX_SAMPLES" variable (:constant-flag t) nil [2076 2096])
+            ("DV_AUDIO_OPT_FREQUENCY" variable (:constant-flag t) nil [2111 2133])
+            ("DV_AUDIO_OPT_QUANTIZATION" variable (:constant-flag t) nil [2147 2172])
+            ("DV_AUDIO_OPT_EMPHASIS" variable (:constant-flag t) nil [2183 2204])
+            ("DV_AUDIO_OPT_CHAN_MIX" variable (:constant-flag t) nil [2219 2240])
+            ("DV_AUDIO_OPT_CALLBACK" variable (:constant-flag t) nil [2255 2276])
+            ("DV_AUDIO_NUM_OPTS" variable (:constant-flag t) nil [2291 2308])
+            ("DV_AUDIO_CORRECT_NONE" variable (:constant-flag t) nil [2328 2349])
+            ("DV_AUDIO_CORRECT_SILENCE" variable (:constant-flag t) nil [2364 2388])
+            ("DV_AUDIO_CORRECT_AVERAGE" variable (:constant-flag t) nil [2400 2424])
+            ("DV_VIDEO_OPT_BLOCK_QUALITY" variable (:constant-flag t) nil [2437 2463])
+            ("DV_VIDEO_OPT_MONOCHROME" variable (:constant-flag t) nil [2474 2497])
+            ("DV_VIDEO_OPT_CALLBACK" variable (:constant-flag t) nil [2511 2532])
+            ("DV_VIDEO_NUM_OPTS" variable (:constant-flag t) nil [2548 2565])
+            ("DV_DECODER_OPT_SYSTEM" variable (:constant-flag t) nil [2586 2607])
+            ("DV_DECODER_OPT_VIDEO_INCLUDE" variable (:constant-flag t) nil [2625 2653])
+            ("DV_DECODER_OPT_AUDIO_INCLUDE" variable (:constant-flag t) nil [2664 2692])
+            ("DV_DECODER_OPT_CALLBACK" variable (:constant-flag t) nil [2703 2726])
+            ("DV_DECODER_OPT_NTSCSETUP" variable (:constant-flag t) nil [2742 2766])
+            ("DV_DECODER_NUM_OPTS" variable (:constant-flag t) nil [2781 2800])
+            ("DV_OSS_OPT_DEVICE" variable (:constant-flag t) nil [2821 2838])
+            ("DV_OSS_OPT_FILE" variable (:constant-flag t) nil [2849 2864])
+            ("DV_OSS_NUM_OPTS" variable (:constant-flag t) nil [2877 2892])
+            ("DV_DCT_AUTO" variable (:constant-flag t) nil [2906 2917])
+            ("DV_DCT_248" variable (:constant-flag t) nil [2931 2941])
+            ("DV_DCT_88" variable (:constant-flag t) nil [2954 2963])
+            ("DV_SCT_HEADER" variable (:constant-flag t) nil [2977 2990])
+            ("DV_SCT_SUBCODE" variable (:constant-flag t) nil [3008 3022])
+            ("DV_SCT_VAUX" variable (:constant-flag t) nil [3039 3050])
+            ("DV_SCT_AUDIO" variable (:constant-flag t) nil [3070 3082])
+            ("DV_SCT_VIDEO" variable (:constant-flag t) nil [3101 3113])
+            ("DV_FSC_0" variable (:constant-flag t) nil [3133 3141])
+            ("DV_FSC_1" variable (:constant-flag t) nil [3162 3170])
+            ("DV_WEIGHT_BIAS" variable (:constant-flag t) nil [3252 3266])
+            ("DV_QUALITY_COLOR" variable (:constant-flag t) nil [3286 3302])
+            ("DV_QUALITY_AC_MASK" variable (:constant-flag t) nil [3364 3382])
+            ("DV_QUALITY_DC" variable (:constant-flag t) nil [3406 3419])
+            ("DV_QUALITY_AC_1" variable (:constant-flag t) nil [3448 3463])
+            ("DV_QUALITY_AC_2" variable (:constant-flag t) nil [3490 3505])
+            ("DV_QUALITY_BEST" variable (:constant-flag t) nil [3533 3548])
+            ("DV_QUALITY_FASTEST" variable (:constant-flag t) nil [3600 3618])
+            ("color_space_e" type
+               (:members 
+                  ( ("e_dv_color_yuv" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3695 3710])
+                    ("e_dv_color_rgb" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3714 3729])
+                    ("e_dv_color_bgr0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3733 3749]))                  
+                :type "enum")
+                nil [3663 3770])
+            ("dv_color_space_t" type
+               (:typedef ("color_space_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [3663 3770])
+            ("sample_e" type
+               (:members 
+                  ( ("e_dv_sample_none" variable
+                       (:constant-flag t
+                        :default-value (3818 3819)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3799 3819])
+                    ("e_dv_sample_411" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3823 3839])
+                    ("e_dv_sample_420" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3842 3858])
+                    ("e_dv_sample_422" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3861 3877]))                  
+                :type "enum")
+                nil [3772 3892])
+            ("dv_sample_t" type
+               (:typedef ("sample_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [3772 3892])
+            ("system_e" type
+               (:members 
+                  ( ("e_dv_system_none" variable
+                       (:constant-flag t
+                        :default-value (3940 3941)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3921 3941])
+                    ("e_dv_system_525_60" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3945 3964])
+                    ("e_dv_system_625_50" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3978 3997]))                  
+                :type "enum")
+                nil [3894 4022])
+            ("dv_system_t" type
+               (:typedef ("system_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [3894 4022])
+            ("std_e" type
+               (:members 
+                  ( ("e_dv_std_none" variable
+                       (:constant-flag t
+                        :default-value (4064 4065)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4048 4065])
+                    ("e_dv_std_smpte_314m" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4069 4089])
+                    ("e_dv_std_iec_61834" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4096 4115]))                  
+                :type "enum")
+                nil [4024 4131])
+            ("dv_std_t" type
+               (:typedef ("std_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [4024 4131])
+            ("dv_coeff_t" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4133 4160])
+            ("dv_248_coeff_t" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4161 4192])
+            ("bitstream_s" type
+               (:members 
+                  ( ("current_word" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4225 4247])
+                    ("next_word" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4250 4269])
+                    ("bits_left" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4272 4291])
+                    ("next_bits" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4294 4313])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4317 4330])
+                    ("buflen" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4333 4349])
+                    ("bufoffset" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4352 4371])
+                    ("bitstream_next_buffer" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4410 4421])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4421 4428]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4375 4429])
+                    ("priv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4432 4443])
+                    ("bitsread" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4447 4464]))                  
+                :type "struct")
+                nil [4194 4479])
+            ("bitstream_t" type
+               (:typedef ("bitstream_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [4194 4479])
+            ("dv_id_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("sct" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4500 4511])
+                          ("dsn" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4568 4579])
+                          ("fsc" variable (:type "int") (reparse-symbol classsubparts) [4617 4625])
+                          ("dbn" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4662 4673]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4481 4717])
+            ("dv_header_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("dsf" variable (:type "int") (reparse-symbol classsubparts) [4738 4746])
+                          ("apt" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4798 4809])
+                          ("tf1" variable (:type "int") (reparse-symbol classsubparts) [4812 4820])
+                          ("ap1" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4823 4834])
+                          ("tf2" variable (:type "int") (reparse-symbol classsubparts) [4837 4845])
+                          ("ap2" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4848 4859])
+                          ("tf3" variable (:type "int") (reparse-symbol classsubparts) [4862 4870])
+                          ("ap3" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4873 4884]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4719 4899])
+            ("dv_block_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("coeffs" variable
+                             (:dereference 1
+                              :type ("dv_coeff_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4920 4951])
+                          ("dct_mode" variable (:type "int") (reparse-symbol classsubparts) [4954 4975])
+                          ("class_no" variable (:type "int") (reparse-symbol classsubparts) [4978 4999])
+                          ("reorder" variable
+                             (:pointer 1
+                              :type ("int8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5002 5025])
+                          ("reorder_sentinel" variable
+                             (:pointer 1
+                              :type ("int8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5028 5060])
+                          ("offset" variable (:type "int") (reparse-symbol classsubparts) [5063 5082])
+                          ("end" variable (:type "int") (reparse-symbol classsubparts) [5127 5143])
+                          ("eob" variable (:type "int") (reparse-symbol classsubparts) [5187 5203])
+                          ("mark" variable (:type "int") (reparse-symbol classsubparts) [5206 5219]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4901 5294])
+            ("dv_macroblock_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("i" variable (:type "int") (reparse-symbol classsubparts) [5315 5329])
+                          ("j" variable (:type "int") (reparse-symbol classsubparts) [5315 5329])
+                          ("k" variable (:type "int") (reparse-symbol classsubparts) [5360 5372])
+                          ("x" variable (:type "int") (reparse-symbol classsubparts) [5418 5433])
+                          ("y" variable (:type "int") (reparse-symbol classsubparts) [5418 5433])
+                          ("b" variable
+                             (:dereference 1
+                              :type ("dv_block_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5465 5481])
+                          ("qno" variable (:type "int") (reparse-symbol classsubparts) [5484 5498])
+                          ("sta" variable (:type "int") (reparse-symbol classsubparts) [5501 5515])
+                          ("vlc_error" variable (:type "int") (reparse-symbol classsubparts) [5518 5538])
+                          ("eob_count" variable (:type "int") (reparse-symbol classsubparts) [5541 5561]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5296 5580])
+            ("dv_videosegment_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("i" variable (:type "int") (reparse-symbol classsubparts) [5601 5621])
+                          ("k" variable (:type "int") (reparse-symbol classsubparts) [5601 5621])
+                          ("bs" variable
+                             (:pointer 1
+                              :type ("bitstream_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5624 5643])
+                          ("mb" variable
+                             (:dereference 1
+                              :type ("dv_macroblock_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5646 5668])
+                          ("isPAL" variable (:type "int") (reparse-symbol classsubparts) [5671 5688]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5582 5709])
+            ("dv_dif_sequence_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("seg" variable
+                             (:dereference 1
+                              :type ("dv_videosegment_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5730 5756]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5711 5777])
+            ("dv_frame_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("placement_done" variable (:type "int") (reparse-symbol classsubparts) [5807 5836])
+                          ("ds" variable
+                             (:dereference 1
+                              :type ("dv_dif_sequence_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5839 5865]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5788 5879])
+            ("LITTLE_ENDIAN_BITFIELD" variable (:constant-flag t) nil [6495 6517])
+            ("dv_aaux_as_pc1_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("af_size" variable
+                             (:suffix ":6"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [6652 6672])
+                          ("uint8_t" variable
+                             (:suffix ":1"
+                              :type "int")
+                              (reparse-symbol classsubparts) [6781 6801])
+                          ("lf" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [6819 6839]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6597 7184])
+            ("dv_aaux_as_pc2_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("audio_mode" variable
+                             (:suffix ":4"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [7241 7263])
+                          ("pa" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [7280 7302])
+                          ("chn" variable
+                             (:suffix ":2"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [7396 7418])
+                          ("sm" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [7507 7529]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7186 7995])
+            ("dv_aaux_as_pc3_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("stype" variable
+                             (:suffix ":5"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8052 8073])
+                          ("system" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8137 8158])
+                          ("ml" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8192 8213])
+                          ("uint8_t" variable
+                             (:suffix ":1"
+                              :type "int")
+                              (reparse-symbol classsubparts) [8238 8259]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [7997 8554])
+            ("dv_aaux_as_pc4_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("qu" variable
+                             (:suffix ":3"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8611 8632])
+                          ("smp" variable
+                             (:suffix ":3"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8723 8744])
+                          ("tc" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8800 8821])
+                          ("ef" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [8876 8897]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8556 9321])
+            ("dv_aaux_as_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pc0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9367 9379])
+                          ("pc1" variable (:type ("dv_aaux_as_pc1_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9400 9421])
+                          ("pc2" variable (:type ("dv_aaux_as_pc2_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9424 9445])
+                          ("pc3" variable (:type ("dv_aaux_as_pc3_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9448 9469])
+                          ("pc4" variable (:type ("dv_aaux_as_pc4_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9472 9493]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9348 9509])
+            ("dv_aaux_asc_pc1_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ss" variable
+                             (:suffix ":2"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9631 9652])
+                          ("cmp" variable
+                             (:suffix ":2"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9846 9867])
+                          ("isr" variable
+                             (:suffix ":2"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [9956 9977])
+                          ("cgms" variable
+                             (:suffix ":2"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10048 10069]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [9576 10810])
+            ("dv_aaux_asc_pc2_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("insert_ch" variable
+                             (:suffix ":3"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10867 10888])
+                          ("rec_mode" variable
+                             (:suffix ":3"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10912 10933])
+                          ("rec_end" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11007 11028])
+                          ("rec_st" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11078 11099]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10812 11500])
+            ("dv_aaux_asc_pc3_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("speed" variable
+                             (:suffix ":7"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11557 11578])
+                          ("drf" variable
+                             (:suffix ":1"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [11669 11690]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11502 11988])
+            ("dv_aaux_asc_pc4_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("genre_category" variable
+                             (:suffix ":7"
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [12045 12071])
+                          ("uint8_t" variable
+                             (:suffix ":1"
+                              :type "int")
+                              (reparse-symbol classsubparts) [12074 12100]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11990 12244])
+            ("dv_aaux_asc_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pc0" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12299 12311])
+                          ("pc1" variable (:type ("dv_aaux_asc_pc1_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12332 12354])
+                          ("pc2" variable (:type ("dv_aaux_asc_pc2_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12357 12379])
+                          ("pc3" variable (:type ("dv_aaux_asc_pc3_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12382 12404])
+                          ("pc4" variable (:type ("dv_aaux_asc_pc4_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12407 12429]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [12280 12446])
+            ("dv_decoder_tp" type
+               (:typedef ("dv_decoder_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [12448 12492])
+            ("dv_audio_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("aaux_as" variable (:type ("dv_aaux_as_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12513 12626])
+                          ("aaux_as1" variable (:type ("dv_aaux_as_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12513 12626])
+                          ("aaux_asc" variable (:type ("dv_aaux_asc_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12629 12687])
+                          ("aaux_asc1" variable (:type ("dv_aaux_asc_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12629 12687])
+                          ("samples_this_frame" variable (:type "int") (reparse-symbol classsubparts) [12690 12726])
+                          ("raw_samples_this_frame" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [12729 12773])
+                          ("quantization" variable (:type "int") (reparse-symbol classsubparts) [12776 12806])
+                          ("max_samples" variable (:type "int") (reparse-symbol classsubparts) [12809 12838])
+                          ("frequency" variable (:type "int") (reparse-symbol classsubparts) [12841 12868])
+                          ("num_channels" variable (:type "int") (reparse-symbol classsubparts) [12871 12901])
+                          ("raw_num_channels" variable (:type "int") (reparse-symbol classsubparts) [12904 12938])
+                          ("emphasis" variable (:type "int") (reparse-symbol classsubparts) [12941 12967])
+                          ("arg_audio_emphasis" variable (:type "int") (reparse-symbol classsubparts) [12970 13006])
+                          ("arg_audio_frequency" variable (:type "int") (reparse-symbol classsubparts) [13009 13046])
+                          ("arg_audio_quantization" variable (:type "int") (reparse-symbol classsubparts) [13049 13089])
+                          ("new_recording_on_next_frame" variable (:type "int") (reparse-symbol classsubparts) [13093 13138])
+                          ("new_recording_current_time_stamp" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [13141 13232])
+                          ("arg_mixing_level" variable (:type "int") (reparse-symbol classsubparts) [13141 13232])
+                          ("correction_method" variable (:type "int") (reparse-symbol classsubparts) [13358 13550])
+                          ("block_failure" variable (:type "int") (reparse-symbol classsubparts) [13358 13550])
+                          ("sample_failure" variable (:type "int") (reparse-symbol classsubparts) [13358 13550])
+                          ("real_samples_this_frame" variable (:type "int") (reparse-symbol classsubparts) [13358 13550])
+                          ("fail_samples_this_frame" variable (:type "int") (reparse-symbol classsubparts) [13358 13550])
+                          ("lastin" variable
+                             (:dereference 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [13670 13698])
+                          ("lastout" variable
+                             (:dereference 1
+                              :type "double")
+                              (reparse-symbol classsubparts) [13701 13730])
+                          ("error_log" variable
+                             (:pointer 1
+                              :type ("FILE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13734 13762])
+                          ("dv_decoder" variable (:type ("dv_decoder_tp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13765 13793]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [12494 13902])
+            ("dv_video_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("quality" variable (:type "unsigned int") (reparse-symbol classsubparts) [13923 13957])
+                          ("arg_block_quality" variable (:type "int") (reparse-symbol classsubparts) [13960 13996])
+                          ("arg_monochrome" variable (:type "int") (reparse-symbol classsubparts) [14012 14045])
+                          ("error_log" variable
+                             (:pointer 1
+                              :type ("FILE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14159 14188])
+                          ("dv_decoder" variable (:type ("dv_decoder_tp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14191 14220]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13904 14331])
+            ("dv_decoder_s" type
+               (:members 
+                  ( ("quality" variable (:type "unsigned int") (reparse-symbol classsubparts) [14365 14392])
+                    ("system" variable (:type ("dv_system_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14395 14421])
+                    ("std" variable (:type ("dv_std_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14424 14447])
+                    ("sampling" variable (:type ("dv_sample_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14450 14478])
+                    ("num_dif_seqs" variable (:type "int") (reparse-symbol classsubparts) [14481 14513])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [14543 14576])
+                    ("width" variable (:type "int") (reparse-symbol classsubparts) [14543 14576])
+                    ("frame_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14579 14609])
+                    ("header" variable (:type ("dv_header_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14612 14638])
+                    ("audio" variable
+                       (:pointer 1
+                        :type ("dv_audio_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14641 14666])
+                    ("video" variable
+                       (:pointer 1
+                        :type ("dv_video_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14669 14694])
+                    ("arg_video_system" variable (:type "int") (reparse-symbol classsubparts) [14697 14733])
+                    ("add_ntsc_setup" variable (:type "int") (reparse-symbol classsubparts) [14736 14770])
+                    ("clamp_luma" variable (:type "int") (reparse-symbol classsubparts) [14773 14803])
+                    ("clamp_chroma" variable (:type "int") (reparse-symbol classsubparts) [14806 14838])
+                    ("prev_frame_decoded" variable (:type "int") (reparse-symbol classsubparts) [14841 14879])
+                    ("vaux_next" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15051 15081])
+                    ("vaux_pack" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15084 15120])
+                    ("vaux_data" variable
+                       (:dereference 2
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15123 15161])
+                    ("ssyb_next" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15165 15195])
+                    ("ssyb_pack" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15198 15234])
+                    ("ssyb_data" variable
+                       (:dereference 2
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15237 15275])
+                    ("bs" variable
+                       (:pointer 1
+                        :type ("bitstream_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15278 15301]))                  
+                :type "struct")
+                nil [14333 15415])
+            ("dv_decoder_t" type
+               (:typedef ("dv_decoder_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [14333 15415])
+            ("dv_oss_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [15436 15459])
+                          ("buffer" variable
+                             (:pointer 1
+                              :type ("int16_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15462 15490])
+                          ("arg_audio_file" variable
+                             (:pointer 1
+                              :type ("uint8_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15493 15529])
+                          ("arg_audio_device" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [15532 15570]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15417 15675])
+            ("dv_encoder_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("isPAL" variable (:type "int") (reparse-symbol classsubparts) [15696 15709])
+                          ("is16x9" variable (:type "int") (reparse-symbol classsubparts) [15712 15726])
+                          ("vlc_encode_passes" variable (:type "int") (reparse-symbol classsubparts) [15729 15754])
+                          ("static_qno" variable (:type "int") (reparse-symbol classsubparts) [15757 15775])
+                          ("force_dct" variable (:type "int") (reparse-symbol classsubparts) [15778 15795])
+                          ("rem_ntsc_setup" variable (:type "int") (reparse-symbol classsubparts) [15799 15821])
+                          ("clamp_luma" variable (:type "int") (reparse-symbol classsubparts) [15824 15842])
+                          ("clamp_chroma" variable (:type "int") (reparse-symbol classsubparts) [15845 15865])
+                          ("frame_count" variable (:type "int") (reparse-symbol classsubparts) [15868 15887])
+                          ("samples_this_frame" variable (:type "int") (reparse-symbol classsubparts) [15890 15916])
+                          ("img_y" variable
+                             (:pointer 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [15949 15962])
+                          ("img_cr" variable
+                             (:pointer 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [15965 15979])
+                          ("img_cb" variable
+                             (:pointer 1
+                              :type "short")
+                              (reparse-symbol classsubparts) [15982 15996]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15677 16012]))          
+      :file "dv_types.h"
+      :pointmax 16120
+      :fsize 16119
+      :lastmodtime '(22926 10834 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DV_DECODER_OPT_NTSCSETUP" . ((number "4" 2771 . 2772)))
+          ("DV_WEIGHT_BIAS" . ((number "0" 3268 . 3269)))
+          ("DV_QUALITY_AC_MASK" . ((semantic-list "(0x3 << 1)" 3387 . 3397)))
+          ("DV_QUALITY_DC" . ((semantic-list "(0x0 << 1)" 3429 . 3439)))
+          ("MAX" (spp-arg-list ("a" "b") 1507 . 1512) . ((semantic-list "((a)<(b)?(b):(a))" 1513 . 1530)))
+          ("DV_AUDIO_MAX_SAMPLES" . ((number "1944" 2097 . 2101)))
+          ("TRUE" . ((number "1" 1421 . 1422)))
+          ("MIN" (spp-arg-list ("a" "b") 1453 . 1458) . ((semantic-list "((a)<(b)?(a):(b))" 1459 . 1476)))
+          ("DV_AUDIO_NUM_OPTS" . ((number "5" 2317 . 2318)))
+          ("DV_AUDIO_CORRECT_NONE" . ((number "0" 2354 . 2355)))
+          ("DV_VIDEO_OPT_MONOCHROME" . ((number "1" 2501 . 2502)))
+          ("DV_VIDEO_NUM_OPTS" . ((number "3" 2575 . 2576)))
+          ("DV_DECODER_OPT_CALLBACK" . ((number "3" 2732 . 2733)))
+          ("FALSE" . ((number "0" 1386 . 1387)))
+          ("CLAMP" (spp-arg-list ("a" "x" "b") 1565 . 1572) . ((semantic-list "(MIN(b,MAX(a,x)))" 1573 . 1590)))
+          ("DV_AUDIO_OPT_EMPHASIS" . ((number "2" 2209 . 2210)))
+          ("DV_DECODER_NUM_OPTS" . ((number "5" 2810 . 2811)))
+          ("DV_OSS_NUM_OPTS" . ((number "2" 2895 . 2896)))
+          ("DV_DCT_88" . ((semantic-list "(0)" 2964 . 2967)))
+          ("DV_SCT_HEADER" . ((semantic-list "(0x0)" 2994 . 2999)))
+          ("DV_QUALITY_COLOR" . ((number "1" 3309 . 3310)))
+          ("DV_QUALITY_FASTEST" . ((number "0" 3623 . 3624)))
+          ("DV_AUDIO_CORRECT_AVERAGE" . ((number "2" 2426 . 2427)))
+          ("DV_DCT_AUTO" . ((semantic-list "(-1)" 2918 . 2922)))
+          ("ALIGN64")
+          ("__inline__" . ((INLINE "inline" 1981 . 1987)))
+          ("__FUNCTION__" . ((symbol "__FILE__" 2009 . 2017)))
+          ("DV_AUDIO_CORRECT_SILENCE" . ((number "1" 2390 . 2391)))
+          ("DV_TYPES_H")
+          ("DV_OSS_OPT_FILE" . ((number "1" 2867 . 2868)))
+          ("DV_SCT_VAUX" . ((semantic-list "(0x2)" 3056 . 3061)))
+          ("DV_QUALITY_AC_1" . ((semantic-list "(0x1 << 1)" 3471 . 3481)))
+          ("ALIGN32")
+          ("DV_DECODER_OPT_SYSTEM" . ((number "0" 2615 . 2616)))
+          ("DV_QUALITY_AC_2" . ((semantic-list "(0x2 << 1)" 3513 . 3523)))
+          ("ALIGN8")
+          ("DV_AUDIO_OPT_CALLBACK" . ((number "4" 2281 . 2282)))
+          ("DV_VIDEO_OPT_BLOCK_QUALITY" . ((number "0" 2464 . 2465)))
+          ("DV_FSC_0" . ((semantic-list "(0)" 3150 . 3153)))
+          ("DV_FSC_1" . ((semantic-list "(1)" 3179 . 3182)))
+          ("DV_AUDIO_OPT_QUANTIZATION" . ((number "1" 2173 . 2174)))
+          ("DV_VIDEO_OPT_CALLBACK" . ((number "2" 2538 . 2539)))
+          ("DV_SCT_SUBCODE" . ((semantic-list "(0x1)" 3025 . 3030)))
+          ("DV_AUDIO_OPT_FREQUENCY" . ((number "0" 2137 . 2138)))
+          ("DV_DECODER_OPT_VIDEO_INCLUDE" . ((number "1" 2654 . 2655)))
+          ("DV_DECODER_OPT_AUDIO_INCLUDE" . ((number "2" 2693 . 2694)))
+          ("DV_QUALITY_BEST" . ((semantic-list "(DV_QUALITY_COLOR | DV_QUALITY_AC_2)" 3555 . 3591)))
+          ("DV_AUDIO_OPT_CHAN_MIX" . ((number "3" 2245 . 2246)))
+          ("DV_OSS_OPT_DEVICE" . ((number "0" 2839 . 2840)))
+          ("DV_DCT_248" . ((semantic-list "(1)" 2942 . 2945)))
+          ("DV_SCT_AUDIO" . ((semantic-list "(0x3)" 3087 . 3092)))
+          ("DV_SCT_VIDEO" . ((semantic-list "(0x4)" 3118 . 3123)))
+          ("LITTLE_ENDIAN_BITFIELD")
+          )
+))
+  :file "!usr!include!libdv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

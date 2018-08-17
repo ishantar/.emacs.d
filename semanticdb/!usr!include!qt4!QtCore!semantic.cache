@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file-1deefb4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1deefb4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1deefc0"
+      :major-mode c-mode
+      :tags nil
+      :file "qglobal.h"
+      :pointmax 201
+      :fsize 95589
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d499d0"
+      :major-mode c-mode
+      :tags nil
+      :file "qsharedpointer_impl.h"
+      :pointmax 201
+      :fsize 28325
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b89580"
+      :major-mode c-mode
+      :tags nil
+      :file "qstringbuilder.h"
+      :pointmax 201
+      :fsize 14637
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1aed0fc"
+      :major-mode c-mode
+      :tags nil
+      :file "qtextstream.h"
+      :pointmax 201
+      :fsize 13334
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af5cd0"
+      :major-mode c-mode
+      :tags nil
+      :file "qvector.h"
+      :pointmax 201
+      :fsize 26963
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b1ee1c"
+      :major-mode c-mode
+      :tags nil
+      :file "qxmlstream.h"
+      :pointmax 201
+      :fsize 18554
+      :lastmodtime '(23400 34890 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt4!QtCore!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

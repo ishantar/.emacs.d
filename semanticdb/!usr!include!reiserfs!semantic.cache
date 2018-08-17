@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1650c1c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1650c1c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b1ee54"
+      :major-mode c-mode
+      :tags nil
+      :file "reiserfs_fs.h"
+      :pointmax 201
+      :fsize 68483
+      :lastmodtime '(23065 4300 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!reiserfs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

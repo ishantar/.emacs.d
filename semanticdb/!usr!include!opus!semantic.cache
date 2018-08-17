@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d2da30
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d2da30"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d61210"
+      :major-mode c-mode
+      :tags nil
+      :file "opus.h"
+      :pointmax 201
+      :fsize 48429
+      :lastmodtime '(22866 16888 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d141d4"
+      :major-mode c-mode
+      :tags nil
+      :file "opus_multistream.h"
+      :pointmax 201
+      :fsize 33539
+      :lastmodtime '(22866 16888 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!opus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

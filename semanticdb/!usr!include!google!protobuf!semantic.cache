@@ -1,0 +1,160 @@
+;; Object semanticdb-project-database-file-1d7b50c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d7b50c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-14cf060"
+      :major-mode c-mode
+      :tags nil
+      :file "arena.h"
+      :pointmax 201
+      :fsize 29617
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c07534"
+      :major-mode c-mode
+      :tags nil
+      :file "arenastring.h"
+      :pointmax 201
+      :fsize 14774
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d16fc0"
+      :major-mode c-mode
+      :tags nil
+      :file "descriptor.h"
+      :pointmax 201
+      :fsize 89279
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c9b154"
+      :major-mode c-mode
+      :tags nil
+      :file "descriptor_database.h"
+      :pointmax 201
+      :fsize 17877
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-188fe60"
+      :major-mode c-mode
+      :tags nil
+      :file "dynamic_message.h"
+      :pointmax 201
+      :fsize 9965
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0a490"
+      :major-mode c-mode
+      :tags nil
+      :file "extension_set.h"
+      :pointmax 201
+      :fsize 74595
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af8ca8"
+      :major-mode c-mode
+      :tags nil
+      :file "generated_message_reflection.h"
+      :pointmax 201
+      :fsize 33706
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cf7b44"
+      :major-mode c-mode
+      :tags nil
+      :file "generated_message_util.h"
+      :pointmax 201
+      :fsize 14627
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a9e438"
+      :major-mode c-mode
+      :tags nil
+      :file "implicit_weak_message.h"
+      :pointmax 201
+      :fsize 5115
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bb76d0"
+      :major-mode c-mode
+      :tags nil
+      :file "map.h"
+      :pointmax 201
+      :fsize 43482
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d5fca4"
+      :major-mode c-mode
+      :tags nil
+      :file "map_entry_lite.h"
+      :pointmax 201
+      :fsize 26212
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcf0d8"
+      :major-mode c-mode
+      :tags nil
+      :file "map_field.h"
+      :pointmax 201
+      :fsize 29968
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b66570"
+      :major-mode c-mode
+      :tags nil
+      :file "message.h"
+      :pointmax 201
+      :fsize 54270
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-187a2b4"
+      :major-mode c-mode
+      :tags nil
+      :file "message_lite.h"
+      :pointmax 201
+      :fsize 19598
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0a528"
+      :major-mode c-mode
+      :tags nil
+      :file "repeated_field.h"
+      :pointmax 201
+      :fsize 92471
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af8c0c"
+      :major-mode c-mode
+      :tags nil
+      :file "text_format.h"
+      :pointmax 201
+      :fsize 25991
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af5a9c"
+      :major-mode c-mode
+      :tags nil
+      :file "wire_format.h"
+      :pointmax 201
+      :fsize 13829
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d45bfc"
+      :major-mode c-mode
+      :tags nil
+      :file "wire_format_lite.h"
+      :pointmax 201
+      :fsize 40653
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17e2c64"
+      :major-mode c-mode
+      :tags nil
+      :file "wire_format_lite_inl.h"
+      :pointmax 201
+      :fsize 41839
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!google!protobuf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

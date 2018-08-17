@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-1b3e468
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b3e468"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-126cf1c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstbuffer.h"
+      :pointmax 201
+      :fsize 28882
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-124f53c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstconfig.h"
+      :pointmax 201
+      :fsize 6469
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c8e02c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstelement.h"
+      :pointmax 201
+      :fsize 46172
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b0700c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstinfo.h"
+      :pointmax 201
+      :fsize 59303
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-125b000"
+      :major-mode c-mode
+      :tags nil
+      :file "gstpad.h"
+      :pointmax 201
+      :fsize 58228
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d45c64"
+      :major-mode c-mode
+      :tags nil
+      :file "gstpoll.h"
+      :pointmax 201
+      :fsize 3352
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dde0cc"
+      :major-mode c-mode
+      :tags nil
+      :file "gsttaglist.h"
+      :pointmax 201
+      :fsize 37956
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b9071c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstutils.h"
+      :pointmax 201
+      :fsize 39502
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gstreamer-1.0!gst!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

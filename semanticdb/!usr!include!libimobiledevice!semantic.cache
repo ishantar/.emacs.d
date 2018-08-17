@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b103b4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b103b4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d05348"
+      :major-mode c-mode
+      :tags nil
+      :file "notification_proxy.h"
+      :pointmax 201
+      :fsize 8034
+      :lastmodtime '(23361 64017 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libimobiledevice!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

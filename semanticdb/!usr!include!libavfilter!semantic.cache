@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-186912c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-186912c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1802f24"
+      :major-mode c-mode
+      :tags nil
+      :file "avfilter.h"
+      :pointmax 201
+      :fsize 42263
+      :lastmodtime '(23376 51283 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d7dfd8"
+      :major-mode c-mode
+      :tags nil
+      :file "buffersrc.h"
+      :pointmax 201
+      :fsize 6608
+      :lastmodtime '(23376 51283 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libavfilter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

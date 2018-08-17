@@ -1,0 +1,88 @@
+;; Object semanticdb-project-database-file-1c07a00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c07a00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b1b664"
+      :major-mode c-mode
+      :tags nil
+      :file "context.h"
+      :pointmax 201
+      :fsize 13459
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1274718"
+      :major-mode c-mode
+      :tags nil
+      :file "def.h"
+      :pointmax 201
+      :fsize 45622
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b4ce44"
+      :major-mode c-mode
+      :tags nil
+      :file "format.h"
+      :pointmax 201
+      :fsize 12148
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af45f0"
+      :major-mode c-mode
+      :tags nil
+      :file "introspect.h"
+      :pointmax 201
+      :fsize 42082
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d00fb4"
+      :major-mode c-mode
+      :tags nil
+      :file "pulseaudio.h"
+      :pointmax 201
+      :fsize 7605
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61b0"
+      :major-mode c-mode
+      :tags nil
+      :file "stream.h"
+      :pointmax 201
+      :fsize 41734
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d603fc"
+      :major-mode c-mode
+      :tags nil
+      :file "thread-mainloop.h"
+      :pointmax 201
+      :fsize 12076
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b64ff8"
+      :major-mode c-mode
+      :tags nil
+      :file "util.h"
+      :pointmax 201
+      :fsize 1808
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e3b768"
+      :major-mode c-mode
+      :tags nil
+      :file "volume.h"
+      :pointmax 201
+      :fsize 21953
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c8e82c"
+      :major-mode c-mode
+      :tags nil
+      :file "xmalloc.h"
+      :pointmax 201
+      :fsize 3474
+      :lastmodtime '(23385 26194 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!pulse!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

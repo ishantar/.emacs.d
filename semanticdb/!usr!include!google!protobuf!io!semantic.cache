@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1cbc0cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1cbc0cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d13e0c"
+      :major-mode c-mode
+      :tags nil
+      :file "coded_stream.h"
+      :pointmax 201
+      :fsize 57051
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a8b140"
+      :major-mode c-mode
+      :tags nil
+      :file "gzip_stream.h"
+      :pointmax 201
+      :fsize 6579
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cfb818"
+      :major-mode c-mode
+      :tags nil
+      :file "printer.h"
+      :pointmax 201
+      :fsize 16985
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d007cc"
+      :major-mode c-mode
+      :tags nil
+      :file "zero_copy_stream.h"
+      :pointmax 201
+      :fsize 10175
+      :lastmodtime '(23380 20637 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!google!protobuf!io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

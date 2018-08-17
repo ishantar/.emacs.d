@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-172df60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-172df60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-172df7c"
+      :major-mode c-mode
+      :tags nil
+      :file "gstglfilter.h"
+      :pointmax 201
+      :fsize 5559
+      :lastmodtime '(23378 1040 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gstreamer-1.0!gst!gl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

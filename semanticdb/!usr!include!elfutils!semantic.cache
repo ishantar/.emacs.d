@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1d6e6cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d6e6cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d27154"
+      :major-mode c-mode
+      :tags nil
+      :file "libasm.h"
+      :pointmax 201
+      :fsize 7094
+      :lastmodtime '(23317 41760 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-180f02c"
+      :major-mode c-mode
+      :tags nil
+      :file "libdw.h"
+      :pointmax 201
+      :fsize 43934
+      :lastmodtime '(23317 41760 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bba7ec"
+      :major-mode c-mode
+      :tags nil
+      :file "libdwelf.h"
+      :pointmax 201
+      :fsize 5642
+      :lastmodtime '(23317 41760 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b63e64"
+      :major-mode c-mode
+      :tags nil
+      :file "libdwfl.h"
+      :pointmax 201
+      :fsize 38301
+      :lastmodtime '(23317 41760 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b7d094"
+      :major-mode c-mode
+      :tags nil
+      :file "libebl.h"
+      :pointmax 201
+      :fsize 16688
+      :lastmodtime '(23317 41760 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!elfutils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

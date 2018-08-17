@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b071d8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b071d8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1806ba0"
+      :major-mode c-mode
+      :tags nil
+      :file "link.h"
+      :pointmax 201
+      :fsize 4224
+      :lastmodtime '(23344 47918 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!openbox!3.6!obt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

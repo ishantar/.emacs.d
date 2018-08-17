@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1d4f1a8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d4f1a8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1cfb84c"
+      :major-mode c-mode
+      :tags nil
+      :file "EbmlConfig.h"
+      :pointmax 201
+      :fsize 3977
+      :lastmodtime '(23258 12552 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b4f508"
+      :major-mode c-mode
+      :tags nil
+      :file "EbmlElement.h"
+      :pointmax 201
+      :fsize 21661
+      :lastmodtime '(23258 12552 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d2db28"
+      :major-mode c-mode
+      :tags nil
+      :file "IOCallback.h"
+      :pointmax 201
+      :fsize 3918
+      :lastmodtime '(23258 12552 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!ebml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

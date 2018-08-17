@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-175e754
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-175e754"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1bb73a8"
+      :major-mode c-mode
+      :tags nil
+      :file "speex.h"
+      :pointmax 201
+      :fsize 14030
+      :lastmodtime '(22619 549 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af2de4"
+      :major-mode c-mode
+      :tags nil
+      :file "speex_callbacks.h"
+      :pointmax 201
+      :fsize 5033
+      :lastmodtime '(22619 549 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!speex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

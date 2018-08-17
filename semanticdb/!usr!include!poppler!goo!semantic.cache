@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d47838
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d47838"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d47854"
+      :major-mode c-mode
+      :tags nil
+      :file "FixedPoint.h"
+      :pointmax 201
+      :fsize 6803
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e0561c"
+      :major-mode c-mode
+      :tags nil
+      :file "GooString.h"
+      :pointmax 201
+      :fsize 7565
+      :lastmodtime '(23400 26180 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!poppler!goo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

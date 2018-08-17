@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-180f1c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-180f1c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1807344"
+      :major-mode c-mode
+      :tags nil
+      :file "svc.h"
+      :pointmax 201
+      :fsize 11595
+      :lastmodtime '(23282 13743 458782 648000)
+      :unmatched-syntax nil))
+  :file "!usr!include!gssrpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

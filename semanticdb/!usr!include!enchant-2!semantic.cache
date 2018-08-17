@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b72200
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b72200"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b5c370"
+      :major-mode c-mode
+      :tags nil
+      :file "enchant.h"
+      :pointmax 201
+      :fsize 13020
+      :lastmodtime '(23182 36611 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!enchant-2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

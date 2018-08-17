@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-1d3bdf8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d3bdf8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d11910"
+      :major-mode c-mode
+      :tags nil
+      :file "d3d11.h"
+      :pointmax 201
+      :fsize 462408
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6c804"
+      :major-mode c-mode
+      :tags nil
+      :file "mmsystem.h"
+      :pointmax 201
+      :fsize 93673
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ce2348"
+      :major-mode c-mode
+      :tags nil
+      :file "objbase.h"
+      :pointmax 201
+      :fsize 24000
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5e44c"
+      :major-mode c-mode
+      :tags nil
+      :file "rpcdcep.h"
+      :pointmax 201
+      :fsize 7436
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df4e60"
+      :major-mode c-mode
+      :tags nil
+      :file "windowsx.h"
+      :pointmax 201
+      :fsize 69950
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1193944"
+      :major-mode c-mode
+      :tags nil
+      :file "winnls.h"
+      :pointmax 201
+      :fsize 39692
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e42398"
+      :major-mode c-mode
+      :tags nil
+      :file "winsock.h"
+      :pointmax 201
+      :fsize 35710
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d9bf64"
+      :major-mode c-mode
+      :tags nil
+      :file "wintabx.h"
+      :pointmax 201
+      :fsize 5770
+      :lastmodtime '(23385 38208 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!wine!windows!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

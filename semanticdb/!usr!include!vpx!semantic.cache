@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d0271c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d0271c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d0dcd8"
+      :major-mode c-mode
+      :tags nil
+      :file "vpx_codec.h"
+      :pointmax 201
+      :fsize 15738
+      :lastmodtime '(23145 2024 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b41410"
+      :major-mode c-mode
+      :tags nil
+      :file "vpx_decoder.h"
+      :pointmax 201
+      :fsize 14931
+      :lastmodtime '(23145 2024 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!vpx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

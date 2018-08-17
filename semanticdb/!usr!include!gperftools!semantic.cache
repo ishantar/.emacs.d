@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-17db59c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17db59c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ba25b0"
+      :major-mode c++-mode
+      :tags nil
+      :file "heap-checker.h"
+      :pointmax 201
+      :fsize 17703
+      :lastmodtime '(23294 59971 762440 492000)
+      :unmatched-syntax nil))
+  :file "!usr!include!gperftools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

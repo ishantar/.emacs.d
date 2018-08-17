@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-14881d0
+;; Object semanticdb-project-database-file-180fe30
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-14881d0"
+(semanticdb-project-database-file "semanticdb-project-database-file-180fe30"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-14881ec"
+    (semanticdb-table "semanticdb-table-180fdf0"
       :major-mode c++-mode
       :tags 
         '( ("_GLIBCXX_CXX_CONFIG_H" variable (:constant-flag t) nil [1288 1309])
@@ -605,14 +605,26 @@
           ("_GLIBCXX_USE_REALPATH" . ((number "1" 47250 . 47251)))
           )
 )
-    (semanticdb-table "semanticdb-table-15d3f64"
+    (semanticdb-table "semanticdb-table-180fe10"
+      :major-mode c++-mode
+      :tags nil
       :file "os_defines.h"
+      :pointmax 201
       :fsize 2007
-      :lastmodtime '(23393 45480 0 0))
-    (semanticdb-table "semanticdb-table-15d3f84"
+      :lastmodtime '(23393 45480 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1884ba8"
       :file "cpu_defines.h"
       :fsize 1333
-      :lastmodtime '(23393 45480 0 0)))
+      :lastmodtime '(23393 45480 0 0))
+    (semanticdb-table "semanticdb-table-1b11478"
+      :major-mode c-mode
+      :tags nil
+      :file "gthr.h"
+      :pointmax 201
+      :fsize 5608
+      :lastmodtime '(23393 45480 0 0)
+      :unmatched-syntax nil))
   :file "!usr!include!c++!8.2.0!x86_64-pc-linux-gnu!bits!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

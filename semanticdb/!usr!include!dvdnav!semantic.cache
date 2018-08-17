@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1bb0950
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1bb0950"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ba0e30"
+      :major-mode c-mode
+      :tags nil
+      :file "dvdnav.h"
+      :pointmax 201
+      :fsize 23965
+      :lastmodtime '(23172 5979 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-162c07c"
+      :major-mode c-mode
+      :tags nil
+      :file "dvdnav_events.h"
+      :pointmax 201
+      :fsize 7598
+      :lastmodtime '(23172 5979 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!dvdnav!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

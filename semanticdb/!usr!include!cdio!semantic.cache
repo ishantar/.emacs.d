@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1b8e6a4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b8e6a4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d05254"
+      :major-mode c-mode
+      :tags nil
+      :file "ecma_167.h"
+      :pointmax 201
+      :fsize 34175
+      :lastmodtime '(23127 15835 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-12545d8"
+      :major-mode c-mode
+      :tags nil
+      :file "mmc.h"
+      :pointmax 201
+      :fsize 35447
+      :lastmodtime '(23127 15835 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bb4698"
+      :major-mode c-mode
+      :tags nil
+      :file "read.h"
+      :pointmax 201
+      :fsize 8624
+      :lastmodtime '(23127 15835 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-124c174"
+      :major-mode c-mode
+      :tags nil
+      :file "xa.h"
+      :pointmax 201
+      :fsize 6479
+      :lastmodtime '(23127 15835 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!cdio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

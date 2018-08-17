@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1c9b34c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c9b34c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b08c28"
+      :major-mode c-mode
+      :tags nil
+      :file "Segment.h"
+      :pointmax 201
+      :fsize 20608
+      :lastmodtime '(23196 49686 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!graphite2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

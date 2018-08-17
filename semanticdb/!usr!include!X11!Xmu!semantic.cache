@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-171ec98
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-171ec98"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-184cb24"
+      :major-mode c-mode
+      :tags nil
+      :file "WidgetNode.h"
+      :pointmax 201
+      :fsize 3030
+      :lastmodtime '(23311 30189 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!X11!Xmu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

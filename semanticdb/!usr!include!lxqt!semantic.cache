@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1dc6ee4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dc6ee4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1dc6ef0"
+      :major-mode c-mode
+      :tags nil
+      :file "ilxqtpanel.h"
+      :pointmax 201
+      :fsize 4249
+      :lastmodtime '(23311 4395 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!lxqt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

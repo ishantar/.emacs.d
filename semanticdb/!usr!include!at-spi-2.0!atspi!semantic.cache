@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b90398
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b90398"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b903b4"
+      :major-mode c-mode
+      :tags nil
+      :file "atspi-constants.h"
+      :pointmax 201
+      :fsize 64717
+      :lastmodtime '(23209 27885 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!at-spi-2.0!atspi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

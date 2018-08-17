@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1840a74
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1840a74"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ba1044"
+      :major-mode c-mode
+      :tags nil
+      :file "audio_processing.h"
+      :pointmax 201
+      :fsize 38576
+      :lastmodtime '(23384 26839 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!webrtc_audio_processing!webrtc!modules!audio_processing!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

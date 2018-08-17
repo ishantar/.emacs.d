@@ -1,0 +1,176 @@
+;; Object semanticdb-project-database-file-1e3dad8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1e3dad8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1e3d360"
+      :major-mode c-mode
+      :tags nil
+      :file "cert.h"
+      :pointmax 201
+      :fsize 60496
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1806bfc"
+      :major-mode c-mode
+      :tags nil
+      :file "certt.h"
+      :pointmax 201
+      :fsize 46937
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1257d10"
+      :major-mode c-mode
+      :tags nil
+      :file "cms.h"
+      :pointmax 201
+      :fsize 39762
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcba5c"
+      :major-mode c-mode
+      :tags nil
+      :file "cryptohi.h"
+      :pointmax 201
+      :fsize 18295
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df4bc0"
+      :major-mode c-mode
+      :tags nil
+      :file "nssb64.h"
+      :pointmax 201
+      :fsize 3248
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5e488"
+      :major-mode c-mode
+      :tags nil
+      :file "nssbase.h"
+      :pointmax 201
+      :fsize 6672
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d77c40"
+      :major-mode c-mode
+      :tags nil
+      :file "nssilckt.h"
+      :pointmax 201
+      :fsize 5923
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8ce78"
+      :major-mode c-mode
+      :tags nil
+      :file "nssilock.h"
+      :pointmax 201
+      :fsize 7743
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18742c0"
+      :major-mode c-mode
+      :tags nil
+      :file "ocsp.h"
+      :pointmax 201
+      :fsize 28869
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-180f114"
+      :major-mode c-mode
+      :tags nil
+      :file "ocspt.h"
+      :pointmax 201
+      :fsize 12511
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18a8948"
+      :major-mode c-mode
+      :tags nil
+      :file "pk11pub.h"
+      :pointmax 201
+      :fsize 48845
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5ea48"
+      :major-mode c-mode
+      :tags nil
+      :file "portreg.h"
+      :pointmax 201
+      :fsize 3083
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ae4468"
+      :major-mode c-mode
+      :tags nil
+      :file "secasn1.h"
+      :pointmax 201
+      :fsize 13214
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-125097c"
+      :major-mode c-mode
+      :tags nil
+      :file "secasn1t.h"
+      :pointmax 201
+      :fsize 10916
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d2bec0"
+      :major-mode c-mode
+      :tags nil
+      :file "secdig.h"
+      :pointmax 201
+      :fsize 3369
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cf5734"
+      :major-mode c-mode
+      :tags nil
+      :file "secitem.h"
+      :pointmax 201
+      :fsize 4766
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ce6d18"
+      :major-mode c-mode
+      :tags nil
+      :file "secmime.h"
+      :pointmax 201
+      :fsize 7163
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d7d698"
+      :major-mode c-mode
+      :tags nil
+      :file "secpkcs7.h"
+      :pointmax 201
+      :fsize 25437
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d7c524"
+      :major-mode c-mode
+      :tags nil
+      :file "secport.h"
+      :pointmax 201
+      :fsize 10753
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d56438"
+      :major-mode c-mode
+      :tags nil
+      :file "ssl.h"
+      :pointmax 201
+      :fsize 66995
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c81d7c"
+      :major-mode c-mode
+      :tags nil
+      :file "sslexp.h"
+      :pointmax 201
+      :fsize 21352
+      :lastmodtime '(23341 30779 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!nss!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

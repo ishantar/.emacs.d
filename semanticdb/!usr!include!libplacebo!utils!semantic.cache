@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-10a7364
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-10a7364"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-189ef44"
+      :major-mode c-mode
+      :tags nil
+      :file "upload.h"
+      :pointmax 201
+      :fsize 5852
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libplacebo!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

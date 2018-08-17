@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1872088
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1872088"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18127bc"
+      :major-mode c++-mode
+      :tags nil
+      :file "MCTargetAsmParser.h"
+      :pointmax 201
+      :fsize 15433
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!MC!MCParser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

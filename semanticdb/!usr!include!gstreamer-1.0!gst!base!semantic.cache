@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1c81fec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c81fec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d04c50"
+      :major-mode c-mode
+      :tags nil
+      :file "gstbitreader.h"
+      :pointmax 200
+      :fsize 9743
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c81fa0"
+      :major-mode c-mode
+      :tags nil
+      :file "gstbytereader.h"
+      :pointmax 199
+      :fsize 25222
+      :lastmodtime '(23377 64379 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gstreamer-1.0!gst!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1ddbe04
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ddbe04"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1de4944"
+      :major-mode c++-mode
+      :tags nil
+      :file "probslet.h"
+      :pointmax 201
+      :fsize 5642
+      :lastmodtime '(23197 26436 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!nspr!obsolete!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

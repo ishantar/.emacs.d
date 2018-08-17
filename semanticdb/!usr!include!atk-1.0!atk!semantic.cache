@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1b0c288
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b0c288"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b0c2a4"
+      :major-mode c-mode
+      :tags nil
+      :file "atkobject.h"
+      :pointmax 201
+      :fsize 39011
+      :lastmodtime '(23213 30468 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-126a718"
+      :major-mode c-mode
+      :tags nil
+      :file "atkstate.h"
+      :pointmax 201
+      :fsize 14343
+      :lastmodtime '(23213 30468 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8d210"
+      :major-mode c-mode
+      :tags nil
+      :file "atkutil.h"
+      :pointmax 201
+      :fsize 14558
+      :lastmodtime '(23213 30468 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!atk-1.0!atk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

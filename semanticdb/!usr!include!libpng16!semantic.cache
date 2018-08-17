@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-17e31b8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17e31b8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1868ec0"
+      :major-mode c-mode
+      :tags nil
+      :file "png.h"
+      :pointmax 201
+      :fsize 147922
+      :lastmodtime '(22991 54835 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de12c0"
+      :major-mode c-mode
+      :tags nil
+      :file "pngconf.h"
+      :pointmax 201
+      :fsize 22845
+      :lastmodtime '(22991 54835 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libpng16!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1b629ec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b629ec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b6d244"
+      :major-mode c++-mode
+      :tags nil
+      :file "gdk-pixbuf-xlibrgb.h"
+      :pointmax 201
+      :fsize 5996
+      :lastmodtime '(23241 21225 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gdk-pixbuf-2.0!gdk-pixbuf-xlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1d58698
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d58698"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d586b4"
+      :major-mode c-mode
+      :tags nil
+      :file "props.h"
+      :pointmax 201
+      :fsize 35572
+      :lastmodtime '(23202 58740 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d4d92c"
+      :major-mode c-mode
+      :tags nil
+      :file "propgridiface.h"
+      :pointmax 201
+      :fsize 45094
+      :lastmodtime '(23202 58740 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b99c1c"
+      :major-mode c-mode
+      :tags nil
+      :file "propgriddefs.h"
+      :pointmax 201
+      :fsize 23602
+      :lastmodtime '(23202 58740 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d11b40"
+      :major-mode c-mode
+      :tags nil
+      :file "propgrid.h"
+      :pointmax 201
+      :fsize 89433
+      :lastmodtime '(23202 58740 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cfd338"
+      :major-mode c-mode
+      :tags nil
+      :file "property.h"
+      :pointmax 201
+      :fsize 77926
+      :lastmodtime '(23202 58740 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!wx-3.0!wx!propgrid!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,88 @@
+;; Object semanticdb-project-database-file-1b3e40c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b3e40c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1af7f88"
+      :major-mode c-mode
+      :tags nil
+      :file "itemviews_p.h"
+      :pointmax 201
+      :fsize 10523
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1871dec"
+      :major-mode c-mode
+      :tags nil
+      :file "qabstractitemview_p.h"
+      :pointmax 201
+      :fsize 17722
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0a4c8"
+      :major-mode c-mode
+      :tags nil
+      :file "qfiledialog_p.h"
+      :pointmax 201
+      :fsize 13370
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e0d230"
+      :major-mode c-mode
+      :tags nil
+      :file "qgraphicsanchorlayout_p.h"
+      :pointmax 201
+      :fsize 19878
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b94628"
+      :major-mode c-mode
+      :tags nil
+      :file "qgraphicsitem_p.h"
+      :pointmax 201
+      :fsize 26658
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de2a4c"
+      :major-mode c-mode
+      :tags nil
+      :file "qgraphicswidget_p.h"
+      :pointmax 201
+      :fsize 6956
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b84b8c"
+      :major-mode c-mode
+      :tags nil
+      :file "qlineedit_p.h"
+      :pointmax 201
+      :fsize 8330
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-124c4b0"
+      :major-mode c-mode
+      :tags nil
+      :file "qmainwindowlayout_p.h"
+      :pointmax 201
+      :fsize 19422
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8bcc8"
+      :major-mode c-mode
+      :tags nil
+      :file "qsimplex_p.h"
+      :pointmax 201
+      :fsize 6117
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b41040"
+      :major-mode c-mode
+      :tags nil
+      :file "qtabbar_p.h"
+      :pointmax 201
+      :fsize 9404
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtWidgets!5.11.1!QtWidgets!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

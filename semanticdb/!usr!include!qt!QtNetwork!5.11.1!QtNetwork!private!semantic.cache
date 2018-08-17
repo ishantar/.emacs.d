@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1bad234
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1bad234"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-126cc0c"
+      :major-mode c-mode
+      :tags nil
+      :file "qhostinfo_p.h"
+      :pointmax 201
+      :fsize 7737
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17cda90"
+      :major-mode c-mode
+      :tags nil
+      :file "qhttpthreaddelegate_p.h"
+      :pointmax 201
+      :fsize 10588
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtNetwork!5.11.1!QtNetwork!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

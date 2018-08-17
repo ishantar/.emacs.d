@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d70290
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d70290"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b8cc94"
+      :major-mode c-mode
+      :tags nil
+      :file "gda-thread-wrapper.h"
+      :pointmax 201
+      :fsize 11040
+      :lastmodtime '(23003 24058 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libgda-5.0!libgda!thread-wrapper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

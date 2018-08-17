@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file-1794a24
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1794a24"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1650c5c"
+      :major-mode c-mode
+      :tags nil
+      :file "buffer_interface.h"
+      :pointmax 199
+      :fsize 6707
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b58a98"
+      :major-mode c-mode
+      :tags nil
+      :file "clientconnection.h"
+      :pointmax 199
+      :fsize 5057
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-12539a4"
+      :major-mode c-mode
+      :tags nil
+      :file "display.h"
+      :pointmax 199
+      :fsize 11148
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-188fec8"
+      :major-mode c-mode
+      :tags nil
+      :file "idle_interface.h"
+      :pointmax 199
+      :fsize 4524
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b70e9c"
+      :major-mode c-mode
+      :tags nil
+      :file "plasmawindowmanagement_interface.h"
+      :pointmax 199
+      :fsize 7230
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b89090"
+      :major-mode c-mode
+      :tags nil
+      :file "seat_interface.h"
+      :pointmax 199
+      :fsize 26071
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-185f5dc"
+      :major-mode c-mode
+      :tags nil
+      :file "server_decoration_interface.h"
+      :pointmax 199
+      :fsize 4573
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1246ed8"
+      :major-mode c-mode
+      :tags nil
+      :file "shell_interface.h"
+      :pointmax 199
+      :fsize 9737
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1272a1c"
+      :major-mode c-mode
+      :tags nil
+      :file "surface_interface.h"
+      :pointmax 199
+      :fsize 11172
+      :lastmodtime '(23367 38776 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!KF5!KWayland!Server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

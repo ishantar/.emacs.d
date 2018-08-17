@@ -1,0 +1,152 @@
+;; Object semanticdb-project-database-file-1d81988
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d81988"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d76814"
+      :major-mode c-mode
+      :tags nil
+      :file "apeitem.h"
+      :pointmax 201
+      :fsize 6333
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b1b7f8"
+      :major-mode c-mode
+      :tags nil
+      :file "apetag.h"
+      :pointmax 201
+      :fsize 7170
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b073c4"
+      :major-mode c-mode
+      :tags nil
+      :file "fileref.h"
+      :pointmax 201
+      :fsize 10265
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b84e4c"
+      :major-mode c-mode
+      :tags nil
+      :file "id3v1genres.h"
+      :pointmax 201
+      :fsize 2814
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b5c300"
+      :major-mode c-mode
+      :tags nil
+      :file "id3v1tag.h"
+      :pointmax 201
+      :fsize 7084
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b9e9c0"
+      :major-mode c-mode
+      :tags nil
+      :file "id3v2frame.h"
+      :pointmax 201
+      :fsize 18879
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b90c10"
+      :major-mode c-mode
+      :tags nil
+      :file "id3v2framefactory.h"
+      :pointmax 201
+      :fsize 6659
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ba5fa8"
+      :major-mode c-mode
+      :tags nil
+      :file "id3v2tag.h"
+      :pointmax 201
+      :fsize 16171
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d1ae4c"
+      :major-mode c-mode
+      :tags nil
+      :file "oggpageheader.h"
+      :pointmax 201
+      :fsize 7624
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d76754"
+      :major-mode c-mode
+      :tags nil
+      :file "opusfile.h"
+      :pointmax 198
+      :fsize 5028
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bb72b8"
+      :major-mode c-mode
+      :tags nil
+      :file "speexfile.h"
+      :pointmax 198
+      :fsize 5037
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d982c8"
+      :major-mode c-mode
+      :tags nil
+      :file "tag_c.h"
+      :pointmax 201
+      :fsize 9720
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bc1614"
+      :major-mode c-mode
+      :tags nil
+      :file "textidentificationframe.h"
+      :pointmax 201
+      :fsize 12558
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd2f78"
+      :major-mode c-mode
+      :tags nil
+      :file "tfile.h"
+      :pointmax 201
+      :fsize 10981
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af5a64"
+      :major-mode c-mode
+      :tags nil
+      :file "tpropertymap.h"
+      :pointmax 201
+      :fsize 7369
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-185f1dc"
+      :major-mode c-mode
+      :tags nil
+      :file "tstring.h"
+      :pointmax 201
+      :fsize 17007
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ca8614"
+      :major-mode c-mode
+      :tags nil
+      :file "vorbisfile.h"
+      :pointmax 201
+      :fsize 5387
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e02180"
+      :major-mode c-mode
+      :tags nil
+      :file "xiphcomment.h"
+      :pointmax 201
+      :fsize 9649
+      :lastmodtime '(22541 31227 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!taglib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

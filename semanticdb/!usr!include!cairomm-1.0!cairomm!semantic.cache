@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1e4570c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1e4570c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1e45718"
+      :major-mode c-mode
+      :tags nil
+      :file "surface.h"
+      :pointmax 201
+      :fsize 37003
+      :lastmodtime '(22756 63056 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dda300"
+      :major-mode c-mode
+      :tags nil
+      :file "scaledfont.h"
+      :pointmax 201
+      :fsize 11073
+      :lastmodtime '(22756 63056 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d51320"
+      :major-mode c++-mode
+      :tags nil
+      :file "refptr.h"
+      :pointmax 201
+      :fsize 13618
+      :lastmodtime '(22756 63056 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e456d4"
+      :major-mode c-mode
+      :tags nil
+      :file "context.h"
+      :pointmax 201
+      :fsize 63284
+      :lastmodtime '(22756 63056 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!cairomm-1.0!cairomm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

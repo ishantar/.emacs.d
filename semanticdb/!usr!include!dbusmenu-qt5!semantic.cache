@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1c820c0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c820c0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d6ad50"
+      :major-mode c-mode
+      :tags nil
+      :file "dbusmenuimporter.h"
+      :pointmax 201
+      :fsize 4440
+      :lastmodtime '(22213 39265 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!dbusmenu-qt5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

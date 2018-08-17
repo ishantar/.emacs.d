@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-1eaa2c0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1eaa2c0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ec6bcc"
+      :major-mode c-mode
+      :tags nil
+      :file "templates.h"
+      :pointmax 201
+      :fsize 9124
+      :lastmodtime '(22936 58111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d87644"
+      :major-mode c-mode
+      :tags nil
+      :file "probe.h"
+      :pointmax 201
+      :fsize 3484
+      :lastmodtime '(22936 58111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e3be68"
+      :major-mode c-mode
+      :tags nil
+      :file "plugin.h"
+      :pointmax 201
+      :fsize 19995
+      :lastmodtime '(22936 58111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dfdba8"
+      :major-mode c-mode
+      :tags nil
+      :file "playlist.h"
+      :pointmax 201
+      :fsize 16085
+      :lastmodtime '(22936 58111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df9a2c"
+      :major-mode c-mode
+      :tags nil
+      :file "objects.h"
+      :pointmax 201
+      :fsize 6926
+      :lastmodtime '(22936 58111 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libaudcore!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

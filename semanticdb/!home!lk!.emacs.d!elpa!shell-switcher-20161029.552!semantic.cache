@@ -1,16 +1,61 @@
-;; Object semanticdb-project-database-file-ff0618
+;; Object semanticdb-project-database-file-2045510
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-ff0618"
+(semanticdb-project-database-file "semanticdb-project-database-file-2045510"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-23ae054"
+    (semanticdb-table "semanticdb-table-20454f0"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "shell-switcher-autoloads.el"
       :pointmax 367
       :fsize 4285
       :lastmodtime '(23398 9491 198871 575000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2045530"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("rswitcher" include nil nil [1626 1646])
+            ("sswitcher--ring" variable
+               (:constant-flag t
+                :default-value (rswitcher-make))
+                nil [1648 1691])
+            ("shell-switcher" customgroup (:user-visible-flag t) nil [1693 1794])
+            ("shell-switcher-new-shell-function" variable (:default-value 'shell-switcher-make-eshell) nil [1811 2170])
+            ("shell-switcher-ask-before-creating-new" variable nil nil [2187 2461])
+            ("shell-switcher-ansi-term-shell" variable nil nil [2478 2701])
+            ("sswitcher--starting-default-directory" variable nil nil [2703 3060])
+            ("shell-switcher-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "C-'") 'shell-switcher-switch-buffer) (define-key map (kbd "C-x 4 '") 'shell-switcher-switch-buffer-other-window) (define-key map (kbd "C-M-'") 'shell-switcher-new-shell) map)) nil [3077 3399])
+            ("define-minor-mode" code nil nil [3416 4201])
+            ("shell-switcher-make-shell" function nil nil [4203 4406])
+            ("shell-switcher-make-eshell" function nil nil [4408 4579])
+            ("shell-switcher-make-ansi-term" function nil nil [4581 5723])
+            ("sswitcher--most-recent" function nil nil [5725 5845])
+            ("sswitcher--most-recent-shell-valid-p" function nil nil [5847 6007])
+            ("sswitcher--clean-buffers" function nil nil [6009 6261])
+            ("shell-switcher-kill-all-shells" function nil nil [6263 6495])
+            ("sswitcher--shell-exist-p" function nil nil [6497 6668])
+            ("sswitcher--in-shell-buffer-p" function nil nil [6670 6814])
+            ("shell-switcher-manually-register-shell" function (:user-visible-flag t) nil [6816 7133])
+            ("sswitcher--new-shell" function (:arguments ("other-window")) nil [7135 7621])
+            ("sswitcher--no-more-shell-buffers" function (:arguments ("other-window")) nil [7623 8358])
+            ("when" code nil nil [8360 9823])
+            ("sswitcher--prepare-for-fast-key" function nil nil [9825 10559])
+            ("sswitcher--display-shell-buffer" function (:arguments ("other-window")) nil [10561 10998])
+            ("sswitcher--switch-buffer" function (:arguments ("other-window")) nil [11000 12316])
+            ("shell-switcher-switch-buffer" function (:user-visible-flag t) nil [12333 12966])
+            ("sswitcher--switch-partially" function nil nil [12968 13394])
+            ("shell-switcher-switch-buffer-other-window" function (:user-visible-flag t) nil [13411 13643])
+            ("shell-switcher-new-shell" function (:user-visible-flag t) nil [13660 13795])
+            ("shell-switcher" package nil nil [13797 13822]))          
+      :file "shell-switcher.el"
+      :pointmax 13856
+      :fsize 13855
+      :lastmodtime '(23398 9489 978858 941000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-166394c"
+      :file "rswitcher.el"
+      :fsize 7611
+      :lastmodtime '(23398 9489 925525 55000)))
   :file "!home!lk!.emacs.d!elpa!shell-switcher-20161029.552!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

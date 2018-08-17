@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1dda7a4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dda7a4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ae4174"
+      :major-mode c-mode
+      :tags nil
+      :file "openjpeg.h"
+      :pointmax 201
+      :fsize 59369
+      :lastmodtime '(23403 13367 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!openjpeg-2.3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

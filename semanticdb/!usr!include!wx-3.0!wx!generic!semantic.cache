@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file-1d94f20
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d94f20"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d94f3c"
+      :major-mode c-mode
+      :tags nil
+      :file "grid.h"
+      :pointmax 201
+      :fsize 102821
+      :lastmodtime '(23202 58739 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b99b88"
+      :major-mode c-mode
+      :tags nil
+      :file "dataview.h"
+      :pointmax 201
+      :fsize 10433
+      :lastmodtime '(23202 58739 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddf770"
+      :major-mode c-mode
+      :tags nil
+      :file "stattextg.h"
+      :pointmax 201
+      :fsize 2611
+      :lastmodtime '(23202 58738 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d57198"
+      :major-mode c-mode
+      :tags nil
+      :file "spinctlg.h"
+      :pointmax 201
+      :fsize 14443
+      :lastmodtime '(23202 58737 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d91efc"
+      :major-mode c-mode
+      :tags nil
+      :file "progdlgg.h"
+      :pointmax 201
+      :fsize 7879
+      :lastmodtime '(23202 58737 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d1af90"
+      :major-mode c-mode
+      :tags nil
+      :file "headerctrlg.h"
+      :pointmax 201
+      :fsize 6198
+      :lastmodtime '(23202 58737 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d45dc8"
+      :major-mode c-mode
+      :tags nil
+      :file "filectrlg.h"
+      :pointmax 201
+      :fsize 10675
+      :lastmodtime '(23202 58737 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!wx-3.0!wx!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

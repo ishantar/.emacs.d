@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1ddfab8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ddfab8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1bad3e4"
+      :major-mode c-mode
+      :tags nil
+      :file "tommath.h"
+      :pointmax 201
+      :fsize 17119
+      :lastmodtime '(23393 52605 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libtorrent!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

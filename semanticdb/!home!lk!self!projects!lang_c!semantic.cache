@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15f775c
+;; Object semanticdb-project-database-file-14ad11c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15f775c"
+(semanticdb-project-database-file "semanticdb-project-database-file-14ad11c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15a56dc"
+    (semanticdb-table "semanticdb-table-14ad05c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -22,7 +22,7 @@
       :fsize 102
       :lastmodtime '(23366 42313 303765 266000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15a56fc"
+    (semanticdb-table "semanticdb-table-14ad07c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -125,7 +125,7 @@
       :fsize 3395
       :lastmodtime '(23379 6106 463891 934000)
       :unmatched-syntax '((thing 309 . 310) (thing 309 . 310) (thing 308 . 309) (thing 308 . 309) (thing 307 . 308) (thing 307 . 308) (thing 305 . 306) (thing 305 . 306) (thing 304 . 305) (thing 304 . 305) (thing 303 . 304) (thing 303 . 304) (thing 302 . 303) (thing 302 . 303) (thing 300 . 301) (thing 300 . 301) (thing 299 . 300) (thing 299 . 300) (thing 298 . 299) (thing 298 . 299) (thing 297 . 298) (thing 297 . 298) (thing 289 . 296) (thing 289 . 296)))
-    (semanticdb-table "semanticdb-table-15a571c"
+    (semanticdb-table "semanticdb-table-14ad09c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -177,7 +177,7 @@
       :fsize 6766
       :lastmodtime '(23378 31739 885307 453000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15a573c"
+    (semanticdb-table "semanticdb-table-14ad0bc"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -204,7 +204,7 @@
       :fsize 501
       :lastmodtime '(23397 29340 99729 278000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15a575c"
+    (semanticdb-table "semanticdb-table-14ad0dc"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -221,6 +221,58 @@
       :pointmax 1018
       :fsize 645
       :lastmodtime '(23397 42628 88456 838000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-14ad0fc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdio.h" include (:system-flag t) nil [41 59])
+            ("obuf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{\"_____________\"}"
+                :type "char")
+                nil [61 100])
+            ("sinr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [113 118]))                  
+                :type "char")
+                nil [102 119])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [130 135]))                  
+                :type "int")
+                nil [121 189])
+            ("sinr" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [202 207]))                  
+                :type "char")
+                nil [191 268]))          
+      :file "labeldance.c"
+      :pointmax 268
+      :fsize 648
+      :lastmodtime '(23412 24052 749260 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-14ad13c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdint.h" include (:system-flag t) nil [41 60])
+            ("stdio.h" include (:system-flag t) nil [61 79])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [91 96]))                  
+                :type "int")
+                nil [82 563]))          
+      :file "imut-cycle.c"
+      :pointmax 564
+      :fsize 563
+      :lastmodtime '(23412 36419 320771 138000)
       :unmatched-syntax nil))
   :file "!home!lk!self!projects!lang_c!semantic.cache"
   :semantic-tag-version "2.0"

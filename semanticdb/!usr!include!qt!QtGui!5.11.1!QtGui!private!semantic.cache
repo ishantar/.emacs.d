@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-1cc744c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1cc744c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1608c44"
+      :major-mode c-mode
+      :tags nil
+      :file "qblendfunctions_p.h"
+      :pointmax 201
+      :fsize 21534
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d476e4"
+      :major-mode c-mode
+      :tags nil
+      :file "qdrawhelper_p.h"
+      :pointmax 201
+      :fsize 42628
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d8303c"
+      :major-mode c-mode
+      :tags nil
+      :file "qfragmentmap_p.h"
+      :pointmax 201
+      :fsize 25609
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d7f92c"
+      :major-mode c-mode
+      :tags nil
+      :file "qgridlayoutengine_p.h"
+      :pointmax 201
+      :fsize 17148
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cc7a80"
+      :major-mode c-mode
+      :tags nil
+      :file "qimage_p.h"
+      :pointmax 201
+      :fsize 8583
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de294c"
+      :major-mode c-mode
+      :tags nil
+      :file "qopenglengineshadersource_p.h"
+      :pointmax 201
+      :fsize 40245
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1aa7844"
+      :major-mode c-mode
+      :tags nil
+      :file "qoutlinemapper_p.h"
+      :pointmax 201
+      :fsize 6862
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d57e7c"
+      :major-mode c-mode
+      :tags nil
+      :file "qpainterpath_p.h"
+      :pointmax 201
+      :fsize 9190
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d766a8"
+      :major-mode c-mode
+      :tags nil
+      :file "qpdf_p.h"
+      :pointmax 201
+      :fsize 10505
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1baf168"
+      :major-mode c-mode
+      :tags nil
+      :file "qrasterdefs_p.h"
+      :pointmax 201
+      :fsize 80845
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e47070"
+      :major-mode c-mode
+      :tags nil
+      :file "qtexthtmlparser_p.h"
+      :pointmax 201
+      :fsize 9774
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16007e0"
+      :major-mode c-mode
+      :tags nil
+      :file "qvectorpath_p.h"
+      :pointmax 201
+      :fsize 8037
+      :lastmodtime '(23400 36334 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!qt!QtGui!5.11.1!QtGui!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

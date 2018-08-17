@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1dd6bf4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dd6bf4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17201b8"
+      :major-mode c-mode
+      :tags nil
+      :file "swscale.h"
+      :pointmax 201
+      :fsize 12015
+      :lastmodtime '(23376 51283 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libswscale!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

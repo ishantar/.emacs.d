@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-17ea4e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17ea4e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1193a04"
+      :major-mode c-mode
+      :tags nil
+      :file "colorspace.h"
+      :pointmax 201
+      :fsize 16432
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1272fac"
+      :major-mode c-mode
+      :tags nil
+      :file "filters.h"
+      :pointmax 201
+      :fsize 15045
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-125ae04"
+      :major-mode c-mode
+      :tags nil
+      :file "renderer.h"
+      :pointmax 201
+      :fsize 22344
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c7a9bc"
+      :major-mode c-mode
+      :tags nil
+      :file "shaders.h"
+      :pointmax 201
+      :fsize 8164
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b178c0"
+      :major-mode c-mode
+      :tags nil
+      :file "swapchain.h"
+      :pointmax 201
+      :fsize 6190
+      :lastmodtime '(23327 388 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!libplacebo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

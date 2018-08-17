@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1d5c4f0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d5c4f0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1dcdb54"
+      :major-mode c++-mode
+      :tags nil
+      :file "common_interface_defs.h"
+      :pointmax 201
+      :fsize 10411
+      :lastmodtime '(23377 64005 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b6b3d0"
+      :major-mode c-mode
+      :tags nil
+      :file "dfsan_interface.h"
+      :pointmax 201
+      :fsize 4552
+      :lastmodtime '(23377 64005 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!sanitizer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-126cc4c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-126cc4c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-126cc58"
+      :major-mode c-mode
+      :tags nil
+      :file "dri_interface.h"
+      :pointmax 201
+      :fsize 69992
+      :lastmodtime '(23390 56756 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!GL!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

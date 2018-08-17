@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-1bb8a90
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1bb8a90"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d5f880"
+      :major-mode c-mode
+      :tags nil
+      :file "aom_codec.h"
+      :pointmax 201
+      :fsize 17631
+      :lastmodtime '(23347 63731 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dddd5c"
+      :major-mode c-mode
+      :tags nil
+      :file "aom_decoder.h"
+      :pointmax 201
+      :fsize 14935
+      :lastmodtime '(23347 63731 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d514f4"
+      :major-mode c-mode
+      :tags nil
+      :file "aomcx.h"
+      :pointmax 201
+      :fsize 39301
+      :lastmodtime '(23347 63731 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d83074"
+      :major-mode c-mode
+      :tags nil
+      :file "aomdx.h"
+      :pointmax 201
+      :fsize 10092
+      :lastmodtime '(23347 63731 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!aom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

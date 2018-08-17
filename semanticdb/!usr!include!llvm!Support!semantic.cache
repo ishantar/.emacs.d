@@ -1,0 +1,331 @@
+;; Object semanticdb-project-database-file-1d9c278
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d9c278"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d92880"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_SUPPORT_LOWLEVELTYPEIMPL_H" variable (:constant-flag t) nil [1111 1142])
+            ("llvm/ADT/DenseMapInfo.h" include nil nil [1144 1178])
+            ("llvm/CodeGen/MachineValueType.h" include nil nil [1179 1221])
+            ("cassert" include (:system-flag t) nil [1222 1240])
+            ("llvm" type
+               (:members 
+                  ( ("DataLayout" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1260 1277])
+                    ("Type" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1278 1289])
+                    ("raw_ostream" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1290 1308])
+                    ("LLT" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1322 1329])
+                            ("scalar" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("SizeInBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1407 1427]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1389 1609])
+                            ("pointer" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("AddressSpace" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1708 1730])
+                                    ("SizeInBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1731 1751]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1689 1927])
+                            ("vector" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("NumElements" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2065 2086])
+                                    ("ScalarSizeInBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2087 2113]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2047 2376])
+                            ("vector" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("NumElements" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2472 2493])
+                                    ("ScalarTy" variable (:type ("LLT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2494 2507]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2454 2829])
+                            ("LLT" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("isPointer" variable (:type "bool") (reparse-symbol arg-sub-list) [2846 2861])
+                                    ("isVector" variable (:type "bool") (reparse-symbol arg-sub-list) [2862 2876])
+                                    ("NumElements" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2877 2898])
+                                    ("SizeInBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2914 2934])
+                                    ("AddressSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2935 2957]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2842 3033])
+                            ("LLT" function
+                               (:constructor-flag t
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3045 3101])
+                            ("LLT" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("VT" variable (:type ("MVT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3118 3125]))                                  
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3114 3126])
+                            ("isValid" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3130 3175])
+                            ("isScalar" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3179 3249])
+                            ("isPointer" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3253 3323])
+                            ("isVector" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3327 3382])
+                            ("getNumElements" function
+                               (:methodconst-flag t
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3483 3739])
+                            ("getSizeInBits" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [3821 3981])
+                            ("getScalarSizeInBits" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [3985 4389])
+                            ("getAddressSpace" function
+                               (:methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [4393 4698])
+                            ("getElementType" function
+                               (:methodconst-flag t
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4772 5013])
+                            ("print" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5028 5044]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5017 5051])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("RHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LLT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5071 5086]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5055 5202])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("RHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LLT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5222 5237]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5206 5271])
+                            ("DenseMapInfo" type
+                               (:prototype t
+                                :template-specifier 
+                                  ( ("LLT" type nil nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [5282 5307])
+                            ("private" label nil (reparse-symbol classsubparts) [5309 5317])
+                            ("BitFieldInfo" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5844 5872])
+                            ("ScalarSizeFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6213 6253])
+                            ("PointerSizeFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6380 6421])
+                            ("PointerAddressSpaceFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6447 6551])
+                            ("VectorElementsFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6694 6738])
+                            ("VectorSizeFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6764 6865])
+                            ("PointerVectorElementsFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7030 7081])
+                            ("PointerVectorSizeFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7107 7235])
+                            ("PointerVectorAddressSpaceFieldInfo" variable (:type ("BitFieldInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7261 7383])
+                            ("IsPointer" variable
+                               (:suffix ":1"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7387 7410])
+                            ("IsVector" variable
+                               (:suffix ":1"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7413 7435])
+                            ("RawData" variable
+                               (:suffix ":62"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7438 7460])
+                            ("getMask" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("FieldInfo" variable
+                                       (:constant-flag t
+                                        :type ("BitFieldInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7488 7517]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7464 7620])
+                            ("maskAndShift" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7652 7665])
+                                    ("Mask" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7666 7680])
+                                    ("Shift" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7681 7695]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7623 7791])
+                            ("maskAndShift" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Val" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7823 7836])
+                                    ("FieldInfo" variable
+                                       (:constant-flag t
+                                        :type ("BitFieldInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7837 7866]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7794 7936])
+                            ("getFieldValue" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("FieldInfo" variable
+                                       (:constant-flag t
+                                        :type ("BitFieldInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7962 7991]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7939 8062])
+                            ("init" function
+                               (:arguments 
+                                  ( ("IsPointer" variable (:type "bool") (reparse-symbol arg-sub-list) [8076 8091])
+                                    ("IsVector" variable (:type "bool") (reparse-symbol arg-sub-list) [8092 8106])
+                                    ("NumElements" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8107 8128])
+                                    ("SizeInBits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8141 8161])
+                                    ("AddressSpace" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8162 8184]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8066 9007]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1310 9010])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("OS" variable
+                               (:reference 1
+                                :type ("raw_ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9043 9059])
+                            ("Ty" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9060 9074]))                          
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9012 9107])
+                    ("DenseMapInfo" type
+                       (:type "struct"
+                        :members 
+                          ( ("getEmptyKey" function
+                               (:typemodifiers ("static" "inline")
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9149 9253])
+                            ("getTombstoneKey" function
+                               (:typemodifiers ("static" "inline")
+                                :type ("LLT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9256 9363])
+                            ("getHashValue" function
+                               (:typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("Ty" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LLT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9402 9416]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [9366 9601])
+                            ("isEqual" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("LHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LLT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9624 9639])
+                                    ("RHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LLT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9640 9655]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9604 9684]))                          
+                        :template-specifier 
+                          ( ("LLT" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9109 9687]))                  
+                :type "namespace")
+                nil [1242 9690]))          
+      :file "LowLevelTypeImpl.h"
+      :pointmax 9734
+      :fsize 9733
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax '((thing 7251 . 7260) (thing 7245 . 7250) (thing 7238 . 7244) (thing 7097 . 7106) (thing 7091 . 7096) (thing 7084 . 7090) (thing 7020 . 7029) (thing 7014 . 7019) (thing 7007 . 7013) (thing 6754 . 6763) (thing 6748 . 6753) (thing 6741 . 6747) (thing 6684 . 6693) (thing 6678 . 6683) (thing 6671 . 6677) (thing 6437 . 6446) (thing 6431 . 6436) (thing 6424 . 6430) (thing 6370 . 6379) (thing 6364 . 6369) (thing 6357 . 6363) (thing 6203 . 6212) (thing 6197 . 6202) (thing 6190 . 6196) (thing 5275 . 5281) (thing 3105 . 3113) (thing 3036 . 3044) (thing 2833 . 2841))
+      :lexical-table 
+        '(("LLVM_SUPPORT_LOWLEVELTYPEIMPL_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1d928a0"
+      :file "AlignOf.h"
+      :fsize 4893
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d928c0"
+      :file "AtomicOrdering.h"
+      :fsize 6089
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d928e0"
+      :file "Casting.h"
+      :fsize 14006
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d9c218"
+      :file "ErrorHandling.h"
+      :fsize 6356
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d9c238"
+      :file "Compiler.h"
+      :fsize 17937
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d9c258"
+      :file "MathExtras.h"
+      :fsize 28388
+      :lastmodtime '(23402 11315 0 0))
+    (semanticdb-table "semanticdb-table-1d9c294"
+      :major-mode c-mode
+      :tags nil
+      :file "BinaryStreamArray.h"
+      :pointmax 201
+      :fsize 12069
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6ac28"
+      :major-mode c++-mode
+      :tags nil
+      :file "BranchProbability.h"
+      :pointmax 201
+      :fsize 7647
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!Support!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

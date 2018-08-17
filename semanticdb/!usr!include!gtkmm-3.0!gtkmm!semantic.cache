@@ -1,0 +1,408 @@
+;; Object semanticdb-project-database-file-1d5c740
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d5c740"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1dd2644"
+      :major-mode c++-mode
+      :tags nil
+      :file "stock.h"
+      :pointmax 201
+      :fsize 28607
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddf994"
+      :major-mode c-mode
+      :tags nil
+      :file "accelmap.h"
+      :pointmax 201
+      :fsize 5152
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de64c8"
+      :major-mode c-mode
+      :tags nil
+      :file "statusicon.h"
+      :pointmax 201
+      :fsize 38275
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a9e40c"
+      :major-mode c-mode
+      :tags nil
+      :file "handlebox.h"
+      :pointmax 201
+      :fsize 11485
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c81f0c"
+      :major-mode c-mode
+      :tags nil
+      :file "window.h"
+      :pointmax 201
+      :fsize 90900
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcbfe4"
+      :major-mode c-mode
+      :tags nil
+      :file "widget.h"
+      :pointmax 201
+      :fsize 221689
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dae6b4"
+      :major-mode c-mode
+      :tags nil
+      :file "treeviewcolumn.h"
+      :pointmax 201
+      :fsize 37450
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cfd6e0"
+      :major-mode c-mode
+      :tags nil
+      :file "treeview.h"
+      :pointmax 201
+      :fsize 97956
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d58008"
+      :major-mode c-mode
+      :tags nil
+      :file "treesortable.h"
+      :pointmax 201
+      :fsize 9929
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcc084"
+      :major-mode c-mode
+      :tags nil
+      :file "treeiter.h"
+      :pointmax 201
+      :fsize 20011
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1deabf8"
+      :major-mode c-mode
+      :tags nil
+      :file "tooltip.h"
+      :pointmax 201
+      :fsize 9244
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b62714"
+      :major-mode c-mode
+      :tags nil
+      :file "toolbar.h"
+      :pointmax 201
+      :fsize 15873
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d92d38"
+      :major-mode c-mode
+      :tags nil
+      :file "textview.h"
+      :pointmax 201
+      :fsize 53006
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df3db0"
+      :major-mode c-mode
+      :tags nil
+      :file "textiter.h"
+      :pointmax 201
+      :fsize 53231
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d0dd70"
+      :major-mode c-mode
+      :tags nil
+      :file "textbuffer.h"
+      :pointmax 201
+      :fsize 62403
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddbf08"
+      :major-mode c-mode
+      :tags nil
+      :file "shortcutssection.h"
+      :pointmax 201
+      :fsize 6877
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d4f1e4"
+      :major-mode c-mode
+      :tags nil
+      :file "searchentry.h"
+      :pointmax 201
+      :fsize 7694
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6af7c"
+      :major-mode c-mode
+      :tags nil
+      :file "scalebutton.h"
+      :pointmax 201
+      :fsize 12223
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcbf10"
+      :major-mode c-mode
+      :tags nil
+      :file "recentinfo.h"
+      :pointmax 201
+      :fsize 13043
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e0d8ec"
+      :major-mode c-mode
+      :tags nil
+      :file "range.h"
+      :pointmax 201
+      :fsize 21596
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b8ce50"
+      :major-mode c-mode
+      :tags nil
+      :file "progressbar.h"
+      :pointmax 201
+      :fsize 14058
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddf6a4"
+      :major-mode c-mode
+      :tags nil
+      :file "printoperation.h"
+      :pointmax 201
+      :fsize 54591
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b86868"
+      :major-mode c-mode
+      :tags nil
+      :file "printcontext.h"
+      :pointmax 201
+      :fsize 7751
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ea3080"
+      :major-mode c-mode
+      :tags nil
+      :file "placessidebar.h"
+      :pointmax 201
+      :fsize 34197
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ddf8d4"
+      :major-mode c-mode
+      :tags nil
+      :file "menubutton.h"
+      :pointmax 201
+      :fsize 15940
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dfdb20"
+      :major-mode c-mode
+      :tags nil
+      :file "menu.h"
+      :pointmax 201
+      :fsize 35192
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b6d404"
+      :major-mode c-mode
+      :tags nil
+      :file "listbox.h"
+      :pointmax 201
+      :fsize 24055
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd2b54"
+      :major-mode c-mode
+      :tags nil
+      :file "levelbar.h"
+      :pointmax 201
+      :fsize 14852
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d6783c"
+      :major-mode c-mode
+      :tags nil
+      :file "iconinfo.h"
+      :pointmax 201
+      :fsize 16942
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df9448"
+      :major-mode c-mode
+      :tags nil
+      :file "grid.h"
+      :pointmax 201
+      :fsize 16620
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d92b28"
+      :major-mode c-mode
+      :tags nil
+      :file "flowbox.h"
+      :pointmax 201
+      :fsize 25839
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cbbbbc"
+      :major-mode c-mode
+      :tags nil
+      :file "filechooser.h"
+      :pointmax 201
+      :fsize 53123
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d13f1c"
+      :major-mode c-mode
+      :tags nil
+      :file "expander.h"
+      :pointmax 201
+      :fsize 15978
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de66c4"
+      :major-mode c-mode
+      :tags nil
+      :file "eventbox.h"
+      :pointmax 201
+      :fsize 7864
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dca524"
+      :major-mode c-mode
+      :tags nil
+      :file "entrybuffer.h"
+      :pointmax 201
+      :fsize 10688
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1de13e0"
+      :major-mode c-mode
+      :tags nil
+      :file "entrycompletion.h"
+      :pointmax 201
+      :fsize 24825
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e14a94"
+      :major-mode c-mode
+      :tags nil
+      :file "entry.h"
+      :pointmax 201
+      :fsize 77878
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d89f70"
+      :major-mode c-mode
+      :tags nil
+      :file "dialog.h"
+      :pointmax 201
+      :fsize 20979
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1aec974"
+      :major-mode c-mode
+      :tags nil
+      :file "csssection.h"
+      :pointmax 201
+      :fsize 9032
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d60dbc"
+      :major-mode c-mode
+      :tags nil
+      :file "combobox.h"
+      :pointmax 201
+      :fsize 35692
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d7df5c"
+      :major-mode c-mode
+      :tags nil
+      :file "cellrenderertext.h"
+      :pointmax 201
+      :fsize 35637
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dcdab4"
+      :major-mode c-mode
+      :tags nil
+      :file "celllayout.h"
+      :pointmax 201
+      :fsize 10257
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e09580"
+      :major-mode c-mode
+      :tags nil
+      :file "cellareacontext.h"
+      :pointmax 201
+      :fsize 13631
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dd2aec"
+      :major-mode c-mode
+      :tags nil
+      :file "button.h"
+      :pointmax 201
+      :fsize 26255
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1df96f4"
+      :major-mode c-mode
+      :tags nil
+      :file "builder.h"
+      :pointmax 201
+      :fsize 33706
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d67a64"
+      :major-mode c-mode
+      :tags nil
+      :file "box.h"
+      :pointmax 201
+      :fsize 20584
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1dae628"
+      :major-mode c-mode
+      :tags nil
+      :file "application.h"
+      :pointmax 201
+      :fsize 37978
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1e9ee88"
+      :major-mode c-mode
+      :tags nil
+      :file "appchooserdialog.h"
+      :pointmax 201
+      :fsize 6455
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ae4504"
+      :major-mode c-mode
+      :tags nil
+      :file "appchooserbutton.h"
+      :pointmax 201
+      :fsize 10797
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bba8a4"
+      :major-mode c-mode
+      :tags nil
+      :file "actionable.h"
+      :pointmax 201
+      :fsize 9687
+      :lastmodtime '(22978 52120 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!gtkmm-3.0!gtkmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

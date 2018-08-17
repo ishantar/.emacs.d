@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d95eac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d95eac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d95eb8"
+      :major-mode c-mode
+      :tags nil
+      :file "rdma_netlink.h"
+      :pointmax 201
+      :fsize 9972
+      :lastmodtime '(23393 25726 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!rdma!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

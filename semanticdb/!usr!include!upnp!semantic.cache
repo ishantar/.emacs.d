@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1840a94
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1840a94"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b4bb0c"
+      :major-mode c-mode
+      :tags nil
+      :file "UpnpGlobal.h"
+      :pointmax 201
+      :fsize 2983
+      :lastmodtime '(23207 11283 301375 212000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b968b0"
+      :major-mode c-mode
+      :tags nil
+      :file "ixml.h"
+      :pointmax 201
+      :fsize 58789
+      :lastmodtime '(23207 11282 979375 41000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d00dc4"
+      :major-mode c-mode
+      :tags nil
+      :file "upnp.h"
+      :pointmax 201
+      :fsize 114704
+      :lastmodtime '(23207 11283 300375 211000)
+      :unmatched-syntax nil))
+  :file "!usr!include!upnp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

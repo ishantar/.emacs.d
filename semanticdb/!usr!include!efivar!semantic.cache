@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1d6ace4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d6ace4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b7baf0"
+      :major-mode c-mode
+      :tags nil
+      :file "efivar-dp.h"
+      :pointmax 201
+      :fsize 33915
+      :lastmodtime '(23340 44461 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!efivar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-18125b4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18125b4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18125c0"
+      :major-mode c-mode
+      :tags nil
+      :file "LegalizationArtifactCombiner.h"
+      :pointmax 201
+      :fsize 11322
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1af8f14"
+      :major-mode c++-mode
+      :tags nil
+      :file "LegalizerInfo.h"
+      :pointmax 201
+      :fsize 20045
+      :lastmodtime '(23402 11315 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!llvm!CodeGen!GlobalISel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
