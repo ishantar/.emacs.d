@@ -1254,10 +1254,10 @@ on `kill-emacs' and send it to coveralls.io.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180816.2105/clojure-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180818.255/clojure-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180816.2105/clojure-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180818.255/clojure-mode-autoloads.el") (car load-path))))
 
 
 
@@ -1672,10 +1672,10 @@ Display an interactive session browser.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180817.1140/cider-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180825.846/cider-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180817.1140/cider-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180825.846/cider-autoloads.el") (car load-path))))
 
 
 
@@ -2841,10 +2841,10 @@ This function returns the buffer where the process starts running.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180809.1712/ivy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180822.1824/ivy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180809.1712/ivy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180822.1824/ivy-autoloads.el") (car load-path))))
 
 
 
@@ -4095,10 +4095,10 @@ The commands are `shell-command', `shell-command-on-region', `grep',
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180815.2057/projectile-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180824.2239/projectile-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180815.2057/projectile-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180824.2239/projectile-autoloads.el") (car load-path))))
 
 
 
@@ -4668,10 +4668,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180816.1007/rustic-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180823.1109/rustic-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180816.1007/rustic-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180823.1109/rustic-autoloads.el") (car load-path))))
 
 
 
@@ -4684,7 +4684,7 @@ Major mode for Rust code.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic" '("rustic")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rustic" '("rustic-")))
 
 
 
@@ -5557,10 +5557,10 @@ FUNCTION must return an explanation when the test fails and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180814.221/racket-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180824.1410/racket-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180814.221/racket-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180824.1410/racket-mode-autoloads.el") (car load-path))))
 
 
 
@@ -8457,10 +8457,10 @@ Major mode for editing Tlc files, or files found in tlc directories.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-core-20180712.837/helm-core-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-core-20180824.1636/helm-core-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-core-20180712.837/helm-core-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-core-20180824.1636/helm-core-autoloads.el") (car load-path))))
 
 
 
@@ -8677,7 +8677,7 @@ Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 \(fn ANY-SOURCES ANY-BUFFER)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm" '("copy-region-as-kill--advice" "cua-delete-region--advice" "helm-" "with-helm-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm" '("helm-" "with-helm-")))
 
 
 
@@ -8695,10 +8695,10 @@ Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180810.507/helm-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180824.1636/helm-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180810.507/helm-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180824.1636/helm-autoloads.el") (car load-path))))
 
 
 
@@ -10260,10 +10260,10 @@ If DIGITS is nil, `macro-math-rounding-precision' will be used.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-20180823.826/flycheck-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-20180720.947/flycheck-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-20180823.826/flycheck-autoloads.el") (car load-path))))
 
 
 
@@ -10499,10 +10499,10 @@ Use this together with the `option', `option-list' and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180812.522/lsp-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180818.628/lsp-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180812.522/lsp-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180818.628/lsp-mode-autoloads.el") (car load-path))))
 
 
 
@@ -11207,10 +11207,10 @@ result of `defhydra'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180813.2122/counsel-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180820.1500/counsel-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180813.2122/counsel-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180820.1500/counsel-autoloads.el") (car load-path))))
 
 
 
@@ -11628,7 +11628,10 @@ or call the function `counsel-mode'.")
 Toggle Counsel mode on or off.
 Turn Counsel mode on if ARG is positive, off otherwise. Counsel
 mode remaps built-in emacs functions that have counsel
-replacements. 
+replacements.
+
+Local bindings (`counsel-mode-map'):
+\\{counsel-mode-map}
 
 \(fn &optional ARG)" t nil)
 
@@ -14093,10 +14096,10 @@ when checking the current buffer.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-inline-20180529.1314/flycheck-inline-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-inline-20180821.849/flycheck-inline-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-inline-20180529.1314/flycheck-inline-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-inline-20180821.849/flycheck-inline-autoloads.el") (car load-path))))
 
 
 
@@ -17251,10 +17254,10 @@ Use helm to show a Clojure cheatsheet.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clojars-20161109.2248/clojars-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clojars-20180825.1951/clojars-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojars-20161109.2248/clojars-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojars-20180825.1951/clojars-autoloads.el") (car load-path))))
 
 
 
@@ -18984,7 +18987,7 @@ Sends the first answer to 4clojure and gets a message back
   (info-initialize)
   (setq Info-directory-list
     (append
-      '("/home/lk/.emacs.d/elpa/ivy-20180809.1712")
+      '("/home/lk/.emacs.d/elpa/ivy-20180822.1824")
       Info-directory-list)))
 
 ;; Local Variables:
