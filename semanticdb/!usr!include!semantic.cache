@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-175c554
+;; Object semanticdb-project-database-file-13e8040
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-175c554"
+(semanticdb-project-database-file "semanticdb-project-database-file-13e8040"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-16e9300"
+    (semanticdb-table "semanticdb-table-13dbb28"
       :major-mode c-mode
       :tags 
         '( ("_FEATURES_H" variable (:constant-flag t) nil [818 829])
@@ -53,7 +53,7 @@
       :file "features.h"
       :pointmax 15722
       :fsize 15721
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((close-paren 11302 . 11303) (number "700" 11289 . 11302) (symbol 11281 . 11288) (punctuation 11279 . 11280) (punctuation 11278 . 11279) (close-paren 11269 . 11270) (number 11268 . 11269) (punctuation 11266 . 11267) (punctuation 11265 . 11266) (number "200809L" 11249 . 11264) (punctuation 11247 . 11248) (punctuation 11246 . 11247) (number "200809L" 11230 . 11245) (symbol 11222 . 11229) (open-paren 11221 . 11222) (punctuation 11219 . 11220) (punctuation 11218 . 11219) (close-paren 8578 . 8579) (semantic-list 8403 . 8578) (punctuation 8401 . 8402) (punctuation 8400 . 8401))
       :lexical-table 
         '(("__glibc_clang_prereq" (spp-arg-list ("maj" "min") 7071 . 7081) . ((number "0" 7082 . 7083)))
@@ -96,15 +96,15 @@
           ("_LARGEFILE_SOURCE" . ((number "1" 12174 . 12175)))
           )
 )
-    (semanticdb-table "semanticdb-table-16f7484"
+    (semanticdb-table "semanticdb-table-13dbb64"
       :major-mode c-mode
       :tags nil
       :file "stdc-predef.h"
       :pointmax 2364
       :fsize 2289
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-16c43dc"
+    (semanticdb-table "semanticdb-table-13e7d00"
       :major-mode c-mode
       :tags 
         '( ("_STDIO_H" variable (:constant-flag t) nil [919 927])
@@ -1527,7 +1527,7 @@
       :file "stdio.h"
       :pointmax 30169
       :fsize 30168
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((semantic-list 18787 . 18834) (punctuation 18785 . 18786) (punctuation 18784 . 18785))
       :lexical-table 
         '(("_VA_LIST_DEFINED")
@@ -1558,11 +1558,11 @@
           ("RENAME_EXCHANGE" . ((semantic-list "(1 << 1)" 4431 . 4439)))
           )
 )
-    (semanticdb-table "semanticdb-table-1846070"
+    (semanticdb-table "semanticdb-table-13e7d20"
       :file "math.h"
       :fsize 53079
-      :lastmodtime '(23393 60984 0 0))
-    (semanticdb-table "semanticdb-table-1815234"
+      :lastmodtime '(23406 2233 0 0))
+    (semanticdb-table "semanticdb-table-13e7d40"
       :major-mode c-mode
       :tags 
         '( ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION" variable (:constant-flag t) nil [880 927])
@@ -3236,7 +3236,7 @@
       :file "stdlib.h"
       :pointmax 35654
       :fsize 35653
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((number "1" 29530 . 29540) (symbol 29522 . 29529) (punctuation 29520 . 29521) (punctuation 29519 . 29520) (LONG 28841 . 28845) (EXTERN 28834 . 28840) (TYPEDEF 27794 . 27801) (TYPEDEF 27645 . 27652) (semantic-list 22892 . 22949) (punctuation 22890 . 22891) (punctuation 22889 . 22890) (number "1" 19357 . 19367) (symbol 19349 . 19356) (punctuation 19347 . 19348) (punctuation 19346 . 19347) (LONG 16331 . 16335) (UNSIGNED 16322 . 16330) (LONG 9343 . 9347) (UNSIGNED 9334 . 9342) (EXTERN 9327 . 9333) (LONG 9159 . 9163) (EXTERN 9152 . 9158) (LONG 6606 . 6610) (UNSIGNED 6597 . 6605) (EXTERN 6590 . 6596) (LONG 6386 . 6390) (EXTERN 6379 . 6385) (LONG 6138 . 6142) (UNSIGNED 6129 . 6137) (EXTERN 6122 . 6128) (LONG 5920 . 5924) (EXTERN 5913 . 5919) (LONG 3488 . 3492) (EXTERN 3481 . 3487) (LONG 2395 . 2399) (LONG 2353 . 2357))
       :lexical-table 
         '(("RAND_MAX" . ((number "2147483647" 2563 . 2573)))
@@ -3259,7 +3259,7 @@
           ("EXIT_SUCCESS" . ((number "0" 2767 . 2768)))
           )
 )
-    (semanticdb-table "semanticdb-table-180f424"
+    (semanticdb-table "semanticdb-table-13e7d60"
       :major-mode c-mode
       :tags 
         '( ("_ALLOCA_H" variable (:constant-flag t) nil [816 825])
@@ -3281,7 +3281,7 @@
       :file "alloca.h"
       :pointmax 1204
       :fsize 1203
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ALLOCA_H" . ((number "1" 826 . 827)))
@@ -3289,7 +3289,7 @@
           ("alloca" (spp-arg-list ("size") 1118 . 1124) . ((symbol "__builtin_alloca" 1125 . 1141) (semantic-list "(size)" 1142 . 1148)))
           )
 )
-    (semanticdb-table "semanticdb-table-17ad2f4"
+    (semanticdb-table "semanticdb-table-13e7d80"
       :major-mode c-mode
       :tags 
         '( ("_ENDIAN_H" variable (:constant-flag t) nil [816 825])
@@ -3320,7 +3320,7 @@
       :file "endian.h"
       :pointmax 3190
       :fsize 3189
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BYTE_ORDER" . ((symbol "__BYTE_ORDER" 1830 . 1842)))
@@ -3346,7 +3346,7 @@
           ("be64toh" (spp-arg-list ("x") 3090 . 3093) . ((symbol "__uint64_identity" 3094 . 3111) (semantic-list "(x)" 3112 . 3115)))
           )
 )
-    (semanticdb-table "semanticdb-table-17c65a8"
+    (semanticdb-table "semanticdb-table-13e7da0"
       :major-mode c-mode
       :tags 
         '( ("_LIBC_LIMITS_H_" variable (:constant-flag t) nil [900 915])
@@ -3362,7 +3362,7 @@
       :file "limits.h"
       :pointmax 5413
       :fsize 5412
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((punctuation 3921 . 3922) (symbol 3920 . 3921) (punctuation 3919 . 3920) (symbol 3913 . 3919) (punctuation 3912 . 3913) (symbol 3899 . 3911) (punctuation 3897 . 3898))
       :lexical-table 
         '(("LLONG_MAX" . ((symbol "__LONG_LONG_MAX__" 4244 . 4261)))
@@ -3373,23 +3373,364 @@
           ("_LIBC_LIMITS_H_" . ((number "1" 916 . 917)))
           )
 )
-    (semanticdb-table "semanticdb-table-186bde0"
+    (semanticdb-table "semanticdb-table-13e7dc0"
       :major-mode c-mode
-      :tags nil
+      :tags 
+        '( ("_STRING_H" variable (:constant-flag t) nil [877 886])
+            ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION" variable (:constant-flag t) nil [898 945])
+            ("bits/libc-header-start.h" include (:system-flag t) nil [946 981])
+            ("strings.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [15041 15062])
+            ("strndupa" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6976 6984])
+            ("strdupa" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6601 6608])
+            ("strxfrm_l" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5817 5830])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5831 5849])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5850 5861])
+                    ("__l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5866 5879]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5792 5907])
+            ("strcoll_l" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5586 5603])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5604 5621])
+                    ("__l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5622 5635]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5564 5690])
+            ("bits/types/locale_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [5453 5486])
+            ("strxfrm" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5262 5286])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5296 5325])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5326 5337]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5239 5367])
+            ("strcoll" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5081 5098])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5099 5116]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5061 5168])
+            ("strncmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4912 4929])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4930 4947])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4948 4959]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4892 5011])
+            ("strcmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4762 4779])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4780 4797]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4743 4849])
+            ("strncat" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4613 4637])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4638 4667])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4676 4687]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4591 4715])
+            ("strcat" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4443 4467])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4468 4497]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4422 4530])
+            ("strncpy" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4284 4308])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4317 4346])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4347 4358]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4262 4391])
+            ("strcpy" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4120 4144])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4145 4174]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4099 4207])
+            ("memrchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3969 3985])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [3986 3994])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3995 4006]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3947 4056])
+            ("rawmemchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3489 3505])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [3506 3514]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3465 3563])
+            ("memchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2966 2982])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2983 2991])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2992 3003]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2945 3053])
+            ("memcmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2202 2219])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2220 2237])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2249]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2183 2301])
+            ("memset" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2088 2098])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2099 2107])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2108 2119]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2067 2144])
+            ("memccpy" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1888 1912])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1913 1942])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [1951 1959])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1960 1971]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1866 2004])
+            ("memmove" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1542 1555])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1556 1574])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1575 1586]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1520 1619])
+            ("memcpy" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1324 1348])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1349 1378])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1386 1397]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1303 1425])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1084 1103])
+            ("__need_NULL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1072 1083])
+            ("__need_size_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1050 1063]))          
       :file "string.h"
-      :pointmax 201
+      :pointmax 17546
       :fsize 17545
-      :lastmodtime '(23393 60984 0 0)
-      :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-18755b8"
+      :lastmodtime '(23406 2233 0 0)
+      :unmatched-syntax '((punctuation 17308 . 17309) (symbol 17273 . 17283) (punctuation 17272 . 17273) (CHAR 17267 . 17271) (CONST 17261 . 17266) (symbol 17251 . 17259) (punctuation 17250 . 17251) (CHAR 17245 . 17249) (EXTERN 17238 . 17244) (punctuation 16748 . 16749) (symbol 16720 . 16723) (symbol 16713 . 16719) (punctuation 16711 . 16712) (symbol 16708 . 16711) (punctuation 16707 . 16708) (VOID 16702 . 16706) (symbol 16693 . 16700) (punctuation 16692 . 16693) (VOID 16687 . 16691) (EXTERN 16680 . 16686) (punctuation 16645 . 16646) (symbol 16612 . 16620) (punctuation 16611 . 16612) (CHAR 16606 . 16610) (symbol 16598 . 16604) (punctuation 16597 . 16598) (CHAR 16592 . 16596) (EXTERN 16585 . 16591) (punctuation 16552 . 16553) (symbol 16496 . 16500) (punctuation 16495 . 16496) (CHAR 16490 . 16494) (CONST 16484 . 16489) (punctuation 16482 . 16483) (symbol 16478 . 16482) (punctuation 16477 . 16478) (CHAR 16472 . 16476) (CONST 16466 . 16471) (symbol 16454 . 16464) (INT 16450 . 16453) (EXTERN 16443 . 16449) (punctuation 16340 . 16341) (symbol 16304 . 16307) (symbol 16297 . 16303) (punctuation 16295 . 16296) (symbol 16290 . 16295) (punctuation 16278 . 16279) (CHAR 16273 . 16277) (CONST 16267 . 16272) (punctuation 16257 . 16258) (symbol 16251 . 16257) (punctuation 16239 . 16240) (CHAR 16234 . 16238) (symbol 16225 . 16232) (punctuation 16224 . 16225) (CHAR 16219 . 16223) (EXTERN 16212 . 16218) (punctuation 16210 . 16211) (symbol 16174 . 16177) (symbol 16167 . 16173) (punctuation 16165 . 16166) (symbol 16160 . 16165) (punctuation 16148 . 16149) (CHAR 16143 . 16147) (CONST 16137 . 16142) (punctuation 16132 . 16133) (symbol 16126 . 16132) (punctuation 16114 . 16115) (CHAR 16109 . 16113) (symbol 16098 . 16107) (punctuation 16097 . 16098) (CHAR 16092 . 16096) (EXTERN 16085 . 16091) (punctuation 15962 . 15963) (symbol 15924 . 15929) (punctuation 15912 . 15913) (CHAR 15907 . 15911) (CONST 15901 . 15906) (punctuation 15899 . 15900) (symbol 15893 . 15899) (punctuation 15881 . 15882) (CHAR 15876 . 15880) (symbol 15868 . 15874) (punctuation 15867 . 15868) (CHAR 15862 . 15866) (EXTERN 15855 . 15861) (punctuation 15853 . 15854) (symbol 15815 . 15820) (punctuation 15803 . 15804) (CHAR 15798 . 15802) (CONST 15792 . 15797) (punctuation 15790 . 15791) (symbol 15784 . 15790) (punctuation 15772 . 15773) (CHAR 15767 . 15771) (symbol 15757 . 15765) (punctuation 15756 . 15757) (CHAR 15751 . 15755) (EXTERN 15744 . 15750) (punctuation 15661 . 15662) (symbol 15647 . 15652) (INT 15643 . 15646) (symbol 15632 . 15641) (punctuation 15631 . 15632) (CHAR 15626 . 15630) (EXTERN 15619 . 15625) (punctuation 15512 . 15513) (symbol 15472 . 15479) (punctuation 15460 . 15461) (CHAR 15455 . 15459) (CONST 15449 . 15454) (punctuation 15440 . 15441) (symbol 15431 . 15440) (punctuation 15419 . 15420) (punctuation 15418 . 15419) (CHAR 15413 . 15417) (symbol 15405 . 15411) (punctuation 15404 . 15405) (CHAR 15399 . 15403) (EXTERN 15392 . 15398) (punctuation 15260 . 15261) (symbol 15232 . 15235) (symbol 15225 . 15231) (punctuation 15223 . 15224) (symbol 15220 . 15223) (punctuation 15219 . 15220) (VOID 15214 . 15218) (symbol 15198 . 15212) (VOID 15193 . 15197) (EXTERN 15186 . 15192) (punctuation 15013 . 15014) (symbol 15001 . 15004) (symbol 14992 . 15000) (punctuation 14990 . 14991) (symbol 14982 . 14990) (INT 14978 . 14981) (symbol 14966 . 14976) (punctuation 14965 . 14966) (CHAR 14960 . 14964) (EXTERN 14953 . 14959) (punctuation 14846 . 14847) (symbol 14802 . 14810) (symbol 14795 . 14801) (punctuation 14793 . 14794) (symbol 14788 . 14793) (punctuation 14787 . 14788) (CHAR 14782 . 14786) (punctuation 14780 . 14781) (symbol 14772 . 14780) (INT 14768 . 14771) (symbol 14756 . 14766) (punctuation 14755 . 14756) (CHAR 14750 . 14754) (EXTERN 14743 . 14749) (punctuation 13796 . 13797) (symbol 13779 . 13787) (INT 13775 . 13778) (symbol 13765 . 13773) (punctuation 13764 . 13765) (CHAR 13759 . 13763) (EXTERN 13752 . 13758) (punctuation 13664 . 13665) (symbol 13607 . 13615) (symbol 13600 . 13606) (punctuation 13598 . 13599) (symbol 13590 . 13598) (punctuation 13589 . 13590) (CHAR 13584 . 13588) (CONST 13578 . 13583) (symbol 13569 . 13576) (symbol 13562 . 13568) (EXTERN 13555 . 13561) (punctuation 13386 . 13387) (symbol 13334 . 13337) (punctuation 13333 . 13334) (CHAR 13328 . 13332) (CONST 13322 . 13327) (symbol 13314 . 13320) (symbol 13307 . 13313) (EXTERN 13300 . 13306) (punctuation 13258 . 13259) (symbol 13222 . 13225) (symbol 13215 . 13221) (punctuation 13213 . 13214) (symbol 13208 . 13213) (punctuation 13196 . 13197) (VOID 13191 . 13195) (CONST 13185 . 13190) (punctuation 13175 . 13176) (symbol 13169 . 13175) (punctuation 13157 . 13158) (VOID 13152 . 13156) (symbol 13143 . 13150) (punctuation 13142 . 13143) (VOID 13137 . 13141) (EXTERN 13130 . 13136) (punctuation 13128 . 13129) (symbol 13092 . 13095) (symbol 13085 . 13091) (punctuation 13083 . 13084) (symbol 13078 . 13083) (punctuation 13066 . 13067) (VOID 13061 . 13065) (CONST 13055 . 13060) (punctuation 13050 . 13051) (symbol 13044 . 13050) (punctuation 13032 . 13033) (VOID 13027 . 13031) (symbol 13016 . 13025) (punctuation 13015 . 13016) (VOID 13010 . 13014) (EXTERN 13003 . 13009) (punctuation 12908 . 12909) (symbol 12845 . 12856) (symbol 12838 . 12844) (punctuation 12836 . 12837) (symbol 12828 . 12836) (punctuation 12827 . 12828) (VOID 12822 . 12826) (CONST 12816 . 12821) (punctuation 12807 . 12808) (symbol 12794 . 12807) (symbol 12787 . 12793) (punctuation 12785 . 12786) (symbol 12775 . 12785) (punctuation 12774 . 12775) (VOID 12769 . 12773) (CONST 12763 . 12768) (symbol 12755 . 12761) (punctuation 12754 . 12755) (VOID 12749 . 12753) (EXTERN 12742 . 12748) (punctuation 12577 . 12578) (symbol 12517 . 12525) (punctuation 12516 . 12517) (CHAR 12511 . 12515) (CONST 12505 . 12510) (punctuation 12503 . 12504) (symbol 12493 . 12503) (punctuation 12492 . 12493) (CHAR 12487 . 12491) (CONST 12481 . 12486) (symbol 12469 . 12479) (punctuation 12468 . 12469) (CHAR 12463 . 12467) (EXTERN 12456 . 12462) (punctuation 11993 . 11994) (symbol 11950 . 11960) (punctuation 11938 . 11939) (punctuation 11937 . 11938) (CHAR 11932 . 11936) (punctuation 11921 . 11922) (symbol 11914 . 11921) (punctuation 11902 . 11903) (CHAR 11897 . 11901) (CONST 11891 . 11896) (punctuation 11889 . 11890) (symbol 11886 . 11889) (punctuation 11874 . 11875) (CHAR 11869 . 11873) (symbol 11859 . 11867) (punctuation 11858 . 11859) (CHAR 11853 . 11857) (EXTERN 11846 . 11852) (punctuation 11825 . 11826) (symbol 11782 . 11792) (punctuation 11770 . 11771) (punctuation 11769 . 11770) (CHAR 11764 . 11768) (punctuation 11758 . 11759) (symbol 11751 . 11758) (punctuation 11739 . 11740) (CHAR 11734 . 11738) (CONST 11728 . 11733) (punctuation 11722 . 11723) (symbol 11719 . 11722) (punctuation 11707 . 11708) (CHAR 11702 . 11706) (symbol 11690 . 11700) (punctuation 11689 . 11690) (CHAR 11684 . 11688) (EXTERN 11677 . 11683) (punctuation 11551 . 11552) (symbol 11514 . 11521) (punctuation 11502 . 11503) (CHAR 11497 . 11501) (CONST 11491 . 11496) (punctuation 11489 . 11490) (symbol 11486 . 11489) (punctuation 11474 . 11475) (CHAR 11469 . 11473) (symbol 11461 . 11467) (punctuation 11460 . 11461) (CHAR 11455 . 11459) (EXTERN 11448 . 11454) (punctuation 11375 . 11376) (symbol 11315 . 11323) (punctuation 11314 . 11315) (CHAR 11309 . 11313) (CONST 11303 . 11308) (punctuation 11301 . 11302) (symbol 11291 . 11301) (punctuation 11290 . 11291) (CHAR 11285 . 11289) (CONST 11279 . 11284) (symbol 11271 . 11277) (punctuation 11270 . 11271) (CHAR 11265 . 11269) (EXTERN 11258 . 11264) (punctuation 10535 . 10536) (symbol 10475 . 10483) (punctuation 10474 . 10475) (CHAR 10469 . 10473) (CONST 10463 . 10468) (punctuation 10461 . 10462) (symbol 10458 . 10461) (punctuation 10457 . 10458) (CHAR 10452 . 10456) (CONST 10446 . 10451) (symbol 10437 . 10444) (punctuation 10436 . 10437) (CHAR 10431 . 10435) (EXTERN 10424 . 10430) (punctuation 9732 . 9733) (symbol 9672 . 9680) (punctuation 9671 . 9672) (CHAR 9666 . 9670) (CONST 9660 . 9665) (punctuation 9658 . 9659) (symbol 9655 . 9658) (punctuation 9654 . 9655) (CHAR 9649 . 9653) (CONST 9643 . 9648) (symbol 9635 . 9641) (symbol 9628 . 9634) (EXTERN 9621 . 9627) (punctuation 9514 . 9515) (symbol 9454 . 9462) (punctuation 9453 . 9454) (CHAR 9448 . 9452) (CONST 9442 . 9447) (punctuation 9440 . 9441) (symbol 9437 . 9440) (punctuation 9436 . 9437) (CHAR 9431 . 9435) (CONST 9425 . 9430) (symbol 9416 . 9423) (symbol 9409 . 9415) (EXTERN 9402 . 9408) (punctuation 9275 . 9276) (symbol 9223 . 9226) (INT 9219 . 9222) (punctuation 9217 . 9218) (symbol 9214 . 9217) (punctuation 9213 . 9214) (CHAR 9208 . 9212) (CONST 9202 . 9207) (symbol 9191 . 9200) (punctuation 9190 . 9191) (CHAR 9185 . 9189) (EXTERN 9178 . 9184) (punctuation 8726 . 8727) (symbol 8674 . 8677) (INT 8670 . 8673) (punctuation 8668 . 8669) (symbol 8665 . 8668) (punctuation 8664 . 8665) (CHAR 8659 . 8663) (CONST 8653 . 8658) (symbol 8644 . 8651) (punctuation 8643 . 8644) (CHAR 8638 . 8642) (EXTERN 8631 . 8637) (punctuation 8023 . 8024) (symbol 7971 . 7974) (INT 7967 . 7970) (punctuation 7965 . 7966) (symbol 7962 . 7965) (punctuation 7961 . 7962) (CHAR 7956 . 7960) (CONST 7950 . 7955) (symbol 7942 . 7948) (punctuation 7941 . 7942) (CHAR 7936 . 7940) (EXTERN 7929 . 7935) (punctuation 6480 . 6481) (symbol 6426 . 6429) (symbol 6419 . 6425) (punctuation 6417 . 6418) (symbol 6409 . 6417) (punctuation 6408 . 6409) (CHAR 6403 . 6407) (CONST 6397 . 6402) (symbol 6388 . 6395) (punctuation 6387 . 6388) (CHAR 6382 . 6386) (EXTERN 6375 . 6381) (punctuation 6157 . 6158) (symbol 6103 . 6106) (punctuation 6102 . 6103) (CHAR 6097 . 6101) (CONST 6091 . 6096) (symbol 6083 . 6089) (punctuation 6082 . 6083) (CHAR 6077 . 6081) (EXTERN 6070 . 6076) (symbol "__GLIBC_USE_LIB_EXT2" 5986 . 6008) (punctuation 5984 . 5985) (punctuation 5983 . 5984))
+      :lexical-table 
+        '(("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION")
+          ("strdupa" (spp-arg-list ("s") 6608 . 6611) . ((semantic-list "(__extension__							      \\
+    ({									      \\
+      const char *__old = (s);						      \\
+      size_t __len = strlen (__old) + 1;				      \\
+      char *__new = (char *) __builtin_alloca (__len);			      \\
+      (char *) memcpy (__new, __old, __len);				      \\
+    }))" 6628 . 6904)))
+          ("__need_size_t")
+          ("_STRING_H" . ((number "1" 887 . 888)))
+          ("strndupa" (spp-arg-list ("s" "n") 6984 . 6990) . ((semantic-list "(__extension__							      \\
+    ({									      \\
+      const char *__old = (s);						      \\
+      size_t __len = strnlen (__old, (n));				      \\
+      char *__new = (char *) __builtin_alloca (__len + 1);		      \\
+      __new[__len] = '\\0';						      \\
+      (char *) memcpy (__new, __old, __len);				      \\
+    }))" 7007 . 7328)))
+          ("__need_NULL")
+          )
+)
+    (semanticdb-table "semanticdb-table-13e7de0"
       :major-mode c-mode
       :tags nil
       :file "strings.h"
       :pointmax 201
       :fsize 4752
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1884c94"
+    (semanticdb-table "semanticdb-table-13e7e00"
       :major-mode c-mode
       :tags 
         '( ("_ASSERT_H" variable (:constant-flag t) nil [1006 1015])
@@ -3459,7 +3800,7 @@
       :file "assert.h"
       :pointmax 4562
       :fsize 4561
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__ASSERT_VOID_CAST" . ((semantic-list "(void)" 1169 . 1175)))
@@ -3476,7 +3817,7 @@
     }))" 3380 . 3588)))
           )
 )
-    (semanticdb-table "semanticdb-table-18854b4"
+    (semanticdb-table "semanticdb-table-13e7e20"
       :major-mode c-mode
       :tags 
         '( ("_STDINT_H" variable (:constant-flag t) nil [866 875])
@@ -3628,7 +3969,7 @@
       :file "stdint.h"
       :pointmax 8470
       :fsize 8469
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((LONG 2161 . 2165) (UNSIGNED 2152 . 2160) (TYPEDEF 2144 . 2151) (LONG 1815 . 1819) (TYPEDEF 1807 . 1814))
       :lexical-table 
         '(("INT_LEAST16_MAX" . ((semantic-list "(32767)" 3730 . 3737)))
@@ -3699,7 +4040,7 @@
           ("__UINT64_C" (spp-arg-list ("c") 2760 . 2763) . ((spp-symbol-merge ((symbol "c" 2764 . 2765) (symbol "ULL" 2769 . 2772)) 2764 . 2772)))
           )
 )
-    (semanticdb-table "semanticdb-table-188e304"
+    (semanticdb-table "semanticdb-table-13e7e40"
       :major-mode c-mode
       :tags 
         '( ("_ERRNO_H" variable (:constant-flag t) nil [865 873])
@@ -3739,7 +4080,7 @@
       :file "errno.h"
       :pointmax 1833
       :fsize 1678
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ERRNO_H" . ((number "1" 874 . 875)))
@@ -3747,15 +4088,15 @@
           ("errno" . ((semantic-list "(*__errno_location ())" 1262 . 1284)))
           )
 )
-    (semanticdb-table "semanticdb-table-185eeac"
+    (semanticdb-table "semanticdb-table-13e7e60"
       :major-mode c-mode
       :tags nil
       :file "unistd.h"
       :pointmax 201
       :fsize 42738
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1a8d75c"
+    (semanticdb-table "semanticdb-table-13e7e80"
       :major-mode c-mode
       :tags 
         '( ("_INTTYPES_H" variable (:constant-flag t) nil [890 901])
@@ -4011,7 +4352,7 @@
       :file "inttypes.h"
       :pointmax 11893
       :fsize 11892
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((LONG 7249 . 7253) (LONG 7194 . 7198) (punctuation 1199 . 1200) (WCHAR "wchar_t" 1189 . 1199) (INT "int" 1174 . 1188) (TYPEDEF 1166 . 1173))
       :lexical-table 
         '(("PRIdLEAST16" . ((string "\"d\"" 1700 . 1703)))
@@ -4175,15 +4516,15 @@
           ("SCNiPTR" . ((symbol "__PRIPTR_PREFIX" 6746 . 6761) (string "\"i\"" 6762 . 6765)))
           )
 )
-    (semanticdb-table "semanticdb-table-124ac80"
+    (semanticdb-table "semanticdb-table-13e7ea0"
       :major-mode c-mode
       :tags nil
       :file "ctype.h"
       :pointmax 201
       :fsize 10963
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-124a32c"
+    (semanticdb-table "semanticdb-table-13e7ec0"
       :major-mode c-mode
       :tags 
         '( ("_FCNTL_H" variable (:constant-flag t) nil [880 888])
@@ -4458,7 +4799,7 @@
       :file "fcntl.h"
       :pointmax 9464
       :fsize 10958
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((punctuation 9222 . 9223) (symbol 9216 . 9221) (symbol 9208 . 9215) (punctuation 9206 . 9207) (symbol 9198 . 9206) (symbol 9190 . 9197) (punctuation 9188 . 9189) (symbol 9184 . 9188) (INT 9180 . 9183) (symbol 9161 . 9178) (INT 9157 . 9160) (EXTERN 9150 . 9156) (punctuation 8901 . 8902) (symbol 8895 . 8900) (symbol 8889 . 8894) (punctuation 8887 . 8888) (symbol 8879 . 8887) (symbol 8873 . 8878) (punctuation 8871 . 8872) (symbol 8867 . 8871) (INT 8863 . 8866) (symbol 8846 . 8861) (INT 8842 . 8845) (EXTERN 8835 . 8841) (punctuation 8633 . 8634) (symbol 8616 . 8624) (INT 8612 . 8615) (punctuation 8603 . 8604) (symbol 8598 . 8603) (symbol 8590 . 8597) (punctuation 8588 . 8589) (symbol 8580 . 8588) (symbol 8572 . 8579) (punctuation 8570 . 8571) (symbol 8566 . 8570) (INT 8562 . 8565) (symbol 8545 . 8560) (INT 8541 . 8544) (EXTERN 8534 . 8540) (punctuation 8272 . 8273) (symbol 8255 . 8263) (INT 8251 . 8254) (punctuation 8244 . 8245) (symbol 8239 . 8244) (symbol 8233 . 8238) (punctuation 8231 . 8232) (symbol 8223 . 8231) (symbol 8217 . 8222) (punctuation 8215 . 8216) (symbol 8211 . 8215) (INT 8207 . 8210) (symbol 8192 . 8205) (INT 8188 . 8191) (EXTERN 8181 . 8187) (punctuation 7992 . 7993) (symbol 7986 . 7991) (symbol 7978 . 7985) (punctuation 7976 . 7977) (symbol 7971 . 7976) (INT 7967 . 7970) (punctuation 7965 . 7966) (symbol 7961 . 7965) (INT 7957 . 7960) (symbol 7948 . 7955) (INT 7944 . 7947) (EXTERN 7937 . 7943) (punctuation 7752 . 7753) (symbol 7746 . 7751) (symbol 7740 . 7745) (punctuation 7738 . 7739) (symbol 7733 . 7738) (INT 7729 . 7732) (punctuation 7727 . 7728) (symbol 7723 . 7727) (INT 7719 . 7722) (symbol 7712 . 7717) (INT 7708 . 7711) (EXTERN 7701 . 7707) (number "1" 6996 . 7007) (symbol 6988 . 6995) (punctuation 6987 . 6988) (punctuation 6985 . 6986) (punctuation 6984 . 6985))
       :lexical-table 
         '(("__OPEN_NEEDS_MODE" (spp-arg-list ("oflag") 1453 . 1460) . ((semantic-list "(((oflag) & O_CREAT) != 0)" 1461 . 1487)))
@@ -4500,7 +4841,7 @@
           ("S_IRWXO" . ((semantic-list "(S_IRWXG >> 3)" 3786 . 3800)))
           )
 )
-    (semanticdb-table "semanticdb-table-17e2508"
+    (semanticdb-table "semanticdb-table-13e7ee0"
       :major-mode c-mode
       :tags 
         '( ("H_POPT" variable (:constant-flag t) nil [242 248])
@@ -5341,15 +5682,15 @@
           ("POPT_CONTEXT_POSIXMEHARDER" . ((semantic-list "(1U << 2)" 4503 . 4512)))
           )
 )
-    (semanticdb-table "semanticdb-table-162c784"
+    (semanticdb-table "semanticdb-table-13e7f00"
       :major-mode c-mode
       :tags nil
       :file "time.h"
       :pointmax 201
       :fsize 10360
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-186ed2c"
+    (semanticdb-table "semanticdb-table-13e7f20"
       :major-mode c-mode
       :tags 
         '( ("_SYSEXITS_H" variable (:constant-flag t) nil [1667 1678])
@@ -5374,7 +5715,7 @@
       :file "sysexits.h"
       :pointmax 5233
       :fsize 5232
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("EX_OSFILE" . ((number "72" 4806 . 4808)))
@@ -5398,16 +5739,16 @@
           ("EX_CANTCREAT" . ((number "73" 4861 . 4863)))
           )
 )
-    (semanticdb-table "semanticdb-table-1626d08"
+    (semanticdb-table "semanticdb-table-13e7f40"
       :major-mode c-mode
       :tags 
         '( ("sys/syscall.h" include (:system-flag t) nil [1 25]))          
       :file "syscall.h"
       :pointmax 26
       :fsize 25
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-185f560"
+    (semanticdb-table "semanticdb-table-13e7f60"
       :major-mode c-mode
       :tags 
         '( ("_SETJMP_H" variable (:constant-flag t) nil [876 885])
@@ -5525,7 +5866,7 @@
       :file "setjmp.h"
       :pointmax 3670
       :fsize 3669
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("setjmp" (spp-arg-list ("env") 2171 . 2176) . ((symbol "_setjmp" 2177 . 2184) (semantic-list "(env)" 2185 . 2190)))
@@ -5533,7 +5874,7 @@
           ("sigsetjmp" (spp-arg-list ("env" "savemask") 3140 . 3155) . ((symbol "__sigsetjmp" 3156 . 3167) (semantic-list "(env, savemask)" 3168 . 3183)))
           )
 )
-    (semanticdb-table "semanticdb-table-1861194"
+    (semanticdb-table "semanticdb-table-13e7f80"
       :major-mode c-mode
       :tags 
         '( ("_SIGNAL_H" variable (:constant-flag t) nil [877 886])
@@ -5995,7 +6336,7 @@
       :file "signal.h"
       :pointmax 12244
       :fsize 12243
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax '((punctuation 12095 . 12096) (VOID 12082 . 12086) (symbol 12057 . 12080) (INT 12053 . 12056) (EXTERN 12046 . 12052) (punctuation 11971 . 11972) (VOID 11958 . 11962) (symbol 11933 . 11956) (INT 11929 . 11932) (EXTERN 11922 . 11928) (punctuation 11486 . 11487) (symbol 11471 . 11477) (symbol 11456 . 11470) (punctuation 11454 . 11455) (symbol 11449 . 11454) (INT 11445 . 11448) (symbol 11437 . 11443) (symbol 11422 . 11436) (EXTERN 11415 . 11421) (punctuation 11377 . 11378) (symbol 11363 . 11368) (INT 11359 . 11362) (symbol 11348 . 11357) (INT 11344 . 11347) (EXTERN 11337 . 11343) (punctuation 11288 . 11289) (symbol 11274 . 11279) (INT 11270 . 11273) (symbol 11260 . 11268) (INT 11256 . 11259) (EXTERN 11249 . 11255) (punctuation 11189 . 11190) (symbol 11175 . 11180) (INT 11171 . 11174) (symbol 11162 . 11169) (INT 11158 . 11161) (EXTERN 11151 . 11157) (punctuation 11009 . 11010) (symbol 10965 . 10970) (punctuation 10964 . 10965) (symbol 10955 . 10963) (STRUCT 10948 . 10954) (punctuation 10946 . 10947) (symbol 10942 . 10946) (punctuation 10941 . 10942) (symbol 10932 . 10940) (STRUCT 10925 . 10931) (symbol 10915 . 10923) (INT 10911 . 10914) (EXTERN 10904 . 10910) (number "1" 10679 . 10689) (symbol 10671 . 10678) (punctuation 10669 . 10670) (punctuation 10668 . 10669) (number "1" 10538 . 10548) (symbol 10530 . 10537) (punctuation 10528 . 10529) (punctuation 10527 . 10528) (string 4571 . 4587) (semantic-list 4550 . 4561) (symbol 4541 . 4549) (INT 4537 . 4540) (EXTERN 4530 . 4536) (TYPEDEF 1793 . 1800))
       :lexical-table 
         '(("__pid_t_defined")
@@ -6008,7 +6349,7 @@
           ("NSIG" . ((symbol "_NSIG" 5615 . 5620)))
           )
 )
-    (semanticdb-table "semanticdb-table-1257668"
+    (semanticdb-table "semanticdb-table-13e7fa0"
       :major-mode c-mode
       :tags nil
       :file "OMX_Audio.h"
@@ -6016,7 +6357,7 @@
       :fsize 77044
       :lastmodtime '(23320 21217 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b413d4"
+    (semanticdb-table "semanticdb-table-13e7fc0"
       :major-mode c-mode
       :tags nil
       :file "OMX_ContentPipe.h"
@@ -6024,7 +6365,7 @@
       :fsize 9223
       :lastmodtime '(23320 21217 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b84dc8"
+    (semanticdb-table "semanticdb-table-13e7fe0"
       :major-mode c-mode
       :tags nil
       :file "OMX_Core.h"
@@ -6032,7 +6373,7 @@
       :fsize 69514
       :lastmodtime '(23320 21217 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d0479c"
+    (semanticdb-table "semanticdb-table-13e8000"
       :major-mode c-mode
       :tags nil
       :file "OMX_Other.h"
@@ -6040,7 +6381,7 @@
       :fsize 17932
       :lastmodtime '(23320 21217 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d0e6c0"
+    (semanticdb-table "semanticdb-table-13e8020"
       :major-mode c-mode
       :tags nil
       :file "OMX_Types.h"
@@ -6048,7 +6389,7 @@
       :fsize 12909
       :lastmodtime '(23320 21217 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1dcc2f8"
+    (semanticdb-table "semanticdb-table-1313c00"
       :major-mode c-mode
       :tags nil
       :file "aalib.h"
@@ -6056,7 +6397,7 @@
       :fsize 34085
       :lastmodtime '(22315 48215 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b9460c"
+    (semanticdb-table "semanticdb-table-1313c20"
       :major-mode c-mode
       :tags nil
       :file "archive.h"
@@ -6064,15 +6405,15 @@
       :fsize 52251
       :lastmodtime '(23318 18424 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1193964"
+    (semanticdb-table "semanticdb-table-1313c40"
       :major-mode c-mode
       :tags nil
       :file "confuse.h"
       :pointmax 201
       :fsize 51062
-      :lastmodtime '(22934 39638 35069 877000)
+      :lastmodtime '(23417 18399 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d79d5c"
+    (semanticdb-table "semanticdb-table-1313c60"
       :major-mode c-mode
       :tags nil
       :file "curses.h"
@@ -6080,7 +6421,7 @@
       :fsize 99625
       :lastmodtime '(23151 18032 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b18d34"
+    (semanticdb-table "semanticdb-table-1313c80"
       :major-mode c++-mode
       :tags nil
       :file "cursesw.h"
@@ -6088,7 +6429,7 @@
       :fsize 49719
       :lastmodtime '(23151 18033 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d17874"
+    (semanticdb-table "semanticdb-table-1313ca0"
       :major-mode c-mode
       :tags nil
       :file "db_cxx.h"
@@ -6096,7 +6437,7 @@
       :fsize 49057
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1af5b18"
+    (semanticdb-table "semanticdb-table-1313cc0"
       :major-mode c-mode
       :tags nil
       :file "dbstl_base_iterator.h"
@@ -6104,7 +6445,7 @@
       :fsize 16183
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1253a4c"
+    (semanticdb-table "semanticdb-table-1313ce0"
       :major-mode c-mode
       :tags nil
       :file "dbstl_container.h"
@@ -6112,7 +6453,7 @@
       :fsize 18727
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d6aa94"
+    (semanticdb-table "semanticdb-table-1313d00"
       :major-mode c-mode
       :tags nil
       :file "dbstl_dbc.h"
@@ -6120,7 +6461,7 @@
       :fsize 34656
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d60d88"
+    (semanticdb-table "semanticdb-table-1313d20"
       :major-mode c-mode
       :tags nil
       :file "dbstl_map.h"
@@ -6128,7 +6469,7 @@
       :fsize 106749
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1dd6a18"
+    (semanticdb-table "semanticdb-table-1313d40"
       :major-mode c-mode
       :tags nil
       :file "dbstl_vector.h"
@@ -6136,7 +6477,7 @@
       :fsize 96941
       :lastmodtime '(23318 13793 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1de128c"
+    (semanticdb-table "semanticdb-table-1313d60"
       :major-mode c-mode
       :tags nil
       :file "dwarf.h"
@@ -6144,23 +6485,23 @@
       :fsize 30795
       :lastmodtime '(23317 41760 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d3c0a0"
+    (semanticdb-table "semanticdb-table-1313d80"
       :major-mode c-mode
       :tags nil
       :file "expat.h"
       :pointmax 201
-      :fsize 43512
-      :lastmodtime '(23043 2082 0 0)
+      :fsize 43513
+      :lastmodtime '(23418 26099 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1888cac"
+    (semanticdb-table "semanticdb-table-1313da0"
       :major-mode c-mode
       :tags nil
       :file "expat_external.h"
       :pointmax 201
       :fsize 5532
-      :lastmodtime '(23043 2082 0 0)
+      :lastmodtime '(23418 26099 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1ae2d68"
+    (semanticdb-table "semanticdb-table-1313dc0"
       :major-mode c-mode
       :tags nil
       :file "fam.h"
@@ -6168,7 +6509,7 @@
       :fsize 6875
       :lastmodtime '(23311 24965 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b96b94"
+    (semanticdb-table "semanticdb-table-1313de0"
       :major-mode c-mode
       :tags nil
       :file "gawkapi.h"
@@ -6176,7 +6517,7 @@
       :fsize 40228
       :lastmodtime '(23189 28981 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d8b7f0"
+    (semanticdb-table "semanticdb-table-1313e00"
       :major-mode c++-mode
       :tags nil
       :file "gmpxx.h"
@@ -6184,7 +6525,7 @@
       :fsize 116607
       :lastmodtime '(22622 10071 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d0a9e0"
+    (semanticdb-table "semanticdb-table-1313e20"
       :major-mode c-mode
       :tags nil
       :file "gnumake.h"
@@ -6192,7 +6533,7 @@
       :fsize 2912
       :lastmodtime '(22747 29736 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-126a634"
+    (semanticdb-table "semanticdb-table-1313e40"
       :major-mode c-mode
       :tags nil
       :file "grib2.h"
@@ -6200,7 +6541,7 @@
       :fsize 12901
       :lastmodtime '(20115 202 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-184b4a8"
+    (semanticdb-table "semanticdb-table-1313e60"
       :major-mode c-mode
       :tags nil
       :file "hdr10plus.h"
@@ -6208,7 +6549,7 @@
       :fsize 4536
       :lastmodtime '(23298 33862 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d767a4"
+    (semanticdb-table "semanticdb-table-1313e80"
       :major-mode c-mode
       :tags nil
       :file "jerror.h"
@@ -6216,7 +6557,7 @@
       :fsize 15088
       :lastmodtime '(23098 60244 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e12e48"
+    (semanticdb-table "semanticdb-table-1313ea0"
       :major-mode c-mode
       :tags nil
       :file "jmorecfg.h"
@@ -6224,7 +6565,7 @@
       :fsize 15049
       :lastmodtime '(23098 60244 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d270b0"
+    (semanticdb-table "semanticdb-table-1313ec0"
       :major-mode c-mode
       :tags nil
       :file "jpeglib.h"
@@ -6232,7 +6573,7 @@
       :fsize 49875
       :lastmodtime '(23098 60245 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d6b3c4"
+    (semanticdb-table "semanticdb-table-1313ee0"
       :major-mode c-mode
       :tags nil
       :file "lapacke_utils.h"
@@ -6240,7 +6581,7 @@
       :fsize 33161
       :lastmodtime '(23049 7290 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1db10d8"
+    (semanticdb-table "semanticdb-table-1313f00"
       :major-mode c-mode
       :tags nil
       :file "lcms2.h"
@@ -6248,7 +6589,7 @@
       :fsize 101901
       :lastmodtime '(23093 29997 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1af5bac"
+    (semanticdb-table "semanticdb-table-1313f20"
       :major-mode c-mode
       :tags nil
       :file "libelf.h"
@@ -6256,7 +6597,7 @@
       :fsize 19210
       :lastmodtime '(23317 41760 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1db17b4"
+    (semanticdb-table "semanticdb-table-1313f40"
       :major-mode c-mode
       :tags nil
       :file "libmng.h"
@@ -6264,7 +6605,7 @@
       :fsize 177692
       :lastmodtime '(23317 16689 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d2d0dc"
+    (semanticdb-table "semanticdb-table-1313f60"
       :major-mode c-mode
       :tags nil
       :file "libv4l1.h"
@@ -6272,7 +6613,7 @@
       :fsize 2918
       :lastmodtime '(23175 17117 446815 105000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1ca9a38"
+    (semanticdb-table "semanticdb-table-13b9f2c"
       :major-mode c-mode
       :tags nil
       :file "libv4l2.h"
@@ -6280,7 +6621,7 @@
       :fsize 4726
       :lastmodtime '(23175 17117 60815 134000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e09b8c"
+    (semanticdb-table "semanticdb-table-13b9f4c"
       :major-mode c-mode
       :tags nil
       :file "libv4l2rds.h"
@@ -6288,7 +6629,7 @@
       :fsize 14658
       :lastmodtime '(23175 17117 691815 87000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-17cdde4"
+    (semanticdb-table "semanticdb-table-13b9f6c"
       :major-mode c-mode
       :tags nil
       :file "libv4lconvert.h"
@@ -6296,7 +6637,7 @@
       :fsize 6306
       :lastmodtime '(23175 17116 782815 155000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1ba588c"
+    (semanticdb-table "semanticdb-table-13b9f8c"
       :major-mode c-mode
       :tags nil
       :file "lz4.h"
@@ -6304,7 +6645,7 @@
       :fsize 30543
       :lastmodtime '(23293 14928 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1c9b378"
+    (semanticdb-table "semanticdb-table-13b9fac"
       :major-mode c-mode
       :tags nil
       :file "lz4frame.h"
@@ -6312,7 +6653,7 @@
       :fsize 24911
       :lastmodtime '(23293 14928 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d277c0"
+    (semanticdb-table "semanticdb-table-13b9fcc"
       :major-mode c-mode
       :tags nil
       :file "lz4hc.h"
@@ -6320,7 +6661,7 @@
       :fsize 17799
       :lastmodtime '(23293 14928 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b88f1c"
+    (semanticdb-table "semanticdb-table-13b9fec"
       :major-mode c-mode
       :tags nil
       :file "lzma.h"
@@ -6328,7 +6669,7 @@
       :fsize 9817
       :lastmodtime '(23270 35613 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1250fbc"
+    (semanticdb-table "semanticdb-table-13ba00c"
       :major-mode c-mode
       :tags nil
       :file "mpfr.h"
@@ -6336,7 +6677,7 @@
       :fsize 51563
       :lastmodtime '(23164 12837 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d6b230"
+    (semanticdb-table "semanticdb-table-13ba02c"
       :major-mode c-mode
       :tags nil
       :file "mpg123.h"
@@ -6344,7 +6685,7 @@
       :fsize 69827
       :lastmodtime '(23232 41740 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1de340c"
+    (semanticdb-table "semanticdb-table-13ba04c"
       :major-mode c-mode
       :tags nil
       :file "mtdev-plumbing.h"
@@ -6352,7 +6693,7 @@
       :fsize 4785
       :lastmodtime '(23317 18628 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1c8e654"
+    (semanticdb-table "semanticdb-table-13ba06c"
       :major-mode c-mode
       :tags nil
       :file "mtdev.h"
@@ -6360,7 +6701,7 @@
       :fsize 6741
       :lastmodtime '(23317 18628 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-187f150"
+    (semanticdb-table "semanticdb-table-13ba08c"
       :major-mode c-mode
       :tags nil
       :file "muParserStack.h"
@@ -6368,7 +6709,7 @@
       :fsize 4106
       :lastmodtime '(23317 18537 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1ddfccc"
+    (semanticdb-table "semanticdb-table-13ba0ac"
       :major-mode c-mode
       :tags nil
       :file "muParserToken.h"
@@ -6376,7 +6717,7 @@
       :fsize 13089
       :lastmodtime '(23317 18537 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e0c808"
+    (semanticdb-table "semanticdb-table-13ba0cc"
       :major-mode c-mode
       :tags nil
       :file "otf.h"
@@ -6384,7 +6725,7 @@
       :fsize 41655
       :lastmodtime '(23164 54811 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d2831c"
+    (semanticdb-table "semanticdb-table-13ba0ec"
       :major-mode c-mode
       :tags nil
       :file "out123.h"
@@ -6392,7 +6733,7 @@
       :fsize 24404
       :lastmodtime '(23232 41740 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e096cc"
+    (semanticdb-table "semanticdb-table-13ba10c"
       :major-mode c-mode
       :tags nil
       :file "paper.h"
@@ -6400,7 +6741,7 @@
       :fsize 2042
       :lastmodtime '(22628 57583 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d65978"
+    (semanticdb-table "semanticdb-table-13ba12c"
       :major-mode c-mode
       :tags nil
       :file "pcre.h"
@@ -6408,7 +6749,7 @@
       :fsize 31718
       :lastmodtime '(23228 43206 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1afa1ec"
+    (semanticdb-table "semanticdb-table-13ba14c"
       :major-mode c-mode
       :tags nil
       :file "pcrecpp.h"
@@ -6416,7 +6757,7 @@
       :fsize 26529
       :lastmodtime '(23228 43205 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d78fb0"
+    (semanticdb-table "semanticdb-table-13ba16c"
       :major-mode c-mode
       :tags nil
       :file "pipeline.h"
@@ -6424,7 +6765,7 @@
       :fsize 17794
       :lastmodtime '(23051 13788 250658 440000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d99988"
+    (semanticdb-table "semanticdb-table-13ba18c"
       :major-mode c-mode
       :tags nil
       :file "punycode.h"
@@ -6432,7 +6773,7 @@
       :fsize 9384
       :lastmodtime '(23235 11168 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d4f658"
+    (semanticdb-table "semanticdb-table-13ba1ac"
       :major-mode c-mode
       :tags nil
       :file "pwquality.h"
@@ -6440,7 +6781,7 @@
       :fsize 7260
       :lastmodtime '(23044 54133 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b103e4"
+    (semanticdb-table "semanticdb-table-13ba1cc"
       :major-mode c-mode
       :tags nil
       :file "sndfile.h"
@@ -6448,7 +6789,7 @@
       :fsize 28684
       :lastmodtime '(22770 34203 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1cc7358"
+    (semanticdb-table "semanticdb-table-13ba1ec"
       :major-mode c-mode
       :tags nil
       :file "sqlite3.h"
@@ -6456,7 +6797,7 @@
       :fsize 544160
       :lastmodtime '(23318 42091 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-124c0f8"
+    (semanticdb-table "semanticdb-table-13ba20c"
       :major-mode c-mode
       :tags nil
       :file "sqlite3ext.h"
@@ -6464,23 +6805,23 @@
       :fsize 32989
       :lastmodtime '(23318 42091 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d66010"
+    (semanticdb-table "semanticdb-table-13ba22c"
       :major-mode c-mode
       :tags nil
       :file "tdb.h"
       :pointmax 201
       :fsize 31323
-      :lastmodtime '(22873 22006 0 0)
+      :lastmodtime '(23417 11150 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1df4dbc"
+    (semanticdb-table "semanticdb-table-13ba24c"
       :major-mode c-mode
       :tags nil
       :file "tevent.h"
       :pointmax 201
-      :fsize 63659
-      :lastmodtime '(23183 60648 0 0)
+      :fsize 78458
+      :lastmodtime '(23417 11309 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1794894"
+    (semanticdb-table "semanticdb-table-13ba26c"
       :major-mode c-mode
       :tags nil
       :file "turbojpeg.h"
@@ -6488,7 +6829,7 @@
       :fsize 65173
       :lastmodtime '(23098 60245 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e3a81c"
+    (semanticdb-table "semanticdb-table-13ba28c"
       :major-mode c-mode
       :tags nil
       :file "unicase.h"
@@ -6496,7 +6837,7 @@
       :fsize 20564
       :lastmodtime '(23313 8824 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1eac888"
+    (semanticdb-table "semanticdb-table-13ba2ac"
       :major-mode c-mode
       :tags nil
       :file "uniconv.h"
@@ -6504,7 +6845,7 @@
       :fsize 7732
       :lastmodtime '(23313 8824 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e5e1f4"
+    (semanticdb-table "semanticdb-table-13ba2cc"
       :major-mode c-mode
       :tags nil
       :file "uninorm.h"
@@ -6512,7 +6853,7 @@
       :fsize 10965
       :lastmodtime '(23313 8824 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e7e724"
+    (semanticdb-table "semanticdb-table-13c2228"
       :major-mode c-mode
       :tags nil
       :file "unistdio.h"
@@ -6520,7 +6861,7 @@
       :fsize 9732
       :lastmodtime '(23313 8824 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e69f34"
+    (semanticdb-table "semanticdb-table-13c2248"
       :major-mode c-mode
       :tags nil
       :file "unistr.h"
@@ -6528,7 +6869,7 @@
       :fsize 23008
       :lastmodtime '(23313 8824 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b710b0"
+    (semanticdb-table "semanticdb-table-13c2268"
       :major-mode c-mode
       :tags nil
       :file "verto.h"
@@ -6536,7 +6877,7 @@
       :fsize 19437
       :lastmodtime '(23282 13742 638783 540000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b11620"
+    (semanticdb-table "semanticdb-table-13c2288"
       :major-mode c-mode
       :tags nil
       :file "wayland-client-protocol.h"
@@ -6544,7 +6885,7 @@
       :fsize 178493
       :lastmodtime '(23289 35502 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1cf6278"
+    (semanticdb-table "semanticdb-table-13c22a8"
       :major-mode c-mode
       :tags nil
       :file "wayland-server-protocol.h"
@@ -6552,15 +6893,15 @@
       :fsize 139846
       :lastmodtime '(23289 35502 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1bb5e2c"
+    (semanticdb-table "semanticdb-table-13c22c8"
       :major-mode c-mode
       :tags nil
       :file "x264.h"
       :pointmax 201
-      :fsize 46920
-      :lastmodtime '(23262 4790 737177 575000)
+      :fsize 46598
+      :lastmodtime '(23401 28047 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-189ede4"
+    (semanticdb-table "semanticdb-table-13c22e8"
       :major-mode c-mode
       :tags nil
       :file "x265.h"
@@ -6568,7 +6909,7 @@
       :fsize 90850
       :lastmodtime '(23298 33862 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d3c0d4"
+    (semanticdb-table "semanticdb-table-13c2308"
       :major-mode c-mode
       :tags nil
       :file "xtables.h"
@@ -6576,7 +6917,7 @@
       :fsize 17696
       :lastmodtime '(23170 10151 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1dd841c"
+    (semanticdb-table "semanticdb-table-13c2328"
       :major-mode c-mode
       :tags nil
       :file "sigsegv.h"
@@ -6584,7 +6925,7 @@
       :fsize 9397
       :lastmodtime '(23136 55345 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d84944"
+    (semanticdb-table "semanticdb-table-13c2348"
       :major-mode c-mode
       :tags nil
       :file "gsasl.h"
@@ -6592,7 +6933,7 @@
       :fsize 18960
       :lastmodtime '(22559 37065 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1cfb880"
+    (semanticdb-table "semanticdb-table-13c2368"
       :major-mode c-mode
       :tags nil
       :file "lmdb.h"
@@ -6600,7 +6941,7 @@
       :fsize 73845
       :lastmodtime '(23230 6634 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d27668"
+    (semanticdb-table "semanticdb-table-13c2388"
       :major-mode c-mode
       :tags nil
       :file "zbuff.h"
@@ -6608,7 +6949,7 @@
       :fsize 11474
       :lastmodtime '(23355 19878 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d048e0"
+    (semanticdb-table "semanticdb-table-13c23a8"
       :major-mode c-mode
       :tags nil
       :file "zstd.h"
@@ -6616,23 +6957,23 @@
       :fsize 90830
       :lastmodtime '(23355 19878 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d4f5e0"
+    (semanticdb-table "semanticdb-table-13c23c8"
       :major-mode c-mode
       :tags nil
       :file "ldb.h"
       :pointmax 201
       :fsize 71558
-      :lastmodtime '(23367 1944 0 0)
+      :lastmodtime '(23417 12081 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e3fc6c"
+    (semanticdb-table "semanticdb-table-13c23e8"
       :major-mode c-mode
       :tags nil
       :file "ldb_errors.h"
       :pointmax 201
       :fsize 7644
-      :lastmodtime '(23367 1944 0 0)
+      :lastmodtime '(23417 12081 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e4ee50"
+    (semanticdb-table "semanticdb-table-13c2408"
       :major-mode c-mode
       :tags nil
       :file "luaconf.h"
@@ -6640,7 +6981,7 @@
       :fsize 21638
       :lastmodtime '(23364 53265 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1c8e5d4"
+    (semanticdb-table "semanticdb-table-13c2428"
       :major-mode c-mode
       :tags nil
       :file "npth.h"
@@ -6648,7 +6989,7 @@
       :fsize 15161
       :lastmodtime '(23372 21707 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1cc7958"
+    (semanticdb-table "semanticdb-table-13c2448"
       :major-mode c-mode
       :tags nil
       :file "talloc.h"
@@ -6656,7 +6997,7 @@
       :fsize 63640
       :lastmodtime '(23376 58146 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d5a458"
+    (semanticdb-table "semanticdb-table-13c2468"
       :major-mode c-mode
       :tags nil
       :file "zlib.h"
@@ -6664,7 +7005,7 @@
       :fsize 96239
       :lastmodtime '(23381 32049 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1dc5244"
+    (semanticdb-table "semanticdb-table-13c2488"
       :major-mode c-mode
       :tags nil
       :file "alpm.h"
@@ -6672,111 +7013,111 @@
       :fsize 54156
       :lastmodtime '(23386 37542 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1c89684"
+    (semanticdb-table "semanticdb-table-13c24a8"
       :major-mode c-mode
       :tags nil
       :file "argp.h"
       :pointmax 201
       :fsize 25414
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1df3b8c"
+    (semanticdb-table "semanticdb-table-13c24c8"
       :major-mode c-mode
       :tags nil
       :file "dlfcn.h"
       :pointmax 201
       :fsize 7018
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e12828"
+    (semanticdb-table "semanticdb-table-13c24e8"
       :major-mode c-mode
       :tags nil
       :file "fenv.h"
       :pointmax 201
       :fsize 5857
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e3cf40"
+    (semanticdb-table "semanticdb-table-13c2508"
       :major-mode c-mode
       :tags nil
       :file "fnmatch.h"
       :pointmax 201
       :fsize 2295
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1de15e8"
+    (semanticdb-table "semanticdb-table-13c2528"
       :major-mode c-mode
       :tags nil
       :file "ifaddrs.h"
       :pointmax 201
       :fsize 2840
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1deef3c"
+    (semanticdb-table "semanticdb-table-13c2548"
       :major-mode c-mode
       :tags nil
       :file "obstack.h"
       :pointmax 201
       :fsize 21306
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d980bc"
+    (semanticdb-table "semanticdb-table-13c2568"
       :major-mode c-mode
       :tags nil
       :file "printf.h"
       :pointmax 201
       :fsize 6800
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b96a18"
+    (semanticdb-table "semanticdb-table-13c2588"
       :major-mode c-mode
       :tags nil
       :file "pthread.h"
       :pointmax 201
       :fsize 41269
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1db412c"
+    (semanticdb-table "semanticdb-table-13c25a8"
       :major-mode c-mode
       :tags nil
       :file "regex.h"
       :pointmax 201
       :fsize 24715
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1ec1c58"
+    (semanticdb-table "semanticdb-table-13c25c8"
       :major-mode c-mode
       :tags nil
       :file "sgtty.h"
       :pointmax 201
       :fsize 1343
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b37fec"
+    (semanticdb-table "semanticdb-table-13c25e8"
       :major-mode c-mode
       :tags nil
       :file "threads.h"
       :pointmax 201
       :fsize 6655
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1cbb664"
+    (semanticdb-table "semanticdb-table-13db300"
       :major-mode c-mode
       :tags nil
       :file "wchar.h"
       :pointmax 201
       :fsize 31111
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d11fa8"
+    (semanticdb-table "semanticdb-table-13db320"
       :major-mode c-mode
       :tags nil
       :file "wctype.h"
       :pointmax 201
       :fsize 5548
-      :lastmodtime '(23393 60984 0 0)
+      :lastmodtime '(23406 2233 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1dc6a40"
+    (semanticdb-table "semanticdb-table-13db340"
       :major-mode c-mode
       :tags nil
       :file "libdevmapper.h"
@@ -6784,7 +7125,7 @@
       :fsize 135158
       :lastmodtime '(23394 1169 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e096ec"
+    (semanticdb-table "semanticdb-table-13db360"
       :major-mode c-mode
       :tags nil
       :file "libcryptsetup.h"
@@ -6792,7 +7133,7 @@
       :fsize 61729
       :lastmodtime '(23396 17088 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d86734"
+    (semanticdb-table "semanticdb-table-13db380"
       :major-mode c-mode
       :tags nil
       :file "ldap.h"
@@ -6800,7 +7141,7 @@
       :fsize 65253
       :lastmodtime '(23393 31065 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b3d7c0"
+    (semanticdb-table "semanticdb-table-13db3a0"
       :major-mode c-mode
       :tags nil
       :file "proxy.h"
@@ -6808,7 +7149,7 @@
       :fsize 4298
       :lastmodtime '(23393 31756 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1daeae8"
+    (semanticdb-table "semanticdb-table-13db3c0"
       :major-mode c-mode
       :tags nil
       :file "libinput.h"
@@ -6816,7 +7157,7 @@
       :fsize 177326
       :lastmodtime '(23399 13101 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d77bec"
+    (semanticdb-table "semanticdb-table-13db3e0"
       :major-mode c-mode
       :tags nil
       :file "m17n-flt.h"
@@ -6824,7 +7165,7 @@
       :fsize 17009
       :lastmodtime '(23400 57066 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d28180"
+    (semanticdb-table "semanticdb-table-13db400"
       :major-mode c-mode
       :tags nil
       :file "m17n.h"
@@ -6832,7 +7173,7 @@
       :fsize 45945
       :lastmodtime '(23400 57066 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e41810"
+    (semanticdb-table "semanticdb-table-13db420"
       :major-mode c-mode
       :tags nil
       :file "oniguruma.h"
@@ -6840,7 +7181,7 @@
       :fsize 44736
       :lastmodtime '(23256 32685 309448 658000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d71874"
+    (semanticdb-table "semanticdb-table-13db440"
       :major-mode c-mode
       :tags nil
       :file "ansidecl.h"
@@ -6848,7 +7189,7 @@
       :fsize 13257
       :lastmodtime '(23406 64121 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1e9eae0"
+    (semanticdb-table "semanticdb-table-13db460"
       :major-mode c-mode
       :tags nil
       :file "bfd.h"
@@ -6856,7 +7197,7 @@
       :fsize 264285
       :lastmodtime '(23406 64121 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1d985f4"
+    (semanticdb-table "semanticdb-table-13db480"
       :major-mode c-mode
       :tags nil
       :file "bfdlink.h"
@@ -6864,7 +7205,7 @@
       :fsize 34584
       :lastmodtime '(23406 64121 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1a9e6f8"
+    (semanticdb-table "semanticdb-table-13db4a0"
       :major-mode c-mode
       :tags nil
       :file "atomic_ops_stack.h"
@@ -6872,7 +7213,7 @@
       :fsize 7204
       :lastmodtime '(23405 49472 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1b8c264"
+    (semanticdb-table "semanticdb-table-13db4c0"
       :major-mode c-mode
       :tags nil
       :file "pg_config_manual.h"

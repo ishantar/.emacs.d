@@ -142,6 +142,7 @@ Clojure form to be sent to Cider to check the current buffer."
   (let* ((form (plist-get properties :form))
          (orig-predicate (plist-get properties :predicate)))
 
+
     (when (plist-get :start properties)
       (error "Checker %s may not have :start" name))
     (when (plist-get :modes properties)
