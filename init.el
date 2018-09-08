@@ -106,7 +106,7 @@
  '(cua-normal-cursor-color "light grey")
  '(cursor-in-non-selected-windows 'hollow)
  '(custom-safe-themes
-    '("1d6281fda54c6cf76ff730d315c804bf511fa7e760f046db83a96ea98f823e3b" "6aa15287ed7f2ddf73e6177a03308488f2928f3763f7809da60294ef212c008a" "04294d4d1e38081f2d2f0f2781f8f05b9b3f8a46dba083ba59278c4cb22dfa23" "8e87db652bb1e95e2e474bfdd83d62b4edef1bb73f6f5b390dc5f43850fe86b0" "29a47a1805a9a763f0bfe04306b6a3fdc3801f8b4d55fbc01521b1421d0b25d0" "c1f975bd275528dcb916cb4bfdec66f04162ab2d4cf9554635ce9d6dc795e67c" default))
+    '("eae2f15748f64497a99475889f650151964bb6f1d408e9e6730bb89f55a613c4" "bd736b2cfe8c5e8bae6213ea64a1259f001c2c58824474f10c6c8728017bcbb9" "1d6281fda54c6cf76ff730d315c804bf511fa7e760f046db83a96ea98f823e3b" "6aa15287ed7f2ddf73e6177a03308488f2928f3763f7809da60294ef212c008a" "04294d4d1e38081f2d2f0f2781f8f05b9b3f8a46dba083ba59278c4cb22dfa23" "8e87db652bb1e95e2e474bfdd83d62b4edef1bb73f6f5b390dc5f43850fe86b0" "29a47a1805a9a763f0bfe04306b6a3fdc3801f8b4d55fbc01521b1421d0b25d0" "c1f975bd275528dcb916cb4bfdec66f04162ab2d4cf9554635ce9d6dc795e67c" default))
  '(dired-hide-details-hide-information-lines nil)
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "-alh")
@@ -250,30 +250,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ac-candidate-face ((t (:inherit cider-result-overlay-face))))
- '(cider-reader-conditional-face ((t (:inherit font-lock-preprocessor-face))))
- '(cider-repl-prompt-face ((t (:inherit font-lock-keyword-face))))
- '(cider-repl-result-face ((t (:slant italic))))
- '(cider-repl-stderr-face ((t (:inherit warning))))
- '(cider-repl-stdout-face ((t (:inherit default))))
- '(cider-result-overlay-face ((t (:background "grey20" :box (:line-width -1 :color "black")))))
- '(cider-warning-highlight-face ((t (:inherit font-lock-warning-face))))
- '(clojure-character-face ((t (:foreground "#5bbb35" :weight normal :width normal))))
- '(clojure-keyword-face ((t (:inherit font-lock-constant-face))))
- '(comint-highlight-input ((t nil)))
- '(flycheck-color-mode-line-warning-face ((t (:inherit mode-line :overline "MediumOrchid2"))))
- '(font-lock-function-name-face ((t (:foreground "#20ca9a" :weight semi-bold))))
- '(font-lock-string-face ((t (:foreground "#5bbb35" :weight normal))))
- '(font-lock-type-face ((t (:foreground "#63afd8" :weight semi-bold))))
- '(font-lock-variable-name-face ((t (:foreground "goldenrod"))))
- '(font-lock-warning-face ((t (:inherit nil :underline (:color "yellow" :style wave)))))
- '(line-number ((t (:inherit (default shadow\  hl-line) :foreground "#8b8682" :slant normal :height 110 :width condensed))))
- '(line-number-current-line ((t (:inherit (hl-line line-number)))))
- '(semantic-unmatched-syntax-face ((t (:underline "#e9967a"))))
- '(term ((t (:background "#222222" :distant-foreground "#222222"))))
- '(term-bold ((t (:inherit term :weight bold))))
- '(term-underline ((t (:inherit term :underline t))))
- '(warning ((t (:foreground "LightSalmon3" :weight normal)))))
+ )
+
+
 
 
 
