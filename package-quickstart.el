@@ -56,10 +56,10 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180825.1712/yasnippet-snippets-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180909.1015/yasnippet-snippets-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180825.1712/yasnippet-snippets-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180909.1015/yasnippet-snippets-autoloads.el") (car load-path))))
 
 
 
@@ -1773,10 +1773,10 @@ See `sesman-browser-mode' for more details.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180903.2111/cider-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180908.1925/cider-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180903.2111/cider-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180908.1925/cider-autoloads.el") (car load-path))))
 
 
 
@@ -4229,6 +4229,24 @@ The commands are `shell-command', `shell-command-on-region', `grep',
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/sed-mode-1.0/sed-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sed-mode-1.0/sed-mode-autoloads.el") (car load-path))))
+
+
+ (add-to-list 'auto-mode-alist '("\\.sed\\'" . sed-mode))
+ (add-to-list 'interpreter-mode-alist '("sed" . sed-mode))
+
+(autoload 'sed-mode "sed-mode" "\
+Sed editing mode.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sed-mode" '("sed-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/scheme-here-20141028.718/scheme-here-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -4835,10 +4853,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20180821.1430/ghub-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20180909.2230/ghub-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20180821.1430/ghub-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20180909.2230/ghub-autoloads.el") (car load-path))))
 
 
 
@@ -7394,10 +7412,10 @@ Create a new BRANCH and check it out in a new worktree at PATH.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180907.2248/rustic-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180909.1227/rustic-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180907.2248/rustic-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180909.1227/rustic-autoloads.el") (car load-path))))
 
 
 
@@ -7424,7 +7442,7 @@ Run `cargo clippy'.
 \(fn)" t nil)
 
 (autoload 'rustic-cargo-test "rustic-cargo" "\
-Run `cargo test'.
+Run 'cargo test'.
 
 \(fn)" t nil)
 
@@ -7571,10 +7589,10 @@ Major mode for Rust code.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rtags-20180829.449/rtags-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rtags-20180909.1749/rtags-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rtags-20180829.449/rtags-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rtags-20180909.1749/rtags-autoloads.el") (car load-path))))
 
 
 
@@ -13254,10 +13272,10 @@ Use this together with the `option', `option-list' and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180830.523/lsp-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180910.710/lsp-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180830.523/lsp-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180910.710/lsp-mode-autoloads.el") (car load-path))))
 
 
 
@@ -13366,10 +13384,10 @@ Face used for highlighting symbols being written to." :group 'lsp-faces)
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180904.1947/lsp-ui-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180910.328/lsp-ui-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180904.1947/lsp-ui-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180910.328/lsp-ui-autoloads.el") (car load-path))))
 
 
 
@@ -14394,10 +14412,10 @@ Local bindings (`counsel-mode-map'):
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/erlang-20180816.1134/erlang-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/erlang-20180910.1300/erlang-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/erlang-20180816.1134/erlang-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/erlang-20180910.1300/erlang-autoloads.el") (car load-path))))
 
 
 
@@ -20093,6 +20111,24 @@ for details.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-lsp-20180828.438/company-lsp-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-lsp-20180828.438/company-lsp-autoloads.el") (car load-path))))
+
+
+
+(autoload 'company-lsp "company-lsp" "\
+Define a company backend for lsp-mode.
+
+See the documentation of `company-backends' for COMMAND and ARG.
+
+\(fn COMMAND &optional ARG &rest _)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-lsp" '("company-lsp-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/company-erlang-20170123.538/company-erlang-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -21794,14 +21830,14 @@ Sends the first answer to 4clojure and gets a message back
 )
 (setq package-activated-list
   (append
-    '(yasnippet yasnippet-snippets yasnippet-classic-snippets yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server a parseclj treepy walkclj vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover clojure-mode epl pkg-info queue spinner sesman cider typed-clojure-mode tNFA heap trie tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco tab-jump-out ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh srefactor sotlisp sotclojure snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment simple-httpd signal shell-toggle shell-switcher shell-command scheme-here scheme-complete f projectile markdown-mode ghub git-commit magit-popup magit rustic rust-playground rust-mode rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode pos-tip racer quick-peek quack preproc-font-lock posframe popwin popup popup-complete picolisp-mode pcache list-utils persistent-soft peg pcmpl-git pcmpl-args parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode malinka makey makefile-executor macrostep macro-math dash-functional flycheck lsp-mode lsp-ui lsp-rust lsp-clangd ht list-packages-ext lisp-extra-font-lock lfe-mode language-detection kv json-snatcher json-reformat json-mode jdecomp javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-command git-auto-commit-mode git-attr git function-args frame-tabs foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-rust flymake-cursor flymake-cppcheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rust flycheck-rtags flycheck-rebar3 flycheck-posframe flycheck-pos-tip flycheck-pkg-config flycheck-joker flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major clj-refactor discover discover-clj-refactor diffview delim-kill db ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile cargo c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
+    '(yasnippet yasnippet-snippets yasnippet-classic-snippets yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color s with-simulated-input async with-editor imenu-list window-purpose window-layout web-server a parseclj treepy walkclj vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist dash shut-up undercover clojure-mode epl pkg-info queue spinner sesman cider typed-clojure-mode tNFA heap trie tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco tab-jump-out ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh srefactor sotlisp sotclojure snippet smartparens expand-region smart-forward smart-cursor-color smart-compile smart-comment simple-httpd signal shell-toggle shell-switcher shell-command sed-mode scheme-here scheme-complete f projectile markdown-mode ghub git-commit magit-popup magit rustic rust-playground rust-mode rtags deferred request request-deferred fullframe repl-toggle readline-complete faceup racket-mode pos-tip racer quick-peek quack preproc-font-lock posframe popwin popup popup-complete picolisp-mode pcache list-utils persistent-soft peg pcmpl-git pcmpl-args parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode malinka makey makefile-executor macrostep macro-math dash-functional flycheck lsp-mode lsp-ui lsp-rust lsp-clangd ht list-packages-ext lisp-extra-font-lock lfe-mode language-detection kv json-snatcher json-reformat json-mode jdecomp javap-mode hydra ivy-hydra counsel erlang ivy-erlang-complete ivy-dired-history isend-mode ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hlinum hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-indentation highlight-indent-guides highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs google-c-style golden-ratio-scroll-screen gitlab github-issues gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim bitbucket git-commit-insert-issue git-command git-auto-commit-mode git-attr git function-args frame-tabs foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-rust flymake-cursor flymake-cppcheck flycheck-title flycheck-tip flycheck-swiftlint flycheck-rust flycheck-rtags flycheck-rebar3 flycheck-posframe flycheck-pos-tip flycheck-pkg-config flycheck-joker flycheck-inline flycheck-dialyzer flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode eldoc-overlay el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg auto-highlight-symbol edts edebug-x ede-compdb ecb eacl dr-racket-like-unicode distel-completion-lib discover-my-major clj-refactor discover discover-clj-refactor diffview delim-kill db ctags-update ctable cpputils-cmake counsel-etags company company-statistics company-math company-lsp company-erlang company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-font-lock clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile cargo c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-complete-distel auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile align-cljlet ac-clang ac-cider ac-capf ac-c-headers 4clojure)
     package-activated-list))
 (progn
   (require 'info)
   (info-initialize)
   (setq Info-directory-list
     (append
-      '("/home/lk/.emacs.d/elpa/magit-20180903.2339" "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037" "/home/lk/.emacs.d/elpa/ghub-20180821.1430" "/home/lk/.emacs.d/elpa/ivy-20180907.1508")
+      '("/home/lk/.emacs.d/elpa/magit-20180903.2339" "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037" "/home/lk/.emacs.d/elpa/ghub-20180909.2230" "/home/lk/.emacs.d/elpa/ivy-20180907.1508")
       Info-directory-list)))
 
 ;; Local Variables:
