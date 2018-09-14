@@ -1,0 +1,9 @@
+;; Object semanticdb-project-database-file-1a41464
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1a41464"
+  :tables
+  (list
+)
+  :file "!usr!local!share!emacs!27.0.50!lisp!cedet!semantic!decorate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

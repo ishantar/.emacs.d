@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-14440e0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-14440e0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-14440fc"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "symbol-overlay-autoloads.el"
+      :pointmax 367
+      :fsize 2766
+      :lastmodtime '(23446 44330 276011 61000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!symbol-overlay-20180815.340!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

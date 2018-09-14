@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file-1a05c24
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1a05c24"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1a05c04"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stddef.h" include (:system-flag t) nil [21 40])
+            ("stdint.h" include (:system-flag t) nil [41 60])
+            ("stdbool.h" include (:system-flag t) nil [61 81])
+            ("stdio.h" include (:system-flag t) nil [82 100])
+            ("node" type
+               (:typedef ("obj_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [103 132])
+            ("obj_node" type
+               (:members 
+                  ( ("a" variable (:type ("" type
+                         (:members 
+                            ( ("loc_h" variable
+                                 (:suffix ":12"
+                                  :type "unsigned short")
+                                  (reparse-symbol classsubparts) [165 275])
+                              ("size_h" variable
+                                 (:suffix ":2"
+                                  :type "unsigned short")
+                                  (reparse-symbol classsubparts) [165 275])
+                              ("meta" variable
+                                 (:suffix ":2"
+                                  :type "unsigned short")
+                                  (reparse-symbol classsubparts) [165 275]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [156 303]))                  
+                :type "struct")
+                nil [134 307])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [331 336]))                  
+                :type "int")
+                nil [322 392]))          
+      :file "lHAMT.c"
+      :pointmax 909
+      :fsize 908
+      :lastmodtime '(23450 65048 755831 43000)
+      :unmatched-syntax nil))
+  :file "!home!lk!self!projects!lang_c!lispy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

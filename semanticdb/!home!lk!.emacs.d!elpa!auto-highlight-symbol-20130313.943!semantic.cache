@@ -1,15 +1,23 @@
-;; Object semanticdb-project-database-file-10531ec
+;; Object semanticdb-project-database-file-193998c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-10531ec"
+(semanticdb-project-database-file "semanticdb-project-database-file-193998c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1245250"
+    (semanticdb-table "semanticdb-table-1840c60"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "auto-highlight-symbol-autoloads.el"
       :pointmax 381
       :fsize 2004
       :lastmodtime '(23398 10623 400431 895000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a744e4"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "auto-highlight-symbol.el"
+      :pointmax 53402
+      :fsize 53401
+      :lastmodtime '(23398 10623 277097 311000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!auto-highlight-symbol-20130313.943!semantic.cache"
   :semantic-tag-version "2.0"

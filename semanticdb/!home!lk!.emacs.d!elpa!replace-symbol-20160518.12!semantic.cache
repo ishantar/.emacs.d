@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-168be0c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-168be0c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-ccee78"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "replace-symbol-autoloads.el"
+      :pointmax 367
+      :fsize 979
+      :lastmodtime '(23446 44269 445357 668000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!replace-symbol-20160518.12!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
