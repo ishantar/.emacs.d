@@ -1075,7 +1075,7 @@ point) to check."
 (put 'defmacro 'clojure-doc-string-elt 2)
 (put 'definline 'clojure-doc-string-elt 2)
 (put 'defprotocol 'clojure-doc-string-elt 2)
-(put 'deftask 'clojure-doc-string-eld 2) ;; common Boot macro
+(put 'deftask 'clojure-doc-string-elt 2) ;; common Boot macro  ;;LK; 's/\(.*\)eld$/\1elt/'
 
 ;;; Vertical alignment
 (defcustom clojure-align-forms-automatically nil

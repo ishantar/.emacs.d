@@ -1,2 +1,0 @@
-;;; -*- no-byte-compile: t -*-
-(define-package "syntactic-close" "20180909.841" "Insert closing delimiter" '((emacs "24") (cl-lib "0.5")) :commit "902dd0aafe962d1577d0cba2db743ba73bdb2478" :keywords '("languages" "convenience") :authors '(("Emacs User Group Berlin" . "emacs-berlin@emacs-berlin.org")) :maintainer '("Emacs User Group Berlin" . "emacs-berlin@emacs-berlin.org") :url "https://github.com/emacs-berlin/syntactic-close")

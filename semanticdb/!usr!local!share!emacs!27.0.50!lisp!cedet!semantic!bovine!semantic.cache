@@ -1,0 +1,920 @@
+;; Object semanticdb-project-database-file-145c1d4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-145c1d4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-14146f8"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [956 975])
+            ("semantic/analyze" include nil nil [976 1003])
+            ("semantic/analyze/refs" include nil nil [1004 1036])
+            ("semantic/bovine" include nil nil [1037 1063])
+            ("semantic/bovine/gcc" include nil nil [1064 1094])
+            ("semantic/idle" include nil nil [1095 1119])
+            ("semantic/lex-spp" include nil nil [1120 1147])
+            ("semantic/bovine/c-by" include nil nil [1148 1179])
+            ("semantic/db-find" include nil nil [1180 1207])
+            ("hideif" include nil nil [1208 1225])
+            ("semantic/find" include nil nil [1248 1272])
+            ("declare-function" code nil nil [1275 1346])
+            ("declare-function" code nil nil [1347 1408])
+            ("declare-function" code nil nil [1409 1468])
+            ("declare-function" code nil nil [1469 1547])
+            ("declare-function" code nil nil [1548 1598])
+            ("declare-function" code nil nil [1599 1647])
+            ("cc-mode" include nil nil [1689 1707])
+            ("if" code nil nil [1710 2289])
+            ("define-child-mode" code nil nil [2301 2385])
+            ("defcustom-mode-local-semantic-dependency-system-include-path" code nil nil [2410 2595])
+            ("semantic-default-c-path" variable (:documentation "Default set of include paths for C code.
+Used by `semantic-dep' to define an include path.
+NOTE: In process of obsoleting this.") nil [2597 2838])
+            ("semantic-dependency-include-path" variable
+               (:documentation "System path to search for include files."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value semantic-default-c-path)
+                nil [2840 2970])
+            ("if" code nil nil [3090 3169])
+            ("semantic-lex-c-preprocessor-symbol-map-builtin" variable
+               (:documentation "List of symbols to include by default."
+                :default-value '(("__THROW" . "") ("__const" . "const") ("__restrict" . "") ("__attribute_pure__" . "") ("__attribute_malloc__" . "") ("__nonnull" . "") ("__wur" . "") ("__declspec" (spp-arg-list ("foo") 1 . 2)) ("__attribute__" (spp-arg-list ("foo") 1 . 2)) ("__asm" (spp-arg-list ("foo") 1 . 2))))
+                nil [3218 3666])
+            ("semantic-c-in-reset-preprocessor-table" variable (:documentation "Non-nil while resetting the preprocessor symbol map.
+Used to prevent a reset while trying to parse files that are
+part of the preprocessor map.") nil [3668 3867])
+            ("semantic-lex-c-preprocessor-symbol-file" variable nil nil [3869 3917])
+            ("semantic-lex-c-preprocessor-symbol-map" variable nil nil [3918 3965])
+            ("semantic-c-reset-preprocessor-symbol-map" function (:documentation "Reset the C preprocessor symbol map based on all input variables.") nil [3967 5708])
+            ("add-hook" code nil nil [5788 5862])
+            ("semantic-lex-c-preprocessor-symbol-map" variable (:documentation "Table of C Preprocessor keywords used by the Semantic C lexer.
+Each entry is a cons cell like this:
+  ( \"KEYWORD\" . \"REPLACEMENT\" )
+Where KEYWORD is the macro that gets replaced in the lexical phase,
+and REPLACEMENT is a string that is inserted in its place.  Empty string
+implies that the lexical analyzer will discard KEYWORD when it is encountered.
+
+Alternately, it can be of the form:
+  ( \"KEYWORD\" ( LEXSYM1 \"str\" 1 1 ) ... ( LEXSYMN \"str\" 1 1 ) )
+where LEXSYM is a symbol that would normally be produced by the
+lexical analyzer, such as `symbol' or `string'.  The string in the
+second position is the text that makes up the replacement.  This is
+the way to have multiple lexical symbols in a replacement.  Using the
+first way to specify text like \"foo::bar\" would not work, because :
+is a separate lexical symbol.
+
+A quick way to see what you would need to insert is to place a
+definition such as:
+
+#define MYSYM foo::bar
+
+into a C file, and do this:
+  \\[semantic-lex-spp-describe]
+
+The output table will describe the symbols needed.") nil [5864 7219])
+            ("semantic-lex-c-preprocessor-symbol-file" variable (:documentation "List of C/C++ files that contain preprocessor macros for the C lexer.
+Each entry is a filename and each file is parsed, and those macros
+are included in every C/C++ file parsed by semantic.
+You can use this variable instead of `semantic-lex-c-preprocessor-symbol-map'
+to store your global macros in a more natural way.") nil [7221 7796])
+            ("semantic-c-member-of-autocast" variable
+               (:documentation "Non-nil means classes with a `->' operator will cast to its return type.
+
+For Examples:
+
+  class Foo {
+    Bar *operator->();
+  }
+
+  Foo foo;
+
+if `semantic-c-member-of-autocast' is non-nil :
+  foo->[here completion will list method of Bar]
+
+if `semantic-c-member-of-autocast' is nil :
+  foo->[here completion will list method of Foo]"
+                :default-value 't)
+                nil [7798 8209])
+            ("define-lex-spp-macro-declaration-analyzer" code nil nil [8211 9679])
+            ("define-lex-spp-macro-undeclaration-analyzer" code nil nil [9681 9932])
+            ("semantic-c-obey-conditional-section-parsing-flag" variable
+               (:documentation "Non-nil means to interpret preprocessor #if sections.
+This implies that some blocks of code will not be parsed based on the
+values of the conditions in the #if blocks."
+                :default-value t)
+                nil [9964 10227])
+            ("semantic-c-skip-conditional-section" function (:documentation "Skip one section of a conditional.
+Moves forward to a matching #elif, #else, or #endif.
+Moves completely over balanced #if blocks.") nil [10229 11556])
+            ("semantic-c-convert-spp-value-to-hideif-value" function
+               (:documentation "Convert an spp macro SYMBOL MACROVALUE, to something that hideif can use.
+Take the first interesting thing and convert it."
+                :arguments ("symbol" "macrovalue"))
+                nil [12032 12996])
+            ("semantic-c-evaluate-symbol-for-hideif" function
+               (:documentation "Lookup the symbol SPP-SYMBOL (a string) to something hideif can use.
+Pulls out the symbol list, and call `semantic-c-convert-spp-value-to-hideif-value'."
+                :user-visible-flag t
+                :arguments ("spp-symbol"))
+                nil [12998 14315])
+            ("semantic-c-hideif-lookup" function
+               (:documentation "Replacement for `hif-lookup'.
+I think it just gets the value for some CPP variable VAR."
+                :arguments ("var"))
+                nil [14566 14991])
+            ("semantic-c-hideif-defined" function
+               (:documentation "Replacement for `hif-defined'.
+I think it just returns t/nil dependent on if VAR has been defined."
+                :arguments ("var"))
+                nil [14993 15553])
+            ("semantic-c-takeover-hideif" variable (:documentation "Non-nil when Semantic is taking over hideif features.") nil [15638 15735])
+            ("define-lex-regex-analyzer" code nil nil [16404 16619])
+            ("semantic-c-do-lex-if" function (:documentation "Handle lexical CPP if statements.
+Enables a takeover of some hideif functions, then uses hideif to
+evaluate the #if expression and enables us to make decisions on which
+code to parse.") nil [16621 18290])
+            ("define-lex-regex-analyzer" code nil nil [18292 18555])
+            ("semantic-c-do-lex-ifdef" function (:documentation "Handle lexical CPP if statements.") nil [18557 19740])
+            ("define-lex-regex-analyzer" code nil nil [19742 20286])
+            ("define-lex-regex-analyzer" code nil nil [20288 20532])
+            ("define-lex-spp-include-analyzer" code nil nil [20534 20914])
+            ("define-lex-spp-include-analyzer" code nil nil [20916 21287])
+            ("define-lex-regex-analyzer" code nil nil [21290 21473])
+            ("define-lex-regex-analyzer" code nil nil [21475 22454])
+            ("semantic-lex-c-nested-namespace-ignore-second" variable
+               (:documentation "Should _GLIBCXX_BEGIN_NESTED_NAMESPACE ignore the second namespace?
+It is really there, but if a majority of uses is to squeeze out
+the second namespace in use, then it should not be included.
+
+If you are having problems with smart completion and STL templates,
+it may be that this is set incorrectly.  After changing the value
+of this flag, you will need to delete any semanticdb cache files
+that may have been incorrectly parsed."
+                :default-value t)
+                nil [22456 22987])
+            ("define-lex-regex-analyzer" code nil nil [22989 23624])
+            ("define-lex-regex-analyzer" code nil nil [23626 23829])
+            ("define-lex-regex-analyzer" code nil nil [23831 25580])
+            ("define-lex-regex-analyzer" code nil nil [25582 25825])
+            ("define-lex-regex-analyzer" code nil nil [25827 26231])
+            ("define-lex-regex-analyzer" code nil nil [26233 26591])
+            ("semantic-c-lexer" function
+               (:documentation "Lexical Analyzer for C code.
+Use semantic-cpp-lexer for parsing text inside a CPP macro."
+                :lexical-analyzer-flag t)
+                nil [26594 27775])
+            ("define-lex-simple-regex-analyzer" code nil nil [27777 27900])
+            ("semantic-cpp-lexer" function
+               (:documentation "Lexical Analyzer for CPP macros in C code."
+                :lexical-analyzer-flag t)
+                nil [27902 28844])
+            ("semantic-parse-region" function
+               (:documentation "Calls `semantic-parse-region-default', except in a macro expansion.
+MACRO expansion mode is handled through the nature of Emacs's non-lexical
+binding of variables.
+START, END, NONTERMINAL, DEPTH, and RETURNONERRORS are the same
+as for the parent."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("start" "end" "&optional" "nonterminal" "depth" "returnonerror"))
+                nil [28846 31037])
+            ("semantic-c-parse-token-hack-depth" variable (:documentation "Current depth of recursive calls to `semantic-c-parse-lexical-token'.") nil [31039 31157])
+            ("semantic-c-parse-lexical-token" function
+               (:documentation "Do a region parse on the contents of LEXICALTOKEN.
+Presumably, this token has a string in it from a macro.
+The text of the token is inserted into a different buffer, and
+parsed there.
+Argument NONTERMINAL, DEPTH, and RETURNONERROR are passed into
+the regular parser."
+                :arguments ("lexicaltoken" "nonterminal" "depth" "returnonerror"))
+                nil [31159 33748])
+            ("semantic-c-debug-mode-init-last-mode" variable (:documentation "The most recent mode needing debugging.") nil [33750 33843])
+            ("semantic-c-debug-mode-init" function
+               (:documentation "Debug mode init for major mode MM after we're done parsing now."
+                :user-visible-flag t
+                :arguments ("mm"))
+                nil [33845 34346])
+            ("semantic-c-debug-mode-init-pch" function (:documentation "Notify user about needing to debug their major mode hooks.") nil [34348 34916])
+            ("semantic-expand-c-tag" function
+               (:documentation "Expand TAG into a list of equivalent tags, or nil."
+                :arguments ("tag"))
+                nil [34918 36566])
+            ("semantic-expand-c-extern-C" function
+               (:documentation "Expand TAG containing an `extern \"C\"' statement.
+This will return all members of TAG with `extern \"C\"' added to
+the typemodifiers attribute."
+                :arguments ("tag"))
+                nil [36568 37120])
+            ("semantic-expand-c-complex-type" function
+               (:documentation "Check if TAG has a full :type with a name on its own.
+If so, extract it, and replace it with a reference to that type.
+Thus, `struct A { int a; } B;' will create 2 toplevel tags, one
+is type A, and the other variable B where the :type of B is just
+a type tag A that is a prototype, and the actual struct info of A
+is its own toplevel tag.  This function will return (cons A B)."
+                :arguments ("tag"))
+                nil [37122 38644])
+            ("semantic-expand-c-tag-namelist" function
+               (:documentation "Expand TAG whose name is a list into a list of tags, or nil."
+                :arguments ("tag"))
+                nil [38646 42438])
+            ("semantic-tag-expand-function" variable
+               (:documentation "Function used to expand tags generated in the C bovine parser."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value 'semantic-expand-c-tag)
+                nil [42440 42585])
+            ("semantic-c-classname" variable (:documentation "At parse time, assign a class or struct name text here.
+It is picked up by `semantic-c-reconstitute-token' to determine
+if something is a constructor.  Value should be:
+  (TYPENAME .  TYPEOFTYPE)
+where typename is the name of the type, and typeoftype is \"class\"
+or \"struct\".") nil [42587 42903])
+            ("semantic-analyze-split-name" function
+               (:documentation "Split up tag names on colon (:) boundaries."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("name"))
+                nil [42905 43119])
+            ("semantic-analyze-tag-references" function
+               (:documentation "Analyze the references for TAG.
+Returns a class with information about TAG.
+
+Optional argument DB is a database.  It will be used to help
+locate TAG.
+
+Use `semantic-analyze-current-tag' to debug this fcn."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "db"))
+                nil [43121 44501])
+            ("semantic-c-reconstitute-token" function
+               (:documentation "Reconstitute a token TOKENPART with DECLMODS and TYPEDECL.
+This is so we don't have to match the same starting text several times.
+Optional argument STAR and REF indicate the number of * and & in the typedef."
+                :arguments ("tokenpart" "declmods" "typedecl"))
+                nil [44503 47718])
+            ("semantic-c-reconstitute-template" function
+               (:documentation "Reconstitute the token TAG with the template SPECIFIER."
+                :arguments ("tag" "specifier"))
+                nil [47720 47905])
+            ("semantic-c-reconstitute-function-arglist" function
+               (:documentation "Reconstitute the argument list of a function.
+This currently only checks if the function expects a function
+pointer as argument."
+                :arguments ("arglist"))
+                nil [47907 48576])
+            ("semantic-format-tag-name" function
+               (:documentation "Convert TAG to a string that is the print name for TAG.
+Optional PARENT and COLOR are ignored."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [48616 48998])
+            ("semantic-format-tag-canonical-name" function
+               (:documentation "Create a canonical name for TAG.
+PARENT specifies a parent class.
+COLOR indicates that the text should be type colorized.
+Enhances the base class to search for the entire parent
+tree to make the name accurate."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [49000 49382])
+            ("semantic-format-tag-type" function
+               (:documentation "Convert the data type of TAG to a string usable in tag formatting.
+Adds pointer and reference symbols to the default.
+Argument COLOR adds color to the text."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "color"))
+                nil [49384 50426])
+            ("semantic-find-tags-by-scope-protection" function
+               (:documentation "Override the usual search for protection.
+We can be more effective than the default by scanning through once,
+and collecting tags based on the labels we see along the way."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("scopeprotection" "parent" "&optional" "table"))
+                nil [50428 51292])
+            ("semantic-tag-protection" function
+               (:documentation "Return the protection of TAG in PARENT.
+Override function for `semantic-tag-protection'."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [51294 52867])
+            ("semantic-find-tags-included" function
+               (:documentation "Find all tags in TABLE that are of the `include' class.
+TABLE is a tag table.  See `semantic-something-to-tag-table'.
+For C++, we also have to search namespaces for include tags."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("&optional" "table"))
+                nil [52869 53435])
+            ("semantic-tag-components" function
+               (:documentation "Return components for TAG."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [53438 53985])
+            ("semantic-c-tag-template" function
+               (:documentation "Return the template specification for TAG, or nil."
+                :arguments ("tag"))
+                nil [53987 54124])
+            ("semantic-c-tag-template-specifier" function
+               (:documentation "Return the template specifier specification for TAG, or nil."
+                :arguments ("tag"))
+                nil [54126 54293])
+            ("semantic-c-template-string-body" function
+               (:documentation "Convert TEMPLATESPEC into a string.
+This might be a string, or a list of tokens."
+                :arguments ("templatespec"))
+                nil [54295 54652])
+            ("semantic-c-template-string" function
+               (:documentation "Return a string representing the TEMPLATE attribute of TOKEN.
+This string is prefixed with a space, or is the empty string.
+Argument PARENT specifies a parent type.
+Argument COLOR specifies that the string should be colorized."
+                :arguments ("token" "parent" "color"))
+                nil [54654 55446])
+            ("semantic-format-tag-concise-prototype" function
+               (:documentation "Return an abbreviated string describing TOKEN for C and C++.
+Optional PARENT and COLOR as specified with
+`semantic-format-tag-abbreviate-default'."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("token" "&optional" "parent" "color"))
+                nil [55448 55885])
+            ("semantic-format-tag-uml-prototype" function
+               (:documentation "Return an UML string describing TOKEN for C and C++.
+Optional PARENT and COLOR as specified with
+`semantic-abbreviate-tag-default'."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("token" "&optional" "parent" "color"))
+                nil [55887 56301])
+            ("semantic-tag-abstract-p" function
+               (:documentation "Return non-nil if TAG is considered abstract.
+PARENT is tag's parent.
+In C, a method is abstract if it is `virtual', which is already
+handled.  A class is abstract only if its destructor is virtual."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [56303 57386])
+            ("semantic-c-dereference-typedef" function
+               (:documentation "If TYPE is a typedef, get TYPE's type by name or tag, and return.
+SCOPE is not used, and TYPE-DECLARATION is used only if TYPE is not a typedef."
+                :arguments ("type" "scope" "type-declaration"))
+                nil [57388 58256])
+            ("semantic-c--instantiate-template" function
+               (:documentation "Replace TAG name according to template specification.
+DEF-LIST is the template information.
+SPEC-LIST is the template specifier of the datatype instantiated."
+                :arguments ("tag" "def-list" "spec-list"))
+                nil [58258 58831])
+            ("semantic-c--template-name-1" function
+               (:documentation "Return a string used to compute template class name.
+Based on SPEC-LIST, for ref<Foo,Bar> it will return `Foo,Bar'."
+                :arguments ("spec-list"))
+                nil [58833 59197])
+            ("semantic-c--template-name" function
+               (:documentation "Return a template class name for TYPE based on SPEC-LIST.
+For a type `ref' with a template specifier of (Foo Bar) it will
+return `ref<Foo,Bar>'."
+                :arguments ("type" "spec-list"))
+                nil [59199 59491])
+            ("semantic-c-dereference-template" function
+               (:documentation "Dereference any template specifiers in TYPE within SCOPE.
+If TYPE is a template, return a TYPE copy with the templates types
+instantiated as specified in TYPE-DECLARATION."
+                :arguments ("type" "scope" "type-declaration"))
+                nil [59493 60409])
+            ("semantic-c-dereference-member-of" function
+               (:documentation "Dereference through the `->' operator of TYPE.
+Uses the return type of the `->' operator if it is contained in TYPE.
+SCOPE is the current local scope to perform searches in.
+TYPE-DECLARATION is passed through."
+                :arguments ("type" "scope" "type-declaration"))
+                nil [60464 61103])
+            ("semantic-c-dereference-namespace" function
+               (:documentation "Dereference namespace which might hold an `alias' for TYPE.
+Such an alias can be created through `using' statements in a
+namespace declaration.  This function checks the namespaces in
+SCOPE for such statements."
+                :arguments ("type" "scope" "type-declaration"))
+                nil [61340 63244])
+            ("semantic-c-dereference-namespace-alias" function
+               (:documentation "Dereference TYPE in NAMESPACE, given that NAMESPACE is an alias.
+Checks if NAMESPACE is an alias and if so, returns a new type
+with a fully qualified name in the original namespace.  Returns
+nil if NAMESPACE is not an alias."
+                :arguments ("type" "namespace"))
+                nil [63246 64497])
+            ("semantic-c-check-type-namespace-using" function
+               (:documentation "Check if TYPE is accessible in NAMESPACE through a using statement.
+Returns the original type from the namespace where it is defined,
+or nil if it cannot be found."
+                :arguments ("type" "namespace"))
+                nil [64582 66528])
+            ("semantic-analyze-dereference-metatype" function
+               (:documentation "Dereference TYPE as described in `semantic-analyze-dereference-metatype'.
+Handle typedef, template instantiation, and `->' operator."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("type" "scope" "&optional" "type-declaration"))
+                nil [66531 67706])
+            ("semantic-analyze-type-constants" function
+               (:documentation "When TYPE is a tag for an enum, return its parts.
+These are constants which are of type TYPE."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("type"))
+                nil [67708 68015])
+            ("semantic-analyze-unsplit-name" function
+               (:documentation "Assemble the list of names NAMELIST into a namespace name."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("namelist"))
+                nil [68017 68194])
+            ("semantic-ctxt-scoped-types" function
+               (:documentation "Return a list of tags of CLASS type based on POINT.
+DO NOT return the list of tags encompassing point."
+                :parent "c++-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [68196 70034])
+            ("semantic-ctxt-imported-packages" function
+               (:documentation "Return the list of using tag types in scope of POINT."
+                :parent "c++-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [70036 70901])
+            ("semanticdb-expand-nested-tag" function
+               (:documentation "Expand TAG if it has a fully qualified name.
+For types with a :parent, create faux namespaces to put TAG into."
+                :parent "c++-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [70903 71796])
+            ("semanticdb-find-table-for-include" function
+               (:documentation "For a single INCLUDETAG found in TABLE, find a `semanticdb-table' object
+INCLUDETAG is a semantic TAG of class `include'.
+TABLE is a semanticdb table that identifies where INCLUDETAG came from.
+TABLE is optional if INCLUDETAG has an overlay of :filename attribute.
+
+For C++, we also have to check if the include is inside a
+namespace, since this means all tags inside this include will
+have to be wrapped in that namespace."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("includetag" "&optional" "table"))
+                nil [71798 73959])
+            ("semantic-get-local-variables" function
+               (:documentation "Do what `semantic-get-local-variables' does, plus add `this' if needed."
+                :parent "c++-mode"
+                :override-function-flag t)
+                nil [73962 74633])
+            ("semantic-idle-summary-current-symbol-info" function
+               (:documentation "Handle the SPP keywords, then use the default mechanism."
+                :parent "c-mode"
+                :override-function-flag t)
+                nil [74635 75408])
+            ("semantic--tag-similar-names-p" function
+               (:documentation "Compare the names of TAG1 and TAG2.
+If BLANKOK is false, then the names must exactly match.
+If BLANKOK is true, then always return t, as for C, the names don't matter
+for arguments compared."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag1" "tag2" "blankok"))
+                nil [75410 75761])
+            ("semantic--tag-similar-types-p" function
+               (:documentation "For c-mode, deal with TAG1 and TAG2 being used in different namespaces.
+In this case, one type will be shorter than the other.  Instead
+of fully resolving all namespaces currently in scope for both
+types, we simply compare as many elements as the shorter type
+provides."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag1" "tag2"))
+                nil [75763 76745])
+            ("semantic--tag-attribute-similar-p" function
+               (:documentation "For c-mode, allow function :arguments to ignore the :name attributes."
+                :parent "c-mode"
+                :override-function-flag t
+                :arguments ("attr" "value1" "value2" "ignorable-attributes"))
+                nil [76748 77177])
+            ("semantic-orphaned-member-metaparent-type" variable
+               (:documentation "When lost members are found in the class hierarchy generator, use a struct."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value "struct")
+                nil [77179 77335])
+            ("semantic-symbol->name-assoc-list" variable
+               (:documentation "List of tag classes, and strings to describe them."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value '((type . "Types") (variable . "Variables") (function . "Functions") (include . "Includes")))
+                nil [77337 77568])
+            ("semantic-symbol->name-assoc-list-for-type-parts" variable
+               (:documentation "List of tag classes in a datatype decl, and strings to describe them."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value '((type . "Types") (variable . "Attributes") (function . "Methods") (label . "Labels")))
+                nil [77570 77832])
+            ("imenu-create-index-function" variable
+               (:documentation "Imenu index function for C."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value 'semantic-create-imenu-index)
+                nil [77834 77949])
+            ("semantic-type-relation-separator-character" variable
+               (:documentation "Separator characters between something of a given type, and a field."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value '("." "->" "::"))
+                nil [77951 78112])
+            ("semantic-command-separation-character" variable
+               (:documentation "Command separation character for C."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value ";")
+                nil [78114 78222])
+            ("senator-step-at-tag-classes" variable
+               (:documentation "Tag classes where senator will stop at the end."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value '#'variable)
+                nil [78224 78351])
+            ("semantic-tag-similar-ignorable-attributes" variable
+               (:documentation "Tag attributes to ignore during similarity tests.
+:parent is here because some tags might specify a parent, while others are
+actually in their parent which is not accessible."
+                :parent "c-mode"
+                :override-variable-flag t
+                :default-value '(:prototype-flag :parent :typemodifiers))
+                nil [78353 78644])
+            ("semantic-default-c-setup" function (:documentation "Set up a buffer for semantic parsing of the C language.") nil [78661 79199])
+            ("semantic-c-add-preprocessor-symbol" function
+               (:documentation "Add a preprocessor symbol SYM with a REPLACEMENT value."
+                :user-visible-flag t
+                :arguments ("sym" "replacement"))
+                nil [79216 79720])
+            ("semantic-c-describe-environment" function
+               (:documentation "Describe the Semantic features of the current C environment."
+                :user-visible-flag t)
+                nil [79741 83160])
+            ("semantic/bovine/c" package nil nil [83162 83190])
+            ("semantic-c-reset-preprocessor-symbol-map" code nil nil [83192 83234]))          
+      :file "c.el.gz"
+      :pointmax 83398
+      :fsize 23032
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 1707 . 1708) (symbol 1671 . 1688) (open-paren 1670 . 1671) (close-paren 1272 . 1273) (symbol 1228 . 1245) (open-paren 1227 . 1228)))
+    (semanticdb-table "semanticdb-table-1468424"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [913 932])
+            ("semantic/bovine" include nil nil [933 959])
+            ("semantic/db-el" include nil nil [960 985])
+            ("find-func" include nil nil [986 1006])
+            ("semantic/ctxt" include nil nil [1008 1032])
+            ("semantic/format" include nil nil [1033 1059])
+            ("thingatpt" include nil nil [1060 1080])
+            ("semantic-emacs-lisp-lexer" function
+               (:documentation "A simple lexical analyzer for Emacs Lisp.
+This lexer ignores comments and whitespace, and will return
+syntax as specified by the syntax table."
+                :lexical-analyzer-flag t)
+                nil [1107 1601])
+            ("semantic--elisp-parse-table" variable
+               (:documentation "Top level bovination table for elisp."
+                :default-value `((bovine-toplevel (semantic-list ,(lambda (vals start end) (let ((tag (semantic-elisp-use-read (car vals)))) (cond ((and (listp tag) (semantic-tag-p (car tag))) (nreverse tag)) ((semantic--tag-expanded-p tag) tag) (t (append tag (list start end))))))))))
+                nil [1618 2450])
+            ("semantic-elisp-desymbolify" function
+               (:documentation "Convert symbols to strings for ARGLIST."
+                :arguments ("arglist"))
+                nil [2452 2875])
+            ("semantic-elisp-desymbolify-args" function
+               (:documentation "Convert symbols to strings for ARGLIST."
+                :arguments ("arglist"))
+                nil [2877 3127])
+            ("semantic-elisp-clos-slot-property-string" function
+               (:documentation "For SLOT, a string representing PROPERTY."
+                :arguments ("slot" "property"))
+                nil [3129 3484])
+            ("semantic-elisp-clos-args-to-semantic" function
+               (:documentation "Convert a list of CLOS class slot PARTLIST to `variable' tags."
+                :arguments ("partlist"))
+                nil [3486 4439])
+            ("semantic-elisp-form-to-doc-string" function
+               (:documentation "After reading a form FORM, convert it to a doc string.
+For Emacs Lisp, sometimes that string is non-existent.
+Sometimes it is a form which is evaluated at compile time, permitting
+compound strings."
+                :arguments ("form"))
+                nil [4441 4822])
+            ("semantic-elisp-store-documentation-in-tag" variable (:documentation "When non-nil, store documentation strings in the created tags.") nil [4824 4984])
+            ("semantic-elisp-do-doc" function
+               (:documentation "Return STR as a documentation string IF they are enabled."
+                :arguments ("str"))
+                nil [4986 5178])
+            ("semantic-elisp-setup-form-parser" function
+               (:documentation "Install the function PARSER as the form parser for SYMBOLS.
+SYMBOLS is a list of symbols identifying the forms to parse.
+PARSER is called on every forms whose first element (car FORM) is
+found in SYMBOLS.  It is passed the parameters FORM, START, END,
+where:
+
+- FORM is an Elisp form read from the current buffer.
+- START and END are the beginning and end location of the
+  corresponding data in the current buffer."
+                :arguments ("parser" "symbols"))
+                nil [5180 5789])
+            ("put" code nil nil [5790 5853])
+            ("semantic-elisp-reuse-form-parser" function
+               (:documentation "Reuse the form parser of SYMBOL for forms identified by SYMBOLS.
+See also `semantic-elisp-setup-form-parser'."
+                :arguments ("symbol" "symbols"))
+                nil [5855 6384])
+            ("semantic-elisp-use-read" function
+               (:documentation "Use `read' on the semantic list SL.
+Return a bovination list to use."
+                :arguments ("sl"))
+                nil [6386 7139])
+            ("semantic-elisp-setup-form-parser" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [7162 7401])
+            ("eval-and-compile" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [7403 7822])
+            ("defun" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [7824 8402])
+            ("defvar" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [8404 8934])
+            ("defface" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [8936 9397])
+            ("defimage" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [9400 9876])
+            ("defgroup" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [9879 10228])
+            ("autoload" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [10231 10587])
+            ("defmethod" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [10589 11260])
+            ("defadvice" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [11262 11477])
+            ("defclass" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [11479 12064])
+            ("defstruct" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [12066 12555])
+            ("define-lex" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [12557 12819])
+            ("define-mode-overload-implementation" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [12821 13250])
+            ("defvar-mode-local" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [13252 13616])
+            ("require" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [13618 13934])
+            ("provide" function
+               (:form-parser t
+                :arguments ("form" "start" "end"))
+                nil [13936 14228])
+            ("semantic-dependency-tag-file" function
+               (:documentation "Find the file BUFFER depends on described by TAG."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [14249 15150])
+            ("semantic-emacs-lisp-overridable-doc" function
+               (:documentation "Return the documentation string generated for overloadable functions.
+Fetch the item for TAG.  Only returns info about what symbols can be
+used to perform the override."
+                :arguments ("tag"))
+                nil [15171 15633])
+            ("semantic-emacs-lisp-obsoleted-doc" function
+               (:documentation "Indicate that TAG is a new name that has obsoleted some old name.
+Unfortunately, this requires that the tag in question has been loaded
+into Emacs Lisp's memory."
+                :arguments ("tag"))
+                nil [15635 16267])
+            ("semantic-documentation-for-tag" function
+               (:documentation "Return the documentation string for TAG.
+Optional argument NOSNARF is ignored."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "nosnarf"))
+                nil [16269 17775])
+            ("semantic-tag-include-filename" function
+               (:documentation "Return the name of the tag with .el appended.
+If there is a detail, prepend that directory."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [17797 18120])
+            ("semantic-insert-foreign-tag" function
+               (:documentation "Insert TAG at point.
+Attempts a simple prototype for calling or using TAG."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [18122 18436])
+            ("semantic-tag-protection" function
+               (:documentation "Return the protection of TAG in PARENT.
+Override function for `semantic-tag-protection'."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [18438 19091])
+            ("semantic-tag-static-p" function
+               (:documentation "Return non-nil if TAG is static in PARENT class.
+Overrides `semantic-nonterminal-static'."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [19093 19402])
+            ("semantic-up-context" function
+               (:documentation "Move up one context in an Emacs Lisp function.
+A Context in many languages is a block with its own local variables.
+In Emacs, we will move up lists and stop when one starts with one of
+the following context specifiers:
+  `let', `let*', `defun', `with-slots'
+Returns non-nil it is not possible to go up a context."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point" "bounds-type"))
+                nil [19543 20217])
+            ("semantic-ctxt-current-function" function
+               (:documentation "Return a string which is the current function being called."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point" "same-as-symbol-return"))
+                nil [20220 21461])
+            ("semantic-get-local-variables" function
+               (:documentation "Return a list of local variables for POINT.
+Scan backwards from point at each successive function.  For all occurrences
+of `let' or `let*', grab those variable names."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [21464 23050])
+            ("semantic-end-of-command" function
+               (:documentation "Move cursor to the end of the current command.
+In Emacs Lisp this is easily defined by parenthesis bounding."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t)
+                nil [23052 23295])
+            ("semantic-beginning-of-command" function
+               (:documentation "Move cursor to the beginning of the current command.
+In Emacs Lisp this is easily defined by parenthesis bounding."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t)
+                nil [23297 23594])
+            ("semantic-ctxt-current-symbol" function
+               (:documentation "List the symbol under point."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [23596 23873])
+            ("semantic-ctxt-current-assignment" function
+               (:documentation "What is the variable being assigned into at POINT?"
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [23876 25258])
+            ("semantic-ctxt-current-argument" function
+               (:documentation "Return the index into the argument the cursor is in, or nil."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [25260 25724])
+            ("semantic-ctxt-current-class-list" function
+               (:documentation "Return a list of tag classes allowed at POINT.
+Emacs Lisp knows much more about the class of the tag needed to perform
+completion than some languages.  We distinctly know if we are to be a
+function name, variable name, or any type of symbol.  We could identify
+fields and such to, but that is for some other day."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [25726 26468])
+            ("semantic-format-tag-abbreviate" function
+               (:documentation "Return an abbreviated string describing tag."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [26488 26880])
+            ("semantic-format-tag-prototype" function
+               (:documentation "Return a prototype string describing tag.
+In Emacs Lisp, a prototype for something may start (autoload ...).
+This is certainly not expected if this is used to display a summary.
+Make up something else.  When we go to write something that needs
+a real Emacs Lisp prototype, we can fix it then."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [26882 27696])
+            ("semantic-format-tag-concise-prototype" function
+               (:documentation "Return a concise prototype string describing tag.
+See `semantic-format-tag-prototype' for Emacs Lisp for more details."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [27698 27985])
+            ("semantic-format-tag-uml-prototype" function
+               (:documentation "Return a uml prototype string describing tag.
+See `semantic-format-tag-prototype' for Emacs Lisp for more details."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [27987 28266])
+            ("semantic-ia-insert-tag" function
+               (:documentation "Insert TAG into the current buffer based on completion."
+                :parent "emacs-lisp-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [28287 28717])
+            ("semantic-lex-analyzer" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value 'semantic-emacs-lisp-lexer)
+                nil [28753 28839])
+            ("semantic--parse-table" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value semantic--elisp-parse-table)
+                nil [28841 28928])
+            ("semantic-function-argument-separator" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value " ")
+                nil [28930 29008])
+            ("semantic-function-argument-separation-character" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value " ")
+                nil [29010 29099])
+            ("semantic-symbol->name-assoc-list" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value '((type . "Types") (variable . "Variables") (function . "Defuns") (include . "Requires") (package . "Provides")))
+                nil [29101 29316])
+            ("imenu-create-index-function" variable
+               (:parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value 'semantic-create-imenu-index)
+                nil [29318 29412])
+            ("semantic-stickyfunc-sticky-classes" variable
+               (:documentation "Add variables.
+ELisp variables can be pretty long, so track this one too."
+                :parent "emacs-lisp-mode"
+                :override-variable-flag t
+                :default-value '(function type variable))
+                nil [29414 29590])
+            ("define-child-mode" code nil nil [29592 29710])
+            ("semantic-default-elisp-setup" function (:documentation "Setup hook function for Emacs Lisp files and Semantic.") nil [29727 29920])
+            ("add-hook" code nil nil [29922 29984])
+            ("add-hook" code nil nil [30154 30210])
+            ("eval-after-load" code nil nil [30212 30275])
+            ("semantic/bovine/el" package nil nil [30278 30307]))          
+      :file "el.el.gz"
+      :pointmax 30473
+      :fsize 8187
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!share!emacs!27.0.50!lisp!cedet!semantic!bovine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

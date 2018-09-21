@@ -1,15 +1,142 @@
-;; Object semanticdb-project-database-file-34df36c
+;; Object semanticdb-project-database-file-1a22afc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-34df36c"
+(semanticdb-project-database-file "semanticdb-project-database-file-1a22afc"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-34df378"
+    (semanticdb-table "semanticdb-table-16935e0"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "irony-eldoc-autoloads.el"
       :pointmax 361
       :fsize 1455
       :lastmodtime '(23450 17003 977917 952000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1937ff0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony" include nil nil [2210 2226])
+            ("irony-completion" include nil nil [2227 2254])
+            ("thingatpt" include nil nil [2255 2275])
+            ("cl-lib" include nil nil [2276 2293])
+            ("eldoc" include nil nil [2294 2310])
+            ("irony-eldoc" customgroup
+               (:documentation "eldoc support in `irony-mode'.
+
+eldoc is a built-in emacs mode for displaying documentation about
+a symbol or function call at point in the message buffer (see
+`eldoc-mode')."
+                :user-visible-flag t)
+                nil [2335 2556])
+            ("irony-eldoc-strip-underscores" variable
+               (:documentation "In a type, strip leading underscores from all identifiers.
+
+Many common types, especially in the standard library in c++,
+have these underscores, which carry no extra information."
+                :default-value t)
+                nil [2558 2826])
+            ("irony-eldoc-use-unicode" variable (:documentation "If non-nil, use Unicode characters ∷ and ⇒ instead of :: and
+=> in eldoc messages.") nil [2828 2995])
+            ("irony-eldoc--strip-underscores" function
+               (:documentation "Strip leading underscores from all identifiers in STRING.
+
+It also prettifies the string by replacing things like \"::\"
+with their Unicode equivalents, if `irony-eldoc-use-unicode' is
+non-nil.
+
+Has no effect if `irony-eldoc-strip-underscores' is non-nil."
+                :arguments ("string"))
+                nil [3022 3717])
+            ("irony-eldoc--ignore-symbol-regex" variable
+               (:documentation "Regex for identifiers that irony-eldoc should ignore entirely.
+
+This is primitive types, common types, common values (NULL, true,
+false), various keywords that may appear sometimes but for which
+there should be no documentation."
+                :default-value (rx string-start (or (and (1+ digit) (opt "e" (opt (1+ digit)))) (or "bool" "char" "wchar_t" "short" "int" "long" "signed" "unsigned" "float" "double" "void" "_Bool" "_Complex" "_Imaginary" "id" "Class" "SEL" "IMP" "BOOL" "struct" "union" "enum" "class" "typename" "const" "restrict" "volatile" "throw" "@interface" "@implementation" "@protocol" "namespace" "extern" "auto" "extern" "inline" "register" "static" "explicit" "friend" "mutable" "template" "using" "virtual" "auto" "bycopy" "byref" "extern" "in" "inout" "oneway" "out" "static" "@class" "@end" "@defs" "__attribute__" "__declspec" "private" "protected" "public" "@private" "@protected" "@public" "struct" "union" "enum" "typedef" "class" "struct" "union" "enum" "typedef" "operator" "@class" "template" "do" "else" "try" "@finally" "@try" "for" "if" "switch" "while" "catch" "@catch" "@synchronized" "break" "continue" "goto" "return" "@throw" "asm" "__asm__" "case" "default" "goto" "break" "continue" "NULL" "nullptr" "false" "true" "nil" "Nil" "YES" "NO" "NS_DURING" "NS_HANDLER" "NS_ENDHANDLER" "operator" "this" "super" "self")) string-end))
+                nil [3719 5355])
+            ("irony-eldoc--which-symbol" function (:documentation "Return a symbol under point suitable for documentation.") nil [5357 6048])
+            ("irony-eldoc--argindex" function
+               (:documentation "Return the index of the argument at POS inside parentheses.
+
+Returns cons pair '(argindex . argcount), with 0 <= argindex < argcount.
+
+OPEN-PAREN and CLOSE-PAREN are assumed to be balanced parens with everything balanced inside them as well."
+                :arguments ("pos" "open-paren" "close-paren"))
+                nil [6050 7646])
+            ("irony-eldoc--which-funcall" function (:documentation "Return description of surrounding function call,
+
+suitable for `irony-eldoc--which-thing'.  Throws an
+error (scan-error) on any unrecognized syntax, so probably call
+inside `condition-case'.") nil [7648 8945])
+            ("irony-eldoc--which-thing" function
+               (:documentation "Return the buffer substring and its bounds for which doc should be shown.
+
+If FORCE-FUNCALL is non-nil, look for the symbol at the head of
+the surrounding function call, otherwise try to guess if that's
+appropriate.
+
+Returns nil if there is nothing suitable under point.
+
+Returns a list of the form
+
+  (arg-index thing-string thing-start thing-end)
+
+where arg-index is nil if doc should be displayed for the symbol
+at point, or (argindex . argcount) if it is for the function call
+surrounding point."
+                :arguments ("force-funcall"))
+                nil [8947 9907])
+            ("irony-eldoc--show-symbol" function
+               (:documentation "Return docstring for a given symbol.
+
+The symbol is specified by PROP, which is an object taken from
+`irony-completion-candidates'."
+                :arguments ("prop"))
+                nil [9949 11423])
+            ("irony-eldoc--show-funcall" function
+               (:documentation "Return docstring for a given function call.
+
+ARG-INDEX and ARG-COUNT specify the index of function argument to
+be highlighted, and PROP is an object from
+`irony-completion--candidates'."
+                :arguments ("arg-index" "arg-count" "prop"))
+                nil [11425 13157])
+            ("irony-eldoc--callback" function
+               (:documentation "Store found documentation in an overlay on THING,
+for use by future calls to `irony-eldoc-documentation-function'.
+
+THING is expected to be of the form
+
+  (thing-string thing-start thing-end)
+
+where the symbol between thing-start and thing-end should have
+its documentation stored.
+
+Once this is done, CONTINUATION will be called."
+                :arguments ("thing" "candidates" "continuation"))
+                nil [13188 14345])
+            ("irony-eldoc-documentation-function" function
+               (:documentation "Support for eldoc in function `irony-mode'.
+
+See `eldoc-documentation-function' for what this function is
+supposed to do.
+
+If ONLY-USE-CACHED is non-nil, only look at cached documentation."
+                :arguments ("only-use-cached"))
+                nil [14347 17616])
+            ("irony-eldoc-reset" function
+               (:documentation "Reset information used by `irony-eldoc'.
+
+Can be helpful is `irony-eldoc' starts displaying stale un-updated
+information."
+                :user-visible-flag t)
+                nil [17644 17881])
+            ("define-minor-mode" code nil nil [17898 19241])
+            ("irony-eldoc" package nil nil [19251 19273]))          
+      :file "irony-eldoc.el"
+      :pointmax 19353
+      :fsize 19362
+      :lastmodtime '(23450 17003 631244 424000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!irony-eldoc-20170502.1908!semantic.cache"
   :semantic-tag-version "2.0"

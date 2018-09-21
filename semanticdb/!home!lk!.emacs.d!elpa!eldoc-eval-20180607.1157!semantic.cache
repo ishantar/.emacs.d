@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-1487f2c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1487f2c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1452a50"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("eldoc" include nil nil [1892 1908])
+            ("when" code nil nil [1909 2218])
+            ("eldoc-eval" customgroup
+               (:documentation "Show eldoc infos in mode line while minibuffer is in use."
+                :user-visible-flag t)
+                nil [2343 2446])
+            ("eldoc-in-minibuffer-show-fn" variable
+               (:documentation "A function to display eldoc info.
+Should take one arg: the string to display"
+                :default-value 'eldoc-show-in-mode-line)
+                nil [2448 2611])
+            ("eldoc-show-in-mode-line-delay" variable
+               (:documentation "The time we show eldoc when Emacs is idle."
+                :default-value 12)
+                nil [2613 2720])
+            ("eldoc-eval-preferred-function" variable
+               (:documentation "Preferred function to use with `M-:'."
+                :default-value 'pp-eval-expression)
+                nil [2722 2843])
+            ("eldoc-in-minibuffer-own-frame-p" variable (:documentation "Whether minibuffer has its own frame or not.") nil [2845 2959])
+            ("eldoc-in-minibuffer-mode-lighter" variable
+               (:documentation "String displayed in mode-line when `eldoc-in-minibuffer-mode' is enabled."
+                :default-value " Eldoc-eval")
+                nil [2961 3113])
+            ("eldoc-mode-line-stop-rolling-on-input" variable
+               (:documentation "When rolling mode-line is enabled, stop rolling on input when non--nil."
+                :default-value t)
+                nil [3115 3259])
+            ("eldoc-eval--old-message-function" variable
+               (:constant-flag t
+                :default-value (and (boundp 'eldoc-message-function) eldoc-message-function))
+                nil [3485 3592])
+            ("eldoc-display-message-no-interference-p" function (:arguments ("after" "eldoc-eval" "activate")) nil [3594 4018])
+            ("eldoc-active-minibuffers-list" variable (:documentation "List of active minibuffers with eldoc enabled.") nil [4033 4126])
+            ("eldoc-mode-line-rolling-flag" variable nil nil [4127 4168])
+            ("eldoc-store-minibuffer" function (:documentation "Store minibuffer buffer name in `eldoc-active-minibuffers-list'.
+This function is called by each minibuffer started with eldoc support.
+See `with-eldoc-in-minibuffer'.") nil [4170 4478])
+            ("with-eldoc-in-minibuffer" function
+               (:documentation "Enable eldoc support for minibuffer input that runs in BODY."
+                :arguments ("body"))
+                nil [4480 5396])
+            ("eldoc-current-buffer" function (:documentation "Return the current buffer prior to activating the minibuffer.") nil [5398 5804])
+            ("eldoc-show-in-mode-line" function
+               (:documentation "Display string STR in the mode-line next to minibuffer."
+                :arguments ("input"))
+                nil [5806 6946])
+            ("eldoc-mode-line-toggle-rolling" function nil nil [6948 7221])
+            ("eldoc-in-minibuffer-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [remap eval-expression] 'eldoc-eval-expression) map)) nil [7223 7373])
+            ("define-minor-mode" code nil nil [7390 8399])
+            ("eldoc-run-in-minibuffer" function nil nil [8401 9345])
+            ("eldoc-eval-expression" function
+               (:documentation "Eval expression with eldoc support in mode-line."
+                :user-visible-flag t)
+                nil [9362 9547])
+            ("eldoc-eval" package nil nil [9550 9571]))          
+      :file "eldoc-eval.el"
+      :pointmax 9600
+      :fsize 9599
+      :lastmodtime '(23450 54331 57010 540000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!eldoc-eval-20180607.1157!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

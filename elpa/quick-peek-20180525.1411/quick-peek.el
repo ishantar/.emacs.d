@@ -1,4 +1,4 @@
-;;; quick-peek.el --- Inline quick-peek windows      -*- lexical-binding: t; -*-
+;;; quick-peek.el --- Inline quick-peek windows      -*- lexical-binding: t; -*-                   
 
 ;; Copyright (C) 2016, 2018  Clément Pit-Claudel
 
@@ -8,7 +8,7 @@
 ;; Package-Requires: ((emacs "24.3"))
 ;; Version: 1.0
 
-;; This program is free software; you can redistribute it and/or modify
+;; This program is free software; you can redistribute it and/or modify                            
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
 ;; (at your option) any later version.
@@ -102,16 +102,25 @@ Results are meaningful only if FROM and TO are on the same line."
   (- (save-excursion (goto-char to) (current-column))
      (save-excursion (goto-char from) (current-column))))
 
+
+
 (defun quick-peek--max-line-length ()
   "Return the max line width in columns in the current buffer."
-  (save-excursion
-    (goto-char (point-min))
-    (let ((maxlen 0))
-      (while (not (eobp))
-        (let ((line-len (quick-peek--text-width (point-at-bol) (point-at-eol))))
-          (setq maxlen (max line-len maxlen)))
-        (forward-line 1))
-      maxlen)))
+  (-  (window-max-chars-per-line)
+        (fringe-columns 'right)
+        (fringe-columns 'left)
+         display-line-numbers-width 
+         1) )
+
+  ;; (save-excursion
+  ;;   (goto-char (point-min))
+  ;;   (let ((maxlen 0))
+  ;;     (while (not (eobp))
+  ;;       (let ((line-len (quick-peek--text-width (point-at-bol) (point-at-eol))))
+  ;;         (setq maxlen (max line-len maxlen)))
+  ;;       (forward-line 1))
+  ;;     maxlen)))
+
 
 (defun quick-peek--truncate-buffer (start n-lines &optional ellipsis)
   "Truncate current buffer N-LINES after START.

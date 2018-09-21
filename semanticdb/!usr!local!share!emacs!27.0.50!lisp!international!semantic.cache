@@ -1,0 +1,2374 @@
+;; Object semanticdb-project-database-file-20d083c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-20d083c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c79818"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("store-substring" function
+               (:documentation "Embed OBJ (string or character) at index IDX of STRING."
+                :arguments ("string" "idx" "obj"))
+                nil [1364 1644])
+            ("truncate-string-ellipsis" variable
+               (:documentation "String to use to indicate truncation.
+Serves as default value of ELLIPSIS argument to `truncate-string-to-width'."
+                :default-value "...")
+                nil [1646 1809])
+            ("truncate-string-to-width" function
+               (:documentation "Truncate string STR to end at column END-COLUMN.
+The optional 3rd arg START-COLUMN, if non-nil, specifies the starting
+column; that means to return the characters occupying columns
+START-COLUMN ... END-COLUMN of STR.  Both END-COLUMN and START-COLUMN
+are specified in terms of character display width in the current
+buffer; see also `char-width'.
+
+The optional 4th arg PADDING, if non-nil, specifies a padding
+character (which should have a display width of 1) to add at the end
+of the result if STR doesn't reach column END-COLUMN, or if END-COLUMN
+comes in the middle of a character in STR.  PADDING is also added at
+the beginning of the result if column START-COLUMN appears in the
+middle of a character in STR.
+
+If PADDING is nil, no padding is added in these cases, so
+the resulting string may be narrower than END-COLUMN.
+
+If ELLIPSIS is non-nil, it should be a string which will replace the
+end of STR (including any padding) if it extends beyond END-COLUMN,
+unless the display width of STR is equal to or less than the display
+width of ELLIPSIS.  If it is non-nil and not a string, then ELLIPSIS
+defaults to `truncate-string-ellipsis'."
+                :arguments ("str" "end-column" "start-column" "padding" "ellipsis"))
+                nil [1826 4523])
+            ("nested-alist-p" function
+               (:documentation "Return t if OBJ is a nested alist.
+
+Nested alist is a list of the form (ENTRY . BRANCHES), where ENTRY is
+any Lisp object, and BRANCHES is a list of cons cells of the form
+(KEY-ELEMENT . NESTED-ALIST).
+
+You can use a nested alist to store any Lisp object (ENTRY) for a key
+sequence KEYSEQ, where KEYSEQ is a sequence of KEY-ELEMENT.  KEYSEQ
+can be a string, a vector, or a list."
+                :arguments ("obj"))
+                nil [4632 5089])
+            ("set-nested-alist" function
+               (:documentation "Set ENTRY for KEYSEQ in a nested alist ALIST.
+Optional 4th arg LEN non-nil means the first LEN elements in KEYSEQ
+ are considered.
+Optional 5th argument BRANCHES if non-nil is branches for a keyseq
+longer than KEYSEQ.
+See the documentation of `nested-alist-p' for more detail."
+                :arguments ("keyseq" "entry" "alist" "len" "branches"))
+                nil [5106 7003])
+            ("lookup-nested-alist" function
+               (:documentation "Look up key sequence KEYSEQ in nested alist ALIST.  Return the definition.
+Optional 3rd argument LEN specifies the length of KEYSEQ.
+Optional 4th argument START specifies index of the starting key.
+The returned value is normally a nested alist of which
+car part is the entry for KEYSEQ.
+If ALIST is not deep enough for KEYSEQ, return number which is
+ how many key elements at the front of KEYSEQ it takes
+ to reach a leaf in ALIST.
+Optional 5th argument NIL-FOR-TOO-LONG non-nil means return nil
+ even if ALIST is not deep enough."
+                :arguments ("keyseq" "alist" "len" "start" "nil-for-too-long"))
+                nil [7020 8760])
+            ("coding-system-post-read-conversion" function
+               (:documentation "Return the value of CODING-SYSTEM's `post-read-conversion' property."
+                :arguments ("coding-system"))
+                nil [8816 9005])
+            ("coding-system-pre-write-conversion" function
+               (:documentation "Return the value of CODING-SYSTEM's `pre-write-conversion' property."
+                :arguments ("coding-system"))
+                nil [9022 9211])
+            ("coding-system-translation-table-for-decode" function
+               (:documentation "Return the value of CODING-SYSTEM's `decode-translation-table' property."
+                :arguments ("coding-system"))
+                nil [9228 9433])
+            ("coding-system-translation-table-for-encode" function
+               (:documentation "Return the value of CODING-SYSTEM's `encode-translation-table' property."
+                :arguments ("coding-system"))
+                nil [9450 9655])
+            ("with-coding-priority" function
+               (:documentation "Execute BODY like `progn' with CODING-SYSTEMS at the front of priority list.
+CODING-SYSTEMS is a list of coding systems.  See `set-coding-system-priority'.
+This affects the implicit sorting of lists of coding systems returned by
+operations such as `find-coding-systems-region'."
+                :arguments ("coding-systems" "body"))
+                nil [9672 10259])
+            ("put" code nil nil [10326 10373])
+            ("detect-coding-with-priority" function
+               (:documentation "Detect a coding system of the text between FROM and TO with PRIORITY-LIST.
+PRIORITY-LIST is an alist of coding categories vs the corresponding
+coding systems ordered by priority."
+                :arguments ("from" "to" "priority-list"))
+                nil [10390 10780])
+            ("detect-coding-with-language-environment" function
+               (:documentation "Detect a coding system for the text between FROM and TO with LANG-ENV.
+The detection takes into account the coding system priorities for the
+language environment LANG-ENV."
+                :arguments ("from" "to" "lang-env"))
+                nil [10797 11219])
+            ("declare-function" code nil nil [11221 11291])
+            ("char-displayable-p" function
+               (:documentation "Return non-nil if we should be able to display CHAR.
+On a multi-font display, the test is only whether there is an
+appropriate font from the selected frame's fontset to display
+CHAR's charset in general.  Since fonts may be specified on a
+per-character basis, this may not be accurate."
+                :arguments ("char"))
+                nil [11308 13222])
+            ("filepos-to-bufferpos--dos" function (:arguments ("byte" "f")) nil [13224 14153])
+            ("filepos-to-bufferpos" function
+               (:documentation "Try to return the buffer position corresponding to a particular file position.
+The file position is given as a (0-based) BYTE count.
+The function presumes the file is encoded with CODING-SYSTEM, which defaults
+to `buffer-file-coding-system'.
+QUALITY can be:
+  `approximate', in which case we may cut some corners to avoid
+    excessive work.
+  `exact', in which case we may end up re-(en/de)coding a large
+    part of the file/buffer, this can be expensive and slow.
+  nil, in which case we may return nil rather than an approximation."
+                :arguments ("byte" "quality" "coding-system"))
+                nil [14170 17915])
+            ("bufferpos-to-filepos" function
+               (:documentation "Try to return the file byte corresponding to a particular buffer POSITION.
+Value is the file position given as a (0-based) byte count.
+The function presumes the file is encoded with CODING-SYSTEM, which defaults
+to `buffer-file-coding-system'.
+QUALITY can be:
+  `approximate', in which case we may cut some corners to avoid
+    excessive work.
+  `exact', in which case we may end up re-(en/de)coding a large
+    part of the file/buffer, this can be expensive and slow.
+  nil, in which case we may return nil rather than an approximation."
+                :arguments ("position" "quality" "coding-system"))
+                nil [17931 21282])
+            ("mule-util" package nil nil [21285 21305]))          
+      :file "mule-util.el.gz"
+      :pointmax 21380
+      :fsize 5873
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-235dcb0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("quail" include nil nil [2522 2538])
+            ("tit-encode-list" variable (:default-value '(("GB" euc-china "Chinese-GB") ("BIG5" cn-big5 "Chinese-BIG5") ("JIS" euc-japan "Japanese") ("KS" euc-kr "Korean"))) nil [2651 2806])
+            ("quail-cxterm-package-ext-info" variable (:default-value '(("chinese-4corner" "四角") ("chinese-array30" "３０") ("chinese-ccdospy" "缩拼" "Pinyin base input method for Chinese charset GB2312 (`chinese-gb2312').
+
+Pinyin is the standard Roman transliteration method for Chinese.
+For the detail of Pinyin system, see the documentation of the input
+method `chinese-py'.
+
+This input method works almost the same way as `chinese-py'.  The
+difference is that you type a single key for these Pinyin spelling.
+    Pinyin:  zh  en  eng ang ch  an  ao  ai  ong sh  ing  yu(ü)
+    keyseq:   a   f   g   h   i   j   k   l   s   u   y   v
+For example:
+    Chinese:  啊    果    中    文    光    玉    全
+    Pinyin:   a    guo   zhong  wen  guang  yu   quan
+    Keyseq:   a1   guo4   as1   wf4  guh1  yu..6 qvj6
+
+\\<quail-translation-docstring>
+
+For double-width GB2312 characters corresponding to ASCII, use the
+input method `chinese-qj'.") ("chinese-ecdict" "英漢" "In this input method, you enter a Chinese (Big5) character or word
+by typing the corresponding English word.  For example, if you type
+\"computer\", \"電腦\" is input.
+
+\\<quail-translation-docstring>") ("chinese-etzy" "倚注" "Zhuyin base input method for Chinese Big5 characters (`chinese-big5-1',
+`chinese-big5-2').
+
+Zhuyin is a kind of phonetic symbol.  One to three Zhuyin symbols
+compose one Chinese character.
+
+In this input method, you enter a Chinese character by first typing
+keys corresponding to Zhuyin symbols (see the above table) followed by
+SPC, 1, 2, 3, or 4 specifying a tone (SPC:陰平, 1:輕聲, 2:陽平, 3: 上聲,
+4:去聲).
+
+\\<quail-translation-docstring>") ("chinese-punct-b5" "標B" "Input method for Chinese punctuation and symbols of Big5
+(`chinese-big5-1' and `chinese-big5-2').") ("chinese-punct" "标G" "Input method for Chinese punctuation and symbols of GB2312
+(`chinese-gb2312').") ("chinese-py-b5" "拼B" "Pinyin base input method for Chinese Big5 characters
+(`chinese-big5-1', `chinese-big5-2').
+
+This input method works almost the same way as `chinese-py' (which
+see).
+
+This input method supports only Han characters.  The more convenient
+method is `chinese-py-punct-b5', which is the combination of this
+method and `chinese-punct-b5' and which supports both Han characters
+and punctuation/symbols.
+
+For double-width Big5 characters corresponding to ASCII, use the input
+method `chinese-qj-b5'.
+
+The input method `chinese-py' and `chinese-tonepy' are also Pinyin
+based, but for the character set GB2312 (`chinese-gb2312').") ("chinese-qj-b5" "全B") ("chinese-qj" "全G") ("chinese-sw" "首尾" "Radical base input method for Chinese charset GB2312 (`chinese-gb2312').
+
+In this input method, you enter a Chinese character by typing two
+keys.  The first key corresponds to the first (首) radical, the second
+key corresponds to the last (尾) radical.  The correspondence of keys
+and radicals is as below:
+
+ first radical:
+ a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
+ 心 冖 尸 丶 火 口 扌 氵 讠 艹 亻 木 礻 饣 月 纟 石 王 八 丿 日 辶 犭 竹 一 人
+ last radical:
+ a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
+ 又 山 土 刀 阝 口 衣 疋 大 丁 厶 灬 十 歹 冂 门 今 丨 女 乙 囗 小 厂 虫 弋 卜
+
+\\<quail-translation-docstring>") ("chinese-tonepy" "调拼" "Pinyin base input method for Chinese charset GB2312 (`chinese-gb2312').
+
+Pinyin is the standard roman transliteration method for Chinese.
+For the details of Pinyin system, see the documentation of the input
+method `chinese-py'.
+
+This input method works almost the same way as `chinese-py'.  The
+difference is that you must type 1..5 after each Pinyin spelling to
+specify a tone (1:阴平, 2:阳平, 3:上声, 4下声, 5:轻声).
+
+\\<quail-translation-docstring>
+
+For instance, to input 你, you type \"n i 3 3\", the first \"n i\" is
+a Pinyin, the next \"3\" specifies tone, and the last \"3\" selects
+the third character from the candidate list.
+
+For double-width GB2312 characters corresponding to ASCII, use the
+input method `chinese-qj'.") ("chinese-zozy" "零注" "Zhuyin base input method for Chinese Big5 characters (`chinese-big5-1',
+`chinese-big5-2').
+
+Zhuyin is a kind of a phonetic symbol.  One to three Zhuyin symbols
+compose a Chinese character.
+
+In this input method, you enter a Chinese character by first typing
+keys corresponding to Zhuyin symbols (see the above table) followed by
+SPC, 6, 3, 4, or 7 specifying a tone (SPC:陰平, 6:陽平, 3:上聲, 4:去聲,
+7:輕聲).
+
+\\<quail-translation-docstring>"))) nil [3422 7866])
+            ("tit-read-key-value" function nil nil [7918 8051])
+            ("tit-make-quail-package-file-name" function (:arguments ("filename" "dirname")) nil [8189 8359])
+            ("tit-dictionary" variable (:default-value t) nil [8422 8447])
+            ("tit-encode" variable nil nil [8448 8471])
+            ("tit-default-encode" variable (:default-value "GB") nil [8472 8504])
+            ("tit-generate-key-bindings" function (:arguments ("keys" "function-symbol")) nil [8634 9213])
+            ("tit-process-header" function (:arguments ("filename")) nil [9325 14195])
+            ("tit-flush-translations" function (:arguments ("key" "translations")) nil [14197 14866])
+            ("tit-process-body" function nil nil [14951 16404])
+            ("titdic-convert" function
+               (:documentation "Convert a TIT dictionary of FILENAME into a Quail package.
+Optional argument DIRNAME if specified is the directory name under which
+the generated Quail package is saved."
+                :user-visible-flag t
+                :arguments ("filename" "dirname"))
+                nil [16421 18727])
+            ("batch-titdic-convert" function
+               (:documentation "Run `titdic-convert' on the files remaining on the command line.
+Use this from the command line, with `-batch';
+it won't work in an interactive Emacs.
+For example, invoke \"emacs -batch -f batch-titdic-convert XXX.tit\" to
+ generate Quail package file \"xxx.el\" from TIT dictionary file \"XXX.tit\".
+To get complete usage, invoke \"emacs -batch -f batch-titdic-convert -h\"."
+                :arguments ("force"))
+                nil [18744 20657])
+            ("quail-misc-package-ext-info" variable (:default-value '(("chinese-b5-tsangchi" "倉B" "cangjie-table.b5" big5 "tsang-b5.el" tsang-b5-converter ";; # Copyright 2001 Christian Wittern <wittern@iis.sinica.edu.tw>
+;; #
+;; # Permission to copy and distribute both modified and
+;; # unmodified versions is granted without royalty provided
+;; # this notice is preserved.") ("chinese-b5-quick" "簡B" "cangjie-table.b5" big5 "quick-b5.el" quick-b5-converter ";; # Copyright 2001 Christian Wittern <wittern@iis.sinica.edu.tw>
+;; #
+;; # Permission to copy and distribute both modified and
+;; # unmodified versions is granted without royalty provided
+;; # this notice is preserved.") ("chinese-cns-tsangchi" "倉C" "cangjie-table.cns" iso-2022-cn-ext "tsang-cns.el" tsang-cns-converter ";; # Copyright 2001 Christian Wittern <wittern@iis.sinica.edu.tw>
+;; #
+;; # Permission to copy and distribute both modified and
+;; # unmodified versions is granted without royalty provided
+;; # this notice is preserved.") ("chinese-cns-quick" "簡C" "cangjie-table.cns" iso-2022-cn-ext "quick-cns.el" quick-cns-converter ";; # Copyright 2001 Christian Wittern <wittern@iis.sinica.edu.tw>
+;; #
+;; # Permission to copy and distribute both modified and
+;; # unmodified versions is granted without royalty provided
+;; # this notice is preserved.") ("chinese-py" "拼G" "pinyin.map" cn-gb-2312 "PY.el" py-converter ";; \"pinyin.map\" is included in a free package called CCE.  It is
+;; available at:
+;;	http://ftp.debian.org/debian/dists/potato/main
+;;		/source/utils/cce_0.36.orig.tar.gz
+;; This package contains the following copyright notice.
+;;
+;;
+;;             Copyright (C) 1999, Rui He, herui@cs.duke.edu
+;;
+;;
+;;                  CCE(Console Chinese Environment) 0.32
+;;
+;; CCE is free software; you can redistribute it and/or modify it under the
+;; terms of the GNU General Public License as published by the Free Software
+;; Foundation; either version 1, or (at your option) any later version.
+;;
+;; CCE is distributed in the hope that it will be useful, but WITHOUT ANY
+;; WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+;; FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+;; details.
+;;
+;; You should have received a copy of the GNU General Public License along with
+;; CCE.  If not, see <https://www.gnu.org/licenses/>.") ("chinese-ziranma" "自然" "ziranma.cin" cn-gb-2312 "ZIRANMA.el" ziranma-converter ";; \"ziranma.cin\" is included in a free package called CCE.  It is
+;; available at:
+;;	http://ftp.debian.org/debian/dists/potato/main
+;;		/source/utils/cce_0.36.orig.tar.gz
+;; This package contains the following copyright notice.
+;;
+;;
+;;             Copyright (C) 1999, Rui He, herui@cs.duke.edu
+;;
+;;
+;;                  CCE(Console Chinese Environment) 0.32
+;;
+;; CCE is free software; you can redistribute it and/or modify it under the
+;; terms of the GNU General Public License as published by the Free Software
+;; Foundation; either version 1, or (at your option) any later version.
+;;
+;; CCE is distributed in the hope that it will be useful, but WITHOUT ANY
+;; WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+;; FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+;; details.
+;;
+;; You should have received a copy of the GNU General Public License along with
+;; CCE.  If not, see <https://www.gnu.org/licenses/>.") ("chinese-ctlau" "刘粤" "CTLau.html" cn-gb-2312 "CTLau.el" ctlau-gb-converter ";; \"CTLau.html\" is available at:
+;;
+;;   http://umunhum.stanford.edu/~lee/chicomp/CTLau.html
+;;
+;; It contains the following copyright notice:
+;;
+;; # Copyright (C) 1988-2001  Fung Fung Lee (lee@umunhum.stanford.edu)
+;; #
+;; # This program is free software; you can redistribute it and/or
+;; # modify it under the terms of the GNU General Public License
+;; # as published by the Free Software Foundation; either version 2
+;; # of the License, or any later version.
+;; #
+;; # This program is distributed in the hope that it will be useful,
+;; # but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; # GNU General Public License for more details.
+;; #
+;; # You should have received a copy of the GNU General Public License
+;; # along with this program.  If not, see <https://www.gnu.org/licenses/>.") ("chinese-ctlaub" "劉粵" "CTLau-b5.html" big5 "CTLau-b5.el" ctlau-b5-converter ";; \"CTLau-b5.html\" is available at:
+;;
+;;   http://umunhum.stanford.edu/~lee/chicomp/CTLau-b5.html
+;;
+;; It contains the following copyright notice:
+;;
+;; # Copyright (C) 1988-2001  Fung Fung Lee (lee@umunhum.stanford.edu)
+;; #
+;; # This program is free software; you can redistribute it and/or
+;; # modify it under the terms of the GNU General Public License
+;; # as published by the Free Software Foundation; either version 2
+;; # of the License, or any later version.
+;; #
+;; # This program is distributed in the hope that it will be useful,
+;; # but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; # GNU General Public License for more details.
+;; #
+;; # You should have received a copy of the GNU General Public License
+;; # along with this program.  If not, see <https://www.gnu.org/licenses/>."))) nil [21245 26722])
+            ("tsang-quick-converter" function (:arguments ("dicbuf" "name" "title" "tsang-p" "big5-p")) nil [27160 29956])
+            ("tsang-b5-converter" function (:arguments ("dicbuf" "name" "title")) nil [29958 30052])
+            ("quick-b5-converter" function (:arguments ("dicbuf" "name" "title")) nil [30054 30150])
+            ("tsang-cns-converter" function (:arguments ("dicbuf" "name" "title")) nil [30152 30249])
+            ("quick-cns-converter" function (:arguments ("dicbuf" "name" "title")) nil [30251 30350])
+            ("py-converter" function (:arguments ("dicbuf" "name" "title")) nil [30548 33080])
+            ("ziranma-converter" function (:arguments ("dicbuf" "name" "title")) nil [33279 37252])
+            ("ctlau-converter" function (:arguments ("dicbuf" "name" "title" "description")) nil [37528 39309])
+            ("ctlau-gb-converter" function (:arguments ("dicbuf" "name" "title")) nil [39311 39808])
+            ("ctlau-b5-converter" function (:arguments ("dicbuf" "name" "title")) nil [39810 40304])
+            ("declare-function" code nil nil [40306 40365])
+            ("miscdic-convert" function
+               (:documentation "Convert a dictionary file FILENAME into a Quail package.
+Optional argument DIRNAME if specified is the directory name under which
+the generated Quail package is saved."
+                :user-visible-flag t
+                :arguments ("filename" "dirname"))
+                nil [40367 43250])
+            ("batch-miscdic-convert" function (:documentation "Run `miscdic-convert' on the files remaining on the command line.
+Use this from the command line, with `-batch';
+it won't work in an interactive Emacs.
+If there's an argument \"-dir\", the next argument specifies a directory
+to store generated Quail packages.") nil [43252 44341]))          
+      :file "titdic-cnv.el.gz"
+      :pointmax 44426
+      :fsize 12953
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-231fea8"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1259 1276])
+            ("dos-codepage" variable nil nil [1279 1300])
+            ("widget-value" function (:prototype-flag t) nil [1301 1336])
+            ("mule-keymap" variable
+               (:documentation "Keymap for Mule (Multilingual environment) specific commands."
+                :default-value (let ((map (make-sparse-keymap))) (define-key map "f" 'set-buffer-file-coding-system) (define-key map "r" 'revert-buffer-with-coding-system) (define-key map "F" 'set-file-name-coding-system) (define-key map "t" 'set-terminal-coding-system) (define-key map "k" 'set-keyboard-coding-system) (define-key map "p" 'set-buffer-process-coding-system) (define-key map "x" 'set-selection-coding-system) (define-key map "X" 'set-next-selection-coding-system) (define-key map "" 'set-input-method) (define-key map "c" 'universal-coding-system-argument) (define-key map "l" 'set-language-environment) map))
+                nil [1380 2115])
+            ("define-key" code nil nil [2167 2208])
+            ("describe-language-environment-map" variable (:default-value (let ((map (make-sparse-keymap "Describe Language Environment"))) (bindings--define-key map [Default] '(menu-item "Default" describe-specified-language-support)) map)) nil [2210 2435])
+            ("setup-language-environment-map" variable (:default-value (let ((map (make-sparse-keymap "Set Language Environment"))) (bindings--define-key map [Default] '(menu-item "Default" setup-specified-language-environment)) map)) nil [2437 2655])
+            ("set-coding-system-map" variable (:default-value (let ((map (make-sparse-keymap "Set Coding System"))) (bindings--define-key map [set-buffer-process-coding-system] '(menu-item "For I/O with Subprocess" set-buffer-process-coding-system :visible (fboundp 'make-process) :enable (get-buffer-process (current-buffer)) :help "How to en/decode I/O from/to subprocess connected to this buffer")) (bindings--define-key map [set-next-selection-coding-system] '(menu-item "For Next X Selection" set-next-selection-coding-system :visible (display-selections-p) :help "How to en/decode next selection/clipboard operation")) (bindings--define-key map [set-selection-coding-system] '(menu-item "For X Selections/Clipboard" set-selection-coding-system :visible (display-selections-p) :help "How to en/decode data to/from selection/clipboard")) (bindings--define-key map [separator-3] menu-bar-separator) (bindings--define-key map [set-terminal-coding-system] '(menu-item "For Terminal" set-terminal-coding-system :enable (null (memq initial-window-system '(x w32 ns))) :help "How to encode terminal output")) (bindings--define-key map [set-keyboard-coding-system] '(menu-item "For Keyboard" set-keyboard-coding-system :help "How to decode keyboard input")) (bindings--define-key map [separator-2] menu-bar-separator) (bindings--define-key map [set-file-name-coding-system] '(menu-item "For File Name" set-file-name-coding-system :help "How to decode/encode file names")) (bindings--define-key map [revert-buffer-with-coding-system] '(menu-item "For Reverting This File Now" revert-buffer-with-coding-system :enable buffer-file-name :help "Revisit this file immediately using specified coding system")) (bindings--define-key map [set-buffer-file-coding-system] '(menu-item "For Saving This Buffer" set-buffer-file-coding-system :help "How to encode this buffer when saved")) (bindings--define-key map [separator-1] menu-bar-separator) (bindings--define-key map [universal-coding-system-argument] '(menu-item "For Next Command" universal-coding-system-argument :help "Coding system to be used by next command")) map)) nil [2657 4976])
+            ("mule-menu-keymap" variable
+               (:documentation "Keymap for Mule (Multilingual environment) menu specific commands."
+                :default-value (let ((map (make-sparse-keymap "Mule (Multilingual Environment)"))) (bindings--define-key map [mule-diag] '(menu-item "Show All Multilingual Settings" mule-diag :help "Display multilingual environment settings")) (bindings--define-key map [list-character-sets] '(menu-item "List Character Sets" list-character-sets :help "Show table of available character sets")) (bindings--define-key map [describe-coding-system] '(menu-item "Describe Coding System..." describe-coding-system)) (bindings--define-key map [describe-input-method] '(menu-item "Describe Input Method..." describe-input-method :help "Keyboard layout for a specific input method")) (bindings--define-key map [describe-language-environment] `(menu-item "Describe Language Environment" ,describe-language-environment-map :help "Show multilingual settings for a specific language")) (bindings--define-key map [separator-coding-system] menu-bar-separator) (bindings--define-key map [view-hello-file] '(menu-item "Show Multilingual Sample Text" view-hello-file :enable (file-readable-p (expand-file-name "HELLO" data-directory)) :help "Demonstrate various character sets")) (bindings--define-key map [set-various-coding-system] `(menu-item "Set Coding Systems" ,set-coding-system-map)) (bindings--define-key map [separator-input-method] menu-bar-separator) (bindings--define-key map [describe-input-method] '(menu-item "Describe Input Method" describe-input-method)) (bindings--define-key map [set-input-method] '(menu-item "Select Input Method..." set-input-method)) (bindings--define-key map [toggle-input-method] '(menu-item "Toggle Input Method" toggle-input-method)) (bindings--define-key map [separator-mule] menu-bar-separator) (bindings--define-key map [set-language-environment] `(menu-item "Set Language Environment" ,setup-language-environment-map)) map))
+                nil [4978 7112])
+            ("define-key" code nil nil [7494 7546])
+            ("help-xref-mule-regexp-template" variable
+               (:constant-flag t
+                :default-value (purecopy (concat "\\(\\<\\(" "\\(coding system\\)\\|" "\\(input method\\)\\|" "\\(character set\\)\\|" "\\(charset\\)" "\\)\\s-+\\)?" "['`‘]\\(\\sw\\(\\sw\\|\\s_\\)+\\)['’]")))
+                nil [7789 8096])
+            ("coding-system-change-eol-conversion" function
+               (:documentation "Return a coding system which differs from CODING-SYSTEM in EOL conversion.
+The returned coding system converts end-of-line by EOL-TYPE
+but text as the same way as CODING-SYSTEM.
+EOL-TYPE should be `unix', `dos', `mac', or nil.
+If EOL-TYPE is nil, the returned coding system detects
+how end-of-line is formatted automatically while decoding.
+
+EOL-TYPE can be specified by an integer 0, 1, or 2.
+They means `unix', `dos', and `mac' respectively."
+                :arguments ("coding-system" "eol-type"))
+                nil [8098 9337])
+            ("coding-system-change-text-conversion" function
+               (:documentation "Return a coding system which differs from CODING-SYSTEM in text conversion.
+The returned coding system converts text by CODING
+but end-of-line as the same way as CODING-SYSTEM.
+If CODING is nil, the returned coding system detects
+how text is formatted automatically while decoding."
+                :arguments ("coding-system" "coding"))
+                nil [9339 9889])
+            ("canonicalize-coding-system-name" function (:arguments ("name")) nil [10039 10812])
+            ("coding-system-from-name" function
+               (:documentation "Return a coding system whose name matches with NAME (string or symbol)."
+                :arguments ("name"))
+                nil [10814 11551])
+            ("toggle-enable-multibyte-characters" function
+               (:documentation "Change whether this buffer uses multibyte characters.
+With ARG, use multibyte characters if the ARG is positive.
+
+Note that this command does not convert the byte contents of
+the buffer; it only changes the way those bytes are interpreted.
+In general, therefore, this command *changes* the sequence of
+characters that the current buffer contains.
+
+We suggest you avoid using this command unless you know what you are
+doing.  If you use it by mistake, and the buffer is now displayed
+wrong, use this command again to toggle back to the right mode."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [11553 12356])
+            ("view-hello-file" function
+               (:documentation "Display the HELLO file, which lists many languages and characters."
+                :user-visible-flag t)
+                nil [12358 12527])
+            ("universal-coding-system-argument" function
+               (:documentation "Execute an I/O command using the specified coding system."
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [12529 14417])
+            ("set-default-coding-systems" function
+               (:documentation "Set default value of various coding systems to CODING-SYSTEM.
+This sets the following coding systems:
+  o coding system of a newly created buffer
+  o default coding system for subprocess I/O
+This also sets the following values:
+  o default value used as `file-name-coding-system' for converting file names
+      if CODING-SYSTEM is ASCII-compatible
+  o default value for the command `set-terminal-coding-system'
+  o default value for the command `set-keyboard-coding-system'
+      if CODING-SYSTEM is ASCII-compatible"
+                :arguments ("coding-system"))
+                nil [14419 16284])
+            ("prefer-coding-system" function
+               (:documentation "Add CODING-SYSTEM at the front of the priority list for automatic detection.
+This also sets the following coding systems:
+  o coding system of a newly created buffer
+  o default coding system for subprocess I/O
+This also sets the following values:
+  o default value used as `file-name-coding-system' for converting file names
+  o default value for the command `set-terminal-coding-system'
+  o default value for the command `set-keyboard-coding-system'
+
+If CODING-SYSTEM specifies a certain type of EOL conversion, the coding
+systems set by this function will use that type of EOL conversion.
+
+A coding system that requires automatic detection of text+encoding
+(e.g. undecided, unix) can't be preferred.
+
+To prefer, for instance, utf-8, say the following:
+
+  (prefer-coding-system \\='utf-8)"
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [16286 18205])
+            ("sort-coding-systems-predicate" variable (:documentation "If non-nil, a predicate function to sort coding systems.
+
+It is called with two coding systems, and should return t if the first
+one is \"less\" than the second.
+
+The function `sort-coding-systems' use it.") nil [18207 18459])
+            ("sort-coding-systems" function
+               (:documentation "Sort coding system list CODINGS by a priority of each coding system.
+Return the sorted list.  CODINGS is modified by side effects.
+
+If a coding system is most preferred, it has the highest priority.
+Otherwise, coding systems that correspond to MIME charsets have
+higher priorities.  Among them, a coding system included in the
+`coding-system' key of the current language environment has higher
+priority.  See also the documentation of `language-info-alist'.
+
+If the variable `sort-coding-systems-predicate' (which see) is
+non-nil, it is used to sort CODINGS instead."
+                :arguments ("codings"))
+                nil [18461 21146])
+            ("find-coding-systems-region" function
+               (:documentation "Return a list of proper coding systems to encode a text between FROM and TO.
+
+If FROM is a string, find coding systems in that instead of the buffer.
+All coding systems in the list can safely encode any multibyte characters
+in the text.
+
+If the text contains no multibyte characters, return a list of a single
+element `undecided'."
+                :arguments ("from" "to"))
+                nil [21148 21834])
+            ("find-coding-systems-string" function
+               (:documentation "Return a list of proper coding systems to encode STRING.
+All coding systems in the list can safely encode any multibyte characters
+in STRING.
+
+If STRING contains no multibyte characters, return a list of a single
+element `undecided'."
+                :arguments ("string"))
+                nil [21836 22159])
+            ("find-coding-systems-for-charsets" function
+               (:documentation "Return a list of proper coding systems to encode characters of CHARSETS.
+CHARSETS is a list of character sets.
+
+This only finds coding systems of type `charset', whose
+`:charset-list' property includes all of CHARSETS (plus `ascii' for
+ASCII-compatible coding systems).  It was used in older versions of
+Emacs, but is unlikely to be what you really want now."
+                :arguments ("charsets"))
+                nil [22161 23411])
+            ("find-multibyte-characters" function
+               (:documentation "Find multibyte characters in the region specified by FROM and TO.
+If FROM is a string, find multibyte characters in the string.
+The return value is an alist of the following format:
+  ((CHARSET COUNT CHAR ...) ...)
+where
+  CHARSET is a character set,
+  COUNT is a number of characters,
+  CHARs are the characters found from the character set.
+Optional 3rd arg MAXCOUNT limits how many CHARs are put in the above list.
+Optional 4th arg EXCLUDES is a list of character sets to be ignored."
+                :arguments ("from" "to" "maxcount" "excludes"))
+                nil [23413 25164])
+            ("search-unencodable-char" function
+               (:documentation "Search forward from point for a character that is not encodable.
+It asks which coding system to check.
+If such a character is found, set point after that character.
+Otherwise, don't move point.
+
+When called from a program, the value is the position of the unencodable
+character found, or nil if all characters are encodable."
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [25166 25916])
+            ("last-coding-system-specified" variable (:documentation "Most recent coding system explicitly specified by the user when asked.
+This variable is set whenever Emacs asks the user which coding system
+to use in order to write a file.  If you set it to nil explicitly,
+then call `write-region', then afterward this variable will be non-nil
+only if the user was explicitly asked and specified a coding system.") nil [25918 26311])
+            ("select-safe-coding-system-accept-default-p" variable (:documentation "If non-nil, a function to control the behavior of coding system selection.
+The meaning is the same as the argument ACCEPT-DEFAULT-P of the
+function `select-safe-coding-system' (which see).  This variable
+overrides that argument.") nil [26313 26601])
+            ("sanitize-coding-system-list" function
+               (:documentation "Return a list of coding systems presumably more user-friendly than CODINGS."
+                :arguments ("codings"))
+                nil [26603 27771])
+            ("select-safe-coding-system-interactively" function
+               (:documentation "Select interactively a coding system for the region FROM ... TO.
+FROM can be a string, as in `write-region'.
+CODINGS is the list of base coding systems known to be safe for this region,
+  typically obtained with `find-coding-systems-region'.
+UNSAFE is a list of coding systems known to be unsafe for this region.
+REJECTED is a list of coding systems which were safe but for some reason
+  were not recommended in the particular context.
+DEFAULT is the coding system to use by default in the query."
+                :arguments ("from" "to" "codings" "unsafe" "rejected" "default"))
+                nil [27773 32993])
+            ("select-safe-coding-system" function
+               (:documentation "Ask a user to select a safe coding system from candidates.
+The candidates of coding systems which can safely encode a text
+between FROM and TO are shown in a popup window.  Among them, the most
+proper one is suggested as the default.
+
+The list of `buffer-file-coding-system' of the current buffer, the
+default `buffer-file-coding-system', and the most preferred coding
+system (if it corresponds to a MIME charset) is treated as the
+default coding system list.  Among them, the first one that safely
+encodes the text is normally selected silently and returned without
+any user interaction.  See also the command `prefer-coding-system'.
+
+However, the user is queried if the chosen coding system is
+inconsistent with what would be selected by `find-auto-coding' from
+coding cookies &c. if the contents of the region were read from a
+file.  (That could lead to data corruption in a file subsequently
+re-visited and edited.)
+
+Optional 3rd arg DEFAULT-CODING-SYSTEM specifies a coding system or a
+list of coding systems to be prepended to the default coding system
+list.  However, if DEFAULT-CODING-SYSTEM is a list and the first
+element is t, the cdr part is used as the default coding system list,
+i.e. current `buffer-file-coding-system', default `buffer-file-coding-system',
+and the most preferred coding system are not used.
+
+Optional 4th arg ACCEPT-DEFAULT-P, if non-nil, is a function to
+determine the acceptability of the silently selected coding system.
+It is called with that coding system, and should return nil if it
+should not be silently selected and thus user interaction is required.
+
+Optional 5th arg FILE is the file name to use for this purpose.
+That is different from `buffer-file-name' when handling `write-region'
+(for example).
+
+The variable `select-safe-coding-system-accept-default-p', if non-nil,
+overrides ACCEPT-DEFAULT-P.
+
+Kludgy feature: if FROM is a string, the string is the target text,
+and TO is ignored."
+                :arguments ("from" "to" "default-coding-system" "accept-default-p" "file"))
+                nil [32995 42950])
+            ("setq" code nil nil [42952 43020])
+            ("select-message-coding-system" function (:documentation "Return a coding system to encode the outgoing message of the current buffer.
+It at first tries the first coding system found in these variables
+in this order:
+  (1) local value of `buffer-file-coding-system'
+  (2) value of `sendmail-coding-system'
+  (3) value of `default-sendmail-coding-system'
+  (4) default value of `buffer-file-coding-system'
+If the found coding system can't encode the current buffer,
+or none of them are bound to a coding system,
+it asks the user to select a proper coding system.") nil [43022 44116])
+            ("language-info-alist" variable (:documentation "Alist of language environment definitions.
+Each element looks like:
+	(LANGUAGE-NAME . ((KEY . INFO) ...))
+where LANGUAGE-NAME is a string, the name of the language environment,
+KEY is a symbol denoting the kind of information, and
+INFO is the data associated with KEY.
+Meaningful values for KEY include
+
+  documentation      value is documentation of what this language environment
+			is meant for, and how to use it.
+  charset	     value is a list of the character sets mainly used
+			by this language environment.
+  sample-text	     value is an expression which is evalled to generate
+                        a line of text written using characters appropriate
+                        for this language environment.
+  setup-function     value is a function to call to switch to this
+			language environment.
+  exit-function      value is a function to call to leave this
+		        language environment.
+  coding-system      value is a list of coding systems that are good for
+			saving text written in this language environment.
+			This list serves as suggestions to the user;
+			in effect, as a kind of documentation.
+  coding-priority    value is a list of coding systems for this language
+			environment, in order of decreasing priority.
+			This is used to set up the coding system priority
+			list when you switch to this language environment.
+  nonascii-translation
+		     value is a charset of dimension one to use for
+			converting a unibyte character to multibyte
+			and vice versa.
+  input-method       value is a default input method for this language
+			environment.
+  features           value is a list of features requested in this
+			language environment.
+  ctext-non-standard-encodings
+		     value is a list of non-standard encoding names used
+			in extended segments of CTEXT.  See the variable
+			`ctext-non-standard-encodings' for more detail.
+
+The following key takes effect only when multibyte characters are
+globally disabled, i.e. the default value of `enable-multibyte-characters'
+is nil (which is an obsolete and deprecated use):
+
+  unibyte-display    value is a coding system to encode characters for
+			the terminal.  Characters in the range of 160 to
+			255 display not as octal escapes, but as non-ASCII
+			characters in this language environment.") nil [44148 46463])
+            ("get-language-info" function
+               (:documentation "Return information listed under KEY for language environment LANG-ENV.
+KEY is a symbol denoting the kind of information.
+For a list of useful values for KEY and their meanings,
+see `language-info-alist'."
+                :arguments ("lang-env" "key"))
+                nil [46465 46905])
+            ("set-language-info" function
+               (:documentation "Modify part of the definition of language environment LANG-ENV.
+Specifically, this stores the information INFO under KEY
+in the definition of this language environment.
+KEY is a symbol denoting the kind of information.
+INFO is the value for that information.
+
+For a list of useful values for KEY and their meanings,
+see `language-info-alist'."
+                :arguments ("lang-env" "key" "info"))
+                nil [46907 47881])
+            ("set-language-info-internal" function
+               (:documentation "Internal use only.
+Arguments are the same as `set-language-info'."
+                :arguments ("lang-env" "key" "info"))
+                nil [47883 48731])
+            ("set-language-info-alist" function
+               (:documentation "Store ALIST as the definition of language environment LANG-ENV.
+ALIST is an alist of KEY and INFO values.  See the documentation of
+`language-info-alist' for the meanings of KEY and INFO.
+
+Optional arg PARENTS is a list of parent menu names; it specifies
+where to put this language environment in the
+Describe Language Environment and Set Language Environment menus.
+For example, (\"European\") means to put this language environment
+in the European submenu in each of those two menus."
+                :arguments ("lang-env" "alist" "parents"))
+                nil [48733 51197])
+            ("read-language-name" function
+               (:documentation "Read a language environment name which has information for KEY.
+If KEY is nil, read any language environment.
+Prompt with PROMPT.  DEFAULT is the default choice of language environment.
+This returns a language environment name as a string."
+                :arguments ("key" "prompt" "default"))
+                nil [51199 51794])
+            ("leim" customgroup
+               (:documentation "LEIM: Libraries of Emacs Input Methods."
+                :user-visible-flag t)
+                nil [51829 51907])
+            ("leim-list-file-name" variable
+               (:documentation "Name of LEIM list file.
+This file contains a list of libraries of Emacs input methods (LEIM)
+in the format of Lisp expression for registering each input method.
+Emacs loads this file at startup time."
+                :constant-flag t
+                :default-value "leim-list.el")
+                nil [51909 52158])
+            ("leim-list-header" variable
+               (:documentation "Header to be inserted in LEIM list file."
+                :constant-flag t
+                :default-value (format-message ";;; %s -- list of LEIM (Library of Emacs Input Method) -*-coding: utf-8;-*-
+;;
+;; This file is automatically generated.
+;;
+;; This file contains a list of LEIM (Library of Emacs Input Method)
+;; methods in the same directory as this file.  Loading this file
+;; registers all the input methods in Emacs.
+;;
+;; Each entry has the form:
+;;   (register-input-method
+;;    INPUT-METHOD LANGUAGE-NAME ACTIVATE-FUNC
+;;    TITLE DESCRIPTION
+;;    ARG ...)
+;; See the function `register-input-method' for the meanings of the arguments.
+;;
+;; If this directory is included in `load-path', Emacs automatically
+;; loads this file at startup time.
+
+" leim-list-file-name))
+                nil [52160 52913])
+            ("leim-list-entry-regexp" variable
+               (:documentation "Regexp matching head of each entry in LEIM list file.
+See also the variable `leim-list-header'."
+                :constant-flag t
+                :default-value "^(register-input-method")
+                nil [52915 53074])
+            ("update-leim-list-functions" variable
+               (:documentation "List of functions to call to update LEIM list file.
+Each function is called with one arg, LEIM directory name."
+                :default-value '(quail-update-leim-list-file))
+                nil [53076 53259])
+            ("update-leim-list-file" function
+               (:documentation "Update LEIM list file in directories DIRS."
+                :arguments ("dirs"))
+                nil [53261 53425])
+            ("current-input-method" variable (:documentation "The current input method for multilingual text.
+If nil, that means no input method is activated now.") nil [53427 53565])
+            ("make-variable-buffer-local" code nil nil [53566 53616])
+            ("put" code nil nil [53617 53663])
+            ("current-input-method-title" variable (:documentation "Title string of the current input method shown in mode line.") nil [53665 53769])
+            ("make-variable-buffer-local" code nil nil [53770 53826])
+            ("put" code nil nil [53827 53879])
+            ("define-widget" code nil nil [53881 54175])
+            ("default-input-method" variable (:documentation "Default input method for multilingual text (a string).
+This is the input method activated automatically by the command
+`toggle-input-method' (\\[toggle-input-method]).") nil [54177 54566])
+            ("put" code nil nil [54568 54615])
+            ("input-method-history" variable (:documentation "History list of input methods read from the minibuffer.
+
+Maximum length of the history list is determined by the value
+of `history-length', which see.") nil [54617 54805])
+            ("make-variable-buffer-local" code nil nil [54806 54856])
+            ("put" code nil nil [54857 54903])
+            ("define-obsolete-variable-alias" code nil nil [54905 55032])
+            ("deactivate-current-input-method-function" variable (:documentation "Function to call for deactivating the current input method.
+Every input method should set this to an appropriate value when activated.
+This function is called with no argument.
+
+This function should never change the value of `current-input-method'.
+It is set to nil by the function `deactivate-input-method'.") nil [55033 55399])
+            ("make-variable-buffer-local" code nil nil [55400 55470])
+            ("put" code nil nil [55471 55537])
+            ("describe-current-input-method-function" variable (:documentation "Function to call for describing the current input method.
+This function is called with no argument.") nil [55539 55694])
+            ("make-variable-buffer-local" code nil nil [55695 55763])
+            ("put" code nil nil [55764 55828])
+            ("input-method-alist" variable (:documentation "Alist of input method names vs how to use them.
+Each element has the form:
+   (INPUT-METHOD LANGUAGE-ENV ACTIVATE-FUNC TITLE DESCRIPTION ARGS...)
+See the function `register-input-method' for the meanings of the elements.") nil [55830 56086])
+            ("put" code nil nil [56102 56151])
+            ("register-input-method" function
+               (:documentation "Register INPUT-METHOD as an input method for language environment LANG-ENV.
+
+INPUT-METHOD and LANG-ENV are symbols or strings.
+ACTIVATE-FUNC is a function to call to activate this method.
+TITLE is a string to show in the mode line when this method is active.
+DESCRIPTION is a string describing this method and what it is good for.
+The ARGS, if any, are passed as arguments to ACTIVATE-FUNC.
+All told, the arguments to ACTIVATE-FUNC are INPUT-METHOD and the ARGS.
+
+This function is mainly used in the file \"leim-list.el\" which is
+created at Emacs build time, registering all Quail input methods
+contained in the Emacs distribution.
+
+In case you want to register a new Quail input method by yourself, be
+careful to use the same input method title as given in the third
+parameter of `quail-define-package'.  (If the values are different, the
+string specified in this function takes precedence.)
+
+The commands `describe-input-method' and `list-input-methods' need
+these duplicated values to show some information about input methods
+without loading the relevant Quail packages.
+
+(fn INPUT-METHOD LANG-ENV ACTIVATE-FUNC TITLE DESCRIPTION &rest ARGS)"
+                :arguments ("input-method" "lang-env" "args"))
+                nil [56153 57875])
+            ("read-input-method-name" function
+               (:documentation "Read a name of input method from a minibuffer prompting with PROMPT.
+If DEFAULT is non-nil, use that as the default,
+and substitute it into PROMPT at the first `%s'.
+If INHIBIT-NULL is non-nil, null input signals an error.
+
+The return value is a string."
+                :arguments ("prompt" "default" "inhibit-null"))
+                nil [57877 59049])
+            ("activate-input-method" function
+               (:documentation "Switch to input method INPUT-METHOD for the current buffer.
+If some other input method is already active, turn it off first.
+If INPUT-METHOD is nil, deactivate any current input method."
+                :arguments ("input-method"))
+                nil [59051 60316])
+            ("deactivate-input-method" function (:documentation "Turn off the current input method.") nil [60318 60765])
+            ("define-obsolete-function-alias" code nil nil [60767 60860])
+            ("set-input-method" function
+               (:documentation "Select and activate input method INPUT-METHOD for the current buffer.
+This also sets the default input method to the one you specify.
+If INPUT-METHOD is nil, this function turns off the input method, and
+also causes you to be prompted for a name of an input method the next
+time you invoke \\[toggle-input-method].
+When called interactively, the optional arg INTERACTIVE is non-nil,
+which marks the variable `default-input-method' as set for Custom buffers.
+
+To deactivate the input method interactively, use \\[toggle-input-method].
+To deactivate it programmatically, use `deactivate-input-method'."
+                :user-visible-flag t
+                :arguments ("input-method" "interactive"))
+                nil [60862 61931])
+            ("toggle-input-method-active" variable (:documentation "Non-nil inside `toggle-input-method'.") nil [61933 62014])
+            ("toggle-input-method" function
+               (:documentation "Enable or disable multilingual text input method for the current buffer.
+Only one input method can be enabled at any time in a given buffer.
+
+The normal action is to enable an input method if none was enabled,
+and disable the current one otherwise.  Which input method to enable
+can be determined in various ways--either the one most recently used,
+or the one specified by `default-input-method', or as a last resort
+by reading the name of an input method in the minibuffer.
+
+With a prefix argument ARG, read an input method name with the minibuffer
+and enable that one.  The default is the most recent input method specified
+(not including the currently active input method, if any).
+
+When called interactively, the optional argument INTERACTIVE is non-nil,
+which marks the variable `default-input-method' as set for Custom buffers."
+                :user-visible-flag t
+                :arguments ("arg" "interactive"))
+                nil [62016 63740])
+            ("help-buffer" function (:prototype-flag t) nil [63742 63777])
+            ("describe-input-method" function
+               (:documentation "Describe input method INPUT-METHOD."
+                :user-visible-flag t
+                :arguments ("input-method"))
+                nil [63779 64897])
+            ("describe-current-input-method" function (:documentation "Describe the input method currently in use.
+This is a subroutine for `describe-input-method'.") nil [64899 65381])
+            ("read-multilingual-string" function
+               (:documentation "Read a multilingual string from minibuffer, prompting with string PROMPT.
+The input method selected last time is activated in minibuffer.
+If optional second argument INITIAL-INPUT is non-nil, insert it in the
+minibuffer initially.
+Optional 3rd argument INPUT-METHOD specifies the input method to be activated
+instead of the one selected last time.  It is a symbol or a string."
+                :arguments ("prompt" "initial-input" "input-method"))
+                nil [65383 66307])
+            ("input-method-verbose-flag" variable
+               (:documentation "A flag to control extra guidance given by input methods.
+The value should be nil, t, `complex-only', or `default'.
+
+The extra guidance is done by showing list of available keys in echo
+area.  When you use the input method in the minibuffer, the guidance
+is shown at the bottom short window (split from the existing window).
+
+If the value is t, extra guidance is always given, if the value is
+nil, extra guidance is always suppressed.
+
+If the value is `complex-only', only complex input methods such as
+`chinese-py' and `japanese' give extra guidance.
+
+If the value is `default', complex input methods always give extra
+guidance, but simple input methods give it only when you are not in
+the minibuffer.
+
+See also the variable `input-method-highlight-flag'."
+                :default-value 'default)
+                nil [66416 67345])
+            ("input-method-highlight-flag" variable
+               (:documentation "If this flag is non-nil, input methods highlight partially-entered text.
+For instance, while you are in the middle of a Quail input method sequence,
+the text inserted so far is temporarily underlined.
+The underlining goes away when you finish or abort the input method sequence.
+See also the variable `input-method-verbose-flag'."
+                :default-value t)
+                nil [67347 67754])
+            ("input-method-activate-hook" variable (:documentation "Normal hook run just after an input method is activated.
+
+The variable `current-input-method' keeps the input method name
+just activated.") nil [67756 67969])
+            ("define-obsolete-variable-alias" code nil nil [67971 68074])
+            ("input-method-deactivate-hook" variable (:documentation "Normal hook run just after an input method is deactivated.
+
+The variable `current-input-method' still keeps the input method name
+just deactivated.") nil [68076 68319])
+            ("input-method-after-insert-chunk-hook" variable (:documentation "Normal hook run just after an input method insert some chunk of text.") nil [68321 68476])
+            ("input-method-exit-on-first-char" variable (:documentation "This flag controls when an input method returns.
+Usually, the input method does not return while there's a possibility
+that it may find a different translation if a user types another key.
+But, if this flag is non-nil, the input method returns as soon as the
+current key sequence gets long enough to have some valid translation.") nil [68478 68855])
+            ("input-method-use-echo-area" variable (:documentation "This flag controls how an input method shows an intermediate key sequence.
+Usually, the input method inserts the intermediate key sequence,
+or candidate translations corresponding to the sequence,
+at point in the current buffer.
+But, if this flag is non-nil, it displays them in echo area instead.") nil [68857 69233])
+            ("input-method-exit-on-invalid-key" variable (:documentation "This flag controls the behavior of an input method on invalid key input.
+Usually, when a user types a key which doesn't start any character
+handled by the input method, the key is handled by turning off the
+input method temporarily.  After that key, the input method is re-enabled.
+But, if this flag is non-nil, the input method is never back on.") nil [69235 69631])
+            ("set-language-environment-hook" variable (:documentation "Normal hook run after some language environment is set.
+
+When you set some hook function here, that effect usually should not
+be inherited to another language environment.  So, you had better set
+another function in `exit-language-environment-hook' (which see) to
+cancel the effect.") nil [69635 69996])
+            ("exit-language-environment-hook" variable (:documentation "Normal hook run after exiting from some language environment.
+When this hook is run, the variable `current-language-environment'
+is still bound to the language environment being exited.
+
+This hook is mainly used for canceling the effect of
+`set-language-environment-hook' (which see).") nil [69998 70362])
+            ("put" code nil nil [70364 70426])
+            ("setup-specified-language-environment" function
+               (:documentation "Switch to a specified language environment."
+                :user-visible-flag t)
+                nil [70428 70906])
+            ("current-language-environment" variable
+               (:documentation "The last language environment specified with `set-language-environment'.
+This variable should be set only with \\[customize], which is equivalent
+to using the function `set-language-environment'."
+                :default-value "English")
+                nil [70908 71798])
+            ("reset-language-environment" function
+               (:documentation "Reset multilingual environment of Emacs to the default status.
+
+The default status is as follows:
+
+  The default value of `buffer-file-coding-system' is nil.
+  The default coding system for process I/O is nil.
+  The default value for the command `set-terminal-coding-system' is nil.
+  The default value for the command `set-keyboard-coding-system' is nil.
+
+  The order of priorities of coding systems are as follows:
+	utf-8
+	iso-2022-7bit
+	iso-latin-1
+	iso-2022-7bit-lock
+	iso-2022-8bit-ss2
+	emacs-mule
+	raw-text"
+                :user-visible-flag t)
+                nil [71800 74788])
+            ("reset-language-environment" code nil nil [74790 74818])
+            ("set-display-table-and-terminal-coding-system" function
+               (:documentation "Set up the display table and terminal coding system for LANGUAGE-NAME."
+                :arguments ("language-name" "coding-system" "display"))
+                nil [74820 75603])
+            ("set-language-environment" function
+               (:documentation "Set up multilingual environment for using LANGUAGE-NAME.
+This sets the coding system priority and the default input method
+and sometimes other things.  LANGUAGE-NAME should be a string
+which is the name of a language environment.  For example, \"Latin-1\"
+specifies the character set for the major languages of Western Europe.
+
+If there is a prior value for `current-language-environment', this
+runs the hook `exit-language-environment-hook'.  After setting up
+the new language environment, it runs `set-language-environment-hook'."
+                :user-visible-flag t
+                :arguments ("language-name"))
+                nil [75605 77711])
+            ("define-widget" code nil nil [77713 78192])
+            ("language-info-custom-alist" variable (:documentation "Customizations of language environment parameters.
+Value is an alist with elements like those of `language-info-alist'.
+These are used to set values in `language-info-alist' which replace
+the defaults.  A typical use is replacing the default input method for
+the environment.  Use \\[describe-language-environment] to find the environment's settings.
+
+This option is intended for use at startup.  Removing items doesn't
+remove them from the language info until you next restart Emacs.
+
+Setting this variable directly does not take effect.
+See `set-language-info-alist' for use in programs.") nil [78194 79997])
+            ("declare-function" code nil nil [79999 80063])
+            ("declare-function" code nil nil [80064 80129])
+            ("standard-display-european-internal" function nil nil [80131 81240])
+            ("set-language-environment-coding-systems" function
+               (:documentation "Do various coding system setups for language environment LANGUAGE-NAME."
+                :arguments ("language-name"))
+                nil [81242 82724])
+            ("set-language-environment-input-method" function
+               (:documentation "Do various input method setups for language environment LANGUAGE-NAME."
+                :arguments ("language-name"))
+                nil [82726 83100])
+            ("set-language-environment-nonascii-translation" function
+               (:documentation "Do unibyte/multibyte translation setup for language environment LANGUAGE-NAME."
+                :arguments ("language-name"))
+                nil [83102 83857])
+            ("set-language-environment-charset" function
+               (:documentation "Do various charset setups for language environment LANGUAGE-NAME."
+                :arguments ("language-name"))
+                nil [83859 84432])
+            ("set-language-environment-unibyte" function
+               (:documentation "Do various unibyte-mode setups for language environment LANGUAGE-NAME."
+                :arguments ("language-name"))
+                nil [84434 84628])
+            ("princ-list" function
+               (:documentation "Print all arguments with `princ', then print \"\\n\"."
+                :arguments ("args"))
+                nil [84630 84816])
+            ("put" code nil nil [84818 84879])
+            ("describe-specified-language-support" function
+               (:documentation "Describe how Emacs supports the specified language environment."
+                :user-visible-flag t)
+                nil [85168 85635])
+            ("describe-language-environment" function
+               (:documentation "Describe how Emacs supports language environment LANGUAGE-NAME."
+                :user-visible-flag t
+                :arguments ("language-name"))
+                nil [85637 89113])
+            ("locale-translation-file-name" variable (:documentation "File name for the system's file of locale-name aliases, or nil if none.") nil [89130 89247])
+            ("locale-language-names" variable
+               (:documentation "Alist of locale regexps vs the corresponding languages and coding systems.
+Each element has this form:
+  (LOCALE-REGEXP LANG-ENV CODING-SYSTEM)
+The first element whose LOCALE-REGEXP matches the start of a
+downcased locale specifies the LANG-ENV (language environment)
+and CODING-SYSTEM corresponding to that locale.  If there is no
+appropriate language environment, the element may have this form:
+  (LOCALE-REGEXP . LANG-ENV)
+In this case, LANG-ENV is one of generic language environments for an
+specific encoding such as \"Latin-1\" and \"UTF-8\"."
+                :constant-flag t
+                :default-value (purecopy '(("aa_DJ" . "Latin-1") ("aa" . "UTF-8") ("af" . "Latin-1") ("am" "Ethiopic" utf-8) ("an" . "Latin-9") ("ar" . "Arabic") ("az" . "UTF-8") ("be" "Belarusian" cp1251) ("bg" "Bulgarian" cp1251) ("bn" . "UTF-8") ("bo" . "Tibetan") ("br" . "Latin-1") ("bs" . "Latin-2") ("byn" . "UTF-8") ("ca" "Catalan" iso-8859-1) ("cs" "Czech" iso-8859-2) ("cy" "Welsh" iso-8859-14) ("da" . "Latin-1") ("de" "German" iso-8859-1) ("el" "Greek" iso-8859-7) ("en_IN" "English" utf-8) ("en" "English" iso-8859-1) ("eo" . "Esperanto") ("es" "Spanish" iso-8859-1) ("et" . "Latin-1") ("eu" . "Latin-1") ("fa" . "UTF-8") ("fi" . "Latin-1") ("fj" . "Latin-1") ("fo" . "Latin-1") ("fr" "French" iso-8859-1) ("fy" . "Latin-1") ("ga" . "Latin-1") ("gd" . "Latin-9") ("gez" "Ethiopic" utf-8) ("gl" . "Latin-1") ("gu" . "UTF-8") ("gv" . "Latin-1") ("he" "Hebrew" iso-8859-8) ("hi" "Devanagari" utf-8) ("hr" "Croatian" iso-8859-2) ("hu" . "Latin-2") ("id" . "Latin-1") ("is" . "Latin-1") ("it" "Italian" iso-8859-1) ("iw" "Hebrew" iso-8859-8) ("ja" "Japanese" euc-jp) ("ka" "Georgian" georgian-ps) ("kl" . "Latin-1") ("kn" "Kannada" utf-8) ("ko" "Korean" euc-kr) ("kw" . "Latin-1") ("la" . "Latin-1") ("lb" . "Latin-1") ("lg" . "Laint-6") ("lo" "Lao" utf-8) ("lt" "Lithuanian" iso-8859-13) ("lv" . "Latvian") ("mi" . "Latin-7") ("mk" "Cyrillic-ISO" iso-8859-5) ("ml" "Malayalam" utf-8) ("mn" . "UTF-8") ("mr" "Devanagari" utf-8) ("ms" . "Latin-1") ("mt" . "Latin-3") ("nb" . "Latin-1") ("ne" "Devanagari" utf-8) ("nl" "Dutch" iso-8859-1) ("no" . "Latin-1") ("oc" . "Latin-1") ("om_ET" . "UTF-8") ("om" . "Latin-1") ("pa" . "UTF-8") ("pl" . "Latin-2") ("pt" . "Latin-1") ("rm" . "Latin-1") ("ro" "Romanian" iso-8859-2) ("ru_RU" "Russian" iso-8859-5) ("ru_UA" "Russian" koi8-u) ("sa" . "Devanagari") ("se" . "UTF-8") ("sh" . "Latin-2") ("sid" . "UTF-8") ("sk" "Slovak" iso-8859-2) ("sl" "Slovenian" iso-8859-2) ("so_ET" "UTF-8") ("so" "Latin-1") ("sq" . "Latin-1") ("sr" . "Latin-2") ("st" . "Latin-1") ("sv" "Swedish" iso-8859-1) ("sw" . "Latin-1") ("ta" "Tamil" utf-8) ("te" . "UTF-8") ("tg" "Tajik" koi8-t) ("th" "Thai" tis-620) ("ti" "Ethiopic" utf-8) ("tig_ER" . "UTF-8") ("tl" . "Latin-1") ("tr" "Turkish" iso-8859-9) ("tt" . "UTF-8") ("uk" "Ukrainian" koi8-u) ("ur" . "UTF-8") ("uz_UZ@cyrillic" . "UTF-8") ("uz" . "Latin-1") ("vi" "Vietnamese" utf-8) ("wa" . "Latin-1") ("xh" . "Latin-1") ("yi" . "Windows-1255") ("zh_HK" . "Chinese-Big5") ("zh_TW" . "Chinese-Big5") ("zh_CN.GB2312" "Chinese-GB") ("zh_CN.GBK" "Chinese-GBK") ("zh_CN.GB18030" "Chinese-GB18030") ("zh_CN.UTF-8" . "Chinese-GBK") ("zh_CN" . "Chinese-GB") ("zh" . "Chinese-GB") ("zu" . "Latin-1") ("c$" . "ASCII") ("posix$" . "ASCII") ("ipa$" . "IPA") ("cz" . "Czech") ("ee" . "Latin-4") ("iw" . "Hebrew") ("sp" . "Cyrillic-ISO") ("su" . "Latin-1") ("jp" . "Japanese") ("chs" . "Chinese-GBK") ("cht" . "Chinese-BIG5") ("gbz" . "UTF-8") ("div" . "UTF-8") ("wee" . "Latin-2") ("wen" . "Latin-2"))))
+                nil [89439 97025])
+            ("locale-charset-language-names" variable
+               (:documentation "List of pairs of locale regexps and charset language names.
+The first element whose locale regexp matches the start of a downcased locale
+specifies the language name whose charset corresponds to that locale.
+This language name is used if the locale is not listed in
+`locale-language-names'."
+                :constant-flag t
+                :default-value (purecopy '((".*8859[-_]?1\\>" . "Latin-1") (".*8859[-_]?2\\>" . "Latin-2") (".*8859[-_]?3\\>" . "Latin-3") (".*8859[-_]?4\\>" . "Latin-4") (".*8859[-_]?9\\>" . "Latin-5") (".*8859[-_]?14\\>" . "Latin-8") (".*8859[-_]?15\\>" . "Latin-9") (".*utf\\(?:-?8\\)?\\>" . "UTF-8") (".*@euro\\>" . "Latin-9"))))
+                nil [97027 97827])
+            ("locale-preferred-coding-systems" variable
+               (:documentation "List of pairs of locale regexps and preferred coding systems.
+The first element whose locale regexp matches the start of a downcased locale
+specifies the coding system to prefer when using that locale.
+This coding system is used if the locale specifies a specific charset."
+                :constant-flag t
+                :default-value (purecopy '((".*8859[-_]?1\\>" . iso-8859-1) (".*8859[-_]?2\\>" . iso-8859-2) (".*8859[-_]?3\\>" . iso-8859-3) (".*8859[-_]?4\\>" . iso-8859-4) (".*8859[-_]?9\\>" . iso-8859-9) (".*8859[-_]?14\\>" . iso-8859-14) (".*8859[-_]?15\\>" . iso-8859-15) (".*utf\\(?:-?8\\)?" . utf-8) (".*@euro" . iso-8859-15) ("koi8-?r" . koi8-r) ("koi8-?u" . koi8-u) ("tcvn" . tcvn) ("big5[-_]?hkscs" . big5-hkscs) ("big5" . big5) ("euc-?tw" . euc-tw) ("euc-?cn" . euc-cn) ("gb2312" . gb2312) ("gbk" . gbk) ("gb18030" . gb18030) ("ja.*[._]euc" . japanese-iso-8bit) ("ja.*[._]jis7" . iso-2022-jp) ("ja.*[._]pck" . japanese-shift-jis) ("ja.*[._]sjis" . japanese-shift-jis) ("jpn" . japanese-shift-jis))))
+                nil [97829 99105])
+            ("locale-name-match" function
+               (:documentation "Search for KEY in ALIST, which should be a list of regexp-value pairs.
+Return the value corresponding to the first regexp that matches the
+start of KEY, or nil if there is no match."
+                :arguments ("key" "alist"))
+                nil [99107 99541])
+            ("locale-charset-match-p" function
+               (:documentation "Whether charset names (strings) CHARSET1 and CHARSET2 are equivalent.
+Matching is done ignoring case and any hyphens and underscores in the
+names.  E.g. `ISO_8859-1' and `iso88591' both match `iso-8859-1'."
+                :arguments ("charset1" "charset2"))
+                nil [99543 99994])
+            ("locale-charset-alist" variable (:documentation "Coding system alist keyed on locale-style charset name.
+Used by `locale-charset-to-coding-system'.") nil [99996 100132])
+            ("locale-charset-to-coding-system" function
+               (:documentation "Find coding system corresponding to CHARSET.
+CHARSET is any sort of non-Emacs charset name, such as might be used
+in a locale codeset, or elsewhere.  It is matched to a coding system
+first by case-insensitive lookup in `locale-charset-alist'.  Then
+matches are looked for in the coding system list, treating case and
+the characters `-' and `_' as insignificant.  The coding system base
+is returned.  Thus, for instance, if charset \"ISO8859-2\",
+`iso-latin-2' is returned."
+                :arguments ("charset"))
+                nil [100134 100922])
+            ("declare-function" code nil nil [101091 101149])
+            ("declare-function" code nil nil [101150 101215])
+            ("locale-translate" function
+               (:documentation "Expand LOCALE according to `locale-translation-file-name', if possible.
+For example, translate \"swedish\" into \"sv_SE.ISO8859-1\"."
+                :arguments ("locale"))
+                nil [101217 101728])
+            ("set-locale-environment" function
+               (:documentation "Set up multilingual environment for using LOCALE-NAME.
+This sets the language environment, the coding system priority,
+the default input method and sometimes other things.
+
+LOCALE-NAME should be a string which is the name of a locale supported
+by the system.  Often it is of the form xx_XX.CODE, where xx is a
+language, XX is a country, and CODE specifies a character set and
+coding system.  For example, the locale name \"ja_JP.EUC\" might name
+a locale for Japanese in Japan using the `japanese-iso-8bit'
+coding-system.  The name may also have a modifier suffix, e.g. `@euro'
+or `@cyrillic'.
+
+If LOCALE-NAME is nil, its value is taken from the environment
+variables LC_ALL, LC_CTYPE and LANG (the first one that is set).
+
+The locale names supported by your system can typically be found in a
+directory named `/usr/share/locale' or `/usr/lib/locale'.  LOCALE-NAME
+will be translated according to the table specified by
+`locale-translation-file-name'.
+
+If FRAME is non-nil, only set the keyboard coding system and the
+terminal coding system for the terminal of that frame, and don't
+touch session-global parameters like the language environment.
+
+See also `locale-charset-language-names', `locale-language-names',
+`locale-preferred-coding-systems' and `locale-coding-system'."
+                :user-visible-flag t
+                :arguments ("locale-name" "frame"))
+                nil [101730 110792])
+            ("put" code nil nil [110819 110876])
+            ("define-char-code-property" function
+               (:documentation "Define NAME as a character code property given by TABLE.
+TABLE is a char-table of purpose `char-code-property-table' with
+these extra slots:
+  1st: NAME.
+  2nd: Function to call to get a property value of a character.
+    It is called with three arguments CHAR, VAL, and TABLE, where
+    CHAR is a character, VAL is the value of (aref TABLE CHAR).
+  3rd: Function to call to put a property value of a character.
+    It is called with the same arguments as above.
+  4th: Function to call to get a description string of a property value.
+    It is called with one argument VALUE, a property value.
+  5th: Data used by the above functions.
+
+TABLE may be a name of file to load to build a char-table.  The
+file should contain a call of `define-char-code-property' with a
+char-table of the above format as the argument TABLE.
+
+TABLE may also be nil, in which case no property value is pre-assigned.
+
+Optional 3rd argument DOCSTRING is a documentation string of the property.
+
+See also the documentation of `get-char-code-property' and
+`put-char-code-property'."
+                :arguments ("name" "table" "docstring"))
+                nil [110878 112516])
+            ("char-code-property-table" variable
+               (:documentation "Char-table containing a property list of each character code.
+This table is used for properties not listed in `char-code-property-alist'.
+See also the documentation of `get-char-code-property' and
+`put-char-code-property'."
+                :default-value (make-char-table 'char-code-property-table))
+                nil [112518 112824])
+            ("get-char-code-property" function
+               (:documentation "Return the value of CHAR's PROPNAME property."
+                :arguments ("char" "propname"))
+                nil [112826 113234])
+            ("put-char-code-property" function
+               (:documentation "Store CHAR's PROPNAME property with VALUE.
+It can be retrieved with `(get-char-code-property CHAR PROPNAME)'."
+                :arguments ("char" "propname" "value"))
+                nil [113236 113820])
+            ("char-code-property-description" function
+               (:documentation "Return a description string of character property PROP's value VALUE.
+If there's no description string for VALUE, return nil."
+                :arguments ("prop" "value"))
+                nil [113822 114176])
+            ("iso-2022-control-alist" variable
+               (:constant-flag t
+                :default-value '((27 . "ESC") (14 . "SO") (15 . "SI") (142 . "SS2") (143 . "SS3") (155 . "CSI")))
+                nil [114293 114445])
+            ("encoded-string-description" function
+               (:documentation "Return a pretty description of STR that is encoded by CODING-SYSTEM."
+                :arguments ("str" "coding-system"))
+                nil [114447 114935])
+            ("encode-coding-char" function
+               (:documentation "Encode CHAR by CODING-SYSTEM and return the resulting string.
+If CODING-SYSTEM can't safely encode CHAR, return nil.
+The 3rd optional argument CHARSET, if non-nil, is a charset preferred
+on encoding."
+                :arguments ("char" "coding-system" "charset"))
+                nil [114937 116402])
+            ("define-minor-mode" code nil nil [116502 116621])
+            ("make-obsolete" code nil nil [116689 116756])
+            ("define-minor-mode" code nil nil [116758 116877])
+            ("make-obsolete" code nil nil [116945 117012])
+            ("nonascii-insert-offset" variable nil nil [117014 117047])
+            ("make-obsolete-variable" code nil nil [117048 117120])
+            ("nonascii-translation-table" variable nil nil [117121 117160])
+            ("make-obsolete-variable" code nil nil [117161 117237])
+            ("ucs-names" variable (:documentation "Hash table of cached CHAR-NAME keys to CHAR-CODE values.") nil [117239 117322])
+            ("ucs-names" function (:documentation "Return table of CHAR-NAME keys and CHAR-CODE values cached in `ucs-names'.") nil [117324 119355])
+            ("mule--ucs-names-annotation" function (:arguments ("name")) nil [119357 119713])
+            ("char-from-name" function
+               (:documentation "Return a character as a number from its Unicode name STRING.
+If optional IGNORE-CASE is non-nil, ignore case in STRING.
+Return nil if STRING does not name a character."
+                :arguments ("string" "ignore-case"))
+                nil [119715 120854])
+            ("read-char-by-name" function
+               (:documentation "Read a character by its Unicode name or hex number string.
+Display PROMPT and read a string that represents a character by its
+Unicode property `name' or `old-name'.
+
+This function returns the character as a number.
+
+You can type a few of the first letters of the Unicode name and
+use completion.  If you type a substring of the Unicode name
+preceded by an asterisk `*' and use completion, it will show all
+the characters whose names include that substring, not necessarily
+at the beginning of the name.
+
+Accept a name like \"CIRCULATION FUNCTION\", a hexadecimal
+number like \"2A10\", or a number in hash notation (e.g.,
+\"#x2a10\" for hex, \"10r10768\" for decimal, or \"#o25020\" for
+octal).  Treat otherwise-ambiguous strings like \"BED\" (U+1F6CF)
+as names, not numbers."
+                :arguments ("prompt"))
+                nil [120856 122421])
+            ("define-obsolete-function-alias" code nil nil [122423 122487])
+            ("define-key" code nil nil [122488 122529]))          
+      :file "mule-cmds.el.gz"
+      :pointmax 122558
+      :fsize 34285
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 1276 . 1277) (symbol 1241 . 1258) (open-paren 1240 . 1241)))
+    (semanticdb-table "semanticdb-table-1c93ac4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("mule-version" variable
+               (:documentation "Version number and name of this version of MULE (multilingual environment)."
+                :constant-flag t
+                :default-value "6.0 (HANACHIRUSATO)")
+                nil [1316 1441])
+            ("mule-version-date" variable
+               (:documentation "Distribution date of this version of MULE (multilingual environment)."
+                :constant-flag t
+                :default-value "2003.9.1")
+                nil [1443 1556])
+            ("private-char-area-1-min" variable (:default-value 983040) nil [1638 1678])
+            ("private-char-area-1-max" variable (:default-value 1048574) nil [1679 1719])
+            ("private-char-area-2-min" variable (:default-value 1048576) nil [1720 1761])
+            ("private-char-area-2-max" variable (:default-value 1114110) nil [1762 1803])
+            ("emacs-mule-charset-table" variable (:default-value (make-vector 256 nil)) nil [1869 1924])
+            ("aset" code nil nil [1925 1965])
+            ("convert-define-charset-argument" function (:arguments ("emacs-mule-id" "info-vector")) nil [2226 3604])
+            ("define-charset" function
+               (:documentation "Define NAME (symbol) as a charset with DOCSTRING.
+The remaining arguments must come in pairs ATTRIBUTE VALUE.  ATTRIBUTE
+may be any symbol.  The following have special meanings, and one of
+`:code-offset', `:map', `:subset', `:superset' must be specified.
+
+`:short-name'
+
+VALUE must be a short string to identify the charset.  If omitted,
+NAME is used.
+
+`:long-name'
+
+VALUE must be a string longer than `:short-name' to identify the
+charset.  If omitted, the value of the `:short-name' attribute is used.
+
+`:dimension'
+
+VALUE must be an integer 0, 1, 2, or 3, specifying the dimension of
+code-points of the charsets.  If omitted, it is calculated from the
+value of the `:code-space' attribute.
+
+`:code-space'
+
+VALUE must be a vector of length at most 8 specifying the byte code
+range of each dimension in this format:
+	[ MIN-1 MAX-1 MIN-2 MAX-2 ... ]
+where MIN-N is the minimum byte value of Nth dimension of code-point,
+MAX-N is the maximum byte value of that.
+
+`:min-code'
+
+VALUE must be an integer specifying the minimum code point of the
+charset.  If omitted, it is calculated from `:code-space'.  VALUE may
+be a cons (HIGH . LOW), where HIGH is the most significant 16 bits of
+the code point and LOW is the least significant 16 bits.
+
+`:max-code'
+
+VALUE must be an integer specifying the maximum code point of the
+charset.  If omitted, it is calculated from `:code-space'.  VALUE may
+be a cons (HIGH . LOW), where HIGH is the most significant 16 bits of
+the code point and LOW is the least significant 16 bits.
+
+`:iso-final-char'
+
+VALUE must be a character in the range 32 to 127 (inclusive)
+specifying the final char of the charset for ISO-2022 encoding.  If
+omitted, the charset can't be encoded by ISO-2022 based
+coding-systems.
+
+`:iso-revision-number'
+
+VALUE must be an integer in the range 0..63, specifying the revision
+number of the charset for ISO-2022 encoding.
+
+`:emacs-mule-id'
+
+VALUE must be an integer of 0, 129..255.  If omitted, the charset
+can't be encoded by coding-systems of type `emacs-mule'.
+
+`:ascii-compatible-p'
+
+VALUE must be nil or t (default nil).  If VALUE is t, the charset is
+compatible with ASCII, i.e. the first 128 code points map to ASCII.
+
+`:supplementary-p'
+
+VALUE must be nil or t.  If the VALUE is t, the charset is
+supplementary, which means it is used only as a parent or a
+subset of some other charset, or it is provided just for backward
+compatibility.
+
+`:invalid-code'
+
+VALUE must be a nonnegative integer that can be used as an invalid
+code point of the charset.  If the minimum code is 0 and the maximum
+code is greater than Emacs's maximum integer value, `:invalid-code'
+should not be omitted.
+
+`:code-offset'
+
+VALUE must be an integer added to the index number of a character to
+get the corresponding character code.
+
+`:map'
+
+VALUE must be vector or string.
+
+If it is a vector, the format is [ CODE-1 CHAR-1 CODE-2 CHAR-2 ... ],
+where CODE-n is a code-point of the charset, and CHAR-n is the
+corresponding character code.
+
+If it is a string, it is a name of file that contains the above
+information.   Each line of the file must be this format:
+	0xXXX 0xYYY
+where XXX is a hexadecimal representation of CODE-n and YYY is a
+hexadecimal representation of CHAR-n.  A line starting with `#' is a
+comment line.
+
+`:subset'
+
+VALUE must be a list:
+	( PARENT MIN-CODE MAX-CODE OFFSET )
+PARENT is a parent charset.  MIN-CODE and MAX-CODE specify the range
+of characters inherited from the parent.  OFFSET is an integer value
+to add to a code point of the parent charset to get the corresponding
+code point of this charset.
+
+`:superset'
+
+VALUE must be a list of parent charsets.  The charset inherits
+characters from them.  Each element of the list may be a cons (PARENT
+. OFFSET), where PARENT is a parent charset, and OFFSET is an offset
+value to add to a code point of PARENT to get the corresponding code
+point of this charset.
+
+`:unify-map'
+
+VALUE must be vector or string.
+
+If it is a vector, the format is [ CODE-1 CHAR-1 CODE-2 CHAR-2 ... ],
+where CODE-n is a code-point of the charset, and CHAR-n is the
+corresponding Unicode character code.
+
+If it is a string, it is a name of file that contains the above
+information.  The file format is the same as what described for `:map'
+attribute."
+                :arguments ("name" "docstring" "props"))
+                nil [3606 10440])
+            ("load-with-code-conversion" function
+               (:documentation "Execute a file of Lisp code named FILE whose absolute name is FULLNAME.
+The file contents are decoded before evaluation if necessary.
+If optional third arg NOERROR is non-nil,
+ report no error if FILE doesn't exist.
+Print messages at start and end of loading unless
+ optional fourth arg NOMESSAGE is non-nil.
+Return t if file exists."
+                :arguments ("fullname" "file" "noerror" "nomessage"))
+                nil [10443 12942])
+            ("charset-info" function
+               (:documentation "Return a vector of information of CHARSET.
+This function is provided for backward compatibility.
+
+The elements of the vector are:
+	CHARSET-ID, BYTES, DIMENSION, CHARS, WIDTH, DIRECTION,
+	LEADING-CODE-BASE, LEADING-CODE-EXT,
+	ISO-FINAL-CHAR, ISO-GRAPHIC-PLANE,
+	REVERSE-CHARSET, SHORT-NAME, LONG-NAME,	DESCRIPTION,
+	PLIST.
+where
+CHARSET-ID is always 0.
+BYTES is always 0.
+DIMENSION is the number of bytes of a code-point of the charset:
+  1, 2, 3, or 4.
+CHARS is the number of characters in a dimension:
+  94, 96, 128, or 256.
+WIDTH is always 0.
+DIRECTION is always 0.
+LEADING-CODE-BASE is always 0.
+LEADING-CODE-EXT is always 0.
+ISO-FINAL-CHAR (character) is the final character of the
+  corresponding ISO 2022 charset.  If the charset is not assigned
+  any final character, the value is -1.
+ISO-GRAPHIC-PLANE is always 0.
+REVERSE-CHARSET is always -1.
+SHORT-NAME (string) is the short name to refer to the charset.
+LONG-NAME (string) is the long name to refer to the charset
+DESCRIPTION (string) is the description string of the charset.
+PLIST (property list) may contain any type of information a user
+  want to put and get by functions `put-charset-property' and
+  `get-charset-property' respectively."
+                :arguments ("charset"))
+                nil [12944 14478])
+            ("charset-id" function
+               (:documentation "Always return 0.  This is provided for backward compatibility."
+                :arguments ("_charset"))
+                nil [14649 14783])
+            ("charset-bytes" function
+               (:documentation "Always return 0.  This is provided for backward compatibility."
+                :arguments ("_charset"))
+                nil [14785 14925])
+            ("get-charset-property" function
+               (:documentation "Return the value of CHARSET's PROPNAME property.
+This is the last value stored with
+ (put-charset-property CHARSET PROPNAME VALUE)."
+                :arguments ("charset" "propname"))
+                nil [14927 15157])
+            ("put-charset-property" function
+               (:documentation "Set CHARSETS's PROPNAME property to value VALUE.
+It can be retrieved with `(get-charset-property CHARSET PROPNAME)'."
+                :arguments ("charset" "propname" "value"))
+                nil [15159 15477])
+            ("charset-description" function
+               (:documentation "Return description string of CHARSET."
+                :arguments ("charset"))
+                nil [15479 15607])
+            ("charset-dimension" function
+               (:documentation "Return dimension of CHARSET."
+                :arguments ("charset"))
+                nil [15609 15726])
+            ("charset-chars" function
+               (:documentation "Return number of characters contained in DIMENSION of CHARSET.
+DIMENSION defaults to the first dimension."
+                :arguments ("charset" "dimension"))
+                nil [15728 16096])
+            ("charset-iso-final-char" function
+               (:documentation "Return ISO-2022 final character of CHARSET.
+Return -1 if charset isn't an ISO 2022 one."
+                :arguments ("charset"))
+                nil [16098 16298])
+            ("charset-short-name" function
+               (:documentation "Return short name of CHARSET."
+                :arguments ("charset"))
+                nil [16300 16423])
+            ("charset-long-name" function
+               (:documentation "Return long name of CHARSET."
+                :arguments ("charset"))
+                nil [16425 16545])
+            ("charset-list" function (:documentation "Return list of all charsets ever defined.") nil [16547 16674])
+            ("define-obsolete-function-alias" code nil nil [16692 16757])
+            ("generic-char-p" function
+               (:documentation "Always return nil.  This is provided for backward compatibility."
+                :arguments ("_char"))
+                nil [16759 16898])
+            ("make-char-internal" function (:arguments ("charset-id" "code1" "code2")) nil [16900 17133])
+            ("ascii-case-table" variable
+               (:documentation "Case table for the ASCII character set."
+                :default-value (let ((tbl (copy-sequence (standard-case-table))) (up (char-table-extra-slot (standard-case-table) 0))) (if up (set-char-table-extra-slot tbl 0 (copy-sequence up))) (set-char-table-extra-slot tbl 1 nil) (set-char-table-extra-slot tbl 2 nil) tbl))
+                nil [17342 17748])
+            ("coding-system-iso-2022-flags" variable
+               (:documentation "List of symbols that control ISO-2022 encoder/decoder.
+
+The value of the `:flags' attribute in the argument of the function
+`define-coding-system' must be one of them.
+
+If `long-form' is specified, use a long designation sequence on
+encoding for the charsets `japanese-jisx0208-1978', `chinese-gb2312',
+and `japanese-jisx0208'.  The long designation sequence doesn't
+conform to ISO 2022, but is used by such coding systems as
+`compound-text'.
+
+If `ascii-at-eol' is specified, designate ASCII to g0 at end of line
+on encoding.
+
+If `ascii-at-cntl' is specified, designate ASCII to g0 before control
+codes and SPC on encoding.
+
+If `7-bit' is specified, use 7-bit code only on encoding.
+
+If `locking-shift' is specified, decode locking-shift code correctly
+on decoding, and use locking-shift to invoke a graphic element on
+encoding.
+
+If `single-shift' is specified, decode single-shift code
+correctly on decoding, and use single-shift to invoke a graphic
+element on encoding.  See also `8-bit-level-4' specification.
+
+If `designation' is specified, decode designation code correctly on
+decoding, and use designation to designate a charset to a graphic
+element on encoding.
+
+If `revision' is specified, produce an escape sequence to specify
+revision number of a charset on encoding.  Such an escape sequence is
+always correctly decoded on decoding.
+
+If `direction' is specified, decode ISO6429's code for specifying
+direction correctly, and produce the code on encoding.
+
+If `init-at-bol' is specified, on encoding, it is assumed that
+invocation and designation statuses are reset at each beginning of
+line even if `ascii-at-eol' is not specified; thus no codes for
+resetting them are produced.
+
+If `safe' is specified, on encoding, characters not supported by a
+coding are replaced with `?'.
+
+If `latin-extra' is specified, the code-detection routine assumes that a
+code specified in `latin-extra-code-table' (which see) is valid.
+
+If `composition' is specified, an escape sequence to specify
+composition sequence is correctly decoded on decoding, and is produced
+on encoding.
+
+If `euc-tw-shift' is specified, the EUC-TW specific shifting code is
+correctly decoded on decoding, and is produced on encoding.
+
+If `use-roman' is specified, JIS0201-1976-Roman is designated instead
+of ASCII.
+
+If `use-oldjis' is specified, JIS0208-1976 is designated instead of
+JIS0208-1983.
+
+If `8-bit-level-4' is specified, the decoder assumes the
+implementation level \"4\" for 8-bit codes which means that GL is
+identified as the single-shift area.  The default implementation
+level for 8-bit code is \"4A\" which means that GR is identified
+as the single-shift area."
+                :constant-flag t
+                :default-value '(long-form ascii-at-eol ascii-at-cntl 7-bit locking-shift single-shift designation revision direction init-at-bol designate-at-bol safe latin-extra composition euc-tw-shift use-roman use-oldjis 8-bit-level-4))
+                nil [17870 20840])
+            ("define-coding-system" function
+               (:documentation "Define NAME (a symbol) as a coding system with DOCSTRING and attributes.
+The remaining arguments must come in pairs ATTRIBUTE VALUE.  ATTRIBUTE
+may be any symbol.
+
+A coding system specifies a rule to decode (i.e. to convert a
+byte sequence to a character sequence) and a rule to encode (the
+opposite of decoding).
+
+The decoding is done by at most 3 steps; the first is to convert
+a byte sequence to a character sequence by one of Emacs'
+internal routines specified by `:coding-type' attribute.  The
+optional second step is to convert the character sequence (the
+result of the first step) by a translation table specified
+by `:decode-translation-table' attribute.  The optional third step
+is to convert the above result by a Lisp function specified
+by `:post-read-conversion' attribute.
+
+The encoding is done by at most 3 steps, which are the reverse
+of the decoding steps.  The optional first step converts a
+character sequence to another character sequence by a Lisp
+function specified by `:pre-write-conversion' attribute.  The
+optional second step converts the above result by a translation
+table specified by `:encode-translation-table' attribute.  The
+third step converts the above result to a byte sequence by one
+of the Emacs's internal routines specified by the `:coding-type'
+attribute.
+
+The following attributes have special meanings.  Those labeled as
+\"(required)\" should not be omitted.
+
+`:mnemonic' (required)
+
+VALUE is a character to display on mode line for the coding system.
+
+`:coding-type' (required)
+
+VALUE specifies the format of byte sequence the coding system
+decodes and encodes to.  It must be one of `charset', `utf-8',
+`utf-16', `iso-2022', `emacs-mule', `shift-jis', `ccl',
+`raw-text', `undecided'.
+
+If VALUE is `charset', the coding system is for handling a
+byte sequence in which each byte or every two- to four-byte
+sequence represents a character code of a charset specified
+by the `:charset-list' attribute.
+
+If VALUE is `utf-8', the coding system is for handling Unicode
+UTF-8 byte sequences.  See also the documentation of the
+attribute `:bom'.
+
+If VALUE is `utf-16', the coding system is for handling Unicode
+UTF-16 byte sequences.  See also the documentation of the
+attributes :bom and `:endian'.
+
+If VALUE is `iso-2022', the coding system is for handling byte
+sequences conforming to ISO/IEC 2022.  See also the documentation
+of the attributes `:charset-list', `:flags', and `:designation'.
+
+If VALUE is `emacs-mule', the coding system is for handling
+byte sequences which Emacs 20 and 21 used for their internal
+representation of characters.
+
+If VALUE is `shift-jis', the coding system is for handling byte
+sequences of Shift_JIS format.  See also the attribute `:charset-list'.
+
+If VALUE is `ccl', the coding system uses CCL programs to decode
+and encode byte sequences.  The CCL programs must be
+specified by the attributes `:ccl-decoder' and `:ccl-encoder'.
+
+If VALUE is `raw-text', the coding system decodes byte sequences
+without any conversions.
+
+`:eol-type'
+
+VALUE is the EOL (end-of-line) format of the coding system.  It must be
+one of `unix', `dos', `mac'.  The symbol `unix' means Unix-like EOL
+(i.e., a single LF character), `dos' means DOS-like EOL (i.e., a sequence
+of CR followed by LF), and `mac' means Mac-like EOL (i.e., a single CR).
+If omitted, Emacs detects the EOL format automatically when decoding.
+
+`:charset-list' (required if `:coding-type' is `charset' or `shift-jis')
+
+VALUE must be a list of charsets supported by the coding system.
+
+If `coding-type:' is `charset', then on decoding and encoding by the
+coding system, if a character belongs to multiple charsets in the
+list, a charset that comes first in the list is selected.
+
+If `:coding-type' is `iso-2022', VALUE may be `iso-2022', which
+indicates that the coding system supports all ISO-2022 based
+charsets.
+
+If `:coding-type' is `shift-jis', VALUE must be a list of three
+to four charsets supported by Shift_JIS encoding scheme.  The
+first charset (one dimension) is for code space 0x00..0x7F, the
+second (one dimension) for 0xA1..0xDF, the third (two dimension)
+for 0x8140..0xEFFC, the optional fourth (three dimension) for
+0xF040..0xFCFC.
+
+If `:coding-type' is `emacs-mule', VALUE may be `emacs-mule',
+which indicates that the coding system supports all charsets that
+have the `:emacs-mule-id' property.
+
+`:ascii-compatible-p'
+
+If VALUE is non-nil, the coding system decodes all 7-bit bytes into
+the corresponding ASCII characters, and encodes all ASCII characters
+back to the corresponding 7-bit bytes.  VALUE defaults to nil.
+
+`:decode-translation-table'
+
+VALUE must be a translation table to use on decoding.
+
+`:encode-translation-table'
+
+VALUE must be a translation table to use on encoding.
+
+`:post-read-conversion'
+
+VALUE must be a function to call after some text is inserted and
+decoded by the coding system itself and before any functions in
+`after-insert-functions' are called.  This function is passed one
+argument: the number of characters in the text to convert, with
+point at the start of the text.  The function should leave point
+unchanged, and should return the new character count.  Note that
+this function should avoid reading from files or receiving text
+from subprocesses -- anything that could invoke decoding; if it
+must do so, it should bind `coding-system-for-read' to a value
+other than the current coding-system, to avoid infinite recursion.
+
+`:pre-write-conversion'
+
+VALUE must be a function to call after all functions in
+`write-region-annotate-functions' and `buffer-file-format' are
+called, and before the text is encoded by the coding system
+itself.  This function should convert the whole text in the
+current buffer.  For backward compatibility, this function is
+passed two arguments which can be ignored.  Note that this
+function should avoid writing to files or sending text to
+subprocesses -- anything that could invoke encoding; if it
+must do so, it should bind `coding-system-for-write' to a
+value other than the current coding-system, to avoid infinite
+recursion.
+
+`:default-char'
+
+VALUE must be a character.  On encoding, a character not supported by
+the coding system is replaced with VALUE.
+
+`:for-unibyte'
+
+VALUE non-nil means that visiting a file with the coding system
+results in a unibyte buffer.
+
+`:mime-charset'
+
+VALUE must be a symbol whose name is that of a MIME charset converted
+to lower case.
+
+`:mime-text-unsuitable'
+
+VALUE non-nil means the `:mime-charset' property names a charset which
+is unsuitable for the top-level media of type \"text\".
+
+`:flags'
+
+VALUE must be a list of symbols that control the ISO-2022 converter.
+Each must be a member of the list `coding-system-iso-2022-flags'
+(which see).  This attribute is meaningful only when `:coding-type'
+is `iso-2022'.
+
+`:designation'
+
+VALUE must be a vector [G0-USAGE G1-USAGE G2-USAGE G3-USAGE].
+GN-USAGE specifies the usage of graphic register GN as follows.
+
+If it is nil, no charset can be designated to GN.
+
+If it is a charset, the charset is initially designated to GN, and
+never used by the other charsets.
+
+If it is a list, the elements must be charsets, nil, 94, or 96.  GN
+can be used by all the listed charsets.  If the list contains 94, any
+iso-2022 charset whose code-space ranges are 94 long can be designated
+to GN.  If the list contains 96, any charsets whose ranges are
+96 long can be designated to GN.  If the first element is a charset,
+that charset is initially designated to GN.
+
+This attribute is meaningful only when `:coding-type' is `iso-2022'.
+
+`:bom'
+
+This attributes specifies whether the coding system uses a \"byte order
+mark\".  VALUE must be nil, t, or a cons cell of coding systems whose
+`:coding-type' is `utf-16' or `utf-8'.
+
+If the value is nil, on decoding, don't treat the first two-byte as
+BOM, and on encoding, don't produce BOM bytes.
+
+If the value is t, on decoding, skip the first two-byte as BOM, and on
+encoding, produce BOM bytes according to the value of `:endian'.
+
+If the value is a cons cell, on decoding, check the first two bytes.
+If they are 0xFE 0xFF, use the car part coding system of the value.
+If they are 0xFF 0xFE, use the cdr part coding system of the value.
+Otherwise, treat them as bytes for a normal character.  On encoding,
+produce BOM bytes according to the value of `:endian'.
+
+This attribute is meaningful only when `:coding-type' is `utf-16' or
+`utf-8'.
+
+`:endian'
+
+VALUE must be `big' or `little' specifying big-endian and
+little-endian respectively.  The default value is `big'.
+
+This attribute is meaningful only when `:coding-type' is `utf-16'.
+
+`:ccl-decoder' (required if :coding-type is `ccl')
+
+VALUE is a CCL program name defined by `define-ccl-program'.  The
+CCL program reads a byte sequence and writes a character sequence
+as a decoding result.
+
+`:ccl-encoder' (required if :coding-type is `ccl')
+
+VALUE is a CCL program name defined by `define-ccl-program'.  The
+CCL program reads a character sequence and writes a byte sequence
+as an encoding result.
+
+`:inhibit-null-byte-detection'
+
+VALUE non-nil means Emacs ignore null bytes on code detection.
+See the variable `inhibit-null-byte-detection'.  This attribute
+is meaningful only when `:coding-type' is `undecided'.
+
+`:inhibit-iso-escape-detection'
+
+VALUE non-nil means Emacs ignores ISO-2022 escape sequences on
+code detection.  See the variable `inhibit-iso-escape-detection'.
+This attribute is meaningful only when `:coding-type' is
+`undecided'.
+
+`:prefer-utf-8'
+
+VALUE non-nil means Emacs prefers UTF-8 on code detection for
+non-ASCII files.  This attribute is meaningful only when
+`:coding-type' is `undecided'."
+                :arguments ("name" "docstring" "props"))
+                nil [20842 33014])
+            ("coding-system-doc-string" function
+               (:documentation "Return the documentation string for CODING-SYSTEM."
+                :arguments ("coding-system"))
+                nil [33016 33180])
+            ("coding-system-mnemonic" function
+               (:documentation "Return the mnemonic character of CODING-SYSTEM.
+The mnemonic character of a coding system is used in mode line to
+indicate the coding system.  If CODING-SYSTEM is nil, return ?=."
+                :arguments ("coding-system"))
+                nil [33182 33471])
+            ("coding-system-type" function
+               (:documentation "Return the coding type of CODING-SYSTEM.
+A coding type is a symbol indicating the encoding method of CODING-SYSTEM.
+See the function `define-coding-system' for more detail."
+                :arguments ("coding-system"))
+                nil [33473 33755])
+            ("coding-system-charset-list" function
+               (:documentation "Return list of charsets supported by CODING-SYSTEM.
+If CODING-SYSTEM supports all ISO-2022 charsets, return `iso-2022'.
+If CODING-SYSTEM supports all emacs-mule charsets, return `emacs-mule'."
+                :arguments ("coding-system"))
+                nil [33757 34067])
+            ("coding-system-category" function
+               (:documentation "Return a category symbol of CODING-SYSTEM."
+                :arguments ("coding-system"))
+                nil [34069 34222])
+            ("coding-system-get" function
+               (:documentation "Extract a value from CODING-SYSTEM's property list for property PROP.
+For compatibility with Emacs 20/21, this accepts old-style symbols
+like `mime-charset' as well as the current style like `:mime-charset'."
+                :arguments ("coding-system" "prop"))
+                nil [34224 34840])
+            ("coding-system-eol-type-mnemonic" function
+               (:documentation "Return the string indicating end-of-line format of CODING-SYSTEM."
+                :arguments ("coding-system"))
+                nil [34842 35249])
+            ("coding-system-lessp" function (:arguments ("x" "y")) nil [35251 35634])
+            ("coding-system-equal" function
+               (:documentation "Return t if and only if CODING-SYSTEM-1 and CODING-SYSTEM-2 are identical.
+Two coding systems are identical if both symbols are equal
+or one is an alias of the other."
+                :arguments ("coding-system-1" "coding-system-2"))
+                nil [35636 36224])
+            ("add-to-coding-system-list" function
+               (:documentation "Add CODING-SYSTEM to variable `coding-system-list' while keeping it sorted."
+                :arguments ("coding-system"))
+                nil [36226 36838])
+            ("coding-system-list" function
+               (:documentation "Return a list of all existing non-subsidiary coding systems.
+If optional arg BASE-ONLY is non-nil, only base coding systems are
+listed.  The value doesn't include subsidiary coding systems which are
+made from bases and aliases automatically for various end-of-line
+formats (e.g. iso-latin-1-unix, koi8-r-dos)."
+                :arguments ("base-only"))
+                nil [36840 37488])
+            ("char-coding-system-table" variable
+               (:documentation "It exists just for backward compatibility, and the value is always nil."
+                :constant-flag t)
+                nil [37490 37605])
+            ("make-obsolete-variable" code nil nil [37606 37667])
+            ("transform-make-coding-system-args" function
+               (:documentation "For internal use only.
+Transform XEmacs style args for `make-coding-system' to Emacs style.
+Value is a list of transformed arguments."
+                :arguments ("name" "type" "doc-string" "props"))
+                nil [37669 40644])
+            ("make-coding-system" function
+               (:documentation "Define a new coding system CODING-SYSTEM (symbol).
+This function is provided for backward compatibility."
+                :arguments ("coding-system" "type" "mnemonic" "doc-string" "flags" "properties" "eol-type"))
+                nil [40646 43996])
+            ("merge-coding-systems" function
+               (:documentation "Fill in any unspecified aspects of coding system FIRST from SECOND.
+Return the resulting coding system."
+                :arguments ("first" "second"))
+                nil [43998 44677])
+            ("autoload-coding-system" function
+               (:documentation "Define SYMBOL as a coding-system that is defined on demand.
+
+FORM is a form to evaluate to define the coding-system."
+                :arguments ("symbol" "form"))
+                nil [44679 45206])
+            ("buffer-file-coding-system-explicit" variable (:documentation "The file coding system explicitly specified for the current buffer.
+The value is a cons of coding systems for reading (decoding) and
+writing (encoding).
+Internal use only.") nil [45930 46153])
+            ("make-variable-buffer-local" code nil nil [46154 46218])
+            ("put" code nil nil [46219 46279])
+            ("read-buffer-file-coding-system" function nil nil [46281 49116])
+            ("set-buffer-file-coding-system" function
+               (:documentation "Set the file coding-system of the current buffer to CODING-SYSTEM.
+This means that when you save the buffer, it will be converted
+according to CODING-SYSTEM.  For a list of possible values of
+CODING-SYSTEM, use \\[list-coding-systems].
+
+If CODING-SYSTEM leaves the text conversion unspecified, or if it leaves
+the end-of-line conversion unspecified, FORCE controls what to do.
+If FORCE is nil, get the unspecified aspect (or aspects) from the buffer's
+previous `buffer-file-coding-system' value (if it is specified there).
+Otherwise, leave it unspecified.
+
+This marks the buffer modified so that the succeeding \\[save-buffer]
+surely saves the buffer with CODING-SYSTEM.  From a program, if you
+don't want to mark the buffer modified, specify t for NOMODIFY.
+If you know exactly what coding system you want to use,
+just set the variable `buffer-file-coding-system' directly."
+                :user-visible-flag t
+                :arguments ("coding-system" "force" "nomodify"))
+                nil [49118 51248])
+            ("revert-buffer-with-coding-system" function
+               (:documentation "Visit the current buffer's file again using coding system CODING-SYSTEM.
+For a list of possible values of CODING-SYSTEM, use \\[list-coding-systems].
+
+If CODING-SYSTEM leaves the text conversion unspecified, or if it leaves
+the end-of-line conversion unspecified, FORCE controls what to do.
+If FORCE is nil, get the unspecified aspect (or aspects) from the buffer's
+previous `buffer-file-coding-system' value (if it is specified there).
+Otherwise, determine it from the file contents as usual for visiting a file."
+                :user-visible-flag t
+                :arguments ("coding-system" "force"))
+                nil [51250 52177])
+            ("set-file-name-coding-system" function
+               (:documentation "Set coding system for decoding and encoding file names to CODING-SYSTEM.
+It actually just set the variable `file-name-coding-system' (which see)
+to CODING-SYSTEM."
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [52179 52769])
+            ("default-terminal-coding-system" variable (:documentation "Default value for the terminal coding system.
+This is normally set according to the selected language environment.
+See also the command `set-terminal-coding-system'.") nil [52771 52984])
+            ("set-terminal-coding-system" function
+               (:documentation "Set coding system of terminal output to CODING-SYSTEM.
+All text output to TERMINAL will be encoded
+with the specified coding system.
+
+For a list of possible values of CODING-SYSTEM, use \\[list-coding-systems].
+The default is determined by the selected language environment
+or by the previous use of this command.
+
+TERMINAL may be a terminal object, a frame, or nil for the
+selected frame's terminal.  The setting has no effect on
+graphical terminals."
+                :user-visible-flag t
+                :arguments ("coding-system" "terminal"))
+                nil [52986 54074])
+            ("default-keyboard-coding-system" variable (:documentation "Default value of the keyboard coding system.
+This is normally set according to the selected language environment.
+See also the command `set-keyboard-coding-system'.") nil [54076 54288])
+            ("set-keyboard-coding-system" function
+               (:documentation "Set coding system for keyboard input on TERMINAL to CODING-SYSTEM.
+
+For a list of possible values of CODING-SYSTEM, use \\[list-coding-systems].
+The default is determined by the selected language environment
+or by the previous use of this command.
+
+If CODING-SYSTEM is nil or the coding-type of CODING-SYSTEM is
+`raw-text', the decoding of keyboard input is disabled.
+
+TERMINAL may be a terminal object, a frame, or nil for the
+selected frame's terminal.  The setting has no effect on
+graphical terminals."
+                :user-visible-flag t
+                :arguments ("coding-system" "terminal"))
+                nil [54290 56832])
+            ("keyboard-coding-system" variable (:documentation "Specify coding system for keyboard input.
+If you set this on a terminal which can't distinguish Meta keys from
+8-bit characters, you will have to use ESC to type Meta characters.
+See Info node `Terminal Coding' and Info node `Unibyte Mode'.
+
+This is set at startup based on the locale.
+
+Setting this variable directly does not take effect;
+use either \\[customize] or \\[set-keyboard-coding-system].") nil [56834 57696])
+            ("set-buffer-process-coding-system" function
+               (:documentation "Set coding systems for the process associated with the current buffer.
+DECODING is the coding system to be used to decode input from the process,
+ENCODING is the coding system to be used to encode output to the process.
+
+For a list of possible coding systems, use \\[list-coding-systems]."
+                :arguments ("decoding" "encoding"))
+                nil [57698 58473])
+            ("defalias" code nil nil [58475 58543])
+            ("set-selection-coding-system" function
+               (:documentation "Make CODING-SYSTEM used for communicating with other X clients.
+When sending or receiving text via cut_buffer, selection, and clipboard,
+the text is encoded or decoded by CODING-SYSTEM."
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [58545 58922])
+            ("last-next-selection-coding-system" variable nil nil [59010 59056])
+            ("set-next-selection-coding-system" function
+               (:documentation "Use CODING-SYSTEM for next communication with other window system clients.
+This setting is effective for the next communication only."
+                :user-visible-flag t
+                :arguments ("coding-system"))
+                nil [59058 59768])
+            ("set-coding-priority" function
+               (:documentation "Set priority of coding categories according to ARG.
+ARG is a list of coding categories ordered by priority.
+
+This function is provided for backward compatibility."
+                :arguments ("arg"))
+                nil [59770 60112])
+            ("ctext-non-standard-encodings-alist" variable
+               (:documentation "Alist of non-standard encoding names vs the corresponding usages in CTEXT.
+
+It controls how extended segments of a compound text are handled
+by the coding system `compound-text-with-extensions'.
+
+Each element has the form (ENCODING-NAME CODING-SYSTEM N-OCTET CHARSET).
+
+ENCODING-NAME is an encoding name of an \"extended segment\".
+
+CODING-SYSTEM is the coding-system to encode (or decode) the
+characters into (or from) the extended segment.
+
+N-OCTET is the number of octets (bytes) that encodes a character
+in the segment.  It can be 0 (meaning the number of octets per
+character is variable), 1, 2, 3, or 4.
+
+CHARSET is a character set containing characters that are encoded
+in the segment.  It can be a list of character sets.
+
+On decoding CTEXT, all encoding names listed here are recognized.
+
+On encoding CTEXT, encoding names in the variable
+`ctext-non-standard-encodings' (which see) and in the information
+listed for the current language environment under the key
+`ctext-non-standard-encodings' are used."
+                :default-value (mapcar 'purecopy '(("big5-0" big5 2 big5) ("ISO8859-14" iso-8859-14 1 latin-iso8859-14) ("ISO8859-15" iso-8859-15 1 latin-iso8859-15) ("gbk-0" gbk 2 chinese-gbk) ("koi8-r" koi8-r 1 koi8-r) ("microsoft-cp1251" windows-1251 1 windows-1251))))
+                nil [60132 61457])
+            ("ctext-non-standard-encodings" variable (:documentation "List of non-standard encoding names used in extended segments of CTEXT.
+Each element must be one of the names listed in the variable
+`ctext-non-standard-encodings-alist' (which see).") nil [61459 61687])
+            ("ctext-non-standard-encodings-regexp" variable (:default-value (purecopy (string-to-multibyte (concat "\\(%/[0-4][\200-\377][\200-\377]\\([^]+\\)\\)" "\\|" "\\(%G[^]*%@\\)")))) nil [61689 61943])
+            ("ctext-post-read-conversion" function
+               (:documentation "Decode LEN characters encoded as Compound Text with Extended Segments."
+                :arguments ("len"))
+                nil [62184 63828])
+            ("ctext-standard-encodings" variable
+               (:documentation "List of approved standard encodings (i.e. charsets) of X's Compound Text.
+Coding-system `compound-text-with-extensions' encodes a character
+belonging to any of those charsets using the normal ISO2022
+designation sequence unless the current language environment or
+the variable `ctext-non-standard-encodings' decide to use an extended
+segment of CTEXT for that character.  See also the documentation
+of `ctext-non-standard-encodings-alist'."
+                :default-value '(ascii latin-jisx0201 katakana-jisx0201 latin-iso8859-1 latin-iso8859-2 latin-iso8859-3 latin-iso8859-4 greek-iso8859-7 arabic-iso8859-6 hebrew-iso8859-8 cyrillic-iso8859-5 latin-iso8859-9 chinese-gb2312 japanese-jisx0208 korean-ksc5601))
+                nil [63830 64560])
+            ("ctext-non-standard-encodings-table" function nil nil [65138 65858])
+            ("ctext-pre-write-conversion" function
+               (:documentation "Encode characters between FROM and TO as Compound Text w/Extended Segments.
+
+If FROM is a string, generate a new temp buffer, insert the text,
+and convert it in the temporary buffer.  Otherwise, convert
+in-place."
+                :arguments ("from" "to"))
+                nil [65860 68445])
+            ("auto-coding-alist" variable
+               (:documentation "Alist of filename patterns vs corresponding coding systems.
+Each element looks like (REGEXP . CODING-SYSTEM).
+A file whose name matches REGEXP is decoded by CODING-SYSTEM on reading.
+
+The settings in this alist take priority over `coding:' tags
+in the file (see the function `set-auto-coding')
+and the contents of `file-coding-system-alist'."
+                :default-value (mapcar (lambda (arg) (cons (purecopy (car arg)) (cdr arg))) '(("\\.\\(arc\\|zip\\|lzh\\|lha\\|zoo\\|[jew]ar\\|xpi\\|rar\\|7z\\|ARC\\|ZIP\\|LZH\\|LHA\\|ZOO\\|[JEW]AR\\|XPI\\|RAR\\|7Z\\)\\'" . no-conversion-multibyte) ("\\.\\(exe\\|EXE\\)\\'" . no-conversion) ("\\.\\(sx[dmicw]\\|odt\\|tar\\|t[bg]z\\)\\'" . no-conversion) ("\\.\\(gz\\|Z\\|bz\\|bz2\\|xz\\|gpg\\)\\'" . no-conversion) ("\\.\\(jpe?g\\|png\\|gif\\|tiff?\\|p[bpgn]m\\)\\'" . no-conversion) ("\\.pdf\\'" . no-conversion) ("/#[^/]+#\\'" . utf-8-emacs-unix))))
+                nil [68541 69755])
+            ("auto-coding-regexp-alist" variable
+               (:documentation "Alist of patterns vs corresponding coding systems.
+Each element looks like (REGEXP . CODING-SYSTEM).
+A file whose first bytes match REGEXP is decoded by CODING-SYSTEM on reading.
+
+The settings in this alist take priority over `coding:' tags
+in the file (see the function `set-auto-coding')
+and the contents of `file-coding-system-alist'."
+                :default-value (mapcar (lambda (arg) (cons (purecopy (car arg)) (cdr arg))) '(("\\`BABYL OPTIONS:[ 	]*-\\*-[ 	]*rmail[ 	]*-\\*-" . no-conversion) ("\\`\376\377" . utf-16be-with-signature) ("\\`\377\376" . utf-16le-with-signature) ("\\`\357\273\277" . utf-8-with-signature) ("\\`;ELC   " . emacs-mule))))
+                nil [69757 70591])
+            ("auto-coding-regexp-alist-lookup" function
+               (:documentation "Lookup `auto-coding-regexp-alist' for the contents of the current buffer.
+The value is a coding system is specified for the region FROM and TO,
+or nil."
+                :arguments ("from" "to"))
+                nil [70593 71204])
+            ("auto-coding-functions" variable
+               (:documentation "A list of functions which attempt to determine a coding system.
+
+Each function in this list should be written to operate on the
+current buffer, but should not modify it in any way.  The buffer
+will contain undecoded text of parts of the file.  Each function
+should take one argument, SIZE, which says how many characters
+(starting from point) it should look at.
+
+If one of these functions succeeds in determining a coding
+system, it should return that coding system.  Otherwise, it
+should return nil.
+
+If a file has a `coding:' tag, that takes precedence over these
+functions, so they won't be called at all."
+                :default-value '(sgml-xml-auto-coding-function sgml-html-meta-auto-coding-function))
+                nil [71273 72054])
+            ("set-auto-coding-for-load" variable (:documentation "Non-nil means respect a \"unibyte: t\" entry in file local variables.
+Emacs binds this variable to t when loading or byte-compiling Emacs Lisp
+files.") nil [72056 72247])
+            ("auto-coding-alist-lookup" function
+               (:documentation "Return the coding system specified by `auto-coding-alist' for FILENAME."
+                :arguments ("filename"))
+                nil [72249 72662])
+            ("put" code nil nil [72664 72718])
+            ("put" code nil nil [72719 72785])
+            ("find-auto-coding" function
+               (:documentation "Find a coding system for a file FILENAME of which SIZE bytes follow point.
+These bytes should include at least the first 1k of the file
+and the last 3k of the file, but the middle may be omitted.
+
+The function checks FILENAME against the variable `auto-coding-alist'.
+If FILENAME doesn't match any entries in the variable, it checks the
+contents of the current buffer following point against
+`auto-coding-regexp-alist'.  If no match is found, it checks for a
+`coding:' tag in the first one or two lines following point.  If no
+`coding:' tag is found, it checks any local variables list in the last
+3K bytes out of the SIZE bytes.  Finally, if none of these methods
+succeed, it checks to see if any function in `auto-coding-functions'
+gives a match.
+
+If a coding system is specified, the return value is a cons
+(CODING . SOURCE), where CODING is the specified coding system and
+SOURCE is a symbol `auto-coding-alist', `auto-coding-regexp-alist',
+`:coding', or `auto-coding-functions' indicating by what CODING is
+specified.  Note that the validity of CODING is not checked;
+it's the caller's responsibility to check it.
+
+If nothing is specified, the return value is nil."
+                :arguments ("filename" "size"))
+                nil [72787 79120])
+            ("set-auto-coding" function
+               (:documentation "Return coding system for a file FILENAME of which SIZE bytes follow point.
+See `find-auto-coding' for how the coding system is found.
+Return nil if an invalid coding system is found.
+
+The variable `set-auto-coding-function' (which see) is set to this
+function by default."
+                :arguments ("filename" "size"))
+                nil [79122 79552])
+            ("setq" code nil nil [79554 79602])
+            ("after-insert-file-set-coding" function
+               (:documentation "Set `buffer-file-coding-system' of current buffer after text is inserted.
+INSERTED is the number of characters that were inserted, as figured
+in the situation before this function.  Return the number of characters
+inserted, as figured in the situation after.  The two numbers can be
+different if the buffer has become unibyte.
+The optional second arg VISIT non-nil means that we are visiting a file."
+                :arguments ("inserted" "visit"))
+                nil [79604 80471])
+            ("find-new-buffer-file-coding-system" function
+               (:documentation "Return a coding system for a buffer when a file of CODING is inserted.
+The local variable `buffer-file-coding-system' of the current buffer
+is set to the returned value.
+Return nil if there's no need to set `buffer-file-coding-system'."
+                :arguments ("coding"))
+                nil [80661 82696])
+            ("modify-coding-system-alist" function
+               (:documentation "Modify one of look up tables for finding a coding system on I/O operation.
+There are three of such tables, `file-coding-system-alist',
+`process-coding-system-alist', and `network-coding-system-alist'.
+
+TARGET-TYPE specifies which of them to modify.
+If it is `file', it affects `file-coding-system-alist' (which see).
+If it is `process', it affects `process-coding-system-alist' (which see).
+If it is `network', it affects `network-coding-system-alist' (which see).
+
+REGEXP is a regular expression matching a target of I/O operation.
+The target is a file name if TARGET-TYPE is `file', a program name if
+TARGET-TYPE is `process', or a network service name or a port number
+to connect to if TARGET-TYPE is `network'.
+
+CODING-SYSTEM is a coding system to perform code conversion on the I/O
+operation, or a cons cell (DECODING . ENCODING) specifying the coding
+systems for decoding and encoding respectively, or a function symbol
+which, when called, returns such a cons cell."
+                :arguments ("target-type" "regexp" "coding-system"))
+                nil [82698 84984])
+            ("decode-coding-inserted-region" function
+               (:documentation "Decode the region between FROM and TO as if it is read from file FILENAME.
+The idea is that the text between FROM and TO was just inserted somehow.
+Optional arguments VISIT, BEG, END, and REPLACE are the same as those
+of the function `insert-file-contents'.
+Part of the job of this function is setting `buffer-undo-list' appropriately."
+                :arguments ("from" "to" "filename" "visit" "beg" "end" "replace"))
+                nil [84986 86983])
+            ("recode-region" function
+               (:documentation "Re-decode the region (previously decoded by CODING) by NEW-CODING."
+                :user-visible-flag t
+                :arguments ("start" "end" "new-coding" "coding"))
+                nil [86985 87794])
+            ("make-translation-table" function
+               (:documentation "Make a translation table from arguments.
+A translation table is a char table intended for character
+translation in CCL programs.
+
+Each argument is a list of elements of the form (FROM . TO), where FROM
+is a character to be translated to TO.
+
+The arguments and forms in each argument are processed in the given
+order, and if a previous form already translates TO to some other
+character, say TO-ALT, FROM is also translated to TO-ALT."
+                :arguments ("args"))
+                nil [87796 89283])
+            ("make-translation-table-from-vector" function
+               (:documentation "Make translation table from decoding vector VEC.
+VEC is an array of 256 elements to map unibyte codes to multibyte
+characters.  Elements may be nil for undefined code points."
+                :arguments ("vec"))
+                nil [89285 89900])
+            ("make-translation-table-from-alist" function
+               (:documentation "Make translation table from N<->M mapping in ALIST.
+ALIST is an alist, each element has the form (FROM . TO).
+FROM and TO are a character or a vector of characters.
+If FROM is a character, that character is translated to TO.
+If FROM is a vector of characters, that sequence is translated to TO.
+The first extra-slot of the value is a translation table for reverse mapping.
+
+FROM and TO may be nil.  If TO is nil, the translation from FROM
+to nothing is defined in the translation table and that element
+is ignored in the reverse map.  If FROM is nil, the translation
+from TO to nothing is defined in the reverse map only.  A vector
+of length zero has the same meaning as specifying nil."
+                :arguments ("alist"))
+                nil [89902 91640])
+            ("define-translation-table" function
+               (:documentation "Define SYMBOL as the name of translation table made by ARGS.
+This sets up information so that the table can be used for
+translations in a CCL program.
+
+If the first element of ARGS is a char-table whose purpose is
+`translation-table', just define SYMBOL to name it.  (Note that this
+function does not bind SYMBOL.)
+
+Any other ARGS should be suitable as arguments of the function
+`make-translation-table' (which see).
+
+This function sets properties `translation-table' and
+`translation-table-id' of SYMBOL to the created table itself and the
+identification number of the table respectively.  It also registers
+the table in `translation-table-vector'."
+                :arguments ("symbol" "args"))
+                nil [91642 93037])
+            ("translate-region" function
+               (:documentation "From START to END, translate characters according to TABLE.
+TABLE is a string or a char-table.
+If TABLE is a string, the Nth character in it is the mapping
+for the character with code N.
+If TABLE is a char-table, the element for character N is the mapping
+for the character with code N.
+It returns the number of characters changed."
+                :user-visible-flag t
+                :arguments ("start" "end" "table"))
+                nil [93039 94075])
+            ("with-category-table" function
+               (:documentation "Execute BODY like `progn' with TABLE the current category table.
+The category table of the current buffer is saved, BODY is evaluated,
+then the saved table is restored, even in case of an abnormal exit.
+Value is what BODY returns."
+                :arguments ("table" "body"))
+                nil [94077 94716])
+            ("define-translation-hash-table" function
+               (:documentation "Define SYMBOL as the name of the hash translation TABLE for use in CCL.
+
+Analogous to `define-translation-table', but updates
+`translation-hash-table-vector' and the table is for use in the CCL
+`lookup-integer' and `lookup-character' functions."
+                :arguments ("symbol" "table"))
+                nil [94718 95672])
+            ("put" code nil nil [95706 95757])
+            ("setq" code nil nil [95758 95821])
+            ("put" code nil nil [95822 95882])
+            ("setq" code nil nil [95883 95970])
+            ("sgml-xml-auto-coding-function" function
+               (:documentation "Determine whether the buffer is XML, and if so, its encoding.
+This function is intended to be added to `auto-coding-functions'."
+                :arguments ("size"))
+                nil [96009 98188])
+            ("sgml-html-meta-auto-coding-function" function
+               (:documentation "If the buffer has an HTML meta tag, use it to determine encoding.
+This function is intended to be added to `auto-coding-functions'."
+                :arguments ("size"))
+                nil [98190 99965])
+            ("xml-find-file-coding-system" function
+               (:documentation "Determine the coding system of an XML file without a declaration.
+Strictly speaking, the file should be utf-8, but mistakes are
+made, and there are genuine cases where XML fragments are saved,
+with the encoding properly specified in a master document, or
+added by processing software."
+                :arguments ("args"))
+                nil [99967 101297])
+            ("mule" package nil nil [101303 101318]))          
+      :file "mule.el.gz"
+      :pointmax 101342
+      :fsize 27208
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!share!emacs!27.0.50!lisp!international!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1794 @@
+;; Object semanticdb-project-database-file-167440c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-167440c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1673ab8"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nrepl-client" include nil nil [1130 1153])
+            ("cl-lib" include nil nil [1154 1171])
+            ("format-spec" include nil nil [1172 1194])
+            ("sesman" include nil nil [1195 1212])
+            ("sesman-browser" include nil nil [1213 1238])
+            ("cider-session-name-template" variable
+               (:documentation "Format string to use for session names.
+See `cider-format-connection-params' for available format characters."
+                :default-value "%J:%h:%p")
+                nil [1240 1475])
+            ("cider-connection-message-fn" variable
+               (:documentation "The function to use to generate the message displayed on connect.
+When set to nil no additional message will be displayed.  A good
+alternative to the default is `cider-random-tip'."
+                :default-value nil)
+                nil [1477 1810])
+            ("cider-redirect-server-output-to-repl" variable
+               (:documentation "Controls whether nREPL server output would be redirected to the REPL.
+When non-nil the output would end up in both the nrepl-server buffer (when
+available) and the matching REPL buffer."
+                :default-value t)
+                nil [1812 2144])
+            ("cider-auto-mode" variable
+               (:documentation "When non-nil, automatically enable cider mode for all Clojure buffers."
+                :default-value t)
+                nil [2146 2340])
+            ("cider-required-nrepl-version" variable
+               (:documentation "The minimum nREPL version that's known to work properly with CIDER."
+                :constant-flag t
+                :default-value "0.2.12")
+                nil [2342 2462])
+            ("cider-nrepl-connect" function
+               (:documentation "Start nrepl client and create the REPL.
+PARAMS is a plist containing :host, :port, :server and other parameters for
+`cider-repl-create'."
+                :arguments ("params"))
+                nil [2479 2846])
+            ("cider-connected-p" function (:documentation "Return t if CIDER is currently connected, nil otherwise.") nil [2848 2998])
+            ("cider-ensure-connected" function (:documentation "Ensure there is a linked CIDER session.") nil [3000 3110])
+            ("cider--session-server" function
+               (:documentation "Return server buffer for SESSION or nil if there is no server."
+                :arguments ("session"))
+                nil [3112 3328])
+            ("cider--gather-session-params" function
+               (:documentation "Gather all params for a SESSION."
+                :arguments ("session"))
+                nil [3330 3662])
+            ("cider--gather-connect-params" function
+               (:documentation "Gather all relevant connection parameters into PARAMS plist.
+PROC-BUFFER is either server or client buffer, defaults to current buffer."
+                :arguments ("params" "proc-buffer"))
+                nil [3664 5160])
+            ("cider--close-buffer" function
+               (:documentation "Close the BUFFER and kill its associated process (if any)."
+                :arguments ("buffer"))
+                nil [5162 5436])
+            ("declare-function" code nil nil [5438 5504])
+            ("cider--close-connection" function
+               (:documentation "Close connection associated with REPL.
+When NO-KILL is non-nil stop the connection but don't kill the REPL
+buffer."
+                :arguments ("repl" "no-kill"))
+                nil [5505 6877])
+            ("cider-emit-manual-warning" function
+               (:documentation "Emit a warning to the REPL and link to the online manual.
+SECTION-ID is the section to link to.  The link is added on the last line.
+FORMAT is a format string to compile with ARGS and display on the REPL."
+                :arguments ("section-id" "format" "args"))
+                nil [6879 7373])
+            ("cider-version" variable nil nil [7375 7397])
+            ("cider--check-required-nrepl-version" function (:documentation "Check whether we're using a compatible nREPL version.") nil [7398 8120])
+            ("cider-minimum-clojure-version" variable nil nil [8122 8160])
+            ("cider--check-clojure-version-supported" function (:documentation "Ensure that we are meeting the minimum supported version of Clojure.") nil [8161 8896])
+            ("cider-required-middleware-version" variable nil nil [8898 8940])
+            ("cider--check-middleware-compatibility" function (:documentation "CIDER frontend/backend compatibility check.
+Retrieve the underlying connection's CIDER-nREPL version and checks if the
+middleware used is compatible with CIDER.  If not, will display a warning
+message in the REPL area.") nil [8941 10040])
+            ("declare-function" code nil nil [10042 10104])
+            ("cider--subscribe-repl-to-server-out" function (:documentation "Subscribe to the nREPL server's *out*.") nil [10141 10361])
+            ("declare-function" code nil nil [10363 10405])
+            ("cider-enable-on-existing-clojure-buffers" function
+               (:documentation "Enable CIDER's minor mode on existing Clojure buffers.
+See command `cider-mode'."
+                :user-visible-flag t)
+                nil [10406 10708])
+            ("cider-disable-on-existing-clojure-buffers" function
+               (:documentation "Disable command `cider-mode' on existing Clojure buffers."
+                :user-visible-flag t)
+                nil [10710 10945])
+            ("cider-possibly-disable-on-existing-clojure-buffers" function (:documentation "If not connected, disable command `cider-mode' on existing Clojure buffers.") nil [10947 11167])
+            ("declare-function" code nil nil [11169 11230])
+            ("declare-function" code nil nil [11231 11278])
+            ("cider--connected-handler" function (:documentation "Handle CIDER initialization after nREPL connection has been established.
+This function is appended to `nrepl-connected-hook' in the client process
+buffer.") nil [11279 12623])
+            ("cider--disconnected-handler" function (:documentation "Cleanup after nREPL connection has been lost or closed.
+This function is appended to `nrepl-disconnected-hook' in the client
+process buffer.") nil [12625 12962])
+            ("cider--java-version" function (:documentation "Retrieve the underlying connection's Java version.") nil [12987 13253])
+            ("cider--clojure-version" function (:documentation "Retrieve the underlying connection's Clojure version.") nil [13255 13530])
+            ("cider--nrepl-version" function (:documentation "Retrieve the underlying connection's nREPL version.") nil [13532 13801])
+            ("cider--connection-info" function
+               (:documentation "Return info about CONNECTION-BUFFER.
+Info contains project name, current REPL namespace, host:port endpoint and
+Clojure version.  When GENERICP is non-nil, don't provide specific info
+about this buffer (like variable `cider-repl-type')."
+                :arguments ("connection-buffer" "genericp"))
+                nil [13803 14548])
+            ("cider-quit" function
+               (:documentation "Quit the CIDER connection associated with REPL.
+REPL defaults to the current REPL."
+                :user-visible-flag t
+                :arguments ("repl"))
+                nil [14590 15108])
+            ("cider-restart" function
+               (:documentation "Restart CIDER connection associated with REPL.
+REPL defaults to the current REPL.  Don't restart the server or other
+connections within the same session.  Use `sesman-restart' to restart the
+entire session."
+                :user-visible-flag t
+                :arguments ("repl"))
+                nil [15110 15895])
+            ("cider-close-ancillary-buffers" function
+               (:documentation "Close buffers that are shared across connections."
+                :user-visible-flag t)
+                nil [15897 16115])
+            ("cider-describe-connection" function
+               (:documentation "Display information about the connection associated with REPL.
+REPL defaults to the current REPL."
+                :user-visible-flag t
+                :arguments ("repl"))
+                nil [16117 16459])
+            ("define-obsolete-function-alias" code nil nil [16460 16559])
+            ("cider-nrepl-session-buffer" variable
+               (:constant-flag t
+                :default-value "*cider-nrepl-session*")
+                nil [16561 16622])
+            ("cider-describe-nrepl-session" function
+               (:documentation "Describe an nREPL session."
+                :user-visible-flag t)
+                nil [16624 17828])
+            ("cl-defmethod" code nil nil [17873 17970])
+            ("cl-defmethod" code nil nil [17972 18106])
+            ("cider-sesman-browser-map" variable
+               (:documentation "Map active on REPL objects in sesman browser."
+                :default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "j q") #'cider-quit) (define-key map (kbd "j k") #'cider-quit) (define-key map (kbd "j r") #'cider-restart) (define-key map (kbd "j d") #'cider-describe-connection) (define-key map (kbd "j i") #'cider-describe-connection) (define-key map (kbd "C-c C-q") #'cider-quit) (define-key map (kbd "C-c C-q") #'cider-quit) (define-key map (kbd "C-c C-r") #'cider-restart) (define-key map (kbd "C-c M-r") #'cider-restart) (define-key map (kbd "C-c C-d") #'cider-describe-connection) (define-key map (kbd "C-c M-d") #'cider-describe-connection) (define-key map (kbd "C-c C-i") #'cider-describe-connection) map))
+                nil [18108 18900])
+            ("cl-defmethod" code nil nil [18902 19058])
+            ("declare-function" code nil nil [19060 19092])
+            ("cl-defmethod" code nil nil [19093 19262])
+            ("cl-defmethod" code nil nil [19264 19518])
+            ("cl-defmethod" code nil nil [19520 21108])
+            ("cider-format-connection-params" function
+               (:documentation "Format PARAMS with TEMPLATE string.
+The following formats can be used in TEMPLATE string:
+
+  %h - host
+  %H - remote host, empty for local hosts
+  %p - port
+  %j - short project name, or directory name if no project
+  %J - long project name including parent dir name
+  %r - REPL type (clj or cljs)
+  %S - type of the ClojureScript runtime (Nashorn, Node, Figwheel etc.)
+  %s - session name as defined by `cider-session-name-template'.
+
+In case some values are empty, extra separators (: and -) are automatically
+removed."
+                :arguments ("template" "params"))
+                nil [21110 23783])
+            ("cider-make-session-name" function
+               (:documentation "Create new session name given plist of connection PARAMS.
+Session name can be customized with `cider-session-name-template'."
+                :arguments ("params"))
+                nil [23785 24280])
+            ("defvar-local" code nil nil [24306 24399])
+            ("defvar-local" code nil nil [24401 24505])
+            ("cider-repl-type" function
+               (:documentation "Get REPL-BUFFER's type."
+                :arguments ("repl-buffer"))
+                nil [24507 24624])
+            ("cider-repl-type-for-buffer" function
+               (:documentation "Return the matching connection type (clj or cljs) for BUFFER.
+BUFFER defaults to the `current-buffer'.  In cljc buffers return
+\"multi\". This function infers connection type based on the major mode.
+For the REPL type use the function `cider-repl-type'."
+                :arguments ("buffer"))
+                nil [24626 25166])
+            ("cider-set-repl-type" function
+               (:documentation "Set REPL TYPE to \"clj\" or \"cljs\".
+Assume that the current buffer is a REPL."
+                :user-visible-flag t
+                :arguments ("type"))
+                nil [25168 26190])
+            ("declare-function" code nil nil [26192 26249])
+            ("declare-function" code nil nil [26250 26297])
+            ("declare-function" code nil nil [26298 26355])
+            ("declare-function" code nil nil [26356 26412])
+            ("defvar-local" code nil nil [26413 26450])
+            ("defvar-local" code nil nil [26451 26494])
+            ("cider-repl-create" function
+               (:documentation "Create new repl buffer.
+PARAMS is a plist which contains :repl-type, :host, :port, :project-dir,
+:repl-init-function and :session-name.  When non-nil, :repl-init-function
+must be a function with no arguments which is called after repl creation
+function with the repl buffer set as current."
+                :arguments ("params"))
+                nil [26495 28427])
+            ("cider--no-repls-user-error" function
+               (:documentation "Throw \"No REPL\" user error customized for TYPE."
+                :arguments ("type"))
+                nil [28456 28862])
+            ("cider-current-repl" function
+               (:documentation "Get the most recent REPL of TYPE from the current session.
+TYPE is either \"clj\", \"cljs\" or \"multi\".  When nil, infer the type
+from the current buffer.  If ENSURE is non-nil, throw an error if either
+there is no linked session or there is no REPL of TYPE within the current
+session."
+                :arguments ("type" "ensure"))
+                nil [28864 29844])
+            ("cider--match-repl-type" function
+               (:documentation "Return non-nil if TYPE matches BUFFER's REPL type."
+                :arguments ("type" "buffer"))
+                nil [29846 30194])
+            ("cider-repls" function
+               (:documentation "Return cider REPLs of TYPE from the current session.
+If TYPE is nil or \"multi\", return all repls.  If TYPE is a list of types,
+return only REPLs of type contained in the list.  If ENSURE is non-nil,
+throw an error if no linked session exists."
+                :arguments ("type" "ensure"))
+                nil [30196 30814])
+            ("cider-map-repls" function
+               (:documentation "Call FUNCTION once for each appropriate REPL as indicated by WHICH.
+The function is called with one argument, the REPL buffer.  The appropriate
+connections are found by inspecting the current buffer.  WHICH is one of
+the following keywords:
+ :auto - Act on the connections whose type matches the current buffer.  In
+     `cljc' files, mapping happens over both types of REPLs.
+ :clj (:cljs) - Map over clj (cljs)) REPLs only.
+ :clj-strict (:cljs-strict) - Map over clj (cljs) REPLs but signal a
+      `user-error' in `clojurescript-mode' (`clojure-mode').  Use this for
+      commands only supported in Clojure (ClojureScript).
+Error is signaled if no REPL buffers of specified type exist in current
+session."
+                :arguments ("which" "function"))
+                nil [30816 32302])
+            ("defalias" code nil nil [32427 32484])
+            ("defalias" code nil nil [32485 32528])
+            ("defalias" code nil nil [32529 32580])
+            ("defalias" code nil nil [32581 32654])
+            ("define-obsolete-function-alias" code nil nil [32686 32772])
+            ("define-obsolete-function-alias" code nil nil [32773 32845])
+            ("define-obsolete-function-alias" code nil nil [32846 32934])
+            ("define-obsolete-function-alias" code nil nil [32935 33034])
+            ("define-obsolete-function-alias" code nil nil [33035 33132])
+            ("define-obsolete-function-alias" code nil nil [33133 33226])
+            ("define-obsolete-function-alias" code nil nil [33227 33308])
+            ("make-obsolete" code nil nil [33310 33393])
+            ("make-obsolete" code nil nil [33394 33479])
+            ("make-obsolete" code nil nil [33480 33540])
+            ("make-obsolete" code nil nil [33541 33604])
+            ("make-obsolete" code nil nil [33605 33666])
+            ("make-obsolete" code nil nil [33667 33749])
+            ("make-obsolete" code nil nil [33750 33807])
+            ("make-obsolete" code nil nil [33808 33870])
+            ("make-obsolete" code nil nil [33871 33949])
+            ("make-obsolete" code nil nil [33950 34048])
+            ("make-obsolete" code nil nil [34049 34108])
+            ("make-obsolete" code nil nil [34109 34176])
+            ("make-obsolete" code nil nil [34177 34227])
+            ("make-obsolete" code nil nil [34228 34301])
+            ("make-obsolete" code nil nil [34302 34361])
+            ("make-obsolete" code nil nil [34362 34425])
+            ("make-obsolete" code nil nil [34426 34495])
+            ("make-obsolete" code nil nil [34496 34550])
+            ("make-obsolete" code nil nil [34551 34611])
+            ("make-obsolete" code nil nil [34612 34681])
+            ("make-obsolete" code nil nil [34682 34740])
+            ("make-obsolete" code nil nil [34741 34798])
+            ("make-obsolete" code nil nil [34799 34893])
+            ("make-obsolete" code nil nil [34894 34957])
+            ("make-obsolete" code nil nil [34958 35012])
+            ("make-obsolete" code nil nil [35013 35083])
+            ("make-obsolete" code nil nil [35084 35141])
+            ("make-obsolete" code nil nil [35165 35230])
+            ("make-obsolete" code nil nil [35231 35293])
+            ("make-obsolete" code nil nil [35294 35361])
+            ("make-obsolete" code nil nil [35362 35433])
+            ("make-obsolete" code nil nil [35434 35506])
+            ("make-obsolete" code nil nil [35507 35578])
+            ("make-obsolete" code nil nil [35579 35647])
+            ("make-obsolete" code nil nil [35648 35717])
+            ("make-obsolete" code nil nil [35718 35774])
+            ("cider-connection" package nil nil [35776 35803]))          
+      :file "cider-connection.el"
+      :pointmax 35839
+      :fsize 35839
+      :lastmodtime '(23456 48141 557129 184000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16742ec"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("seq" include nil nil [3444 3458])
+            ("subr-x" include nil nil [3459 3476])
+            ("cider-compat" include nil nil [3477 3500])
+            ("cl-lib" include nil nil [3501 3518])
+            ("nrepl-dict" include nil nil [3519 3540])
+            ("queue" include nil nil [3541 3557])
+            ("tramp" include nil nil [3558 3574])
+            ("nrepl" customgroup
+               (:documentation "Interaction with the Clojure nREPL Server."
+                :user-visible-flag t)
+                nil [3590 3699])
+            ("make-obsolete-variable" code nil nil [3919 4008])
+            ("make-obsolete-variable" code nil nil [4172 4261])
+            ("nrepl-connected-hook" variable (:documentation "List of functions to call when connecting to the nREPL server.") nil [4263 4396])
+            ("nrepl-disconnected-hook" variable (:documentation "List of functions to call when disconnected from the nREPL server.") nil [4398 4538])
+            ("nrepl-file-loaded-hook" variable (:documentation "List of functions to call when a load file has completed.") nil [4540 4670])
+            ("nrepl-force-ssh-for-remote-hosts" variable (:documentation "If non-nil, do not attempt a direct connection for remote hosts.") nil [4672 4822])
+            ("nrepl-use-ssh-fallback-for-remote-hosts" variable (:documentation "If non-nil, attempt to connect via ssh to remote hosts when unable to connect directly.") nil [4824 5004])
+            ("nrepl-sync-request-timeout" variable
+               (:documentation "The number of seconds to wait for a sync response.
+Setting this to nil disables the timeout functionality."
+                :default-value 10)
+                nil [5006 5191])
+            ("nrepl-hide-special-buffers" variable (:documentation "Control the display of some special buffers in buffer switching commands.
+When true some special buffers like the server buffer will be hidden.") nil [5193 5416])
+            ("defvar-local" code nil nil [5519 5561])
+            ("defvar-local" code nil nil [5562 5600])
+            ("defvar-local" code nil nil [5601 5641])
+            ("defvar-local" code nil nil [5642 5675])
+            ("defvar-local" code nil nil [5676 5712])
+            ("defvar-local" code nil nil [5713 5747])
+            ("defvar-local" code nil nil [5748 5787])
+            ("defvar-local" code nil nil [5788 5826])
+            ("defvar-local" code nil nil [5828 5890])
+            ("defvar-local" code nil nil [5892 6029])
+            ("defvar-local" code nil nil [6031 6109])
+            ("defvar-local" code nil nil [6111 6152])
+            ("defvar-local" code nil nil [6154 6197])
+            ("defvar-local" code nil nil [6199 6279])
+            ("defvar-local" code nil nil [6281 6388])
+            ("defvar-local" code nil nil [6390 6466])
+            ("defvar-local" code nil nil [6468 6556])
+            ("defvar-local" code nil nil [6558 6643])
+            ("nrepl-message-buffer-name-template" variable
+               (:constant-flag t
+                :default-value "*nrepl-messages %s(%r:%S)*")
+                nil [6671 6745])
+            ("nrepl-error-buffer-name" variable
+               (:constant-flag t
+                :default-value "*nrepl-error*")
+                nil [6746 6796])
+            ("nrepl-repl-buffer-name-template" variable
+               (:constant-flag t
+                :default-value "*cider-repl %s(%r:%S)*")
+                nil [6797 6864])
+            ("nrepl-server-buffer-name-template" variable
+               (:constant-flag t
+                :default-value "*nrepl-server %s*")
+                nil [6865 6929])
+            ("nrepl-tunnel-buffer-name-template" variable
+               (:constant-flag t
+                :default-value "*nrepl-tunnel %s*")
+                nil [6930 6994])
+            ("nrepl-make-buffer-name" function
+               (:documentation "Generate a buffer name using TEMPLATE and PARAMS.
+TEMPLATE and PARAMS are as in `cider-format-connection-params'.  If
+optional DUP-OK is non-nil, the returned buffer is not \"uniquified\" by a
+call to `generate-new-buffer-name'."
+                :arguments ("template" "params" "dup-ok"))
+                nil [6996 7427])
+            ("nrepl--make-hidden-name" function
+               (:documentation "Apply a prefix to BUFFER-NAME that will hide the buffer."
+                :arguments ("buffer-name"))
+                nil [7429 7597])
+            ("nrepl-repl-buffer-name" function
+               (:documentation "Return the name of the repl buffer.
+PARAMS and DUP-OK are as in `nrepl-make-buffer-name'."
+                :arguments ("params" "dup-ok"))
+                nil [7599 7822])
+            ("nrepl-server-buffer-name" function
+               (:documentation "Return the name of the server buffer.
+PARAMS is as in `nrepl-make-buffer-name'."
+                :arguments ("params"))
+                nil [7824 8046])
+            ("nrepl-tunnel-buffer-name" function
+               (:documentation "Return the name of the tunnel buffer.
+PARAMS is as in `nrepl-make-buffer-name'."
+                :arguments ("params"))
+                nil [8048 8270])
+            ("nrepl-messages-buffer-name" function
+               (:documentation "Return the name for the message buffer given connection PARAMS."
+                :arguments ("params"))
+                nil [8272 8452])
+            ("nrepl-op-supported-p" function
+               (:documentation "Return t iff the given operation OP is supported by the nREPL CONNECTION."
+                :arguments ("op" "connection"))
+                nil [8470 8717])
+            ("nrepl-aux-info" function
+               (:documentation "Return KEY's aux info, as returned via the :describe op for CONNECTION."
+                :arguments ("key" "connection"))
+                nil [8719 8920])
+            ("nrepl-local-host-p" function
+               (:documentation "Return t if HOST is local."
+                :arguments ("host"))
+                nil [8922 9034])
+            ("nrepl-extract-port" function
+               (:documentation "Read port from .nrepl-port, nrepl-port or target/repl-port files in directory DIR."
+                :arguments ("dir"))
+                nil [9036 9439])
+            ("nrepl--port-from-file" function
+               (:documentation "Attempts to read port from a file named by FILE."
+                :arguments ("file"))
+                nil [9441 9639])
+            ("cl-defstruct" code nil nil [9656 9834])
+            ("put" code nil nil [9836 10032])
+            ("nrepl--bdecode-list" function
+               (:documentation "Decode a bencode list or dict starting at point.
+STACK is as in `nrepl--bdecode-1'."
+                :arguments ("stack"))
+                nil [10034 10596])
+            ("nrepl--bdecode-1" function
+               (:documentation "Decode one elementary bencode object starting at point.
+Bencoded object is either list, dict, integer or string.  See
+http://en.wikipedia.org/wiki/Bencode#Encoding_algorithm for the encoding
+rules.
+
+STACK is a list of so far decoded components of the current message.  Car
+of STACK is the innermost incompletely decoded object.  The algorithm pops
+this list when inner object was completely decoded or grows it by one when
+new list or dict was encountered.
+
+The returned value is of the form (INFO . STACK) where INFO is
+:stub, nil, :end or :eob and STACK is either an incomplete parsing state as
+above (INFO is :stub, nil or :eob) or a list of one component representing
+the completely decoded message (INFO is :end).  INFO is nil when an
+elementary non-root object was successfully decoded.  INFO is :end when this
+object is a root list or dict."
+                :arguments ("stack"))
+                nil [10598 13553])
+            ("nrepl--bdecode-message" function
+               (:documentation "Decode one full message starting at point.
+STACK is as in `nrepl--bdecode-1'.  Return a cons (INFO . STACK)."
+                :arguments ("stack"))
+                nil [13555 13994])
+            ("nrepl-bdecode" function
+               (:documentation "Decode STRING-Q and place the results into RESPONSE-Q.
+STRING-Q is either a queue of strings or a string.  RESPONSE-Q is a queue of
+server requests (nREPL dicts).  STRING-Q and RESPONSE-Q are modified by side
+effects.
+
+Return a cons (STRING-Q . RESPONSE-Q) where STRING-Q is the original queue
+containing the remainder of the input strings which could not be
+decoded.  RESPONSE-Q is the original queue with successfully decoded messages
+enqueued and with slot STUB containing a nested stack of an incompletely
+decoded message or nil if the strings were completely decoded."
+                :arguments ("string-q" "response-q"))
+                nil [13996 15524])
+            ("nrepl-bencode" function
+               (:documentation "Encode OBJECT with bencode.
+Integers, lists and nrepl-dicts are treated according to bencode
+specification.  Everything else is encoded as string."
+                :arguments ("object"))
+                nil [15526 15976])
+            ("nrepl-response-handler-functions" variable (:documentation "List of functions to call on each nREPL message.
+Each of these functions should be a function with one argument, which will
+be called by `nrepl-client-filter' on every response received.  The current
+buffer will be connection (REPL) buffer of the process.  These functions
+should take a single argument, a dict representing the message.  See
+`nrepl--dispatch-response' for an example.
+
+These functions are called before the message's own callbacks, so that they
+can affect the behaviour of the callbacks.  Errors signaled by these
+functions are demoted to messages, so that they don't prevent the
+callbacks from running.") nil [16008 16678])
+            ("nrepl-client-filter" function
+               (:documentation "Decode message(s) from PROC contained in STRING and dispatch them."
+                :arguments ("proc" "string"))
+                nil [16680 17466])
+            ("nrepl--dispatch-response" function
+               (:documentation "Dispatch the RESPONSE to associated callback.
+First we check the callbacks of pending requests.  If no callback was found,
+we check the completed requests, since responses could be received even for
+older requests with \"done\" status."
+                :arguments ("response"))
+                nil [17468 18083])
+            ("nrepl-client-sentinel" function
+               (:documentation "Handle sentinel events from PROCESS.
+Notify MESSAGE and if the process is closed run `nrepl-disconnected-hook'
+and kill the process buffer."
+                :arguments ("process" "message"))
+                nil [18085 18995])
+            ("nrepl-connect" function
+               (:documentation "Connect to the nREPL server identified by HOST and PORT.
+For local hosts use a direct connection.  For remote hosts, if
+`nrepl-force-ssh-for-remote-hosts' is nil, attempt a direct connection
+first.  If `nrepl-force-ssh-for-remote-hosts' is non-nil or the direct
+connection failed (and `nrepl-use-ssh-fallback-for-remote-hosts' is
+non-nil), try to start a SSH tunneled connection.  Return a plist of the
+form (:proc PROC :host \"HOST\" :port PORT) that might contain additional
+key-values depending on the connection type."
+                :arguments ("host" "port"))
+                nil [19012 20750])
+            ("nrepl--direct-connect" function
+               (:documentation "If HOST and PORT are given, try to `open-network-stream'.
+If NO-ERROR is non-nil, show messages instead of throwing an error."
+                :arguments ("host" "port" "no-error"))
+                nil [20752 21641])
+            ("nrepl--ssh-tunnel-connect" function
+               (:documentation "Connect to a remote machine identified by HOST and PORT through SSH tunnel."
+                :arguments ("host" "port"))
+                nil [21643 22908])
+            ("nrepl--ssh-tunnel-command" function
+               (:documentation "Command string to open SSH tunnel to the host associated with DIR's PORT."
+                :arguments ("ssh" "dir" "port"))
+                nil [22910 23449])
+            ("comint-watch-for-password-prompt" function
+               (:documentation "(autoload)."
+                :prototype-flag t)
+                nil [23451 23519])
+            ("nrepl--ssh-tunnel-filter" function
+               (:documentation "Return a process filter that waits for PORT to appear in process output."
+                :arguments ("port"))
+                nil [23521 24294])
+            ("nrepl--kill-process" function
+               (:documentation "Kill PROC using the appropriate, os specific way.
+Implement a workaround to clean up an orphaned JVM process left around
+after exiting the REPL on some windows machines."
+                :arguments ("proc"))
+                nil [24328 24638])
+            ("nrepl-kill-server-buffer" function
+               (:documentation "Kill SERVER-BUF and its process."
+                :arguments ("server-buf"))
+                nil [24640 24960])
+            ("nrepl--maybe-kill-server-buffer" function
+               (:documentation "Kill SERVER-BUF and its process.
+Do not kill the server if there is a REPL connected to that server."
+                :arguments ("server-buf"))
+                nil [24962 25511])
+            ("nrepl-start-client-process" function
+               (:documentation "Create new client process identified by HOST and PORT.
+In remote buffers, HOST and PORT are taken from the current tramp
+connection.  SERVER-PROC must be a running nREPL server process within
+Emacs.  BUFFER-BUILDER is a function of one argument (endpoint returned by
+`nrepl-connect') which returns a client buffer.  Return the newly created
+client process."
+                :arguments ("host" "port" "server-proc" "buffer-builder"))
+                nil [25513 27293])
+            ("nrepl--init-client-sessions" function
+               (:documentation "Initialize CLIENT connection nREPL sessions.
+We create two client nREPL sessions per connection - a main session and a
+tooling session.  The main session is general purpose and is used for pretty
+much every request that needs a session.  The tooling session is used only
+for functionality that's implemented in terms of the \"eval\" op, so that
+eval requests for functionality like pretty-printing won't clobber the
+values of *1, *2, etc."
+                :arguments ("client"))
+                nil [27295 28453])
+            ("nrepl--init-capabilities" function
+               (:documentation "Store locally in CONN-BUFFER the capabilities of nREPL server."
+                :arguments ("conn-buffer"))
+                nil [28455 28829])
+            ("nrepl--clear-client-sessions" function
+               (:documentation "Clear information about nREPL sessions in CONN-BUFFER.
+CONN-BUFFER refers to a (presumably) dead connection, which we can eventually reuse."
+                :arguments ("conn-buffer"))
+                nil [28831 29127])
+            ("nrepl-err-handler" variable (:documentation "Evaluation error handler.") nil [29320 29380])
+            ("nrepl--mark-id-completed" function
+               (:documentation "Move ID from `nrepl-pending-requests' to `nrepl-completed-requests'.
+It is safe to call this function multiple times on the same ID."
+                :arguments ("id"))
+                nil [29382 29802])
+            ("declare-function" code nil nil [29804 29871])
+            ("nrepl-notify" function
+               (:documentation "Handle \"notification\" server request.
+MSG is a string to be displayed.  TYPE is the type of the message.  All
+notifications are currently displayed with `message' function and emitted
+to the REPL."
+                :arguments ("msg" "type"))
+                nil [29872 30629])
+            ("cider-buffer-ns" variable nil nil [30631 30655])
+            ("cider-special-mode-truncate-lines" variable nil nil [30656 30698])
+            ("declare-function" code nil nil [30699 30749])
+            ("declare-function" code nil nil [30750 30801])
+            ("nrepl-make-response-handler" function
+               (:documentation "Make a response handler for connection BUFFER.
+A handler is a function that takes one argument - response received from
+the server process.  The response is an alist that contains at least 'id'
+and 'session' keys.  Other standard response keys are 'value', 'out', 'err',
+'pprint-out' and 'status'.
+
+The presence of a particular key determines the type of the response.  For
+example, if 'value' key is present, the response is of type 'value', if
+'out' key is present the response is 'stdout' etc.
+
+Depending on the type, the handler dispatches the appropriate value to one
+of the supplied handlers: VALUE-HANDLER, STDOUT-HANDLER, STDERR-HANDLER,
+DONE-HANDLER, EVAL-ERROR-HANDLER, PPRINT-OUT-HANDLER and
+CONTENT-TYPE-HANDLER.
+
+Handlers are functions of the buffer and the value they handle, except for
+the optional CONTENT-TYPE-HANDLER which should be a function of the buffer,
+content, the content-type to be handled as a list `(type attrs)'.
+
+If the optional EVAL-ERROR-HANDLER is nil, the default `nrepl-err-handler'
+is used.  If any of the other supplied handlers are nil nothing happens for
+the corresponding type of response."
+                :arguments ("buffer" "value-handler" "stdout-handler" "stderr-handler" "done-handler" "eval-error-handler" "pprint-out-handler" "content-type-handler"))
+                nil [30803 34412])
+            ("nrepl-next-request-id" function
+               (:documentation "Return the next request id for CONNECTION."
+                :arguments ("connection"))
+                nil [34984 35163])
+            ("nrepl-send-request" function
+               (:documentation "Send REQUEST and register response handler CALLBACK using CONNECTION.
+REQUEST is a pair list of the form (\"op\" \"operation\" \"par1-name\"
+\"par1\" ... ). See the code of `nrepl-request:clone',
+`nrepl-request:stdin', etc. This expects that the REQUEST does not have a
+session already in it. This code will add it as appropriate to prevent
+connection/session drift.
+Return the ID of the sent message.
+Optional argument TOOLING Set to t if desiring the tooling session rather than the standard session."
+                :arguments ("request" "callback" "connection" "tooling"))
+                nil [35165 36225])
+            ("nrepl-ongoing-sync-request" variable (:documentation "Dynamically bound to t while a sync request is ongoing.") nil [36227 36326])
+            ("declare-function" code nil nil [36328 36394])
+            ("declare-function" code nil nil [36395 36458])
+            ("nrepl-send-sync-request" function
+               (:documentation "Send REQUEST to the nREPL server synchronously using CONNECTION.
+Hold till final \"done\" message has arrived and join all response messages
+of the same \"op\" that came along.
+If ABORT-ON-INPUT is non-nil, the function will return nil at the first
+sign of user input, so as not to hang the interface.
+If TOOLING, use the tooling session rather than the standard session."
+                :arguments ("request" "connection" "abort-on-input" "tooling"))
+                nil [36460 38828])
+            ("nrepl-request:stdin" function
+               (:documentation "Send a :stdin request with INPUT using CONNECTION.
+Register CALLBACK as the response handler."
+                :arguments ("input" "callback" "connection"))
+                nil [38830 39125])
+            ("nrepl-request:interrupt" function
+               (:documentation "Send an :interrupt request for PENDING-REQUEST-ID.
+The request is dispatched using CONNECTION.
+Register CALLBACK as the response handler."
+                :arguments ("pending-request-id" "callback" "connection"))
+                nil [39127 39507])
+            ("define-minor-mode" code nil nil [39509 39591])
+            ("nrepl--eval-request" function
+               (:documentation "Prepare :eval request message for INPUT.
+NS provides context for the request.
+If LINE and COLUMN are non-nil and current buffer is a file buffer, \"line\",
+\"column\" and \"file\" are added to the message."
+                :arguments ("input" "ns" "line" "column"))
+                nil [39593 40231])
+            ("nrepl-request:eval" function
+               (:documentation "Send the request INPUT and register the CALLBACK as the response handler.
+The request is dispatched via CONNECTION.  If NS is non-nil,
+include it in the request.  LINE and COLUMN, if non-nil, define the position
+of INPUT in its buffer.  A CONNECTION uniquely determines two connections
+available: the standard interaction one and the tooling session.  If the
+tooling is desired, set TOOLING to true.
+ADDITIONAL-PARAMS is a plist to be appended to the request message."
+                :arguments ("input" "callback" "connection" "ns" "line" "column" "additional-params" "tooling"))
+                nil [40233 40997])
+            ("nrepl-sync-request:clone" function
+               (:documentation "Sent a :clone request to create a new client session.
+The request is dispatched via CONNECTION.
+Optional argument TOOLING Tooling is set to t if wanting the tooling session from CONNECTION."
+                :arguments ("connection" "tooling"))
+                nil [40999 41377])
+            ("nrepl-sync-request:close" function
+               (:documentation "Sent a :close request to close CONNECTION's SESSION."
+                :arguments ("connection"))
+                nil [41379 41597])
+            ("nrepl-sync-request:describe" function
+               (:documentation "Perform :describe request for CONNECTION and SESSION."
+                :arguments ("connection"))
+                nil [41624 41815])
+            ("nrepl-sync-request:ls-sessions" function
+               (:documentation "Perform :ls-sessions request for CONNECTION."
+                :arguments ("connection"))
+                nil [41817 41978])
+            ("nrepl-sync-request:eval" function
+               (:documentation "Send the INPUT to the nREPL server synchronously.
+The request is dispatched via CONNECTION.
+If NS is non-nil, include it in the request
+If TOOLING is non-nil the evaluation is done using the tooling nREPL
+session."
+                :arguments ("input" "connection" "ns" "tooling"))
+                nil [41980 42363])
+            ("nrepl-sessions" function
+               (:documentation "Get a list of active sessions on the nREPL server using CONNECTION."
+                :arguments ("connection"))
+                nil [42365 42546])
+            ("defvar-local" code nil nil [43028 43069])
+            ("nrepl-server-p" function
+               (:documentation "Return t if BUFFER-OR-PROCESS is an nREPL server."
+                :arguments ("buffer-or-process"))
+                nil [43071 43360])
+            ("nrepl-start-server-process" function
+               (:documentation "Start nREPL server process in DIRECTORY using shell command CMD.
+Return a newly created process.  Set `nrepl-server-filter' as the process
+filter, which starts REPL process with its own buffer once the server has
+started.  ON-PORT-CALLBACK is a function of one argument (server buffer)
+which is called by the process filter once the port of the connection has
+been determined."
+                :arguments ("directory" "cmd" "on-port-callback"))
+                nil [43362 44647])
+            ("nrepl-server-filter" function
+               (:documentation "Process nREPL server output from PROCESS contained in OUTPUT."
+                :arguments ("process" "output"))
+                nil [44649 46064])
+            ("declare-function" code nil nil [46066 46127])
+            ("nrepl-server-sentinel" function
+               (:documentation "Handle nREPL server PROCESS EVENT."
+                :arguments ("process" "event"))
+                nil [46128 47108])
+            ("nrepl-log-messages" variable (:documentation "If non-nil, log protocol messages to an nREPL messages buffer.
+This is extremely useful for debug purposes, as it allows you to inspect
+the communication between Emacs and an nREPL server.  Enabling the logging
+might have a negative impact on performance, so it's not recommended to
+keep it enabled unless you need to debug something.") nil [47126 47551])
+            ("nrepl-message-buffer-max-size" variable
+               (:documentation "Maximum size for the nREPL message buffer.
+Defaults to 1000000 characters, which should be an insignificant
+memory burden, while providing reasonable history."
+                :constant-flag t
+                :default-value 1000000)
+                nil [47553 47764])
+            ("nrepl-message-buffer-reduce-denominator" variable
+               (:documentation "Divisor by which to reduce message buffer size.
+When the maximum size for the nREPL message buffer is exceeded, the size of
+the buffer is reduced by one over this value.  Defaults to 4, so that 1/4
+of the buffer is removed, which should ensure the buffer's maximum is
+reasonably utilized, while limiting the number of buffer shrinking
+operations."
+                :constant-flag t
+                :default-value 4)
+                nil [47766 48169])
+            ("nrepl-messages-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "n") #'next-line) (define-key map (kbd "p") #'previous-line) (define-key map (kbd "TAB") #'forward-button) (define-key map (kbd "RET") #'nrepl-log-expand-button) (define-key map (kbd "e") #'nrepl-log-expand-button) (define-key map (kbd "E") #'nrepl-log-expand-all-buttons) (define-key map (kbd "<backtab>") #'backward-button) map)) nil [48171 48631])
+            ("define-derived-mode" code nil nil [48633 49082])
+            ("nrepl-decorate-msg" function
+               (:documentation "Decorate nREPL MSG according to its TYPE."
+                :arguments ("msg" "type"))
+                nil [49084 49257])
+            ("nrepl-log-message" function
+               (:documentation "Log the nREPL MSG.
+TYPE is either request or response.  The message is logged to a buffer
+described by `nrepl-message-buffer-name-template'."
+                :arguments ("msg" "type"))
+                nil [49259 50405])
+            ("nrepl-toggle-message-logging" function
+               (:documentation "Toggle the value of `nrepl-log-messages' between nil and t.
+
+This in effect enables or disables the logging of nREPL messages."
+                :user-visible-flag t)
+                nil [50407 50767])
+            ("nrepl-message-colors" variable
+               (:documentation "Colors used in the messages buffer."
+                :default-value '("red" "brown" "coral" "orange" "green" "deep sky blue" "blue" "dark violet"))
+                nil [50769 50962])
+            ("nrepl-log-expand-button" function
+               (:documentation "Expand the objects hidden in BUTTON's :nrepl-object property.
+BUTTON defaults the button at point."
+                :user-visible-flag t
+                :arguments ("button"))
+                nil [50964 51588])
+            ("nrepl-log-expand-all-buttons" function
+               (:documentation "Expand all buttons in nREPL log buffer."
+                :user-visible-flag t)
+                nil [51590 52037])
+            ("nrepl-log--expand-button-mouse" function
+               (:documentation "Expand the text hidden under overlay button.
+EVENT gives the button position on window."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [52039 52348])
+            ("nrepl-log-insert-button" function
+               (:documentation "Insert button with LABEL and :nrepl-object property as OBJECT."
+                :arguments ("label" "object"))
+                nil [52350 52871])
+            ("nrepl-log--message-color" function
+               (:documentation "Return the color to use when pretty-printing the nREPL message with ID.
+If ID is nil, return nil."
+                :arguments ("id"))
+                nil [52873 53140])
+            ("nrepl-log--pp-listlike" function
+               (:documentation "Pretty print nREPL list like OBJECT.
+FOREGROUND and BUTTON are as in `nrepl-log-pp-object'."
+                :arguments ("object" "foreground" "button"))
+                nil [53142 55305])
+            ("nrepl-log-pp-object" function
+               (:documentation "Pretty print nREPL OBJECT, delimited using FOREGROUND.
+If BUTTON is non-nil, try making a button from OBJECT instead of inserting
+it into the buffer."
+                :arguments ("object" "foreground" "button"))
+                nil [55307 56665])
+            ("nrepl-messages-buffer" function
+               (:documentation "Return or create the buffer for CONN.
+The default buffer name is *nrepl-messages connection*."
+                :arguments ("conn"))
+                nil [56667 57275])
+            ("nrepl-error-buffer" function (:documentation "Return or create the buffer.
+The default buffer name is *nrepl-error*.") nil [57277 57607])
+            ("nrepl-log-error" function
+               (:documentation "Log the given MSG to the buffer given by `nrepl-error-buffer'."
+                :arguments ("msg"))
+                nil [57609 57942])
+            ("make-obsolete" code nil nil [57944 58007])
+            ("nrepl-client" package nil nil [58009 58032]))          
+      :file "nrepl-client.el"
+      :pointmax 58064
+      :fsize 58065
+      :lastmodtime '(23456 48141 657130 333000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167430c"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cider-common" include nil nil [1196 1219])
+            ("cider-client" include nil nil [1220 1243])
+            ("cider-popup" include nil nil [1244 1266])
+            ("cider-stacktrace" include nil nil [1267 1294])
+            ("subr-x" include nil nil [1295 1312])
+            ("cider-compat" include nil nil [1313 1336])
+            ("cider-overlays" include nil nil [1337 1362])
+            ("button" include nil nil [1364 1381])
+            ("cl-lib" include nil nil [1382 1399])
+            ("easymenu" include nil nil [1400 1419])
+            ("seq" include nil nil [1420 1434])
+            ("cider-test" customgroup
+               (:documentation "Presentation and navigation for test results."
+                :user-visible-flag t)
+                nil [1451 1566])
+            ("cider-test-show-report-on-success" variable (:documentation "Whether to show the `*cider-test-report*` buffer on passing tests.") nil [1568 1764])
+            ("cider-auto-select-test-report-buffer" variable
+               (:documentation "Determines if the test-report buffer should be auto-selected."
+                :default-value t)
+                nil [1766 1958])
+            ("cider-test-defining-forms" variable
+               (:documentation "Forms that define individual tests.
+CIDER considers the \"top-level\" form around point to define a test if
+the form starts with one of these forms.
+Add to this list to have CIDER recognize additional test defining macros."
+                :default-value '("deftest" "defspec"))
+                nil [1960 2332])
+            ("cider-test-last-summary" variable (:documentation "The summary of the last run test.") nil [2334 2408])
+            ("cider-test-last-results" variable (:documentation "The results of the last run test.") nil [2410 2484])
+            ("cider-test-report-buffer" variable
+               (:documentation "Buffer name in which to display test reports."
+                :constant-flag t
+                :default-value "*cider-test-report*")
+                nil [2486 2593])
+            ("cider-test-failure-face" variable
+               (:documentation "Face for failed tests."
+                :default-value '((((class color) (background light)) :background "orange red") (((class color) (background dark)) :background "firebrick"))
+                :type "face")
+                nil [2606 2866])
+            ("cider-test-error-face" variable
+               (:documentation "Face for erring tests."
+                :default-value '((((class color) (background light)) :background "orange1") (((class color) (background dark)) :background "orange4"))
+                :type "face")
+                nil [2868 3121])
+            ("cider-test-success-face" variable
+               (:documentation "Face for passing tests."
+                :default-value '((((class color) (background light)) :foreground "black" :background "green") (((class color) (background dark)) :foreground "black" :background "green"))
+                :type "face")
+                nil [3123 3425])
+            ("cider-test-items-background-color" variable
+               (:documentation "Background color for test assertion items."
+                :default-value (cider-scale-background-color))
+                nil [3455 3577])
+            ("enable-theme" function (:arguments ("after" "cider-test-adapt-to-theme" "activate")) nil [3579 3791])
+            ("disable-theme" function (:arguments ("after" "cider-test-adapt-to-theme" "activate")) nil [3794 4008])
+            ("cider-test-commands-map" variable (:default-value (let ((map (define-prefix-command 'cider-test-commands-map))) (define-key map (kbd "C-r") #'cider-test-rerun-failed-tests) (define-key map (kbd "C-t") #'cider-test-run-test) (define-key map (kbd "C-g") #'cider-test-rerun-test) (define-key map (kbd "C-n") #'cider-test-run-ns-tests) (define-key map (kbd "C-s") #'cider-test-run-ns-tests-with-filters) (define-key map (kbd "C-l") #'cider-test-run-loaded-tests) (define-key map (kbd "C-p") #'cider-test-run-project-tests) (define-key map (kbd "C-b") #'cider-test-show-report) (define-key map (kbd "r") #'cider-test-rerun-failed-tests) (define-key map (kbd "t") #'cider-test-run-test) (define-key map (kbd "g") #'cider-test-rerun-test) (define-key map (kbd "n") #'cider-test-run-ns-tests) (define-key map (kbd "s") #'cider-test-run-ns-tests-with-filters) (define-key map (kbd "l") #'cider-test-run-loaded-tests) (define-key map (kbd "p") #'cider-test-run-project-tests) (define-key map (kbd "b") #'cider-test-show-report) map)) nil [4268 5475])
+            ("cider-test-menu" variable
+               (:documentation "CIDER test submenu."
+                :constant-flag t
+                :default-value '("Test" ["Run test" cider-test-run-test] ["Run namespace tests" cider-test-run-ns-tests] ["Run namespace tests with filters" cider-test-run-ns-tests-with-filters] ["Run all loaded tests" cider-test-run-loaded-tests] ["Run all loaded tests with filters" (apply-partially cider-test-run-loaded-tests 'prompt-for-filters)] ["Run all project tests" cider-test-run-project-tests] ["Run all project tests with filters" (apply-partially cider-test-run-project-tests 'prompt-for-filters)] ["Run tests after load-file" cider-auto-test-mode :style toggle :selected cider-auto-test-mode] "--" ["Interrupt running tests" cider-interrupt] ["Rerun failed/erring tests" cider-test-rerun-failed-tests] ["Show test report" cider-test-show-report] "--" ["Configure testing" (customize-group 'cider-test)]))
+                nil [5477 6379])
+            ("cider-test-report-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "C-c ,") 'cider-test-commands-map) (define-key map (kbd "C-c C-t") 'cider-test-commands-map) (define-key map (kbd "M-p") #'cider-test-previous-result) (define-key map (kbd "M-n") #'cider-test-next-result) (define-key map (kbd "M-.") #'cider-test-jump) (define-key map (kbd "<backtab>") #'cider-test-previous-result) (define-key map (kbd "TAB") #'cider-test-next-result) (define-key map (kbd "RET") #'cider-test-jump) (define-key map (kbd "t") #'cider-test-jump) (define-key map (kbd "d") #'cider-test-ediff) (define-key map (kbd "e") #'cider-test-stacktrace) (define-key map "f" #'cider-test-rerun-failed-tests) (define-key map "n" #'cider-test-run-ns-tests) (define-key map "s" #'cider-test-run-ns-tests-with-filters) (define-key map "l" #'cider-test-run-loaded-tests) (define-key map "p" #'cider-test-run-project-tests) (define-key map "g" #'cider-test-run-test) (define-key map "q" #'cider-popup-buffer-quit-function) (easy-menu-define cider-test-report-mode-menu map "Menu for CIDER's test result mode" '("Test-Report" ["Previous result" cider-test-previous-result] ["Next result" cider-test-next-result] "--" ["Rerun current test" cider-test-run-test] ["Rerun failed/erring tests" cider-test-rerun-failed-tests] ["Run all ns tests" cider-test-run-ns-tests] ["Run all ns tests with filters" cider-test-run-ns-tests-with-filters] ["Run all loaded tests" cider-test-run-loaded-tests] ["Run all loaded tests with filters" (apply-partially cider-test-run-loaded-tests 'prompt-for-filters)] ["Run all project tests" cider-test-run-project-tests] ["Run all project tests with filters" (apply-partially cider-test-run-project-tests 'prompt-for-filters)] "--" ["Jump to test definition" cider-test-jump] ["Display test error" cider-test-stacktrace] ["Display expected/actual diff" cider-test-ediff])) map)) nil [6381 8697])
+            ("define-derived-mode" code nil nil [8699 9040])
+            ("cider-test-show-report" function
+               (:documentation "Show the test report buffer, if one exists."
+                :user-visible-flag t)
+                nil [9064 9306])
+            ("cider-test-previous-result" function
+               (:documentation "Move point to the previous test result, if one exists."
+                :user-visible-flag t)
+                nil [9308 9719])
+            ("cider-test-next-result" function
+               (:documentation "Move point to the next test result, if one exists."
+                :user-visible-flag t)
+                nil [9721 10116])
+            ("declare-function" code nil nil [10118 10164])
+            ("cider-test-jump" function
+               (:documentation "Find definition for test at point, if available.
+The prefix ARG and `cider-prompt-for-symbol' decide whether to
+prompt and whether to use a new window.  Similar to `cider-find-var'."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10166 10660])
+            ("cider-auto-select-error-buffer" variable nil nil [10685 10724])
+            ("cider-test-stacktrace-for" function
+               (:documentation "Display stacktrace for the erring NS VAR test with the assertion INDEX."
+                :arguments ("ns" "var" "index"))
+                nil [10726 11865])
+            ("cider-test-stacktrace" function
+               (:documentation "Display stacktrace for the erring test at point."
+                :user-visible-flag t)
+                nil [11867 12291])
+            ("cider-test-ediff-buffers" variable (:documentation "The expected/actual buffers used to display diff.") nil [12326 12417])
+            ("cider-test--extract-from-actual" function
+               (:documentation "Extract form N from ACTUAL, ignoring outermost not.
+
+ACTUAL is a string like \"(not (= 3 4))\", of the sort returned by
+clojure.test.
+
+N = 1 => 3, N = 2 => 4, etc."
+                :arguments ("actual" "n"))
+                nil [12419 12925])
+            ("cider-test-ediff" function
+               (:documentation "Show diff of the expected vs actual value for the test at point.
+With the actual value, the outermost '(not ...)' s-expression is removed."
+                :user-visible-flag t)
+                nil [12927 14069])
+            ("cider-test-ediff-cleanup" function
+               (:documentation "Cleanup expected/actual buffers used for diff."
+                :user-visible-flag t)
+                nil [14071 14266])
+            ("add-hook" code nil nil [14268 14325])
+            ("cider-test-type-face" function
+               (:documentation "Return the font lock face for the test result TYPE."
+                :arguments ("type"))
+                nil [14350 14594])
+            ("cider-test-type-simple-face" function
+               (:documentation "Return a face for the test result TYPE using the highlight color as foreground."
+                :arguments ("type"))
+                nil [14596 14821])
+            ("cider-test-render-summary" function
+               (:documentation "Emit into BUFFER the report SUMMARY statistics."
+                :arguments ("buffer" "summary"))
+                nil [14823 15494])
+            ("cider-test-render-assertion" function
+               (:documentation "Emit into BUFFER report detail for the TEST assertion."
+                :arguments ("buffer" "test"))
+                nil [15496 17945])
+            ("cider-test-non-passing" function
+               (:documentation "For a list of TESTS, each an `nrepl-dict`, return only those that did not pass."
+                :arguments ("tests"))
+                nil [17947 18212])
+            ("cider-test-render-report" function
+               (:documentation "Emit into BUFFER the report for the SUMMARY, and test RESULTS."
+                :arguments ("buffer" "summary" "results"))
+                nil [18214 19538])
+            ("cider-test-echo-running" function
+               (:documentation "Echo a running message for the test NS, which may be a keyword.
+The optional arg TEST denotes an individual test name."
+                :arguments ("ns" "test"))
+                nil [19559 20266])
+            ("cider-test-echo-summary" function
+               (:documentation "Echo SUMMARY statistics for a test run returning RESULTS."
+                :arguments ("summary" "results"))
+                nil [20268 21311])
+            ("cider-test-highlight-problem" function
+               (:documentation "Highlight the BUFFER test definition for the non-passing TEST."
+                :arguments ("buffer" "test"))
+                nil [21901 22879])
+            ("cider-find-var-file" function
+               (:documentation "Return the buffer visiting the file in which the NS VAR is defined.
+Or nil if not found."
+                :arguments ("ns" "var"))
+                nil [22881 23184])
+            ("cider-test-highlight-problems" function
+               (:documentation "Highlight all non-passing tests in the test RESULTS."
+                :arguments ("results"))
+                nil [23186 23643])
+            ("cider-test-clear-highlights" function
+               (:documentation "Clear highlighting of non-passing tests from the last test run."
+                :user-visible-flag t)
+                nil [23645 24081])
+            ("cider-test-infer-test-ns" variable
+               (:documentation "Function to infer the test namespace for NS.
+The default implementation uses the simple Leiningen convention of appending
+'-test' to the namespace name."
+                :default-value 'cider-test-default-test-ns-fn)
+                nil [24381 24680])
+            ("cider-test-default-test-ns-fn" function
+               (:documentation "For a NS, return the test namespace, which may be the argument itself.
+This uses the Leiningen convention of appending '-test' to the namespace name."
+                :arguments ("ns"))
+                nil [24682 24998])
+            ("declare-function" code nil nil [25021 25087])
+            ("declare-function" code nil nil [25088 25158])
+            ("cider-test--prompt-for-selectors" function
+               (:documentation "Prompt for test selectors with MESSAGE.
+The selectors can be either keywords or strings."
+                :arguments ("message"))
+                nil [25160 25437])
+            ("cider-test-execute" function
+               (:documentation "Run tests for NS, which may be a keyword, optionally specifying TESTS.
+This tests a single NS, or multiple namespaces when using keywords `:project',
+`:loaded' or `:non-passing'.  Optional TESTS are only honored when a single
+namespace is specified.  Upon test completion, results are echoed and a test
+report is optionally displayed.  When test failures/errors occur, their sources
+are highlighted.
+If SILENT is non-nil, suppress all messages other then test results.
+If PROMPT-FOR-FILTERS is non-nil, prompt the user for a test selector filters.
+The include/exclude selectors will be used to filter the tests before
+ running them."
+                :arguments ("ns" "tests" "silent" "prompt-for-filters"))
+                nil [25439 29426])
+            ("cider-test-rerun-failed-tests" function
+               (:documentation "Rerun failed and erring tests from the last test run."
+                :user-visible-flag t)
+                nil [29428 29820])
+            ("cider-test-run-loaded-tests" function
+               (:documentation "Run all tests defined in currently loaded namespaces.
+
+If PROMPT-FOR-FILTERS is non-nil, prompt the user for a test selectors to filter the tests with."
+                :user-visible-flag t
+                :arguments ("prompt-for-filters"))
+                nil [29822 30112])
+            ("cider-test-run-project-tests" function
+               (:documentation "Run all tests defined in all project namespaces, loading these as needed.
+
+If PROMPT-FOR-FILTERS is non-nil, prompt the user for a test selectors to filter the tests with."
+                :user-visible-flag t
+                :arguments ("prompt-for-filters"))
+                nil [30114 30426])
+            ("cider-test-run-ns-tests-with-filters" function
+               (:documentation "Run tests filtered by selectors for the current Clojure namespace context.
+
+With a prefix arg SUPPRESS-INFERENCE it will try to run the tests in the
+current ns."
+                :user-visible-flag t
+                :arguments ("suppress-inference"))
+                nil [30428 30732])
+            ("cider-test-run-ns-tests" function
+               (:documentation "Run all tests for the current Clojure namespace context.
+
+If SILENT is non-nil, suppress all messages other then test results.
+With a prefix arg SUPPRESS-INFERENCE it will try to run the tests in the
+current ns.  If PROMPT-FOR-FILTERS is non-nil, prompt the user for
+test selectors to filter the tests with."
+                :user-visible-flag t
+                :arguments ("suppress-inference" "silent" "prompt-for-filters"))
+                nil [30734 31685])
+            ("cider-test-last-test-ns" variable (:documentation "The ns of the last test ran with `cider-test-run-test'.") nil [31687 31783])
+            ("cider-test-last-test-var" variable (:documentation "The var of the last test ran with `cider-test-run-test'.") nil [31784 31882])
+            ("cider-test-update-last-test" function
+               (:documentation "Update the last test by setting NS and VAR.
+
+See `cider-test-rerun-test'."
+                :arguments ("ns" "var"))
+                nil [31884 32079])
+            ("cider-test-run-test" function
+               (:documentation "Run the test at point.
+The test ns/var exist as text properties on report items and on highlighted
+failed/erred test definitions.  When not found, a test definition at point
+is searched."
+                :user-visible-flag t)
+                nil [32081 33116])
+            ("cider-test-rerun-test" function
+               (:documentation "Re-run the test that was previously ran."
+                :user-visible-flag t)
+                nil [33118 33386])
+            ("cider--test-silently" function (:documentation "Like `cider-test-run-tests', but with less feedback.
+Only notify the user if there actually were any tests to run and only after
+the results are received.") nil [33407 33773])
+            ("define-minor-mode" code nil nil [33790 34279])
+            ("cider-test" package nil nil [34281 34302]))          
+      :file "cider-test.el"
+      :pointmax 34332
+      :fsize 34332
+      :lastmodtime '(23456 48140 157113 102000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167432c"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("subr-x" include nil nil [935 952])
+            ("cider-compat" include nil nil [953 976])
+            ("nrepl-dict" include nil nil [977 998])
+            ("cider-util" include nil nil [999 1020])
+            ("etags" include nil nil [1021 1037])
+            ("tramp" include nil nil [1066 1082])
+            ("cider-prompt-for-symbol" variable
+               (:documentation "Controls when to prompt for symbol when a command requires one.
+
+When non-nil, always prompt, and use the symbol at point as the default
+value at the prompt.
+
+When nil, attempt to use the symbol at point for the command, and only
+prompt if that throws an error."
+                :default-value t)
+                nil [1084 1524])
+            ("cider-special-mode-truncate-lines" variable
+               (:documentation "If non-nil, contents of CIDER's special buffers will be line-truncated.
+Should be set before loading CIDER."
+                :default-value t)
+                nil [1526 1757])
+            ("cider--should-prompt-for-symbol" function
+               (:documentation "Return the value of the variable `cider-prompt-for-symbol'.
+Optionally invert the value, if INVERT is truthy."
+                :arguments ("invert"))
+                nil [1759 1999])
+            ("cider-prompt-for-symbol-function" function
+               (:documentation "Prompt for symbol if funcall `cider--should-prompt-for-symbol' is truthy.
+Otherwise attempt to use the symbol at point for the command, and only
+prompt if that throws an error.
+
+INVERT is used to invert the semantics of the function `cider--should-prompt-for-symbol'."
+                :arguments ("invert"))
+                nil [2001 2443])
+            ("cider--kw-to-symbol" function
+               (:documentation "Convert the keyword KW to a symbol."
+                :arguments ("kw"))
+                nil [2445 2574])
+            ("cider-minibuffer-history" variable
+               (:documentation "History list of expressions read from the minibuffer."
+                :default-value 'nil)
+                nil [2591 2686])
+            ("cider-minibuffer-map" variable
+               (:documentation "Minibuffer keymap used for reading Clojure expressions."
+                :default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map minibuffer-local-map) (define-key map (kbd "TAB") #'complete-symbol) (define-key map (kbd "M-TAB") #'complete-symbol) map))
+                nil [2688 2975])
+            ("declare-function" code nil nil [2977 3038])
+            ("declare-function" code nil nil [3039 3083])
+            ("cider-read-from-minibuffer" function
+               (:documentation "Read a string from the minibuffer, prompting with PROMPT.
+If VALUE is non-nil, it is inserted into the minibuffer as initial-input.
+PROMPT need not end with \": \". If it doesn't, VALUE is displayed on the
+prompt as a default value (used if the user doesn't type anything) and is
+not used as initial input (input is left empty)."
+                :arguments ("prompt" "value"))
+                nil [3084 4501])
+            ("cider-read-symbol-name" function
+               (:documentation "Read a symbol name using PROMPT with a default of the one at point.
+Use CALLBACK as the completing read var callback."
+                :arguments ("prompt" "callback"))
+                nil [4503 4910])
+            ("cider-try-symbol-at-point" function
+               (:documentation "Call CALLBACK with symbol at point.
+On failure, read a symbol name using PROMPT and call CALLBACK with that."
+                :arguments ("prompt" "callback"))
+                nil [4912 5243])
+            ("declare-function" code nil nil [5245 5287])
+            ("cider-jump-to" function
+               (:documentation "Push current point onto marker ring, and jump to BUFFER and POS.
+POS can be either a number, a cons, or a symbol.
+If a number, it is the character position (the point).
+If a cons, it specifies the position as (LINE . COLUMN).  COLUMN can be nil.
+If a symbol, `cider-jump-to' searches for something that looks like the
+symbol's definition in the file.
+If OTHER-WINDOW is non-nil don't reuse current window."
+                :arguments ("buffer" "pos" "other-window"))
+                nil [5289 7254])
+            ("cider--find-buffer-for-file" function
+               (:documentation "Return a buffer visiting FILE.
+If FILE is a temp buffer name, return that buffer."
+                :arguments ("file"))
+                nil [7256 7520])
+            ("cider--jump-to-loc-from-info" function
+               (:documentation "Jump to location give by INFO.
+INFO object is returned by `cider-var-info' or `cider-member-info'.
+OTHER-WINDOW is passed to `cider-jump-to'."
+                :arguments ("info" "other-window"))
+                nil [7522 8112])
+            ("declare-function" code nil nil [8114 8166])
+            ("cider--url-to-file" function
+               (:documentation "Return the filename from the resource URL.
+Uses `url-generic-parse-url' to parse the url.  The filename is extracted and
+then url decoded.  If the decoded filename has a Windows device letter followed
+by a colon immediately after the leading '/' then the leading '/' is dropped to
+create a valid path."
+                :arguments ("url"))
+                nil [8168 8694])
+            ("cider-make-tramp-prefix" function
+               (:documentation "Constructs a Tramp file prefix from METHOD, USER, HOST.
+It originated from Tramp's `tramp-make-tramp-file-name'.  The original be
+forced to make full file name with `with-parsed-tramp-file-name', not providing
+prefix only option."
+                :arguments ("method" "user" "host"))
+                nil [8696 9416])
+            ("cider-tramp-prefix" function
+               (:documentation "Use the filename for BUFFER to determine a tramp prefix.
+Defaults to the current buffer.  Return the tramp prefix, or nil
+if BUFFER is local."
+                :arguments ("buffer"))
+                nil [9418 9958])
+            ("cider--client-tramp-filename" function
+               (:documentation "Return the tramp filename for path NAME relative to BUFFER.
+If BUFFER has a tramp prefix, it will be added as a prefix to NAME.
+If the resulting path is an existing tramp file, it returns the path,
+otherwise, nil."
+                :arguments ("name" "buffer"))
+                nil [9960 10461])
+            ("cider--server-filename" function
+               (:documentation "Return the nREPL server-relative filename for NAME."
+                :arguments ("name"))
+                nil [10463 10661])
+            ("cider-from-nrepl-filename-function" variable
+               (:documentation "Function to translate nREPL namestrings to Emacs filenames."
+                :default-value (with-no-warnings (if (eq system-type 'cygwin) #'cygwin-convert-file-name-from-windows #'identity)))
+                nil [10663 10890])
+            ("cider-prefer-local-resources" variable (:documentation "Prefer local resources to remote (tramp) ones when both are available.") nil [10892 11044])
+            ("cider--file-path" function
+               (:documentation "Return PATH's local or tramp path using `cider-prefer-local-resources'.
+If no local or remote file exists, return nil."
+                :arguments ("path"))
+                nil [11046 11645])
+            ("declare-function" code nil nil [11647 11692])
+            ("declare-function" code nil nil [11693 11742])
+            ("cider-find-file" function
+               (:documentation "Return a buffer visiting the file URL if it exists, or nil otherwise.
+If URL has a scheme prefix, it must represent a fully-qualified file path
+or an entry within a zip/jar archive.  If AVFS (archive virtual file
+system; see online docs) is mounted the archive entry is opened inside the
+AVFS directory, otherwise the entry is archived into a temporary read-only
+buffer.  If URL doesn't contain a scheme prefix and is an absolute path, it
+is treated as such.  Finally, if URL is relative, it is expanded within each
+of the open Clojure buffers till an existing file ending with URL has been
+found."
+                :arguments ("url"))
+                nil [11744 15008])
+            ("cider--open-other-window-p" function
+               (:documentation "Test prefix value ARG to see if it indicates displaying results in other window."
+                :arguments ("arg"))
+                nil [15010 15254])
+            ("cider-abbreviate-ns" function
+               (:documentation "Return a string that abbreviates NAMESPACE."
+                :arguments ("namespace"))
+                nil [15256 15627])
+            ("cider-last-ns-segment" function
+               (:documentation "Return the last segment of NAMESPACE."
+                :arguments ("namespace"))
+                nil [15629 15782])
+            ("cider-common" package nil nil [15785 15808]))          
+      :file "cider-common.el"
+      :pointmax 15839
+      :fsize 15839
+      :lastmodtime '(23456 48141 457128 36000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167434c"
+      :file "cider-client.el"
+      :fsize 24219
+      :lastmodtime '(23456 48140 573784 556000))
+    (semanticdb-table "semanticdb-table-167436c"
+      :file "cider-popup.el"
+      :fsize 5691
+      :lastmodtime '(23456 48141 927133 434000))
+    (semanticdb-table "semanticdb-table-167438c"
+      :file "cider-stacktrace.el"
+      :fsize 40201
+      :lastmodtime '(23456 48140 217113 791000))
+    (semanticdb-table "semanticdb-table-16743ac"
+      :file "cider-compat.el"
+      :fsize 2106
+      :lastmodtime '(23456 48140 823787 427000))
+    (semanticdb-table "semanticdb-table-16743cc"
+      :file "cider-overlays.el"
+      :fsize 13183
+      :lastmodtime '(23456 48140 933788 691000))
+    (semanticdb-table "semanticdb-table-16743ec"
+      :file "nrepl-dict.el"
+      :fsize 6620
+      :lastmodtime '(23456 48140 107112 528000))
+    (semanticdb-table "semanticdb-table-1677930"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("clojure-mode" include nil nil [1271 1294])
+            ("cider-eval" include nil nil [1295 1316])
+            ("cider-test" include nil nil [1317 1338])
+            ("cider-eldoc" include nil nil [1368 1390])
+            ("cider-resolve" include nil nil [1391 1415])
+            ("cider-doc" include nil nil [1416 1436])
+            ("cider-profile" include nil nil [1466 1490])
+            ("cider-completion" include nil nil [1520 1547])
+            ("subr-x" include nil nil [1548 1565])
+            ("cider-compat" include nil nil [1566 1589])
+            ("cider-mode-line-show-connection" variable
+               (:documentation "If the mode-line lighter should detail the connection."
+                :default-value t)
+                nil [1591 1765])
+            ("cider--modeline-info" function (:documentation "Return info for the cider mode modeline.
+Info contains the connection type, project name and host:port endpoint.") nil [1767 2409])
+            ("cider-mode-line" variable
+               (:documentation "Mode line lighter for cider mode.
+
+The value of this variable is a mode line template as in
+`mode-line-format'.  See Info Node `(elisp)Mode Line Format' for details
+about mode line templates.
+
+Customize this variable to change how cider mode displays its status in the
+mode line.  The default value displays the current connection.  Set this
+variable to nil to disable the mode line entirely."
+                :default-value '(:eval (format " cider[%s]" (cider--modeline-info))))
+                nil [2426 2983])
+            ("cider--switch-to-repl-buffer" function
+               (:documentation "Select the REPL-BUFFER, when possible in an existing window.
+When SET-NAMESPACE is t, sets the namespace in the REPL buffer to
+that of the namespace in the Clojure source buffer."
+                :arguments ("repl-buffer" "set-namespace"))
+                nil [3032 3671])
+            ("cider-switch-to-repl-buffer" function
+               (:documentation "Switch to current REPL buffer, when possible in an existing window.
+The type of the REPL is inferred from the mode of current buffer.  With a
+prefix arg SET-NAMESPACE sets the namespace in the REPL buffer to that of
+the namespace in the Clojure source buffer"
+                :user-visible-flag t
+                :arguments ("set-namespace"))
+                nil [3673 4103])
+            ("declare-function" code nil nil [4105 4154])
+            ("cider-load-buffer-and-switch-to-repl-buffer" function
+               (:documentation "Load the current buffer into the matching REPL buffer and switch to it.
+When SET-NAMESPACE is true, we'll also set the REPL's ns to match that of the
+Clojure buffer."
+                :user-visible-flag t
+                :arguments ("set-namespace"))
+                nil [4156 4491])
+            ("cider-switch-to-last-clojure-buffer" function
+               (:documentation "Switch to the last Clojure buffer.
+The default keybinding for this command is
+the same as `cider-switch-to-repl-buffer',
+so that it is very convenient to jump between a
+Clojure buffer and the REPL buffer."
+                :user-visible-flag t)
+                nil [4493 5710])
+            ("cider-find-and-clear-repl-output" function
+               (:documentation "Find the current REPL buffer and clear it.
+With a prefix argument CLEAR-REPL the command clears the entire REPL
+buffer.  Returns to the buffer in which the command was invoked.  See also
+the related commands `cider-repl-clear-buffer' and
+`cider-repl-clear-output'."
+                :user-visible-flag t
+                :arguments ("clear-repl"))
+                nil [5712 6274])
+            ("cider-undef" function
+               (:documentation "Undefine a symbol from the current ns."
+                :user-visible-flag t)
+                nil [6276 6628])
+            ("cider--namespace-history" variable (:documentation "History of user input for namespace prompts.") nil [6644 6730])
+            ("cider--var-namespace" function
+               (:documentation "Return the namespace of VAR.
+VAR is a fully qualified Clojure variable name as a string."
+                :arguments ("var"))
+                nil [6732 6923])
+            ("cider-run" function
+               (:documentation "Run -main or FUNCTION, prompting for its namespace if necessary.
+With a prefix argument, prompt for function to run instead of -main."
+                :user-visible-flag t
+                :arguments ("function"))
+                nil [6925 8154])
+            ("cider-insert-commands-map" variable (:default-value (let ((map (define-prefix-command 'cider-insert-commands-map))) (define-key map (kbd "e") #'cider-insert-last-sexp-in-repl) (define-key map (kbd "d") #'cider-insert-defun-in-repl) (define-key map (kbd "r") #'cider-insert-region-in-repl) (define-key map (kbd "n") #'cider-insert-ns-form-in-repl) (define-key map (kbd "C-e") #'cider-insert-last-sexp-in-repl) (define-key map (kbd "C-d") #'cider-insert-defun-in-repl) (define-key map (kbd "C-r") #'cider-insert-region-in-repl) (define-key map (kbd "C-n") #'cider-insert-ns-form-in-repl))) nil [8200 8906])
+            ("cider-switch-to-repl-after-insert-p" variable
+               (:documentation "Whether to switch to the repl after inserting a form into the repl."
+                :default-value t)
+                nil [8908 9101])
+            ("cider-invert-insert-eval-p" variable (:documentation "Whether to invert the behavior of evaling.
+Default behavior when inserting is to NOT eval the form and only eval with
+a prefix.  This allows to invert this so that default behavior is to insert
+and eval and the prefix is required to prevent evaluation.") nil [9103 9474])
+            ("cider-insert-in-repl" function
+               (:documentation "Insert FORM in the REPL buffer and switch to it.
+If EVAL is non-nil the form will also be evaluated."
+                :arguments ("form" "eval"))
+                nil [9476 10070])
+            ("cider-insert-last-sexp-in-repl" function
+               (:documentation "Insert the expression preceding point in the REPL buffer.
+If invoked with a prefix ARG eval the expression after inserting it."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10072 10324])
+            ("cider-insert-defun-in-repl" function
+               (:documentation "Insert the top level form at point in the REPL buffer.
+If invoked with a prefix ARG eval the expression after inserting it."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10326 10576])
+            ("cider-insert-region-in-repl" function
+               (:documentation "Insert the curent region in the REPL buffer.
+START and END represent the region's boundaries.
+If invoked with a prefix ARG eval the expression after inserting it."
+                :user-visible-flag t
+                :arguments ("start" "end" "arg"))
+                nil [10578 10902])
+            ("cider-insert-ns-form-in-repl" function
+               (:documentation "Insert the current buffer's ns form in the REPL buffer.
+If invoked with a prefix ARG eval the expression after inserting it."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10904 11150])
+            ("cider-mode-menu" variable
+               (:constant-flag t
+                :default-value `("CIDER" ["Start or connect to any REPL" cider :help "A simple wrapper around all commands for starting/connecting to a REPL."] ("Clojure" ["Start a Clojure REPL" cider-jack-in :help "Starts an nREPL server and connects a Clojure REPL to it."] ["Connect to a Clojure REPL" cider-connect :help "Connects to a REPL that's already running."]) ("ClojureScript" ["Start a ClojureScript REPL" cider-jack-in-cljs :help "Starts an nREPL server and connects a ClojureScript REPL to it."] ["Connect to a ClojureScript REPL" cider-connect-clojurescript :help "Connects to a ClojureScript REPL that's already running."] ["Create a ClojureScript REPL from a Clojure REPL" cider-jack-in-sibling-clojurescript]) "--" ["Quit" cider-quit :active (cider-connected-p)] ["Restart" cider-restart :active (cider-connected-p)] "--" ["Connection info" cider-describe-connection :active (cider-connected-p)] ["Select any CIDER buffer" cider-selector] "--" ["Configure CIDER" (customize-group 'cider)] "--" ["A sip of CIDER" cider-drink-a-sip] ["View manual online" cider-view-manual] ["View refcard online" cider-view-refcard] ["Report a bug" cider-report-bug] ["Version info" cider-version] "--" ["Close ancillary buffers" cider-close-ancillary-buffers :active (seq-remove #'null cider-ancillary-buffers)] ("nREPL" :active (cider-connected-p) ["Describe nrepl session" cider-describe-nrepl-session] ["Toggle message logging" nrepl-toggle-message-logging]) "Menu for CIDER mode."))
+                nil [11172 12815])
+            ("cider-mode-eval-menu" variable
+               (:documentation "Menu for CIDER mode eval commands."
+                :constant-flag t
+                :default-value '("CIDER Eval" :visible (cider-connected-p) ["Eval top-level sexp" cider-eval-defun-at-point] ["Eval top-level sexp to point" cider-eval-defun-up-to-point] ["Eval top-level sexp to comment" cider-eval-defun-to-comment] ["Eval top-level sexp and pretty-print to comment" cider-pprint-eval-defun-to-comment] "--" ["Eval current sexp" cider-eval-sexp-at-point] ["Eval current sexp to point" cider-eval-sexp-up-to-point] ["Eval current sexp in context" cider-eval-sexp-at-point-in-context] "--" ["Eval last sexp" cider-eval-last-sexp] ["Eval last sexp in context" cider-eval-last-sexp-in-context] ["Eval last sexp and insert" cider-eval-print-last-sexp :keys "\\[universal-argument] \\[cider-eval-last-sexp]"] ["Eval last sexp in popup buffer" cider-pprint-eval-last-sexp] ["Eval last sexp and replace" cider-eval-last-sexp-and-replace] ["Eval last sexp to REPL" cider-eval-last-sexp-to-repl] ["Eval last sexp and pretty-print to REPL" cider-pprint-eval-last-sexp-to-repl] ["Eval last sexp and pretty-print to comment" cider-pprint-eval-last-sexp-to-comment] "--" ["Eval selected region" cider-eval-region] ["Eval ns form" cider-eval-ns-form] "--" ["Interrupt evaluation" cider-interrupt] "--" ["Insert last sexp in REPL" cider-insert-last-sexp-in-repl] ["Insert top-level sexp in REPL" cider-insert-defun-in-repl] ["Insert region in REPL" cider-insert-region-in-repl] ["Insert ns form in REPL" cider-insert-ns-form-in-repl] "--" ["Load this buffer" cider-load-buffer] ["Load this buffer and switch to REPL" cider-load-buffer-and-switch-to-repl-buffer] ["Load another file" cider-load-file] ["Recursively load all files in directory" cider-load-all-files] ["Load all project files" cider-load-all-project-ns] ["Refresh loaded code" cider-ns-refresh] ["Require and reload" cider-ns-reload] ["Require and reload all" cider-ns-reload-all] ["Run project (-main function)" cider-run]))
+                nil [12817 14918])
+            ("cider-mode-interactions-menu" variable
+               (:documentation "Menu for CIDER interactions."
+                :constant-flag t
+                :default-value `("CIDER Interactions" :visible (cider-connected-p) ["Complete symbol" complete-symbol] "--" ("REPL" ["Set REPL to this ns" cider-repl-set-ns] ["Switch to REPL" cider-switch-to-repl-buffer] ["REPL Pretty Print" cider-repl-toggle-pretty-printing :style toggle :selected cider-repl-use-pretty-printing] ["Clear latest output" cider-find-and-clear-repl-output] ["Clear all output" (cider-find-and-clear-repl-output t) :keys "\\[universal-argument] \\[cider-find-and-clear-repl-output]"] "--" ["Configure the REPL" (customize-group 'cider-repl)]) ,cider-doc-menu ("Find (jump to)" ["Find definition" cider-find-var] ["Find namespace" cider-find-ns] ["Find resource" cider-find-resource] ["Find keyword" cider-find-keyword] ["Go back" cider-pop-back]) ("Browse" ["Browse namespace" cider-browse-ns] ["Browse all namespaces" cider-browse-ns-all] ["Browse spec" cider-browse-spec] ["Browse all specs" cider-browse-spec-all] ["Browse REPL input history" cider-repl-history] ["Browse classpath" cider-classpath] ["Browse classpath entry" cider-open-classpath-entry]) ("Format" ["Format EDN last sexp" cider-format-edn-last-sexp] ["Format EDN region" cider-format-edn-region] ["Format EDN buffer" cider-format-edn-buffer]) ("Macroexpand" ["Macroexpand-1" cider-macroexpand-1] ["Macroexpand-all" cider-macroexpand-all]) ,cider-test-menu ("Debug" ["Inspect" cider-inspect] ["Toggle var tracing" cider-toggle-trace-var] ["Toggle ns tracing" cider-toggle-trace-ns] "--" ["Debug top-level form" cider-debug-defun-at-point :keys "\\[universal-argument] \\[cider-eval-defun-at-point]"] ["List instrumented defs" cider-browse-instrumented-defs] "--" ["Configure the Debugger" (customize-group 'cider-debug)]) ,cider-profile-menu ("Misc" ["Clojure Cheatsheet" cider-cheatsheet] ["Flush completion cache" cider-completion-flush-caches])))
+                nil [14920 17048])
+            ("declare-function" code nil nil [17051 17097])
+            ("declare-function" code nil nil [17098 17143])
+            ("declare-function" code nil nil [17144 17193])
+            ("declare-function" code nil nil [17194 17246])
+            ("declare-function" code nil nil [17247 17297])
+            ("declare-function" code nil nil [17298 17347])
+            ("declare-function" code nil nil [17348 17393])
+            ("cider-ns-map" variable
+               (:documentation "CIDER NS keymap."
+                :default-value (let ((map (define-prefix-command 'cider-ns-map))) (define-key map (kbd "b") #'cider-browse-ns) (define-key map (kbd "M-b") #'cider-browse-ns) (define-key map (kbd "e") #'cider-eval-ns-form) (define-key map (kbd "M-e") #'cider-eval-ns-form) (define-key map (kbd "f") #'cider-find-ns) (define-key map (kbd "M-f") #'cider-find-ns) (define-key map (kbd "n") #'cider-repl-set-ns) (define-key map (kbd "M-n") #'cider-repl-set-ns) (define-key map (kbd "r") #'cider-ns-refresh) (define-key map (kbd "M-r") #'cider-ns-refresh) (define-key map (kbd "l") #'cider-ns-reload) (define-key map (kbd "M-l") #'cider-ns-reload-all) map))
+                nil [17395 18111])
+            ("declare-function" code nil nil [18244 18305])
+            ("declare-function" code nil nil [18306 18369])
+            ("declare-function" code nil nil [18370 18420])
+            ("declare-function" code nil nil [18421 18477])
+            ("declare-function" code nil nil [18478 18535])
+            ("declare-function" code nil nil [18536 18587])
+            ("declare-function" code nil nil [18588 18638])
+            ("declare-function" code nil nil [18639 18685])
+            ("declare-function" code nil nil [18686 18742])
+            ("cider--has-many-mouse-buttons" variable
+               (:documentation "Non-nil if system binds forward and back buttons to <mouse-8> and <mouse-9>.
+
+As it stands Emacs fires these events on <mouse-8> and <mouse-9> on 'x' and
+'w32'systems while on macOS it presents them on <mouse-4> and <mouse-5>."
+                :constant-flag t
+                :default-value (not (memq window-system '(mac ns))))
+                nil [18744 19052])
+            ("cider-mode-map" variable
+               (:constant-flag t
+                :default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "C-c C-d") 'cider-doc-map) (define-key map (kbd "M-.") #'cider-find-var) (define-key map (kbd (if cider--has-many-mouse-buttons "<mouse-8>" "<mouse-4>")) #'xref-pop-marker-stack) (define-key map (kbd (if cider--has-many-mouse-buttons "<mouse-9>" "<mouse-5>")) #'cider-find-dwim-at-mouse) (define-key map (kbd "C-c C-.") #'cider-find-ns) (define-key map (kbd "C-c C-:") #'cider-find-keyword) (define-key map (kbd "M-,") #'cider-pop-back) (define-key map (kbd "C-c M-.") #'cider-find-resource) (define-key map (kbd "M-TAB") #'complete-symbol) (define-key map (kbd "C-M-x") #'cider-eval-defun-at-point) (define-key map (kbd "C-c C-c") #'cider-eval-defun-at-point) (define-key map (kbd "C-x C-e") #'cider-eval-last-sexp) (define-key map (kbd "C-c C-e") #'cider-eval-last-sexp) (define-key map (kbd "C-c C-p") #'cider-pprint-eval-last-sexp) (define-key map (kbd "C-c C-f") #'cider-pprint-eval-defun-at-point) (define-key map (kbd "C-c C-v") 'cider-eval-commands-map) (define-key map (kbd "C-c C-j") 'cider-insert-commands-map) (define-key map (kbd "C-c M-;") #'cider-eval-defun-to-comment) (define-key map (kbd "C-c M-e") #'cider-eval-last-sexp-to-repl) (define-key map (kbd "C-c M-p") #'cider-insert-last-sexp-in-repl) (define-key map (kbd "C-c M-:") #'cider-read-and-eval) (define-key map (kbd "C-c C-u") #'cider-undef) (define-key map (kbd "C-c C-m") #'cider-macroexpand-1) (define-key map (kbd "C-c M-m") #'cider-macroexpand-all) (define-key map (kbd "C-c M-n") 'cider-ns-map) (define-key map (kbd "C-c M-i") #'cider-inspect) (define-key map (kbd "C-c M-t v") #'cider-toggle-trace-var) (define-key map (kbd "C-c M-t n") #'cider-toggle-trace-ns) (define-key map (kbd "C-c C-z") #'cider-switch-to-repl-buffer) (define-key map (kbd "C-c M-z") #'cider-load-buffer-and-switch-to-repl-buffer) (define-key map (kbd "C-c C-o") #'cider-find-and-clear-repl-output) (define-key map (kbd "C-c C-k") #'cider-load-buffer) (define-key map (kbd "C-c C-l") #'cider-load-file) (define-key map (kbd "C-c C-M-l") #'cider-load-all-files) (define-key map (kbd "C-c C-b") #'cider-interrupt) (define-key map (kbd "C-c ,") 'cider-test-commands-map) (define-key map (kbd "C-c C-t") 'cider-test-commands-map) (define-key map (kbd "C-c M-s") #'cider-selector) (define-key map (kbd "C-c M-d") #'cider-describe-connection) (define-key map (kbd "C-c C-=") 'cider-profile-map) (define-key map (kbd "C-c C-q") #'cider-quit) (define-key map (kbd "C-c M-r") #'cider-restart) (dolist (variable '(cider-mode-interactions-menu cider-mode-eval-menu cider-mode-menu)) (easy-menu-do-define (intern (format "%s-open" variable)) map (get variable 'variable-documentation) (cider--menu-add-help-strings (symbol-value variable)))) map))
+                nil [19054 22141])
+            ("with-eval-after-load" code nil nil [22320 23312])
+            ("cider-dynamic-indentation" variable
+               (:documentation "Whether CIDER should aid Clojure(Script) indentation.
+If non-nil, CIDER uses runtime information (such as the \":style/indent\"
+metadata) to improve standard `clojure-mode' indentation.
+If nil, CIDER won't interfere with `clojure-mode's indentation.
+
+Toggling this variable only takes effect after a file is closed and
+re-visited."
+                :default-value t)
+                nil [23338 23784])
+            ("cider--get-symbol-indent" function
+               (:documentation "Return the indent metadata for SYMBOL-NAME in the current namespace."
+                :arguments ("symbol-name"))
+                nil [23786 24934])
+            ("cider-font-lock-dynamically" variable
+               (:documentation "Specifies how much dynamic font-locking CIDER should use.
+Dynamic font-locking this refers to applying syntax highlighting to vars
+defined in the currently active nREPL connection.  This is done in addition
+to `clojure-mode's usual (static) font-lock, so even if you set this
+variable to nil you'll still see basic syntax highlighting.
+
+The value is a list of symbols, each one indicates a different type of var
+that should be font-locked:
+   `macro' (default): Any defined macro gets the `font-lock-builtin-face'.
+   `function': Any defined function gets the `font-lock-function-face'.
+   `var': Any non-local var gets the `font-lock-variable-face'.
+   `deprecated' (default): Any deprecated var gets the `cider-deprecated-face'
+   face.
+   `core' (default): Any symbol from clojure.core (face depends on type).
+
+The value can also be t, which means to font-lock as much as possible."
+                :default-value '(macro core deprecated))
+                nil [24963 26416])
+            ("cider-font-lock-reader-conditionals" variable
+               (:documentation "Apply font-locking to unused reader conditional expressions depending on the buffer CIDER connection type."
+                :default-value t)
+                nil [26418 26650])
+            ("cider-deprecated-face" variable
+               (:documentation "Face used on deprecated vars."
+                :default-value '((((background light)) :background "light goldenrod") (((background dark)) :background "#432"))
+                :type "face")
+                nil [26652 26836])
+            ("cider-instrumented-face" variable
+               (:documentation "Face used to mark code being debugged."
+                :default-value '((((type graphic)) :box (:color "#c00" :line-width -1)) (t :underline t :background "#800"))
+                :type "face")
+                nil [26838 27091])
+            ("cider-traced-face" variable
+               (:documentation "Face used to mark code being traced."
+                :default-value '((((type graphic)) :box (:color "cyan" :line-width -1)) (t :underline t :background "#066"))
+                :type "face")
+                nil [27093 27316])
+            ("cider-reader-conditional-face" variable
+               (:documentation "Face used to mark unused reader conditional expressions."
+                :default-value '((t (:inherit font-lock-comment-face)))
+                :type "face")
+                nil [27318 27516])
+            ("cider-reader-conditionals-regexp" variable
+               (:documentation "Regexp for matching reader conditionals with a non-capturing group.
+Starts from the reader macro characters to the opening parentheses."
+                :constant-flag t
+                :default-value "\\(?:#\\?@?[[:space:]
+]*(\\)")
+                nil [27518 27733])
+            ("cider--reader-conditionals-match-data" variable
+               (:documentation "Reusable list for `match-data` in reader conditionals font lock matchers."
+                :default-value (list nil nil))
+                nil [27735 27874])
+            ("cider--search-reader-conditionals" function
+               (:documentation "Matcher for finding reader conditionals.
+Search is done with the given LIMIT."
+                :arguments ("limit"))
+                nil [27876 28653])
+            ("cider--anchored-search-suppressed-forms-internal" function
+               (:documentation "Helper function for `cider--anchored-search-suppressed-forms`.
+REPL-TYPES is a list of strings repl-type strings.  LIMIT is the same as
+the LIMIT in `cider--anchored-search-suppressed-forms`"
+                :arguments ("repl-types" "limit"))
+                nil [28655 29591])
+            ("cider--anchored-search-suppressed-forms" function
+               (:documentation "Matcher for finding unused reader conditional expressions.
+An unused reader conditional expression is an expression for a platform
+that does not match the CIDER connection for the buffer.  Search is done
+with the given LIMIT."
+                :arguments ("limit"))
+                nil [29593 30620])
+            ("cider--reader-conditionals-font-lock-keywords" variable
+               (:documentation "Font Lock keywords for unused reader conditionals in CIDER mode."
+                :constant-flag t
+                :default-value '((cider--search-reader-conditionals (cider--anchored-search-suppressed-forms (save-excursion (let* ((state (syntax-ppss)) (list-pt (nth 1 state))) (when list-pt (goto-char list-pt) (forward-list) (backward-char) (point)))) nil (0 'cider-reader-conditional-face t)))))
+                nil [30622 31121])
+            ("cider--unless-local-match" function
+               (:documentation "Return VALUE, unless `match-string' is a local var."
+                :arguments ("value"))
+                nil [31123 31409])
+            ("cider--compile-font-lock-keywords" function
+               (:documentation "Return a list of font-lock rules for the symbols in SYMBOLS-PLIST and CORE-PLIST."
+                :arguments ("symbols-plist" "core-plist"))
+                nil [31411 35004])
+            ("cider--static-font-lock-keywords" variable
+               (:documentation "Default expressions to highlight in CIDER mode."
+                :constant-flag t
+                :default-value (eval-when-compile `((,(regexp-opt '("#break" "#dbg" "#light") 'symbols) 0 font-lock-warning-face))))
+                nil [35006 35208])
+            ("defvar-local" code nil nil [35210 35262])
+            ("cider-refresh-dynamic-font-lock" function
+               (:documentation "Ensure that the current buffer has up-to-date font-lock rules.
+NS defaults to `cider-current-ns', and it can also be a dict describing the
+namespace itself."
+                :user-visible-flag t
+                :arguments ("ns"))
+                nil [35264 36030])
+            ("cider--read-locals-from-next-sexp" function (:documentation "Return a list of all locals inside the next logical sexp.") nil [36064 36576])
+            ("cider--read-locals-from-bindings-vector" function (:documentation "Return a list of all locals inside the next bindings vector.") nil [36578 37210])
+            ("cider--read-locals-from-arglist" function (:documentation "Return a list of all locals in current form's arglist(s).") nil [37212 38337])
+            ("cider--parse-and-apply-locals" function
+               (:documentation "Figure out local variables between point and END.
+A list of these variables is set as the `cider-locals' text property over
+the code where they are in scope.
+Optional argument OUTER-LOCALS is used to specify local variables defined
+before point."
+                :arguments ("end" "outer-locals"))
+                nil [38339 39857])
+            ("cider--update-locals-for-region" function
+               (:documentation "Update the `cider-locals' text property for region from BEG to END."
+                :arguments ("beg" "end"))
+                nil [39859 41289])
+            ("cider--docview-as-string" function
+               (:documentation "Return a string of what would be displayed by `cider-docview-render'.
+SYM and INFO is passed to `cider-docview-render'"
+                :arguments ("sym" "info"))
+                nil [41291 41698])
+            ("cider-use-tooltips" variable
+               (:documentation "If non-nil, CIDER displays mouse-over tooltips."
+                :default-value t)
+                nil [41700 41854])
+            ("cider--debug-mode-response" variable nil nil [41856 41891])
+            ("cider--debug-mode" variable nil nil [41892 41918])
+            ("cider--help-echo" function
+               (:documentation "Return the help-echo string for OBJ at POS.
+See (info \"(elisp) Special Properties\")"
+                :arguments ("_" "obj" "pos"))
+                nil [41920 43321])
+            ("cider--wrap-fontify-locals" function
+               (:documentation "Return a function that will call FUNC after parsing local variables.
+The local variables are stored in a list under the `cider-locals' text
+property."
+                :arguments ("func"))
+                nil [43323 43862])
+            ("x-gtk-use-system-tooltips" variable nil nil [43892 43926])
+            ("define-minor-mode" code nil nil [43943 45996])
+            ("cider-set-buffer-ns" function
+               (:documentation "Set this buffer's namespace to NS and refresh font-locking."
+                :arguments ("ns"))
+                nil [45998 46228])
+            ("cider-mode" package nil nil [46230 46251]))          
+      :file "cider-mode.el"
+      :pointmax 46281
+      :fsize 46286
+      :lastmodtime '(23456 48140 267114 366000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-192c3c8"
+      :file "cider-eval.el"
+      :fsize 51071
+      :lastmodtime '(23456 48140 373782 258000))
+    (semanticdb-table "semanticdb-table-192c3e8"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cider-client" include nil nil [1258 1281])
+            ("cider-common" include nil nil [1282 1305])
+            ("subr-x" include nil nil [1334 1351])
+            ("cider-compat" include nil nil [1352 1375])
+            ("cider-util" include nil nil [1376 1397])
+            ("nrepl-dict" include nil nil [1398 1419])
+            ("seq" include nil nil [1421 1435])
+            ("eldoc" include nil nil [1437 1453])
+            ("cider-extra-eldoc-commands" variable
+               (:documentation "Extra commands to be added to eldoc's safe commands list."
+                :default-value '("yas-expand"))
+                nil [1455 1568])
+            ("cider-eldoc-max-num-sexps-to-skip" variable
+               (:documentation "The maximum number of sexps to skip while searching the beginning of current sexp."
+                :default-value 30)
+                nil [1570 1777])
+            ("defvar-local" code nil nil [1779 1879])
+            ("cider-eldoc-ns-function" variable
+               (:documentation "A function that returns a ns string to be used by eldoc.
+Takes one argument, a namespace name.
+For convenience, some functions are already provided for this purpose:
+`cider-abbreviate-ns', and `cider-last-ns-segment'."
+                :default-value nil)
+                nil [1881 2463])
+            ("cider-eldoc-max-class-names-to-display" variable
+               (:documentation "The maximum number of classes to display in an eldoc string.
+An eldoc string for Java interop forms can have a number of classes prefixed to
+it, when the form belongs to more than 1 class.  When, not nil we only display
+the names of first `cider-eldoc-max-class-names-to-display' classes and add
+a \"& x more\" suffix. Otherwise, all the classes are displayed."
+                :default-value 3)
+                nil [2465 2973])
+            ("cider-eldoc-display-for-symbol-at-point" variable
+               (:documentation "When non-nil, display eldoc for symbol at point if available.
+So in (map inc ...) when the cursor is over inc its eldoc would be
+displayed.  When nil, always display eldoc for first symbol of the sexp."
+                :default-value t)
+                nil [2975 3325])
+            ("cider-eldoc-display-context-dependent-info" variable (:documentation "When non-nil, display context dependent info in the eldoc where possible.
+CIDER will try to add expected function arguments based on the current context,
+for example for the datomic.api/q function where it will show the expected
+inputs of the query at point.") nil [3327 3720])
+            ("cider--eldoc-format-class-names" function
+               (:documentation "Return a formatted CLASS-NAMES prefix string.
+CLASS-NAMES is a list of classes to which a Java interop form belongs.
+Only keep the first `cider-eldoc-max-class-names-to-display' names, and
+add a \"& x more\" suffix.  Return nil if the CLASS-NAMES list is empty or
+mapping `cider-eldoc-ns-function' on it returns an empty list."
+                :arguments ("class-names"))
+                nil [3722 5113])
+            ("cider-eldoc-format-thing" function
+               (:documentation "Format the eldoc subject defined by NS, SYMBOL, THING and TYPE.
+THING represents the thing at point which triggered eldoc.  Normally NS and
+SYMBOL are used (they are derived from THING), but when empty we fallback to
+THING (e.g. for Java methods).  Format it as a function, if FUNCTION-P
+is non-nil.  Else format it as a variable."
+                :arguments ("ns" "symbol" "thing" "type"))
+                nil [5115 6447])
+            ("cider-eldoc-format-sym-doc" function
+               (:documentation "Return the formatted eldoc string for VAR and DOCSTRING.
+
+Consider the value of `eldoc-echo-area-use-multiline-p' while formatting.
+If the entire line cannot fit in the echo area, the var name may be
+truncated or eliminated entirely from the output to make room for the
+description.
+
+Try to truncate the var with various strategies, so that the var and
+the docstring can be displayed in the minibuffer without resizing the window.
+We start with `cider-abbreviate-ns' and `cider-last-ns-segment'.
+Next, if the var is in current namespace, we remove NS from the eldoc string.
+Otherwise, only the docstring is returned."
+                :arguments ("var" "ns" "docstring"))
+                nil [6449 9071])
+            ("cider-eldoc-format-variable" function
+               (:documentation "Return the formatted eldoc string for a variable.
+
+THING is the variable name.  ELDOC-INFO is a p-list containing the eldoc
+information."
+                :arguments ("thing" "eldoc-info"))
+                nil [9073 9586])
+            ("cider-eldoc-format-function" function
+               (:documentation "Return the formatted eldoc string for a function.
+THING is the function name.  POS is the argument-index of the functions
+arglists.  ELDOC-INFO is a p-list containing the eldoc information."
+                :arguments ("thing" "pos" "eldoc-info"))
+                nil [9588 10132])
+            ("cider-highlight-args" function
+               (:documentation "Format the the function ARGLIST for eldoc.
+POS is the index of the currently highlighted argument."
+                :arguments ("arglist" "pos"))
+                nil [10134 10853])
+            ("cider--find-rest-args-position" function
+               (:documentation "Find the position of & in the ARGLIST vector."
+                :arguments ("arglist"))
+                nil [10855 10982])
+            ("cider-highlight-arglist" function
+               (:documentation "Format the ARGLIST for eldoc.
+POS is the index of the argument to highlight."
+                :arguments ("arglist" "pos"))
+                nil [10984 11164])
+            ("cider-eldoc-format-arglist" function
+               (:documentation "Format all the ARGLIST for eldoc.
+POS is the index of current argument."
+                :arguments ("arglist" "pos"))
+                nil [11166 11446])
+            ("cider-eldoc-beginning-of-sexp" function (:documentation "Move to the beginning of current sexp.
+
+Return the number of nested sexp the point was over or after.  Return nil
+if the maximum number of sexps to skip is exceeded.") nil [11448 12988])
+            ("cider-eldoc-thing-type" function
+               (:documentation "Return the type of the ELDOC-INFO being displayed by eldoc.
+It can be a function or var now."
+                :arguments ("eldoc-info"))
+                nil [12990 13217])
+            ("cider-eldoc-info-at-point" function (:documentation "Return eldoc info at point.
+First go to the beginning of the sexp and check if the eldoc is to be
+considered (i.e sexp is a method call) and not a map or vector literal.
+Then go back to the point and return its eldoc.") nil [13219 13965])
+            ("cider-eldoc-info-at-sexp-beginning" function (:documentation "Return eldoc info for first symbol in the sexp.") nil [13967 14685])
+            ("cider-eldoc-info-in-current-sexp" function (:documentation "Return eldoc information from the sexp.
+If `cider-eldoc-display-for-symbol-at-poin' is non-nil and
+the symbol at point has a valid eldoc available, return that.
+Otherwise return the eldoc of the first symbol of the sexp.") nil [14687 15088])
+            ("cider-eldoc--convert-ns-keywords" function
+               (:documentation "Convert THING values that match ns macro keywords to function names."
+                :arguments ("thing"))
+                nil [15090 15399])
+            ("cider-eldoc-info" function
+               (:documentation "Return the info for THING.
+This includes the arglist and ns and symbol name (if available)."
+                :arguments ("thing"))
+                nil [15401 19152])
+            ("cider--eldoc-remove-dot" function
+               (:documentation "Remove the preceding \".\" from a namespace qualified SYM and return sym.
+Only useful for interop forms.  Clojure forms would be returned unchanged."
+                :arguments ("sym"))
+                nil [19154 19399])
+            ("cider--eldoc-edn-file-p" function
+               (:documentation "Check whether FILE-NAME is representing an EDN file."
+                :arguments ("file-name"))
+                nil [19401 19565])
+            ("cider--eldoc-add-datomic-query-inputs-to-arglists" function
+               (:documentation "Add the expected inputs of the datomic query to the ARGLISTS."
+                :arguments ("arglists"))
+                nil [19567 20222])
+            ("cider-eldoc" function (:documentation "Backend function for eldoc to show argument list in the echo area.") nil [20224 21061])
+            ("cider-eldoc-setup" function (:documentation "Setup eldoc in the current buffer.
+eldoc mode has to be enabled for this to have any effect.") nil [21063 21303])
+            ("cider-eldoc" package nil nil [21305 21327]))          
+      :file "cider-eldoc.el"
+      :pointmax 21358
+      :fsize 21359
+      :lastmodtime '(23456 48141 157124 590000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-192c408"
+      :file "cider-resolve.el"
+      :fsize 5943
+      :lastmodtime '(23456 48140 773786 853000))
+    (semanticdb-table "semanticdb-table-192c744"
+      :file "cider-doc.el"
+      :fsize 20623
+      :lastmodtime '(23456 48141 607129 759000))
+    (semanticdb-table "semanticdb-table-192c764"
+      :file "cider-profile.el"
+      :fsize 7594
+      :lastmodtime '(23456 48140 990456 8000))
+    (semanticdb-table "semanticdb-table-192c784"
+      :file "cider-completion.el"
+      :fsize 9795
+      :lastmodtime '(23456 48141 207125 164000))
+    (semanticdb-table "semanticdb-table-1912484"
+      :file "cider-util.el"
+      :fsize 33058
+      :lastmodtime '(23456 48141 717131 22000)))
+  :file "!home!lk!.emacs.d!elpa!cider-20180917.1746!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

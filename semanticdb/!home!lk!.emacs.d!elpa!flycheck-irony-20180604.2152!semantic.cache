@@ -1,16 +1,52 @@
-;; Object semanticdb-project-database-file-1b5c2e4
+;; Object semanticdb-project-database-file-14879ec
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-1b5c2e4"
+(semanticdb-project-database-file "semanticdb-project-database-file-14879ec"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1b47974"
+    (semanticdb-table "semanticdb-table-1496a54"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "flycheck-irony-autoloads.el"
       :pointmax 367
       :fsize 743
       :lastmodtime '(23450 12740 694473 578000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-14824f0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("irony-diagnostics" include nil nil [1256 1284])
+            ("flycheck" include nil nil [1286 1305])
+            ("pcase" include nil nil [1328 1344])
+            ("flycheck-irony" customgroup
+               (:documentation "Irony-Mode's flycheck checker."
+                :user-visible-flag t)
+                nil [1347 1427])
+            ("flycheck-irony-error-filter" variable
+               (:documentation "A function to filter the errors returned by this checker.
+
+See :error-filter description in `flycheck-define-generic-checker'.
+For an example, take a look at `flycheck-dequalify-error-ids'."
+                :default-value nil)
+                nil [1429 1716])
+            ("flycheck-irony--build-error" function (:arguments ("checker" "buffer" "diagnostic")) nil [1718 2293])
+            ("flycheck-irony--start" function (:arguments ("checker" "callback")) nil [2295 2945])
+            ("flycheck-irony--verify" function
+               (:documentation "Verify the Flycheck Irony syntax checker."
+                :arguments ("_checker"))
+                nil [2947 3708])
+            ("flycheck-define-generic-checker" code nil nil [3710 4021])
+            ("flycheck-irony-setup" function
+               (:documentation "Setup Flycheck Irony.
+
+Add `irony' to `flycheck-checkers'."
+                :user-visible-flag t)
+                nil [4038 4190])
+            ("flycheck-irony" package nil nil [4192 4217]))          
+      :file "flycheck-irony.el"
+      :pointmax 4251
+      :fsize 4250
+      :lastmodtime '(23450 12740 504471 258000)
+      :unmatched-syntax '((close-paren 1344 . 1345) (symbol 1308 . 1325) (open-paren 1307 . 1308))))
   :file "!home!lk!.emacs.d!elpa!flycheck-irony-20180604.2152!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

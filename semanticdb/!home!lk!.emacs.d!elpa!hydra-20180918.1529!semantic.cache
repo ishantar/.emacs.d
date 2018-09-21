@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-24a08d0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-24a08d0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-24a08ec"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "hydra-autoloads.el"
+      :pointmax 349
+      :fsize 3206
+      :lastmodtime '(23460 18290 495286 9000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!hydra-20180918.1529!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

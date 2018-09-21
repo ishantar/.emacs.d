@@ -1,0 +1,1746 @@
+;; Object semanticdb-project-database-file-1680a60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1680a60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-11fc2e4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [1509 1528])
+            ("semantic/ctxt" include nil nil [1529 1553])
+            ("semantic/format" include nil nil [1554 1580])
+            ("semantic/tag" include nil nil [1581 1604])
+            ("timer" include nil nil [1605 1621])
+            ("semantic/find" include nil nil [1708 1732])
+            ("eldoc-last-message" variable nil nil [1735 1762])
+            ("declare-function" code nil nil [1763 1803])
+            ("declare-function" code nil nil [1804 1874])
+            ("declare-function" code nil nil [1875 1946])
+            ("declare-function" code nil nil [1947 2023])
+            ("declare-function" code nil nil [2024 2095])
+            ("declare-function" code nil nil [2096 2156])
+            ("declare-function" code nil nil [2157 2239])
+            ("declare-function" code nil nil [2240 2331])
+            ("declare-function" code nil nil [2332 2391])
+            ("declare-function" code nil nil [2392 2452])
+            ("declare-function" code nil nil [2453 2527])
+            ("semantic-idle-scheduler-timer" variable (:documentation "Timer used to schedule tasks in idle time.") nil [2571 2660])
+            ("semantic-idle-scheduler-work-timer" variable (:documentation "Timer used to schedule tasks in idle time that may take a while.") nil [2662 2778])
+            ("semantic-idle-scheduler-verbose-flag" variable (:documentation "Non-nil means that the idle scheduler should provide debug messages.
+Use this setting to debug idle activities.") nil [2780 2984])
+            ("semantic-idle-scheduler-idle-time" variable
+               (:documentation "Time in seconds of idle before scheduling events.
+This time should be short enough to ensure that idle-scheduler will be
+run as soon as Emacs is idle."
+                :default-value 1)
+                nil [2986 3493])
+            ("semantic-idle-scheduler-work-idle-time" variable
+               (:documentation "Time in seconds of idle before scheduling big work.
+This time should be long enough that once any big work is started, it is
+unlikely the user would be ready to type again right away."
+                :default-value 60)
+                nil [3495 4041])
+            ("semantic-idle-scheduler-setup-timers" function (:documentation "Lazy initialization of the auto parse idle timer.") nil [4043 4653])
+            ("semantic-idle-scheduler-kill-timer" function (:documentation "Kill the auto parse idle timer.") nil [4655 4876])
+            ("semantic-idle-scheduler-mode-hook" variable (:documentation "Hook run at the end of the function `semantic-idle-scheduler-mode'.") nil [5026 5180])
+            ("semantic-idle-scheduler-mode" variable (:documentation "Non-nil if idle-scheduler minor mode is enabled.
+Use the command `semantic-idle-scheduler-mode' to change this variable.") nil [5182 5348])
+            ("make-variable-buffer-local" code nil nil [5349 5407])
+            ("semantic-idle-scheduler-max-buffer-size" variable (:documentation "Maximum size in bytes of buffers where idle-scheduler is enabled.
+If this value is less than or equal to 0, idle-scheduler is enabled in
+all buffers regardless of their size.") nil [5409 5676])
+            ("semantic-idle-scheduler-enabled-p" function (:documentation "Return non-nil if idle-scheduler is enabled for this buffer.
+idle-scheduler is disabled when debugging or if the buffer size
+exceeds the `semantic-idle-scheduler-max-buffer-size' threshold.") nil [5678 6516])
+            ("define-minor-mode" code nil nil [6533 7462])
+            ("semantic-add-minor-mode" code nil nil [7464 7550])
+            ("semantic-idle-scheduler-queue" variable (:documentation "List of functions to execute during idle time.
+These functions will be called in the current buffer after that
+buffer has had its tags made up to date.  These functions
+will not be called if there are errors parsing the
+current buffer.") nil [7631 7913])
+            ("semantic-idle-scheduler-add" function
+               (:documentation "Schedule FUNCTION to occur during idle time."
+                :arguments ("function"))
+                nil [7915 8066])
+            ("semantic-idle-scheduler-remove" function
+               (:documentation "Unschedule FUNCTION to occur during idle time."
+                :arguments ("function"))
+                nil [8068 8256])
+            ("semantic-idle-core-handler" function (:documentation "Core idle function that handles reparsing.
+And also manages services that depend on tag values.") nil [8279 11098])
+            ("semantic-debug-idle-function" function
+               (:documentation "Run the Semantic idle function with debugging turned on."
+                :user-visible-flag t)
+                nil [11100 11283])
+            ("semantic-idle-scheduler-function" function (:documentation "Function run when after `semantic-idle-scheduler-idle-time'.
+This function will reparse the current buffer, and if successful,
+call additional functions registered with the timer calls.") nil [11285 11646])
+            ("semantic-idle-work-parse-neighboring-files-flag" variable (:documentation "Non-nil means to parse files in the same dir as the current buffer.
+Disable to prevent lots of excessive parsing in idle time.") nil [11776 12006])
+            ("semantic-idle-work-update-headers-flag" variable (:documentation "Non-nil means to parse through header files in idle time.
+Disable to prevent idle time parsing of many files.  If completion
+is called that work will be done then instead.") nil [12008 12274])
+            ("semantic-idle-work-for-one-buffer" function
+               (:documentation "Do long-processing work for BUFFER.
+Uses `semantic-safe' and returns the output.
+Returns t if all processing succeeded."
+                :arguments ("buffer"))
+                nil [12276 13304])
+            ("semantic-idle-work-core-handler" function (:documentation "Core handler for idle work processing of long running tasks.
+Visits Semantic controlled buffers, and makes sure all needed
+include files have been parsed, and that the typecache is up to date.
+Uses `semantic-idle-work-for-on-buffer' to do the work.") nil [13306 15392])
+            ("semantic-debug-idle-work-function" function
+               (:documentation "Run the Semantic idle work function with debugging turned on."
+                :user-visible-flag t)
+                nil [15394 15592])
+            ("semantic-idle-scheduler-work-function" function (:documentation "Function run when after `semantic-idle-scheduler-work-idle-time'.
+This routine handles difficult tasks that require a lot of parsing, such as
+parsing all the header files used by our active sources, or building up complex
+datasets.") nil [15594 16150])
+            ("semantic-idle-scheduler-work-parse-neighboring-files" function (:documentation "Parse all the files in similar directories to buffers being edited.") nil [16152 17178])
+            ("semantic-before-idle-scheduler-reparse-hook" variable (:documentation "Hook run before option `semantic-idle-scheduler' begins parsing.
+If any hook function throws an error, this variable is reset to nil.
+This hook is not protected from lexical errors.") nil [17321 17563])
+            ("semantic-after-idle-scheduler-reparse-hook" variable (:documentation "Hook run after option `semantic-idle-scheduler' has parsed.
+If any hook function throws an error, this variable is reset to nil.
+This hook is not protected from lexical errors.") nil [17565 17801])
+            ("semantic-varalias-obsolete" code nil nil [17803 17936])
+            ("semantic-varalias-obsolete" code nil nil [17937 18068])
+            ("semantic-idle-scheduler-refresh-tags" function (:documentation "Refreshes the current buffer's tags.
+This is called by `semantic-idle-scheduler-function' to update the
+tags in the current buffer.
+
+Return non-nil if the refresh was successful.
+Return nil if there is some sort of syntax error preventing a full
+reparse.
+
+Does nothing if the current buffer doesn't need reparsing.") nil [18070 20918])
+            ("define-semantic-idle-service" function
+               (:documentation "Create a new idle services with NAME.
+DOC will be a documentation string describing FORMS.
+FORMS will be called during idle time after the current buffer's
+semantic tag information has been updated.
+This routine creates the following functions and variables:"
+                :arguments ("name" "doc" "forms"))
+                nil [21297 23389])
+            ("put" code nil nil [23390 23449])
+            ("add-hook" code nil nil [23450 23592])
+            ("semantic-idle-truncate-long-summaries" variable
+               (:documentation "Truncate summaries that are too long to fit in the minibuffer.
+This can prevent minibuffer resizing in idle time."
+                :default-value t)
+                nil [23657 23862])
+            ("semantic-idle-summary-function" variable
+               (:documentation "Function to call when displaying tag information during idle time.
+This function should take a single argument, a Semantic tag, and
+return a string to display.
+Some useful functions are found in `semantic-format-tag-functions'."
+                :default-value 'semantic-format-tag-summarize-with-file)
+                nil [23864 24240])
+            ("semantic-idle-summary-find-current-symbol-tag" function
+               (:documentation "Search for a semantic tag with name SYM in database tables.
+Return the tag found or nil if not found.
+If semanticdb is not in use, use the current buffer only."
+                :arguments ("sym"))
+                nil [24242 24693])
+            ("semantic-idle-summary-current-symbol-info-brutish" function (:documentation "Return a string message describing the current context.
+Gets a symbol with `semantic-ctxt-current-thing' and then
+tries to find it with a deep targeted search.") nil [24695 25074])
+            ("semantic-idle-summary-current-symbol-keyword" function (:documentation "Return a string message describing the current symbol.
+Returns a value only if it is a keyword.") nil [25076 25402])
+            ("semantic-idle-summary-current-symbol-info-context" function (:documentation "Return a string message describing the current context.
+Use the semantic analyzer to find the symbol information.") nil [25404 25797])
+            ("semantic-idle-summary-current-symbol-info-default" function (:documentation "Return a string message describing the current context.
+This function will disable loading of previously unloaded files
+by semanticdb as a time-saving measure.") nil [25799 26297])
+            ("semantic-idle-summary-out-of-context-faces" variable
+               (:documentation "List of font-lock faces that indicate a useless summary context.
+Those are generally faces used to highlight comments.
+
+It might be useful to override this variable to add comment faces
+specific to a major mode.  For example, in jde mode:
+
+(defvar-mode-local jde-mode semantic-idle-summary-out-of-context-faces
+   (append (default-value \\='semantic-idle-summary-out-of-context-faces)
+	   \\='(jde-java-font-lock-doc-tag-face
+	     jde-java-font-lock-link-face
+	     jde-java-font-lock-bold-face
+	     jde-java-font-lock-underline-face
+	     jde-java-font-lock-pre-face
+	     jde-java-font-lock-code-face)))"
+                :default-value '(font-lock-comment-face font-lock-string-face font-lock-doc-string-face font-lock-doc-face))
+                nil [26299 27139])
+            ("semantic-idle-summary-useful-context-p" function (:documentation "Non-nil if we should show a summary based on context.") nil [27141 27523])
+            ("semantic-idle-summary-current-symbol-info" function
+               (:overloadable t
+                :documentation "Return a string message describing the current context.")
+                nil [27525 27660])
+            ("make-obsolete-overload" code nil nil [27662 27820])
+            ("semantic-idle-summary-mode-hook" variable (:documentation "Hook run at the end of `semantic-idle-summary'.") nil [27822 27954])
+            ("semantic-idle-summary-idle-function" function (:documentation "Display a tag summary of the lexical token under the cursor.
+Call `semantic-idle-summary-current-symbol-info' for getting the
+current tag to display information.") nil [27956 29164])
+            ("define-minor-mode" code nil nil [29166 30047])
+            ("semantic-idle-summary-refresh-echo-area" function nil nil [30049 30420])
+            ("semantic-add-minor-mode" code nil nil [30422 30478])
+            ("define-minor-mode" code nil nil [30480 30865])
+            ("semantic-idle-symbol-highlight" variable
+               (:documentation "Face used for highlighting local symbols."
+                :default-value '((t :inherit region))
+                :type "face")
+                nil [31080 31216])
+            ("semantic-idle-symbol-highlight-face" variable
+               (:documentation "Face used for highlighting local symbols."
+                :default-value 'semantic-idle-symbol-highlight)
+                nil [31217 31339])
+            ("make-obsolete-variable" code nil nil [31340 31479])
+            ("semantic-idle-symbol-maybe-highlight" function
+               (:documentation "Perhaps add highlighting to the symbol represented by TAG.
+TAG was found as the symbol under point.  If it happens to be
+visible, then highlight it."
+                :arguments ("tag"))
+                nil [31481 33377])
+            ("define-semantic-idle-service" code nil nil [33379 34690])
+            ("define-minor-mode" code nil nil [34709 35395])
+            ("semantic-idle-completions-end-of-symbol-p" function (:documentation "Return non-nil if the cursor is at the END of a symbol.
+If the cursor is in the middle of a symbol, then we shouldn't be
+doing fancy completions.") nil [35642 35878])
+            ("semantic-idle-completion-list-default" function (:documentation "Calculate and display a list of completions.") nil [35880 36582])
+            ("define-semantic-idle-service" code nil nil [36584 37473])
+            ("semantic-idle-breadcrumbs-display-function" variable
+               (:documentation "Function to display the tag under point in idle time.
+This function should take a list of Semantic tags as its only
+argument. The tags are sorted according to their nesting order,
+starting with the outermost tag. The function should call
+`semantic-idle-breadcrumbs-format-tag-list-function' to convert
+the tag list into a string."
+                :default-value nil)
+                nil [37640 38357])
+            ("semantic-idle-breadcrumbs-format-tag-list-function" variable
+               (:documentation "Function to format the list of tags containing point.
+This function should take a list of Semantic tags and an optional
+maximum length of the produced string as its arguments. The
+maximum length is a hint and can be ignored. When the maximum
+length is omitted, an unconstrained string should be
+produced. The tags are sorted according to their nesting order,
+starting with the outermost tag. Single tags should be formatted
+using `semantic-idle-breadcrumbs-format-tag-function' unless
+special formatting is required."
+                :default-value nil)
+                nil [38359 39302])
+            ("semantic-idle-breadcrumbs-format-tag-function" variable
+               (:documentation "Function to call to format information about tags.
+This function should take a single argument, a Semantic tag, and
+return a string to display.
+Some useful functions are found in `semantic-format-tag-functions'."
+                :default-value nil)
+                nil [39304 39674])
+            ("semantic-idle-breadcrumbs-separator" variable
+               (:documentation "Specify how to separate tags in the breadcrumbs string.
+An arbitrary string or a mode-specific scope nesting
+string (like, for example, \"::\" in C++, or \".\" in Java) can
+be used."
+                :default-value 'mode-specific)
+                nil [39676 40074])
+            ("semantic-idle-breadcrumbs-header-line-prefix" variable
+               (:documentation "String used to indent the breadcrumbs string.
+Customize this string to match the space used by scrollbars and
+fringe."
+                :default-value semantic-stickyfunc-indent-string)
+                nil [40076 40346])
+            ("semantic-idle-breadcrumbs-popup-menu" variable (:documentation "Menu used when a tag displayed by `semantic-idle-breadcrumbs-mode' is clicked.") nil [40348 40480])
+            ("semantic-idle-breadcrumbs--popup-menu" function
+               (:documentation "Popup a menu that displays things to do to the clicked tag.
+Argument EVENT describes the event that caused this function to
+be called."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [40482 40902])
+            ("semantic-idle-breadcrumbs--tag-function" function
+               (:documentation "Return lambda expression calling FUNCTION when called from a popup."
+                :arguments ("function"))
+                nil [40904 41447])
+            ("semantic-idle-breadcrumbs-popup-map" variable
+               (:documentation "Keymap for semantic idle breadcrumbs minor mode."
+                :default-value (let ((map (make-sparse-keymap))) (define-key map [header-line mouse-1] (semantic-idle-breadcrumbs--tag-function semantic-go-to-tag)) (define-key map [header-line mouse-3] 'semantic-idle-breadcrumbs--popup-menu) map))
+                nil [41492 41928])
+            ("easy-menu-define" code nil nil [41930 43849])
+            ("define-semantic-idle-service" code nil nil [43851 44393])
+            ("semantic-idle-breadcrumbs--display-in-header-line" function
+               (:documentation "Display the tags in TAG-LIST in the header line of their buffer."
+                :arguments ("tag-list"))
+                nil [44395 45251])
+            ("semantic-idle-breadcrumbs--display-in-mode-line" function
+               (:documentation "Display the tags in TAG-LIST in the mode line of their buffer.
+TODO THIS FUNCTION DOES NOT WORK YET."
+                :arguments ("tag-list"))
+                nil [45253 45794])
+            ("semantic-idle-breadcrumbs--format-tag-list" function
+               (:documentation "Format TAG-LIST using configured functions respecting MAX-LENGTH.
+If the initial formatting result is longer than MAX-LENGTH, it is
+shortened at the beginning."
+                :arguments ("tag-list" "max-length"))
+                nil [45796 46511])
+            ("semantic-idle-breadcrumbs--format-linear" function
+               (:documentation "Format TAG-LIST as a linear list, starting with the outermost tag.
+MAX-LENGTH is not used."
+                :arguments ("tag-list" "max-length"))
+                nil [46513 47289])
+            ("semantic-idle-breadcrumbs--format-innermost-first" function
+               (:documentation "Format TAG-LIST placing the innermost tag first, separated from its parents.
+If MAX-LENGTH is non-nil, the innermost tag is shortened."
+                :arguments ("tag-list" "max-length"))
+                nil [47291 48584])
+            ("semantic-idle-breadcrumbs--format-tag" function
+               (:documentation "Format TAG using the configured function or FORMAT-FUNCTION.
+This function also adds text properties for help-echo, mouse
+highlighting and a keymap."
+                :arguments ("tag" "format-function"))
+                nil [48586 49314])
+            ("semantic/idle" package nil nil [49317 49341]))          
+      :file "idle.el.gz"
+      :pointmax 49494
+      :fsize 13482
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 1732 . 1733) (symbol 1690 . 1707) (open-paren 1689 . 1690)))
+    (semanticdb-table "semanticdb-table-11fc2b0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [4320 4339])
+            ("eieio-opt" include nil nil [4340 4360])
+            ("semantic/analyze" include nil nil [4361 4388])
+            ("semantic/ctxt" include nil nil [4389 4413])
+            ("semantic/decorate" include nil nil [4414 4442])
+            ("semantic/format" include nil nil [4443 4469])
+            ("semantic/idle" include nil nil [4470 4494])
+            ("semantic/find" include nil nil [4571 4595])
+            ("semantic/db-find" include nil nil [4597 4624])
+            ("semantic-complete-inline-overlay" variable (:documentation "The overlay currently active while completing inline.") nil [4689 4792])
+            ("semantic-completion-inline-active-p" function (:documentation "Non-nil if inline completion is active.") nil [4794 5149])
+            ("semantic-completion-text" function (:documentation "Return the text that is currently in the completion buffer.
+For a minibuffer prompt, this is the minibuffer text.
+For inline completion, this is the text wrapped in the inline completion
+overlay.") nil [5250 5589])
+            ("semantic-completion-delete-text" function (:documentation "Delete the text that is actively being completed.
+Presumably if you call this you will insert something new there.") nil [5591 5870])
+            ("semantic-completion-message" function
+               (:documentation "Display the string FMT formatted with ARGS at the end of the minibuffer."
+                :arguments ("fmt" "args"))
+                nil [5872 6133])
+            ("semantic-completion-collector-engine" variable (:documentation "The tag collector for the current completion operation.
+Value should be an object of a subclass of
+`semantic-completion-engine-abstract'.") nil [6246 6437])
+            ("semantic-completion-display-engine" variable (:documentation "The tag display engine for the current completion operation.
+Value should be a ... what?") nil [6439 6579])
+            ("semantic-complete-key-map" variable
+               (:documentation "Keymap used while completing across a list of tags."
+                :default-value (let ((km (make-sparse-keymap))) (define-key km " " 'semantic-complete-complete-space) (define-key km "	" 'semantic-complete-complete-tab) (define-key km "" 'semantic-complete-done) (define-key km "" 'abort-recursive-edit) (define-key km "\356" 'next-history-element) (define-key km "\360" 'previous-history-element) (define-key km "" 'next-history-element) (define-key km "" 'previous-history-element) km))
+                nil [6581 7163])
+            ("semantic-completion-default-history" variable (:documentation "Default history variable for any unhistoried prompt.
+Keeps STRINGS only in the history.") nil [7165 7305])
+            ("semantic-complete-active-default" variable nil nil [7307 7348])
+            ("semantic-complete-current-matched-tag" variable nil nil [7349 7395])
+            ("semantic-complete-read-tag-engine" function
+               (:documentation "Read a semantic tag, and return a tag for the selection.
+Argument COLLECTOR is an object which can be used to calculate
+a list of possible hits.  See `semantic-completion-collector-engine'
+for details on COLLECTOR.
+Argument DISPLAYOR is an object used to display a list of possible
+completions for a given prefix.  See`semantic-completion-display-engine'
+for details on DISPLAYOR.
+PROMPT is a string to prompt with.
+DEFAULT-TAG is a semantic tag or string to use as the default value.
+If INITIAL-INPUT is non-nil, insert it in the minibuffer initially.
+HISTORY is a symbol representing a variable to story the history in."
+                :arguments ("collector" "displayor" "prompt" "default-tag" "initial-input" "history"))
+                nil [7397 9621])
+            ("semantic-complete-active-default" variable (:documentation "The current default tag calculated for this prompt.") nil [9667 9768])
+            ("semantic-complete-default-to-tag" function
+               (:documentation "Convert a calculated or passed in DEFAULT into a tag."
+                :arguments ("default"))
+                nil [9770 11328])
+            ("semantic-complete-current-matched-tag" variable (:documentation "Variable used to pass the tags being matched to the prompt.") nil [11680 11794])
+            ("declare-function" code nil nil [11931 12019])
+            ("semantic-complete-current-match" function (:documentation "Calculate a match from the current completion environment.
+Save this in our completion variable.  Make sure that variable
+is cleared if any other keypress is made.
+Return value can be:
+  tag - a single tag that has been matched.
+  string - a message to show in the minibuffer.") nil [12021 14730])
+            ("semantic-complete-done" function
+               (:documentation "Accept the current input."
+                :user-visible-flag t)
+                nil [14837 15069])
+            ("semantic-complete-complete-space" function
+               (:documentation "Complete the partial input in the minibuffer."
+                :user-visible-flag t)
+                nil [15071 15218])
+            ("semantic-complete-complete-tab" function
+               (:documentation "Complete the partial input in the minibuffer as far as possible."
+                :user-visible-flag t)
+                nil [15220 15382])
+            ("semantic-complete-hack-word-boundaries" function
+               (:documentation "Return a string to use for completion.
+ORIGINAL is the text in the minibuffer.
+NEW is the new text to insert into the minibuffer.
+Within the difference bounds of ORIGINAL and NEW, shorten NEW
+to the nearest word boundary, and return that."
+                :arguments ("original" "new"))
+                nil [15487 16174])
+            ("semantic-complete-try-completion" function
+               (:documentation "Try a completion for the current minibuffer.
+If PARTIAL, do partial completion stopping at spaces."
+                :arguments ("partial"))
+                nil [16176 17957])
+            ("semantic-complete-do-completion" function
+               (:documentation "Do a completion for the current minibuffer.
+If PARTIAL, do partial completion stopping at spaces.
+if INLINE, then completion is happening inline in a buffer."
+                :arguments ("partial" "inline"))
+                nil [17959 19876])
+            ("semantic-complete-inline-map" variable
+               (:documentation "Keymap used while performing Semantic inline completion."
+                :default-value (let ((km (make-sparse-keymap))) (define-key km "	" 'semantic-complete-inline-TAB) (define-key km "\360" 'semantic-complete-inline-up) (define-key km "\356" 'semantic-complete-inline-down) (define-key km "" 'semantic-complete-inline-done) (define-key km "\203" 'semantic-complete-inline-exit) (define-key km "" 'semantic-complete-inline-quit) (define-key km "?" (lambda nil (interactive) (describe-variable 'semantic-complete-inline-map))) km))
+                nil [20233 20829])
+            ("semantic-complete-inline-face" variable
+               (:documentation "Face used to show the region being completed inline.
+The face is used in `semantic-complete-inline-tag-engine'."
+                :default-value '((((class color) (background dark)) (:underline "yellow")) (((class color) (background light)) (:underline "brown")))
+                :type "face")
+                nil [20831 21146])
+            ("semantic-complete-inline-text" function (:documentation "Return the text that is being completed inline.
+Similar to `minibuffer-contents' when completing in the minibuffer.") nil [21148 21506])
+            ("semantic-complete-inline-delete-text" function (:documentation "Delete the text currently being completed in the current buffer.") nil [21508 21762])
+            ("semantic-complete-inline-done" function
+               (:documentation "This completion thing is DONE, OR, insert a newline."
+                :user-visible-flag t)
+                nil [21764 22496])
+            ("semantic-complete-inline-quit" function
+               (:documentation "Quit an inline edit."
+                :user-visible-flag t)
+                nil [22498 22631])
+            ("semantic-complete-inline-exit" function
+               (:documentation "Exit inline completion mode."
+                :user-visible-flag t)
+                nil [22633 23929])
+            ("semantic-complete-pre-command-hook" function (:documentation "Used to redefine what commands are being run while completing.
+When installed as a `pre-command-hook' the special keymap
+`semantic-complete-inline-map' is queried to replace commands normally run.
+Commands which edit what is in the region of interest operate normally.
+Commands which would take us out of the region of interest, or our
+quit hook, will exit this completion mode.") nil [23931 24515])
+            ("semantic-complete-post-command-hook" function (:documentation "Used to determine if we need to exit inline completion mode.
+If completion mode is active, check to see if we are within
+the bounds of `semantic-complete-inline-overlay', or within
+a reasonable distance.") nil [24517 26375])
+            ("semantic-complete-inline-force-display" function (:documentation "Force the display of whatever the current completions are.
+DO NOT CALL THIS IF THE INLINE COMPLETION ENGINE IS NOT ACTIVE.") nil [26377 27136])
+            ("semantic-complete-inline-tag-engine" function
+               (:documentation "Perform completion based on semantic tags in a buffer.
+Argument COLLECTOR is an object which can be used to calculate
+a list of possible hits.  See `semantic-completion-collector-engine'
+for details on COLLECTOR.
+Argument DISPLAYOR is an object used to display a list of possible
+completions for a given prefix.  See`semantic-completion-display-engine'
+for details on DISPLAYOR.
+BUFFER is the buffer in which completion will take place.
+START is a location for the start of the full symbol.
+If the symbol being completed is \"foo.ba\", then START
+is on the \"f\" character.
+END is at the end of the current symbol being completed."
+                :arguments ("collector" "displayor" "buffer" "start" "end"))
+                nil [27138 28718])
+            ("semantic-complete-inline-TAB" function
+               (:documentation "Perform inline completion."
+                :user-visible-flag t)
+                nil [28762 29060])
+            ("semantic-complete-inline-down" function
+               (:documentation "Focus forwards through the displayor."
+                :user-visible-flag t)
+                nil [29062 29319])
+            ("semantic-complete-inline-up" function
+               (:documentation "Focus backwards through the displayor."
+                :user-visible-flag t)
+                nil [29321 29580])
+            ("semantic-complete-next-action" function
+               (:documentation "Determine what the next completion action should be.
+PARTIAL is non-nil if we are doing partial completion.
+First, the collector can determine if we should perform a completion or not.
+If there is nothing to complete, then the displayor determines if we are
+to show a completion list, scroll, or perhaps do a focus (if it is capable.)
+Expected return values are:
+  done -> We have a singular match
+  empty -> There are no matches to the current text
+  complete -> Perform a completion action
+  complete-whitespace -> Complete next whitespace type character.
+  display -> Show the list of completions
+  scroll -> The completions have been shown, and the user keeps hitting
+            the complete button.  If possible, scroll the completions
+  focus -> The displayor knows how to shift focus among possible completions.
+           Let it do that.
+  displayend -> Whatever options the displayor had for repeating options, there
+           are none left.  Try something new."
+                :arguments ("partial"))
+                nil [29823 31297])
+            ("semantic-collector-per-buffer-list" variable (:documentation "List of collectors active in this buffer.") nil [31853 31946])
+            ("make-variable-buffer-local" code nil nil [31947 32011])
+            ("semantic-collector-list" variable (:documentation "List of global collectors active this session.") nil [32013 32100])
+            ("semantic-collector-abstract" type
+               (:documentation "Root class for completion engines.
+The baseclass provides basic functionality for interacting with
+a completion displayor object, and tracking the current progress
+of a completion."
+                :members 
+                  ( ("buffer" variable
+                       (:documentation "Originating buffer for this collector.
+Some collectors use a given buffer as a starting place while looking up
+tags."
+                        :type "buffer")
+                        nil nil)
+                    ("cache" variable
+                       (:documentation "Cache of tags.
+These tags are re-used during a completion session.
+Sometimes these tags are cached between completion sessions."
+                        :default-value "nil"
+                        :type "(or null semanticdb-find-result-with-nil)")
+                        nil nil)
+                    ("last-all-completions" variable
+                       (:documentation "Last result of `all-completions'.
+This result can be used for refined completions as `last-prefix' gets
+closer to a specific result."
+                        :type "semanticdb-find-result-with-nil")
+                        nil nil)
+                    ("last-prefix" variable
+                       (:documentation "The last queried prefix.
+This prefix can be used to cache intermediate completion offers.
+making the action of homing in on a token faster."
+                        :protection ":protected"
+                        :type "string")
+                        nil nil)
+                    ("last-completion" variable
+                       (:documentation "The last calculated completion.
+This completion is calculated and saved for future use."
+                        :type "(or null string)")
+                        nil nil)
+                    ("last-whitespace-completion" variable
+                       (:documentation "The last whitespace completion.
+For partial completion, SPC will disambiguate over whitespace type
+characters.  This is the last calculated version."
+                        :type "(or null string)")
+                        nil nil)
+                    ("current-exact-match" variable
+                       (:documentation "The list of matched tags.
+When tokens are matched, they are added to this list."
+                        :protection ":protected"
+                        :type "list")
+                        nil nil))                  
+                :type "class")
+                nil [32102 33752])
+            ("semantic-collector-analyze-completions" type
+               (:documentation "Completion engine that uses the context analyzer to provide options.
+The only options available for completion are those which can be logically
+inserted into the current context."
+                :superclasses "semantic-collector-abstract"
+                :members 
+                  ( ("context" variable
+                       (:documentation "An analysis context.
+Specifies some context location from whence completion lists will be drawn."
+                        :type "semantic-analyze-context")
+                        nil nil)
+                    ("first-pass-completions" variable
+                       (:documentation "List of valid completion tags.
+This list of tags is generated when completion starts.  All searches
+derive from this list."
+                        :type "list")
+                        nil nil))                  
+                :type "class")
+                nil [33785 34429])
+            ("cl-defmethod" code nil nil [34431 35125])
+            ("cl-defmethod" code nil nil [35127 35257])
+            ("cl-defmethod" code nil nil [35259 36240])
+            ("cl-defmethod" code nil nil [36242 36487])
+            ("cl-defmethod" code nil nil [36489 36725])
+            ("cl-defmethod" code nil nil [36727 37455])
+            ("cl-defmethod" code nil nil [37457 40222])
+            ("cl-defmethod" code nil nil [40224 41557])
+            ("cl-defmethod" code nil nil [41560 41945])
+            ("cl-defmethod" code nil nil [41947 42194])
+            ("cl-defmethod" code nil nil [42196 42612])
+            ("cl-defmethod" code nil nil [42614 42918])
+            ("cl-defmethod" code nil nil [42920 43314])
+            ("cl-defmethod" code nil nil [43316 43456])
+            ("cl-defmethod" code nil nil [43458 43803])
+            ("semantic-collector-buffer-abstract" type
+               (:documentation "Root class for per-buffer completion engines.
+These collectors track themselves on a per-buffer basis."
+                :superclasses "semantic-collector-abstract"
+                :type "class")
+                nil [43823 44024])
+            ("cl-defmethod" code nil nil [44026 44630])
+            ("semantic-collector-buffer-flush" function
+               (:documentation "Flush all buffer collector objects.
+NEWCACHE is the new tag table, but we ignore it."
+                :arguments ("newcache"))
+                nil [44686 44999])
+            ("add-hook" code nil nil [45001 45090])
+            ("semantic-collector-buffer-deep" type
+               (:documentation "Completion engine for tags in the current buffer.
+When searching for a tag, uses semantic deep search functions.
+Basics search only in the current buffer."
+                :superclasses "semantic-collector-buffer-abstract"
+                :type "class")
+                nil [45131 45375])
+            ("cl-defmethod" code nil nil [45377 45745])
+            ("semantic-collector-project-abstract" type
+               (:documentation "Root class for project wide completion engines.
+Uses semanticdb for searching all tags in the current project."
+                :superclasses "semantic-collector-abstract"
+                :members 
+                  ( ("path" variable
+                       (:documentation "List of database tables to search.
+At creation time, it can be anything accepted by
+`semanticdb-find-translate-path' as a PATH argument."
+                        :default-value "nil")
+                        nil nil))                  
+                :type "class")
+                nil [45782 46189])
+            ("semantic-collector-project" type
+               (:documentation "Completion engine for tags in a project."
+                :superclasses "semantic-collector-project-abstract"
+                :type "class")
+                nil [46210 46335])
+            ("cl-defmethod" code nil nil [46338 46581])
+            ("semantic-collector-project-brutish" type
+               (:documentation "Completion engine for tags in a project."
+                :superclasses "semantic-collector-project-abstract"
+                :type "class")
+                nil [46610 46743])
+            ("declare-function" code nil nil [46745 46833])
+            ("cl-defmethod" code nil nil [46835 47127])
+            ("semantic-collector-local-members" type
+               (:documentation "Completion engine for tags in a project."
+                :superclasses "semantic-collector-project-abstract"
+                :members 
+                  ( ("scope" variable
+                       (:documentation "The scope the local members are being completed from."
+                        :default-value "nil"
+                        :type "(or null semantic-scope-cache)")
+                        nil nil))                  
+                :type "class")
+                nil [47165 47434])
+            ("cl-defmethod" code nil nil [47436 47856])
+            ("semantic-displayor-abstract" type
+               (:documentation "Abstract displayor baseclass.
+Manages the display of some number of tags.
+Provides the basics for a displayor, including interacting with
+a collector, and tracking tables of completion to display."
+                :members 
+                  ( ("table" variable
+                       (:documentation "List of tags this displayor is showing."
+                        :protection ":protected"
+                        :default-value "nil"
+                        :type "(or null semanticdb-find-result-with-nil)")
+                        nil nil)
+                    ("last-prefix" variable
+                       (:documentation "Prefix associated with slot `table'"
+                        :protection ":protected"
+                        :type "string")
+                        nil nil))                  
+                :type "class")
+                nil [48828 49361])
+            ("cl-defmethod" code nil nil [49363 49493])
+            ("cl-defmethod" code nil nil [49495 49881])
+            ("cl-defmethod" code nil nil [49883 50106])
+            ("cl-defmethod" code nil nil [50108 50245])
+            ("cl-defmethod" code nil nil [50247 50403])
+            ("cl-defmethod" code nil nil [50405 50591])
+            ("cl-defmethod" code nil nil [50593 50731])
+            ("cl-defmethod" code nil nil [50733 50863])
+            ("cl-defmethod" code nil nil [50865 51068])
+            ("semantic-completion-displayor-format-tag-function" variable
+               (:documentation "A Tag format function to use when showing completions."
+                :default-value nil)
+                nil [51095 51303])
+            ("semantic-displayor-traditional" type
+               (:documentation "Display options in *Completions* buffer.
+Traditional display mechanism for a list of possible completions.
+Completions are showin in a new buffer and listed with the ability
+to click on the items to aid in completion."
+                :superclasses "semantic-displayor-abstract"
+                :type "class")
+                nil [51305 51603])
+            ("cl-defmethod" code nil nil [51605 52013])
+            ("semantic-displayor-focus-abstract" type
+               (:documentation "Abstract displayor supporting `focus'.
+A displayor which has the ability to focus in on one tag.
+Focusing is a way of differentiating among multiple tags
+which have the same name."
+                :superclasses "semantic-displayor-abstract"
+                :members 
+                  ( ("focus" variable
+                       (:documentation "A tag index from `table' which has focus.
+Multiple calls to the display function can choose to focus on a
+given tag, by highlighting its location."
+                        :protection ":protected"
+                        :type "number")
+                        nil nil)
+                    ("find-file-focus" variable
+                       (:documentation "Non-nil if focusing requires a tag's buffer be in memory."
+                        :static-flag t
+                        :default-value "nil")
+                        nil nil))                  
+                :type "class")
+                nil [52077 52716])
+            ("cl-defmethod" code nil nil [52718 53280])
+            ("cl-defmethod" code nil nil [53282 53510])
+            ("cl-defmethod" code nil nil [53512 53955])
+            ("cl-defmethod" code nil nil [53957 54408])
+            ("cl-defmethod" code nil nil [54410 54684])
+            ("cl-defmethod" code nil nil [54686 55453])
+            ("semantic-displayor-traditional-with-focus-highlight" type
+               (:documentation "Display completions in *Completions* buffer, with focus highlight.
+A traditional displayor which can focus on a tag by showing it.
+Same as `semantic-displayor-traditional', but with selection between
+multiple tags with the same name done by focusing on the source
+location of the different tags to differentiate them."
+                :interfaces ("semantic-displayor-traditional")
+                :superclasses "semantic-displayor-focus-abstract"
+                :members 
+                  ( ("find-file-focus" variable (:default-value "t") nil nil))                  
+                :type "class")
+                nil [55562 56049])
+            ("cl-defmethod" code nil nil [56051 58208])
+            ("semantic-displayor-tooltip-mode" variable
+               (:documentation "Mode for the tooltip inline completion.
+
+Standard: Show only `semantic-displayor-tooltip-initial-max-tags'
+number of completions initially.  Pressing TAB will show the
+extended set.
+
+Quiet: Only show completions when we have narrowed all
+possibilities down to a maximum of
+`semantic-displayor-tooltip-initial-max-tags' tags.  Pressing TAB
+multiple times will also show completions.
+
+Verbose: Always show all completions available.
+
+The absolute maximum number of completions for all mode is
+determined through `semantic-displayor-tooltip-max-tags'."
+                :default-value 'standard)
+                nil [58461 59219])
+            ("semantic-displayor-tooltip-initial-max-tags" variable
+               (:documentation "Maximum number of tags to be displayed initially.
+See doc-string of `semantic-displayor-tooltip-mode' for details."
+                :default-value 5)
+                nil [59236 59466])
+            ("semantic-displayor-tooltip-max-tags" variable
+               (:documentation "The maximum number of tags to be displayed.
+Maximum number of completions where we have activated the
+extended completion list through typing TAB or SPACE multiple
+times.  This limit needs to fit on your screen!
+
+Note: If available, customizing this variable increases
+`x-max-tooltip-size' to force over-sized tooltips when necessary.
+This will not happen if you directly set this variable via `setq'."
+                :default-value 25)
+                nil [59468 60142])
+            ("semantic-displayor-tooltip" type
+               (:documentation "Display completions options in a tooltip.
+Display mechanism using tooltip for a list of possible completions."
+                :superclasses "semantic-displayor-traditional"
+                :members 
+                  ( ("mode" variable
+                       (:documentation "See `semantic-displayor-tooltip-mode'."
+                        :default-value "(symbol-value 'semantic-displayor-tooltip-mode)")
+                        nil nil)
+                    ("max-tags-initial" variable
+                       (:documentation "See `semantic-displayor-tooltip-initial-max-tags'."
+                        :default-value "(symbol-value 'semantic-displayor-tooltip-initial-max-tags)")
+                        nil nil)
+                    ("typing-count" variable
+                       (:documentation "Counter holding how many times the user types space or tab continuously before showing tags."
+                        :default-value "0"
+                        :type "integer")
+                        nil nil)
+                    ("shown" variable
+                       (:documentation "Flag representing whether tooltip has been shown yet."
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil))                  
+                :type "class")
+                nil [60145 60984])
+            ("cl-defmethod" code nil nil [60986 61181])
+            ("tooltip-mode" variable nil nil [61183 61204])
+            ("cl-defmethod" code nil nil [61206 64135])
+            ("semantic-displayor-point-position" function (:documentation "Return the location of POINT as positioned on the selected frame.
+Return a cons cell (X . Y)") nil [64159 64886])
+            ("tooltip-frame-parameters" variable nil nil [64889 64922])
+            ("declare-function" code nil nil [64923 64995])
+            ("semantic-displayor-tooltip-show" function
+               (:documentation "Display a tooltip with TEXT near cursor."
+                :arguments ("text"))
+                nil [64997 65446])
+            ("cl-defmethod" code nil nil [65448 65719])
+            ("semantic-displayor-ghost" type
+               (:documentation "Cycle completions inline with ghost text.
+Completion displayor using ghost chars after point for focus options.
+Whichever completion is currently in focus will be displayed as ghost
+text using overlay options."
+                :superclasses "semantic-displayor-focus-abstract"
+                :members 
+                  ( ("ghostoverlay" variable
+                       (:documentation "The overlay the ghost text is displayed in."
+                        :type "overlay")
+                        nil nil)
+                    ("first-show" variable
+                       (:documentation "Non nil if we have not seen our first show request."
+                        :default-value "t")
+                        nil nil))                  
+                :type "class")
+                nil [65810 66313])
+            ("cl-defmethod" code nil nil [66315 66691])
+            ("cl-defmethod" code nil nil [66693 66912])
+            ("cl-defmethod" code nil nil [66914 67140])
+            ("cl-defmethod" code nil nil [67143 67605])
+            ("cl-defmethod" code nil nil [67607 68996])
+            ("semantic-complete-inline-custom-type" variable
+               (:documentation "Possible options for inline completion displayors.
+Use this to enable custom editing."
+                :default-value (append '(radio) (mapcar (lambda (class) (let* ((C (intern (car class))) (doc (documentation-property C 'variable-documentation)) (doc1 (car (split-string doc "
+")))) (list 'const :tag doc1 C))) (eieio-build-class-alist 'semantic-displayor-abstract t))))
+                nil [69089 69543])
+            ("semantic-complete-inline-analyzer-displayor-class" variable
+               (:documentation "Class for displayor to use with inline completion."
+                :default-value 'semantic-displayor-traditional)
+                nil [69545 69762])
+            ("semantic-complete-read-tag-buffer-deep" function
+               (:documentation "Ask for a tag by name from the current buffer.
+Available tags are from the current buffer, at any level.
+Completion options are presented in a traditional way, with highlighting
+to resolve same-name collisions.
+PROMPT is a string to prompt with.
+DEFAULT-TAG is a semantic tag or string to use as the default value.
+If INITIAL-INPUT is non-nil, insert it in the minibuffer initially.
+HISTORY is a symbol representing a variable to store the history in."
+                :arguments ("prompt" "default-tag" "initial-input" "history"))
+                nil [69764 70608])
+            ("semantic-complete-read-tag-local-members" function
+               (:documentation "Ask for a tag by name from the local type members.
+Available tags are from the current scope.
+Completion options are presented in a traditional way, with highlighting
+to resolve same-name collisions.
+PROMPT is a string to prompt with.
+DEFAULT-TAG is a semantic tag or string to use as the default value.
+If INITIAL-INPUT is non-nil, insert it in the minibuffer initially.
+HISTORY is a symbol representing a variable to store the history in."
+                :arguments ("prompt" "default-tag" "initial-input" "history"))
+                nil [70610 71432])
+            ("semantic-complete-read-tag-project" function
+               (:documentation "Ask for a tag by name from the current project.
+Available tags are from the current project, at the top level.
+Completion options are presented in a traditional way, with highlighting
+to resolve same-name collisions.
+PROMPT is a string to prompt with.
+DEFAULT-TAG is a semantic tag or string to use as the default value.
+If INITIAL-INPUT is non-nil, insert it in the minibuffer initially.
+HISTORY is a symbol representing a variable to store the history in."
+                :arguments ("prompt" "default-tag" "initial-input" "history"))
+                nil [71434 72295])
+            ("semantic-complete-inline-tag-project" function (:documentation "Complete a symbol name by name from within the current project.
+This is similar to `semantic-complete-read-tag-project', except
+that the completion interaction is in the buffer where the context
+was calculated from.
+Customize `semantic-complete-inline-analyzer-displayor-class'
+to control how completion options are displayed.
+See `semantic-complete-inline-tag-engine' for details on how
+completion works.") nil [72297 74068])
+            ("semantic-complete-read-tag-analyzer" function
+               (:documentation "Ask for a tag by name based on the current context.
+The function `semantic-analyze-current-context' is used to
+calculate the context.  `semantic-analyze-possible-completions' is used
+to generate the list of possible completions.
+PROMPT is the first part of the prompt.  Additional prompt
+is added based on the contexts full prefix.
+CONTEXT is the semantic analyzer context to start with.
+HISTORY is a symbol representing a variable to store the history in.
+usually a default-tag and initial-input are available for completion
+prompts.  these are calculated from the CONTEXT variable passed in."
+                :arguments ("prompt" "context" "history"))
+                nil [74070 75410])
+            ("semantic-complete-inline-analyzer" function
+               (:documentation "Complete a symbol name by name based on the current context.
+This is similar to `semantic-complete-read-tag-analyze', except
+that the completion interaction is in the buffer where the context
+was calculated from.
+CONTEXT is the semantic analyzer context to start with.
+Customize `semantic-complete-inline-analyzer-displayor-class'
+to control how completion options are displayed.
+
+See `semantic-complete-inline-tag-engine' for details on how
+completion works."
+                :arguments ("context"))
+                nil [75412 77346])
+            ("semantic-complete-inline-analyzer-idle-displayor-class" variable
+               (:documentation "Class for displayor to use with inline completion at idle time."
+                :default-value 'semantic-displayor-ghost)
+                nil [77348 77577])
+            ("semantic-complete-inline-analyzer-idle" function
+               (:documentation "Complete a symbol name by name based on the current context for idle time.
+CONTEXT is the semantic analyzer context to start with.
+This function is used from `semantic-idle-completions-mode'.
+
+This is the same as `semantic-complete-inline-analyzer', except that
+it uses `semantic-complete-inline-analyzer-idle-displayor-class'
+to control how completions are displayed.
+
+See `semantic-complete-inline-tag-engine' for details on how
+completion works."
+                :arguments ("context"))
+                nil [77579 78260])
+            ("semantic-complete-jump-local" function
+               (:documentation "Jump to a local semantic symbol."
+                :user-visible-flag t)
+                nil [78279 78708])
+            ("semantic-complete-jump" function
+               (:documentation "Jump to a semantic symbol."
+                :user-visible-flag t)
+                nil [78725 79178])
+            ("semantic-complete-jump-local-members" function
+               (:documentation "Jump to a semantic symbol."
+                :user-visible-flag t)
+                nil [79195 79755])
+            ("semantic-complete-analyze-and-replace" function
+               (:documentation "Perform prompt completion to do in buffer completion.
+`semantic-analyze-possible-completions' is used to determine the
+possible values.
+The minibuffer is used to perform the completion.
+The result is inserted as a replacement of the text that was there."
+                :user-visible-flag t)
+                nil [79772 80458])
+            ("semantic-complete-analyze-inline" function
+               (:documentation "Perform prompt completion to do in buffer completion.
+`semantic-analyze-possible-completions' is used to determine the
+possible values.
+The function returns immediately, leaving the buffer in a mode that
+will perform the completion.
+Configure `semantic-complete-inline-analyzer-displayor-class' to change
+how completion options are displayed."
+                :user-visible-flag t)
+                nil [80475 81428])
+            ("semantic-complete-analyze-inline-idle" function
+               (:documentation "Perform prompt completion to do in buffer completion.
+`semantic-analyze-possible-completions' is used to determine the
+possible values.
+The function returns immediately, leaving the buffer in a mode that
+will perform the completion.
+Configure `semantic-complete-inline-analyzer-idle-displayor-class'
+to change how completion options are displayed."
+                :user-visible-flag t)
+                nil [81445 82266])
+            ("semantic-complete-self-insert" function
+               (:documentation "Like `self-insert-command', but does completion afterwards.
+ARG is passed to `self-insert-command'.  If ARG is nil,
+use `semantic-complete-analyze-inline' to complete."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [82283 83267])
+            ("semantic-complete-inline-project" function
+               (:documentation "Perform inline completion for any symbol in the current project.
+`semantic-analyze-possible-completions' is used to determine the
+possible values.
+The function returns immediately, leaving the buffer in a mode that
+will perform the completion."
+                :user-visible-flag t)
+                nil [83284 83947])
+            ("semantic/complete" package nil nil [83949 83977]))          
+      :file "complete.el.gz"
+      :pointmax 84138
+      :fsize 21115
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 4595 . 4596) (symbol 4497 . 4514) (open-paren 4496 . 4497)))
+    (semanticdb-table "semanticdb-table-13c3228"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("font-lock" include nil nil [1323 1343])
+            ("semantic" include nil nil [1345 1364])
+            ("semantic/tag-ls" include nil nil [1365 1391])
+            ("ezimage" include nil nil [1392 1410])
+            ("semantic/find" include nil nil [1431 1455])
+            ("semantic-format-tag-functions" variable
+               (:documentation "List of functions which convert a tag to text.
+Each function must take the parameters TAG &optional PARENT COLOR.
+TAG is the tag to convert.
+PARENT is a parent tag or name which refers to the structure
+or class which contains TAG.  PARENT is NOT a class which a TAG
+would claim as a parent.
+COLOR indicates that the generated text should be colored using
+`font-lock'."
+                :default-value '(semantic-format-tag-name semantic-format-tag-canonical-name semantic-format-tag-abbreviate semantic-format-tag-summarize semantic-format-tag-summarize-with-file semantic-format-tag-short-doc semantic-format-tag-prototype semantic-format-tag-concise-prototype semantic-format-tag-uml-abbreviate semantic-format-tag-uml-prototype semantic-format-tag-uml-concise-prototype semantic-format-tag-prin1))
+                nil [1548 2408])
+            ("semantic-format-tag-custom-list" variable
+               (:documentation "A List used by customizable variables to choose a tag to text function.
+Use this variable in the :type field of a customizable variable."
+                :default-value (append '(radio) (mapcar (lambda (f) (list 'const f)) semantic-format-tag-functions) '(function)))
+                nil [2410 2701])
+            ("semantic-format-use-images-flag" variable
+               (:documentation "Non-nil means semantic format functions use images.
+Images can be used as icons instead of some types of text strings."
+                :default-value ezimage-use-images)
+                nil [2703 2924])
+            ("semantic-function-argument-separator" variable
+               (:documentation "Text used to separate arguments when creating text from tags."
+                :default-value ",")
+                nil [2926 3041])
+            ("make-variable-buffer-local" code nil nil [3042 3108])
+            ("semantic-format-parent-separator" variable
+               (:documentation "Text used to separate names when between namespaces/classes and functions."
+                :default-value "::")
+                nil [3110 3235])
+            ("make-variable-buffer-local" code nil nil [3236 3298])
+            ("semantic-format-face-alist" variable
+               (:documentation "Face used to colorize tags of different types.
+Override the value locally if a language supports other tag types.
+When adding new elements, try to use symbols also returned by the parser.
+The form of an entry in this list is of the form:
+ ( SYMBOL .  FACE )
+where SYMBOL is a tag type symbol used with semantic.  FACE
+is a symbol representing a face.
+Faces used are generated in `font-lock' for consistency, and will not
+be used unless font lock is a feature."
+                :default-value `((function . font-lock-function-name-face) (variable . font-lock-variable-name-face) (type . font-lock-type-face) (include \, (if (featurep 'xemacs) 'font-lock-preprocessor-face 'font-lock-constant-face)) (package \, (if (featurep 'xemacs) 'font-lock-preprocessor-face 'font-lock-constant-face)) (label . font-lock-string-face) (comment . font-lock-comment-face) (keyword . font-lock-keyword-face) (abstract . italic) (static . underline) (documentation . font-lock-doc-face)))
+                nil [3300 4456])
+            ("semantic--format-colorize-text" function
+               (:documentation "Apply onto TEXT a color associated with FACE-CLASS.
+FACE-CLASS is a tag type found in `semantic-format-face-alist'.
+See that variable for details on adding new types."
+                :arguments ("text" "face-class"))
+                nil [4486 4923])
+            ("semantic--format-colorize-merge-text" function
+               (:documentation "Apply onto PRECOLOREDTEXT a color associated with FACE-CLASS.
+FACE-CLASS is a tag type found in `semantic-formatface-alist'.
+See that variable for details on adding new types."
+                :arguments ("precoloredtext" "face-class"))
+                nil [4925 5783])
+            ("semantic--format-tag-arguments" function
+               (:documentation "Format the argument list ARGS with FORMATTER.
+FORMATTER is a function used to format a tag.
+COLOR specifies if color should be used."
+                :arguments ("args" "formatter" "color"))
+                nil [5811 6431])
+            ("semantic-format-tag-type" function
+               (:overloadable t
+                :documentation "Convert the data type of TAG to a string usable in tag formatting.
+It is presumed that TYPE is a string or semantic tag."
+                :arguments ("tag" "color"))
+                nil [6447 6639])
+            ("semantic-format-tag-type-default" function
+               (:documentation "Convert the data type of TAG to a string usable in tag formatting.
+Argument COLOR specifies to colorize the text."
+                :arguments ("tag" "color"))
+                nil [6641 7364])
+            ("semantic-format-tag-prin1" function
+               (:documentation "Convert TAG to a string that is the print name for TAG.
+PARENT and COLOR are ignored."
+                :arguments ("tag" "parent" "color"))
+                nil [7406 7578])
+            ("semantic-format-tag-name-from-anything" function
+               (:documentation "Convert just about anything into a name like string.
+Argument ANYTHING is the thing to be converted.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors.
+Optional COLORHINT is the type of color to use if ANYTHING is not a tag
+with a tag class.  See `semantic--format-colorize-text' for a definition
+of FACE-CLASS for which this is used."
+                :arguments ("anything" "parent" "color" "colorhint"))
+                nil [7580 8771])
+            ("semantic-format-tag-name" function
+               (:overloadable t
+                :documentation "Return the name string describing TAG.
+The name is the shortest possible representation.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [8788 9106])
+            ("semantic-format-tag-name-default" function
+               (:documentation "Return an abbreviated string describing TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [9108 9674])
+            ("declare-function" code nil nil [9676 9733])
+            ("semantic--format-tag-parent-tree" function
+               (:documentation "Under Consideration.
+
+Return a list of parents for TAG.
+PARENT is the first parent, or nil.  If nil, then an attempt to
+determine PARENT is made.
+Once PARENT is identified, additional parents are looked for.
+The return list first element is the nearest parent, and the last
+item is the first parent which may be a string.  The root parent may
+not be the actual first parent as there may just be a failure to find
+local definitions."
+                :arguments ("tag" "parent"))
+                nil [9735 10851])
+            ("semantic-format-tag-canonical-name" function
+               (:overloadable t
+                :documentation "Return a canonical name for TAG.
+A canonical name includes the names of any parents or namespaces preceding
+the tag.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [10853 11209])
+            ("semantic-format-tag-canonical-name-default" function
+               (:documentation "Return a canonical name for TAG.
+A canonical name includes the names of any parents or namespaces preceding
+the tag with colons separating them.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [11211 12324])
+            ("semantic-format-tag-abbreviate" function
+               (:overloadable t
+                :documentation "Return an abbreviated string describing TAG.
+The abbreviation is to be short, with possible symbols indicating
+the type of tag, or other information.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [12326 12711])
+            ("semantic-format-tag-abbreviate-default" function
+               (:documentation "Return an abbreviated string describing TAG.
+Optional argument PARENT is a parent tag in the tag hierarchy.
+In this case PARENT refers to containment, not inheritance.
+Optional argument COLOR means highlight the prototype with font-lock colors.
+This is a simple C like default."
+                :arguments ("tag" "parent" "color"))
+                nil [12713 13649])
+            ("semantic-format-tag-summarize" function
+               (:overloadable t
+                :documentation "Summarize TAG in a reasonable way.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [13666 13935])
+            ("semantic-format-tag-summarize-default" function
+               (:documentation "Summarize TAG in a reasonable way.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [13937 14592])
+            ("semantic-format-tag-summarize-with-file" function
+               (:overloadable t
+                :documentation "Like `semantic-format-tag-summarize', but with the file name.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [14594 14900])
+            ("semantic-format-tag-summarize-with-file-default" function
+               (:documentation "Summarize TAG in a reasonable way.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [14902 15749])
+            ("semantic-format-tag-short-doc" function
+               (:overloadable t
+                :documentation "Display a short form of TAG's documentation. (Comments, or docstring.)
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [15751 16056])
+            ("declare-function" code nil nil [16058 16122])
+            ("semantic-format-tag-short-doc-default" function
+               (:documentation "Display a short form of TAG's documentation.  (Comments, or docstring.)
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [16124 17371])
+            ("semantic-format-tag-prototype" function
+               (:overloadable t
+                :documentation "Return a prototype for TAG.
+This function should be overloaded, though it need not be used.
+This is because it can be used to create code by language independent
+tools.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [17416 17819])
+            ("semantic-format-tag-prototype-default" function
+               (:documentation "Default method for returning a prototype for TAG.
+This will work for C like languages.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [17821 19608])
+            ("semantic-format-tag-concise-prototype" function
+               (:overloadable t
+                :documentation "Return a concise prototype for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [19625 19903])
+            ("semantic-format-tag-concise-prototype-default" function
+               (:documentation "Return a concise prototype for TAG.
+This default function will make a cheap concise prototype using C like syntax.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [19905 20990])
+            ("semantic-uml-colon-string" variable
+               (:documentation "String used as a color separator between parts of a UML string.
+In UML, a variable may appear as `varname : type'.
+Change this variable to change the output separator."
+                :default-value " : ")
+                nil [21018 21268])
+            ("semantic-uml-no-protection-string" variable (:documentation "String used to describe when no protection is specified.
+Used by `semantic-format-tag-uml-protection-to-string'.") nil [21270 21470])
+            ("semantic--format-uml-post-colorize" function
+               (:documentation "Add color to TEXT created from TAG and PARENT.
+Adds augmentation for `abstract' and `static' entries."
+                :arguments ("text" "tag" "parent"))
+                nil [21472 21876])
+            ("semantic-uml-attribute-string" function
+               (:documentation "Return a string for TAG, a child of PARENT representing a UML attribute.
+UML attribute strings are things like {abstract} or {leaf}."
+                :arguments ("tag" "parent"))
+                nil [21878 22187])
+            ("semantic-format-tag-protection-image-alist" variable
+               (:documentation "Association of protection strings, and images to use."
+                :default-value '(("+" . ezimage-unlock) ("#" . ezimage-key) ("-" . ezimage-lock)))
+                nil [22189 22380])
+            ("semantic-format-tag-protection-symbol-to-string-assoc-list" variable
+               (:documentation "Association list of the form (SYMBOL . \"STRING\") for protection symbols.
+For example, it might associate the symbol `public' with the string \"+\"."
+                :default-value '((public . "+") (protected . "#") (private . "-")))
+                nil [22382 22670])
+            ("semantic-format-tag-uml-protection-to-string" function
+               (:overloadable t
+                :documentation "Convert PROTECTION-SYMBOL to a string for UML.
+By default, uses `semantic-format-tag-protection-symbol-to-string-assoc-list'
+to convert.
+By default character returns are:
+  public    -- +
+  private   -- -
+  protected -- #.
+If PROTECTION-SYMBOL is unknown, then the return value is
+`semantic-uml-no-protection-string'.
+COLOR indicates if we should use an image on the text."
+                :arguments ("protection-symbol" "color"))
+                nil [22672 23150])
+            ("semantic-format-tag-uml-protection-to-string-default" function
+               (:documentation "Convert PROTECTION-SYMBOL to a string for UML.
+Uses `semantic-format-tag-protection-symbol-to-string-assoc-list' to convert.
+If PROTECTION-SYMBOL is unknown, then the return value is
+`semantic-uml-no-protection-string'.
+COLOR indicates if we should use an image on the text."
+                :arguments ("protection-symbol" "color"))
+                nil [23152 23906])
+            ("semantic-format-tag-uml-protection" function
+               (:documentation "Retrieve the protection string for TAG with PARENT.
+Argument COLOR specifies that color should be added to the string as
+needed."
+                :arguments ("tag" "parent" "color"))
+                nil [23908 24203])
+            ("semantic--format-tag-uml-type" function
+               (:documentation "Format the data type of TAG to a string usable for formatting.
+COLOR indicates if it should be colorized."
+                :arguments ("tag" "color"))
+                nil [24205 24470])
+            ("semantic-format-tag-uml-abbreviate" function
+               (:overloadable t
+                :documentation "Return a UML style abbreviation for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [24472 24752])
+            ("semantic-format-tag-uml-abbreviate-default" function
+               (:documentation "Return a UML style abbreviation for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [24754 25386])
+            ("semantic-format-tag-uml-prototype" function
+               (:overloadable t
+                :documentation "Return a UML style prototype for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [25388 25664])
+            ("semantic-format-tag-uml-prototype-default" function
+               (:documentation "Return a UML style prototype for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [25666 26525])
+            ("semantic-format-tag-uml-concise-prototype" function
+               (:overloadable t
+                :documentation "Return a UML style concise prototype for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [26527 26819])
+            ("semantic-format-tag-uml-concise-prototype-default" function
+               (:documentation "Return a UML style concise prototype for TAG.
+Optional argument PARENT is the parent type if TAG is a detail.
+Optional argument COLOR means highlight the prototype with font-lock colors."
+                :arguments ("tag" "parent" "color"))
+                nil [26821 27429])
+            ("semantic/format" package nil nil [27431 27457]))          
+      :file "format.el.gz"
+      :pointmax 27614
+      :fsize 6801
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 1455 . 1456) (symbol 1413 . 1430) (open-paren 1412 . 1413) (close-paren 1343 . 1344) (symbol 1305 . 1322) (open-paren 1304 . 1305)))
+    (semanticdb-table "semanticdb-table-1904d04"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [2714 2733])
+            ("semantic/format" include nil nil [2734 2760])
+            ("semantic/ctxt" include nil nil [2761 2785])
+            ("semantic/scope" include nil nil [2786 2811])
+            ("semantic/sort" include nil nil [2812 2836])
+            ("semantic/analyze/fcn" include nil nil [2837 2868])
+            ("semantic/find" include nil nil [2889 2913])
+            ("declare-function" code nil nil [2916 2969])
+            ("declare-function" code nil nil [2970 3037])
+            ("semantic-analyze-error-stack" variable (:documentation "Collection of any errors thrown during analysis.") nil [3049 3143])
+            ("semantic-analyze-push-error" function
+               (:documentation "Push the error in ERR-DATA onto the error stack.
+Argument ERR."
+                :arguments ("err"))
+                nil [3145 3295])
+            ("semantic-analyze-context" type
+               (:documentation "Base analysis data for any context."
+                :members 
+                  ( ("bounds" variable
+                       (:documentation "The bounds of this context.
+Usually bound to the dimension of a single symbol or command."
+                        :type "list")
+                        nil nil)
+                    ("prefix" variable
+                       (:documentation "List of tags defining local text.
+This can be nil, or a list where the last element can be a string
+representing text that may be incomplete.  Preceding elements
+must be semantic tags representing variables or functions
+called in a dereference sequence."
+                        :type "list")
+                        nil nil)
+                    ("prefixclass" variable
+                       (:documentation "Tag classes expected at this context.
+These are classes for tags, such as 'function, or 'variable."
+                        :type "list")
+                        nil nil)
+                    ("prefixtypes" variable
+                       (:documentation "List of tags defining types for :prefix.
+This list is one shorter than :prefix.  Each element is a semantic
+tag representing a type matching the semantic tag in the same
+position in PREFIX."
+                        :type "list")
+                        nil nil)
+                    ("scope" variable
+                       (:documentation "List of tags available in scopetype.
+See `semantic-analyze-scoped-tags' for details."
+                        :type "(or null semantic-scope-cache)")
+                        nil nil)
+                    ("buffer" variable
+                       (:documentation "The buffer this context is derived from."
+                        :type "buffer")
+                        nil nil)
+                    ("errors" variable (:documentation "Any errors thrown and caught during analysis.") nil nil))                  
+                :type "class")
+                nil [3475 4843])
+            ("semantic-analyze-context-assignment" type
+               (:documentation "Analysis class for a value in an assignment."
+                :superclasses "semantic-analyze-context"
+                :members 
+                  ( ("assignee" variable
+                       (:documentation "A sequence of tags for an assignee.
+This is a variable into which some value is being placed.  The last
+item in the list is the variable accepting the value.  Earlier
+tags represent the variables being dereferenced to get to the
+assignee."
+                        :type "list")
+                        nil nil))                  
+                :type "class")
+                nil [4845 5280])
+            ("semantic-analyze-context-functionarg" type
+               (:documentation "Analysis class for a value as a function argument."
+                :superclasses "semantic-analyze-context"
+                :members 
+                  ( ("function" variable
+                       (:documentation "A sequence of tags for a function.
+This is a function being called.  The cursor will be in the position
+of an argument.
+The last tag in :function is the function being called.  Earlier
+tags represent the variables being dereferenced to get to the
+function."
+                        :type "list")
+                        nil nil)
+                    ("index" variable
+                       (:documentation "The index of the argument for this context.
+If a function takes 4 arguments, this value should be bound to
+the values 1 through 4."
+                        :type "integer")
+                        nil nil)
+                    ("argument" variable
+                       (:documentation "A sequence of tags for the :index argument.
+The argument can accept a value of some type, and this contains the
+tag for that definition.  It should be a tag, but might
+be just a string in some circumstances."
+                        :type "list")
+                        nil nil))                  
+                :type "class")
+                nil [5282 6222])
+            ("semantic-analyze-context-return" type
+               (:documentation "Analysis class for return data.
+Return data methods identify the required type by the return value
+of the parent function."
+                :superclasses "semantic-analyze-context"
+                :type "class")
+                nil [6224 6442])
+            ("cl-defmethod" code nil nil [6509 7336])
+            ("cl-defmethod" code nil nil [7338 7562])
+            ("cl-defmethod" code nil nil [7564 7797])
+            ("cl-defmethod" code nil nil [7799 8226])
+            ("cl-defmethod" code nil nil [8228 8463])
+            ("cl-defmethod" code nil nil [8465 8699])
+            ("semantic-analyze-find-tag-sequence" function
+               (:overloadable t
+                :documentation "Attempt to find all tags in SEQUENCE.
+Optional argument LOCALVAR is the list of local variables to use when
+finding the details on the first element of SEQUENCE in case
+it is not found in the global set of tables.
+Optional argument SCOPE are additional terminals to search which are currently
+scoped.  These are not local variables, but symbols available in a structure
+which doesn't need to be dereferenced.
+Optional argument TYPERETURN is a symbol in which the types of all found
+will be stored.  If nil, that data is thrown away.
+Optional argument THROWSYM specifies a symbol the throw on non-recoverable error.
+Remaining arguments FLAGS are additional flags to apply when searching."
+                :arguments ("sequence" "scope" "typereturn" "throwsym" "flags"))
+                nil [8918 9735])
+            ("semantic-analyze-find-tag-sequence-default" function
+               (:documentation "Attempt to find all tags in SEQUENCE.
+SCOPE are extra tags which are in scope.
+TYPERETURN is a symbol in which to place a list of tag classes that
+are found in SEQUENCE.
+Optional argument THROWSYM specifies a symbol the throw on non-recoverable error.
+Remaining arguments FLAGS are additional flags to apply when searching.
+This function knows of flags:
+  `mustbeclassvariable'"
+                :arguments ("sequence" "scope" "typereturn" "throwsym" "flags"))
+                nil [9737 13671])
+            ("semantic-analyze-find-tag" function
+               (:documentation "Return the first tag found with NAME or nil if not found.
+Optional argument TAGCLASS specifies the class of tag to return,
+such as 'function or 'variable.
+Optional argument SCOPE specifies a scope object which has
+additional tags which are in SCOPE and do not need prefixing to
+find.
+
+This is a wrapper on top of semanticdb, semanticdb typecache,
+semantic-scope, and semantic search functions.  Almost all
+searches use the same arguments."
+                :arguments ("name" "tagclass" "scope"))
+                nil [13673 15826])
+            ("semantic-analyze-current-symbol" function
+               (:overloadable t
+                :documentation "Call ANALYZEHOOKFCN after analyzing the symbol under POSITION.
+The ANALYZEHOOKFCN is called with the current symbol bounds, and the
+analyzed prefix.  It should take the arguments (START END PREFIX).
+The ANALYZEHOOKFCN is only called if some sort of prefix with bounds was
+found under POSITION.
+
+The results of ANALYZEHOOKFCN is returned, or nil if there was nothing to
+call it with.
+
+For regular analysis, you should call `semantic-analyze-current-context'
+to calculate the context information.  The purpose for this function is
+to provide a large number of non-cached analysis for filtering symbols."
+                :arguments ("analyzehookfcn" "position"))
+                nil [15911 16963])
+            ("semantic-analyze-current-symbol-default" function
+               (:documentation "Call ANALYZEHOOKFCN on the analyzed symbol at POSITION."
+                :arguments ("analyzehookfcn" "position"))
+                nil [16965 18289])
+            ("semantic-analyze-current-context" function
+               (:overloadable t
+                :documentation "Analyze the current context at optional POSITION.
+If called interactively, display interesting information about POSITION
+in a separate buffer.
+Returns an object based on symbol `semantic-analyze-context'.
+
+This function can be overridden with the symbol `analyze-context'.
+When overriding this function, your override will be called while
+cursor is at POSITION.  In addition, your function will not be called
+if a cached copy of the return object is found."
+                :user-visible-flag t
+                :arguments ("position"))
+                nil [18368 19903])
+            ("semantic-analyze-current-context-default" function
+               (:documentation "Analyze the current context at POSITION.
+Returns an object based on symbol `semantic-analyze-context'."
+                :arguments ("position"))
+                nil [19905 25167])
+            ("semantic-analyze-dereference-alias" function
+               (:documentation "Dereference first tag in TAGLIST if it is an alias.
+Returns a sequence of names which can then be fed again into
+`semantic-analyze-find-tag-sequence'.
+Returns nil if no alias was found."
+                :arguments ("taglist"))
+                nil [25169 25712])
+            ("semantic-adebug-analyze" function
+               (:documentation "Perform `semantic-analyze-current-context'.
+Display the results as a debug list.
+Optional argument CTXT is the context to show."
+                :user-visible-flag t
+                :arguments ("ctxt"))
+                nil [25715 26363])
+            ("declare-function" code nil nil [26432 26491])
+            ("cl-defmethod" code nil nil [26493 26802])
+            ("semantic-analyze-summary-function" variable
+               (:documentation "Function to use when creating items in Imenu.
+Some useful functions are found in `semantic-format-tag-functions'."
+                :default-value 'semantic-format-tag-prototype)
+                nil [26804 27057])
+            ("semantic-analyze-princ-sequence" function
+               (:documentation "Send the tag SEQUENCE to standard out.
+Use PREFIX as a label.
+Use BUFF as a source of override methods."
+                :arguments ("sequence" "prefix" "buff"))
+                nil [27059 27878])
+            ("cl-defmethod" code nil nil [27880 28657])
+            ("cl-defmethod" code nil nil [28659 28898])
+            ("cl-defmethod" code nil nil [28900 29288])
+            ("semantic-analyze-pop-to-context" function
+               (:documentation "Display CONTEXT in a temporary buffer.
+CONTEXT's content is described in `semantic-analyze-current-context'."
+                :arguments ("context"))
+                nil [29290 29845])
+            ("semantic/analyze" package nil nil [29847 29874]))          
+      :file "analyze.el.gz"
+      :pointmax 30033
+      :fsize 8867
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 2913 . 2914) (symbol 2871 . 2888) (open-paren 2870 . 2871)))
+    (semanticdb-table "semanticdb-table-24124f4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [1156 1175])
+            ("semantic-modes" customgroup
+               (:documentation "Minor modes associated with the Semantic architecture."
+                :user-visible-flag t)
+                nil [1220 1327])
+            ("semantic-update-mode-line" variable
+               (:documentation "If non-nil, show enabled minor modes in the mode line.
+Only minor modes that are not turned on globally are shown in the mode
+line."
+                :default-value t)
+                nil [1371 1807])
+            ("semantic-mode-line-prefix" variable
+               (:documentation "Prefix added to minor mode indicators in the mode line."
+                :default-value (propertize "S" 'face 'bold))
+                nil [1809 2045])
+            ("semantic-minor-modes-format" variable (:documentation "Mode line format showing Semantic minor modes which are locally enabled.
+It is displayed in the mode line.") nil [2047 2198])
+            ("put" code nil nil [2199 2257])
+            ("semantic-minor-mode-alist" variable (:documentation "Alist saying how to show Semantic minor modes in the mode line.
+Like variable `minor-mode-alist'.") nil [2259 2399])
+            ("semantic-mode-line-update" function (:documentation "Update mode line format of Semantic minor modes.
+Only minor modes that are locally enabled are shown in the mode line.") nil [2401 4477])
+            ("semantic-desktop-ignore-this-minor-mode" function
+               (:documentation "Installed as a minor-mode initializer for Desktop mode.
+BUFFER is the buffer to not initialize a Semantic minor mode in."
+                :arguments ("buffer"))
+                nil [4479 4666])
+            ("semantic-add-minor-mode" function
+               (:documentation "Register a new Semantic minor mode.
+TOGGLE is a symbol which is the name of a buffer-local variable that
+is toggled on or off to say whether the minor mode is active or not.
+It is also an interactive function to toggle the mode.
+
+NAME specifies what will appear in the mode line when the minor mode
+is active.  NAME should be either a string starting with a space, or a
+symbol whose value is such a string."
+                :arguments ("toggle" "name"))
+                nil [4668 5734])
+            ("semantic-toggle-minor-mode-globally" function
+               (:documentation "Toggle minor mode MODE in every Semantic enabled buffer.
+Return non-nil if MODE is turned on in every Semantic enabled buffer.
+If ARG is positive, enable, if it is negative, disable.
+MODE must be a valid minor mode defined in `minor-mode-alist' and must be
+too an interactive function used to toggle the mode."
+                :arguments ("mode" "arg"))
+                nil [5736 6884])
+            ("define-minor-mode" code nil nil [6967 7264])
+            ("semantic-highlight-edits-mode-hook" variable (:documentation "Hook run at the end of function `semantic-highlight-edits-mode'.") nil [7266 7418])
+            ("semantic-highlight-edits-face" variable
+               (:documentation "Face used to show dirty tokens in `semantic-highlight-edits-mode'."
+                :default-value '((((class color) (background dark)) (:background "gray20")) (((class color) (background light)) (:background "gray90")))
+                :type "face")
+                nil [7420 7751])
+            ("semantic-highlight-edits-new-change-hook-fcn" function
+               (:documentation "Function set into `semantic-edits-new-change-hook'.
+Argument OVERLAY is the overlay created to mark the change.
+This function will set the face property on this overlay."
+                :arguments ("overlay"))
+                nil [7753 8059])
+            ("semantic-highlight-edits-mode-map" variable
+               (:documentation "Keymap for highlight-edits minor mode."
+                :default-value (let ((km (make-sparse-keymap))) km))
+                nil [8061 8189])
+            ("define-minor-mode" code nil nil [8206 9313])
+            ("semantic-add-minor-mode" code nil nil [9315 9400])
+            ("define-minor-mode" code nil nil [9479 9884])
+            ("semantic-show-unmatched-syntax-mode-hook" variable (:documentation "Hook run at the end of function `semantic-show-unmatched-syntax-mode'.") nil [9886 10050])
+            ("semantic-unmatched-syntax-face" variable
+               (:documentation "Face used to show unmatched syntax in.
+The face is used in `semantic-show-unmatched-syntax-mode'."
+                :default-value '((((class color) (background dark)) (:underline "red")) (((class color) (background light)) (:underline "red")))
+                :type "face")
+                nil [10052 10349])
+            ("semantic-unmatched-syntax-overlay-p" function
+               (:documentation "Return non-nil if OVERLAY is an unmatched syntax one."
+                :arguments ("overlay"))
+                nil [10351 10524])
+            ("semantic-showing-unmatched-syntax-p" function (:documentation "Return non-nil if an unmatched syntax overlay was found in buffer.") nil [10526 10855])
+            ("semantic-show-unmatched-lex-tokens-fetch" function (:documentation "Fetch a list of unmatched lexical tokens from the current buffer.
+Uses the overlays which have accurate bounds, and rebuilds what was
+originally passed in.") nil [10857 11399])
+            ("semantic-clean-unmatched-syntax-in-region" function
+               (:documentation "Remove all unmatched syntax overlays between BEG and END."
+                :arguments ("beg" "end"))
+                nil [11401 11704])
+            ("semantic-clean-unmatched-syntax-in-buffer" function (:documentation "Remove all unmatched syntax overlays found in current buffer.") nil [11706 11900])
+            ("semantic-clean-token-of-unmatched-syntax" function
+               (:documentation "Clean the area covered by TOKEN of unmatched syntax markers."
+                :arguments ("token"))
+                nil [11902 12127])
+            ("semantic-show-unmatched-syntax" function
+               (:documentation "Function set into `semantic-unmatched-syntax-hook'.
+This will highlight elements in SYNTAX as unmatched syntax."
+                :arguments ("syntax"))
+                nil [12129 13068])
+            ("semantic-next-unmatched-syntax" function
+               (:documentation "Find the next overlay for unmatched syntax after POINT.
+Do not search past BOUND if non-nil."
+                :arguments ("point" "bound"))
+                nil [13070 13768])
+            ("semantic-show-unmatched-syntax-mode-map" variable
+               (:documentation "Keymap for command `semantic-show-unmatched-syntax-mode'."
+                :default-value (let ((km (make-sparse-keymap))) (define-key km ",`" 'semantic-show-unmatched-syntax-next) km))
+                nil [13770 13989])
+            ("define-minor-mode" code nil nil [14006 15801])
+            ("semantic-add-minor-mode" code nil nil [15803 15894])
+            ("semantic-show-unmatched-syntax-next" function
+               (:documentation "Move forward to the next occurrence of unmatched syntax."
+                :user-visible-flag t)
+                nil [15896 16125])
+            ("define-minor-mode" code nil nil [16216 16582])
+            ("semantic-show-parser-state-mode-hook" variable (:documentation "Hook run at the end of function `semantic-show-parser-state-mode'.") nil [16584 16740])
+            ("semantic-show-parser-state-mode-map" variable
+               (:documentation "Keymap for show-parser-state minor mode."
+                :default-value (let ((km (make-sparse-keymap))) km))
+                nil [16742 16874])
+            ("define-minor-mode" code nil nil [16891 20539])
+            ("semantic-add-minor-mode" code nil nil [20541 20627])
+            ("semantic-show-parser-state-string" variable (:documentation "String showing the parser state for this buffer.
+See `semantic-show-parser-state-marker' for details.") nil [20629 20781])
+            ("make-variable-buffer-local" code nil nil [20782 20845])
+            ("semantic-show-parser-state-marker" function
+               (:documentation "Set `semantic-show-parser-state-string' to indicate parser state.
+This marker is one of the following:
+ `-'  ->  The cache is up to date.
+ `!'  ->  The cache requires a full update.
+ `~'  ->  The cache needs to be incrementally parsed.
+ `%'  ->  The cache is not currently parsable.
+ `@'  ->  Auto-parse in progress (not set here.)
+Arguments IGNORE are ignored, and accepted so this can be used as a hook
+in many situations."
+                :arguments ("ignore"))
+                nil [20847 21667])
+            ("semantic-show-parser-state-auto-marker" function (:documentation "Hook function run before an autoparse.
+Set up `semantic-show-parser-state-marker' to show `@'
+to indicate a parse in progress.") nil [21669 21987])
+            ("define-minor-mode" code nil nil [22064 22422])
+            ("semantic-stickyfunc-mode-hook" variable (:documentation "Hook run at the end of function `semantic-stickyfunc-mode'.") nil [22424 22566])
+            ("semantic-stickyfunc-mode-map" variable
+               (:documentation "Keymap for stickyfunc minor mode."
+                :default-value (let ((km (make-sparse-keymap))) (define-key km [header-line down-mouse-1] 'semantic-stickyfunc-menu) km))
+                nil [22568 22761])
+            ("semantic-stickyfunc-popup-menu" variable (:documentation "Menu used if the user clicks on the header line used by stickyfunc mode.") nil [22763 22883])
+            ("easy-menu-define" code nil nil [22885 24032])
+            ("semantic-stickyfunc-indent-string" variable
+               (:documentation "String used to indent the stickyfunc header.
+Customize this string to match the space used by scrollbars and
+fringe so it does not appear that the code is moving left/right
+when it lands in the sticky line."
+                :default-value (if (and window-system (not (featurep 'xemacs))) (concat (condition-case nil (let ((charwidth (frame-char-width)) (scrollpos (frame-parameter (selected-frame) 'vertical-scroll-bars))) (if (or (eq scrollpos 'left) (eq scrollpos t)) (let ((w (when (boundp 'scroll-bar-width) (symbol-value 'scroll-bar-width)))) (if (not w) (setq w (frame-parameter (selected-frame) 'scroll-bar-width))) (if (not w) (setq w (+ (get 'scroll-bar-width 'x-frame-parameter) 1))) (if (not w) "  " (setq w (+ 2 w)) (make-string (/ w charwidth) 32))) "")) (error "")) (condition-case nil (let* ((f (window-fringes)) (fw (car f)) (numspace (/ fw (frame-char-width)))) (make-string numspace 32)) (error (condition-case nil (if (get 'fringe 'face) " " "") (error ""))))) ""))
+                nil [24034 26185])
+            ("semantic-stickyfunc-old-hlf" variable (:documentation "Value of the header line when entering stickyfunc mode.") nil [26187 26287])
+            ("semantic-stickyfunc-header-line-format" variable
+               (:documentation "The header line format used by stickyfunc mode."
+                :constant-flag t
+                :default-value (cond ((featurep 'xemacs) nil) (t '(:eval (list (propertize " " 'display '((space :align-to 0))) (semantic-stickyfunc-fetch-stickyline))))))
+                nil [26289 26584])
+            ("define-minor-mode" code nil nil [26601 28522])
+            ("semantic-stickyfunc-sticky-classes" variable
+               (:documentation "List of tag classes which stickyfunc will display in the header line."
+                :default-value '#'type)
+                nil [28524 28660])
+            ("make-variable-buffer-local" code nil nil [28661 28725])
+            ("semantic-stickyfunc-show-only-functions-p" variable (:documentation "Non-nil means don't show lines that aren't part of a tag.
+If this is nil, then comments or other text between tags that is
+1 line above the top of the current window will be shown.") nil [28727 29005])
+            ("semantic-stickyfunc-tag-to-stick" function (:documentation "Return the tag to stick at the current point.") nil [29007 29374])
+            ("semantic-stickyfunc-fetch-stickyline" function (:documentation "Make the function at the top of the current window sticky.
+Capture its function declaration, and place it in the header line.
+If there is no function, disable the header line.") nil [29376 31196])
+            ("semantic-stickyfunc-menu" function
+               (:documentation "Popup a menu that can help a user understand stickyfunc-mode.
+Argument EVENT describes the event that caused this function to be called."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [31198 31668])
+            ("semantic-add-minor-mode" code nil nil [31671 31750])
+            ("define-minor-mode" code nil nil [32004 32381])
+            ("semantic-highlight-func-mode-hook" variable (:documentation "Hook run at the end of function `semantic-highlight-func-mode'.") nil [32383 32533])
+            ("semantic-highlight-func-mode-map" variable
+               (:documentation "Keymap for highlight-func minor mode."
+                :default-value (let ((km (make-sparse-keymap)) (m3 (if (featurep 'xemacs) [button3] [mouse-3]))) (define-key km m3 'semantic-highlight-func-menu) km))
+                nil [32535 32771])
+            ("semantic-highlight-func-popup-menu" variable (:documentation "Menu used if the user clicks on the header line used by `semantic-highlight-func-mode'.") nil [32773 32912])
+            ("easy-menu-define" code nil nil [32914 33969])
+            ("semantic-highlight-func-menu" function
+               (:documentation "Popup a menu that displays things to do to the current tag.
+Argument EVENT describes the event that caused this function to be called."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [33971 34487])
+            ("semantic-highlight-func-ct-overlay" variable (:documentation "Overlay used to highlight the tag the cursor is in.") nil [34489 34592])
+            ("make-variable-buffer-local" code nil nil [34593 34657])
+            ("semantic-highlight-func-current-tag-face" variable
+               (:documentation "Face used to show the top of current function."
+                :default-value '((((class color) (background dark)) (:background "gray20")) (((class color) (background light)) (:background "gray90")))
+                :type "face")
+                nil [34659 34981])
+            ("define-minor-mode" code nil nil [34998 36288])
+            ("semantic-highlight-func-highlight-current-tag" function
+               (:documentation "Highlight the current tag under point.
+Optional argument DISABLE will turn off any active highlight.
+If the current tag for this buffer is different from the last time this
+function was called, move the overlay."
+                :arguments ("disable"))
+                nil [36290 37955])
+            ("semantic-add-minor-mode" code nil nil [37957 38040])
+            ("semantic/util-modes" package nil nil [38087 38117]))          
+      :file "util-modes.el.gz"
+      :pointmax 38282
+      :fsize 9212
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!share!emacs!27.0.50!lisp!cedet!semantic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -92,7 +92,7 @@ automatically buffer-local wherever it is set."
   "C/C++ minor mode powered by libclang."
   :group 'c)
 
-(defcustom irony-lighter " Irony"
+(defcustom irony-lighter " irony"
   "Text to display in the mode line when irony mode is on."
   :type 'string
   :group 'irony)

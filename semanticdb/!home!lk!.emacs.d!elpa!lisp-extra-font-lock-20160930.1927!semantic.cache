@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file-13a997c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13a997c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-134bcec"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("lisp-extra-font-lock" customgroup
+               (:documentation "Highlight bound variables and quoted expressions in lisp."
+                :user-visible-flag t)
+                nil [4828 4941])
+            ("lisp-extra-font-lock-modes" variable
+               (:documentation "List of modes where Lisp Extra Font Lock Global mode should be enabled."
+                :default-value '(emacs-lisp-mode lisp-mode))
+                nil [4959 5158])
+            ("lisp-extra-font-lock-backquote" variable
+               (:documentation "The default face used to highlight backquotes and the comma operator."
+                :default-value '((t :inherit font-lock-warning-face))
+                :type "face")
+                nil [5216 5402])
+            ("lisp-extra-font-lock-backquote-face" variable
+               (:documentation "The face used to highlight backquotes and the comma operator.
+To disable this highlighting, set this to nil."
+                :default-value 'lisp-extra-font-lock-backquote)
+                nil [5405 5680])
+            ("lisp-extra-font-lock-quoted" variable
+               (:documentation "The default face used to highlight quoted expressions."
+                :default-value '((t :inherit font-lock-constant-face))
+                :type "face")
+                nil [5683 5852])
+            ("lisp-extra-font-lock-quoted-face" variable
+               (:documentation "The face used to highlight quoted expressions.
+To disable this highlighting, set this to nil."
+                :default-value 'lisp-extra-font-lock-quoted)
+                nil [5855 6109])
+            ("lisp-extra-font-lock-quoted-function" variable
+               (:documentation "The default face used to highlight #'-quoted function symbols."
+                :default-value '((t :inherit font-lock-function-name-face))
+                :type "face")
+                nil [6112 6303])
+            ("lisp-extra-font-lock-quoted-function-face" variable
+               (:documentation "The face used to highlight #'-quoted function symbols.
+To disable this highlighting, set this to nil."
+                :default-value 'lisp-extra-font-lock-quoted-function)
+                nil [6306 6588])
+            ("lisp-extra-font-lock-special-variable-name" variable
+               (:documentation "The default face used to highlight special variables bound by `let'."
+                :default-value '((t :inherit font-lock-warning-face))
+                :type "face")
+                nil [6591 6788])
+            ("lisp-extra-font-lock-special-variable-name-face" variable
+               (:documentation "The face used to highlight special variables bound by `let'.
+
+A special variable is a global variable defined by `defvar'. See
+`special-variable-p' for details.
+
+To disable this highlighting, set this to nil. To highlight
+special variables like plain variables, set this to
+`font-lock-variable-name-face'."
+                :default-value 'lisp-extra-font-lock-special-variable-name)
+                nil [6791 7289])
+            ("lisp-extra-font-lock-let-functions" variable
+               (:documentation "List of function using same syntax as `let' to bind variables."
+                :default-value '("let" "let*" "letf" "letf*" "lexical-let" "lexical-let*" "multiple-value-bind" "pcase-let" "cl-letf" "cl-letf*" "cl-multiple-value-bind"))
+                nil [7328 7731])
+            ("lisp-extra-font-lock-defun-functions" variable
+               (:documentation "List of function using same syntax as `defun' to bind variables."
+                :default-value '("defun" "defun*" "defmacro" "defmacro*" "defsubst" "cl-defun" "cl-defmacro" "cl-defsubst"))
+                nil [7734 8030])
+            ("lisp-extra-font-lock-lambda-functions" variable
+               (:documentation "List of function using same syntax as `lambda' to bind variables."
+                :default-value '("lambda"))
+                nil [8033 8222])
+            ("lisp-extra-font-lock-dolist-functions" variable
+               (:documentation "List of function using same syntax as `dolist' to bind variables."
+                :default-value '("dolist" "dotimes" "cl-dolist" "cl-dotimes"))
+                nil [8225 8461])
+            ("lisp-extra-font-lock-bind-first-functions" variable
+               (:documentation "List of function that bind their first argument."
+                :default-value '("condition-case"))
+                nil [8464 8648])
+            ("lisp-extra-font-lock-loop-functions" variable
+               (:documentation "List of functions using same syntax as `loop' to bind variables.."
+                :default-value '("loop" "cl-loop"))
+                nil [8651 8850])
+            ("define-minor-mode" code nil nil [8919 9455])
+            ("define-global-minor-mode" code nil nil [9473 9703])
+            ("lisp-extra-font-lock-variable-face-form" function
+               (:documentation "A form suitable for a font-lock face expression.
+
+NAME is a form that should evalute to the name of the symbol, as a string."
+                :arguments ("name"))
+                nil [9706 10133])
+            ("lisp-extra-font-lock-keywords" function (:documentation "Font-lock keywords used by `lisp-extra-font-lock'.
+The keywords highlight variable bindings and quoted expressions.") nil [10135 13554])
+            ("lisp-extra-font-lock--installed-keywords" variable nil nil [13557 13610])
+            ("lisp-extra-font-lock-add-keywords" function (:documentation "Add extra font-lock keywords to lisp.") nil [13612 14093])
+            ("lisp-extra-font-lock-remove-keywords" function (:documentation "Remove font-lock keywords for extra lisp highlithing.") nil [14096 14276])
+            ("lisp-extra-font-lock-end-position" function (:documentation "Suitable end position of expression after point.
+If expression is open-ended, the beginning of the next top-level
+form is used, or `point-max' if none is found.") nil [14348 14835])
+            ("lisp-extra-font-lock-match-argument-list" function (:arguments ("limit")) nil [14837 15088])
+            ("lisp-extra-font-lock-match-let" function
+               (:documentation "Match next variable introduced by `let'-like constructs."
+                :arguments ("limit"))
+                nil [15091 15882])
+            ("lisp-extra-font-lock-is-in-comment-or-string" function
+               (:documentation "Return non-nil if POS is in a comment, string, constant, or reader macro.
+
+This assumes that Font Lock is active and has fontified comments
+and strings."
+                :arguments ("pos"))
+                nil [15885 16811])
+            ("lisp-extra-font-lock-match-quote-and-backquote" function
+               (:documentation "Search for quote and backquote in in code.
+Set match data 1 if character matched is backquote."
+                :arguments ("limit"))
+                nil [16814 17219])
+            ("lisp-extra-font-lock-match-quoted-content" function
+               (:documentation "Match next part of a quoted content.
+
+Match up to next comma operator or quoted subexpression, or to
+the end of the quoted expression."
+                :arguments ("limit"))
+                nil [17222 18702])
+            ("lisp-extra-font-lock-loop-keywords" variable
+               (:documentation "List of `cl-loop' named parameters, excluding variable binding ones."
+                :default-value '("=" "above" "across" "across-ref" "always" "and" "append" "as" "being" "below" "buffer" "buffers" "by" "collect" "collecting" "concat" "count" "do" "doing" "downfrom" "downto" "each" "element" "elements" "else" "end" "extent" "extents" "external-symbol" "external-symbols" "finally" "frames" "from" "hash-key" "hash-keys" "hash-value" "hash-values" "if" "in" "in-ref" "initially" "interval" "intervals" "key-binding" "key-bindings" "key-code" "key-codes" "key-seq" "key-seqs" "maximize" "minimize" "named" "nconc" "nconcing" "never" "of" "of-ref" "on" "overlay" "overlays" "present-symbol" "present-symbols" "property" "repeat" "return" "screen" "screens" "sum" "symbol" "symbols" "the" "then" "thereis" "to" "unless" "until" "upfrom" "upto" "using" "vconcat" "when" "while" "windows"))
+                nil [18704 19686])
+            ("lisp-extra-font-lock-loop-keywords-with-var" variable
+               (:documentation "List of `cl-loop' named variable binding parameters."
+                :default-value '("for" "index" "into" "with"))
+                nil [19688 19990])
+            ("lisp-extra-font-lock-match-loop-keywords" function
+               (:documentation "Match named keyword of `loop' and highlight variable arguments."
+                :arguments ("limit"))
+                nil [20237 21543])
+            ("lisp-extra-font-lock" package nil nil [21545 21576]))          
+      :file "lisp-extra-font-lock.el"
+      :pointmax 21617
+      :fsize 21616
+      :lastmodtime '(23413 49711 549887 923000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!lisp-extra-font-lock-20160930.1927!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

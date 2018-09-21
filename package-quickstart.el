@@ -278,10 +278,10 @@ Queries YCMD for completions, then calls callback with the results.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-20180621.50/yasnippet-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-20180916.2115/yasnippet-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-20180621.50/yasnippet-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-20180916.2115/yasnippet-autoloads.el") (car load-path))))
 
 
 
@@ -1959,10 +1959,10 @@ See `sesman-browser-mode' for more details.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180908.1925/cider-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180917.1746/cider-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180908.1925/cider-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180917.1746/cider-autoloads.el") (car load-path))))
 
 
 
@@ -2057,7 +2057,7 @@ Start a connection of any type interactively.
 
 (defalias 'cider-connect-sibling-clojurescript #'cider-connect-sibling-cljs)
 
-(eval-after-load 'clojure-mode '(progn (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c C-x") 'cider-start-map) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map) (add-hook 'clojure-mode-hook (lambda nil (setq-local sesman-system 'CIDER)))))
+(with-eval-after-load 'clojure-mode (define-key clojure-mode-map (kbd "C-c M-x") #'cider) (define-key clojure-mode-map (kbd "C-c M-j") #'cider-jack-in-clj) (define-key clojure-mode-map (kbd "C-c M-J") #'cider-jack-in-cljs) (define-key clojure-mode-map (kbd "C-c M-c") #'cider-connect-clj) (define-key clojure-mode-map (kbd "C-c M-C") #'cider-connect-cljs) (define-key clojure-mode-map (kbd "C-c C-x") 'cider-start-map) (define-key clojure-mode-map (kbd "C-c C-s") 'sesman-map) (require 'sesman) (sesman-install-menu clojure-mode-map) (add-hook 'clojure-mode-hook (lambda nil (setq-local sesman-system 'CIDER))))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cider" '("cider-")))
 
@@ -2381,7 +2381,7 @@ variable to nil to disable the mode line entirely.")
 
 (custom-autoload 'cider-mode-line "cider-mode" t)
 
-(eval-after-load 'clojure-mode '(easy-menu-define cider-clojure-mode-menu-open clojure-mode-map "Menu for Clojure mode.\n  This is displayed in `clojure-mode' buffers, if `cider-mode' is not active." `("CIDER" :visible (not cider-mode) ["Start a Clojure REPL" cider-jack-in :help "Starts an nREPL server (with Leiningen, Boot, or Gradle) and connects a REPL to it."] ["Connect to a Clojure REPL" cider-connect :help "Connects to a REPL that's already running."] ["Connect to a ClojureScript REPL" cider-connect-clojurescript :help "Connects to a ClojureScript REPL that's already running."] ["Start a Clojure REPL, and a ClojureScript REPL" cider-jack-in-cljs :help "Starts an nREPL server, connects a Clojure REPL to it, and then a ClojureScript REPL."] "--" ["View manual online" cider-view-manual])))
+(with-eval-after-load 'clojure-mode (easy-menu-define cider-clojure-mode-menu-open clojure-mode-map "Menu for Clojure mode.\n  This is displayed in `clojure-mode' buffers, if `cider-mode' is not active." `("CIDER" :visible (not cider-mode) ["Start a Clojure REPL" cider-jack-in-clj :help "Starts an nREPL server and connects a Clojure REPL to it."] ["Connect to a Clojure REPL" cider-connect-clj :help "Connects to a REPL that's already running."] ["Start a ClojureScript REPL" cider-jack-in-cljs :help "Starts an nREPL server and connects a ClojureScript REPL to it."] ["Connect to a ClojureScript REPL" cider-connect-cljs :help "Connects to a ClojureScript REPL that's already running."] ["Start a Clojure REPL, and a ClojureScript REPL" cider-jack-in-clj&cljs :help "Starts an nREPL server, connects a Clojure REPL to it, and then a ClojureScript REPL."] "--" ["View manual online" cider-view-manual])))
 
 (autoload 'cider-mode "cider-mode" "\
 Minor mode for REPL interaction from a Clojure buffer.
@@ -3156,10 +3156,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/syntactic-close-20180909.841/syntactic-close-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/syntactic-close-20180920.946/syntactic-close-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/syntactic-close-20180909.841/syntactic-close-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/syntactic-close-20180920.946/syntactic-close-autoloads.el") (car load-path))))
 
 
 
@@ -3261,10 +3261,10 @@ Rename symbol at point on all its occurrences.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180911.1701/ivy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180917.2237/ivy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180911.1701/ivy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180917.2237/ivy-autoloads.el") (car load-path))))
 
 
 
@@ -4773,10 +4773,10 @@ behaviors.
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "slime-tests" '("arglist" "async-eval-debugging" "break" "comp" "def-slime-test" "dis" "end-of-file" "find-definition" "flow-control" "indentation" "inspector" "inter" "locally-bound-debugger-hook" "loop-interrupt-" "macroexpand" "narrowing" "read" "report-condition-with-circular-list" "sbcl-world-lock" "sexp-at-point.1" "symbol-at-point." "traditional-recipe" "unwind-to-previous-sldb-level" "utf-8-source")))
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/company-20180913.805/company-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-20180913.2311/company-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-20180913.805/company-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-20180913.2311/company-autoloads.el") (car load-path))))
 
 
 
@@ -5580,10 +5580,10 @@ Default prefix is 'C-c s'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180911.540/projectile-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180921.442/projectile-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180911.540/projectile-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180921.442/projectile-autoloads.el") (car load-path))))
 
 
 
@@ -5605,10 +5605,10 @@ just return nil.
 (autoload 'projectile-invalidate-cache "projectile" "\
 Remove the current project's files from `projectile-projects-cache'.
 
-With a prefix argument ARG prompts for the name of the project whose cache
+With a prefix argument PROMPT prompts for the name of the project whose cache
 to invalidate.
 
-\(fn ARG)" t nil)
+\(fn PROMPT)" t nil)
 
 (autoload 'projectile-purge-file-from-cache "projectile" "\
 Purge FILE from the cache of the current project.
@@ -5688,7 +5688,7 @@ Other file extensions can be customized with the variable `projectile-other-file
 (autoload 'projectile-find-file-dwim "projectile" "\
 Jump to a project's files using completion based on context.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
 If point is on a filename, Projectile first tries to search for that
 file in project:
@@ -5709,12 +5709,12 @@ the content of that directory.  If it is executed on a partial filename like
 
 - If it finds nothing, display a list of all files in project for selecting.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-file-dwim-other-window "projectile" "\
 Jump to a project's files using completion based on context in other window.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
 If point is on a filename, Projectile first tries to search for that
 file in project:
@@ -5736,12 +5736,12 @@ is presented.
 
 - If it finds nothing, display a list of all files in project for selecting.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-file-dwim-other-frame "projectile" "\
 Jump to a project's files using completion based on context in other frame.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
 If point is on a filename, Projectile first tries to search for that
 file in project:
@@ -5763,55 +5763,55 @@ is presented.
 
 - If it finds nothing, display a list of all files in project for selecting.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-file "projectile" "\
 Jump to a project's file using completion.
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-file-other-window "projectile" "\
 Jump to a project's file using completion and show it in another window.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-file-other-frame "projectile" "\
 Jump to a project's file using completion and show it in another frame.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-dir "projectile" "\
 Jump to a project's directory using completion.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-dir-other-window "projectile" "\
 Jump to a project's directory in other window using completion.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-dir-other-frame "projectile" "\
 Jump to a project's directory in other window using completion.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-find-test-file "projectile" "\
 Jump to a project's test file using completion.
 
-With a prefix ARG invalidates the cache first.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
-\(fn &optional ARG)" t nil)
+\(fn &optional INVALIDATE-CACHE)" t nil)
 
 (autoload 'projectile-project-info "projectile" "\
 Display info for current project.
@@ -6058,9 +6058,9 @@ Remove the current project from the list of known projects.
 (autoload 'projectile-ibuffer "projectile" "\
 Open an IBuffer window showing all buffers in the current project.
 
-Let user choose another project when PREFIX is supplied.
+Let user choose another project when PROMPT-FOR-PROJECT is supplied.
 
-\(fn PREFIX)" t nil)
+\(fn PROMPT-FOR-PROJECT)" t nil)
 
 (autoload 'projectile-commander "projectile" "\
 Execute a Projectile command with a single letter.
@@ -6164,10 +6164,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20180911.1858/ghub-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20180914.802/ghub-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20180911.1858/ghub-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20180914.802/ghub-autoloads.el") (car load-path))))
 
 
 
@@ -6286,10 +6286,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-20180913.1743/magit-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-20180920.2138/magit-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-20180913.1743/magit-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-20180920.2138/magit-autoloads.el") (car load-path))))
 
 
 
@@ -8739,10 +8739,10 @@ Create a new BRANCH and check it out in a new worktree at PATH.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180913.1538/rustic-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rustic-20180921.1013/rustic-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180913.1538/rustic-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rustic-20180921.1013/rustic-autoloads.el") (car load-path))))
 
 
 
@@ -9154,10 +9154,10 @@ FUNCTION must return an explanation when the test fails and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180830.1618/racket-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180919.1252/racket-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180830.1618/racket-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180919.1252/racket-mode-autoloads.el") (car load-path))))
 
 
 
@@ -9250,7 +9250,7 @@ installing it does _not_ do the `raco setup` that is normally
 done for Racket packages.
 
 This command will do a `raco make` of racket-mode's .rkt files,
-creating bytecode files in a `compiled/` subdirectory. As a
+creating bytecode files in `compiled/` subdirectories. As a
 result, when a `racket-run' or `racket-repl' command must start
 the Racket process, it will start faster.
 
@@ -9295,10 +9295,6 @@ Commands that don't want the REPL to be displayed can instead use
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "racket-stepper" '("racket-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "racket-tests" '("racket-tests/")))
 
 
 
@@ -13961,14 +13957,14 @@ Use this together with the `option', `option-list' and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180911.1829/lsp-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180917.1549/lsp-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180911.1829/lsp-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180917.1549/lsp-mode-autoloads.el") (car load-path))))
 
 
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-common" '("lsp-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-common" '("lsp-" "when-lsp-workspace" "with-lsp-workspace")))
 
 
 
@@ -14073,10 +14069,10 @@ Face used for highlighting symbols being written to." :group 'lsp-faces)
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180913.833/lsp-ui-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180915.417/lsp-ui-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180913.833/lsp-ui-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180915.417/lsp-ui-autoloads.el") (car load-path))))
 
 
 
@@ -14509,10 +14505,10 @@ A major mode for viewing javap files.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/hydra-20180703.1502/hydra-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/hydra-20180918.1529/hydra-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/hydra-20180703.1502/hydra-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/hydra-20180918.1529/hydra-autoloads.el") (car load-path))))
 
 
 
@@ -14601,10 +14597,10 @@ result of `defhydra'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180913.921/counsel-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180920.1253/counsel-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180913.921/counsel-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180920.1253/counsel-autoloads.el") (car load-path))))
 
 
 
@@ -14914,10 +14910,12 @@ Text-mode emulation of looking and choosing from a menubar.
 
 (autoload 'counsel-yank-pop "counsel" "\
 Ivy replacement for `yank-pop'.
-ARG has the same meaning as in `yank-pop', but its default value
-can be controlled with `counsel-yank-pop-preselect-last', which
-see.  See also `counsel-yank-pop-filter' for how to filter
-candidates.
+With a plain prefix argument (\\[universal-argument]),
+temporarily toggle the value of `counsel-yank-pop-after-point'.
+Any other value of ARG has the same meaning as in `yank-pop', but
+`counsel-yank-pop-preselect-last' determines its default value.
+See also `counsel-yank-pop-filter' for how to filter candidates.
+
 Note: Duplicate elements of `kill-ring' are always deleted.
 
 \(fn &optional ARG)" t nil)
@@ -15473,10 +15471,10 @@ HOST is the host the process is running on, PORT is where it's listening.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/iedit-20180830.531/iedit-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/iedit-20180919.323/iedit-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/iedit-20180830.531/iedit-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/iedit-20180919.323/iedit-autoloads.el") (car load-path))))
 
 
 
@@ -15682,10 +15680,10 @@ See `hungry-delete-mode' for more information on Hungry-Delete mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/htmlize-20180412.1944/htmlize-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/htmlize-20180918.1948/htmlize-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/htmlize-20180412.1944/htmlize-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/htmlize-20180918.1948/htmlize-autoloads.el") (car load-path))))
 
 
 
@@ -16786,10 +16784,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/git-attr-20180204.815/git-attr-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/git-attr-20180919.2158/git-attr-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/git-attr-20180204.815/git-attr-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/git-attr-20180919.2158/git-attr-autoloads.el") (car load-path))))
 
 
 
@@ -17398,10 +17396,10 @@ Setup Flycheck clang-tidy.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180904.304/flycheck-clang-analyzer-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180917.1425/flycheck-clang-analyzer-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180904.304/flycheck-clang-analyzer-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-clang-analyzer-20180917.1425/flycheck-clang-analyzer-autoloads.el") (car load-path))))
 
 
 
@@ -20199,10 +20197,10 @@ for details.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/company-lsp-20180828.438/company-lsp-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-lsp-20180917.2244/company-lsp-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-lsp-20180828.438/company-lsp-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-lsp-20180917.2244/company-lsp-autoloads.el") (car load-path))))
 
 
 
@@ -20726,10 +20724,10 @@ The FN-NAME should be prefixed with the namespace.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/choice-program-20171004.1631/choice-program-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/choice-program-20180921.313/choice-program-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/choice-program-20171004.1631/choice-program-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/choice-program-20180921.313/choice-program-autoloads.el") (car load-path))))
 
 
 
@@ -21916,7 +21914,7 @@ Add `ac-source-capf' to `ac-sources' and enable `auto-complete' mode
   (info-initialize)
   (setq Info-directory-list
     (append
-      '("/home/lk/.emacs.d/elpa/magit-20180913.1743" "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037" "/home/lk/.emacs.d/elpa/ghub-20180911.1858" "/home/lk/.emacs.d/elpa/slime-20180903.2109" "/home/lk/.emacs.d/elpa/ivy-20180911.1701")
+      '("/home/lk/.emacs.d/elpa/magit-20180920.2138" "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037" "/home/lk/.emacs.d/elpa/ghub-20180914.802" "/home/lk/.emacs.d/elpa/slime-20180903.2109" "/home/lk/.emacs.d/elpa/ivy-20180917.2237")
       Info-directory-list)))
 
 ;; Local Variables:

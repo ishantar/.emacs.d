@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-157e9d0
+;; Object semanticdb-project-database-file-2937b3c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-157e9d0"
+(semanticdb-project-database-file "semanticdb-project-database-file-2937b3c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-157e8d0"
+    (semanticdb-table "semanticdb-table-2937b1c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -22,7 +22,7 @@
       :fsize 102
       :lastmodtime '(23366 42313 303765 266000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e8f0"
+    (semanticdb-table "semanticdb-table-293d864"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -125,7 +125,7 @@
       :fsize 3395
       :lastmodtime '(23379 6106 463891 934000)
       :unmatched-syntax '((thing 309 . 310) (thing 309 . 310) (thing 308 . 309) (thing 308 . 309) (thing 307 . 308) (thing 307 . 308) (thing 305 . 306) (thing 305 . 306) (thing 304 . 305) (thing 304 . 305) (thing 303 . 304) (thing 303 . 304) (thing 302 . 303) (thing 302 . 303) (thing 300 . 301) (thing 300 . 301) (thing 299 . 300) (thing 299 . 300) (thing 298 . 299) (thing 298 . 299) (thing 297 . 298) (thing 297 . 298) (thing 289 . 296) (thing 289 . 296)))
-    (semanticdb-table "semanticdb-table-157e910"
+    (semanticdb-table "semanticdb-table-293d884"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -177,7 +177,7 @@
       :fsize 6766
       :lastmodtime '(23378 31739 885307 453000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e930"
+    (semanticdb-table "semanticdb-table-293d8a4"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -198,13 +198,13 @@
                (:arguments 
                   ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [140 145]))                  
                 :type "int")
-                nil [130 501]))          
+                nil [130 502]))          
       :file "unsignarith.c"
       :pointmax 502
       :fsize 501
       :lastmodtime '(23397 29340 99729 278000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e950"
+    (semanticdb-table "semanticdb-table-295298c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -222,7 +222,7 @@
       :fsize 645
       :lastmodtime '(23397 42628 88456 838000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e970"
+    (semanticdb-table "semanticdb-table-29529ac"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -257,7 +257,7 @@
       :fsize 648
       :lastmodtime '(23412 24052 749260 100000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e990"
+    (semanticdb-table "semanticdb-table-29529cc"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -274,7 +274,7 @@
       :fsize 563
       :lastmodtime '(23412 36419 320771 138000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-157e9b0"
+    (semanticdb-table "semanticdb-table-252e89c"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -313,7 +313,25 @@
       :pointmax 221
       :fsize 182
       :lastmodtime '(23446 45836 766072 74000)
-      :unmatched-syntax '((thing 132 . 138) (thing 128 . 129) (thing 127 . 128) (thing 110 . 112))))
+      :unmatched-syntax '((thing 132 . 138) (thing 128 . 129) (thing 127 . 128) (thing 110 . 112)))
+    (semanticdb-table "semanticdb-table-252e8bc"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 21])
+            ("stddef.h" include (:system-flag t) nil [22 42])
+            ("stdint.h" include (:system-flag t) nil [43 63])
+            ("stdarg.h" include (:system-flag t) nil [64 84])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [96 101]))                  
+                :type "int")
+                nil [87 118]))          
+      :file "ptrdiff_enum.c"
+      :pointmax 277
+      :fsize 276
+      :lastmodtime '(23457 52175 917228 559000)
+      :unmatched-syntax nil)
+)
   :file "!home!lk!self!projects!lang_c!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

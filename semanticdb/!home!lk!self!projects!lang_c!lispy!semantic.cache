@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-1a05c24
+;; Object semanticdb-project-database-file-195e330
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-1a05c24"
+(semanticdb-project-database-file "semanticdb-project-database-file-195e330"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1a05c04"
+    (semanticdb-table "semanticdb-table-195e310"
       :major-mode c-mode
       :tags 
         '( ("stdlib.h" include (:system-flag t) nil [1 20])
@@ -17,36 +17,36 @@
                       :type "struct")
                       nil nil)
                 :type "typedef")
-                nil [103 132])
+                nil [103 134])
             ("obj_node" type
                (:members 
-                  ( ("a" variable (:type ("" type
-                         (:members 
-                            ( ("loc_h" variable
-                                 (:suffix ":12"
-                                  :type "unsigned short")
-                                  (reparse-symbol classsubparts) [165 275])
-                              ("size_h" variable
-                                 (:suffix ":2"
-                                  :type "unsigned short")
-                                  (reparse-symbol classsubparts) [165 275])
-                              ("meta" variable
-                                 (:suffix ":2"
-                                  :type "unsigned short")
-                                  (reparse-symbol classsubparts) [165 275]))                            
-                          :type "struct")
-                          nil nil)) (reparse-symbol classsubparts) [156 303]))                  
+                  ( ("obase_h" variable
+                       (:suffix ":12"
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [157 315])
+                    ("wlog2_h" variable
+                       (:suffix ":2"
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [157 315])
+                    ("nptr_t" variable
+                       (:suffix ":1"
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [157 315])
+                    ("live_t" variable
+                       (:suffix ":1"
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [157 315]))                  
                 :type "struct")
-                nil [134 307])
+                nil [135 325])
             ("main" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [331 336]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [345 350]))                  
                 :type "int")
-                nil [322 392]))          
+                nil [336 406]))          
       :file "lHAMT.c"
-      :pointmax 909
-      :fsize 908
-      :lastmodtime '(23450 65048 755831 43000)
+      :pointmax 923
+      :fsize 922
+      :lastmodtime '(23451 4823 178456 479000)
       :unmatched-syntax nil))
   :file "!home!lk!self!projects!lang_c!lispy!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,15 +1,63 @@
-;; Object semanticdb-project-database-file-251c748
+;; Object semanticdb-project-database-file-214c1fc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-251c748"
+(semanticdb-project-database-file "semanticdb-project-database-file-214c1fc"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-244b934"
+    (semanticdb-table "semanticdb-table-214c1dc"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "test-c-autoloads.el"
       :pointmax 351
       :fsize 670
       :lastmodtime '(23398 9375 134334 485000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17f2de4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("test-c" customgroup
+               (:documentation "Customization of Test-C."
+                :user-visible-flag t)
+                nil [2568 2666])
+            ("define-minor-mode" code nil nil [2668 2838])
+            ("test-c-default-compile-command" variable
+               (:documentation "Default compile command to use"
+                :default-value "gcc -std=c11 -Wall $src -o $exe")
+                nil [2840 2968])
+            ("test-c-default-run-command" variable
+               (:documentation "Default run command to use"
+                :default-value "$exe")
+                nil [2970 3063])
+            ("test-c-default-code" variable
+               (:documentation "Default source code to use"
+                :default-value "
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+#include <stdint.h>
+#include <unistd.h>
+
+int main(int argc, char **argv)
+{
+    printf(\"%d\\n\", 42);
+    return 0;
+}
+")
+                nil [3065 3325])
+            ("defvar-local" code nil nil [3327 3406])
+            ("test-c-set-var" function (:arguments ("key" "val")) nil [3408 3824])
+            ("test-c-get-var" function (:arguments ("key" "val")) nil [3826 4075])
+            ("test-c-get-vars" function nil nil [4077 4443])
+            ("test-c-interpolate" function (:arguments ("str" "env")) nil [4445 4736])
+            ("test-c" function
+               (:documentation "Compile and run a new test-c buffer (or reuse existing one)."
+                :user-visible-flag t
+                :arguments ("new-buffer"))
+                nil [4753 5779])
+            ("test-c" package nil nil [5781 5798]))          
+      :file "test-c.el"
+      :pointmax 5824
+      :fsize 5825
+      :lastmodtime '(23398 9375 10999 870000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!test-c-20180423.1720!semantic.cache"
   :semantic-tag-version "2.0"

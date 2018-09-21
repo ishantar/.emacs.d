@@ -88,7 +88,12 @@ Set `inline-docs-position' to `up' to fix issue that `inline-docs' does not show
 
 (defun inline-docs--string-display (string apply-face)
   "Show STRING contents below point line until next command with APPLY-FACE."
-  (let* ((border-line (make-string (window-body-width) inline-docs-border-symbol))
+  (let* ((border-line (make-string (- (window-max-chars-per-line)
+                                        (fringe-columns 'right)
+                                        (fringe-columns 'left)
+                                         display-line-numbers-width 
+                                         1)
+                                    inline-docs-border-symbol))
          (offset (make-string
                   (if (= (current-indentation) 0) ; fix (wrong-type-argument wholenump -1) when current indentation is 0 minus 1 will caused wholenump exception.
                       (current-indentation)

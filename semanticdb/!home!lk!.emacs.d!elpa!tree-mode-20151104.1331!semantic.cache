@@ -1,16 +1,198 @@
-;; Object semanticdb-project-database-file-1833c60
+;; Object semanticdb-project-database-file-1c0bbcc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-1833c60"
+(semanticdb-project-database-file "semanticdb-project-database-file-1c0bbcc"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-356b0c0"
+    (semanticdb-table "semanticdb-table-1c0bbac"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "tree-mode-autoloads.el"
       :pointmax 357
       :fsize 940
       :lastmodtime '(23398 9362 674204 999000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17df8d0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("tree-widget" include nil nil [1271 1293])
+            ("cl" include nil nil [1315 1328])
+            ("tree-mode-version" variable (:default-value "1.0") nil [1331 1363])
+            ("tree-mode-list" variable nil nil [1365 1392])
+            ("tree-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map widget-keymap) (define-key map " " 'scroll-up) (define-key map "" 'scroll-down) (define-key map "D" 'tree-mode-delete-tree) (define-key map "p" 'tree-mode-previous-node) (define-key map "n" 'tree-mode-next-node) (define-key map "j" 'tree-mode-next-sib) (define-key map "k" 'tree-mode-previous-sib) (define-key map "u" 'tree-mode-goto-parent) (define-key map "r" 'tree-mode-goto-root) (define-key map "g" 'tree-mode-reflesh) (define-key map "E" 'tree-mode-expand-level) (define-key map "e" 'tree-mode-toggle-expand) (define-key map "s" 'tree-mode-sort-by-tag) (define-key map "/" 'tree-mode-keep-match) (define-key map "!" 'tree-mode-collapse-other-except) (dotimes (i 10) (define-key map `[,(+ 48 i)] 'digit-argument)) map)) nil [1394 2398])
+            ("tree-mode-menu" variable nil nil [2400 2427])
+            ("unless" code nil nil [2428 3287])
+            ("tree-mode-insert-tree-hook" variable (:documentation "Hooks run after insert a tree into buffer. Each function is
+passed the new tree created") nil [3289 3420])
+            ("tree-mode-delete-tree-hook" variable (:documentation "Hooks run after delete a tree in the buffer. Each function is
+passed the new tree created") nil [3422 3555])
+            ("tree-mode-nearest-widget" function (:documentation "Return widget at point or next nearest widget.") nil [3557 3802])
+            ("tree-mode-scan-tree" function (:documentation "Find all tree widget in current buffer.") nil [3804 4312])
+            ("define-minor-mode" code nil nil [4330 4558])
+            ("define-derived-mode" code nil nil [4560 4802])
+            ("add-hook" code nil nil [4862 4947])
+            ("tree-mode-icon-create" function (:arguments ("icon")) nil [4948 5097])
+            ("tree-mode-insert" function
+               (:documentation "Insert tree to buffer.
+If BEFORE is non-nil and is a tree in current buffer, the new
+TREE will insert at position of BEFORE."
+                :arguments ("tree" "before"))
+                nil [5099 5555])
+            ("tree-mode-delete" function
+               (:documentation "Delete tree in the buffer."
+                :arguments ("tree"))
+                nil [5557 5749])
+            ("tree-mode-tree-buffer" function
+               (:documentation "Return the buffer where the TREE is inserted"
+                :arguments ("tree"))
+                nil [5751 5878])
+            ("tree-mode-kill-buffer" function
+               (:documentation "If no tree in current buffer, kill this buffer."
+                :arguments ("ignore"))
+                nil [5880 6050])
+            ("tree-mode-root-treep" function
+               (:documentation "Test if the TREE is root"
+                :arguments ("tree"))
+                nil [6080 6213])
+            ("tree-mode-tree-linep" function (:documentation "If there is tree-widget in current line, return t.") nil [6215 6402])
+            ("tree-mode-root-linep" function (:documentation "If the root tree node in current line, return t") nil [6404 6650])
+            ("tree-mode-icon-current-line" function (:documentation "Return the icon widget in current line") nil [6652 6804])
+            ("tree-mode-button-current-line" function (:documentation "Return the push button in current line.") nil [6806 7142])
+            ("tree-mode-parent-current-line" function (:documentation "If current line is root line, return the root tree, otherwise
+return the parent tree") nil [7144 7543])
+            ("tree-mode-widget-root" function
+               (:documentation "Return tree root of the widget WID."
+                :arguments ("wid"))
+                nil [7545 7720])
+            ("tree-mode-tree-ap" function
+               (:documentation "Return the root tree at point"
+                :arguments ("pos"))
+                nil [7722 7925])
+            ("tree-mode-opened-tree" function
+               (:documentation "Find all opened tree.
+Return the tag list with the same depth."
+                :arguments ("tree"))
+                nil [7933 8362])
+            ("tree-mode-open-tree" function
+               (:documentation "Open tree using tag list given by `tree-mode-opened-tree'."
+                :arguments ("tree" "path"))
+                nil [8364 8954])
+            ("tree-mode-reflesh-tree" function
+               (:documentation "Redraw TREE.
+If tree has attribute :dynargs, generate new :args from that function.
+Otherwise use :old-args which saved by `tree-mode-backup-args'."
+                :arguments ("tree"))
+                nil [8956 9448])
+            ("tree-mode-reflesh-parent" function
+               (:documentation "Put this function to :notify property of tree-widget node."
+                :arguments ("widget" "ignore"))
+                nil [9450 9622])
+            ("tree-mode-next-node" function
+               (:documentation "Move to next node."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [9649 9754])
+            ("tree-mode-previous-node" function (:arguments ("arg")) nil [9756 9845])
+            ("tree-mode-next-sib" function
+               (:documentation "Move to next sibling node."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [9847 10889])
+            ("tree-mode-previous-sib" function
+               (:documentation "Move to previous sibling node."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10891 11013])
+            ("tree-mode-goto-root" function
+               (:documentation "Move to root node"
+                :user-visible-flag t)
+                nil [11015 11205])
+            ("tree-mode-goto-parent" function
+               (:documentation "Move to parent node."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [11207 11671])
+            ("tree-mode-find-node" function
+               (:documentation "Find node by path.
+Return a cons cell (NODE . REST). Check the rest to find if the node
+is node of the full path. 
+PATH is a list of node tag to search from root.
+Note if the tree is not opened, It will open some node when need.
+`set-buffer' to tree buffer before call this function."
+                :arguments ("tree" "path"))
+                nil [11673 12963])
+            ("tree-mode-collapse-other-except" function
+               (:documentation "Collapse other trees. If the tree at point is contract, expand it."
+                :user-visible-flag t)
+                nil [12997 13683])
+            ("tree-mode-collapse-children" function
+               (:documentation "Collapse child node"
+                :arguments ("tree"))
+                nil [13685 13895])
+            ("tree-mode-expand-children" function
+               (:documentation "Expand child node"
+                :arguments ("tree"))
+                nil [13897 14156])
+            ("tree-mode-toggle-expand-node" function
+               (:documentation "Put it to :notify of tree widget node."
+                :arguments ("ignore"))
+                nil [14158 14280])
+            ("tree-mode-toggle-expand" function (:arguments ("arg")) nil [14282 14772])
+            ("tree-mode-expand-level" function
+               (:documentation "Expand tree to LEVEL. With prefix argument 0 or negative, will
+expand all leaves of the tree."
+                :user-visible-flag t
+                :arguments ("level"))
+                nil [14774 15149])
+            ("tree-mode-expand-level-1" function (:arguments ("tree" "level")) nil [15151 15492])
+            ("tree-mode-node-tag" function
+               (:documentation "Return tag of push-button or tree-widget"
+                :arguments ("node"))
+                nil [15500 15656])
+            ("tree-mode-backup-args" function
+               (:documentation "Save :args of tree-widget if need."
+                :arguments ("widget"))
+                nil [15691 16038])
+            ("tree-mode-filter-children" function
+               (:documentation "Remove children nodes when call FILTER with the node return true."
+                :arguments ("widget" "filter"))
+                nil [16040 16485])
+            ("tree-mode-sort-by-nchild" function
+               (:documentation "Sort node by which node has children"
+                :arguments ("wid1" "wid2"))
+                nil [16487 16602])
+            ("tree-mode-sort-children" function
+               (:documentation "Sort children nodes by SORTER."
+                :arguments ("widget" "sorter"))
+                nil [16604 16867])
+            ("tree-mode-sort-by-tag" function
+               (:documentation "Sort children node by tag."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [16869 17361])
+            ("tree-mode-delete-match" function
+               (:documentation "Remove node which tag match REGEXP."
+                :user-visible-flag t
+                :arguments ("regexp"))
+                nil [17363 17711])
+            ("tree-mode-keep-match" function
+               (:documentation "Keep node which tag match REGEXP"
+                :user-visible-flag t
+                :arguments ("regexp"))
+                nil [17713 18048])
+            ("tree-mode-reflesh" function
+               (:documentation "Reflesh parent tree."
+                :user-visible-flag t)
+                nil [18050 18256])
+            ("tree-mode-delete-tree" function
+               (:documentation "Delete a tree from buffer."
+                :user-visible-flag t)
+                nil [18258 18499])
+            ("tree-mode" package nil nil [18507 18527]))          
+      :file "tree-mode.el"
+      :pointmax 18555
+      :fsize 18554
+      :lastmodtime '(23398 9362 537536 911000)
+      :unmatched-syntax '((close-paren 1328 . 1329) (symbol 1295 . 1312) (open-paren 1294 . 1295))))
   :file "!home!lk!.emacs.d!elpa!tree-mode-20151104.1331!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,16 +1,296 @@
-;; Object semanticdb-project-database-file-32a897c
+;; Object semanticdb-project-database-file-22127c8
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-32a897c"
+(semanticdb-project-database-file "semanticdb-project-database-file-22127c8"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-32a8988"
+    (semanticdb-table "semanticdb-table-23fd240"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "git-commit-autoloads.el"
       :pointmax 359
       :fsize 1827
       :lastmodtime '(23450 13072 278727 446000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2447e14"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("dash" include nil nil [5152 5167])
+            ("log-edit" include nil nil [5168 5187])
+            ("magit-git" include nil nil [5188 5214])
+            ("magit-utils" include nil nil [5215 5243])
+            ("ring" include nil nil [5244 5259])
+            ("server" include nil nil [5260 5277])
+            ("with-editor" include nil nil [5278 5300])
+            ("recentf" include nil nil [5321 5339])
+            ("diff-default-read-only" variable nil nil [5361 5392])
+            ("flyspell-generic-check-word-predicate" variable nil nil [5393 5439])
+            ("font-lock-beg" variable nil nil [5440 5462])
+            ("font-lock-end" variable nil nil [5463 5485])
+            ("declare-function" code nil nil [5487 5555])
+            ("declare-function" code nil nil [5556 5619])
+            ("declare-function" code nil nil [5620 5727])
+            ("git-commit" customgroup
+               (:documentation "Edit Git commit messages."
+                :user-visible-flag t)
+                nil [5757 5906])
+            ("define-minor-mode" code nil nil [5923 6653])
+            ("git-commit-major-mode" variable
+               (:documentation "Major mode used to edit Git commit messages.
+The major mode configured here is turned on by the minor mode
+`git-commit-mode'."
+                :default-value 'text-mode)
+                nil [6655 6940])
+            ("git-commit-setup-hook" variable
+               (:documentation "Hook run at the end of `git-commit-setup'."
+                :default-value '(git-commit-save-message git-commit-setup-changelog-support git-commit-turn-on-auto-fill git-commit-propertize-diff with-editor-usage-message))
+                nil [6942 7559])
+            ("git-commit-finish-query-functions" variable
+               (:documentation "List of functions called to query before performing commit.
+
+The commit message buffer is current while the functions are
+called.  If any of them returns nil, then the commit is not
+performed and the buffer is not killed.  The user should then
+fix the issue and try again.
+
+The functions are called with one argument.  If it is non-nil,
+then that indicates that the user used a prefix argument to
+force finishing the session despite issues.  Functions should
+usually honor this wish and return non-nil."
+                :default-value '(git-commit-check-style-conventions))
+                nil [7561 8237])
+            ("git-commit-style-convention-checks" variable
+               (:documentation "List of checks performed by `git-commit-check-style-conventions'.
+Valid members are `non-empty-second-line' and `overlong-summary-line'.
+That function is a member of `git-commit-finish-query-functions'."
+                :default-value '(non-empty-second-line))
+                nil [8239 8655])
+            ("git-commit-summary-max-length" variable
+               (:documentation "Column beyond which characters in the summary lines are highlighted.
+
+The highlighting indicates that the summary is getting too long
+by some standards.  It does in no way imply that going over the
+limit a few characters or in some cases even many characters is
+anything that deserves shaming.  It's just a friendly reminder
+that if you can make the summary shorter, then you might want
+to consider doing so."
+                :default-value 68)
+                nil [8657 9168])
+            ("git-commit-fill-column" variable (:documentation "Override `fill-column' in commit message buffers.
+
+If this is non-nil, then it should be an integer.  If that is the
+case and the buffer-local value of `fill-column' is not already
+set by the time `git-commit-turn-on-auto-fill' is called as a
+member of `git-commit-setup-hook', then that function sets the
+buffer-local value of `fill-column' to the value of this option.
+
+This option exists mostly for historic reasons.  If you are not
+already using it, then you probably shouldn't start doing so.") nil [9170 9829])
+            ("make-obsolete-variable" code nil nil [9831 9936])
+            ("git-commit-known-pseudo-headers" variable
+               (:documentation "A list of Git pseudo headers to be highlighted."
+                :default-value '("Signed-off-by" "Acked-by" "Modified-by" "Cc" "Suggested-by" "Reported-by" "Tested-by" "Reviewed-by"))
+                nil [9938 10252])
+            ("git-commit-faces" customgroup
+               (:documentation "Faces used for highlighting Git commit messages."
+                :user-visible-flag t)
+                nil [10266 10411])
+            ("git-commit-summary" variable
+               (:documentation "Face used for the summary in commit messages."
+                :default-value '((t :inherit font-lock-type-face))
+                :type "face")
+                nil [10413 10556])
+            ("git-commit-overlong-summary" variable
+               (:documentation "Face used for the tail of overlong commit message summaries."
+                :default-value '((t :inherit font-lock-warning-face))
+                :type "face")
+                nil [10558 10728])
+            ("git-commit-nonempty-second-line" variable
+               (:documentation "Face used for non-whitespace on the second line of commit messages."
+                :default-value '((t :inherit font-lock-warning-face))
+                :type "face")
+                nil [10730 10911])
+            ("git-commit-note" variable
+               (:documentation "Face used for notes in commit messages."
+                :default-value '((t :inherit font-lock-string-face))
+                :type "face")
+                nil [10913 11049])
+            ("git-commit-pseudo-header" variable
+               (:documentation "Face used for pseudo headers in commit messages."
+                :default-value '((t :inherit font-lock-string-face))
+                :type "face")
+                nil [11051 11205])
+            ("git-commit-known-pseudo-header" variable
+               (:documentation "Face used for the keywords of known pseudo headers in commit messages."
+                :default-value '((t :inherit font-lock-keyword-face))
+                :type "face")
+                nil [11207 11390])
+            ("git-commit-comment-branch-local" variable
+               (:documentation "Face used for names of local branches in commit message comments."
+                :default-value (if (featurep 'magit) '((t :inherit magit-branch-local)) '((t :inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [11392 11645])
+            ("define-obsolete-face-alias" code nil nil [11647 11757])
+            ("git-commit-comment-branch-remote" variable
+               (:documentation "Face used for names of remote branches in commit message comments.
+This is only used if Magit is available."
+                :default-value (if (featurep 'magit) '((t :inherit magit-branch-remote)) '((t :inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [11759 12056])
+            ("git-commit-comment-detached" variable
+               (:documentation "Face used for detached `HEAD' in commit message comments."
+                :default-value '((t :inherit git-commit-comment-branch-local))
+                :type "face")
+                nil [12058 12234])
+            ("git-commit-comment-heading" variable
+               (:documentation "Face used for headings in commit message comments."
+                :default-value '((t :inherit git-commit-known-pseudo-header))
+                :type "face")
+                nil [12236 12403])
+            ("git-commit-comment-file" variable
+               (:documentation "Face used for file names in commit message comments."
+                :default-value '((t :inherit git-commit-pseudo-header))
+                :type "face")
+                nil [12405 12565])
+            ("git-commit-comment-action" variable
+               (:documentation "Face used for actions in commit message comments."
+                :default-value '((t :inherit bold))
+                :type "face")
+                nil [12567 12706])
+            ("git-commit-mode-map" variable
+               (:documentation "Key map used by `git-commit-mode'."
+                :default-value (let ((map (make-sparse-keymap))) (cond ((featurep 'jkl) (define-key map (kbd "C-M-i") 'git-commit-prev-message) (define-key map (kbd "C-M-k") 'git-commit-next-message)) (t (define-key map (kbd "M-p") 'git-commit-prev-message) (define-key map (kbd "M-n") 'git-commit-next-message) (define-key map (kbd "C-c C-x a") 'git-commit-ack) (define-key map (kbd "C-c C-x i") 'git-commit-suggested) (define-key map (kbd "C-c C-x m") 'git-commit-modified) (define-key map (kbd "C-c C-x o") 'git-commit-cc) (define-key map (kbd "C-c C-x p") 'git-commit-reported) (define-key map (kbd "C-c C-x r") 'git-commit-review) (define-key map (kbd "C-c C-x s") 'git-commit-signoff) (define-key map (kbd "C-c C-x t") 'git-commit-test))) (define-key map (kbd "C-c C-a") 'git-commit-ack) (define-key map (kbd "C-c C-i") 'git-commit-suggested) (define-key map (kbd "C-c C-m") 'git-commit-modified) (define-key map (kbd "C-c C-o") 'git-commit-cc) (define-key map (kbd "C-c C-p") 'git-commit-reported) (define-key map (kbd "C-c C-r") 'git-commit-review) (define-key map (kbd "C-c C-s") 'git-commit-signoff) (define-key map (kbd "C-c C-t") 'git-commit-test) (define-key map (kbd "C-c M-s") 'git-commit-save-message) map))
+                nil [12720 14213])
+            ("easymenu" include nil nil [14225 14244])
+            ("easy-menu-define" code nil nil [14245 15226])
+            ("git-commit-filename-regexp" variable
+               (:constant-flag t
+                :default-value "/\\(\\(\\(COMMIT\\|NOTES\\|PULLREQ\\|TAG\\)_EDIT\\|MERGE_\\|\\)MSG\\|\\(BRANCH\\|EDIT\\)_DESCRIPTION\\)\\'")
+                nil [15254 15404])
+            ("eval-after-load" code nil nil [15406 15493])
+            ("add-to-list" code nil nil [15495 15574])
+            ("git-commit-setup-font-lock-in-buffer" function nil nil [15576 15752])
+            ("add-hook" code nil nil [15754 15832])
+            ("git-commit-setup-check-buffer" function nil nil [15849 16008])
+            ("git-commit-mode" variable nil nil [16010 16034])
+            ("git-commit-file-not-found" function nil nil [16036 17137])
+            ("when" code nil nil [17139 17246])
+            ("git-commit-setup" function nil nil [17263 19669])
+            ("define-minor-mode" code nil nil [19671 19912])
+            ("put" code nil nil [19914 19955])
+            ("git-commit-setup-changelog-support" function (:documentation "Treat ChangeLog entries as paragraphs.") nil [19957 20114])
+            ("git-commit-turn-on-auto-fill" function (:documentation "Unconditionally turn on Auto Fill mode.
+If `git-commit-fill-column' is non-nil, and `fill-column'
+doesn't already have a buffer-local value, then set that
+to `git-commit-fill-column'.") nil [20116 20561])
+            ("git-commit-turn-on-flyspell" function (:documentation "Unconditionally turn on Flyspell mode.
+Also prevent comments from being checked and
+finally check current non-comment text.") nil [20563 21217])
+            ("git-commit-flyspell-verify" function nil nil [21219 21340])
+            ("git-commit-finish-query-functions" function (:arguments ("force")) nil [21342 21472])
+            ("git-commit-check-style-conventions" function
+               (:documentation "Check for violations of certain basic style conventions.
+
+For each violation ask the user if she wants to proceed anyway.
+Option `git-commit-check-style-conventions' controls which
+conventions are checked."
+                :arguments ("force"))
+                nil [21474 22467])
+            ("git-commit-cancel-message" function nil nil [22469 22686])
+            ("git-commit-prev-message" function
+               (:documentation "Cycle backward through message history, after saving current message.
+With a numeric prefix ARG, go back ARG comments."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [22701 23342])
+            ("git-commit-next-message" function
+               (:documentation "Cycle forward through message history, after saving current message.
+With a numeric prefix ARG, go forward ARG comments."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [23344 23563])
+            ("git-commit-save-message" function
+               (:documentation "Save current message to `log-edit-comment-ring'."
+                :user-visible-flag t)
+                nil [23565 23808])
+            ("git-commit-buffer-message" function nil nil [23810 24583])
+            ("git-commit-ack" function
+               (:documentation "Insert a header acknowledging that you have looked at the commit."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [24598 24792])
+            ("git-commit-modified" function
+               (:documentation "Insert a header to signal that you have modified the commit."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [24794 24991])
+            ("git-commit-review" function
+               (:documentation "Insert a header acknowledging that you have reviewed the commit."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [24993 25192])
+            ("git-commit-signoff" function
+               (:documentation "Insert a header to sign off the commit."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [25194 25371])
+            ("git-commit-test" function
+               (:documentation "Insert a header acknowledging that you have tested the commit."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [25373 25566])
+            ("git-commit-cc" function
+               (:documentation "Insert a header mentioning someone who might be interested."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [25568 25749])
+            ("git-commit-reported" function
+               (:documentation "Insert a header mentioning the person who reported the issue."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [25751 25949])
+            ("git-commit-suggested" function
+               (:documentation "Insert a header mentioning the person who suggested the change."
+                :user-visible-flag t
+                :arguments ("name" "mail"))
+                nil [25951 26153])
+            ("git-commit-self-ident" function nil nil [26155 26636])
+            ("git-commit-read-ident" function nil nil [26638 26734])
+            ("git-commit-insert-header" function (:arguments ("header" "name" "email")) nil [26736 27340])
+            ("git-commit-summary-regexp" function nil nil [27357 27691])
+            ("git-commit-extend-region-summary-line" function (:documentation "Identify the multiline summary-regexp construct.
+Added to `font-lock-extend-region-functions'.") nil [27693 28313])
+            ("defvar-local" code nil nil [28315 28364])
+            ("git-commit-comment-headings" variable
+               (:constant-flag t
+                :default-value '("Changes to be committed:" "Untracked files:" "Changed but not updated:" "Changes not staged for commit:" "Unmerged paths:" "Author:" "Date:"))
+                nil [28366 28575])
+            ("git-commit-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value '((eval \` ((\, (format "^\\(%s:\\)\\( .*\\)" (regexp-opt git-commit-known-pseudo-headers))) (1 'git-commit-known-pseudo-header) (2 'git-commit-pseudo-header))) ("^[-a-zA-Z]+: [^<]+? <[^>]+>" (0 'git-commit-pseudo-header)) (eval \` ((\, (git-commit-summary-regexp)) (1 'git-commit-summary))) ("\\[.+?\\]" (0 'git-commit-note t)) (eval \` ((\, (git-commit-summary-regexp)) (2 'git-commit-overlong-summary t t) (3 'git-commit-nonempty-second-line t t)))))
+                nil [28577 29312])
+            ("git-commit-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value `(,@git-commit-font-lock-keywords-1 (eval \` (,(format "^%s.*" comment-start) (0 'font-lock-comment-face))) (eval \` (,(format "^%s On branch \\(.*\\)" comment-start) (1 'git-commit-comment-branch-local t))) (eval \` (,(format "^%s \\(HEAD\\) detached at" comment-start) (1 'git-commit-comment-detached t))) (eval \` (,(format "^%s %s" comment-start (regexp-opt git-commit-comment-headings t)) (1 'git-commit-comment-heading t))) (eval \` (,(format "^%s	\\(?:\\([^:
+]+\\):\\s-+\\)?\\(.*\\)" comment-start) (1 'git-commit-comment-action t t) (2 'git-commit-comment-file t)))))
+                nil [29314 30078])
+            ("git-commit-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value `(,@git-commit-font-lock-keywords-2 (eval \` (,(format "^%s Your branch is \\(?:ahead\\|behind\\) of '%s' by \\([0-9]*\\)" comment-start git-commit--branch-name-regexp) (1 'git-commit-comment-branch-local t) (2 'git-commit-comment-branch-remote t) (3 'bold t))) (eval \` (,(format "^%s Your branch \\(?:is up-to-date with\\|and\\) '%s'" comment-start git-commit--branch-name-regexp) (1 'git-commit-comment-branch-local t) (2 'git-commit-comment-branch-remote t))) (eval \` (,(format "^%s and have \\([0-9]*\\) and \\([0-9]*\\) commits each" comment-start) (1 'bold t) (2 'bold t)))))
+                nil [30080 31179])
+            ("git-commit-font-lock-keywords" variable
+               (:documentation "Font-Lock keywords for Git-Commit mode."
+                :default-value git-commit-font-lock-keywords-2)
+                nil [31181 31295])
+            ("git-commit-setup-font-lock" function nil nil [31297 33440])
+            ("git-commit-propertize-diff" function nil nil [33442 34616])
+            ("define-derived-mode" code nil nil [34639 35081])
+            ("git-commit-elisp-text-mode-keywords" variable (:default-value `((,(concat "[`‘]\\(\\(?:\\sw\\|\\s_\\|\\\\.\\)" lisp-mode-symbol-regexp "\\)['’]") (1 font-lock-constant-face prepend)) ("\"[^\"]*\"" (0 font-lock-string-face prepend)))) nil [35083 35323])
+            ("git-commit" package nil nil [35331 35352]))          
+      :file "git-commit.el"
+      :pointmax 35381
+      :fsize 35384
+      :lastmodtime '(23450 13072 95394 165000)
+      :unmatched-syntax '((close-paren 5339 . 5340) (symbol 5303 . 5320) (open-paren 5302 . 5303))))
   :file "!home!lk!.emacs.d!elpa!git-commit-20180912.1012!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -40,7 +40,11 @@ CMake option to get this output)."
   (let ((config_file_location (flycheck-locate-config-file flycheck-clang-tidy checker)))
     (if config_file_location
         (file-name-directory config_file_location)
-      (message "Unable to find config file for %s, you need to create .clang-tidy file in your project root" checker))))
+;;      (let ((irony-server-source (concat (file-name-directory (find-library-name "irony.el")) "server/")))
+;;        (if (file-exists-p (file-truename (concat irony-server-source ".clang-tidy")))
+;;            irony-server-source
+          (message "Unable to find config file for %s, you need to create .clang-tidy file in your project root" checker))))
+;;))
 
 (defun flycheck-clang-tidy-compile-command (file)
   "Fetch compile command for FILE."

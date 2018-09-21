@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file-190ccc8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-190ccc8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-f8549c"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("request-deferred" include nil nil [576 603])
+            ("json" include nil nil [604 619])
+            ("deferred" include nil nil [620 639])
+            ("clojars-search-endpoint" variable
+               (:documentation "Clojars search endpoint"
+                :constant-flag t
+                :default-value "https://clojars.org/search")
+                nil [641 732])
+            ("clojars-jar-name" function (:arguments ("result")) nil [734 972])
+            ("clojars-format-dependency" function (:arguments ("result")) nil [974 1255])
+            ("clojars-jar-result" function (:arguments ("result")) nil [1257 1362])
+            ("clojars" function
+               (:documentation "Finds a Clojure library from clojars.org, and copies selected
+   result to kill ring"
+                :user-visible-flag t
+                :arguments ("query"))
+                nil [1379 2141])
+            ("clojars" package nil nil [2143 2161]))          
+      :file "clojars.el"
+      :pointmax 2188
+      :fsize 2187
+      :lastmodtime '(23426 533 268176 853000)
+      :unmatched-syntax nil))
+  :file "!home!lk!.emacs.d!elpa!clojars-20180825.1951!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

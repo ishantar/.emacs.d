@@ -1,15 +1,102 @@
-;; Object semanticdb-project-database-file-2510d38
+;; Object semanticdb-project-database-file-17cd220
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-2510d38"
+(semanticdb-project-database-file "semanticdb-project-database-file-17cd220"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1d5f214"
+    (semanticdb-table "semanticdb-table-16c943c"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "hungry-delete-autoloads.el"
       :pointmax 365
       :fsize 3513
       :lastmodtime '(23398 9814 112195 155000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17e05a4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("hungry-delete-mode-map" variable
+               (:documentation "Keymap for hungry-delete-minor-mode."
+                :default-value (make-keymap))
+                nil [1521 1607])
+            ("if" code nil nil [1609 1735])
+            ("if" code nil nil [1737 1847])
+            ("define-key" code nil nil [1849 1937])
+            ("define-key" code nil nil [1938 2035])
+            ("define-key" code nil nil [2036 2124])
+            ("define-key" code nil nil [2125 2217])
+            ("hungry-delete-chars-to-skip" variable
+               (:documentation "String of characters to skip."
+                :default-value " 	
+")
+                nil [2219 2303])
+            ("hungry-delete-except-modes" variable
+               (:documentation "List of modes hungry-delete will not be turned on in."
+                :default-value '(help-mode minibuffer-inactive-mode calc-mode))
+                nil [2305 2446])
+            ("hungry-delete-skip-ws-forward" function (:documentation "Skip over any whitespace following point.
+This function skips over horizontal and vertical whitespace and
+line continuations.") nil [2448 2885])
+            ("hungry-delete-skip-ws-backward" function (:documentation "Skip over any whitespace preceding point.
+This function skips over horizontal and vertical whitespace and
+line continuations.") nil [2887 3441])
+            ("hungry-delete-forward" function
+               (:documentation "Delete the following character, or all of the following
+whitespace, up to the next non-whitespace character.  See
+\\[c-hungry-delete-forward].
+
+hungry-delete-backward tries to mimic delete-backward-char's
+behavior in several ways: if the region is activate, it deletes
+the text in the region.  If a prefix argument is given, delete
+the following N characters (previous if N is negative).
+
+Optional second arg KILLFLAG non-nil means to kill (save in kill
+ring) instead of delete.  Interactively, N is the prefix arg, and
+KILLFLAG is set if N was explicitly specified."
+                :user-visible-flag t
+                :arguments ("n" "killflag"))
+                nil [3458 4647])
+            ("hungry-delete-backward" function
+               (:documentation "Delete the preceding character or all preceding whitespace
+back to the previous non-whitespace character.  See also
+\\[c-hungry-delete-backward].
+
+hungry-delete-backward tries to mimic delete-backward-char's
+behavior in several ways: if the region is activate, it deletes
+the text in the region.  If a prefix argument is given, delete
+the previous N characters (following if N is negative).
+
+In Overwrite mode, single character backward deletion may replace
+tabs with spaces so as to back over columns, unless point is at
+the end of the line.
+
+Optional second arg KILLFLAG, if non-nil, means to kill (save in
+kill ring) instead of delete.  Interactively, N is the prefix
+arg, and KILLFLAG is set if N is explicitly specified."
+                :user-visible-flag t
+                :arguments ("n" "killflag"))
+                nil [4667 6505])
+            ("hungry-delete-impl" function
+               (:documentation "Implementation of hungry-delete functionality.
+FN is the function to call to go to the end of whitespace (will
+be either hungry-delete-skip-ws-forward or
+hungry-delete-skip-ws-backwards by default).  N is the number of
+characters to delete if there is no whitespace (will be either 1
+or -1 by default)."
+                :arguments ("fn" "n"))
+                nil [6507 7016])
+            ("hungry-delete-forward-impl" function (:documentation "Do the dirty work of calling hungry-delete-forward.") nil [7018 7167])
+            ("hungry-delete-backward-impl" function (:documentation "Do the dirty work of calling hungry-delete-backward.") nil [7169 7322])
+            ("define-minor-mode" code nil nil [7339 7571])
+            ("turn-on-hungry-delete-mode" function
+               (:documentation "Turn on hungry delete mode if the buffer is appropriate."
+                :user-visible-flag t)
+                nil [7588 7787])
+            ("define-globalized-minor-mode" code nil nil [7804 7906])
+            ("hungry-delete" package nil nil [7908 7932]))          
+      :file "hungry-delete.el"
+      :pointmax 7964
+      :fsize 7963
+      :lastmodtime '(23398 9813 968860 354000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!hungry-delete-20170412.102!semantic.cache"
   :semantic-tag-version "2.0"

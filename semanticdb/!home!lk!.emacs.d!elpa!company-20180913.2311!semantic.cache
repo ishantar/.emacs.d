@@ -1,0 +1,876 @@
+;; Object semanticdb-project-database-file-13faa60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13faa60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-142189c"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [2478 2495])
+            ("newcomment" include nil nil [2496 2517])
+            ("pcase" include nil nil [2518 2534])
+            ("unless" code nil nil [2601 3070])
+            ("company" customgroup
+               (:documentation "Extensible inline text completion mechanism"
+                :user-visible-flag t)
+                nil [3073 3201])
+            ("company-tooltip" variable
+               (:documentation "Face used for the tooltip."
+                :default-value '((default :foreground "black") (((class color) (min-colors 88) (background light)) (:background "cornsilk")) (((class color) (min-colors 88) (background dark)) (:background "yellow")))
+                :type "face")
+                nil [3203 3465])
+            ("company-tooltip-selection" variable
+               (:documentation "Face used for the selection in the tooltip."
+                :default-value '((((class color) (min-colors 88) (background light)) (:background "light blue")) (((class color) (min-colors 88) (background dark)) (:background "orange1")) (t (:background "green")))
+                :type "face")
+                nil [3467 3755])
+            ("company-tooltip-search" variable
+               (:documentation "Face used for the search string in the tooltip."
+                :default-value '((default :inherit highlight))
+                :type "face")
+                nil [3757 3875])
+            ("company-tooltip-search-selection" variable
+               (:documentation "Face used for the search string inside the selection in the tooltip."
+                :default-value '((default :inherit highlight))
+                :type "face")
+                nil [3877 4026])
+            ("company-tooltip-mouse" variable
+               (:documentation "Face used for the tooltip item under the mouse."
+                :default-value '((default :inherit highlight))
+                :type "face")
+                nil [4028 4145])
+            ("company-tooltip-common" variable
+               (:documentation "Face used for the common completion in the tooltip."
+                :default-value '((((background light)) :foreground "darkred") (((background dark)) :foreground "red"))
+                :type "face")
+                nil [4147 4339])
+            ("company-tooltip-common-selection" variable
+               (:documentation "Face used for the selected common completion in the tooltip."
+                :default-value '((default :inherit company-tooltip-common))
+                :type "face")
+                nil [4341 4495])
+            ("company-tooltip-annotation" variable
+               (:documentation "Face used for the completion annotation in the tooltip."
+                :default-value '((((background light)) :foreground "firebrick4") (((background dark)) :foreground "red4"))
+                :type "face")
+                nil [4497 4701])
+            ("company-tooltip-annotation-selection" variable
+               (:documentation "Face used for the selected completion annotation in the tooltip."
+                :default-value '((default :inherit company-tooltip-annotation))
+                :type "face")
+                nil [4703 4869])
+            ("company-scrollbar-fg" variable
+               (:documentation "Face used for the tooltip scrollbar thumb."
+                :default-value '((((background light)) :background "darkred") (((background dark)) :background "red"))
+                :type "face")
+                nil [4871 5052])
+            ("company-scrollbar-bg" variable
+               (:documentation "Face used for the tooltip scrollbar background."
+                :default-value '((((background light)) :background "wheat") (((background dark)) :background "gold"))
+                :type "face")
+                nil [5054 5239])
+            ("company-preview" variable
+               (:documentation "Face used for the completion preview."
+                :default-value '((((background light)) :inherit (company-tooltip-selection company-tooltip)) (((background dark)) :background "blue4" :foreground "wheat"))
+                :type "face")
+                nil [5241 5470])
+            ("company-preview-common" variable
+               (:documentation "Face used for the common part of the completion preview."
+                :default-value '((((background light)) :inherit company-tooltip-common-selection) (((background dark)) :inherit company-preview :foreground "red"))
+                :type "face")
+                nil [5472 5719])
+            ("company-preview-search" variable
+               (:documentation "Face used for the search string in the completion preview."
+                :default-value '((((background light)) :inherit company-tooltip-common-selection) (((background dark)) :inherit company-preview :background "blue1"))
+                :type "face")
+                nil [5721 5972])
+            ("company-echo" variable
+               (:documentation "Face used for completions in the echo area."
+                :type "face")
+                nil [5974 6048])
+            ("company-echo-common" variable
+               (:documentation "Face used for the common part of completions in the echo area."
+                :default-value '((((background dark)) (:foreground "firebrick1")) (((background light)) (:background "firebrick4")))
+                :type "face")
+                nil [6050 6254])
+            ("company-frontends-set" function (:arguments ("variable" "value")) nil [6256 7789])
+            ("company-frontends" variable
+               (:documentation "The list of active frontends (visualizations).
+Each frontend is a function that takes one argument.  It is called with
+one of the following arguments:
+
+`show': When the visualization should start.
+
+`hide': When the visualization should end.
+
+`update': When the data has been updated.
+
+`pre-command': Before every command that is executed while the
+visualization is active.
+
+`post-command': After every command that is executed while the
+visualization is active.
+
+The visualized data is stored in `company-prefix', `company-candidates',
+`company-common', `company-selection', `company-point' and
+`company-search-string'."
+                :default-value '(company-pseudo-tooltip-unless-just-one-frontend company-preview-if-just-one-frontend company-echo-metadata-frontend))
+                nil [7791 9806])
+            ("company-tooltip-limit" variable
+               (:documentation "The maximum number of candidates in the tooltip."
+                :default-value 10)
+                nil [9808 9914])
+            ("company-tooltip-minimum" variable
+               (:documentation "The minimum height of the tooltip.
+If this many lines are not available, prefer to display the tooltip above."
+                :default-value 6)
+                nil [9916 10084])
+            ("company-tooltip-minimum-width" variable (:documentation "The minimum width of the tooltip's inner area.
+This doesn't include the margins and the scroll bar.") nil [10086 10290])
+            ("company-tooltip-maximum-width" variable
+               (:documentation "The maximum width of the tooltip's inner area.
+This doesn't include the margins and the scroll bar."
+                :default-value most-positive-fixnum)
+                nil [10292 10515])
+            ("company-tooltip-margin" variable
+               (:documentation "Width of margin columns to show around the toolip."
+                :default-value 1)
+                nil [10517 10625])
+            ("company-tooltip-offset-display" variable
+               (:documentation "Method using which the tooltip displays scrolling position.
+`scrollbar' means draw a scrollbar to the right of the items.
+`lines' means wrap items in lines with \"before\" and \"after\" counters."
+                :default-value 'scrollbar)
+                nil [10627 10981])
+            ("company-tooltip-align-annotations" variable (:documentation "When non-nil, align annotations to the right tooltip border.") nil [10983 11154])
+            ("company-tooltip-flip-when-above" variable (:documentation "Whether to flip the tooltip when it's above the current line.") nil [11156 11326])
+            ("company-safe-backends" variable (:default-value '((company-abbrev . "Abbrev") (company-bbdb . "BBDB") (company-capf . "completion-at-point-functions") (company-clang . "Clang") (company-cmake . "CMake") (company-css . "CSS") (company-dabbrev . "dabbrev for plain text") (company-dabbrev-code . "dabbrev for code") (company-eclim . "Eclim (an Eclipse interface)") (company-elisp . "Emacs Lisp") (company-etags . "etags") (company-files . "Files") (company-gtags . "GNU Global") (company-ispell . "Ispell") (company-keywords . "Programming language keywords") (company-nxml . "nxml") (company-oddmuse . "Oddmuse") (company-semantic . "Semantic") (company-tempo . "Tempo templates") (company-xcode . "Xcode"))) nil [11328 12095])
+            ("put" code nil nil [12096 12148])
+            ("company-safe-backends-p" function (:arguments ("backends")) nil [12150 12456])
+            ("company-backends" variable
+               (:documentation "The list of active backends (completion engines).
+
+Only one backend is used at a time.  The choice depends on the order of
+the items in this list, and on the values they return in response to the
+`prefix' command (see below).  But a backend can also be a \"grouped\"
+one (see below).
+
+`company-begin-backend' can be used to start a specific backend,
+`company-other-backend' will skip to the next matching backend in the list.
+
+Each backend is a function that takes a variable number of arguments.
+The first argument is the command requested from the backend.  It is one
+of the following:
+
+`prefix': The backend should return the text to be completed.  It must be
+text immediately before point.  Returning nil from this command passes
+control to the next backend.  The function should return `stop' if it
+should complete but cannot (e.g. when in the middle of a symbol).
+Instead of a string, the backend may return a cons (PREFIX . LENGTH)
+where LENGTH is a number used in place of PREFIX's length when
+comparing against `company-minimum-prefix-length'.  LENGTH can also
+be just t, and in the latter case the test automatically succeeds.
+
+`candidates': The second argument is the prefix to be completed.  The
+return value should be a list of candidates that match the prefix.
+
+Non-prefix matches are also supported (candidates that don't start with the
+prefix, but match it in some backend-defined way).  Backends that use this
+feature must disable cache (return t to `no-cache') and might also want to
+respond to `match'.
+
+Optional commands
+=================
+
+`sorted': Return t here to indicate that the candidates are sorted and will
+not need to be sorted again.
+
+`duplicates': If non-nil, company will take care of removing duplicates
+from the list.
+
+`no-cache': Usually company doesn't ask for candidates again as completion
+progresses, unless the backend returns t for this command.  The second
+argument is the latest prefix.
+
+`ignore-case': Return t here if the backend returns case-insensitive
+matches.  This value is used to determine the longest common prefix (as
+used in `company-complete-common'), and to filter completions when fetching
+them from cache.
+
+`meta': The second argument is a completion candidate.  Return a (short)
+documentation string for it.
+
+`doc-buffer': The second argument is a completion candidate.  Return a
+buffer with documentation for it.  Preferably use `company-doc-buffer'.  If
+not all buffer contents pertain to this candidate, return a cons of buffer
+and window start position.
+
+`location': The second argument is a completion candidate.  Return a cons
+of buffer and buffer location, or of file and line number where the
+completion candidate was defined.
+
+`annotation': The second argument is a completion candidate.  Return a
+string to be displayed inline with the candidate in the popup.  If
+duplicates are removed by company, candidates with equal string values will
+be kept if they have different annotations.  For that to work properly,
+backends should store the related information on candidates using text
+properties.
+
+`match': The second argument is a completion candidate.  Return a positive
+integer, the index after the end of text matching `prefix' within the
+candidate string.  Alternatively, return a list of (CHUNK-START
+. CHUNK-END) elements, where CHUNK-START and CHUNK-END are indexes within
+the candidate string.  The corresponding regions are be used when rendering
+the popup.  This command only makes sense for backends that provide
+non-prefix completion.
+
+`require-match': If this returns t, the user is not allowed to enter
+anything not offered as a candidate.  Please don't use that value in normal
+backends.  The default value nil gives the user that choice with
+`company-require-match'.  Return value `never' overrides that option the
+other way around.
+
+`init': Called once for each buffer. The backend can check for external
+programs and files and load any required libraries.  Raising an error here
+will show up in message log once, and the backend will not be used for
+completion.
+
+`post-completion': Called after a completion candidate has been inserted
+into the buffer.  The second argument is the candidate.  Can be used to
+modify it, e.g. to expand a snippet.
+
+The backend should return nil for all commands it does not support or
+does not know about.  It should also be callable interactively and use
+`company-begin-backend' to start itself in that case.
+
+Grouped backends
+================
+
+An element of `company-backends' can also be a list of backends.  The
+completions from backends in such groups are merged, but only from those
+backends which return the same `prefix'.
+
+If a backend command takes a candidate as an argument (e.g. `meta'), the
+call is dispatched to the backend the candidate came from.  In other
+cases (except for `duplicates' and `sorted'), the first non-nil value among
+all the backends is returned.
+
+The group can also contain keywords.  Currently, `:with' and `:separate'
+keywords are defined.  If the group contains keyword `:with', the backends
+listed after this keyword are ignored for the purpose of the `prefix'
+command.  If the group contains keyword `:separate', the candidates that
+come from different backends are sorted separately in the combined list.
+
+Asynchronous backends
+=====================
+
+The return value of each command can also be a cons (:async . FETCHER)
+where FETCHER is a function of one argument, CALLBACK.  When the data
+arrives, FETCHER must call CALLBACK and pass it the appropriate return
+value, as described above.  That call must happen in the same buffer as
+where completion was initiated.
+
+True asynchronous operation is only supported for command `candidates', and
+only during idle completion.  Other commands will block the user interface,
+even if the backend uses the asynchronous calling convention."
+                :default-value `(,@(unless (version< "24.3.51" emacs-version) (list 'company-elisp)) company-bbdb ,@(unless (version<= "26" emacs-version) (list 'company-nxml)) ,@(unless (version<= "26" emacs-version) (list 'company-css)) company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files (company-dabbrev-code company-gtags company-etags company-keywords) company-oddmuse company-dabbrev))
+                nil [12458 19731])
+            ("put" code nil nil [19733 19802])
+            ("company-transformers" variable (:documentation "Functions to change the list of candidates received from backends.
+
+Each function gets called with the return value of the previous one.
+The first one gets passed the list of candidates, already sorted and
+without duplicates.") nil [19804 20461])
+            ("company-completion-started-hook" variable (:documentation "Hook run when company starts completing.
+The hook is called with one argument that is non-nil if the completion was
+started manually.") nil [20463 20662])
+            ("company-completion-cancelled-hook" variable (:documentation "Hook run when company cancels completing.
+The hook is called with one argument that is non-nil if the completion was
+aborted manually.") nil [20664 20866])
+            ("company-completion-finished-hook" variable (:documentation "Hook run when company successfully completes.
+The hook is called with the selected candidate as an argument.
+
+If you indend to use it to post-process candidates from a specific
+backend, consider using the `post-completion' command instead.") nil [20868 21174])
+            ("company-minimum-prefix-length" variable
+               (:documentation "The minimum prefix length for idle completion."
+                :default-value 3)
+                nil [21176 21310])
+            ("company-abort-manual-when-too-short" variable (:documentation "If enabled, cancel a manually started completion when the prefix gets
+shorter than both `company-minimum-prefix-length' and the length of the
+prefix it was started from.") nil [21312 21594])
+            ("company-require-match" variable
+               (:documentation "If enabled, disallow non-matching input.
+This can be a function do determine if a match is required.
+
+This can be overridden by the backend, if it returns t or `never' to
+`require-match'.  `company-auto-complete' also takes precedence over this."
+                :default-value 'company-explicit-action-p)
+                nil [21596 22156])
+            ("company-auto-complete" variable (:documentation "Determines when to auto-complete.
+If this is enabled, all characters from `company-auto-complete-chars'
+trigger insertion of the selected completion candidate.
+This can also be a function.") nil [22158 22638])
+            ("company-auto-complete-chars" variable
+               (:documentation "Determines which characters trigger auto-completion.
+See `company-auto-complete'.  If this is a string, each string character
+tiggers auto-completion.  If it is a list of syntax description characters (see
+`modify-syntax-entry'), all characters with that syntax auto-complete.
+
+This can also be a function, which is called with the new input and should
+return non-nil if company should auto-complete.
+
+A character that is part of a valid candidate never triggers auto-completion."
+                :default-value '(32 41 46))
+                nil [22640 24129])
+            ("company-idle-delay" variable
+               (:documentation "The idle delay in seconds until completion starts automatically.
+The prefix still has to satisfy `company-minimum-prefix-length' before that
+happens.  The value of nil means no idle completion."
+                :default-value 0.5)
+                nil [24131 24500])
+            ("company-tooltip-idle-delay" variable
+               (:documentation "The idle delay in seconds until tooltip is shown when using
+`company-pseudo-tooltip-unless-just-one-frontend-with-delay'."
+                :default-value 0.5)
+                nil [24502 24807])
+            ("company-begin-commands" variable
+               (:documentation "A list of commands after which idle completion is allowed.
+If this is t, it can show completions after any command except a few from a
+pre-defined list.  See `company-idle-delay'.
+
+Alternatively, any command with a non-nil `company-begin' property is
+treated as if it was on this list."
+                :default-value '(self-insert-command org-self-insert-command orgtbl-self-insert-command c-scope-operator c-electric-colon c-electric-lt-gt c-electric-slash))
+                nil [24809 25704])
+            ("company-continue-commands" variable
+               (:documentation "A list of commands that are allowed during completion.
+If this is t, or if `company-begin-commands' is t, any command is allowed.
+Otherwise, the value must be a list of symbols.  If it starts with `not',
+the cdr is the list of commands that abort completion.  Otherwise, all
+commands except those in that list, or in `company-begin-commands', or
+commands in the `company-' namespace, abort completion."
+                :default-value '(not save-buffer save-some-buffers save-buffers-kill-terminal save-buffers-kill-emacs completion-at-point))
+                nil [25706 26621])
+            ("company-show-numbers" variable (:documentation "If enabled, show quick-access numbers for the first ten candidates.") nil [26623 26809])
+            ("company-selection-wrap-around" variable (:documentation "If enabled, selecting item before first or after last wraps around.") nil [26811 27006])
+            ("company-async-wait" variable
+               (:documentation "Pause between checks to see if the value's been set when turning an
+asynchronous call into synchronous."
+                :default-value 0.03)
+                nil [27008 27148])
+            ("company-async-timeout" variable
+               (:documentation "Maximum wait time for a value to be set during asynchronous call."
+                :default-value 2)
+                nil [27150 27252])
+            ("company-mode-map" variable
+               (:documentation "Keymap used by `company-mode'."
+                :default-value (make-sparse-keymap))
+                nil [27336 27417])
+            ("company-active-map" variable
+               (:documentation "Keymap that is enabled during an active completion."
+                :default-value (let ((keymap (make-sparse-keymap))) (define-key keymap "" 'company-abort) (define-key keymap "" 'company-abort) (define-key keymap (kbd "M-n") 'company-select-next) (define-key keymap (kbd "M-p") 'company-select-previous) (define-key keymap (kbd "<down>") 'company-select-next-or-abort) (define-key keymap (kbd "<up>") 'company-select-previous-or-abort) (define-key keymap [remap scroll-up-command] 'company-next-page) (define-key keymap [remap scroll-down-command] 'company-previous-page) (define-key keymap [down-mouse-1] 'ignore) (define-key keymap [down-mouse-3] 'ignore) (define-key keymap [mouse-1] 'company-complete-mouse) (define-key keymap [mouse-3] 'company-select-mouse) (define-key keymap [up-mouse-1] 'ignore) (define-key keymap [up-mouse-3] 'ignore) (define-key keymap [return] 'company-complete-selection) (define-key keymap (kbd "RET") 'company-complete-selection) (define-key keymap [tab] 'company-complete-common) (define-key keymap (kbd "TAB") 'company-complete-common) (define-key keymap (kbd "<f1>") 'company-show-doc-buffer) (define-key keymap (kbd "C-h") 'company-show-doc-buffer) (define-key keymap "" 'company-show-location) (define-key keymap "" 'company-search-candidates) (define-key keymap "\223" 'company-filter-candidates) (dotimes (i 10) (define-key keymap (read-kbd-macro (format "M-%d" i)) 'company-complete-number)) keymap))
+                nil [27419 28992])
+            ("company--disabled-backends" variable nil nil [28994 29033])
+            ("company-init-backend" function (:arguments ("backend")) nil [29035 29809])
+            ("company--maybe-init-backend" function (:arguments ("backend")) nil [29811 30010])
+            ("company-lighter-base" variable
+               (:documentation "Base string to use for the `company-mode' lighter."
+                :default-value "company")
+                nil [30012 30166])
+            ("company-lighter" variable
+               (:documentation "Mode line lighter for Company.
+
+The value of this variable is a mode line template as in
+`mode-line-format'."
+                :default-value '(" " (company-candidates (:eval (if (consp company-backend) (company--group-lighter (nth company-selection company-candidates) company-lighter-base) (symbol-name company-backend))) company-lighter-base)))
+                nil [30168 30797])
+            ("put" code nil nil [30799 30845])
+            ("define-minor-mode" code nil nil [30862 32407])
+            ("company-global-modes" variable
+               (:documentation "Modes for which `company-mode' mode is turned on by `global-company-mode'.
+If nil, means no modes.  If t, then all major modes have it turned on.
+If a list, it should be a list of `major-mode' symbol names for which
+`company-mode' should be automatically turned on.  The sense of the list is
+negated if it begins with `not'.  For example:
+ (c-mode c++-mode)
+means that `company-mode' is turned on for buffers in C and C++ modes only.
+ (not message-mode)
+means that `company-mode' is always turned on except in `message-mode' buffers."
+                :default-value t)
+                nil [32409 33268])
+            ("define-globalized-minor-mode" code nil nil [33285 33364])
+            ("company-mode-on" function nil nil [33366 33754])
+            ("company-assert-enabled" function nil nil [33756 33883])
+            ("defvar-local" code nil nil [33967 34003])
+            ("company-emulation-alist" variable (:default-value '((t))) nil [34005 34050])
+            ("company-enable-overriding-keymap" function (:arguments ("keymap")) nil [34052 34164])
+            ("company-ensure-emulation-alist" function nil nil [34166 34433])
+            ("company-install-map" function nil nil [34435 34611])
+            ("company-uninstall-map" function nil nil [34613 34689])
+            ("company--company-command-p" function
+               (:documentation "Checks if the keys are part of company's overriding keymap"
+                :arguments ("keys"))
+                nil [34691 34879])
+            ("company-ignore" function nil nil [35105 35181])
+            ("global-set-key" code nil nil [35183 35238])
+            ("company-input-noop" function nil nil [35240 35321])
+            ("declare-function" code nil nil [35359 35414])
+            ("company--posn-col-row" function (:arguments ("posn")) nil [35416 36086])
+            ("company--col-row" function (:arguments ("pos")) nil [36088 36174])
+            ("company--row" function (:arguments ("pos")) nil [36176 36243])
+            ("defvar-local" code nil nil [36327 36361])
+            ("company-grab" function (:arguments ("regexp" "expression" "limit")) nil [36363 36515])
+            ("company-grab-line" function
+               (:documentation "Return a match string for REGEXP if it matches text before point.
+If EXPRESSION is non-nil, return the match string for the respective
+parenthesized expression in REGEXP.
+Matching is limited to the current line."
+                :arguments ("regexp" "expression"))
+                nil [36517 36880])
+            ("company-grab-symbol" function (:documentation "If point is at the end of a symbol, return it.
+Otherwise, if point is not inside a symbol, return an empty string.") nil [36882 37276])
+            ("company-grab-word" function (:documentation "If point is at the end of a word, return it.
+Otherwise, if point is not inside a symbol, return an empty string.") nil [37278 37658])
+            ("company-grab-symbol-cons" function
+               (:documentation "Return a string SYMBOL or a cons (SYMBOL . t).
+SYMBOL is as returned by `company-grab-symbol'.  If the text before point
+matches IDLE-BEGIN-AFTER-RE, return it wrapped in a cons."
+                :arguments ("idle-begin-after-re" "max-len"))
+                nil [37660 38290])
+            ("company-in-string-or-comment" function (:documentation "Return non-nil if point is within a string or comment.") nil [38292 38522])
+            ("company-call-backend" function (:arguments ("args")) nil [38524 38637])
+            ("company--force-sync" function (:arguments ("fun" "args" "backend")) nil [38639 39626])
+            ("company-call-backend-raw" function (:arguments ("args")) nil [39628 40135])
+            ("company--multi-backend-adapter" function (:arguments ("backends" "command" "args")) nil [40137 41309])
+            ("company--multi-backend-adapter-candidates" function (:arguments ("backends" "prefix" "separate")) nil [41311 42296])
+            ("company--multi-candidates-mapper" function (:arguments ("backend" "separate" "tag")) nil [42298 42713])
+            ("company--merge-async" function (:arguments ("pairs" "merger")) nil [42715 44032])
+            ("company--prefix-str" function (:arguments ("prefix")) nil [44034 44102])
+            ("defvar-local" code nil nil [44186 44219])
+            ("defvar-local" code nil nil [44221 44258])
+            ("defvar-local" code nil nil [44260 44304])
+            ("defvar-local" code nil nil [44306 44349])
+            ("defvar-local" code nil nil [44351 44398])
+            ("defvar-local" code nil nil [44400 44433])
+            ("defvar-local" code nil nil [44435 44469])
+            ("defvar-local" code nil nil [44471 44515])
+            ("defvar-local" code nil nil [44517 44604])
+            ("defvar-local" code nil nil [44606 44647])
+            ("company--auto-completion" variable (:documentation "Non-nil when current candidate is being inserted automatically.
+Controlled by `company-auto-complete'.") nil [44649 44793])
+            ("defvar-local" code nil nil [44795 44832])
+            ("defvar-local" code nil nil [44834 44866])
+            ("company-timer" variable nil nil [44868 44894])
+            ("company-tooltip-timer" variable nil nil [44895 44929])
+            ("company-strip-prefix" function (:arguments ("str")) nil [44931 45010])
+            ("company--insert-candidate" function (:arguments ("candidate")) nil [45012 45465])
+            ("company-with-candidate-inserted" function
+               (:documentation "Evaluate BODY with CANDIDATE temporarily inserted.
+This is a tool for backends that need candidates inserted before they
+can retrieve meta-data for them."
+                :arguments ("candidate" "body"))
+                nil [45467 46014])
+            ("company-explicit-action-p" function (:documentation "Return whether explicit completion action was taken by the user.") nil [46016 46183])
+            ("company-reformat" function (:arguments ("candidate")) nil [46185 46572])
+            ("company--should-complete" function nil nil [46574 46951])
+            ("company--should-continue" function nil nil [46953 47415])
+            ("company-call-frontends" function (:arguments ("command")) nil [47417 47706])
+            ("company-set-selection" function (:arguments ("selection" "force-update")) nil [47708 48136])
+            ("company--group-lighter" function (:arguments ("candidate" "base")) nil [48138 48595])
+            ("company-update-candidates" function (:arguments ("candidates")) nil [48597 50184])
+            ("company-calculate-candidates" function (:arguments ("prefix")) nil [50186 51492])
+            ("company--fetch-candidates" function (:arguments ("prefix")) nil [51494 52732])
+            ("company--flyspell-workaround-p" function nil nil [52734 52888])
+            ("company--preprocess-candidates" function (:arguments ("candidates")) nil [52890 53178])
+            ("company--postprocess-candidates" function (:arguments ("candidates")) nil [53180 53509])
+            ("company--strip-duplicates" function (:arguments ("candidates")) nil [53511 54427])
+            ("company--transform-candidates" function (:arguments ("candidates")) nil [54429 54579])
+            ("company-occurrence-weight-function" variable
+               (:documentation "Function to weigh matches in `company-sort-by-occurrence'.
+It's called with three arguments: cursor position, the beginning and the
+end of the match."
+                :default-value nil)
+                nil [54581 55073])
+            ("company-occurrence-prefer-closest-above" function
+               (:documentation "Give priority to the matches above point, then those below point."
+                :arguments ("pos" "match-beg" "match-end"))
+                nil [55075 55300])
+            ("company-occurrence-prefer-any-closest" function
+               (:documentation "Give priority to the matches closest to the point."
+                :arguments ("pos" "_match-beg" "match-end"))
+                nil [55302 55455])
+            ("company-sort-by-occurrence" function
+               (:documentation "Sort CANDIDATES according to their occurrences.
+Searches for each in the currently visible part of the current buffer and
+prioritizes the matches according to `company-occurrence-weight-function'.
+The rest of the list is appended unchanged.
+Keywords and function definition names are ignored."
+                :arguments ("candidates"))
+                nil [55457 56842])
+            ("company--occurrence-predicate" function nil nil [56844 57796])
+            ("company-sort-by-backend-importance" function
+               (:documentation "Sort CANDIDATES as two priority groups.
+If `company-backend' is a function, do nothing.  If it's a list, move
+candidates from backends before keyword `:with' to the front.  Candidates
+from the rest of the backends in the group, if any, will be left at the end."
+                :arguments ("candidates"))
+                nil [57798 58620])
+            ("company-sort-prefer-same-case-prefix" function
+               (:documentation "Prefer CANDIDATES with the exact same prefix.
+If a backend returns case insensitive matches, candidates with the an exact
+prefix match (same case) will be prioritized."
+                :arguments ("candidates"))
+                nil [58622 59098])
+            ("company-idle-begin" function (:arguments ("buf" "win" "tick" "pos")) nil [59100 59434])
+            ("company-auto-begin" function nil nil [59436 59937])
+            ("company-manual-begin" function nil nil [59954 60266])
+            ("company-other-backend" function (:arguments ("backward")) nil [60268 60937])
+            ("company-require-match-p" function nil nil [60939 61258])
+            ("company-auto-complete-p" function
+               (:documentation "Return non-nil if INPUT should trigger auto-completion."
+                :arguments ("input"))
+                nil [61260 61858])
+            ("company--incremental-p" function nil nil [61860 62182])
+            ("company--continue-failed" function (:arguments ("new-prefix")) nil [62184 62956])
+            ("company--good-prefix-p" function (:arguments ("prefix")) nil [62958 63525])
+            ("company--continue" function nil nil [63527 64948])
+            ("company--begin-new" function nil nil [64950 66416])
+            ("company--perform" function nil nil [66418 66828])
+            ("company-cancel" function (:arguments ("result")) nil [66830 68060])
+            ("company-abort" function nil nil [68062 68128])
+            ("company-finish" function (:arguments ("result")) nil [68130 68224])
+            ("company-keep" function (:arguments ("command")) nil [68226 68313])
+            ("company-pre-command" function nil nil [68315 68919])
+            ("company-post-command" function nil nil [68921 70347])
+            ("company--idle-delay" function nil nil [70349 70458])
+            ("company--begin-inhibit-commands" variable
+               (:documentation "List of commands after which idle completion is (still) disabled when
+`company-begin-commands' is t."
+                :default-value '(company-abort company-complete-mouse company-complete company-complete-common company-complete-selection company-complete-number))
+                nil [70460 70947])
+            ("company--should-begin" function nil nil [70949 71207])
+            ("company-search-regexp-function" variable
+               (:documentation "Function to construct the search regexp from input.
+It's called with one argument, the current search input.  It must return
+either a regexp without groups, or one where groups don't intersect and
+each one wraps a part of the input string."
+                :default-value nil)
+                nil [71291 71991])
+            ("defvar-local" code nil nil [71993 72032])
+            ("company-search-lighter" variable (:default-value '(" " (company-search-filtering "Filter" "Search") ": \"" company-search-string "\"")) nil [72034 72283])
+            ("defvar-local" code nil nil [72285 72397])
+            ("defvar-local" code nil nil [72399 72445])
+            ("defvar-local" code nil nil [72447 72493])
+            ("company-search-words-regexp" function (:arguments ("input")) nil [72495 72654])
+            ("company-search-words-in-any-order-regexp" function (:arguments ("input")) nil [72656 73035])
+            ("company-search-flex-regexp" function (:arguments ("input")) nil [73037 73367])
+            ("company--permutations" function (:arguments ("lst")) nil [73369 73589])
+            ("company--search" function (:arguments ("text" "lines")) nil [73591 73833])
+            ("company-search-keypad" function nil nil [73835 74030])
+            ("company-search-printing-char" function nil nil [74032 74315])
+            ("company--search-update-predicate" function (:arguments ("ss")) nil [74317 74739])
+            ("company--search-update-string" function (:arguments ("new")) nil [74741 75001])
+            ("company--search-assert-input" function nil nil [75003 75160])
+            ("company-search-repeat-forward" function
+               (:documentation "Repeat the incremental search in completion candidates forward."
+                :user-visible-flag t)
+                nil [75162 75595])
+            ("company-search-repeat-backward" function
+               (:documentation "Repeat the incremental search in completion candidates backwards."
+                :user-visible-flag t)
+                nil [75597 76103])
+            ("company-search-toggle-filtering" function
+               (:documentation "Toggle `company-search-filtering'."
+                :user-visible-flag t)
+                nil [76105 76420])
+            ("company-search-abort" function
+               (:documentation "Abort searching the completion candidates."
+                :user-visible-flag t)
+                nil [76422 76698])
+            ("company-search-other-char" function nil nil [76700 76851])
+            ("company-search-delete-char" function nil nil [76853 77177])
+            ("company-search-map" variable
+               (:documentation "Keymap used for incrementally searching the completion candidates."
+                :default-value (let ((i 0) (keymap (make-keymap))) (if (fboundp 'max-char) (set-char-table-range (nth 1 keymap) (cons 256 (max-char)) 'company-search-printing-char) (with-no-warnings (let ((l (generic-character-list)) (table (nth 1 keymap))) (while l (set-char-table-default table (car l) 'company-search-printing-char) (setq l (cdr l)))))) (define-key keymap [t] 'company-search-other-char) (while (< i 32) (define-key keymap (make-string 1 i) 'company-search-other-char) (cl-incf i)) (while (< i 256) (define-key keymap (vector i) 'company-search-printing-char) (cl-incf i)) (dotimes (i 10) (define-key keymap (read (format "[kp-%s]" i)) 'company-search-keypad)) (let ((meta-map (make-sparse-keymap))) (define-key keymap (char-to-string meta-prefix-char) meta-map) (define-key keymap [escape] meta-map)) (define-key keymap (vector meta-prefix-char t) 'company-search-other-char) (define-key keymap (kbd "M-n") 'company-select-next) (define-key keymap (kbd "M-p") 'company-select-previous) (define-key keymap (kbd "<down>") 'company-select-next-or-abort) (define-key keymap (kbd "<up>") 'company-select-previous-or-abort) (define-key keymap "" 'company-search-other-char) (define-key keymap [escape escape escape] 'company-search-other-char) (define-key keymap (kbd "DEL") 'company-search-delete-char) (define-key keymap [backspace] 'company-search-delete-char) (define-key keymap "" 'company-search-abort) (define-key keymap "" 'company-search-repeat-forward) (define-key keymap "" 'company-search-repeat-backward) (define-key keymap "" 'company-search-toggle-filtering) (dotimes (i 10) (define-key keymap (read-kbd-macro (format "M-%d" i)) 'company-complete-number)) keymap))
+                nil [77179 79239])
+            ("define-minor-mode" code nil nil [79241 80196])
+            ("company--search-assert-enabled" function nil nil [80198 80371])
+            ("company-search-candidates" function
+               (:documentation "Start searching the completion candidates incrementally.
+
+\\<company-search-map>Search can be controlled with the commands:
+- `company-search-repeat-forward' (\\[company-search-repeat-forward])
+- `company-search-repeat-backward' (\\[company-search-repeat-backward])
+- `company-search-abort' (\\[company-search-abort])
+- `company-search-delete-char' (\\[company-search-delete-char])
+
+Regular characters are appended to the search string.
+
+Customize `company-search-regexp-function' to change how the input
+is interpreted when searching.
+
+The command `company-search-toggle-filtering' (\\[company-search-toggle-filtering])
+uses the search string to filter the completion candidates."
+                :user-visible-flag t)
+                nil [80373 81136])
+            ("company-filter-map" variable
+               (:documentation "Keymap used for incrementally searching the completion candidates."
+                :default-value (let ((keymap (make-keymap))) (define-key keymap [remap company-search-printing-char] 'company-filter-printing-char) (set-keymap-parent keymap company-search-map) keymap))
+                nil [81138 81427])
+            ("company-filter-candidates" function
+               (:documentation "Start filtering the completion candidates incrementally.
+This works the same way as `company-search-candidates' immediately
+followed by `company-search-toggle-filtering'."
+                :user-visible-flag t)
+                nil [81429 81718])
+            ("company-select-next" function
+               (:documentation "Select the next candidate in the list.
+
+With ARG, move by that many elements."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [81802 82040])
+            ("company-select-previous" function
+               (:documentation "Select the previous candidate in the list.
+
+With ARG, move by that many elements."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [82042 82239])
+            ("company-select-next-or-abort" function
+               (:documentation "Select the next candidate if more than one, else abort
+and invoke the normal binding.
+
+With ARG, move by that many elements."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [82241 82573])
+            ("company-select-previous-or-abort" function
+               (:documentation "Select the previous candidate if more than one, else abort
+and invoke the normal binding.
+
+With ARG, move by that many elements."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [82575 82919])
+            ("company-next-page" function
+               (:documentation "Select the candidate one page further."
+                :user-visible-flag t)
+                nil [82921 83339])
+            ("company-previous-page" function
+               (:documentation "Select the candidate one page earlier."
+                :user-visible-flag t)
+                nil [83341 83765])
+            ("company-pseudo-tooltip-overlay" variable nil nil [83767 83806])
+            ("company-tooltip-offset" variable nil nil [83808 83839])
+            ("company--inside-tooltip-p" function (:arguments ("event-col-row" "row" "height")) nil [83841 84383])
+            ("company--event-col-row" function (:arguments ("event")) nil [84385 84469])
+            ("company-select-mouse" function
+               (:documentation "Select the candidate picked by the mouse."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [84471 85656])
+            ("company-complete-mouse" function
+               (:documentation "Insert the candidate picked by the mouse."
+                :user-visible-flag t
+                :arguments ("event"))
+                nil [85658 85833])
+            ("company-complete-selection" function
+               (:documentation "Insert the selected candidate."
+                :user-visible-flag t)
+                nil [85835 86049])
+            ("company-complete-common" function
+               (:documentation "Insert the common part of all candidates."
+                :user-visible-flag t)
+                nil [86051 86372])
+            ("company-complete-common-or-cycle" function
+               (:documentation "Insert the common part of all candidates, or select the next one.
+
+With ARG, move by that many elements."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [86374 86884])
+            ("company-indent-or-complete-common" function
+               (:documentation "Indent the current line or region, or complete the common part."
+                :user-visible-flag t)
+                nil [86886 87512])
+            ("company-select-next-if-tooltip-visible-or-complete-selection" function
+               (:documentation "Insert selection if appropriate, or select the next candidate.
+Insert selection if only preview is showing or only one candidate,
+otherwise select the next candidate."
+                :user-visible-flag t)
+                nil [87514 87946])
+            ("company-complete" function
+               (:documentation "Insert the common part of all candidates or the current selection.
+The first time this is called, the common part is inserted, the second
+time, or when the selection has been changed, the selected candidate is
+inserted."
+                :user-visible-flag t)
+                nil [87963 88517])
+            ("company-complete-number" function
+               (:documentation "Insert the Nth candidate visible in the tooltip.
+To show the number next to the candidates in some backends, enable
+`company-show-numbers'.  When called interactively, uses the last typed
+character, stripping the modifiers.  That character must be a digit."
+                :user-visible-flag t
+                :arguments ("n"))
+                nil [88519 89530])
+            ("company-space-strings-limit" variable
+               (:constant-flag t
+                :default-value 100)
+                nil [89614 89656])
+            ("company-space-strings" variable
+               (:constant-flag t
+                :default-value (let (lst) (dotimes (i company-space-strings-limit) (push (make-string (- company-space-strings-limit 1 i) 32) lst)) (apply 'vector lst)))
+                nil [89658 89846])
+            ("company-space-string" function (:arguments ("len")) nil [89848 89990])
+            ("company-safe-substring" function (:arguments ("str" "from" "to")) nil [89992 90636])
+            ("defvar-local" code nil nil [90720 90760])
+            ("company-fetch-metadata" function nil nil [90762 91047])
+            ("company-doc-buffer" function (:arguments ("string")) nil [91049 91269])
+            ("company--electric-saved-window-configuration" variable nil nil [91271 91328])
+            ("company--electric-commands" variable
+               (:documentation "List of Commands that won't break out of electric commands."
+                :default-value '(scroll-other-window scroll-other-window-down mwheel-scroll))
+                nil [91330 91493])
+            ("company--electric-restore-window-configuration" function (:documentation "Restore window configuration (after electric commands).") nil [91495 91874])
+            ("company--electric-do" function (:arguments ("body")) nil [91876 92380])
+            ("company--unread-this-command-keys" function nil nil [92382 92674])
+            ("company-show-doc-buffer" function
+               (:documentation "Temporarily show the documentation buffer for the selection."
+                :user-visible-flag t)
+                nil [92676 93387])
+            ("put" code nil nil [93388 93434])
+            ("company-show-location" function
+               (:documentation "Temporarily display a buffer showing the selected candidate in context."
+                :user-visible-flag t)
+                nil [93436 94330])
+            ("put" code nil nil [94331 94375])
+            ("defvar-local" code nil nil [94459 94494])
+            ("company-remove-callback" function (:arguments ("ignored")) nil [94496 94771])
+            ("company-begin-backend" function
+               (:documentation "Start a completion at point using BACKEND."
+                :user-visible-flag t
+                :arguments ("backend" "callback"))
+                nil [94773 95544])
+            ("company-begin-with" function
+               (:documentation "Start a completion at point.
+CANDIDATES is the list of candidates to use and PREFIX-LENGTH is the length
+of the prefix that already is in the buffer before point.
+It defaults to 0.
+
+CALLBACK is a function called with the selected result if the user
+successfully completes the input.
+
+Example: (company-begin-with '(\"foo\" \"foobar\" \"foobarbaz\"))"
+                :arguments ("candidates" "prefix-length" "require-match" "callback"))
+                nil [95546 96454])
+            ("declare-function" code nil nil [96456 96504])
+            ("declare-function" code nil nil [96505 96545])
+            ("company-version" function
+               (:documentation "Get the Company version as string.
+
+If SHOW-VERSION is non-nil, show the version in the echo area."
+                :user-visible-flag t
+                :arguments ("show-version"))
+                nil [96547 96944])
+            ("company-diag" function
+               (:documentation "Pop a buffer with information about completions at point."
+                :user-visible-flag t)
+                nil [96946 98760])
+            ("defvar-local" code nil nil [98844 98893])
+            ("defvar-local" code nil nil [98895 98934])
+            ("company-tooltip--lines-update-offset" function (:arguments ("selection" "num-lines" "limit")) nil [98936 99520])
+            ("company-tooltip--simple-update-offset" function (:arguments ("selection" "_num-lines" "limit")) nil [99522 99777])
+            ("company-round-tab" function (:arguments ("arg")) nil [99795 99877])
+            ("company-plainify" function (:arguments ("str")) nil [99879 100406])
+            ("company-fill-propertize" function (:arguments ("value" "annotation" "width" "selected" "left" "right")) nil [100408 104200])
+            ("company--search-chunks" function nil nil [104202 104470])
+            ("company--pre-render" function (:arguments ("str" "annotation-p")) nil [104472 104972])
+            ("company--clean-string" function (:arguments ("str")) nil [104974 105511])
+            ("company-buffer-lines" function (:arguments ("beg" "end")) nil [105526 106525])
+            ("company-modify-line" function (:arguments ("old" "new" "offset")) nil [106527 106697])
+            ("company--window-height" function nil nil [106699 106834])
+            ("company--window-width" function nil nil [106836 107779])
+            ("company--replacement-string" function (:arguments ("lines" "old" "column" "nl" "align-top")) nil [107781 109133])
+            ("company--offset-line" function (:arguments ("line" "offset")) nil [109135 109241])
+            ("company--create-lines" function (:arguments ("selection" "limit")) nil [109243 112928])
+            ("company--scrollbar-bounds" function (:arguments ("offset" "limit" "length")) nil [112930 113193])
+            ("company--scrollbar" function (:arguments ("i" "bounds")) nil [113195 113400])
+            ("company--scrollpos-line" function (:arguments ("text" "width")) nil [113402 113681])
+            ("company--pseudo-tooltip-height" function (:documentation "Calculate the appropriate tooltip height.
+Returns a negative number if the tooltip should be displayed above point.") nil [113692 114153])
+            ("company-pseudo-tooltip-show" function (:arguments ("row" "column" "selection")) nil [114155 115297])
+            ("company-pseudo-tooltip-show-at-point" function (:arguments ("pos" "column-offset")) nil [115299 115563])
+            ("company-pseudo-tooltip-edit" function (:arguments ("selection")) nil [115565 116148])
+            ("company-pseudo-tooltip-hide" function nil nil [116150 116326])
+            ("company-pseudo-tooltip-hide-temporarily" function nil nil [116328 116688])
+            ("company-pseudo-tooltip-unhide" function nil nil [116690 117418])
+            ("company-pseudo-tooltip-guard" function nil nil [117420 117879])
+            ("company-pseudo-tooltip-frontend" function
+               (:documentation "`company-mode' frontend similar to a tooltip but based on overlays."
+                :arguments ("command"))
+                nil [117881 119062])
+            ("company-pseudo-tooltip-unless-just-one-frontend" function
+               (:documentation "`company-pseudo-tooltip-frontend', but not shown for single candidates."
+                :arguments ("command"))
+                nil [119064 119335])
+            ("company-pseudo-tooltip-unless-just-one-frontend-with-delay" function
+               (:documentation "`compandy-pseudo-tooltip-frontend', but shown after a delay.
+Delay is determined by `company-tooltip-idle-delay'."
+                :arguments ("command"))
+                nil [119337 120428])
+            ("defvar-local" code nil nil [120512 120554])
+            ("company-preview-show-at-point" function (:arguments ("pos" "completion")) nil [120556 122399])
+            ("company-preview-hide" function nil nil [122401 122549])
+            ("company-preview-frontend" function
+               (:documentation "`company-mode' frontend showing the selection as if it had been inserted."
+                :arguments ("command"))
+                nil [122551 122919])
+            ("company-preview-if-just-one-frontend" function
+               (:documentation "`company-preview-frontend', but only shown for single candidates."
+                :arguments ("command"))
+                nil [122921 123168])
+            ("company--show-inline-p" function nil nil [123170 123389])
+            ("company-tooltip-visible-p" function (:documentation "Returns whether the tooltip is visible.") nil [123391 123588])
+            ("company-preview-common--show-p" function (:documentation "Returns whether the preview of common can be showed or not") nil [123590 123842])
+            ("company-preview-common-frontend" function
+               (:documentation "`company-mode' frontend preview the common part of candidates."
+                :arguments ("command"))
+                nil [123844 124230])
+            ("defvar-local" code nil nil [124314 124354])
+            ("company-echo-timer" variable nil nil [124356 124387])
+            ("company-echo-delay" variable (:default-value 0.01) nil [124389 124420])
+            ("company-echo-truncate-lines" variable
+               (:documentation "Whether frontend messages written to the echo area should be truncated."
+                :default-value t)
+                nil [124422 124596])
+            ("company-echo-show" function (:arguments ("getter")) nil [124598 124896])
+            ("company-echo-show-soon" function (:arguments ("getter")) nil [124898 125048])
+            ("company-echo-cancel" function (:arguments ("unset")) nil [125050 125210])
+            ("company-echo-show-when-idle" function (:arguments ("getter")) nil [125212 125397])
+            ("company-echo-format" function nil nil [125399 126467])
+            ("company-echo-strip-common-format" function nil nil [126469 127306])
+            ("company-echo-hide" function nil nil [127308 127440])
+            ("company-echo-frontend" function
+               (:documentation "`company-mode' frontend showing the candidates in the echo area."
+                :arguments ("command"))
+                nil [127442 127666])
+            ("company-echo-strip-common-frontend" function
+               (:documentation "`company-mode' frontend showing the candidates in the echo area."
+                :arguments ("command"))
+                nil [127668 127918])
+            ("company-echo-metadata-frontend" function
+               (:documentation "`company-mode' frontend showing the documentation in the echo area."
+                :arguments ("command"))
+                nil [127920 128164])
+            ("company" package nil nil [128166 128184]))          
+      :file "company.el"
+      :pointmax 128210
+      :fsize 128209
+      :lastmodtime '(23456 48129 790327 301000)
+      :unmatched-syntax '((close-paren 3070 . 3071) (symbol 2555 . 2571) (open-paren 2554 . 2555))))
+  :file "!home!lk!.emacs.d!elpa!company-20180913.2311!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

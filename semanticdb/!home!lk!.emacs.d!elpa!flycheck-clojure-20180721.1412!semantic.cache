@@ -1,16 +1,82 @@
-;; Object semanticdb-project-database-file-39de794
+;; Object semanticdb-project-database-file-1919b90
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-39de794"
+(semanticdb-project-database-file "semanticdb-project-database-file-1919b90"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-2d125e0"
+    (semanticdb-table "semanticdb-table-15b626c"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "flycheck-clojure-autoloads.el"
       :pointmax 371
       :fsize 953
       :lastmodtime '(23398 10080 954920 523000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-135c9a0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cider-client" include nil nil [1444 1467])
+            ("flycheck" include nil nil [1468 1487])
+            ("json" include nil nil [1488 1503])
+            ("url-parse" include nil nil [1504 1524])
+            ("let-alist" include nil nil [1544 1564])
+            ("flycheck-clojure-inject-dependencies-at-jack-in" variable
+               (:documentation "When nil, do not inject repl dependencies (i.e. the linters/checkers) at `cider-jack-in' time."
+                :default-value t)
+                nil [1567 1771])
+            ("flycheck-clojure-dep-version" variable
+               (:documentation "Version of `acyclic/squiggly-clojure' compatible with this version of flycheck-clojure."
+                :default-value "0.1.9-SNAPSHOT")
+                nil [1773 1919])
+            ("flycheck-clojure-parse-cider-errors" function
+               (:documentation "Parse cider errors from JSON VALUE from CHECKER.
+
+Return a list of parsed `flycheck-error' objects."
+                :arguments ("value" "checker"))
+                nil [1936 3453])
+            ("cider-flycheck-eval" function
+               (:documentation "Send the request INPUT and register the CALLBACK as the response handler.
+Uses the tooling session, with no specified namespace."
+                :arguments ("input" "callback"))
+                nil [3455 3670])
+            ("flycheck-clojure-may-use-cider-checker" function (:documentation "Determine whether a cider checker may be used.
+
+Checks for `cider-mode', and a current nREPL connection.
+
+Standard predicate for cider checkers.") nil [3672 4071])
+            ("flycheck-clojure-start-cider" function
+               (:documentation "Start a cider syntax CHECKER with CALLBACK."
+                :arguments ("checker" "callback"))
+                nil [4073 5234])
+            ("flycheck-clojure-define-cider-checker" function
+               (:documentation "Define a Cider syntax checker with NAME, DOCSTRING and PROPERTIES.
+
+NAME, DOCSTRING, and PROPERTIES are like for
+`flycheck-define-generic-checker', except that `:start' and
+`:modes' are invalid PROPERTIES.  A syntax checker defined with
+this function will always check in `clojure-mode', and only if
+`cider-mode' is enabled.
+
+Instead of `:start', this syntax checker requires a `:form
+FUNCTION' property.  FUNCTION takes the current Clojure namespace
+as single argument, and shall return a string containing a
+Clojure form to be sent to Cider to check the current buffer."
+                :arguments ("name" "docstring" "properties"))
+                nil [5236 6826])
+            ("flycheck-clojure-define-cider-checker" code nil nil [6828 7267])
+            ("flycheck-clojure-define-cider-checker" code nil nil [7269 7829])
+            ("flycheck-clojure-define-cider-checker" code nil nil [7831 8219])
+            ("flycheck-clojure-inject-jack-in-dependencies" function (:documentation "Inject the REPL dependencies of flycheck-clojure at `cider-jack-in'.
+If injecting the dependencies is not preferred set `flycheck-clojure-inject-dependencies-at-jack-in' to nil.") nil [8221 8801])
+            ("flycheck-clojure-setup" function
+               (:documentation "Setup Flycheck for Clojure."
+                :user-visible-flag t)
+                nil [8818 9195])
+            ("flycheck-clojure" package nil nil [9197 9224]))          
+      :file "flycheck-clojure.el"
+      :pointmax 9314
+      :fsize 9314
+      :lastmodtime '(23440 56627 737466 294000)
+      :unmatched-syntax '((close-paren 1564 . 1565) (symbol 1526 . 1543) (open-paren 1525 . 1526))))
   :file "!home!lk!.emacs.d!elpa!flycheck-clojure-20180721.1412!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

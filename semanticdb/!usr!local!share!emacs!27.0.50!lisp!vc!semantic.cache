@@ -1,0 +1,880 @@
+;; Object semanticdb-project-database-file-17b74fc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17b74fc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17b74dc"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [5146 5163])
+            ("ewoc" include nil nil [5165 5180])
+            ("pcvs-defs" include nil nil [5206 5226])
+            ("pcvs-util" include nil nil [5227 5247])
+            ("pcvs-parse" include nil nil [5248 5269])
+            ("pcvs-info" include nil nil [5270 5290])
+            ("vc-cvs" include nil nil [5291 5308])
+            ("cvs-cookies" variable nil nil [5340 5360])
+            ("cvs-from-vc" variable (:documentation "Bound to t inside VC advice.") nil [5535 5590])
+            ("cvs-defaults" function (:arguments ("defs")) nil [5624 5811])
+            ("cvs-flags-define" code nil nil [5984 6026])
+            ("cvs-flags-define" code nil nil [6028 6088])
+            ("cvs-flags-define" code nil nil [6089 6151])
+            ("cvs-flags-define" code nil nil [6152 6203])
+            ("cvs-flags-define" code nil nil [6204 6291])
+            ("cvs-flags-define" code nil nil [6292 6343])
+            ("cvs-flags-define" code nil nil [6344 6395])
+            ("cvs-flags-define" code nil nil [6396 6450])
+            ("cvs-flags-define" code nil nil [6451 6505])
+            ("cvs-flags-define" code nil nil [6561 6624])
+            ("cvs-reread-cvsrc" function
+               (:documentation "Reset the default arguments to those in the `cvs-cvsrc-file'."
+                :user-visible-flag t)
+                nil [6626 7472])
+            ("cvs-reread-cvsrc" code nil nil [7514 7532])
+            ("cvs-minor-current-files" variable nil nil [7583 7615])
+            ("cvs-menu" function
+               (:documentation "Popup the CVS menu."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [7617 7825])
+            ("cvs-mode-line-process" variable (:documentation "Mode-line control for displaying info on cvs process status.") nil [7827 7926])
+            ("cvs-status-get-tags" function (:prototype-flag t) nil [7976 8020])
+            ("cvs-tags-list" function (:documentation "Return a list of acceptable tags, ready for completions.") nil [8021 8722])
+            ("cvs-tag-history" variable nil nil [8724 8752])
+            ("cvs-qtypedesc-tag" variable
+               (:constant-flag t
+                :default-value (cvs-qtypedesc-create 'identity 'identity 'cvs-tags-list 'cvs-tag-history))
+                nil [8753 8858])
+            ("cvs-mode!" function
+               (:documentation "Switch to the *cvs* buffer.
+If -CVS-MODE!-FUN is provided, it is executed *cvs* being the current buffer
+  and with its window selected.  Else, the *cvs* buffer is simply selected.
+-CVS-MODE!-FUN is called interactively if applicable and else with no argument."
+                :arguments ("-cvs-mode!-fun"))
+                nil [8866 10234])
+            ("cvs-branches" variable (:default-value (list cvs-vendor-branch "HEAD" "HEAD")) nil [10261 10321])
+            ("cvs-prefix-define" code nil nil [10322 10460])
+            ("cvs-set-branch-prefix" function
+               (:documentation "Set the branch prefix to take action at the next command.
+See `cvs-prefix-set' for a further the description of the behavior.
+\\[universal-argument] 1 selects the vendor branch
+and \\[universal-argument] 2 selects the HEAD."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [10462 10801])
+            ("cvs-add-branch-prefix" function
+               (:documentation "Add branch selection argument if the branch prefix was set.
+The argument is added (or not) to the list of FLAGS and is constructed
+by appending the branch to ARG which defaults to \"-r\"."
+                :arguments ("flags" "arg"))
+                nil [10803 11274])
+            ("cvs-prefix-define" code nil nil [11276 11434])
+            ("cvs-set-secondary-branch-prefix" function
+               (:documentation "Set the branch prefix to take action at the next command.
+See `cvs-prefix-set' for a further the description of the behavior.
+\\[universal-argument] 1 selects the vendor branch
+and \\[universal-argument] 2 selects the HEAD."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [11436 11795])
+            ("cvs-add-secondary-branch-prefix" function
+               (:documentation "Add branch selection argument if the secondary branch prefix was set.
+The argument is added (or not) to the list of FLAGS and is constructed
+by appending the branch to ARG which defaults to \"-r\".
+Since the `cvs-secondary-branch-prefix' is only active if the primary
+prefix is active, it is important to read the secondary prefix before
+the primary since reading the primary can deactivate it."
+                :arguments ("flags" "arg"))
+                nil [11797 12447])
+            ("define-minor-mode" code nil nil [12455 12677])
+            ("put" code nil nil [12678 12718])
+            ("cvs-temp-buffers" variable nil nil [12721 12750])
+            ("cvs-temp-buffer" function
+               (:documentation "Create a temporary buffer to run CMD in.
+If CMD is a string, use it to lookup `cvs-buffer-name-alist' to find
+the buffer name to be used and its major mode.
+
+The selected window will not be changed.  The new buffer will not maintain undo
+information and will be read-only unless NORMAL is non-nil.  It will be emptied
+(unless NOSETUP is non-nil) and its `default-directory' will be inherited
+from the current buffer."
+                :arguments ("cmd" "normal" "nosetup"))
+                nil [12751 15574])
+            ("cvs-mode-kill-buffers" function
+               (:documentation "Kill all the \"temporary\" buffers created by the *cvs* buffer."
+                :user-visible-flag t)
+                nil [15576 15760])
+            ("cvs-make-cvs-buffer" function
+               (:documentation "Create the *cvs* buffer for directory DIR.
+If non-nil, NEW means to create a new buffer no matter what."
+                :arguments ("dir" "new"))
+                nil [15762 18186])
+            ("cl-defun" code nil nil [18188 18928])
+            ("cvs-run-process" function (:arguments ("args" "fis" "postprocess" "single-dir")) nil [19057 22811])
+            ("cvs-header-msg" function (:arguments ("args" "fis")) nil [22813 23770])
+            ("cvs-update-header" function (:arguments ("cmd" "add")) nil [23772 25097])
+            ("cvs-sentinel" function
+               (:documentation "Sentinel for the cvs update process.
+This is responsible for parsing the output from the cvs update when
+it is finished."
+                :arguments ("proc" "_msg"))
+                nil [25100 26874])
+            ("cvs-parse-process" function
+               (:documentation "Parse the output of a cvs process.
+DCD is the `dont-change-disc' flag to use when parsing that output.
+SUBDIR is the subdirectory (if any) where this command was run.
+OLD-FIS is the list of fileinfos on which the cvs command was applied and
+  which should be considered up-to-date if they are missing from the output."
+                :arguments ("dcd" "subdir" "old-fis"))
+                nil [26876 28997])
+            ("defun-cvs-mode" function
+               (:documentation "Define a function to be used in a *cvs* buffer.
+This will look for a *cvs* buffer and execute BODY in it.
+Since the interactive arguments might need to be queried after
+switching to the *cvs* buffer, the generic code is rather ugly,
+but luckily we can often use simpler alternatives.
+
+FUN can be either a symbol (i.e. STYLE is nil) or a cons (FUN . STYLE).
+ARGS and DOCSTRING are the normal argument list.
+INTERACT is the interactive specification or nil for non-commands.
+
+STYLE can be either `SIMPLE', `NOARGS' or `DOUBLE'.  It's an error for it
+to have any other value, unless other details of the function make it
+clear what alternative to use.
+- `SIMPLE' will get all the interactive arguments from the original buffer.
+- `NOARGS' will get all the arguments from the *cvs* buffer and will
+  always behave as if called interactively.
+- `DOUBLE' is the generic case."
+                :arguments ("fun" "args" "docstring" "interact" "body"))
+                nil [28999 31248])
+            ("defun-cvs-mode" code nil nil [31250 31530])
+            ("cvs-addto-collection" function
+               (:documentation "Add FI to C and return FI's corresponding tin.
+FI is inserted in its proper place or maybe even merged with a preexisting
+  fileinfo if applicable.
+TIN specifies an optional starting point."
+                :arguments ("c" "fi" "tin"))
+                nil [31592 32587])
+            ("cvs-cleanup-functions" variable (:documentation "Functions to tweak the cleanup process.
+The functions are called with a single argument (a FILEINFO) and should
+return a non-nil value if that fileinfo should be removed.") nil [32589 32866])
+            ("cvs-cleanup-removed" function
+               (:documentation "Non-nil if FI has been cvs-removed but still exists.
+This is intended for use on `cvs-cleanup-functions' when you have cvs-removed
+automatically generated files (which should hence not be under CVS control)
+but can't commit the removal because the repository's owner doesn't understand
+the problem."
+                :arguments ("fi"))
+                nil [32868 33398])
+            ("cvs-cleanup-collection" function
+               (:documentation "Remove undesired entries.
+C is the collection
+RM-HANDLED if non-nil means remove handled entries (if file is currently
+  visited, only remove if value is `all').
+RM-DIRS behaves like `cvs-auto-remove-directories'.
+RM-MSGS if non-nil means remove messages."
+                :arguments ("c" "rm-handled" "rm-dirs" "rm-msgs"))
+                nil [33765 35585])
+            ("cvs-get-cvsroot" function (:documentation "Get the CVSROOT for DIR.") nil [35587 35794])
+            ("cvs-get-module" function (:documentation "Return the current CVS module.
+This usually doesn't really work but is a handy initval in a prompt.") nil [35796 36342])
+            ("cvs-checkout" function
+               (:documentation "Run a `cvs checkout MODULES' in DIR.
+Feed the output to a *cvs* buffer, display it in the current window,
+and run `cvs-mode' on it.
+
+With a prefix argument, prompt for cvs FLAGS to use."
+                :user-visible-flag t
+                :arguments ("modules" "dir" "flags" "root"))
+                nil [36404 37282])
+            ("defun-cvs-mode" code nil nil [37284 37934])
+            ("defun-cvs-mode" code nil nil [38018 38245])
+            ("cvs-query-directory" function
+               (:documentation "Read directory name, prompting with PROMPT.
+If in a *cvs* buffer, don't prompt unless a prefix argument is given."
+                :arguments ("prompt"))
+                nil [38247 38541])
+            ("cvs-quickdir" function
+               (:documentation "Open a *cvs* buffer on DIR without running cvs.
+With a prefix argument, prompt for a directory to use.
+A prefix arg >8 (ex: \\[universal-argument] \\[universal-argument]),
+  prevents reuse of an existing *cvs* buffer.
+Optional argument NOSHOW if non-nil means not to display the buffer.
+FLAGS is ignored."
+                :user-visible-flag t
+                :arguments ("dir" "_flags" "noshow"))
+                nil [38558 39842])
+            ("cvs-examine" function
+               (:documentation "Run a `cvs -n update' in the specified DIRECTORY.
+That is, check what needs to be done, but don't change the disc.
+Feed the output to a *cvs* buffer and run `cvs-mode' on it.
+With a prefix argument, prompt for a directory and cvs FLAGS to use.
+A prefix arg >8 (ex: \\[universal-argument] \\[universal-argument]),
+  prevents reuse of an existing *cvs* buffer.
+Optional argument NOSHOW if non-nil means not to display the buffer."
+                :user-visible-flag t
+                :arguments ("directory" "flags" "noshow"))
+                nil [39859 40820])
+            ("cvs-update" function
+               (:documentation "Run a `cvs update' in the current working DIRECTORY.
+Feed the output to a *cvs* buffer and run `cvs-mode' on it.
+With a \\[universal-argument] prefix argument, prompt for a directory to use.
+A prefix arg >8 (ex: \\[universal-argument] \\[universal-argument]),
+  prevents reuse of an existing *cvs* buffer.
+The prefix is also passed to `cvs-flags-query' to select the FLAGS
+  passed to cvs."
+                :user-visible-flag t
+                :arguments ("directory" "flags"))
+                nil [40838 41589])
+            ("cvs-status" function
+               (:documentation "Run a `cvs status' in the current working DIRECTORY.
+Feed the output to a *cvs* buffer and run `cvs-mode' on it.
+With a prefix argument, prompt for a directory and cvs FLAGS to use.
+A prefix arg >8 (ex: \\[universal-argument] \\[universal-argument]),
+  prevents reuse of an existing *cvs* buffer.
+Optional argument NOSHOW if non-nil means not to display the buffer."
+                :user-visible-flag t
+                :arguments ("directory" "flags" "noshow"))
+                nil [41607 42393])
+            ("cvs-update-filter" function
+               (:documentation "Filter function for PCL-CVS.
+This function gets the output that CVS sends to stdout.  It inserts
+the STRING into (process-buffer PROC) but it also checks if CVS is waiting
+for a lock file.  If so, it inserts a message cookie in the *cvs* buffer."
+                :arguments ("proc" "string"))
+                nil [42395 43793])
+            ("cvs-prefix-define" code nil nil [43855 43928])
+            ("defun-cvs-mode" code nil nil [43929 44395])
+            ("put" code nil nil [44397 44433])
+            ("define-derived-mode" code nil nil [44434 45358])
+            ("cvs-buffer-p" function
+               (:documentation "Return whether the (by default current) BUFFER is a `cvs-mode' buffer."
+                :arguments ("buffer"))
+                nil [45361 45566])
+            ("cvs-buffer-check" function (:documentation "Check that the current buffer follows cvs-buffer's conventions.") nil [45568 46151])
+            ("cvs-mode-quit" function
+               (:documentation "Quit PCL-CVS, killing the *cvs* buffer."
+                :user-visible-flag t)
+                nil [46154 46305])
+            ("cvs-help" function
+               (:documentation "Display help for various PCL-CVS commands."
+                :user-visible-flag t)
+                nil [46325 46794])
+            ("cvs-move-to-goal-column" function nil nil [46826 47016])
+            ("defun-cvs-mode" code nil nil [47018 47231])
+            ("defun-cvs-mode" code nil nil [47233 47438])
+            ("defun-cvs-mode" code nil nil [47470 48333])
+            ("defalias" code nil nil [48335 48390])
+            ("cvs-mode-toggle-mark" function
+               (:documentation "Toggle the mark of the entry at point."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [48391 48588])
+            ("defun-cvs-mode" code nil nil [48590 48706])
+            ("defun-cvs-mode" code nil nil [48708 48936])
+            ("defun-cvs-mode" code nil nil [48938 49608])
+            ("defun-cvs-mode" code nil nil [49610 49951])
+            ("defun-cvs-mode" code nil nil [49953 50235])
+            ("defun-cvs-mode" code nil nil [50237 50519])
+            ("cvs-ignore-marks-alternatives" variable
+               (:constant-flag t
+                :default-value '(("toggle-marks" . "/TM") ("force-marks" . "/FM") ("ignore-marks" . "/IM")))
+                nil [50521 50648])
+            ("cvs-prefix-define" code nil nil [50650 51014])
+            ("defun-cvs-mode" code nil nil [51016 51387])
+            ("cvs-ignore-marks-p" function (:arguments ("cmd" "read-only")) nil [51389 51760])
+            ("cvs-mode-mark-get-modif" function (:arguments ("cmd")) nil [51762 51854])
+            ("cvs-get-marked" function
+               (:documentation "Return a list of all selected fileinfos.
+If there are any marked tins, and IGNORE-MARKS is nil, return them.
+Otherwise, if the cursor selects a directory, and IGNORE-CONTENTS is
+nil, return all files in it, else return just the directory.
+Otherwise return (a list containing) the file the cursor points to, or
+an empty list if it doesn't point to a file at all."
+                :arguments ("ignore-marks" "ignore-contents"))
+                nil [51856 53239])
+            ("cl-defun" code nil nil [53241 54358])
+            ("cvs-enabledp" function
+               (:documentation "Determine whether FILTER applies to at least one of the selected files."
+                :arguments ("filter"))
+                nil [54360 54536])
+            ("cvs-mode-files" function (:arguments ("-cvs-mode-files-args")) nil [54538 54709])
+            ("cvs-mode-commit-setup" function
+               (:documentation "Run `cvs-mode-commit' with setup."
+                :user-visible-flag t)
+                nil [54760 54873])
+            ("cvs-mode-commit-hook" variable (:documentation "Hook run after setting up the commit buffer.") nil [54875 55020])
+            ("cvs-mode-commit" function
+               (:documentation "Check in all marked files, or the current file.
+The user will be asked for a log message in a buffer.
+The buffer's mode and name is determined by the \"message\" setting
+  of `cvs-buffer-name-alist'.
+The POSTPROC specified there (typically `log-edit') is then called,
+  passing it the SETUP argument."
+                :user-visible-flag t
+                :arguments ("setup"))
+                nil [55022 56061])
+            ("cvs-commit-minor-wrap" function (:arguments ("_buf" "f")) nil [56063 56187])
+            ("cvs-commit-filelist" function nil nil [56189 56282])
+            ("cvs-do-commit" function
+               (:documentation "Do the actual commit, using the current buffer as the log message."
+                :user-visible-flag t
+                :arguments ("flags"))
+                nil [56284 56640])
+            ("cvs-edit-log-text-at-point" function nil nil [56687 57110])
+            ("cvs-edit-log-revision" variable nil nil [57112 57142])
+            ("cvs-edit-log-files" variable nil nil [57143 57170])
+            ("put" code nil nil [57171 57215])
+            ("cvs-mode-edit-log" function
+               (:documentation "Edit the log message at point.
+This is best called from a `log-view-mode' buffer."
+                :user-visible-flag t
+                :arguments ("file" "rev" "text"))
+                nil [57216 58734])
+            ("cvs-edit-log-minor-wrap" function (:arguments ("buf" "f")) nil [58736 59059])
+            ("cvs-edit-log-filelist" function nil nil [59061 59210])
+            ("cvs-do-edit-log" function
+               (:documentation "Do the actual commit, using the current buffer as the log message."
+                :user-visible-flag t
+                :arguments ("rev"))
+                nil [59212 59529])
+            ("defun-cvs-mode" code nil nil [59566 60173])
+            ("cvs-insert-file" function
+               (:documentation "Insert FILE (and its contents if it's a dir) and return its FI."
+                :arguments ("file"))
+                nil [60175 60563])
+            ("cvs-mark-fis-dead" function (:arguments ("fis")) nil [60565 60731])
+            ("defun-cvs-mode" code nil nil [60733 61805])
+            ("defun-cvs-mode" code nil nil [61807 62236])
+            ("defun-cvs-mode" code nil nil [62256 62529])
+            ("defun-cvs-mode" code nil nil [62531 62836])
+            ("defun-cvs-mode" code nil nil [62838 63129])
+            ("defun-cvs-mode" code nil nil [63131 63428])
+            ("defun-cvs-mode" code nil nil [63496 64279])
+            ("cvs-diff-backup-extractor" function
+               (:documentation "Return the filename and the name of the backup file as a list.
+Signal an error if there is no backup file."
+                :arguments ("fileinfo"))
+                nil [64281 64653])
+            ("cvs-emerge-diff" function (:arguments ("b1" "b2")) nil [64679 64736])
+            ("cvs-emerge-merge" function (:arguments ("b1" "b2" "base" "out")) nil [64737 64847])
+            ("ediff-after-quit-destination-buffer" variable nil nil [64873 64917])
+            ("ediff-after-quit-hook-internal" variable nil nil [64918 64957])
+            ("cvs-transient-buffers" variable nil nil [64958 64988])
+            ("cvs-ediff-startup-hook" function nil nil [64989 65195])
+            ("cvs-ediff-exit-hook" function (:arguments ("cvs-buf" "tmp-bufs")) nil [65197 65694])
+            ("cvs-ediff-diff" function (:arguments ("b1" "b2")) nil [65696 65888])
+            ("cvs-ediff-merge" function (:arguments ("b1" "b2" "base" "out")) nil [65890 66157])
+            ("cvs-retrieve-revision" function
+               (:documentation "Retrieve the given REVision of the file in FILEINFO into a new buffer."
+                :arguments ("fileinfo" "rev"))
+                nil [66201 67905])
+            ("defun-cvs-mode" code nil nil [68136 69194])
+            ("cvs-flags-define" code nil nil [69196 69334])
+            ("defun-cvs-mode" code nil nil [69336 70095])
+            ("defun-cvs-mode" code nil nil [70097 71074])
+            ("cvs-is-within-p" function
+               (:documentation "Non-nil if buffer is inside one of FIS (in DIR)."
+                :arguments ("fis" "dir"))
+                nil [71077 71495])
+            ("cl-defun" code nil nil [71497 73647])
+            ("cl-defun" code nil nil [73650 74424])
+            ("defun-cvs-mode" code nil nil [74426 74954])
+            ("cvs-status-cvstrees" function (:prototype-flag t) nil [74956 75000])
+            ("defun-cvs-mode" code nil nil [75002 75354])
+            ("defun-cvs-mode" code nil nil [75368 75651])
+            ("defun-cvs-mode" code nil nil [75654 75979])
+            ("defun-cvs-mode" code nil nil [75982 76348])
+            ("defun-cvs-mode" code nil nil [76351 76773])
+            ("define-obsolete-function-alias" code nil nil [76775 76863])
+            ("cvs-mode-find-file-other-window" function
+               (:documentation "Select a buffer containing the file in another window."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [76866 77035])
+            ("cvs-mode-display-file" function
+               (:documentation "Show a buffer containing the file in another window."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [77038 77206])
+            ("cvs-mode-view-file" function
+               (:documentation "View the file."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [77209 77329])
+            ("cvs-mode-view-file-other-window" function
+               (:documentation "View the file in another window."
+                :user-visible-flag t
+                :arguments ("e"))
+                nil [77332 77481])
+            ("cvs-find-modif" function (:arguments ("fi")) nil [77484 77752])
+            ("cvs-mode-find-file" function
+               (:documentation "Select a buffer containing the file.
+With a prefix, opens the buffer in an OTHER window."
+                :user-visible-flag t
+                :arguments ("e" "other" "view"))
+                nil [77755 79454])
+            ("defun-cvs-mode" code nil nil [79457 80528])
+            ("defun-cvs-mode" code nil nil [80531 81254])
+            ("defun-cvs-mode" code nil nil [81257 81898])
+            ("defun-cvs-mode" code nil nil [81901 82123])
+            ("defun-cvs-mode" code nil nil [82126 82389])
+            ("cvs-do-removal" function
+               (:documentation "Remove files.
+Returns a list of FIS that should be `cvs remove'd."
+                :arguments ("filter" "cmd" "all"))
+                nil [82391 83886])
+            ("defun-cvs-mode" code nil nil [83888 84245])
+            ("cvs-tag-name" variable nil nil [84248 84272])
+            ("defun-cvs-mode" code nil nil [84273 84825])
+            ("defun-cvs-mode" code nil nil [84827 85275])
+            ("defun-cvs-mode" code nil nil [85302 85661])
+            ("add-log-buffer-file-name-function" variable nil nil [85685 85727])
+            ("defun-cvs-mode" code nil nil [85729 86769])
+            ("cvs-mode-set-flags" function
+               (:documentation "Ask for new setting of cvs-FLAG-flags."
+                :user-visible-flag t
+                :arguments ("flag"))
+                nil [86818 87209])
+            ("cvs-dir-member-p" function
+               (:documentation "Return true if FILEINFO represents a file in directory DIR."
+                :arguments ("fileinfo" "dir"))
+                nil [87260 87481])
+            ("cvs-execute-single-file" function
+               (:documentation "Internal function for `cvs-execute-single-file-list'."
+                :arguments ("fi" "extractor" "program" "constant-args"))
+                nil [87483 88001])
+            ("cvs-execute-single-file-list" function
+               (:documentation "Run PROGRAM on all elements on FIS.
+CONSTANT-ARGS is a list of strings to pass as arguments to PROGRAM.
+The arguments given to the program will be CONSTANT-ARGS followed by
+the list that EXTRACTOR returns.
+
+EXTRACTOR will be called once for each file on FIS.  It is given
+one argument, the cvs-fileinfo.  It can return t, which means ignore
+this file, or a list of arguments to send to the program."
+                :arguments ("fis" "extractor" "program" "constant-args"))
+                nil [88068 88630])
+            ("cvs-revert-if-needed" function (:arguments ("fis")) nil [88634 89572])
+            ("cvs-change-cvsroot" function
+               (:documentation "Change the CVSROOT."
+                :user-visible-flag t
+                :arguments ("newroot"))
+                nil [89576 89881])
+            ("cvs-dired-action" variable
+               (:documentation "The action to be performed when opening a CVS directory.
+Sensible values are `cvs-examine', `cvs-status' and `cvs-quickdir'."
+                :default-value 'cvs-quickdir)
+                nil [90011 90278])
+            ("cvs-dired-use-hook" variable
+               (:documentation "Whether or not opening a CVS directory should run PCL-CVS.
+A value of nil means never do it.
+`always' means to always do it unless a prefix argument is given to the
+  command that prompted the opening of the directory.
+Anything else means to do it only if the prefix arg is equal to this value."
+                :default-value '(4))
+                nil [90295 90751])
+            ("progn" code nil nil [90768 91352])
+            ("add-hook" code nil nil [91377 91437])
+            ("cvs-vc-command-advice" function (:arguments ("command" "files" "flags")) nil [91439 92952])
+            ("cvs-mark-buffer-changed" function nil nil [92987 93720])
+            ("add-hook" code nil nil [93722 93774])
+            ("cvs-insert-visited-file" function nil nil [93776 94253])
+            ("add-hook" code nil nil [94255 94314])
+            ("pcvs" package nil nil [94317 94332]))          
+      :file "pcvs.el.gz"
+      :pointmax 94356
+      :fsize 26469
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax '((close-paren 5163 . 5164) (symbol 5128 . 5145) (open-paren 5127 . 5128)))
+    (semanticdb-table "semanticdb-table-15876e0"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("change-log" customgroup
+               (:documentation "Change log maintenance."
+                :user-visible-flag t)
+                nil [1289 1448])
+            ("change-log-default-name" variable (:documentation "Name of a change log file for \\[add-change-log-entry].") nil [1451 1626])
+            ("put" code nil nil [1642 1711])
+            ("change-log-mode-hook" variable (:documentation "Normal hook run by `change-log-mode'.") nil [1713 1826])
+            ("add-log-current-defun-function" variable (:documentation "If non-nil, function to guess name of surrounding function.
+It is called by `add-log-current-defun' with no argument, and
+should return the function's name as a string, or nil if point is
+outside a function.") nil [1895 2213])
+            ("add-log-full-name" variable (:documentation "Full name of user, for inclusion in ChangeLog daily headers.
+This defaults to the value returned by the function `user-full-name'.") nil [2230 2474])
+            ("add-log-mailing-address" variable (:documentation "Email addresses of user, for inclusion in ChangeLog headers.
+This defaults to the value of `user-mail-address'.  In addition to
+being a simple string, this value can also be a list.  All elements
+will be recognized as referring to the same user; when creating a new
+ChangeLog entry, one element will be chosen at random.") nil [2491 2989])
+            ("add-log-time-format" variable
+               (:documentation "Function that defines the time format.
+For example, `add-log-iso8601-time-string', which gives the
+date in international ISO 8601 format,
+and `current-time-string' are two valid values."
+                :default-value 'add-log-iso8601-time-string)
+                nil [2991 3482])
+            ("add-log-keep-changes-together" variable (:documentation "If non-nil, normally keep day's log entries for one file together.
+
+Log entries for a given file made with \\[add-change-log-entry] or
+\\[add-change-log-entry-other-window] will only be added to others for that file made
+today if this variable is non-nil or that file comes first in today's
+entries.  Otherwise another entry for that file will be started.  An
+original log:
+
+	* foo (...): ...
+	* bar (...): change 1
+
+in the latter case, \\[add-change-log-entry-other-window] in a buffer visiting `bar', yields:
+
+	* bar (...): -!-
+	* foo (...): ...
+	* bar (...): change 1
+
+and in the former:
+
+	* foo (...): ...
+	* bar (...): change 1
+	(...): -!-
+
+The NEW-ENTRY arg to `add-change-log-entry' can override the effect of
+this variable.") nil [3484 4325])
+            ("add-log-always-start-new-record" variable (:documentation "If non-nil, `add-change-log-entry' will always start a new record.") nil [4327 4501])
+            ("add-log-buffer-file-name-function" variable
+               (:documentation "If non-nil, function to call to identify the full filename of a buffer.
+This function is called with no argument.  The default is to
+use `buffer-file-name'."
+                :default-value 'buffer-file-name)
+                nil [4503 4724])
+            ("add-log-file-name-function" variable (:documentation "If non-nil, function to call to identify the filename for a ChangeLog entry.
+This function is called with one argument, the value of variable
+`buffer-file-name' in that buffer.  If this is nil, the default is to
+use the file's name relative to the directory of the change log file.") nil [4726 5114])
+            ("change-log-version-info-enabled" variable (:documentation "If non-nil, enable recording version numbers with the changes.") nil [5117 5287])
+            ("change-log-version-number-regexp-list" variable
+               (:documentation "List of regexps to search for version number.
+The version number must be in group 1.
+Note: The search is conducted only within 10%, at the beginning of the file."
+                :default-value (let ((re "\\([0-9]+\\.[0-9.]+\\)")) (list (concat "^(def[^ 	
+]+[ 	]+[^ 	
+][ 	]\"" re) (concat "^;+ *Revision: +[^ 	
+]+[ 	]+" re))))
+                nil [5289 5830])
+            ("change-log-directory-files" variable
+               (:documentation "List of files that cause `find-change-log' to stop in containing directory.
+This applies if no pre-existing ChangeLog is found.  If nil, then in such
+a case simply use the directory containing the changed file."
+                :default-value '(".bzr" ".git" ".hg" ".svn"))
+                nil [5832 6177])
+            ("change-log-date" variable
+               (:documentation "Face used to highlight dates in date lines."
+                :default-value '((t (:inherit font-lock-string-face)))
+                :type "face")
+                nil [6179 6333])
+            ("change-log-name" variable
+               (:documentation "Face for highlighting author names."
+                :default-value '((t (:inherit font-lock-constant-face)))
+                :type "face")
+                nil [6335 6483])
+            ("change-log-email" variable
+               (:documentation "Face for highlighting author email addresses."
+                :default-value '((t (:inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [6485 6649])
+            ("change-log-file" variable
+               (:documentation "Face for highlighting file names."
+                :default-value '((t (:inherit font-lock-function-name-face)))
+                :type "face")
+                nil [6651 6802])
+            ("change-log-list" variable
+               (:documentation "Face for highlighting parenthesized lists of functions or variables."
+                :default-value '((t (:inherit font-lock-keyword-face)))
+                :type "face")
+                nil [6804 6984])
+            ("change-log-conditionals" variable
+               (:documentation "Face for highlighting conditionals of the form `[...]'."
+                :default-value '((t (:inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [6986 7167])
+            ("change-log-function" variable
+               (:documentation "Face for highlighting items of the form `<....>'."
+                :default-value '((t (:inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [7169 7340])
+            ("change-log-acknowledgment" variable
+               (:documentation "Face for highlighting acknowledgments."
+                :default-value '((t (:inherit font-lock-comment-face)))
+                :type "face")
+                nil [7342 7502])
+            ("define-obsolete-face-alias" code nil nil [7503 7595])
+            ("change-log-file-names-re" variable
+               (:constant-flag t
+                :default-value "^\\( +\\|	\\)\\* \\([^ ,:([
+]+\\)")
+                nil [7597 7670])
+            ("change-log-start-entry-re" variable
+               (:constant-flag t
+                :default-value "^\\sw.........[0-9:+ ]*")
+                nil [7671 7733])
+            ("change-log-font-lock-keywords" variable
+               (:documentation "Additional expressions to highlight in Change Log mode."
+                :default-value `(("^[0-9-]+ +\\|^ \\{11,\\}\\|^	 \\{3,\\}\\|^\\(Sun\\|Mon\\|Tue\\|Wed\\|Thu\\|Fri\\|Sat\\) [A-z][a-z][a-z] [0-9:+ ]+" (0 'change-log-date) ("\\([^<(]+?\\)[ 	]*[(<]\\([A-Za-z0-9_.+-]+@[A-Za-z0-9_.-]+\\)[>)]" nil nil (1 'change-log-name) (2 'change-log-email))) (,change-log-file-names-re (2 'change-log-file) ("\\=, \\([^ ,:([
+]+\\)" nil nil (1 'change-log-file)) ("\\= (\\([^(),
+]+\\|(\\(setf\\|SETF\\) [^() ,
+]+)\\)" nil nil (1 'change-log-list)) ("\\=, *\\([^(),
+]+\\|(\\(setf\\|SETF\\) [^() ,
+]+)\\)" nil nil (1 'change-log-list))) ("^\\( +\\|	\\)(\\([^(),
+]+\\|(\\(setf\\|SETF\\) [^() ,
+]+)\\)" (2 'change-log-list) ("\\=, *\\([^(),
+]+\\|(\\(setf\\|SETF\\) [^() ,
+]+)\\)" nil nil (1 'change-log-list))) ("\\[!?\\([^]
+]+\\)\\]\\(:\\| (\\)" (1 'change-log-conditionals)) ("<\\([^>
+]+\\)>\\(:\\| (\\)" (1 'change-log-function)) ("\\(^\\( +\\|	\\)\\|  \\)\\(Thanks to\\|Patch\\(es\\)? by\\|Report\\(ed by\\| from\\)\\|Suggest\\(ed by\\|ion from\\)\\)" 3 'change-log-acknowledgment)))
+                nil [7735 9881])
+            ("change-log-search-file-name" function
+               (:documentation "Return the file-name for the change under point."
+                :arguments ("where"))
+                nil [9883 10958])
+            ("change-log-find-file" function
+               (:documentation "Visit the file for the change under point."
+                :user-visible-flag t)
+                nil [10960 11221])
+            ("change-log-search-tag-name-1" function
+               (:documentation "Search for a tag name within subexpression 1 of last match.
+Optional argument FROM specifies a buffer position where the tag
+name should be located.  Return value is a cons whose car is the
+string representing the tag and whose cdr is the position where
+the tag was found."
+                :arguments ("from"))
+                nil [11223 12094])
+            ("change-log-tag-re" variable
+               (:documentation "Regexp matching a tag name in change log entries."
+                :constant-flag t
+                :default-value "(\\(\\(?:\\sw\\|\\s_\\)+\\(?:[, 	]+\\(?:\\sw\\|\\s_\\)+\\)*\\))")
+                nil [12096 12247])
+            ("change-log-search-tag-name" function
+               (:documentation "Search for a tag name near `point'.
+Optional argument AT non-nil means search near buffer position AT.
+Return value is a cons whose car is the string representing
+the tag and whose cdr is the position where the tag was found."
+                :arguments ("at"))
+                nil [12249 14369])
+            ("change-log-find-head" variable nil nil [14371 14404])
+            ("change-log-find-tail" variable nil nil [14405 14438])
+            ("change-log-find-window" variable nil nil [14439 14474])
+            ("change-log-goto-source-1" function
+               (:documentation "Search for tag TAG in buffer BUFFER visiting file FILE.
+REGEXP is a regular expression for TAG.  The remaining arguments
+are optional: WINDOW denotes the window to display the results of
+the search.  FIRST is a position in BUFFER denoting the first
+match from previous searches for TAG.  LAST is the position in
+BUFFER denoting the last match for TAG in the last search."
+                :arguments ("tag" "regexp" "file" "buffer" "window" "first" "last"))
+                nil [14476 16820])
+            ("change-log-goto-source" function
+               (:documentation "Go to source location of \"change log tag\" near `point'.
+A change log tag is a symbol within a parenthesized,
+comma-separated list.  If no suitable tag can be found nearby,
+try to visit the file for the change under `point' instead."
+                :user-visible-flag t)
+                nil [16822 17230])
+            ("change-log-goto-source-internal" function nil nil [17232 19165])
+            ("change-log-next-error" function
+               (:documentation "Move to the Nth (default 1) next match in a ChangeLog buffer.
+Compatibility function for \\[next-error] invocations."
+                :user-visible-flag t
+                :arguments ("argp" "reset"))
+                nil [19167 20111])
+            ("change-log-mode-map" variable
+               (:documentation "Keymap for Change Log major mode."
+                :default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap))) (define-key map [3 16] 'add-log-edit-prev-comment) (define-key map [3 14] 'add-log-edit-next-comment) (define-key map [3 6] 'change-log-find-file) (define-key map [3 3] 'change-log-goto-source) (define-key map [menu-bar changelog] (cons "ChangeLog" menu-map)) (define-key menu-map [gs] '(menu-item "Go To Source" change-log-goto-source :help "Go to source location of ChangeLog tag near point")) (define-key menu-map [ff] '(menu-item "Find File" change-log-find-file :help "Visit the file for the change under point")) (define-key menu-map [sep] '("--")) (define-key menu-map [nx] '(menu-item "Next Log-Edit Comment" add-log-edit-next-comment :help "Cycle forward through Log-Edit mode comment history")) (define-key menu-map [pr] '(menu-item "Previous Log-Edit Comment" add-log-edit-prev-comment :help "Cycle backward through Log-Edit mode comment history")) map))
+                nil [20113 21227])
+            ("defvaralias" code nil nil [21375 21439])
+            ("add-log-time-zone-rule" variable (:documentation "Time zone rule used for calculating change log time stamps.
+If nil, use local time.  If t, use Universal Time.
+If a string, interpret as the ZONE argument of `format-time-string'.") nil [21440 21659])
+            ("put" code nil nil [21660 21758])
+            ("add-log-iso8601-time-zone" function (:arguments ("time" "zone")) nil [21760 21890])
+            ("add-log-iso8601-with-time-zone" variable nil nil [21892 21935])
+            ("add-log-iso8601-time-string" function (:arguments ("time" "zone")) nil [21937 22094])
+            ("change-log-name" function (:documentation "Return (system-dependent) default name for a change log file.") nil [22096 22237])
+            ("add-log-edit-prev-comment" function
+               (:documentation "Cycle backward through Log-Edit mode comment history.
+With a numeric prefix ARG, go back ARG comments."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [22239 22994])
+            ("add-log-edit-next-comment" function
+               (:documentation "Cycle forward through Log-Edit mode comment history.
+With a numeric prefix ARG, go back ARG comments."
+                :user-visible-flag t
+                :arguments ("arg"))
+                nil [22996 23200])
+            ("prompt-for-change-log-name" function (:documentation "Prompt for a change log name.") nil [23217 23857])
+            ("change-log-version-number-search" function (:documentation "Return version number of current buffer's file.
+This is the value returned by `vc-working-revision' or, if that is
+nil, by matching `change-log-version-number-regexp-list'.") nil [23859 24773])
+            ("declare-function" code nil nil [24775 24875])
+            ("find-change-log" function
+               (:documentation "Find a change log file for \\[add-change-log-entry] and return the name.
+
+Optional arg FILE-NAME specifies the file to use.
+If FILE-NAME is nil, use the value of `change-log-default-name'.
+If `change-log-default-name' is nil, behave as though it were \"ChangeLog\"
+(or whatever we use on this operating system).
+
+If `change-log-default-name' contains a leading directory component, then
+simply find it in the current directory.  Otherwise, search in the current
+directory and its successive parents for a file so named.  Stop at the first
+such file that exists (or has a buffer visiting it), or the first directory
+that contains any of `change-log-directory-files'.  If no match is found,
+use the current directory.  To override the choice of this function,
+simply create an empty ChangeLog file first by hand in the desired place.
+
+Once a file is found, `change-log-default-name' is set locally in the
+current buffer to the complete file name.
+Optional arg BUFFER-FILE overrides `buffer-file-name'."
+                :arguments ("file-name" "buffer-file"))
+                nil [24892 27969])
+            ("add-log-file-name" function
+               (:documentation "Compute file-name of BUFFER-FILE to be used in entries in LOG-FILE."
+                :arguments ("buffer-file" "log-file"))
+                nil [27971 29274])
+            ("add-log-dont-create-changelog-file" variable
+               (:documentation "If non-nil, don't create ChangeLog files for log entries.
+If a ChangeLog file does not already exist, a non-nil value
+means to put log entries in a suitably named buffer."
+                :default-value t)
+                nil [29276 29534])
+            ("put" code nil nil [29536 29608])
+            ("add-log--pseudo-changelog-buffer-name" function
+               (:documentation "Compute a suitable name for a non-file visiting ChangeLog buffer.
+CHANGELOG-FILE-NAME is the file name of the actual ChangeLog file
+if it were to exist."
+                :arguments ("changelog-file-name"))
+                nil [29610 29949])
+            ("add-log--changelog-buffer-p" function
+               (:documentation "Return non-nil if BUFFER holds a change log for CHANGELOG-FILE-NAME."
+                :arguments ("changelog-file-name" "buffer"))
+                nil [29951 30299])
+            ("add-log-find-changelog-buffer" function
+               (:documentation "Find a ChangeLog buffer for CHANGELOG-FILE-NAME.
+Respect `add-log-use-pseudo-changelog', which see."
+                :arguments ("changelog-file-name"))
+                nil [30301 30699])
+            ("add-change-log-entry" function
+               (:documentation "Find ChangeLog buffer, add an entry for today and an item for this file.
+Optional arg WHOAMI (interactive prefix) non-nil means prompt for
+user name and email (stored in `add-log-full-name'
+and `add-log-mailing-address').
+
+Second arg CHANGELOG-FILE-NAME is the file name of the change log.
+If nil, use the value of `change-log-default-name'.  If the file
+thus named exists, it is used for the new entry.  If it doesn't
+exist, it is created, unless `add-log-dont-create-changelog-file' is t,
+in which case a suitably named buffer that doesn't visit any file
+is used for keeping entries pertaining to CHANGELOG-FILE-NAME's
+directory.
+
+Third arg OTHER-WINDOW non-nil means visit in other window.
+
+Fourth arg NEW-ENTRY non-nil means always create a new entry at the front;
+never append to an existing entry.  Option `add-log-keep-changes-together'
+otherwise affects whether a new entry is created.
+
+Fifth arg PUT-NEW-ENTRY-ON-NEW-LINE non-nil means that if a new
+entry is created, put it on a new line by itself, do not put it
+after a comma on an existing line.
+
+Option `add-log-always-start-new-record' non-nil means always create a
+new record, even when the last record was made on the same date and by
+the same person.
+
+The change log file can start with a copyright notice and a copying
+permission notice.  The first blank line indicates the end of these
+notices.
+
+Today's date is calculated according to `add-log-time-zone-rule' if
+non-nil, otherwise in local time."
+                :user-visible-flag t
+                :arguments ("whoami" "changelog-file-name" "other-window" "new-entry" "put-new-entry-on-new-line"))
+                nil [30716 39517])
+            ("add-change-log-entry-other-window" function
+               (:documentation "Find change log file in other window and add entry and item.
+This is just like `add-change-log-entry' except that it displays
+the change log file in another window."
+                :user-visible-flag t
+                :arguments ("whoami" "file-name"))
+                nil [39534 39921])
+            ("change-log-indent-text" variable nil nil [39924 39957])
+            ("change-log-fill-parenthesized-list" function nil nil [39959 41044])
+            ("change-log-indent" function nil nil [41046 41709])
+            ("smerge-resolve-function" variable nil nil [41712 41744])
+            ("copyright-at-end-flag" variable nil nil [41745 41775])
+            ("change-log-mode-syntax-table" variable
+               (:documentation "Syntax table used while in `change-log-mode'."
+                :default-value (let ((table (make-syntax-table))) (modify-syntax-entry 96 "'   " table) (modify-syntax-entry 39 "'   " table) table))
+                nil [41777 41996])
+            ("define-derived-mode" code nil nil [42013 44425])
+            ("change-log-next-buffer" function
+               (:documentation "Return the next buffer in the series of ChangeLog file buffers.
+This function is used for multiple buffers isearch.
+A sequence of buffers is formed by ChangeLog files with decreasing
+numeric file name suffixes in the directory of the initial ChangeLog
+file were isearch was started."
+                :arguments ("buffer" "wrap"))
+                nil [44427 46139])
+            ("change-log-fill-forward-paragraph" function
+               (:documentation "Cut paragraphs so filling preserves open parentheses at beginning of lines."
+                :arguments ("n"))
+                nil [46141 46458])
+            ("add-log-current-defun-header-regexp" variable
+               (:documentation "Heuristic regexp used by `add-log-current-defun' for unknown major modes.
+The regexp's first submatch is placed in the ChangeLog entry, in
+parentheses."
+                :default-value "^\\([[:upper:]][[:upper:]_ ]*[[:upper:]_]\\|[-_[:alpha:]]+\\)[ 	]*[:=]")
+                nil [46461 46777])
+            ("declare-function" code nil nil [46779 46828])
+            ("declare-function" code nil nil [46829 46878])
+            ("add-log-current-defun" function (:documentation "Return name of function definition point is in, or nil.
+
+Understands C, Lisp, LaTeX (\"functions\" are chapters, sections, ...),
+Texinfo (@node titles) and Perl.
+
+Other modes are handled by a heuristic that looks in the 10K before
+point for uppercase headings starting in the first column or
+identifiers followed by `:' or `='.  See variables
+`add-log-current-defun-header-regexp' and
+`add-log-current-defun-function'.
+
+Has a preference of looking backwards.") nil [46895 48005])
+            ("change-log-get-method-definition-md" variable nil nil [48007 48051])
+            ("change-log-get-method-definition-1" function (:arguments ("end")) nil [48231 48423])
+            ("change-log-get-method-definition" function (:documentation "For Objective C, return the method name if we are in a method.") nil [48425 49095])
+            ("timezone-make-date-sortable" function (:prototype-flag t) nil [49098 49148])
+            ("change-log-sortable-date-at" function (:documentation "Return date of log entry in a consistent form for sorting.
+Point is assumed to be at the start of the entry.") nil [49150 49637])
+            ("change-log-resolve-conflict" function (:documentation "Function to be used in `smerge-resolve-function'.") nil [49639 50706])
+            ("change-log-merge" function
+               (:documentation "Merge the contents of change log file OTHER-LOG with this buffer.
+Both must be found in Change Log mode (since the merging depends on
+the appropriate motion commands).  OTHER-LOG can be either a file name
+or a buffer.
+
+Entries are inserted in chronological order.  Both the current and
+old-style time formats for entries are supported."
+                :user-visible-flag t
+                :arguments ("other-log"))
+                nil [50723 52540])
+            ("change-log-beginning-of-defun" function nil nil [52542 52641])
+            ("change-log-end-of-defun" function nil nil [52643 53602])
+            ("add-log" package nil nil [53604 53622]))          
+      :file "add-log.el.gz"
+      :pointmax 53649
+      :fsize 15509
+      :lastmodtime '(23443 29219 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!share!emacs!27.0.50!lisp!vc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

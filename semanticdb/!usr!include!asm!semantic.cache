@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-162c0cc
+;; Object semanticdb-project-database-file-18bb878
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-162c0cc"
+(semanticdb-project-database-file "semanticdb-project-database-file-18bb878"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1b71154"
+    (semanticdb-table "semanticdb-table-14506f8"
       :major-mode c-mode
       :tags 
         '( ("_ASM_X86_UNISTD_H" variable (:constant-flag t) nil [98 115])
@@ -19,16 +19,25 @@
           ("__X32_SYSCALL_BIT" . ((number "0x40000000" 170 . 180)))
           )
 )
-    (semanticdb-table "semanticdb-table-162c0ac"
+    (semanticdb-table "semanticdb-table-e040d0"
       :file "unistd_64.h"
       :fsize 8893
       :lastmodtime '(23393 25726 0 0))
-    (semanticdb-table "semanticdb-table-162c0ec"
+    (semanticdb-table "semanticdb-table-15563c8"
       :major-mode c-mode
       :tags nil
       :file "sigcontext.h"
       :pointmax 201
       :fsize 9724
+      :lastmodtime '(23393 25726 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1479008"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/errno.h" include (:system-flag t) nil [1 31]))          
+      :file "errno.h"
+      :pointmax 32
+      :fsize 31
       :lastmodtime '(23393 25726 0 0)
       :unmatched-syntax nil))
   :file "!usr!include!asm!semantic.cache"

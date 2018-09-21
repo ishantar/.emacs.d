@@ -1,15 +1,51 @@
-;; Object semanticdb-project-database-file-1cde518
+;; Object semanticdb-project-database-file-1c93870
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-1cde518"
+(semanticdb-project-database-file "semanticdb-project-database-file-1c93870"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1beff5c"
+    (semanticdb-table "semanticdb-table-1c93850"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "paren-face-autoloads.el"
       :pointmax 359
       :fsize 1798
       :lastmodtime '(23398 9607 750075 482000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c25544"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("paren-face" customgroup
+               (:documentation "Face for parentheses in lisp modes."
+                :user-visible-flag t)
+                nil [2405 2518])
+            ("parenthesis" variable
+               (:documentation "Face for parentheses in lisp modes.
+This face is only used if `paren-face-mode' is turned on.
+See `global-paren-face-mode' for an easy way to do so."
+                :default-value '((t (:inherit shadow)))
+                :type "face")
+                nil [2520 2740])
+            ("paren-face-modes" variable
+               (:documentation "Major modes in which `paren-face-mode' should be turned on.
+When `global-paren-face-mode' is turned on, the buffer-local mode
+is turned on in all buffers whose major mode is or derives from
+one of the modes listed here."
+                :default-value '(lisp-mode emacs-lisp-mode lisp-interaction-mode ielm-mode scheme-mode inferior-scheme-mode clojure-mode cider-repl-mode nrepl-mode arc-mode inferior-arc-mode))
+                nil [2742 3219])
+            ("paren-face-regexp" variable
+               (:documentation "Regular expression to match parentheses.
+To add [ and ] use something like \"[][()]\"."
+                :default-value "[][()]")
+                nil [3221 3387])
+            ("paren-face-mode-lighter" variable (:documentation "String to display in the mode line when `paren-face-mode' is active.") nil [3389 3537])
+            ("define-minor-mode" code nil nil [3554 4119])
+            ("define-globalized-minor-mode" code nil nil [4136 4263])
+            ("turn-on-paren-face-mode-if-desired" function nil nil [4265 4384])
+            ("paren-face" package nil nil [4392 4413]))          
+      :file "paren-face.el"
+      :pointmax 4495
+      :fsize 4494
+      :lastmodtime '(23398 9607 636740 980000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!paren-face-20180318.2025!semantic.cache"
   :semantic-tag-version "2.0"

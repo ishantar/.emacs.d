@@ -1,5 +1,4 @@
 
-
 ;; (require 'package)
 
 (let* (  (no-ssl (and (memq system-type '(windows-nt ms-dos))
@@ -17,8 +16,20 @@
 ;; (package-initialize)
 
 (unless (directory-files "/tmp/" '() "emacs" ) (mkdir "/tmp/emacs"))
+
 (defmacro fmap (&rest flist)
   (mapc 'funcall flist))
+
+
+(defun custom-set-hook-function (SYM &optional VAL)
+  "SYM must be quoted"
+  (fset SYM 
+          (lambda nil (mapcar 'funcall (symbol-value SYM))))
+  (put SYM 'saved-value 
+             (or VAL 
+                 (get SYM 'customized-value)
+                 (get SYM 'saved-value)
+                 (get SYM 'standard-value))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -26,9 +37,22 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(Info-breadcrumbs-depth 6)
- '(ac-auto-show-menu 0.4)
+ '(ac-auto-show-menu 0.25)
  '(ac-auto-start 1)
+ '(ac-candidate-limit nil)
+ '(ac-delay 0.25)
+ '(ac-etags-requires 1)
+ '(ac-flycheck-poll-completion-end-interval 0.5)
+ '(ac-modes
+    '(emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode nim-mode c-mode cc-mode c++-mode objc-mode swift-mode go-mode java-mode malabar-mode clojure-mode clojurescript-mode cider-repl-node scala-mode scheme-mode ocaml-mode tuareg-mode coq-mode haskell-mode agda-mode agda2-mode perl-mode cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode javascript-mode js-mode js-jsx-mode js2-mode js2-jsx-mode coffee-mode php-mode css-mode scss-mode less-css-mode elixir-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode web-mode ts-mode sclang-mode verilog-mode qml-mode apples-mode))
+ '(ac-non-trigger-commands
+    '(*table--cell-self-insert-command electric-buffer-list self-insert-command newline))
+ '(ac-quick-help-delay 1.0)
+ '(ac-trigger-commands
+    '(widget-forward indent-for-tab-command insert-tab indent-relative-maybe))
+ '(ac-trigger-key nil)
  '(ac-use-fuzzy t)
+ '(ac-use-menu-map t)
  '(ahs-face-check-include-overlay t)
  '(ahs-idle-interval 1.2)
  '(ahs-inhibit-face-list
@@ -39,6 +63,7 @@
  '(ansi-color-names-vector
     ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
  '(async-bytecomp-package-mode t)
+ '(auto-compile-on-save-mode nil)
  '(backup-directory-alist '(("." . "~/.emacs.d/auto-backup-list/")))
  '(baud-rate 38400)
  '(beacon-blink-when-focused t)
@@ -60,17 +85,8 @@
     '("\\sw+_t" "bool" "complex" "imaginary" "FILE" "lconv" "tm" "va_list" "jmp_buf" "Lisp_Object" "\"\\\\<\\\\(\\\\(?:u\\\\|\\\\)int\\\\(?:8\\\\|16\\\\|32\\\\|64\\\\)_t\\\\)\\\\>\""))
  '(c-max-one-liner-length 102)
  '(c-mode-common-hook
-    '(cwarn-mode semantic-mode ac-capf-setup auto-complete-mode
-       (λ nil
-         (eval 'global-eldoc-overlay-disable))
-       c-turn-on-eldoc-mode irony-mode irony-eldoc flycheck-irony-setup flycheck-cstyle-setup flycheck-mode flycheck-inline-mode electric-pair-mode))
- '(c-mode-hook
-    '((λ nil
-        (add-hook 'kill-buffer-hook 'call-c-eldoc-cleanup))
-       macrostep-c-mode-hook
-       (λ nil
-         (eval 'flycheck-clang-analyser-setup))
-       irony-mode irony-eldoc flycheck-irony-setup flycheck-cstyle-setup flycheck-mode flycheck-inline-mode electric-pair-mode))
+    '(global-eldoc-overlay-disable eldoc-overlay-disable c-turn-on-eldoc-mode))
+ '(c-mode-hook '(macrostep-c-mode-hook))
  '(c-tab-always-indent nil)
  '(cider-allow-jack-in-without-project 'warn)
  '(cider-auto-mode 't)
@@ -80,11 +96,13 @@
  '(cider-comment-postfix "  ;; ")
  '(cider-comment-prefix "  ;;")
  '(cider-connected-hook
-    '(cljr--init-middleware eldoc-mode company-mode flycheck-mode flycheck-clojure-setup yas-minor-mode semantic-mode semantic-idle-summary-mode))
+    '(cljr--init-middleware flycheck-clojure-setup ac-cider-setup ac-capf-setup cider-enlighten-mode))
  '(cider-debug-display-locals t)
  '(cider-default-repl-command "clojure")
  '(cider-eldoc-display-context-dependent-info t)
- '(cider-enlighten-mode nil)
+ '(cider-eldoc-max-class-names-to-display 5)
+ '(cider-eldoc-ns-function 'cider-abbreviate-ns)
+ '(cider-eval-result-duration 5)
  '(cider-eval-result-prefix "~> ")
  '(cider-font-lock-dynamically 't)
  '(cider-font-lock-max-length nil)
@@ -92,10 +110,20 @@
  '(cider-jack-in-default "clojure")
  '(cider-jdk-src-paths '("/usr/lib/jvm/java-10-openjdk/"))
  '(cider-preferred-build-tool nil)
+ '(cider-repl-history-highlight-current-entry t)
  '(cider-repl-history-size 4096)
+ '(cider-repl-pop-to-buffer-on-connect 'display-only)
+ '(cider-repl-result-prefix "~>")
  '(cider-repl-scroll-on-output nil)
  '(cider-repl-use-clojure-font-lock t)
+ '(cider-repl-use-pretty-printing t)
  '(cider-result-use-clojure-font-lock t)
+ '(cider-scratch-initial-message
+    ";; This buffer is for Clojure experiments and evaluation.
+;; Press C-j to evaluate the last expression.
+
+")
+ '(cider-use-overlays nil)
  '(clojure-build-tool-files
     '("project.clj" "build.boot" "build.gradle" "deps.edn" "shadow-cljs.edn" "tools.deps" "tools.deps.alpha"))
  '(clojure-comment-regexp clojure--comment-macro-regexp)
@@ -106,23 +134,32 @@
  '(comint-scroll-show-maximum-output nil)
  '(comint-terminfo-terminal "eterm-color")
  '(comint-use-prompt-regexp nil)
- '(company-auto-complete ''company-explicit-action-p)
- '(company-auto-complete-chars '(95 40 41 46))
+ '(company-auto-complete t)
+ '(company-auto-complete-chars #'(9))
  '(company-backends
     '(company-clang company-cmake
        (company-dabbrev-code company-gtags company-keywords company-etags)
        company-capf company-c-headers company-files company-semantic company-elisp company-oddmuse company-dabbrev company-oddmuse company-nxml company-bbdb company-css company-eclim company-abbrev))
- '(company-cmake-executable '/usr/bin/cmake)
+ '(company-c-headers-path-user '(".."))
+ '(company-cmake-executable "/usr/bin/cmake")
  '(company-dabbrev-code-everywhere t)
- '(company-lighter-base "Comp")
- '(company-minimum-prefix-length 2)
+ '(company-dabbrev-minimum-length 2)
+ '(company-idle-delay 0.25)
+ '(company-lighter-base "company")
+ '(company-minimum-prefix-length 1)
+ '(company-require-match nil)
+ '(company-show-numbers nil)
  '(company-statistics-mode t)
+ '(company-tooltip-idle-delay 0.25)
+ '(completion-styles '(basic partial-completion emacs22 substring))
  '(confirm-kill-emacs 'y-or-n-p)
  '(cua-mode t nil (cua-base))
  '(cua-normal-cursor-color "light grey")
  '(cursor-in-non-selected-windows 'hollow)
  '(custom-safe-themes
     '("eae2f15748f64497a99475889f650151964bb6f1d408e9e6730bb89f55a613c4" "bd736b2cfe8c5e8bae6213ea64a1259f001c2c58824474f10c6c8728017bcbb9" "1d6281fda54c6cf76ff730d315c804bf511fa7e760f046db83a96ea98f823e3b" "6aa15287ed7f2ddf73e6177a03308488f2928f3763f7809da60294ef212c008a" "04294d4d1e38081f2d2f0f2781f8f05b9b3f8a46dba083ba59278c4cb22dfa23" "8e87db652bb1e95e2e474bfdd83d62b4edef1bb73f6f5b390dc5f43850fe86b0" "29a47a1805a9a763f0bfe04306b6a3fdc3801f8b4d55fbc01521b1421d0b25d0" "c1f975bd275528dcb916cb4bfdec66f04162ab2d4cf9554635ce9d6dc795e67c" default))
+ '(dash-enable-fontlock t)
+ '(default-frame-alist '((left-fringe . 8) (right-fringe . 4)))
  '(dired-hide-details-hide-information-lines nil)
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "-alh")
@@ -132,46 +169,62 @@
  '(display-line-numbers-width 3)
  '(dynamic-completion-mode t)
  '(eldoc-echo-area-use-multiline-p t)
- '(eldoc-idle-delay 0.35)
+ '(eldoc-idle-delay 0.25)
+ '(eldoc-in-minibuffer-mode t)
+ '(eldoc-in-minibuffer-mode-lighter " :eld")
+ '(eldoc-in-minibuffer-own-frame-p nil)
+ '(eldoc-in-minibuffer-show-fn 'eldoc-overlay-display)
  '(eldoc-minor-mode-string " eldoc")
+ '(eldoc-mode-line-stop-rolling-on-input nil)
+ '(eldoc-overlay-in-minibuffer-flag nil)
+ '(eldoc-show-in-mode-line-delay 15)
  '(electric-indent-mode nil)
- '(emacs-lisp-mode-hook '(checkdoc-minor-mode eldoc-mode edebug-x-mode))
+ '(emacs-lisp-mode-hook
+    '(semantic-default-elisp-setup checkdoc-minor-mode edebug-x-mode completion-lisp-mode-hook))
  '(erc-insert-pre-hook '(0))
  '(erc-networks-mode nil)
  '(eterm-256color-disable-bold nil)
+ '(eval-expr-error-message-delay 18)
+ '(eval-expr-print-length 18)
+ '(eval-expr-print-level 6)
+ '(eval-expr-use-echo-area-or-buffer t)
  '(explicit-shell-file-name nil)
  '(fci-rule-color "#073642")
  '(flycheck-checkers
     '(ada-gnat asciidoctor asciidoc c/c++-clang c/c++-gcc c/c++-cppcheck cfengine chef-foodcritic coffee coffee-coffeelint coq css-csslint css-stylelint cwl d-dmd dockerfile-hadolint emacs-lisp erlang-rebar3 erlang eruby-erubis fortran-gfortran go-gofmt go-golint go-vet go-build go-test go-errcheck go-unconvert go-megacheck groovy haml handlebars haskell-stack-ghc haskell-ghc haskell-hlint html-tidy javascript-eslint javascript-jshint javascript-standard json-jsonlint json-python-json jsonnet less less-stylelint llvm-llc lua-luacheck lua markdown-markdownlint-cli markdown-mdl nix perl perl-perlcritic php php-phpmd php-phpcs processing proselint protobuf-protoc pug puppet-parser puppet-lint python-flake8 python-pylint python-pycompile python-mypy r-lintr racket rpm-rpmlint rst-sphinx rst ruby-rubocop ruby-reek ruby-rubylint ruby ruby-jruby rust-cargo rust rust-clippy scala scala-scalastyle scheme-chicken scss-lint scss-stylelint sass/scss-sass-lint sass scss sh-bash sh-posix-dash sh-posix-bash sh-zsh sh-shellcheck slim slim-lint sql-sqlint systemd-analyze tcl-nagelfar tex-chktex tex-lacheck texinfo typescript-tslint verilog-verilator vhdl-ghdl xml-xmlstarlet xml-xmllint yaml-jsyaml yaml-ruby))
+ '(flycheck-clang-tidy "nil")
  '(flycheck-clang-warnings '("all" "extra" "padded"))
  '(flycheck-color-mode-line-face-to-color 'mode-line)
- '(flycheck-display-errors-delay 0.1)
+ '(flycheck-display-errors-delay 0.4)
  '(flycheck-display-errors-function 'flycheck-display-error-messages-unless-error-list)
  '(flycheck-idle-change-delay 1)
  '(flycheck-inline-mode t nil (flycheck-inline))
  '(flycheck-mode-hook
-    '(flycheck-color-mode-line-mode flycheck-mode-set-explicitly))
+    '(flycheck-color-mode-line-mode flycheck-mode-set-explicitly flycheck-inline-mode))
  '(flycheck-mode-line-prefix "FlC")
  '(flycheck-pos-tip-mode t)
- '(fringe-mode '(nil . 0) nil (fringe))
+ '(fringe-mode nil nil (fringe))
  '(garbage-collection-messages nil)
  '(generic-extras-enable-list
     '(alias-generic-mode apache-conf-generic-mode apache-log-generic-mode bat-generic-mode etc-fstab-generic-mode etc-modules-conf-generic-mode etc-passwd-generic-mode etc-services-generic-mode etc-sudoers-generic-mode fvwm-generic-mode hosts-generic-mode inetd-conf-generic-mode inf-generic-mode ini-generic-mode java-manifest-generic-mode java-properties-generic-mode javascript-generic-mode mailagent-rules-generic-mode mailrc-generic-mode named-boot-generic-mode named-database-generic-mode prototype-generic-mode rc-generic-mode resolve-conf-generic-mode samba-generic-mode show-tabs-generic-mode vrml-generic-mode x-resource-generic-mode xmodmap-generic-mode))
+ '(global-auto-complete-mode t)
  '(global-company-mode t)
- '(global-eldoc-mode nil)
+ '(global-eldoc-mode t)
+ '(global-eldoc-overlay-mode nil)
  '(global-hl-line-mode t)
  '(global-hl-line-sticky-flag t)
  '(global-linum-mode nil)
  '(global-paren-face-mode t)
  '(global-semantic-decoration-mode nil)
- '(global-semantic-highlight-func-mode nil)
- '(global-semantic-idle-breadcrumbs-mode t nil (semantic/idle))
+ '(global-semantic-highlight-edits-mode nil)
+ '(global-semantic-highlight-func-mode t)
+ '(global-semantic-idle-breadcrumbs-mode nil nil (semantic/idle))
  '(global-semantic-idle-completions-mode t nil (semantic/idle))
  '(global-semantic-idle-local-symbol-highlight-mode t nil (semantic/idle))
  '(global-semantic-idle-scheduler-mode t)
  '(global-semantic-idle-summary-mode t)
  '(global-semantic-mru-bookmark-mode t)
- '(global-semantic-stickyfunc-mode t)
+ '(global-semantic-stickyfunc-mode nil)
  '(global-semanticdb-minor-mode t)
  '(global-visual-line-mode t)
  '(gnus-init-file "~/.emacs.d/.gnus")
@@ -180,24 +233,44 @@
  '(gnus-startup-file "~/.emacs.d/.newsrc.gnus")
  '(hl-line-face 'hl-line)
  '(hl-line-sticky-flag t)
- '(ielm-mode-hook '(eldoc-mode irony-eldoc))
+ '(ielm-mode-hook '((lambda nil (funcall emacs-lisp-mode-hook))))
  '(indent-tabs-mode nil)
  '(inf-clojure-generic-cmd "clojure -r -R:repl")
  '(inf-clojure-project-type 'nil)
  '(inf-clojure-source-modes '(clojure-mode cider-mode))
  '(initial-buffer-choice t)
+ '(initial-frame-alist '((fullscreen . maximized)))
+ '(inline-docs-border-symbol 32)
+ '(inline-docs-indicator-symbol ":/")
+ '(inline-docs-prefix-symbol 32)
+ '(irony-completion-trigger-commands
+    '(indent-relative-maybe newline-and-indent insert-tab indent-for-tab-command ac-expand auto-complete))
  '(irony-eldoc-use-unicode t)
- '(irony-lighter " I.")
+ '(irony-lighter " irony")
  '(irony-server-build-dir "/tmp/emacs/irony-server")
+ '(irony-server-source-dir
+    (funcall
+      #'(lambda nil
+          (concat
+            (file-name-directory
+              (find-library-name "irony.el"))
+            "server"))))
  '(line-number-display-limit-width 14)
  '(line-spacing 0.11)
  '(linum-format "%4d")
  '(lisp-body-indent 3)
+ '(lisp-extra-font-lock-global-mode t)
+ '(lisp-extra-font-lock-modes '(emacs-lisp-mode lisp-mode lisp-interaction-mode))
  '(lisp-indent-offset 2)
- '(lisp-interaction-mode-hook '(eldoc-mode))
+ '(lisp-interaction-mode-hook nil)
+ '(lisp-mode-hook '(semantic-default-elisp-setup completion-lisp-mode-hook))
+ '(max-mini-window-height 0.4)
  '(mc/edit-lines-empty-lines 'ignore)
+ '(minibuffer-auto-raise t)
+ '(minibuffer-frame-alist '((width . 80) (height . 5)))
  '(mm-external-terminal-program "eterm-color")
  '(normal-erase-is-backspace t)
+ '(overflow-newline-into-fringe t)
  '(overline-margin 0)
  '(package-check-signature 'allow-unsigned)
  '(package-enable-at-startup t)
@@ -209,14 +282,15 @@
  '(package-selected-packages
     '(flycheck-ycmd ac-etags android-mode company-ycm company-ycmd cpputils-cmake datomic-snippets eldoc-eval elein cmake-project demangle-mode flymake-google-cpplint gnome-c-style ycm company-irony-c-headers company-irony irony-eldoc flycheck-irony company-lsp replace-pairs replace-symbol sayid sed-mode sexp-move slime slime-company smart-jump smartscan sr-speedbar symbol-overlay syntactic-close tab-jump-out undo-tree yasnippet-classic-snippets yasnippet-snippets flycheck-pos-tip flycheck-posframe discover-clj-refactor sotclojure walkclj lisp-extra-font-lock jdecomp lsp-clangd lsp-ui lsp-rust lsp-mode cargo flycheck-rust flymake-rust racer rust-mode rust-playground rustic trie srefactor flycheck-joker cider clj-refactor cljr-helm cljsbuild-mode clomacs ejc-sql el-autoyas helm-clojuredocs parinfer parseclj typed-clojure-mode eldoc-overlay mc-extras ac-cider cider-decompile cider-eval-sexp-fu cider-spy evalator-clojure javap-mode nrepl-eval-sexp-fu cider-hydra clojars clojure-cheatsheet clojure-quick-repls flycheck-clojure nrepl-sync monroe eterm-256color align-cljlet clojure-mode clojure-mode-extra-font-locking clojure-snippets inf-clojure foreign-regexp unkillable-scratch visual-regexp visual-regexp-steroids hungry-delete delim-kill company-math company-statistics counsel-etags ac-capf auto-minor-mode beacon better-shell readline-complete repl-toggle shell-command ssh ssh-agency ssh-config-mode ssh-tunnels test-simple undercover undohist yafolding ac-c-headers build-helper build-status diffview egg flycheck flycheck-swiftlint flymake-shell function-args git git-attr git-auto-commit-mode git-command git-commit git-dwim git-io git-lens git-link git-messenger git-msg-prefix git-timemachine git-wip-timemachine gitconfig gitconfig-mode gited ido-at-point ipretty ivy-dired-history json-mode makefile-executor math-symbol-lists math-symbols matlab-mode modern-cpp-font-lock package-safe-delete pcmpl-args pcmpl-git popup-complete company-c-headers company window-layout window-purpose vkill with-simulated-input xterm-frobs xterm-title paren-face scheme-complete shell-switcher shell-toggle signal smart-comment smart-compile smart-cursor-color smart-forward snippet sotlisp strace-mode stream string-edit sudo-edit sudo-ext tco iedit list-packages-ext macro-math macrostep manage-minor-mode maxframe mic-paren minimal-session-saver mmt es-lib eval-expr eval-in-repl eval-sexp-fu heap highlight-defined highlight-escape-sequences highlight-function-calls highlight-operators highlight-parentheses highlight-quoted highlight-refontification highlight-stages highlight-symbol highlight-thing highlight-unique-symbol hippie-exp-ext hippie-namespace ctable ctags-update dash-functional db discover discover-my-major dr-racket-like-unicode eacl ecb ede-compdb edebug-x eide el-sprunge elf-mode elisp-lint elisp-sandbox elmacro auto-compile auto-complete-chunk auto-highlight-symbol auto-shell-command autodisass-llvm-bitcode bshell c-eldoc cd-compile cedit cff chapel-mode charmap cl-format cl-generic cl-lib cl-lib-highlight cl-print codebug codesearch comint-intercept commenter common-lisp-snippets auto-complete-c-headers google-c-style opencl-mode preproc-font-lock basic-c-compile flycheck-pkg-config flycheck-tip flymake-cursor ivy-hydra language-detection mark-multiple scheme-here term+ term+mux term-manager test-c test-case-mode tree-mode xterm-color xterm-keybinder xtest quack isend-mode racket-mode golden-ratio-scroll-screen font-lock-studio font-lock+ flyparens flymake-cppcheck flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms clang-format auto-complete-clang-async auto-complete-clang ac-clang))
  '(package-user-dir "~/.emacs.d/elpa")
- '(prog-mode-hook
-    '(semantic-mode flycheck-mode eldoc-mode company-mode yas-minor-mode egg-minor-mode))
+ '(prog-mode-hook nil)
  '(rtags-display-summary-as-tooltip t)
+ '(save-completions-retention-time 128)
  '(scalable-fonts-allowed t)
  '(scheme-program-name "racket")
  '(scheme-source-modes '(scheme-mode racket-mode racket-repl))
  '(semantic-analyze-summary-function 'semantic-format-tag-summarize-with-file)
- '(semantic-complete-inline-analyzer-displayor-class 'semantic-displayor-tooltip)
+ '(semantic-complete-inline-analyzer-displayor-class 'semantic-displayor-ghost)
+ '(semantic-complete-inline-analyzer-idle-displayor-class 'semantic-displayor-tooltip)
  '(semantic-completion-displayor-format-tag-function 'semantic-format-tag-summarize-with-file)
  '(semantic-decoration-styles
     '(("semantic-decoration-on-includes")
@@ -224,28 +298,35 @@
        ("semantic-decoration-on-private-members")
        ("semantic-tag-boundary" . t)))
  '(semantic-default-submodes
-    '(global-semanticdb-minor-mode global-semantic-idle-scheduler-mode global-semantic-idle-completions-mode global-semantic-idle-summary-mode global-semantic-mru-bookmark-mode global-semantic-stickyfunc-mode global-semantic-decoration-mode))
- '(semantic-displayor-tooltip-mode 'standard)
+    '(global-semantic-idle-completions-mode global-semantic-idle-scheduler-mode global-semanticdb-minor-mode global-semantic-mru-bookmark-mode global-cedet-m3-minor-mode global-semantic-idle-local-symbol-highlight-mode))
+ '(semantic-displayor-tooltip-mode 'verbose)
  '(semantic-elisp-store-documentation-in-tag t)
+ '(semantic-ia-completion-format-tag-function 'semantic-format-tag-summarize-with-file)
+ '(semantic-ia-completion-menu-format-tag-function 'semantic-format-tag-summarize-with-file)
  '(semantic-idle-breadcrumbs-format-tag-function 'semantic-format-tag-summarize-with-file)
  '(semantic-idle-breadcrumbs-format-tag-list-function 'semantic-idle-breadcrumbs--format-innermost-first)
- '(semantic-idle-breadcrumbs-header-line-prefix ": ")
- '(semantic-idle-scheduler-idle-time 2)
+ '(semantic-idle-breadcrumbs-header-line-prefix ":   ")
+ '(semantic-idle-scheduler-idle-time 0.5)
  '(semantic-idle-scheduler-verbose-flag nil)
+ '(semantic-idle-scheduler-work-idle-time 20)
  '(semantic-idle-summary-function 'semantic-format-tag-summarize-with-file)
  '(semantic-idle-truncate-long-summaries nil)
+ '(semantic-idle-work-update-headers-flag t)
  '(semantic-imenu-summary-function 'semantic-format-tag-summarize-with-file)
  '(semantic-lex-debug-analyzers t)
  '(semantic-lex-spp-use-headers-flag t)
  '(semantic-mode t)
  '(semantic-mode-line-prefix "S." nil (semantic/util-modes))
+ '(semantic-mode-semantic-submodes-hook quote)
  '(semantic-sb-button-format-tag-function 'semantic-format-tag-summarize-with-file)
  '(semantic-sb-info-format-tag-function 'semantic-format-tag-summarize-with-file)
  '(semantic-stickyfunc-indent-string "\"~ \"")
- '(semantic-stickyfunc-show-only-functions-p t)
+ '(semantic-stickyfunc-show-only-functions-p nil)
  '(semantic-symref-auto-expand-results t)
+ '(semantic-symref-results-summary-function 'semantic-format-tag-summarize-with-file)
  '(semantic-update-mode-line nil nil (semantic/util-modes))
  '(semantic-which-function-use-color t)
+ '(semanticdb-find-default-throttle '(local project unloaded system))
  '(shell-prompt-pattern "'^.* [$#] '")
  '(shell-switcher-ansi-term-shell "/bin/bash")
  '(shell-switcher-mode t)
@@ -264,6 +345,7 @@
  '(speedbar-file-unshown-regexp "")
  '(tab-always-indent 'nil)
  '(tab-width 4)
+ '(temp-buffer-resize-mode t)
  '(temporary-file-directory "/tmp/emacs/")
  '(term-buffer-maximum-size 8192)
  '(term-char-mode-point-at-process-mark t)
@@ -274,6 +356,7 @@
  '(text-scale-mode-step 1.0)
  '(tls-checktrust 'ask)
  '(tool-bar-mode nil)
+ '(tooltip-resize-echo-area t)
  '(tramp-terminal-prompt-regexp "\\(^.[0-9].* [$#] \\)")
  '(tramp-terminal-type "eterm-color")
  '(underline-minimum-offset 4)
@@ -300,11 +383,13 @@
        (360 . "#cb4b16")))
  '(vc-annotate-very-old-color nil)
  '(visible-bell t)
+ '(widget-menu-minibuffer-flag nil)
  '(x-use-underline-position-properties nil)
- '(ycmd-idle-change-delay 0.4)
+ '(ycmd-idle-change-delay 0.25)
  '(ycmd-mode-line-prefix "ycm"))
 
 
+(load-theme 'local-faces)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -315,6 +400,11 @@
  '(ahs-edit-mode-face ((t (:underline (:color "Coral3" :style wave) :weight extra-bold))))
  '(ahs-face ((t (:inherit hl-line :background "#2f3f4f" :overline "#a09475" :underline "#a09475"))))
  '(ahs-plugin-defalt-face ((t (:inherit ahs-face))))
+ '(cider-result-overlay-face ((t (:inherit shadow :box (:line-width -1 :color "gray13")))))
+ '(completions-common-part ((t (:inherit (shadow highlight) :underline "#636865" :slant italic :weight light))))
+ '(completions-first-difference ((t (:inherit (bold hl-line) :underline (:color "#636865" :style wave) :slant italic))))
+ '(cursor ((t (:background "lightblue"))))
+ '(eldoc-highlight-function-argument ((t (:inherit bold :underline (:color "#888a8e" :style wave)))))
  '(flycheck-color-mode-line-info-face ((t (:inherit mode-line :overline "#b8860b"))))
  '(flycheck-color-mode-line-running-face ((t (:inherit mode-line :overline "MediumPurple1"))))
  '(flycheck-color-mode-line-success-face ((t (:inherit mode-line))))
@@ -322,8 +412,13 @@
  '(flycheck-fringe-info ((t (:foreground "goldenrod1"))))
  '(flycheck-info ((t (:inherit highlight :underline nil))))
  '(flycheck-inline-info ((t (:inherit highlight :foreground "goldenrod1" :underline nil :weight normal))))
- '(semantic-highlight-func-current-tag-face ((t nil)))
- '(semantic-idle-symbol-highlight ((t nil)))
+ '(fringe ((t (:background "#373f4a"))))
+ '(inline-docs-border-face ((t (:inherit default))))
+ '(inline-docs-face ((t (:inherit hl-line))))
+ '(inline-docs-indicator-face ((t (:inherit default :foreground "#888a8e" :slant italic))))
+ '(inline-docs-prefix-face ((t (:inherit cider-result-overlay-face))))
+ '(semantic-highlight-func-current-tag-face ((t (:background "#414f5a" :underline "#56656f"))))
+ '(semantic-idle-symbol-highlight ((t (:inherit eldoc-highlight-function-argument :underline (:color "#727272" :style wave) :weight bold))))
  '(semantic-tag-boundary-face ((t (:overline "#480068" :underline "#480068")))))
 
 
@@ -334,9 +429,62 @@
 
 ;; Handwritten section.
 
-(load-theme 'local-faces)
+(defun prog-minor-modes ()  
+ (interactive)
+   (mapc 'funcall  
+           '(global-flycheck-mode
+              global-auto-complete-mode
+              eldoc-in-minibuffer-mode
+              global-company-mode 
+              global-eldoc-mode
+              auto-complete-mode
+              flycheck-inline-mode
+              company-mode
+              company-statistics-mode
+              tooltip-mode
+              paredit-mode
+              semantic-mode
+              semantic-idle-scheduler-mode
+              semantic-idle-completions-mode
+              semantic-idle-breadcrumbs-mode
+              semantic-idle-breadcrumbs-mode
+              semantic-idle-summary-mode
+              semantic-idle-local-symbol-highlight-mode
+              semantic-mru-bookmark-mode
+              flycheck-mode
+              yas-minor-mode)) )
+
+(defun clj-minor-modes ()
+ (interactive)
+   (mapc 'funcall 
+           '(ac-cider-setup
+              cider-eldoc-setup
+              clojure-font-lock-setup
+              clojure-paredit-setup
+              flycheck-clojure-setup
+              cider-mode)))
 
 
+(defun c-minor-modes () 
+ (interactive)
+    (mapc 'funcall 
+           '(prog-minor-modes
+             cwarn-mode 
+             irony-mode
+             irony-eldoc
+             flycheck-clang-analyzer-setup 
+             flycheck-cstyle-setup 
+             flycheck-irony-setup 
+             ac-cc-mode-setup
+             ac-etags-setup 
+             ac-etags-ac-setup
+             ac-setup)))
+
+
+
+
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;
@@ -347,26 +495,25 @@
      (setenv "LINES" (string (- (window-height) 8) ))
      (setenv "COLUMNS" (string (- (window-width) 4) ))
      (shell-command "PS1=$(echo '[$?] [${PWD}] $ \n' )")
-     (shell-command "stty rows `echo $LINES` cols `echo $COLUMNS`") )
- )
+     (shell-command "stty rows `echo $LINES` cols `echo $COLUMNS`")) )
 
 ;; ;
 
-(defun lk-windowsize          (HORIZONTAL?  TOP/LEFT?  AMOUNT)
-"Resizes the window of the current buffer by moving one of its edges.
+(defun lk-windowsize     (HORIZONTAL?  TOP/LEFT?  AMOUNT)
+  "Resizes the window of the current buffer by moving one of its edges.
 
-If HORIZONTAL? evaluates to true, a horizontal edge will be chosen.
-If TOP/LEFT? evaluates to true, the appropriate edge is selected.
-If the above specify a frame border, the command wraps to the window's opposite edge.
+    If HORIZONTAL? evaluates to true, a horizontal edge will be chosen.
+    If TOP/LEFT? evaluates to true, the appropriate edge is selected.
+    If the above specify a frame border, the command wraps to the window's opposite edge.
 
-AMOUNT specifies the movement distance (in lines/columns).  Positive values specify downard/rightward motion, and negative values specify leftward/upward motion."
-(interactive)
-  (adjust-window-trailing-edge
-        (window-in-direction
-                (or  (and  HORIZONTAL? 'left) 'above)
-                (and  TOP/LEFT? (window-in-direction
-                                  (or  (and HORIZONTAL? 'right) 'below) )) )
-        AMOUNT  HORIZONTAL? ) )
+    AMOUNT specifies the movement distance (in lines/columns).  Positive values specify downard/rightward motion, and negative values specify leftward/upward motion."
+ (interactive)
+    (adjust-window-trailing-edge
+         (window-in-direction
+                 (or  (and  HORIZONTAL? 'left) 'above)
+                 (and  TOP/LEFT? (window-in-direction
+                                   (or  (and HORIZONTAL? 'right) 'below) )) )
+         AMOUNT  HORIZONTAL? ) )
 
 
 (defun winlk-top-up  (&optional DISTANCE)
@@ -412,10 +559,25 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
 ;;   key mapping section
 ;;
 
-
 ; ;  lambda is a long word
- (fset  'λ     (symbol-function 'lambda) )
- (fset  'fn    (symbol-function 'lambda) )
+
+;; (prog1
+;;   (defalias (function λ)
+;;    (cons (function macro)
+;;       (function (lambda
+;;           (&rest cdr)
+;;           (list 'function
+;;             (cons 'lambda cdr))))))
+;;   (progn :autoload-end
+;;     (put 'λ 'edebug-form-spec
+;;       '(&define lambda-list lambda-doc
+;;          [&optional
+;;            ("interactive" interactive)]
+;;          def-body))))
+
+;; (list 'function (cons 'lambda (cons nil 'λ)))
+ (fset  'λ    (symbol-function 'lambda) )
+ (fset  'fn   (symbol-function 'lambda) ) 
  (fset  'defn  (symbol-function 'defun) )
 
  (global-set-key         (kbd "s-("  )
@@ -523,29 +685,8 @@ AMOUNT specifies the movement distance (in lines/columns).  Positive values spec
  (global-set-key    (kbd "C-<tab>")   'company-complete)
 
 
-; ;  shit don't work right
- (global-set-key         (kbd "s-Y") 
-   (λ () (interactive)
-    (progn 
-       (subword-mode)
-       (c-turn-on-eldoc-mode)
-       (ac-capf-setup)
-       (auto-complete-mode)
-       (irony-mode)
-       (irony-eldoc)
-       (ycmd-eldoc-mode)
-       (flycheck-irony-setup)
-        #'(lambda nil flycheck-clang-analyser-setup)
-       (flycheck-mode)
-        #'(lambda nil global-semantic-decoration-mode nil)
-       (flymake-mode)
-       (flymake-cppcheck-load))  ) )
- 
 
 
 
 
 
-
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)

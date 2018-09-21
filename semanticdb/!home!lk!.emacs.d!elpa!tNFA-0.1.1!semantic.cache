@@ -1,16 +1,138 @@
-;; Object semanticdb-project-database-file-27ddf00
+;; Object semanticdb-project-database-file-1e77088
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-27ddf00"
+(semanticdb-project-database-file "semanticdb-project-database-file-1e77088"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-27de1d8"
+    (semanticdb-table "semanticdb-table-1e77068"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "tNFA-autoloads.el"
       :pointmax 347
       :fsize 2808
       :lastmodtime '(23408 60054 246057 589000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-184e4d4"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [3762 3775])
+            ("queue" include nil nil [3777 3793])
+            ("tNFA--assoc" function (:arguments ("item" "alist" "test")) nil [3917 4226])
+            ("tNFA--state" type
+               (:members ("NFA-state" "tags")
+                :type "struct")
+                nil [4450 4741])
+            ("tNFA--state-id" function (:arguments ("state")) nil [4743 4831])
+            ("tNFA--state-type" function (:arguments ("state")) nil [4833 4925])
+            ("tNFA--state-label" function (:arguments ("state")) nil [4927 5021])
+            ("tNFA--state-in-degree" function (:arguments ("state")) nil [5023 5125])
+            ("tNFA--state-next" function (:arguments ("state")) nil [5127 5219])
+            ("tNFA--state-count" function (:arguments ("state")) nil [5221 5315])
+            ("declare" code nil nil [5428 5461])
+            ("tNFA--NFA-state" type
+               (:members ("id" "type" "label" "in-degree" "count" "tNFA-state" "next")
+                :type "struct")
+                nil [5463 6395])
+            ("tNFA--NFA-state-create" function (:arguments ("type" "label" "next")) nil [6534 6735])
+            ("tNFA--NFA-state-create-tag" function (:arguments ("tag" "next")) nil [6737 6932])
+            ("defalias" code nil nil [7005 7059])
+            ("tNFA--NFA-state-tags" function (:arguments ("state")) nil [7061 7158])
+            ("tNFA--NFA-state-patch" function (:arguments ("attach" "state")) nil [7161 7554])
+            ("tNFA--NFA-state-make-epsilon" function (:arguments ("state" "next")) nil [7557 7862])
+            ("tNFA--NFA-state-make-branch" function (:arguments ("state" "next")) nil [7865 8187])
+            ("tNFA--NFA-state-copy" function (:arguments ("state")) nil [8190 8611])
+            ("tNFA--fragment" type
+               (:members ("initial" "final")
+                :type "struct")
+                nil [8726 8885])
+            ("tNFA--fragment-patch" function (:arguments ("frag1" "frag2")) nil [8888 9150])
+            ("tNFA--fragment-copy" function (:arguments ("fragment")) nil [9153 9439])
+            ("tNFA--do-fragment-copy" function (:arguments ("state")) nil [9442 10593])
+            ("tNFA--DFA-state" type
+               (:members ("list" "transitions" "test" "wildcard" "match" "pool")
+                :type "struct")
+                nil [10703 10938])
+            ("tNFA--DFA-state-create" function (:arguments ("state-list" "state-pool" "test")) nil [10941 12343])
+            ("tNFA--DFA-state-create-initial" function (:arguments ("state-list" "test")) nil [12346 12572])
+            ("defalias" code nil nil [12575 12693])
+            ("defalias" code nil nil [12696 12827])
+            ("tNFA-transitions" function
+               (:documentation "Return list of literal transitions from tNFA state STATE."
+                :arguments ("state"))
+                nil [12830 12976])
+            ("tNFA--tags-create" function (:arguments ("num-tags" "min-tags" "max-tags")) nil [13086 13351])
+            ("tNFA--tags-copy" function (:arguments ("tags")) nil [13354 13577])
+            ("tNFA--tags-set" function (:arguments ("tags" "tag" "val")) nil [13580 13698])
+            ("tNFA--tags-get" function (:arguments ("tags" "tag")) nil [13701 13800])
+            ("tNFA--tags-type" function (:arguments ("tags" "tag")) nil [13803 13903])
+            ("tNFA--tags<" function (:arguments ("val" "tag" "tags")) nil [13906 14184])
+            ("tNFA--tags-to-groups" function (:arguments ("tags")) nil [14187 14922])
+            ("tNFA-from-regexp" function
+               (:documentation "Create a tagged NFA that recognizes the regular expression REGEXP.
+The return value is the initial state of the tagged NFA.
+
+REGEXP can be any sequence type (vector, list, or string); it
+need not be an actual string. Special characters in REGEXP are
+still just that: elements of the sequence that are characters
+which have a special meaning in regexps.
+
+The :test keyword argument specifies how to test whether two
+individual elements of STRING are identical. The default is `eq'.
+
+Only a subset of the full Emacs regular expression syntax is
+supported. There is no support for regexp constructs that are
+only meaningful for strings (character ranges and character
+classes inside character alternatives, and syntax-related
+backslash constructs). Back-references and non-greedy postfix
+operators are not supported, so `?' after a postfix operator
+loses its special meaning. Also, matches are always anchored, so
+`$' and `^' lose their special meanings (use `.*' at the
+beginning and end of the regexp to get an unanchored match)."
+                :arguments ("regexp" "test"))
+                nil [15054 16749])
+            ("tNFA--regexp-postfix-p" function (:arguments ("regexp")) nil [16752 17045])
+            ("tNFA--from-regexp" function (:arguments ("regexp" "num-tags" "min-tags" "max-tags" "top-level" "shy-group")) nil [17048 25198])
+            ("tNFA--regexp-next-token" function (:arguments ("regexp")) nil [25391 29112])
+            ("tNFA-next-state" function
+               (:documentation "Evolve tNFA according to CHR, which corresponds to position
+POS in a string."
+                :arguments ("tNFA" "chr" "pos"))
+                nil [29225 30045])
+            ("tNFA--DFA-next-state" function (:arguments ("DFA-state" "chr" "pos" "wildcard")) nil [30049 31592])
+            ("tNFA--epsilon-boundary" function (:arguments ("state-set" "pos")) nil [31596 35101])
+            ("tNFA-regexp-match" function
+               (:documentation "Return non-nil if STRING matches REGEXP, nil otherwise.
+Sets the match data if there was a match; see `match-beginning',
+`match-end' and `match-string'.
+
+REGEXP and STRING can be any sequence type (vector, list, or
+string); they need not be actual strings. Special characters in
+REGEXP are still just that: elements of the sequence that are
+characters which have a special meaning in regexps.
+
+The :test keyword argument specifies how to test whether two
+individual elements of STRING are identical. The default is `eq'.
+
+Only a subset of the full Emacs regular expression syntax is
+supported. There is no support for regexp constructs that are
+only meaningful for strings (character ranges and character
+classes inside character alternatives, and syntax-related
+backslash constructs). Back-references and non-greedy postfix
+operators are not supported, so `?' after a postfix operator
+loses its special meaning. Also, matches are always anchored, so
+`$' and `^' lose their special meanings (use `.*' at the
+beginning and end of the regexp to get an unanchored match)."
+                :arguments ("regexp" "string" "test"))
+                nil [35230 37335])
+            ("tNFA-group-data" function
+               (:documentation "Return the group match data associated with a tNFA state."
+                :arguments ("tNFA"))
+                nil [37338 37484])
+            ("tNFA" package nil nil [38236 38251]))          
+      :file "tNFA.el"
+      :pointmax 38275
+      :fsize 38274
+      :lastmodtime '(23408 60054 76056 193000)
+      :unmatched-syntax '((close-paren 3775 . 3776) (symbol 3744 . 3761) (open-paren 3743 . 3744))))
   :file "!home!lk!.emacs.d!elpa!tNFA-0.1.1!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

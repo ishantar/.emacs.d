@@ -1,15 +1,52 @@
-;; Object semanticdb-project-database-file-129ba1c
+;; Object semanticdb-project-database-file-193dd8c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-129ba1c"
+(semanticdb-project-database-file "semanticdb-project-database-file-193dd8c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-11cad38"
+    (semanticdb-table "semanticdb-table-193dd6c"
       :major-mode emacs-lisp-mode
       :tags nil
       :file "clojure-quick-repls-autoloads.el"
       :pointmax 377
       :fsize 794
       :lastmodtime '(23398 10450 862014 844000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-14ee734"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cider" include nil nil [1447 1463])
+            ("dash" include nil nil [1464 1479])
+            ("clojure-quick-repls-cljs-setup" variable
+               (:documentation "Default form to initialize ClojureScript REPL"
+                :default-value "(require 'cljs.repl.browser)
+       (cemerick.piggieback/cljs-repl
+                    :repl-env (cljs.repl.browser/repl-env :port 9000))")
+                nil [1481 1763])
+            ("clojure-quick-repls-nrepl-connected-fn" variable nil nil [1765 1816])
+            ("clojure-quick-repls-current-buffer" variable nil nil [1818 1865])
+            ("clojure-quick-repls-nrepl-connect-done" variable nil nil [1866 1917])
+            ("clojure-quick-repls-clj-con-buf" variable nil nil [1919 1963])
+            ("clojure-quick-repls-cljs-con-buf" variable nil nil [1964 2009])
+            ("clojure-quick-repls-noop-nrepl-connected-fn" function nil nil [2011 2134])
+            ("clojure-quick-repls-noop-nrepl-connected-fn" code nil nil [2136 2181])
+            ("clojure-quick-repls-clear-con-bufs" function nil nil [2183 2319])
+            ("add-hook" code nil nil [2321 2475])
+            ("add-hook" code nil nil [2477 2549])
+            ("clojure-quick-repls-connect" function
+               (:documentation "Launch Clojure and ClojureScript repls for the current project"
+                :user-visible-flag t)
+                nil [2566 4397])
+            ("clojure-quick-repls-new-repl-connection" function nil nil [4399 4643])
+            ("clojure-quick-repls-bound-truthy-p" function (:arguments ("s")) nil [4645 4727])
+            ("clojure-quick-repls-buffer-extension" function (:arguments ("buffer")) nil [4729 4911])
+            ("clojure-quick-repls-set-connection" function (:arguments ("f" "h")) nil [4913 5584])
+            ("clojure-quick-repls-switch-to-relevant-repl" function (:arguments ("arg")) nil [5586 5871])
+            ("if" code nil nil [5873 6778])
+            ("clojure-quick-repls" package nil nil [6780 6810]))          
+      :file "clojure-quick-repls.el"
+      :pointmax 6849
+      :fsize 6848
+      :lastmodtime '(23398 10450 728680 158000)
       :unmatched-syntax nil))
   :file "!home!lk!.emacs.d!elpa!clojure-quick-repls-20150814.736!semantic.cache"
   :semantic-tag-version "2.0"
