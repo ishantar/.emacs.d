@@ -278,10 +278,10 @@ Queries YCMD for completions, then calls callback with the results.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-20180916.2115/yasnippet-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-20181007.2230/yasnippet-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-20180916.2115/yasnippet-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-20181007.2230/yasnippet-autoloads.el") (car load-path))))
 
 
 
@@ -333,10 +333,10 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180909.1015/yasnippet-snippets-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180922.1928/yasnippet-snippets-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180909.1015/yasnippet-snippets-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/yasnippet-snippets-20180922.1928/yasnippet-snippets-autoloads.el") (car load-path))))
 
 
 
@@ -611,6 +611,119 @@ Create and display a new buffer that contains ANSI control sequences.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/xcscope-20180426.712/xcscope-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/xcscope-20180426.712/xcscope-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cscope-minor-mode "xcscope" "\
+This cscope minor mode maps cscope keybindings to make cscope
+functions more accessible.
+
+If called interactively, enable Cscope minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+Key bindings:
+\\{cscope-minor-mode-keymap}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'cscope-setup "xcscope" "\
+Automatically turns on cscope-minor-mode when editing C and
+C++ sources
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "xcscope" '("cscope-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/x86-lookup-20180528.1635/x86-lookup-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/x86-lookup-20180528.1635/x86-lookup-autoloads.el") (car load-path))))
+
+
+
+(autoload 'x86-lookup "x86-lookup" "\
+Jump to the PDF documentation for MNEMONIC.
+Defaults to the mnemonic under point.
+
+\(fn MNEMONIC)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "x86-lookup" '("x86-lookup-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/x509-mode-20180921.803/x509-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/x509-mode-20180921.803/x509-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'x509-mode "x509-mode" "\
+Major mode for displaying openssl x509 output.
+
+\\{x509-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'x509-viewcert "x509-mode" "\
+Parse current buffer as a certificate file.
+Display result in another buffer.
+
+With \\[universal-argument] prefix, you can edit the command arguements.
+
+\(fn &optional ARGS)" t nil)
+
+(autoload 'x509-viewcrl "x509-mode" "\
+Parse current buffer as a CRL file. Display result in another buffer.
+
+With \\[universal-argument] prefix, you can edit the command arguements.
+
+\(fn &optional ARGS)" t nil)
+
+(autoload 'x509-viewdh "x509-mode" "\
+Parse current buffer as a DH-parameter file.
+Display result in another buffer.
+
+With \\[universal-argument] prefix, you can edit the command arguements.
+
+\(fn &optional ARGS)" t nil)
+
+(autoload 'x509-viewkey "x509-mode" "\
+Display x509 private key using the OpenSSL pkey command.
+
+With \\[universal-argument] prefix, you can edit the command arguements.
+For example to enter pass-phrase, add -passin pass:PASSPHRASE.
+
+\(fn &optional ARGS)" t nil)
+
+(autoload 'x509-asn1-mode "x509-mode" "\
+Major mode for displaying openssl asn1parse output.
+
+\\{x509-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'x509-viewasn1 "x509-mode" "\
+Parse current buffer as ASN.1. Display result in another buffer.
+
+With \\[universal-argument] prefix, you can edit the command arguements.
+
+\(fn &optional ARGS)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "x509-mode" '("x509-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/with-simulated-input-20170821.617/with-simulated-input-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -821,10 +934,10 @@ Run ‘dired-do-rename’ asynchronously.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/with-editor-20180726.2044/with-editor-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/with-editor-20181008.2142/with-editor-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/with-editor-20180726.2044/with-editor-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/with-editor-20181008.2142/with-editor-autoloads.el") (car load-path))))
 
 
 
@@ -966,10 +1079,10 @@ only those in the selected frame.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/window-purpose-20180809.1156/window-purpose-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/window-purpose-20180926.1047/window-purpose-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/window-purpose-20180809.1156/window-purpose-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/window-purpose-20180926.1047/window-purpose-autoloads.el") (car load-path))))
 
 
 
@@ -1364,6 +1477,129 @@ function.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/web-20141231.2001/web-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/web-20141231.2001/web-autoloads.el") (car load-path))))
+
+
+
+(autoload 'web-http-call "web" "\
+Make an HTTP method to the URL or the HOST, PORT, PATH and send DATA.
+
+If URL is specified then it takes precedence over SECURE, HOST,
+PORT and PATH.  URL may be HTTP or HTTPS.
+
+Important note: any query in URL is currently IGNORED!
+
+SECURE is `nil' by default but if `t' then SSL is used.
+
+PORT is 80 by default.  Even if SECURE it `t'.  If you manually
+specify SECURE you should manually specify PORT to be 443.  Using
+URL negates the need for that, an SSL URL will work correctly.
+
+The URL connected to (whether specified by URL or by the HOST and
+PORT) is recorded on the resulting connection as the process
+property `:web-url'.
+
+EXTRA-HEADERS is an alist or a hash-table of extra headers to
+send to the server.
+
+The full set of headers sent to the server is recorded on the
+connection with the process property `:web-headers'.
+
+DATA is of MIME-TYPE.  We try to interpret DATA and MIME-TYPE
+usefully:
+
+If MIME-TYPE is `application/form-www-url-encoded' then
+`web-to-query-string' is used to to format the DATA into a POST
+body.
+
+If MIME-TYPE is `multipart/form-data' then `web-to-multipart' is
+called to get a POST body.
+
+Any data sent to the server is recorded on the connection with
+the process property `:web-sent'.
+
+When the request comes back the CALLBACK is called.  CALLBACK is
+always passed 3 arguments: the HTTP connection which is a process
+object, the HTTP header which is a `hash-table' and `data', which
+is normally a string.  `data' depends somewhat on the context.
+See below.
+
+MODE defines what it means for the request to cause the CALLBACK
+to be fired.  When MODE is `stream' then the CALLBACK is called
+for every chunk of data received after the header has arrived.
+This allows streaming data to somewhere else; hence `stream'
+mode.  In this mode CALLBACK's `data' argument is a single chunk
+of the stream or `:done' when the stream ends.
+
+The default MODE is `batch' which collects all the data from the
+response before calling CALLBACK with all the data as a string.
+
+\(fn METHOD CALLBACK &key URL (HOST \"localhost\") (PORT 80) SECURE (PATH \"/\") EXTRA-HEADERS DATA (MIME-TYPE web/request-mimetype) (MODE \\='batch) LOGGING)" nil nil)
+
+(autoload 'web-http-get "web" "\
+Make a GET calling CALLBACK with the result.
+
+For information on URL or PATH, HOST, PORT and also EXTRA-HEADERS
+and MODE see `web-http-call'.
+
+The callback probably won't work unless you set `lexical-binding'
+to `t'.
+
+\(fn CALLBACK &key URL (HOST \"localhost\") (PORT 80) (PATH \"/\") EXTRA-HEADERS (MODE \\='batch) (LOGGING t))" nil nil)
+
+(autoload 'web-http-post "web" "\
+Make a POST and call CALLBACK with the result.
+
+For information on URL or PATH, HOST, PORT and also MODE see
+`web-http-call'.
+
+The callback probably won't work unless you set `lexical-binding'
+to `t'.
+
+\(fn CALLBACK &key URL (HOST \"localhost\") (PORT 80) (PATH \"/\") EXTRA-HEADERS DATA (MIME-TYPE web/request-mimetype) (MODE \\='batch) (LOGGING t))" nil nil)
+
+(autoload 'web-json-post "web" "\
+POST DATA to URL expecting a JSON response sent to CALLBACK.
+
+See `web-json-expected-mimetypes-list' for the list of Mime Types
+we accept JSON for.  This may be let bound.  If the expectation
+is not met then EXPECTATION-FAILURE-CALLBACK is called being
+passed the CALLBACK parameters.  By default
+EXPECTATION-FAILURE-CALLBACK is
+`web-json-default-expectation-failure'.
+
+The CALLBACK is called as:
+
+  CALLBACK RESPONSE-DATA HTTPCON RESPONSE-HEADER
+
+so the function may be defined like this:
+
+  (lambda (data &rest stuff) ...)
+
+HEADERS may be specified, these are treated as extra-headers to
+be sent with the request.
+
+The DATA is sent as `application/x-www-form-urlencoded' by
+default, MIME-TYPE can change that.
+
+JSON-ARRAY-TYPE, JSON-OBJECT-TYPE and JSON-KEY-TYPE, if present,
+are used to let bind the `json-read' variables of the same name
+affecting the resulting lisp structure.
+
+\(fn CALLBACK &key URL DATA HEADERS (MIME-TYPE web/request-mimetype) (LOGGING t) (JSON-ARRAY-TYPE json-array-type) (JSON-OBJECT-TYPE json-object-type) (JSON-KEY-TYPE json-key-type) (EXPECTATION-FAILURE-CALLBACK \\='web-json-default-expectation-failure))" nil nil)
+
+(autoload 'web-get "web" "\
+Get the specified URL into the BUFFER.
+
+\(fn URL &optional BUFFER)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "web" '("web")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/a-20180907.953/a-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -1659,10 +1895,10 @@ on `kill-emacs' and send it to coveralls.io.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20180827.1827/clojure-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clojure-mode-20181005.452/clojure-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20180827.1827/clojure-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clojure-mode-20181005.452/clojure-mode-autoloads.el") (car load-path))))
 
 
 
@@ -1750,7 +1986,8 @@ Change a surrounding when to when-not, or vice-versa.
 
 (autoload 'clojure-let-backward-slurp-sexp "clojure-mode" "\
 Slurp the s-expression before the let form into the let form.
-With a numberic prefix argument slurp the previous N s-expression into the let form.
+With a numberic prefix argument slurp the previous N s-expression
+into the let form.
 
 \(fn &optional N)" t nil)
 
@@ -1873,10 +2110,10 @@ this time, in which case it won't display at all.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180903.1826/sesman-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/sesman-20180921.2220/sesman-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180903.1826/sesman-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sesman-20180921.2220/sesman-autoloads.el") (car load-path))))
 
 
 
@@ -1942,6 +2179,7 @@ buffer.
 Break any of the previously created links.
 
 \(fn)" t nil)
+ (autoload 'sesman-map "sesman" "Session management prefix keymap." t 'keymap)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman" '("sesman-")))
 
@@ -1959,10 +2197,10 @@ See `sesman-browser-mode' for more details.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20180917.1746/cider-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cider-20181008.1547/cider-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20180917.1746/cider-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cider-20181008.1547/cider-autoloads.el") (car load-path))))
 
 
 
@@ -1970,6 +2208,7 @@ See `sesman-browser-mode' for more details.
 Display CIDER's version.
 
 \(fn)" t nil)
+ (autoload 'cider-start-map "cider" "CIDER jack-in and connect keymap." t 'keymap)
 
 (autoload 'cider-jack-in-clj "cider" "\
 Start an nREPL server for the current project and connect to it.
@@ -2888,6 +3127,59 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/thingopt-20160520.2318/thingopt-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/thingopt-20160520.2318/thingopt-autoloads.el") (car load-path))))
+
+
+
+(autoload 'kill-thing "thingopt" "\
+
+
+\(fn THING)" t nil)
+
+(autoload 'copy-thing "thingopt" "\
+
+
+\(fn THING)" t nil)
+
+(autoload 'mark-thing "thingopt" "\
+
+
+\(fn THING)" t nil)
+
+(autoload 'upward-mark-thing "thingopt" "\
+Marks the first type of thing in `upward-mark-thing-list' at
+point.  When called successively, it marks successive types of
+things in `upward-mark-thing-list'.  It is recommended to put
+smaller things (e.g. word, symbol) before larger
+things (e.g. list, paragraph) in `upward-mark-thing-list'.  When
+this is called enough times to get to the end of the list, it
+wraps back to the first type of thing.
+
+\(fn)" t nil)
+
+(autoload 'upward-isearch-thing "thingopt" "\
+Much like `upward-mark-thing', but adds THING to the isearch string.
+This should be invoked while isearch is active.  Clobbers the current isearch string.
+
+\(fn)" t nil)
+
+(autoload 'kill-region-dwim "thingopt" "\
+
+
+\(fn)" t nil)
+
+(autoload 'kill-ring-save-dwim "thingopt" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "thingopt" '("backward-" "bounds-of-up-list-at-point" "define-thing-commands" "forward-" "kill-" "list-thing" "read-thing" "reset-upward-bounds-of-thing" "string-face-p" "thing" "upward-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/test-simple-20170527.1532/test-simple-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -3130,6 +3422,40 @@ This function returns the buffer where the process starts running.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/tablist-20170220.335/tablist-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/tablist-20170220.335/tablist-autoloads.el") (car load-path))))
+
+
+
+(autoload 'tablist-minor-mode "tablist" "\
+Toggle Tablist minor mode on or off.
+
+If called interactively, enable Tablist minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{tablist-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'tablist-mode "tablist" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tablist" '("tablist-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tablist-filter" '("tablist-filter-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/tab-jump-out-20151006.130/tab-jump-out-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -3156,10 +3482,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/syntactic-close-20180920.946/syntactic-close-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/syntactic-close-20180924.947/syntactic-close-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/syntactic-close-20180920.946/syntactic-close-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/syntactic-close-20180924.947/syntactic-close-autoloads.el") (car load-path))))
 
 
 
@@ -3167,10 +3493,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/symbol-overlay-20180815.340/symbol-overlay-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/symbol-overlay-20181008.2016/symbol-overlay-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/symbol-overlay-20180815.340/symbol-overlay-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/symbol-overlay-20181008.2016/symbol-overlay-autoloads.el") (car load-path))))
 
 
 
@@ -3261,10 +3587,10 @@ Rename symbol at point on all its occurrences.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180917.2237/ivy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ivy-20180926.1249/ivy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180917.2237/ivy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ivy-20180926.1249/ivy-autoloads.el") (car load-path))))
 
 
 
@@ -3396,10 +3722,10 @@ Switch to another buffer in another window.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/swiper-20180813.1625/swiper-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/swiper-20181008.1731/swiper-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/swiper-20180813.1625/swiper-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/swiper-20181008.1731/swiper-autoloads.el") (car load-path))))
 
 
 
@@ -3496,6 +3822,17 @@ This saves you from needing to manually escape characters.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/strie-20160211.2222/strie-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/strie-20160211.2222/strie-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "strie" '("strie-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/stream-2.2.4/stream-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -3545,10 +3882,10 @@ View and manipulate SSH tunnels.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ssh-config-mode-20180609.951/ssh-config-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ssh-config-mode-20180922.951/ssh-config-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ssh-config-mode-20180609.951/ssh-config-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ssh-config-mode-20180922.951/ssh-config-mode-autoloads.el") (car load-path))))
 
 
 
@@ -3680,32 +4017,6 @@ to perform.
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "srefactor-ui" '("srefactor-ui-")))
 
 
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/sr-speedbar-20161025.831/sr-speedbar-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sr-speedbar-20161025.831/sr-speedbar-autoloads.el") (car load-path))))
-
-
-
-(autoload 'sr-speedbar-toggle "sr-speedbar" "\
-Toggle sr-speedbar window.
-Toggle visibility of sr-speedbar by resizing
-the `sr-speedbar-window' to a minimal width
-or the last width when visible.
-Use this function to create or toggle visibility
-of a speedbar-window.  It will be created if necessary.
-
-\(fn)" t nil)
-
-(autoload 'sr-speedbar-open "sr-speedbar" "\
-Create `sr-speedbar' window.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sr-speedbar" '("sr-speedbar-")))
 
 
 )
@@ -3870,10 +4181,10 @@ See `smartscan-mode' for more information on Smartscan mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/smartparens-20180912.1750/smartparens-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/smartparens-20181007.1501/smartparens-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/smartparens-20180912.1750/smartparens-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/smartparens-20181007.1501/smartparens-autoloads.el") (car load-path))))
 
 
 
@@ -4158,10 +4469,10 @@ Turn off `show-smartparens-mode'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/dumb-jump-20180911.1931/dumb-jump-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/dumb-jump-20180930.550/dumb-jump-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/dumb-jump-20180911.1931/dumb-jump-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/dumb-jump-20180930.550/dumb-jump-autoloads.el") (car load-path))))
 
 
 
@@ -4724,7 +5035,7 @@ behaviors.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/slime-20180903.2109/slime-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/slime-20180923.1848/slime-autoloads.el"))
 
 
 
@@ -5282,6 +5593,17 @@ The commands are `shell-command', `shell-command-on-region', `grep',
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/sequences-20170818.1252/sequences-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/sequences-20170818.1252/sequences-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sequences" '("sequences-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/sed-mode-1.0/sed-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -5580,10 +5902,10 @@ Default prefix is 'C-c s'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20180921.442/projectile-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/projectile-20181009.851/projectile-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20180921.442/projectile-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/projectile-20181009.851/projectile-autoloads.el") (car load-path))))
 
 
 
@@ -5631,6 +5953,12 @@ This function is not recursive and only adds projects with roots
 at the top level of DIRECTORY.
 
 \(fn DIRECTORY)" t nil)
+
+(autoload 'projectile-discover-projects-in-search-path "projectile" "\
+Discover projects in `projectile-project-search-path'.
+Invoked automatically when `projectile-mode' is enabled.
+
+\(fn)" t nil)
 
 (autoload 'projectile-switch-to-buffer "projectile" "\
 Switch to a project buffer.
@@ -5784,6 +6112,11 @@ Jump to a project's file using completion and show it in another frame.
 With a prefix arg INVALIDATE-CACHE invalidates the cache first.
 
 \(fn &optional INVALIDATE-CACHE)" t nil)
+
+(autoload 'projectile-toggle-project-read-only "projectile" "\
+Toggle project read only.
+
+\(fn)" t nil)
 
 (autoload 'projectile-find-dir "projectile" "\
 Jump to a project's directory using completion.
@@ -6072,6 +6405,14 @@ See `def-projectile-commander-method' for defining new methods.
 
 \(fn)" t nil)
 
+(autoload 'projectile-browse-dirty-projects "projectile" "\
+Browse dirty version controlled projects.
+
+With a prefix argument, or if CACHED is non-nil, try to use the cached
+dirty project list.
+
+\(fn &optional CACHED)" t nil)
+
 (autoload 'projectile-edit-dir-locals "projectile" "\
 Edit or create a .dir-locals.el file of the project.
 
@@ -6164,10 +6505,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20180914.802/ghub-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ghub-20181003.1456/ghub-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20180914.802/ghub-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ghub-20181003.1456/ghub-autoloads.el") (car load-path))))
 
 
 
@@ -6273,10 +6614,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037/magit-popup-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-popup-20181003.921/magit-popup-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037/magit-popup-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-popup-20181003.921/magit-popup-autoloads.el") (car load-path))))
 
 
 
@@ -6286,10 +6627,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-20180920.2138/magit-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/magit-20181009.8/magit-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-20180920.2138/magit-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/magit-20181009.8/magit-autoloads.el") (car load-path))))
 
 
 
@@ -7335,6 +7676,32 @@ This command is only intended for interactive use and should only
 be used on highly rearranged and unpublished history.
 
 \(fn REV)" t nil)
+
+(autoload 'magit-pop-revision-stack "magit-extras" "\
+Insert a representation of a revision into the current buffer.
+
+Pop a revision from the `magit-revision-stack' and insert it into
+the current buffer according to `magit-pop-revision-stack-format'.
+Revisions can be put on the stack using `magit-copy-section-value'
+and `magit-copy-buffer-revision'.
+
+If the stack is empty or with a prefix argument, instead read a
+revision in the minibuffer.  By using the minibuffer history this
+allows selecting an item which was popped earlier or to insert an
+arbitrary reference or revision without first pushing it onto the
+stack.
+
+When reading the revision from the minibuffer, then it might not
+be possible to guess the correct repository.  When this command
+is called inside a repository (e.g. while composing a commit
+message), then that repository is used.  Otherwise (e.g. while
+composing an email) then the repository recorded for the top
+element of the stack is used (even though we insert another
+revision).  If not called inside a repository and with an empty
+stack, or with two prefix arguments, then read the repository in
+the minibuffer too.
+
+\(fn REV TOPLEVEL)" t nil)
 
 (autoload 'magit-copy-section-value "magit-extras" "\
 Save the value of the current section for later use.
@@ -8479,6 +8846,22 @@ single module from the user.
 
 \(fn MODULES ARGS)" t nil)
 
+(autoload 'magit-submodule-remove "magit-submodule" "\
+Unregister MODULES and remove their working directories.
+
+For safety reasons, do not remove the gitdirs and if a module has
+uncomitted changes, then do not remove it at all.  If a module's
+gitdir is located inside the working directory, then move it into
+the gitdir of the superproject first.
+
+With the \"--force\" argument offer to remove dirty working
+directories and with a prefix argument offer to delete gitdirs.
+Both actions are very dangerous and have to be confirmed.  There
+are additional safety precautions in place, so you might be able
+to recover from making a mistake here, but don't count on it.
+
+\(fn MODULES ARGS TRASH-GITDIRS)" t nil)
+
 (autoload 'magit-insert-modules "magit-submodule" "\
 Insert submodule sections.
 Hook `magit-module-sections-hook' controls which module sections
@@ -8896,10 +9279,10 @@ Remove files of the current snippet together with directory of this snippet.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/rust-mode-20180626.2212/rust-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rust-mode-20181008.1628/rust-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rust-mode-20180626.2212/rust-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rust-mode-20181008.1628/rust-mode-autoloads.el") (car load-path))))
 
 
 
@@ -8913,6 +9296,566 @@ Major mode for Rust code.
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rust-mode" '("cargo-compilation-regexps" "rust")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/rtags-20180925.641/rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/rtags-20180925.641/rtags-autoloads.el") (car load-path))))
+
+
+
+(autoload 'rtags-set-periodic-reparse-timeout "rtags" "\
+Set `rtags-periodic-reparse-timeout' to TIME.
+
+\(fn TIME)" t nil)
+
+(autoload 'rtags-call-bury-or-delete "rtags" "\
+Call `rtags-bury-buffer-function' function.
+
+\(fn)" t nil)
+
+(autoload 'rtags-next-match "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-previous-match "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-next-diag "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-previous-diag "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-preprocess-file "rtags" "\
+Preprocess selected region or buffer.
+If optional BUFFER is given, use BUFFER instead of `current-buffer'.
+It uses the stored compile command from the RTags database for preprocessing.
+
+\(fn &optional BUFFER)" t nil)
+
+(autoload 'rtags-set-current-project "rtags" "\
+Set active project.
+Uses `completing-read' to ask for the project.
+
+\(fn)" t nil)
+
+(autoload 'rtags-print-symbol-info "rtags" "\
+Print information about the symbol under cursor.
+
+\(fn &optional VERBOSE)" t nil)
+
+(autoload 'rtags-symbol-type "rtags" "\
+Print symbol type under cursor.
+
+\(fn)" t nil)
+
+(autoload 'rtags-print-dependencies "rtags" "\
+Print dependency information of the file in buffer.
+
+If optional PREFIX is given, a selection of what type of dependency
+information should be shown will be offered. Currently only one can
+be chosen.
+\"includes\"        - Print includes the file in buffer includes.
+\"included-by\"     - Print files which include the file in buffer.
+\"depends-on\"      - Print files the file in buffer depends on.
+\"depended-on\"     - ...
+\"tree-depends-on\" - ...
+
+If optional BUFFER is given print dependencies for file in BUFFER
+instead of file from `current-buffer'.
+
+\(fn &optional PREFIX BUFFER)" t nil)
+
+(defvar rtags-dependency-tree-data nil)
+
+(autoload 'rtags-references-tree "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-functions-called-by-this-function "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-all-functions-called-this-function "rtags" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'rtags-list-results "rtags" "\
+Show the RTags results buffer.
+
+\(fn)" t nil)
+
+(autoload 'rtags-print-source-arguments "rtags" "\
+
+
+\(fn &optional BUFFER)" t nil)
+
+(autoload 'rtags-print-class-hierarchy "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-print-enum-value-at-point "rtags" "\
+
+
+\(fn &optional LOCATION)" t nil)
+
+(autoload 'rtags-goto-offset "rtags" "\
+
+
+\(fn POS)" t nil)
+
+(autoload 'rtags-location-stack-filter "rtags" "\
+
+
+\(fn PATH/LAMBDA/RX)" t nil)
+
+(autoload 'rtags-location-stack-jump "rtags" "\
+
+
+\(fn BY)" t nil)
+
+(autoload 'rtags-location-stack-visualize-update "rtags" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'rtags-enable-standard-keybindings "rtags" "\
+Setup standard keybindings for the RTags commands.
+
+If optional MAP is non-nil, add the keys to MAP instead of `c-mode-base-map'.
+If optional PREFIX is non-nil, use PREFIX as prefix key for the commands,
+default is \"C-c r \". It doesn't matter whether you add a space at the end
+of PREFIX or not, if doesn't contain one, one will be added.
+
+\(fn &optional MAP PREFIX)" t nil)
+
+(autoload 'rtags-print-current-location "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-location-stack-forward "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-location-stack-back "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-location-stack-reset "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-symbol-at-point "rtags" "\
+Find the natural target for the symbol under the cursor and moves to that location.
+For references this means to jump to the definition/declaration of the referenced symbol (it jumps to the definition if it is indexed).
+For definitions it jumps to the declaration (if there is only one) For declarations it jumps to the definition.
+If called with prefix, open first match in other window
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-find-references-at-point "rtags" "\
+Find all references to the symbol under the cursor.
+
+If there's exactly one result jump directly to it, and if optional
+PREFIX is given jump to it in other window. If there's more show a
+buffer with the different alternatives and jump to the first one, if
+`rtags-jump-to-first-match' is true. References to references will be
+treated as references to the referenced symbol.
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-find-virtuals-at-point "rtags" "\
+List all reimplementations of function under cursor.
+This includes both declarations and definitions.
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-find-all-references-at-point "rtags" "\
+
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-guess-function-at-point "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-rename-symbol "rtags" "\
+Rename symbol (identifier) at point.
+
+Normally this function will ask the user (via minibuffer) for the
+replacement and then ask for confirmation.  However, when the scope
+of the symbol at point is just one file (the file that's being
+visited by current buffer), the variable `rtags-use-multiple-cursors'
+is non-nil and the `multiple-cursors' package is available, then this
+function will create fake cursors at all occurrences of the symbol.
+
+The optional argument NO-CONFIRM means agree to all replacements and
+can be specified with a prefix argument.
+
+\(fn &optional NO-CONFIRM)" t nil)
+
+(autoload 'rtags-find-symbol "rtags" "\
+
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-find-references "rtags" "\
+
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-find-symbol-current-file "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-references-current-file "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-symbol-current-dir "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-references-current-dir "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-clear-diagnostics-overlays "rtags" "\
+
+
+\(fn &optional BUF)" t nil)
+
+(autoload 'rtags-is-running "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-cycle-through-diagnostics "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-fix-fixit-at-point "rtags" "\
+Apply compiler fix-it at point.
+
+\(fn)" t nil)
+
+(autoload 'rtags-restart-tracking-timer "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-post-command-hook "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-toggle-diagnostics-suspended "rtags" "\
+
+
+\(fn &optional QUIET)" t nil)
+
+(autoload 'rtags-set-diagnostics-suspended "rtags" "\
+
+
+\(fn &optional QUIET)" t nil)
+
+(autoload 'rtags-stop-diagnostics "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-clear-diagnostics "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-diagnostics "rtags" "\
+
+
+\(fn &optional RESTART NODIRTY)" t nil)
+
+(autoload 'rtags-compilation-flags "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-close-taglist "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-taglist "rtags" "\
+
+
+\(fn &optional DEST-WINDOW)" t nil)
+
+(autoload 'rtags-select "rtags" "\
+
+
+\(fn &optional OTHER-WINDOW REMOVE SHOW)" t nil)
+
+(autoload 'rtags-select-other-window "rtags" "\
+
+
+\(fn &optional NOT-OTHER-WINDOW)" t nil)
+
+(autoload 'rtags-select-caller "rtags" "\
+
+
+\(fn &optional NOT-OTHER-WINDOW)" t nil)
+
+(autoload 'rtags-select-caller-other-window "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-show-in-other-window "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-select-and-remove-rtags-buffer "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-imenu "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-flatten-max-depth-one "rtags" "\
+
+
+\(fn UNFLATTENED)" nil nil)
+
+(autoload 'rtags-create-index-function "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-activate-imenu "rtags" "\
+Overrides imenu index generation function for the current function.
+
+\(fn)" t nil)
+
+(autoload 'rtags-copy-and-print-current-location "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-find-file "rtags" "\
+Find files matching a file pattern in the RTags database.
+
+With PREFIX and when `rtags-use-filename-completion' is nil,
+negate `rtags-find-file-prefer-exact-match' when matching files.
+
+Initial file pattern to match is obtained from `rtags-current-symbol'
+which can be overridden by specifying DEFAULT-FILE
+
+\(fn &optional PREFIX DEFAULT-FILE)" t nil)
+
+(autoload 'rtags-show-rtags-buffer "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-fixit "rtags" "\
+
+
+\(fn &optional EDIFF BUFFER)" t nil)
+
+(autoload 'rtags-remove-other-window "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-update-current-project "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-show-target-in-other-window "rtags" "\
+DEST-WINDOW : destination window. Can be nil; in this case the current window is split
+according to `rtags-other-window-window-size-percentage'.
+CENTER-WINDOW : if true the target window is centered.
+TRY-DECLARATION-FIRST : first try to find the declaration of the item, then the
+definition.
+
+\(fn &optional DEST-WINDOW CENTER-WINDOW TRY-DECLARATION-FIRST)" t nil)
+
+(autoload 'rtags-suspend-file "rtags" "\
+
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rtags-unsuspend-file "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-toggle-file-suspended "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-clear-suspended-files "rtags" "\
+
+
+\(fn &optional A B)" t nil)
+
+(autoload 'rtags-suspend-all-files "rtags" "\
+
+
+\(fn &optional A)" t nil)
+
+(autoload 'rtags-list-suspended-files "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-compile-file "rtags" "\
+
+
+\(fn &optional BUFFER)" t nil)
+
+(autoload 'rtags-recompile-file "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-quit-rdm "rtags" "\
+Quit the RTags process (rdm).
+
+\(fn)" t nil)
+
+(autoload 'rtags-restart-process "rtags" "\
+Restart the RTags process (rdm).
+
+\(fn)" t nil)
+
+(autoload 'rtags-start-process-unless-running "rtags" "\
+Launch the RTags process (rdm) if it's not already started.
+
+\(fn)" t nil)
+
+(autoload 'rtags-reparse-file "rtags" "\
+WAIT-REPARSING : t to wait for reparsing to finish, nil for async (no waiting).
+
+\(fn &optional BUFFER PERIODIC)" t nil)
+
+(autoload 'rtags-maybe-reparse-file "rtags" "\
+
+
+\(fn &optional BUFFER)" t nil)
+
+(autoload 'rtags-display-summary "rtags" "\
+Display a short text describing the item at point.
+See `rtags-get-summary-text' for details.
+If `rtags-display-summary-as-tooltip' is t, a tooltip is displayed.
+
+\(fn &optional HIDE-EMPTY POS)" t nil)
+
+(autoload 'rtags-display-summary-as-message "rtags" "\
+Display a short text in message area describing the item at point.
+See `rtags-get-summary-text' for details.
+
+\(fn)" t nil)
+
+(autoload 'rtags-get-include-file-for-symbol "rtags" "\
+Insert #include declaration to buffer corresponding to the input symbol.
+With optional PREFIX insert include at point.
+
+\(fn &optional PREFIX)" t nil)
+
+(autoload 'rtags-make-member "rtags" "\
+Create a stub member functions. Type a declaration and then
+`rtags-make-member' can be used to create the stub definition in
+the class.
+
+\(fn)" t nil)
+
+(autoload 'rtags-check-includes "rtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'rtags-tokens "rtags" "\
+
+
+\(fn &optional FROM TO CALLBACK)" t nil)
+
+(autoload 'rtags-create-doxygen-comment "rtags" "\
+Creates doxygen comment for function at point.
+
+Comment will be inserted before current line. It uses yasnippet to let
+the user enter missing field manually.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rtags" '("rtags-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/restart-emacs-20180601.1031/restart-emacs-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/restart-emacs-20180601.1031/restart-emacs-autoloads.el") (car load-path))))
+
+
+
+(autoload 'restart-emacs-handle-command-line-args "restart-emacs" "\
+Handle the --restart-emacs-desktop command line argument.
+
+The value of the argument is the desktop file from which the frames should be
+restored.  IGNORED are ignored.
+
+\(fn &rest IGNORED)" nil nil)
+
+(add-to-list 'command-switch-alist '("--restart-emacs-desktop" . restart-emacs-handle-command-line-args))
+
+(autoload 'restart-emacs "restart-emacs" "\
+Restart Emacs.
+
+When called interactively ARGS is interpreted as follows
+
+- with a single `universal-argument' (`C-u') Emacs is restarted
+  with `--debug-init' flag
+- with two `universal-argument' (`C-u') Emacs is restarted with
+  `-Q' flag
+- with three `universal-argument' (`C-u') the user prompted for
+  the arguments
+
+When called non-interactively ARGS should be a list of arguments
+with which Emacs should be restarted.
+
+\(fn &optional ARGS)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "restart-emacs" '("restart-emacs-")))
 
 
 )
@@ -9154,10 +10097,10 @@ FUNCTION must return an explanation when the test fails and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20180919.1252/racket-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/racket-mode-20181004.309/racket-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20180919.1252/racket-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/racket-mode-20181004.309/racket-mode-autoloads.el") (car load-path))))
 
 
 
@@ -9395,37 +10338,6 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/quick-peek-20180525.1411/quick-peek-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/quick-peek-20180525.1411/quick-peek-autoloads.el") (car load-path))))
-
-
-
-(autoload 'quick-peek-overlay-at "quick-peek" "\
-Find overlay for line at POS.
-
-\(fn POS)" nil nil)
-
-(autoload 'quick-peek-show "quick-peek" "\
-Show STR in an inline window at POS.
-MIN-H (default: 4) and MAX-H (default: 16) are bounds on the
-height of the window.  Setting MAX-H to `none' allows the inline
-window to expand past the bottom of the current Emacs window.
-
-\(fn STR &optional POS MIN-H MAX-H)" nil nil)
-
-(autoload 'quick-peek-hide "quick-peek" "\
-Hide inline windows.
-With non-nil POS, clear only overlays on line of POS.
-Return the number of overlays hidden.
-
-\(fn &optional POS)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "quick-peek" '("quick-peek-")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/quack-20160410.207/quack-autoloads.el") (car load-path))))
 
@@ -9480,10 +10392,10 @@ See `preproc-font-lock-mode' for more information on Preproc-Font-Lock mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/posframe-20180902.205/posframe-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/posframe-20180927.602/posframe-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/posframe-20180902.205/posframe-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/posframe-20180927.602/posframe-autoloads.el") (car load-path))))
 
 
 
@@ -10156,6 +11068,921 @@ on failure, without throwing an error.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/noflet-20141102.1454/noflet-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/noflet-20141102.1454/noflet-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "noflet" '("letn" "ntake-all")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "kv" '("dotass" "keyword->symbol" "map-bind")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/creole-20140924.1500/creole-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/creole-20140924.1500/creole-autoloads.el") (car load-path))))
+
+
+
+(autoload 'creole-wiki "creole" "\
+Export WikiCreole SOURCE into HTML.
+
+Returns the buffer where the HTML was exported. This could be a
+user supplied buffer (see DESTINATION) or a buffer created based
+on the filename of the source (or just automatically created).
+
+SOURCE can be a buffer or plain text or something we might
+recognize as a file.  A file-name is detected by a leading
+'~' (meaning expand from the user root) or '/' (meaning rooted)
+or './' (meaning expand from the root of the source creole file).
+
+If SOURCE is a filename it is loaded with `creole/get-file'.
+
+
+Keyword arguments are supported to change the way the HTML is
+produced.
+
+DESTINATION can be a buffer or a buffer name to write the HTML
+into or it can be 't' to indicate the default output stream.  In
+the latter case an automatic buffer is still created and the HTML
+is sent to the default output stream when the export is done.
+
+The DESTINATION buffer is always returned.
+
+STRUCTURE-TRANSFORM-FN is a structure transformation function or
+list of functions, see `creole-html' for details.
+
+HTMLFONTIFY - use 'htmlfontify' to fontify any code blocks; this
+is true by default.
+
+Code blocks are marked up like pre-formatted areas but must begin
+with a line stating the Emacs mode to fontify the text as; for
+example:
+
+ {{{
+ ##! emacs-lisp
+ (let ((x 1)) x)
+ }}}
+
+would cause Emacs Lisp to be fontified.
+
+HTMLFONTIFY-STYLE - add an HTML-STYLE block for 'htmlfontify'
+code blocks. If this is nil an HTML-STYLE block is NOT added.
+
+BODY-HEADER - a string or a file-name with HTML code to be
+inserted in the BODY of the HTML document before the Creole
+markup export.  A file-name is detected in the same way as for
+SOURCE.
+
+BODY-FOOTER - a string or a file-name with HTML code to be
+inserted in the BODY of the HTML document after the Creole markup
+export.  A file-name is detected in the same way as for SOURCE.
+
+The BODY-HEADER and the BODY-FOOTER are treated as moustache
+templates and expanded before being inserted.  See
+'creole-moustache' for a description.  Variables passed to
+'creole-moustache' with the template are:
+
+  text - the creole source text of the page
+
+or any variable in VARIABLES, which is an alist of
+symbols -> values.
+
+DOCROOT - base any files to be served.  Any file-name reference
+for CSS or JavaScript, if residing under this docroot, will be
+linked to the document rather than embedded.
+
+DOCROOT-ALIAS - is the docroot path to use in any links as an
+alias for the docroot.
+
+CSS - a list of cascading style sheets, each entry can either be
+a file-name (a file-name is detected in the same way as
+for SOURCE) or a string with W3C-CSS statements in it.
+
+If a DOCROOT is specified then any cascading style sheets
+file-name is LINKed into the resulting document, if not then the
+statements are embedded directly.
+
+JAVASCRIPT - a list of JavaScript, as for CSS, each entry can
+be either a string of the JavaScript to be directly embedded or a
+file-name reference (as in SOURCE).  As for :CSS if
+a :DOCROOT is specified then the scripts will be loaded as links
+but otherwise will be embedded.
+
+META - a list of strings specifying resulting HTML-META elements.
+For example:
+
+ :meta '(\"name='description'
+          content='Free Web tutorials on HTML, CSS, XML'\")
+
+:OTHER-LINK - a list of string specifying resulting HTML-LINK
+elements, for example:
+
+ :other-link '(\"rel='alternate' href='/my-feed.rss'\")
+
+:DOCTYPE may be nil, in which case nothing is added or it may be
+a string in which case it is inserted directly before the <html>
+element, or it may be one of the symbols 'xhtml or 'html5 in
+which case the right doctype is added.
+
+All, any or none of these keys may be specified.
+
+\(fn SOURCE &key DESTINATION STRUCTURE-TRANSFORM-FN (htmlfontify t) (htmlfontify-style t) BODY-HEADER BODY-FOOTER VARIABLES DOCROOT DOCROOT-ALIAS CSS JAVASCRIPT META OTHER-LINK DOCTYPE)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "creole" '("creole" "when1")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/fakir-20140729.1652/fakir-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/fakir-20140729.1652/fakir-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "fakir" '("fakir")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/db-20140421.2111/db-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/db-20140421.2111/db-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "db" '("db-" "db/")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/elnode-20140203.2306/elnode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/elnode-20140203.2306/elnode-autoloads.el") (car load-path))))
+
+
+
+(defconst elnode-config-directory (expand-file-name (concat user-emacs-directory "elnode/")) "\
+The config directory for elnode to store peripheral files.
+
+This is used as a base for other constant directory or file
+names (the elnode auth database is a file in this directory, the
+elnode webserver has a docroot directory in this directory).
+
+It is based on the `user-emacs-directory' which always seems to
+be set, even when emacs is started with -Q.")
+
+(autoload 'elnode-app "elnode" "\
+A macro that sets up the boring boilerplate for Elnode apps.
+
+This sets up lexical binding, captures the module's parent
+directory in DIR-VAR, requires `cl' and any other features you
+list.  Use it like this:
+
+ (elnode-app my-app-dir esxml mongo-elnode)
+
+Once used you can access the variable `my-app-dir' as the dirname
+of your module (which is useful for serving files and such).
+
+\(fn DIR-VAR &rest FEATURES)" nil t)
+
+(function-put 'elnode-app 'lisp-indent-function '1)
+
+(autoload 'elnode-start "elnode" "\
+Start a server using REQUEST-HANDLER.
+
+REQUEST-HANDLER will handle requests on PORT on HOST (which is
+'localhost' by default).
+
+REQUEST-HANDLER is a function which is called with the request.
+The function is called with one argument, which is the
+http-connection.
+
+You can use functions such as `elnode-http-start' and
+`elnode-http-send-body' to send the http response.
+
+Example:
+
+  (defun nic-server (httpcon)
+    (elnode-http-start httpcon 200 '(\"Content-Type\" . \"text/html\"))
+    (elnode-http-return httpcon \"<html><b>BIG!</b></html>\"))
+  (elnode-start 'nic-server)
+
+Now visit http://127.0.0.1:8000
+
+If PORT is non-nil, then run server on PORT, otherwise default to
+8000.
+
+If HOST is non-nil, then run the server on the specified local IP
+address, otherwise use localhost.  A few names are predefined:
+
+  \"localhost\" is 127.0.0.1
+  \"*\" is 0.0.0.0
+
+Additionally, you may specifiy an IP address, e.g \"1.2.3.4\"
+
+Note that although HOST may be specified, elnode does not
+disambiguate on running servers by HOST.  So you cannot start two
+elnode servers on the same port on different hosts.
+
+DEFER-MODE may be used to control how deferred handlers are
+managed for this server.
+
+SERVICE-MAPPINGS is an alist of service resource symbols mapped
+to integer port numbers.  This can be supplied to elnode-start to
+allow it to map service resources defined by handlers to
+different TCP ports and therefore different Emacs instances.
+
+The list of SERVICE-MAPPINGS is also used to start ancilliary
+port servers.  Ancilliary port servers should be automatically
+stopped when the main server is stopped.
+
+\(fn REQUEST-HANDLER &key PORT (host \"localhost\") (defer-mode :managed) SERVICE-MAPPINGS)" t nil)
+
+(defvar elnode-hostpath-default-table '(("[^/]+//wiki/\\(.*\\)" . elnode-wikiserver) ("[^/]+//\\(.*\\)" . elnode-webserver)) "\
+Defines mappings for `elnode-hostpath-default-handler'.
+
+This is the default mapping table for Elnode, out of the box. If
+you customize this then elnode will serve these hostpath mappings
+by just loading Elnode.
+
+By default the table maps everything to
+`elnode-webserver'. Unless you're happy with the default you
+should probably get rid of the everything path because it will
+interfere with any other mappings you add.")
+
+(custom-autoload 'elnode-hostpath-default-table "elnode" t)
+
+(defconst elnode-config-directory (expand-file-name (concat user-emacs-directory "elnode/")) "\
+The config directory for elnode to store peripheral files.
+
+This is used as a base for other constant directory or file
+names (the elnode auth database is a file in this directory, the
+elnode webserver has a docroot directory in this directory).
+
+It is based on the `user-emacs-directory' which always seems to
+be set, even when emacs is started with -Q.")
+
+(autoload 'elnode--webserver-handler-proc "elnode" "\
+Actual webserver implementation.
+
+Do webserving to HTTPCON from the DOCROOT using the MIME-TYPES
+for meta information.
+
+This is not a real handler (because it takes more than the
+HTTPCON) but it is called directly by the real webserver
+handlers.
+
+\(fn HTTPCON DOCROOT MIME-TYPES)" nil nil)
+
+(autoload 'elnode-make-webserver "elnode" "\
+Make a webserver interactively, for DOCROOT on PORT.
+
+An easy way for a user to make a webserver for a particular
+directory.
+
+\(fn DOCROOT PORT &optional HOST)" t nil)
+
+(autoload 'elnode-webserver "elnode" "\
+A simple webserver that serves documents out of `elnode-webserver-docroot'.
+
+This is just an example of an elnode webserver, but it may be all
+that is needed most of the time.
+
+See `elnode-webserver-handler-maker' for more possibilities for
+making webserver functions.
+
+HTTPCON is the HTTP connection to the user agent.
+
+\(fn HTTPCON)" nil nil)
+
+(autoload 'elnode-init "elnode" "\
+Bootstraps the elnode environment when the Lisp is loaded.
+
+It's useful to have elnode start automatically... on Lisp
+load.  If the variable `elnode-init-port' is set then this
+function will launch a server on it.
+
+The server is started with `elnode-hostpath-default-handler' as
+the handler and listening on `elnode-init-host'
+
+\(fn)" t nil)
+
+(defvar elnode-do-init nil "\
+Should elnode start a server on load?
+
+The server that is started is controlled by more elnode
+customizations.
+
+`elnode-hostpath-default-table' defines the mappings from
+hostpath regexs to handler functions. By default elnode ships
+with this customization setup to serve the document root defined
+in `elnode-webserver-docroot', which by default is ~/public_html.")
+
+(custom-autoload 'elnode-do-init "elnode" t)
+
+(eval-after-load 'elnode '(if (and (boundp 'elnode-do-init) elnode-do-init (or (not (boundp 'elnode--inited)) (not elnode--inited))) (progn (elnode-init) (setq elnode--inited nil))))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode" '("ELNODE-FORM-DATA-TYPE" "elnode" "http-referrer" "if-elnode-auth" "should-" "with-")))
+
+
+
+(autoload 'elnode-deferred-queue "elnode-lists" "\
+Message the length of the deferred queue.
+
+\(fn ARG)" t nil)
+
+(autoload 'elnode-deferred-list "elnode-lists" "\
+List the currently deferred Elnode handlers.
+
+\(fn &optional PREFIX)" t nil)
+
+(defalias 'list-elnode-deferreds 'elnode-deferred-list)
+
+(autoload 'elnode-server-list "elnode-lists" "\
+List the currently running Elnode servers.
+
+\(fn &optional PREFIX)" t nil)
+
+(defalias 'list-elnode-servers 'elnode-server-list)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode-lists" '("elnode-")))
+
+
+
+(autoload 'elnode-log-mode "elnode-log-mode" "\
+Elnode log viewing mode.
+
+For viewing access log files from Elnode.
+
+\(fn)" t nil)
+
+
+
+(autoload 'elnode-make-proxy "elnode-proxy" "\
+Make a proxy handler sending requests to URL.
+
+See `elnode-proxy-do' for how URL is handled.
+
+An HTTP user-agent with a specified HTTP proxy sends the full
+request as the path, eg:
+
+  GET http://somehost:port/path?query HTTP/1.1
+
+So `elnode-make-proxy' can make (something like) a full proxy
+server with:
+
+  (elnode-make-proxy \"${path}${query}\")
+
+There may be many things that a full proxy does that this does
+not do however.
+
+Reverse proxying is a simpler and perhaps more useful.
+
+\(fn URL)" nil nil)
+
+(autoload 'elnode-make-proxy-server "elnode-proxy" "\
+Make a proxy server on the specified PORT.
+
+Optionally have requests go to URL.  If URL is not specified it
+is \"${path}${query}\".
+
+Interactively use C-u to specify the URL.
+
+\(fn PORT &optional URL)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode-proxy" '("elnode")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode-rle" '("elnode-" "with-elnode-rle-wait")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode-testsupport" '("elnode-")))
+
+
+
+(defconst elnode-wikiserver-wikiroot-default (expand-file-name (concat elnode-config-directory "wiki/")) "\
+The default location of the wiki root.
+
+This is used to detect whether elnode needs to create this
+directory or not.")
+
+(defvar elnode-wikiserver-wikiroot elnode-wikiserver-wikiroot-default "\
+The root for the Elnode wiki files.
+
+This is where elnode-wikiserver serves wiki files from.")
+
+(custom-autoload 'elnode-wikiserver-wikiroot "elnode-wiki" t)
+
+(autoload 'elnode-wikiserver-test "elnode-wiki" "\
+Test whether we should serve Wiki or not.
+
+\(fn)" nil nil)
+
+(autoload 'elnode-wikiserver "elnode-wiki" "\
+Serve Wiki pages from `elnode-wikiserver-wikiroot'.
+
+HTTPCON is the request.
+
+The Wiki server is only available if the `creole' package is
+provided. Otherwise it will just error.
+
+\(fn HTTPCON)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elnode-wiki" '("elnode-wiki")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/peek-mode-20130620.1946/peek-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/peek-mode-20130620.1946/peek-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'peek-mode "peek-mode" "\
+Serves the buffer live over HTTP.
+
+If called interactively, enable Peek mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "peek-mode" '("peek-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/pdf-tools-20181008.1926/pdf-tools-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/pdf-tools-20181008.1926/pdf-tools-autoloads.el") (car load-path))))
+
+
+
+(autoload 'pdf-annot-minor-mode "pdf-annot" "\
+Support for PDF Annotations.
+
+If called interactively, enable Pdf-Annot minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{pdf-annot-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-annot" '("pdf-annot-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-cache" '("boundingbox" "define-pdf-cache-function" "page" "pdf-cache-" "textregions")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-dev" '("pdf-dev-")))
+
+
+
+(autoload 'pdf-history-minor-mode "pdf-history" "\
+Keep a history of previously visited pages.
+
+If called interactively, enable Pdf-History minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+This is a simple stack-based history.  Turning the page or
+following a link pushes the left-behind page on the stack, which
+may be navigated with the following keys.
+
+\\{pdf-history-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-history" '("pdf-history-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-info" '("pdf-info-")))
+
+
+
+(autoload 'pdf-isearch-minor-mode "pdf-isearch" "\
+Isearch mode for PDF buffer.
+
+If called interactively, enable Pdf-Isearch minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+When this mode is enabled \\[isearch-forward], among other keys,
+starts an incremental search in this PDF document.  Since this mode
+uses external programs to highlight found matches via
+image-processing, proceeding to the next match may be slow.
+
+Therefore two isearch behaviours have been defined: Normal isearch and
+batch mode.  The later one is a minor mode
+\(`pdf-isearch-batch-mode'), which when activated inhibits isearch
+from stopping at and highlighting every single match, but rather
+display them batch-wise.  Here a batch means a number of matches
+currently visible in the selected window.
+
+The kind of highlighting is determined by three faces
+`pdf-isearch-match' (for the current match), `pdf-isearch-lazy'
+\(for all other matches) and `pdf-isearch-batch' (when in batch
+mode), which see.
+
+Colors may also be influenced by the minor-mode
+`pdf-view-dark-minor-mode'.  If this is minor mode enabled, each face's
+dark colors, are used (see e.g. `frame-background-mode'), instead
+of the light ones.
+
+\\{pdf-isearch-minor-mode-map}
+While in `isearch-mode' the following keys are available. Note
+that not every isearch command work as expected.
+
+\\{pdf-isearch-active-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-isearch" '("pdf-isearch-")))
+
+
+
+(autoload 'pdf-links-minor-mode "pdf-links" "\
+Handle links in PDF documents.\\<pdf-links-minor-mode-map>
+
+If called interactively, enable Pdf-Links minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+If this mode is enabled, most links in the document may be
+activated by clicking on them or by pressing \\[pdf-links-action-perform] and selecting
+one of the displayed keys, or by using isearch limited to
+links via \\[pdf-links-isearch-link].
+
+\\{pdf-links-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-links-action-perform "pdf-links" "\
+Follow LINK, depending on its type.
+
+This may turn to another page, switch to another PDF buffer or
+invoke `pdf-links-browse-uri-function'.
+
+Interactively, link is read via `pdf-links-read-link-action'.
+This function displays characters around the links in the current
+page and starts reading characters (ignoring case).  After a
+sufficient number of characters have been read, the corresponding
+link's link is invoked.  Additionally, SPC may be used to
+scroll the current page.
+
+\(fn LINK)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-links" '("pdf-links-")))
+
+
+
+(autoload 'pdf-loader-install "pdf-loader" "\
+Prepare Emacs for using PDF Tools.
+
+This function acts as a replacement for `pdf-tools-install' and
+makes Emacs load and use PDF Tools as soon as a PDF file is
+opened, but not sooner.
+
+The arguments are passed verbatim to `pdf-tools-install', which
+see.
+
+\(fn &optional NO-QUERY-P SKIP-DEPENDENCIES-P NO-ERROR-P FORCE-DEPENDENCIES-P)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-loader" '("pdf-loader--")))
+
+
+
+(autoload 'pdf-misc-minor-mode "pdf-misc" "\
+FIXME:  Not documented.
+
+If called interactively, enable Pdf-Misc minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-misc-size-indication-minor-mode "pdf-misc" "\
+Provide a working size indication in the mode-line.
+
+If called interactively, enable Pdf-Misc-Size-Indication minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-misc-menu-bar-minor-mode "pdf-misc" "\
+Display a PDF Tools menu in the menu-bar.
+
+If called interactively, enable Pdf-Misc-Menu-Bar minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-misc-context-menu-minor-mode "pdf-misc" "\
+Provide a right-click context menu in PDF buffers.
+
+If called interactively, enable Pdf-Misc-Context-Menu minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{pdf-misc-context-menu-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-misc" '("pdf-misc-")))
+
+
+
+(autoload 'pdf-occur "pdf-occur" "\
+List lines matching STRING or PCRE.
+
+Interactively search for a regexp. Unless a prefix arg was given,
+in which case this functions performs a string search.
+
+If `pdf-occur-prefer-string-search' is non-nil, the meaning of
+the prefix-arg is inverted.
+
+\(fn STRING &optional REGEXP-P)" t nil)
+
+(autoload 'pdf-occur-multi-command "pdf-occur" "\
+Perform `pdf-occur' on multiple buffer.
+
+For a programmatic search of multiple documents see
+`pdf-occur-search'.
+
+\(fn)" t nil)
+
+(defvar pdf-occur-global-minor-mode nil "\
+Non-nil if Pdf-Occur-Global minor mode is enabled.
+See the `pdf-occur-global-minor-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `pdf-occur-global-minor-mode'.")
+
+(custom-autoload 'pdf-occur-global-minor-mode "pdf-occur" nil)
+
+(autoload 'pdf-occur-global-minor-mode "pdf-occur" "\
+Enable integration of Pdf Occur with other modes.
+
+If called interactively, enable Pdf-Occur-Global minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+This global minor mode enables (or disables)
+`pdf-occur-ibuffer-minor-mode' and `pdf-occur-dired-minor-mode'
+in all current and future ibuffer/dired buffer.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-occur-ibuffer-minor-mode "pdf-occur" "\
+Hack into ibuffer's do-occur binding.
+
+If called interactively, enable Pdf-Occur-Ibuffer minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+This mode remaps `ibuffer-do-occur' to
+`pdf-occur-ibuffer-do-occur', which will start the PDF Tools
+version of `occur', if all marked buffer's are in `pdf-view-mode'
+and otherwise fallback to `ibuffer-do-occur'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-occur-dired-minor-mode "pdf-occur" "\
+Hack into dired's `dired-do-search' binding.
+
+If called interactively, enable Pdf-Occur-Dired minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+This mode remaps `dired-do-search' to
+`pdf-occur-dired-do-search', which will start the PDF Tools
+version of `occur', if all marked buffer's are in `pdf-view-mode'
+and otherwise fallback to `dired-do-search'.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-occur" '("pdf-occur-")))
+
+
+
+(autoload 'pdf-outline-minor-mode "pdf-outline" "\
+Display an outline of a PDF document.
+
+If called interactively, enable Pdf-Outline minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+This provides a PDF's outline on the menu bar via imenu.
+Additionally the same outline may be viewed in a designated
+buffer.
+
+\\{pdf-outline-minor-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-outline "pdf-outline" "\
+Display an PDF outline of BUFFER.
+
+BUFFER defaults to the current buffer.  Select the outline
+buffer, unless NO-SELECT-WINDOW-P is non-nil.
+
+\(fn &optional BUFFER NO-SELECT-WINDOW-P)" t nil)
+
+(autoload 'pdf-outline-imenu-enable "pdf-outline" "\
+Enable imenu in the current PDF buffer.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-outline" '("pdf-outline")))
+
+
+
+(autoload 'pdf-sync-minor-mode "pdf-sync" "\
+Correlate a PDF position with the TeX file.
+\\<pdf-sync-minor-mode-map>
+This works via SyncTeX, which means the TeX sources need to have
+been compiled with `--synctex=1'.  In AUCTeX this can be done by
+setting `TeX-source-correlate-method' to 'synctex (before AUCTeX
+is loaded) and enabling `TeX-source-correlate-mode'.
+
+If called interactively, enable Pdf-Sync minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+Then \\[pdf-sync-backward-search-mouse] in the PDF buffer will open the
+corresponding TeX location.
+
+If AUCTeX is your preferred tex-mode, this library arranges to
+bind `pdf-sync-forward-display-pdf-key' (the default is `C-c C-g')
+to `pdf-sync-forward-search' in `TeX-source-correlate-map'.  This
+function displays the PDF page corresponding to the current
+position in the TeX buffer.  This function only works together
+with AUCTeX.
+
+\(fn &optional ARG)" t nil)
+
+(define-obsolete-variable-alias 'pdf-sync-tex-display-pdf-key 'pdf-sync-forward-display-pdf-key nil)
+
+(define-obsolete-variable-alias 'pdf-sync-goto-tex-hook 'pdf-sync-backward-hook nil)
+
+(define-obsolete-variable-alias 'pdf-sync-display-pdf-hook 'pdf-sync-forward-hook nil)
+
+(define-obsolete-variable-alias 'pdf-sync-display-pdf-action 'pdf-sync-forward-display-action nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-sync" '("pdf-sync-")))
+
+
+
+(defvar pdf-tools-handle-upgrades t "\
+Whether PDF Tools should handle upgrading itself.")
+
+(custom-autoload 'pdf-tools-handle-upgrades "pdf-tools" t)
+
+(autoload 'pdf-tools-install "pdf-tools" "\
+Install PDF-Tools in all current and future PDF buffers.
+
+If the `pdf-info-epdfinfo-program' is not running or does not
+appear to be working, attempt to rebuild it.  If this build
+succeeded, continue with the activation of the package.
+Otherwise fail silently, i.e. no error is signaled.
+
+Build the program (if necessary) without asking first, if
+NO-QUERY-P is non-nil.
+
+Don't attempt to install system packages, if SKIP-DEPENDENCIES-P
+is non-nil.
+
+Do not signal an error in case the build failed, if NO-ERROR-P is
+non-nil.
+
+Attempt to install system packages (even if it is deemed
+unnecessary), if FORCE-DEPENDENCIES-P is non-nil.
+
+Note that SKIP-DEPENDENCIES-P and FORCE-DEPENDENCIES-P are
+mutually exclusive.
+
+Note further, that you can influence the installation directory
+by setting `pdf-info-epdfinfo-program' to an appropriate
+value (e.g. ~/bin/epdfinfo) before calling this function.
+
+See `pdf-view-mode' and `pdf-tools-enabled-modes'.
+
+\(fn &optional NO-QUERY-P SKIP-DEPENDENCIES-P NO-ERROR-P FORCE-DEPENDENCIES-P)" t nil)
+
+(autoload 'pdf-tools-enable-minor-modes "pdf-tools" "\
+Enable MODES in the current buffer.
+
+MODES defaults to `pdf-tools-enabled-modes'.
+
+\(fn &optional MODES)" t nil)
+
+(autoload 'pdf-tools-help "pdf-tools" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-tools" '("pdf-tools-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-util" '("display-buffer-split-below-and-attach" "pdf-util-")))
+
+
+
+(autoload 'pdf-view-bookmark-jump-handler "pdf-view" "\
+The bookmark handler-function interface for bookmark BMK.
+
+See also `pdf-view-bookmark-make-record'.
+
+\(fn BMK)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-view" '("pdf-view-")))
+
+
+
+(autoload 'pdf-virtual-edit-mode "pdf-virtual" "\
+Major mode when editing a virtual PDF buffer.
+
+\(fn)" t nil)
+
+(autoload 'pdf-virtual-view-mode "pdf-virtual" "\
+Major mode in virtual PDF buffers.
+
+\(fn)" t nil)
+
+(defvar pdf-virtual-global-minor-mode nil "\
+Non-nil if Pdf-Virtual-Global minor mode is enabled.
+See the `pdf-virtual-global-minor-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `pdf-virtual-global-minor-mode'.")
+
+(custom-autoload 'pdf-virtual-global-minor-mode "pdf-virtual" nil)
+
+(autoload 'pdf-virtual-global-minor-mode "pdf-virtual" "\
+Enable recognition and handling of VPDF files.
+
+If called interactively, enable Pdf-Virtual-Global minor mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'pdf-virtual-buffer-create "pdf-virtual" "\
+
+
+\(fn &optional FILENAMES BUFFER-NAME DISPLAY-P)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pdf-virtual" '("pdf-virtual-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/pcmpl-git-20170121.59/pcmpl-git-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -10394,6 +12221,23 @@ Major mode for opencl kernel editing
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ob-rust-20180911.1535/ob-rust-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ob-rust-20180911.1535/ob-rust-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-rust" '("org-babel-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "test-ob-rust" '("ob-rust-test-" "org-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/nrepl-sync-20140807.1554/nrepl-sync-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -10405,10 +12249,10 @@ Major mode for opencl kernel editing
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/highlight-20180605.635/highlight-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/highlight-20181002.1151/highlight-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/highlight-20180605.635/highlight-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/highlight-20181002.1151/highlight-autoloads.el") (car load-path))))
 
 
 
@@ -11023,14 +12867,52 @@ Non-interactively, FACE = nil means unhighlight all faces.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/noflet-20141102.1454/noflet-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/esxml-20171129.807/esxml-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/noflet-20141102.1454/noflet-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/esxml-20171129.807/esxml-autoloads.el") (car load-path))))
 
 
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "noflet" '("letn" "ntake-all")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "esxml" '("attr" "esxml-" "pp-esxml-to-xml" "string-trim-whitespace" "sxml-to-" "xml-to-esxml")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "esxml-query" '("esxml-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/nov-20180930.2042/nov-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/nov-20180930.2042/nov-autoloads.el") (car load-path))))
+
+
+
+(autoload 'nov-mode "nov" "\
+Major mode for reading EPUB documents
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nov" '("nov-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/nasm-mode-20180711.1909/nasm-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/nasm-mode-20180711.1909/nasm-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'nasm-mode "nasm-mode" "\
+Major mode for editing NASM assembly programs.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "nasm-mode" '("nasm-")))
 
 
 )
@@ -11456,6 +13338,37 @@ See `modern-c++-font-lock-mode' for more information on Modern-C++-Font-Lock mod
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/minimap-1.2/minimap-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/minimap-1.2/minimap-autoloads.el") (car load-path))))
+
+
+
+(defvar minimap-mode nil "\
+Non-nil if Minimap mode is enabled.
+See the `minimap-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `minimap-mode'.")
+
+(custom-autoload 'minimap-mode "minimap" nil)
+
+(autoload 'minimap-mode "minimap" "\
+Toggle minimap mode.
+
+If called interactively, enable Minimap mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "minimap" '("minimap-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/minimal-session-saver-20140508.2041/minimal-session-saver-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -11845,169 +13758,6 @@ Restores a maximized frame.  See `maximize-frame'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/matlab-mode-20180125.1810/matlab-mode-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/matlab-mode-20180125.1810/matlab-mode-autoloads.el") (car load-path))))
-
-
-
-(autoload 'matlab-cedet-setup "cedet-matlab" "\
-Update various paths to get SRecode to identify our macros.
-
-\(fn)" t nil)
-
-
-
-(autoload 'company-matlab-shell "company-matlab-shell" "\
-A `company-mode' completion backend for `matlab-shell'.
-
-\(fn COMMAND &optional ARG &rest IGNORED)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-matlab-shell" '("company-matlab-shell-")))
-
-
-
-(autoload 'enable-visual-studio-bookmarks "linemark" "\
-Bind the viss bookmark functions to F2 related keys.
-\\<global-map>
-\\[viss-bookmark-toggle]     - To=ggle a bookmark on this line.
-\\[viss-bookmark-next-buffer]   - Move to the next bookmark.
-\\[viss-bookmark-prev-buffer]   - Move to the previous bookmark.
-\\[viss-bookmark-clear-all-buffer] - Clear all bookmarks.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "linemark" '("linemark-" "viss-bookmark-")))
-
-
-
-(add-to-list 'auto-mode-alist '("\\.m$" . matlab-mode))
-
-(autoload 'matlab-mode "matlab" "\
-MATLAB(R) mode is a major mode for editing MATLAB dot-m files.
-\\<matlab-mode-map>
-Convenient editing commands are:
- \\[matlab-comment-region]   - Comment/Uncomment out a region of code.
- \\[matlab-fill-comment-line] - Fill the current comment line.
- \\[matlab-fill-region] - Fill code and comments in region.
- \\[matlab-fill-paragraph]     - Refill the current command or comment.
- \\[matlab-complete-symbol]   - Symbol completion of matlab symbolsbased on the local syntax.
- \\[matlab-indent-sexp] - Indent syntactic block of code.
-
-Convenient navigation commands are:
- \\[matlab-beginning-of-command]   - Move to the beginning of a command.
- \\[matlab-end-of-command]   - Move to the end of a command.
- \\[matlab-beginning-of-defun] - Move to the beginning of a function.
- \\[matlab-end-of-defun] - Move do the end of a function.
- \\[matlab-forward-sexp] - Move forward over a syntactic block of code.
- \\[matlab-backward-sexp] - Move backwards over a syntactic block of code.
-
-Convenient template insertion commands:
- \\[tempo-template-matlab-function] - Insert a function definition.
- \\[tempo-template-matlab-if] - Insert an IF END block.
- \\[tempo-template-matlab-for] - Insert a FOR END block.
- \\[tempo-template-matlab-switch] - Insert a SWITCH END statement.
- \\[matlab-insert-next-case] - Insert the next CASE condition in a SWITCH.
- \\[matlab-insert-end-block] - Insert a matched END statement.  With optional ARG, reindent.
- \\[matlab-stringify-region] - Convert plain text in region to a string with correctly quoted chars.
-
-Variables:
-  `matlab-indent-level'		Level to indent blocks.
-  `matlab-cont-level'		Level to indent continuation lines.
-  `matlab-cont-requires-ellipsis' Does your MATLAB support implied elipsis.
-  `matlab-case-level'		Level to unindent case statements.
-  `matlab-indent-past-arg1-functions'
-                                Regexp of functions to indent past the first
-                                  argument on continuation lines.
-  `matlab-maximum-indents'      List of maximum indents during lineups.
-  `matlab-comment-column'       Goal column for on-line comments.
-  `fill-column'			Column used in auto-fill.
-  `matlab-indent-function-body' If non-nil, indents body of MATLAB functions.
-  `matlab-functions-have-end'	If non-nil, MATLAB functions terminate with end.
-  `matlab-return-function'	Customize RET handling with this function.
-  `matlab-auto-fill'            Non-nil, do auto-fill at startup.
-  `matlab-fill-code'            Non-nil, auto-fill code.
-  `matlab-fill-strings'         Non-nil, auto-fill strings.
-  `matlab-verify-on-save-flag'  Non-nil, enable code checks on save.
-  `matlab-highlight-block-match-flag'
-                                Enable matching block begin/end keywords.
-  `matlab-vers-on-startup'	If t, show version on start-up.
-  `matlab-handle-simulink'      If t, enable simulink keyword highlighting.
-
-All Key Bindings:
-\\{matlab-mode-map}
-
-\(fn)" t nil)
-
-(autoload 'matlab-shell "matlab" "\
-Create a buffer with MATLAB running as a subprocess.
-
-MATLAB shell cannot work on the MS Windows platform because MATLAB is not
-a console application.
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "matlab" '("gud-matlab-" "matlab-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "matlab-publish" '("matlab-")))
-
-
-
-(autoload 'mlint-minor-mode "mlint" "\
-Toggle mlint minor mode, a mode for showing mlint errors.
-With prefix ARG, turn mlint minor mode on iff ARG is positive.
-\\{mlint-minor-mode-map\\}
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mlint" '("initialize-instance" "linemark-" "mlint-")))
-
-
-
-(autoload 'semantic-default-matlab-setup "semantic-matlab" "\
-Set up a buffer for parsing of MATLAB files.
-
-\(fn)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "semantic-matlab" '("matlab-mode" "semantic-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "semanticdb-matlab" '("matlab-mode" "semantic")))
-
-
-
-(autoload 'srecode-semantic-handle-:matlab "srecode-matlab" "\
-Add macros into the dictionary DICT based on the current MATLAB buffer.
-Adds the following:
-FILE_SYMBOL - The file name as a symbol.
-FILE_DOC_SYMBOL - The file name as a symbol for doc strings.
-PACKAGE - The package this file is in, or empty if none.
-FILE_CLASS - Show section if filename should be a class.
-FILE_FUNCTION - Show setion if filename is a function.
-
-On class prediction - when filling in an empty file, if the filename and directory it is in
-match, for example @foo/foo.m then foo should be a classdef.
-
-\(fn DICT)" nil nil)
-
-
-
-(autoload 'tlc-mode "tlc" "\
-Major mode for editing Tlc files, or files found in tlc directories.
-
-\(fn)" t nil)
-(add-to-list 'auto-mode-alist '("\\.tlc$" . tlc-mode))
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tlc" '("tlc-")))
-
-
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/helm-core-20180826.515/helm-core-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -12246,10 +13996,10 @@ Call `helm' only with ANY-SOURCES and ANY-BUFFER as args.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20180906.517/helm-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-20181005.1844/helm-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20180906.517/helm-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-20181005.1844/helm-autoloads.el") (car load-path))))
 
 
 
@@ -13615,6 +15365,43 @@ However, don't worry, restore command exists:
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/malinka-20171202.1021/malinka-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/malinka-20171202.1021/malinka-autoloads.el") (car load-path))))
+
+
+
+(autoload 'malinka-project-configure "malinka" "\
+Configure a project by querying for both NAME and GIVEN-ROOT-DIR.
+
+If multiple projects with the same name in different directories may
+exist then it's nice to provide the ROOT-DIR of the project to configure
+
+\(fn NAME GIVEN-ROOT-DIR)" t nil)
+
+(autoload 'malinka-project-select "malinka" "\
+Select a project by querying for both NAME and GIVEN-ROOT-DIR.
+
+If multiple projects with the same name in different directories may
+exist then it's nice to provide the ROOT-DIR of the project to configure
+
+\(fn NAME GIVEN-ROOT-DIR)" t nil)
+
+(autoload 'malinka-mode "malinka" "\
+Enables all malinka functionality for the current buffer
+
+If called interactively, enable Malinka mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "malinka" '("async-shell-command-to-string" "malinka-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/makey-20131231.1430/makey-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -13957,10 +15744,10 @@ Use this together with the `option', `option-list' and
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20180917.1549/lsp-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-mode-20181003.1559/lsp-mode-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20180917.1549/lsp-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-mode-20181003.1559/lsp-mode-autoloads.el") (car load-path))))
 
 
 
@@ -14069,10 +15856,10 @@ Face used for highlighting symbols being written to." :group 'lsp-faces)
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20180915.417/lsp-ui-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lsp-ui-20181007.2219/lsp-ui-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20180915.417/lsp-ui-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lsp-ui-20181007.2219/lsp-ui-autoloads.el") (car load-path))))
 
 
 
@@ -14131,6 +15918,30 @@ omitted or nil, and toggle it if ARG is ‘toggle’.
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "lsp-clangd" '("lsp-clangd-executable")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/log4e-20170401.1304/log4e-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/log4e-20170401.1304/log4e-autoloads.el") (car load-path))))
+
+
+
+(autoload 'log4e-mode "log4e" "\
+Major mode for browsing a buffer made by log4e.
+
+\\<log4e-mode-map>
+\\{log4e-mode-map}
+
+\(fn)" t nil)
+
+(autoload 'log4e:insert-start-log-quickly "log4e" "\
+Insert logging statment for trace level log at start of current function/macro.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "log4e" '("log4e")))
 
 
 )
@@ -14262,10 +16073,10 @@ Refreshes the buffer.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20160930.1927/lisp-extra-font-lock-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20181008.1921/lisp-extra-font-lock-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20160930.1927/lisp-extra-font-lock-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/lisp-extra-font-lock-20181008.1921/lisp-extra-font-lock-autoloads.el") (car load-path))))
 
 
 
@@ -14310,6 +16121,17 @@ See `lisp-extra-font-lock-mode' for more information on Lisp-Extra-Font-Lock mod
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/levenshtein-20090830.1040/levenshtein-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/levenshtein-20090830.1040/levenshtein-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "levenshtein" '("levenshtein-distance")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/language-detection-20161123.1813/language-detection-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -14328,17 +16150,6 @@ Return the predicted programming language of STRING as a symbol.
 \(fn STRING)" nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "language-detection" '("language-detection-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/kv-20140108.1534/kv-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "kv" '("dotass" "keyword->symbol" "map-bind")))
 
 
 )
@@ -14505,6 +16316,109 @@ A major mode for viewing javap files.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/javadoc-lookup-20160214.31/javadoc-lookup-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/javadoc-lookup-20160214.31/javadoc-lookup-autoloads.el") (car load-path))))
+
+
+
+(autoload 'javadoc-sort-imports "javadoc-import" "\
+Sort the imports in the import section in proper order.
+
+\(fn)" t nil)
+
+(define-obsolete-function-alias 'sort-java-imports 'javadoc-sort-imports "1.1.0")
+
+(autoload 'javadoc-add-import "javadoc-import" "\
+Insert an import statement at import section at the top of the file.
+
+\(fn)" t nil)
+
+(define-obsolete-function-alias 'add-java-import 'javadoc-add-import "1.1.0")
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "javadoc-import" '("jdl/")))
+
+
+
+(autoload 'javadoc-lookup "javadoc-lookup" "\
+Lookup based on class name.
+
+\(fn NAME)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "javadoc-lookup" '("javadoc-" "jdl/")))
+
+
+
+(autoload 'javadoc-add-artifacts "maven-fetch" "\
+Add Maven repository artifacts to the javadoc-lookup index.
+An artifact is specified by a sequence of three strings:
+ [groupId artifactId version].
+
+\(fn &rest ARTIFACTS)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "maven-fetch" '("maven-" "unzip-program-name")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/java-imports-20170913.1410/java-imports-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/java-imports-20170913.1410/java-imports-autoloads.el") (car load-path))))
+
+
+
+(autoload 'java-imports-scan-file "java-imports" "\
+Scans a java-mode buffer, adding any import class -> package
+mappings to the import cache. If called with a prefix arguments
+overwrites any existing cache entries for the file.
+
+\(fn)" t nil)
+
+(autoload 'java-imports-list-imports "java-imports" "\
+Return a list of all fully-qualified packages in the current
+Java-mode buffer
+
+\(fn)" t nil)
+
+(autoload 'java-imports-add-import-with-package "java-imports" "\
+Add an import for the class for the name and package. Uses no caching.
+
+\(fn CLASS-NAME PACKAGE)" t nil)
+
+(autoload 'java-imports-add-import "java-imports" "\
+Import the Java class for the symbol at point. Uses the symbol
+at the point for the class name, ask for a confirmation of the
+class name before adding it.
+
+Checks the import cache to see if a package entry exists for the
+given class. If found, adds an import statement for the class. If
+not found, prompts for the package and saves it to the cache.
+
+If called with a prefix argument, overwrites the package for an
+already-existing class name.
+
+\(fn CLASS-NAME)" t nil)
+
+(autoload 'java-imports-add-import-dwim "java-imports" "\
+Add an import statement for the class at point. If no class is
+found, prompt for the class name. If the class's package already
+exists in the cache, add it and return, otherwise prompt for the
+package and cache it for future statements.
+
+\(fn)" t nil)
+
+(autoload 'java-imports-scan-local-jars "java-imports" "\
+
+
+\(fn &optional LOCAL-REPO)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "java-imports" '("java-imports-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/hydra-20180918.1529/hydra-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -14597,10 +16511,10 @@ result of `defhydra'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180920.1253/counsel-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/counsel-20180927.942/counsel-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180920.1253/counsel-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/counsel-20180927.942/counsel-autoloads.el") (car load-path))))
 
 
 
@@ -15042,116 +16956,30 @@ Local bindings (`counsel-mode-map'):
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/isend-mode-20171118.1545/isend-mode-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/isearch-symbol-at-point-20130728.2221/isearch-symbol-at-point-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/isend-mode-20171118.1545/isend-mode-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/isearch-symbol-at-point-20130728.2221/isearch-symbol-at-point-autoloads.el") (car load-path))))
 
 
 
-(let ((loads (get 'isend 'custom-loads))) (if (member '"isend-mode" loads) nil (put 'isend 'custom-loads (cons '"isend-mode" loads))))
+(autoload 'isearch-symbol-at-point "isearch-symbol-at-point" "\
+Incremental search forward with symbol under point.
 
-(defvar isend-forward-line t "\
-If non-nil, `isend-send' advances by one line after sending content.")
+  Prefixed with \\[universal-argument] will find all partial
+  matches.
 
-(custom-autoload 'isend-forward-line "isend-mode" t)
+\(fn &optional PARTIALP)" t nil)
 
-(defvar isend-skip-empty-lines t "\
-If non-nil, `isend-send' skips empty lines (i.e. lines containing only spaces).
+(autoload 'isearch-backward-symbol-at-point "isearch-symbol-at-point" "\
+Incremental search backward with symbol under point.
 
-Note that this is effective only for sending single lines. To strip whitespace
-from sent regions use `isend-strip-empty-lines'.")
+  Prefixed with \\[universal-argument] will find all partial
+  matches.
 
-(custom-autoload 'isend-skip-empty-lines "isend-mode" t)
+\(fn &optional PARTIALP)" t nil)
 
-(defvar isend-strip-empty-lines nil "\
-If non-nil, `isend-send' strips empty lines (i.e. lines containing only spaces).
-
-Note that this works when sending an entire region. If enabled, all lines containing
-whitespace only will be stripped from the region before it is sent.")
-
-(custom-autoload 'isend-strip-empty-lines "isend-mode" t)
-
-(defvar isend-delete-indentation nil "\
-If non-nil, `isend-send' deletes indentation in regions sent.
-
-Note that this only works when sending a region (as opposed to a
-single line). Relative indentation with respect to the first line
-in the region is preserved.
-
-This is useful to send e.g. Python blocks.")
-
-(custom-autoload 'isend-delete-indentation "isend-mode" t)
-
-(defvar isend-end-with-empty-line nil "\
-If non-nil, `isend-send' appends an empty line to everything you send.
-
-This is useful, for example, when working with python code,
-in which whitespace terminates definitions.")
-
-(custom-autoload 'isend-end-with-empty-line "isend-mode" t)
-
-(defvar isend-send-line-function 'insert-buffer-substring "\
-Function used by `isend-send' to send a single line.
-
-This function takes as argument the name of a buffer containing
-the text to be sent.
-
-Possible values include:
-- `insert-buffer-substring' (default)
-- `isend--ipython-cpaste'
-- `isend--ipython-paste'")
-
-(custom-autoload 'isend-send-line-function "isend-mode" t)
-
-(defvar isend-send-region-function 'insert-buffer-substring "\
-Function used by `isend-send' to send a region.
-
-This function takes as argument the name of a buffer containing
-the text to be sent.
-
-Possible values include:
-- `insert-buffer-substring' (default)
-- `isend--ipython-cpaste'
-- `isend--ipython-paste'")
-
-(custom-autoload 'isend-send-region-function "isend-mode" t)
-
-(defvar isend-mark-defun-function 'mark-defun "\
-Function used by `isend-defun' to select a function definition.
-
-This function should take no argument.
-
-Possible values include:
-- `mark-defun' (default)
-- `isend--python-mark-defun'")
-
-(custom-autoload 'isend-mark-defun-function "isend-mode" t)
-
-(autoload 'isend-default-shell-setup "isend-mode" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'isend-default-python-setup "isend-mode" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'isend-default-ipython-setup "isend-mode" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'isend-associate "isend-mode" "\
-Set the buffer to which commands will be sent using `isend-send'.
-This should usually be something like '*ansi-term*' or '*terminal*'.
-
-\(fn BUFFERNAME)" t nil)
-
-(defalias 'isend 'isend-associate)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "isend-mode" '("isend-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "isearch-symbol-at-point" '("isearch-yank-")))
 
 
 )
@@ -15385,24 +17213,6 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/inline-docs-20170523.450/inline-docs-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/inline-docs-20170523.450/inline-docs-autoloads.el") (car load-path))))
-
-
-
-(autoload 'inline-docs-display-docs-momentary "inline-docs" "\
-Display inline docs FORMAT-STRING under point with extra ARGS.
-
-\(fn FORMAT-STRING &rest ARGS)" nil nil)
-
-(defalias 'inline-docs 'inline-docs-display-docs-momentary)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "inline-docs" '("inline-docs-")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/inflections-20170913.916/inflections-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -15594,96 +17404,10 @@ With `ido-at-point-mode' use ido for `completion-at-point'.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/hungry-delete-20170412.102/hungry-delete-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/htmlize-20180923.1829/htmlize-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/hungry-delete-20170412.102/hungry-delete-autoloads.el") (car load-path))))
-
-
-
-(autoload 'hungry-delete-forward "hungry-delete" "\
-Delete the following character, or all of the following
-whitespace, up to the next non-whitespace character.  See
-\\[c-hungry-delete-forward].
-
-hungry-delete-backward tries to mimic delete-backward-char's
-behavior in several ways: if the region is activate, it deletes
-the text in the region.  If a prefix argument is given, delete
-the following N characters (previous if N is negative).
-
-Optional second arg KILLFLAG non-nil means to kill (save in kill
-ring) instead of delete.  Interactively, N is the prefix arg, and
-KILLFLAG is set if N was explicitly specified.
-
-\(fn N &optional KILLFLAG)" t nil)
-
-(autoload 'hungry-delete-backward "hungry-delete" "\
-Delete the preceding character or all preceding whitespace
-back to the previous non-whitespace character.  See also
-\\[c-hungry-delete-backward].
-
-hungry-delete-backward tries to mimic delete-backward-char's
-behavior in several ways: if the region is activate, it deletes
-the text in the region.  If a prefix argument is given, delete
-the previous N characters (following if N is negative).
-
-In Overwrite mode, single character backward deletion may replace
-tabs with spaces so as to back over columns, unless point is at
-the end of the line.
-
-Optional second arg KILLFLAG, if non-nil, means to kill (save in
-kill ring) instead of delete.  Interactively, N is the prefix
-arg, and KILLFLAG is set if N is explicitly specified.
-
-\(fn N &optional KILLFLAG)" t nil)
-
-(autoload 'hungry-delete-mode "hungry-delete" "\
-Minor mode to enable hungry deletion.  This will delete all
-whitespace after or before point when the deletion command is
-executed.
-
-If called interactively, enable Hungry-Delete mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-hungry-delete-mode "hungry-delete" "\
-Turn on hungry delete mode if the buffer is appropriate.
-
-\(fn)" t nil)
-
-(defvar global-hungry-delete-mode nil "\
-Non-nil if Global Hungry-Delete mode is enabled.
-See the `global-hungry-delete-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-hungry-delete-mode'.")
-
-(custom-autoload 'global-hungry-delete-mode "hungry-delete" nil)
-
-(autoload 'global-hungry-delete-mode "hungry-delete" "\
-Toggle Hungry-Delete mode in all buffers.
-With prefix ARG, enable Global Hungry-Delete mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Hungry-Delete mode is enabled in all buffers where
-`turn-on-hungry-delete-mode' would do it.
-See `hungry-delete-mode' for more information on Hungry-Delete mode.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hungry-delete" '("hungry-delete-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/htmlize-20180918.1948/htmlize-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/htmlize-20180918.1948/htmlize-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/htmlize-20180923.1829/htmlize-autoloads.el") (car load-path))))
 
 
 
@@ -16272,6 +17996,407 @@ the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-xref-20180528.1516/helm-xref-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-xref-20180528.1516/helm-xref-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-xref" '("helm-xref-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-rtags-20170813.411/helm-rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-rtags-20170813.411/helm-rtags-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-rtags" '("create-helm-rtags-source" "helm-rtags-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-proc-20161006.305/helm-proc-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-proc-20161006.305/helm-proc-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-proc "helm-proc" "\
+Preconfigured helm for processes.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-proc" '("helm-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-mode-manager-20151124.938/helm-mode-manager-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-mode-manager-20151124.938/helm-mode-manager-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-enable-minor-mode "helm-mode-manager" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-disable-minor-mode "helm-mode-manager" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-switch-major-mode "helm-mode-manager" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-mode-manager" '("helm-mode-manager-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-gtags-20170116.529/helm-gtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-gtags-20170116.529/helm-gtags-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-gtags-clear-all-cache "helm-gtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-clear-cache "helm-gtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-next-history "helm-gtags" "\
+Jump to next position on context stack
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-previous-history "helm-gtags" "\
+Jump to previous position on context stack
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-select "helm-gtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-select-path "helm-gtags" "\
+
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-tags-in-this-function "helm-gtags" "\
+Show tagnames which are referenced in this function and jump to it.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-create-tags "helm-gtags" "\
+
+
+\(fn DIR LABEL)" t nil)
+
+(autoload 'helm-gtags-delete-tags "helm-gtags" "\
+Delete file GTAGS, GRTAGS, GPATH, ID etc. generated by gtags.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-find-tag "helm-gtags" "\
+Jump to definition
+
+\(fn TAG)" t nil)
+
+(autoload 'helm-gtags-find-tag-other-window "helm-gtags" "\
+Jump to definition in other window.
+
+\(fn TAG)" t nil)
+
+(autoload 'helm-gtags-find-rtag "helm-gtags" "\
+Jump to referenced point
+
+\(fn TAG)" t nil)
+
+(autoload 'helm-gtags-find-symbol "helm-gtags" "\
+Jump to the symbol location
+
+\(fn TAG)" t nil)
+
+(autoload 'helm-gtags-find-pattern "helm-gtags" "\
+Grep and jump by gtags tag files.
+
+\(fn PATTERN)" t nil)
+
+(autoload 'helm-gtags-find-files "helm-gtags" "\
+Find file from tagged with gnu global.
+
+\(fn FILE)" t nil)
+
+(autoload 'helm-gtags-find-tag-from-here "helm-gtags" "\
+Jump point by current point information.
+Jump to definition point if cursor is on its reference.
+Jump to reference point if curosr is on its definition
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-dwim "helm-gtags" "\
+Find by context. Here is
+- on include statement then jump to included file
+- on symbol definition then jump to its references
+- on reference point then jump to its definition.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-parse-file "helm-gtags" "\
+Parse current file with gnu global. This is similar to `imenu'.
+You can jump definitions of functions, symbols in this file.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-pop-stack "helm-gtags" "\
+Jump to previous point on the context stack and pop it from stack.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-show-stack "helm-gtags" "\
+Show current context stack.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-clear-stack "helm-gtags" "\
+Clear current context stack.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-clear-all-stacks "helm-gtags" "\
+Clear all context stacks.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-update-tags "helm-gtags" "\
+Update TAG file. Update All files with `C-u' prefix.
+Generate new TAG file in selected directory with `C-u C-u'
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-resume "helm-gtags" "\
+Resurrect previously invoked `helm-gtags` command.
+
+\(fn)" t nil)
+
+(autoload 'helm-gtags-mode "helm-gtags" "\
+Toggle Helm-Gtags mode on or off.
+
+If called interactively, enable Helm-Gtags mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{helm-gtags-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-gtags" '("helm-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-frame-20170515.1950/helm-frame-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-frame-20170515.1950/helm-frame-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-frame" '("helm-frame-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-flymake-20160610.2/helm-flymake-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-flymake-20160610.2/helm-flymake-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-flymake "helm-flymake" "\
+helm interface for flymake.
+
+\(fn ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-flymake" '("helm-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-flycheck-20160710.829/helm-flycheck-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-flycheck-20160710.829/helm-flycheck-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-flycheck "helm-flycheck" "\
+Show flycheck errors with `helm'.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-flycheck" '("helm-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-etags-plus-20170113.1414/helm-etags-plus-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-etags-plus-20170113.1414/helm-etags-plus-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-etags-plus-select "helm-etags-plus" "\
+Find Tag using `etags' and `helm'
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'helm-etags-plus-history-go-back "helm-etags-plus" "\
+Go Back.
+
+\(fn)" t nil)
+
+(autoload 'helm-etags-plus-history-go-forward "helm-etags-plus" "\
+Go Forward.
+
+\(fn)" t nil)
+
+(autoload 'helm-etags-plus-history "helm-etags-plus" "\
+show all tag historys using `helm'
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-etags-plus" '("helm-etags-plus-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-cscope-20170326.722/helm-cscope-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-cscope-20170326.722/helm-cscope-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-cscope-find-this-symbol "helm-cscope" "\
+Locate a symbol in source code.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-global-definition "helm-cscope" "\
+Find a symbol's global definition.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-called-function "helm-cscope" "\
+Display functions called by a function.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-calling-this-function "helm-cscope" "\
+Display functions calling a function.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-this-text-string "helm-cscope" "\
+Locate where a text string occurs.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-egrep-pattern "helm-cscope" "\
+Run egrep over the cscope database.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-this-file "helm-cscope" "\
+Locate a file.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-files-including-file "helm-cscope" "\
+Locate all files #including a file.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-find-assignments-to-this-symbol "helm-cscope" "\
+Locate assignments to a symbol in the source code.
+
+\(fn SYMBOL)" t nil)
+
+(autoload 'helm-cscope-mode "helm-cscope" "\
+Toggle Helm-Cscope mode on or off.
+
+If called interactively, enable Helm-Cscope mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{helm-cscope-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cscope" '("helm-cscope-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-company-20180828.1612/helm-company-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-company-20180828.1612/helm-company-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-company "helm-company" "\
+Select `company-complete' candidates by `helm'.
+It is useful to narrow candidates.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-company" '("helm-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-codesearch-20180204.433/helm-codesearch-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-codesearch-20180204.433/helm-codesearch-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-codesearch-find-pattern "helm-codesearch" "\
+Find pattern.
+
+\(fn)" t nil)
+
+(autoload 'helm-codesearch-find-file "helm-codesearch" "\
+Find file.
+
+\(fn)" t nil)
+
+(autoload 'helm-codesearch-create-csearchindex "helm-codesearch" "\
+Create index file at DIR.
+
+\(fn DIR)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-codesearch" '("helm-codesearch-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/edn-20160215.1219/edn-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -16376,6 +18501,217 @@ Preconfigured `helm' for searching in clojuredocs.org with symbol at point
 \(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-clojuredocs" '("helm-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-cider-history-20150719.2120/helm-cider-history-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-cider-history-20150719.2120/helm-cider-history-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-cider-history "helm-cider-history" "\
+Show `cider-input-history` in `helm`.
+
+\(fn)" t nil)
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-cider-20180307.458/helm-cider-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-cider-20180307.458/helm-cider-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-cider-apropos-symbol "helm-cider" "\
+Choose Clojure symbols across namespaces.
+
+Each Helm source is a Clojure namespace (ns), and candidates are
+symbols in the namespace.
+
+If both NS and SYMBOL are supplied, puts selection line on
+first SYMBOL of NS.
+
+If NS is supplied, puts the selection line on the first
+candidate of source with name NS.
+
+If SYMBOL is supplied, puts the selection line on the
+first candidate matching SYMBOL.
+
+If neither NS nor SYMBOL is supplied, tries to put the
+selection line on candidate matching symbol at point.
+
+If DOC is true, include symbol documentation in candidate.
+
+If FULL-DOC is true, include full instead of short documentation.
+
+Set `helm-cider-apropos-follow' to true to turn on function
+`helm-follow-mode' for all sources.  This is useful for quickly
+browsing documentation.
+
+\(fn &optional NS SYMBOL DOC FULL-DOC)" t nil)
+
+(autoload 'helm-cider-apropos-symbol-doc "helm-cider" "\
+Choose Clojure SYMBOLs, with docs, across namespaces.
+
+Optional arguments NS and SYMBOL are as in
+`helm-cider-apropos-symbol'.
+
+\(fn &optional NS SYMBOL)" t nil)
+
+(autoload 'helm-cider-apropos-ns "helm-cider" "\
+Choose Clojure namespace to call Helm CIDER apropos on.
+
+NS-OR-QUALIFIED-NAME is a Clojure
+namespace (e.g. \"clojure.core\") or a qualified symbol
+name (e.g. \"clojure.core/reduce\").  If supplied, it is used as
+the default selection.
+
+\(fn &optional NS-OR-QUALIFIED-NAME)" t nil)
+
+(autoload 'helm-cider-apropos "helm-cider" "\
+Helm interface to CIDER apropos.
+
+If ARG is raw prefix argument \\[universal-argument], include
+symbol documentation.
+
+If ARG is raw prefix argument \\[universal-argument]
+\\[universal-argument], choose namespace before symbol.
+
+\(fn &optional ARG)" t nil)
+
+(defvar helm-cider-mode nil "\
+Non-nil if Helm-Cider mode is enabled.
+See the `helm-cider-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `helm-cider-mode'.")
+
+(custom-autoload 'helm-cider-mode "helm-cider" nil)
+
+(autoload 'helm-cider-mode "helm-cider" "\
+Use Helm for CIDER.
+
+If called interactively, enable Helm-Cider mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider" '("helm-cider-")))
+
+
+
+(autoload 'helm-cider-cheatsheet "helm-cider-cheatsheet" "\
+Use Helm to show a Clojure cheatsheet.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-cheatsheet" '("helm-cider-cheatsheet--")))
+
+
+
+(autoload 'helm-cider-repl-history-insert "helm-cider-repl" "\
+Insert candidate at the last CIDER REPL prompt.
+
+Existing input at the prompt is cleared.
+
+This function is meant to be one of `helm-cider-repl-history-actions'.
+
+\(fn CANDIDATE)" nil nil)
+
+(autoload 'helm-cider-repl-history-delete "helm-cider-repl" "\
+Delete marked candidates from `cider-repl-input-history'.
+
+This function is meant to be one of `helm-cider-repl-history-actions'.
+
+\(fn CANDIDATE)" nil nil)
+
+(autoload 'helm-cider-repl-history "helm-cider-repl" "\
+Helm interface to CIDER REPL history.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-repl" '("helm-cider-repl-")))
+
+
+
+(autoload 'helm-cider-spec-symbol "helm-cider-spec" "\
+Choose Clojure specs across namespaces.
+
+Each Helm source is a Clojure namespace (ns), and candidates are
+spec keywords in the namespace.
+
+If both NS and NAME are supplied, puts selection line on
+first NAME of NS.
+
+If NS is supplied, puts the selection line on the first
+candidate of source with name NS.
+
+If NAME is supplied, puts the selection line on the
+first candidate matching NAME.
+
+Set `helm-cider-spec-follow' to non-nil to turn on function
+`helm-follow-mode' for all sources.  This is useful for quickly
+viewing specs.
+
+\(fn &optional NS NAME)" t nil)
+
+(autoload 'helm-cider-spec-ns "helm-cider-spec" "\
+Choose spec namespace to call `helm-cider-browse-spec' on.
+
+KW-NS-OR-QUALIFIED-NAME is a spec keyword namespace
+ (e.g. \":ring.core\") or a qualified keyword
+name (e.g. \":ring.core/error\").  If supplied, it is used as the
+default selection.
+
+\(fn &optional KW-NS-OR-QUALIFIED-NAME)" t nil)
+
+(autoload 'helm-cider-spec "helm-cider-spec" "\
+Helm interface to CIDER specs.
+
+If ARG is raw prefix argument \\[universal-argument]
+\\[universal-argument], choose namespace before symbol.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-spec" '("helm-cider-spec-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-util" '("helm-cider--" "wrap-helm-cider-action")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/helm-c-yasnippet-20170128.1542/helm-c-yasnippet-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/helm-c-yasnippet-20170128.1542/helm-c-yasnippet-autoloads.el") (car load-path))))
+
+
+
+(autoload 'helm-yas-complete "helm-c-yasnippet" "\
+List of yasnippet snippets using `helm' interface.
+
+\(fn)" t nil)
+
+(autoload 'helm-yas-visit-snippet-file "helm-c-yasnippet" "\
+List of yasnippet snippet files
+
+\(fn)" t nil)
+
+(autoload 'helm-yas-create-snippet-on-region "helm-c-yasnippet" "\
+Create a snippet from region.
+
+\(fn &optional START END FILE-NAME)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-c-yasnippet" '("helm-")))
 
 
 )
@@ -16784,10 +19120,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/git-attr-20180919.2158/git-attr-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/git-attr-20180925.2003/git-attr-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/git-attr-20180919.2158/git-attr-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/git-attr-20180925.2003/git-attr-autoloads.el") (car load-path))))
 
 
 
@@ -16831,6 +19167,66 @@ Make vendored and generated files read only.
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git" '("git-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ggtags-20180725.1713/ggtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ggtags-20180725.1713/ggtags-autoloads.el") (car load-path))))
+
+
+
+(autoload 'ggtags-find-project "ggtags" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'ggtags-find-tag-dwim "ggtags" "\
+Find NAME by context.
+If point is at a definition tag, find references, and vice versa.
+If point is at a line that matches `ggtags-include-pattern', find
+the include file instead.
+
+When called interactively with a prefix arg, always find
+definition tags.
+
+\(fn NAME &optional WHAT)" t nil)
+
+(autoload 'ggtags-mode "ggtags" "\
+Toggle Ggtags mode on or off.
+
+If called interactively, enable Ggtags mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\\{ggtags-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'ggtags-build-imenu-index "ggtags" "\
+A function suitable for `imenu-create-index-function'.
+
+\(fn)" nil nil)
+
+(autoload 'ggtags-try-complete-tag "ggtags" "\
+A function suitable for `hippie-expand-try-functions-list'.
+
+\(fn OLD)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ggtags" '("ggtags-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/fuzzy-20150730.337/fuzzy-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/fuzzy-20150730.337/fuzzy-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "fuzzy" '("fuzzy-" "turn-o")))
 
 
 )
@@ -16906,9 +19302,108 @@ With \\[universal-argument] prefix, create a new, unique, interface buffer.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/font-lock-profiler-20170208.2008/font-lock-profiler-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/font-lock-profiler-20170208.2008/font-lock-profiler-autoloads.el") (car load-path))))
+
+
+
+(autoload 'font-lock-profiler-region "font-lock-profiler" "\
+Profile font-lock from BEG to END and present report.
+
+\(fn BEG END)" t nil)
+
+(autoload 'font-lock-profiler-buffer "font-lock-profiler" "\
+Profile font-locking buffer and present report.
+
+\(fn)" t nil)
+
+(autoload 'font-lock-profiler-start "font-lock-profiler" "\
+Start recording font-lock profiling information.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "font-lock-profiler" '("font-lock-profiler-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/font-lock+-20170222.1755/font-lock+-autoloads.el"))
 (add-to-list 'load-path (directory-file-name (or (file-name-directory "/home/lk/.emacs.d/elpa/font-lock+-20170222.1755/font-lock+-autoloads.el") (car load-path))))
 
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/fn-20170210.204/fn-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/fn-20170210.204/fn-autoloads.el") (car load-path))))
+
+
+
+(autoload 'fn "fn" "\
+Return a function defined by BODY.
+
+Intended for inline use where concision is desired.  If creating a function to
+bind as a function value, use `lambda' or `-lambda'.
+
+The definition BODY may use anaphoric parameters to refer to the arguments. For
+a single-argument function, <> can be used. For a multiple-argument function,
+use <1> to refer to the first argument, <2> to refer to the second, and so on
+up to <9>. The parameter <rest> refers to a list containing the (n+1)st and
+later arguments, where <n> is the highest numerical parameter supplied.
+
+If applied to a literal, creates a constant function, or equivalently, a thunk
+\(since it can be called with any number of arguments).
+
+Examples:
+
+  (-map (fn (* <> <>)) (number-sequence 0 10))
+  ;; (0 1 4 9 16 25 36 49 64 81 100)
+
+  (-map (fn (/ (-sum <>)
+               (length <>)))
+        '((3.0 4.0 5.0 5.0 10.0)
+          (1.5 2.5 2.0)
+          (1 5)))
+  ;; (5.4 2.0 3)
+  ;; find average of each list
+
+  (-filter (fn (zerop (mod <> 3)))
+           (number-sequence 1 10))
+  ;; (3 6 9)
+
+  (funcall (fn 7))
+  ;; 7
+
+  (funcall (fn (-map #'list <rest>)) 1 2 3 4)
+  ;; ((1) (2) (3) (4))
+
+\(fn &rest BODY)" nil t)
+
+(autoload 'fn: "fn" "\
+Return a function defined by (BODY).
+
+Intended for inline use where concision is desired.  If creating a function to
+bind as a function value, use `lambda' or `-lambda'.
+
+Identical to `fn' except that BODY is automatically parenthesized.
+
+The definition BODY may use the anaphoric parameter <> for the sole argument,
+or <1> ... <9> to refer to multiple positional arguments. The parameter
+<rest> refers to a list containing the (n+1)st and later arguments, where <n> is
+the highest numerical parameter supplied.
+
+Examples:
+
+  (-map (fn: * <> <>) (number-sequence 0 10))
+  ;; (0 1 4 9 16 25 36 49 64 81 100)
+
+  (-filter (fn: > <> 0)
+           '(-5 2 0 0 3 -1 0 4))
+  ;; (2 3 4)
+
+\(fn &rest BODY)" nil t)
 
 
 )
@@ -16974,6 +19469,48 @@ Configure flymake mode to check the current buffer's shell-script syntax.
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-rust" '("flymake-rust-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flymake-racket-20180912.109/flymake-racket-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flymake-racket-20180912.109/flymake-racket-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flymake-racket-setup "flymake-racket" "\
+Set up Flymake for Racket.
+
+\(fn)" t nil)
+
+(autoload 'flymake-racket-add-hook "flymake-racket" "\
+Add `flymake-racket-lint' to `flymake-diagnostic-functions'.
+
+\(fn)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-racket" '("flymake-racket-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flymake-gradle-20180924.200/flymake-gradle-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flymake-gradle-20180924.200/flymake-gradle-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flymake-gradle-setup "flymake-gradle" "\
+Set up Flymake for Gradle.
+
+\(fn)" t nil)
+
+(autoload 'flymake-gradle-add-hook "flymake-gradle" "\
+Add `flymake-gradle-lint' to `flymake-diagnostic-functions'.
+
+\(fn)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-gradle" '("flymake-gradle-")))
 
 
 )
@@ -17158,6 +19695,17 @@ Flycheck according to the Cargo project layout.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-rtags-20180619.824/flycheck-rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-rtags-20180619.824/flycheck-rtags-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-rtags" '("flycheck-rtags-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-posframe-20180322.607/flycheck-posframe-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -17220,6 +19768,27 @@ TTY frames.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-pos-tip" '("flycheck-pos-tip-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flycheck-popup-tip-20170812.2351/flycheck-popup-tip-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flycheck-popup-tip-20170812.2351/flycheck-popup-tip-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flycheck-popup-tip-mode "flycheck-popup-tip" "\
+A minor mode to show Flycheck error messages in a popup.
+
+If called interactively, enable Flycheck-Popup-Tip mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flycheck-popup-tip" '("flycheck-popup-tip-")))
 
 
 )
@@ -17429,6 +19998,68 @@ Add `sh-checkbashisms' to the end of `flycheck-checkers'.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flx-20151030.1812/flx-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flx-20151030.1812/flx-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flx" '("flx-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flx-isearch-20180103.514/flx-isearch-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flx-isearch-20180103.514/flx-isearch-autoloads.el") (car load-path))))
+
+
+
+(autoload 'flx-isearch-forward "flx-isearch" "\
+Start a fuzzy forward isearch
+
+\(fn &optional REGEXP-P NO-RECURSIVE-EDIT)" t nil)
+
+(autoload 'flx-isearch-backward "flx-isearch" "\
+Start a fuzzy backward isearch
+
+\(fn &optional REGEXP-P NO-RECURSIVE-EDIT)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flx-isearch" '("flx-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/flx-ido-20180117.1519/flx-ido-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/flx-ido-20180117.1519/flx-ido-autoloads.el") (car load-path))))
+
+
+
+(defvar flx-ido-mode nil "\
+Non-nil if Flx-Ido mode is enabled.
+See the `flx-ido-mode' command
+for a description of this minor mode.")
+
+(custom-autoload 'flx-ido-mode "flx-ido" nil)
+
+(autoload 'flx-ido-mode "flx-ido" "\
+Toggle flx ido mode
+
+If called interactively, enable Flx-Ido mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flx-ido" '("flx-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/evalator-20160213.128/evalator-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -17559,10 +20190,10 @@ expression of the session to be generated through
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/avy-20180913.1819/avy-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/avy-20181001.837/avy-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/avy-20180913.1819/avy-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/avy-20181001.837/avy-autoloads.el") (car load-path))))
 
 
 
@@ -17812,10 +20443,10 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ace-window-20180814.1516/ace-window-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ace-window-20181008.1549/ace-window-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ace-window-20180814.1516/ace-window-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ace-window-20181008.1549/ace-window-autoloads.el") (car load-path))))
 
 
 
@@ -18279,17 +20910,6 @@ Ack won't prompt for a directory name in that buffer.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/elog-20160724.2255/elog-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/elog-20160724.2255/elog-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elog" '("elog-" "initialize-instance")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/elmacro-20180628.1411/elmacro-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -18419,59 +21039,6 @@ Run 'lein TASK' using `compile' in the project root directory.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/eldoc-overlay-20171219.940/eldoc-overlay-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/eldoc-overlay-20171219.940/eldoc-overlay-autoloads.el") (car load-path))))
-
-
-
-(autoload 'global-eldoc-overlay-toggle "eldoc-overlay" "\
-Globally toggle display of eldoc-overlay.
-
-\(fn)" nil nil)
-
-(autoload 'eldoc-overlay-toggle "eldoc-overlay" "\
-Toggle display of eldoc-overlay in this buffer or with prefix arg GLOBAL-FLAG, globally.
-
-\(fn GLOBAL-FLAG)" t nil)
-
-(autoload 'eldoc-overlay-mode "eldoc-overlay" "\
-Minor mode for displaying eldoc contextual documentation using a text overlay.
-
-If called interactively, enable Eldoc-Overlay mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
-\(fn &optional ARG)" t nil)
-
-(defvar global-eldoc-overlay-mode t "\
-Non-nil if Global Eldoc-Overlay mode is enabled.
-See the `global-eldoc-overlay-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-eldoc-overlay-mode'.")
-
-(custom-autoload 'global-eldoc-overlay-mode "eldoc-overlay" nil)
-
-(autoload 'global-eldoc-overlay-mode "eldoc-overlay" "\
-Toggle Eldoc-Overlay mode in all buffers.
-With prefix ARG, enable Global Eldoc-Overlay mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Eldoc-Overlay mode is enabled in all buffers where
-`eldoc-overlay-enable' would do it.
-See `eldoc-overlay-mode' for more information on Eldoc-Overlay mode.
-
-\(fn &optional ARG)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eldoc-overlay" '("eldoc-overlay-" "global-eldoc-overlay-")))
-
-
-)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/eldoc-eval-20180607.1157/eldoc-eval-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -18521,6 +21088,519 @@ Eval expression with eldoc support in mode-line.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ctable-20171006.11/ctable-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ctable-20171006.11/ctable-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ctable" '("ctbl:")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/anaphora-20180618.2200/anaphora-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/anaphora-20180618.2200/anaphora-autoloads.el") (car load-path))))
+
+
+
+(let ((loads (get 'anaphora 'custom-loads))) (if (member '"anaphora" loads) nil (put 'anaphora 'custom-loads (cons '"anaphora" loads))))
+
+(defvar anaphora-use-long-names-only nil "\
+Use only long names such as `anaphoric-if' instead of traditional `aif'.")
+
+(custom-autoload 'anaphora-use-long-names-only "anaphora" t)
+
+(defun anaphora--install-traditional-aliases (&optional arg) "\
+Install traditional short aliases for anaphoric macros.
+
+With negative numeric ARG, remove traditional aliases." (let ((syms '((if . t) (prog1 . t) (prog2 . t) (when . when) (while . t) (and . t) (cond . cond) (lambda . lambda) (block . block) (case . case) (ecase . ecase) (typecase . typecase) (etypecase . etypecase) (let . let) (+ . t) (- . t) (* . t) (/ . t)))) (cond ((and (numberp arg) (< arg 0)) (dolist (cell syms) (when (ignore-errors (eq (symbol-function (intern-soft (format "a%s" (car cell)))) (intern-soft (format "anaphoric-%s" (car cell))))) (fmakunbound (intern (format "a%s" (car cell))))))) (t (dolist (cell syms) (let* ((builtin (car cell)) (traditional (intern (format "a%s" builtin))) (long (intern (format "anaphoric-%s" builtin)))) (defalias traditional long) (put traditional 'lisp-indent-function (get builtin 'lisp-indent-function)) (put traditional 'edebug-form-spec (cdr cell))))))))
+
+(unless anaphora-use-long-names-only (anaphora--install-traditional-aliases))
+
+(autoload 'anaphoric-if "anaphora" "\
+Like `if', but the result of evaluating COND is bound to `it'.
+
+The variable `it' is available within THEN and ELSE.
+
+COND, THEN, and ELSE are otherwise as documented for `if'.
+
+\(fn COND THEN &rest ELSE)" nil t)
+
+(function-put 'anaphoric-if 'lisp-indent-function '2)
+
+(autoload 'anaphoric-prog1 "anaphora" "\
+Like `prog1', but the result of evaluating FIRST is bound to `it'.
+
+The variable `it' is available within BODY.
+
+FIRST and BODY are otherwise as documented for `prog1'.
+
+\(fn FIRST &rest BODY)" nil t)
+
+(function-put 'anaphoric-prog1 'lisp-indent-function '1)
+
+(autoload 'anaphoric-prog2 "anaphora" "\
+Like `prog2', but the result of evaluating FORM2 is bound to `it'.
+
+The variable `it' is available within BODY.
+
+FORM1, FORM2, and BODY are otherwise as documented for `prog2'.
+
+\(fn FORM1 FORM2 &rest BODY)" nil t)
+
+(function-put 'anaphoric-prog2 'lisp-indent-function '2)
+
+(autoload 'anaphoric-when "anaphora" "\
+Like `when', but the result of evaluating COND is bound to `it'.
+
+The variable `it' is available within BODY.
+
+COND and BODY are otherwise as documented for `when'.
+
+\(fn COND &rest BODY)" nil t)
+
+(function-put 'anaphoric-when 'lisp-indent-function '1)
+
+(autoload 'anaphoric-while "anaphora" "\
+Like `while', but the result of evaluating TEST is bound to `it'.
+
+The variable `it' is available within BODY.
+
+TEST and BODY are otherwise as documented for `while'.
+
+\(fn TEST &rest BODY)" nil t)
+
+(function-put 'anaphoric-while 'lisp-indent-function '1)
+
+(autoload 'anaphoric-and "anaphora" "\
+Like `and', but the result of the previous condition is bound to `it'.
+
+The variable `it' is available within all CONDITIONS after the
+initial one.
+
+CONDITIONS are otherwise as documented for `and'.
+
+Note that some implementations of this macro bind only the first
+condition to `it', rather than each successive condition.
+
+\(fn &rest CONDITIONS)" nil t)
+
+(autoload 'anaphoric-cond "anaphora" "\
+Like `cond', but the result of each condition is bound to `it'.
+
+The variable `it' is available within the remainder of each of CLAUSES.
+
+CLAUSES are otherwise as documented for `cond'.
+
+\(fn &rest CLAUSES)" nil t)
+
+(autoload 'anaphoric-lambda "anaphora" "\
+Like `lambda', but the function may refer to itself as `self'.
+
+ARGS and BODY are otherwise as documented for `lambda'.
+
+\(fn ARGS &rest BODY)" nil t)
+
+(function-put 'anaphoric-lambda 'lisp-indent-function 'defun)
+
+(autoload 'anaphoric-block "anaphora" "\
+Like `block', but the result of the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions of BODY
+except the initial one.
+
+NAME and BODY are otherwise as documented for `block'.
+
+\(fn NAME &rest BODY)" nil t)
+
+(function-put 'anaphoric-block 'lisp-indent-function '1)
+
+(autoload 'anaphoric-case "anaphora" "\
+Like `case', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `case'.
+
+\(fn EXPR &rest CLAUSES)" nil t)
+
+(function-put 'anaphoric-case 'lisp-indent-function '1)
+
+(autoload 'anaphoric-ecase "anaphora" "\
+Like `ecase', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `ecase'.
+
+\(fn EXPR &rest CLAUSES)" nil t)
+
+(function-put 'anaphoric-ecase 'lisp-indent-function '1)
+
+(autoload 'anaphoric-typecase "anaphora" "\
+Like `typecase', but the result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `typecase'.
+
+\(fn EXPR &rest CLAUSES)" nil t)
+
+(function-put 'anaphoric-typecase 'lisp-indent-function '1)
+
+(autoload 'anaphoric-etypecase "anaphora" "\
+Like `etypecase', but result of evaluating EXPR is bound to `it'.
+
+The variable `it' is available within CLAUSES.
+
+EXPR and CLAUSES are otherwise as documented for `etypecase'.
+
+\(fn EXPR &rest CLAUSES)" nil t)
+
+(function-put 'anaphoric-etypecase 'lisp-indent-function '1)
+
+(autoload 'anaphoric-let "anaphora" "\
+Like `let', but the result of evaluating FORM is bound to `it'.
+
+FORM and BODY are otherwise as documented for `let'.
+
+\(fn FORM &rest BODY)" nil t)
+
+(function-put 'anaphoric-let 'lisp-indent-function '1)
+
+(autoload 'anaphoric-+ "anaphora" "\
+Like `+', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBERS-OR-MARKERS are otherwise as documented for `+'.
+
+\(fn &rest NUMBERS-OR-MARKERS)" nil t)
+
+(autoload 'anaphoric-- "anaphora" "\
+Like `-', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBER-OR-MARKER and NUMBERS-OR-MARKERS are otherwise as
+documented for `-'.
+
+\(fn &optional NUMBER-OR-MARKER &rest NUMBERS-OR-MARKERS)" nil t)
+
+(autoload 'anaphoric-* "anaphora" "\
+Like `*', but the result of evaluating the previous expression is bound to `it'.
+
+The variable `it' is available within all expressions after the
+initial one.
+
+NUMBERS-OR-MARKERS are otherwise as documented for `*'.
+
+\(fn &rest NUMBERS-OR-MARKERS)" nil t)
+
+(autoload 'anaphoric-/ "anaphora" "\
+Like `/', but the result of evaluating the previous divisor is bound to `it'.
+
+The variable `it' is available within all expressions after the
+first divisor.
+
+DIVIDEND, DIVISOR, and DIVISORS are otherwise as documented for `/'.
+
+\(fn DIVIDEND DIVISOR &rest DIVISORS)" nil t)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "anaphora" '("anaphora-install-font-lock-keywords")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/el-init-20150728.920/el-init-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/el-init-20150728.920/el-init-autoloads.el") (car load-path))))
+
+
+
+(autoload 'el-init-provide "el-init" "\
+Call `provide' with the file name as a feature name.
+
+\(fn)" nil nil)
+
+(autoload 'el-init-load "el-init" "\
+Load configuration files in DIRECTORY with `require'.
+
+DIRECTORY is a path of a directory which is root of configuration files.
+SUBDIRECTORIES is a list of subdirectories of DIRECTORY; its element is
+a string or a list like (\"path\" t).
+ means including all the directories in \"path\".
+OVERRIDE-ONLY-INIT-FILES is a flag to use overridden `require' only for
+configuration files.
+OVERRIDE is a flag to use overridden `require' when `require' called in
+configuration files.
+
+The mechanism:
+- Add SUBDIRECTORIES to `load-path'
+- Call `require' for all the configure files in SUBDIRECTORIES
+
+\(fn DIRECTORY &key (SUBDIRECTORIES el-init-subdirectories) (WRAPPERS el-init-wrappers) (OVERRIDE-ONLY-INIT-FILES el-init-override-only-init-files-p) (OVERRIDE el-init-overridep))" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-init" '("el-init-")))
+
+
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/el-init-viewer-20150303.828/el-init-viewer-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/el-init-viewer-20150303.828/el-init-viewer-autoloads.el") (car load-path))))
+
+
+
+(autoload 'el-init-viewer "el-init-viewer" "\
+
+
+\(fn)" t nil)
+
+(autoload 'el-init-viewer-eval-after-load "el-init-viewer" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-init-viewer" '("el-init-viewer-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/el-get-20181006.225/el-get-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/el-get-20181006.225/el-get-autoloads.el") (car load-path))))
+
+
+
+(autoload 'el-get-version "el-get" "\
+Message the current el-get version
+
+\(fn)" t nil)
+
+(autoload 'el-get-install "el-get" "\
+Cause the named PACKAGE to be installed after all of its
+dependencies (if any).
+
+PACKAGE may be either a string or the corresponding symbol.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update "el-get" "\
+Update PACKAGE.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-update-all "el-get" "\
+Performs update of all installed packages.
+
+\(fn &optional NO-PROMPT)" t nil)
+
+(autoload 'el-get-update-packages-of-type "el-get" "\
+Update all installed packages of type TYPE.
+
+\(fn TYPE)" t nil)
+
+(autoload 'el-get-self-update "el-get" "\
+Update el-get itself.  The standard recipe takes care of reloading the code.
+
+\(fn)" t nil)
+
+(autoload 'el-get-remove "el-get" "\
+Remove any PACKAGE that is know to be installed or required.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-reinstall "el-get" "\
+Remove PACKAGE and then install it again.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-cd "el-get" "\
+Open dired in the package directory.
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-make-recipes "el-get" "\
+Loop over `el-get-sources' and write a recipe file for each
+entry which is not a symbol and is not already a known recipe.
+
+\(fn &optional DIR)" t nil)
+
+(autoload 'el-get-checksum "el-get" "\
+Compute the checksum of the given package, and put it in the kill-ring
+
+\(fn PACKAGE)" t nil)
+
+(autoload 'el-get-self-checksum "el-get" "\
+Compute the checksum of the running version of el-get itself.
+
+Also put the checksum in the kill-ring.
+
+\(fn)" t nil)
+
+(autoload 'el-get "el-get" "\
+Ensure that packages have been downloaded once and init them as needed.
+
+This will not update the sources by using `apt-get install' or
+`git pull', but it will ensure that:
+
+* the packages have been installed
+* load-path is set so their elisp files can be found
+* Info-directory-list is set so their info files can be found
+* Autoloads have been prepared and evaluated for each package
+* Any post-installation setup (e.g. `(require 'feature)') happens
+
+When SYNC is nil (the default), all installations run
+concurrently, in the background.
+
+When SYNC is 'sync, each package will be installed synchronously,
+and any error will stop it all.
+
+Please note that the `el-get-init' part of `el-get' is always
+done synchronously. There's `byte-compile' support though, and
+the packages you use are welcome to use `autoload' too.
+
+PACKAGES is expected to be a list of packages you want to install
+or init.  When PACKAGES is omited (the default), the list of
+already installed packages is considered.
+
+\(fn &optional SYNC &rest PACKAGES)" nil nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-autoloading" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-build" '("el-get-")))
+
+
+
+(autoload 'el-get-bundle-el-get "el-get-bundle" "\
+
+
+\(fn SRC SYNC)" nil nil)
+
+(autoload 'el-get-bundle "el-get-bundle" "\
+Install PACKAGE and run initialization FORM.
+
+PACKAGE can be either a simple package name or a package name
+with a modifier before the name to specify local recipe source
+information:
+
+* `<owner>/' : specifies a Github owner name
+* `gist:<id>' : specifies a Gist ID
+* `<type>:' : specifies a type of the package source
+
+If `FEATURE in PACKAGE' form is used instead of PACKAGE, then
+that FEATURE is `require'd after installing PACKAGE.  You can
+also use `el-get-bundle!' macro if FEATURE and PACKAGE are the
+same.  If you wish to `require' more than one feature, then use
+`:features' property in FORM.
+
+The initialization FORM may start with a property list that
+describes a local recipe.  The property list may include the keyword
+`:bundle-sync' with a value of either `t' or `nil' to request that
+`el-get-bundle' invoke `el-get' synchronously (respectively asynchronously).
+The keyword `:bundle-async' is the inverse of `:bundle-sync'.
+\(Note that the request to run el-get synchronously may not be respected in all
+circumstances: see the definition of `el-get-bundle-el-get' for details.)
+The FORM after the property list is treated as initialization code,
+which is actually an `:after' property of the local recipe.
+
+A copy of the initialization code is stored in a directory
+specified by `el-get-bundle-init-directory' and its byte-compiled
+version is used if `el-get-bundle-byte-compile' is non-nil.
+
+\(fn PACKAGE &rest FORM)" nil t)
+
+(function-put 'el-get-bundle 'lisp-indent-function 'defun)
+
+(autoload 'el-get-bundle! "el-get-bundle" "\
+Install PACKAGE and run initialization form.
+It is the same as `el-get-bundle' except that PACKAGE is explicitly
+required.
+
+\(fn PACKAGE &rest ARGS)" nil t)
+
+(function-put 'el-get-bundle! 'lisp-indent-function 'defun)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-bundle" '("el-get-bundle-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-byte-compile" '("el-get-")))
+
+
+
+(autoload 'el-get-check-recipe "el-get-check" "\
+Check the format of the recipe.
+Please run this command before sending a pull request.
+Usage: M-x el-get-check-recipe RET
+
+You can run this function from checker script like this:
+    test/check-recipe.el PATH/TO/RECIPE.rcp
+
+When used as a lisp function, FILE-OR-BUFFER must be a buffer
+object or a file path.
+
+\(fn FILE-OR-BUFFER)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-check" '("el-get-check-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-core" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-custom" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-dependencies" '("el-get-" "topological-sort")))
+
+
+
+(autoload 'el-get-list-packages "el-get-list-packages" "\
+Display a list of packages.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-list-packages" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-methods" '("el-get-insecure-check")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-notify" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-recipes" '("el-get-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-status" '("el-get-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/el-autoyas-20120918.1317/el-autoyas-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -18539,10 +21619,10 @@ Load and activate package.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/clomacs-20180901.1941/clomacs-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/clomacs-20181003.1735/clomacs-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clomacs-20180901.1941/clomacs-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/clomacs-20181003.1735/clomacs-autoloads.el") (car load-path))))
 
 
 
@@ -18674,10 +21754,10 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ejc-sql-20180827.1408/ejc-sql-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ejc-sql-20180929.1148/ejc-sql-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ejc-sql-20180827.1408/ejc-sql-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ejc-sql-20180929.1148/ejc-sql-autoloads.el") (car load-path))))
 
 
 
@@ -18877,91 +21957,50 @@ Start Emacs-IDE.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/egg-20180713.918/egg-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/eglot-20181003.1908/eglot-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/egg-20180713.918/egg-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/eglot-20181003.1908/eglot-autoloads.el") (car load-path))))
 
 
 
-(autoload 'egg-minor-mode "egg" "\
-Turn-on egg-minor-mode which would enable key bindings for
-egg in current buffer.\\<egg-minor-mode-map>
-\\[egg-start-new-branch] start a new branch from the current HEAD.
-\\[egg-status] shows the repo's current status
-\\[egg-commit-log-edit] start editing the commit message for the current staged changes.
-\\[egg-file-stage-current-file] stage new changes of the current file
-\\[egg-log] shows repo's history
-\\[egg-file-checkout-other-version] checkout another version of the current file
-\\[egg-file-cancel-modifications] delete unstaged modifications in the current file
-\\[egg-next-action] perform the next logical action
-\\[egg-file-diff] compare file with index or other commits
-\\[egg-file-version-other-window] show other version of the current file.
+(autoload 'eglot "eglot" "\
+Manage a project with a Language Server Protocol (LSP) server.
 
-\\{egg-minor-mode-map}
+The LSP server of CLASS started (or contacted) via CONTACT.  If
+this operation is successful, current *and future* file buffers
+of MANAGED-MAJOR-MODE inside PROJECT automatically become
+\"managed\" by the LSP server, meaning information about their
+contents is exchanged periodically to provide enhanced
+code-analysis via `xref-find-definitions', `flymake-mode',
+`eldoc-mode', `completion-at-point', among others.
 
-\(fn &optional ARG)" t nil)
+Interactively, the command attempts to guess MANAGED-MAJOR-MODE
+from current buffer, CLASS and CONTACT from
+`eglot-server-programs' and PROJECT from `project-current'.  If
+it can't guess, the user is prompted.  With a single
+\\[universal-argument] prefix arg, it always prompt for COMMAND.
+With two \\[universal-argument] prefix args, also prompts for
+MANAGED-MAJOR-MODE.
 
-(autoload 'egg-minor-mode-find-file-hook "egg" "\
+PROJECT is a project instance as returned by `project-current'.
 
+CLASS is a subclass of symbol `eglot-lsp-server'.
+
+CONTACT specifies how to contact the server.  It is a
+keyword-value plist used to initialize CLASS or a plain list as
+described in `eglot-server-programs', which see.
+
+INTERACTIVE is t if called interactively.
+
+\(fn MANAGED-MAJOR-MODE PROJECT CLASS CONTACT &optional INTERACTIVE)" t nil)
+
+(autoload 'eglot-ensure "eglot" "\
+Start Eglot session for current buffer if there isn't one.
 
 \(fn)" nil nil)
 
-(add-hook 'find-file-hook 'egg-git-dir)
-
-(add-hook 'find-file-hook 'egg-minor-mode-find-file-hook)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg" '("commit" "define-egg-buffer" "diff" "egg-" "file-log" "list-nav" "log" "query:commit" "status" "tag:msg" "with-current-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-base" '("dolist-done" "egg-" "invoked-interactively-p" "subseq")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-const" '("egg-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-custom" '("egg-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-diff" '("egg-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-git" '("egg-" "with-")))
-
-
-
-(autoload 'egg-grep-process-setup "egg-grep" "\
-Setup compilation variables and buffer for `egg-grep'.
-Set up `compilation-exit-message-function' and run `egg-grep-setup-hook'.
-
-\(fn)" nil nil)
-
-(autoload 'egg-grep-mode "egg-grep" "\
-Sets `compilation-last-buffer' and `compilation-window-height'.
-
-\(fn)" nil nil)
-
-(autoload 'egg-grep "egg-grep" "\
-
-
-\(fn LEVEL)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-grep" '("egg-grep-")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-key" '("egg-" "with-egg-key-buffer")))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "egg-svn" '("egg-" "with-egg-temp-direct-mapping")))
-
-
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "eglot" '("eglot-")))
 
 
 )
@@ -19793,6 +22832,41 @@ See `discover-mode' for more information on Discover mode.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/disaster-20171016.2152/disaster-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/disaster-20171016.2152/disaster-autoloads.el") (car load-path))))
+
+
+
+(defvar disaster-find-build-root-functions nil "\
+Functions to call to get the build root directory from the project directory.
+If nil is returned, the next function will be tried.  If all
+functions return nil, the project root directory will be used as
+the build directory.")
+
+(autoload 'disaster "disaster" "\
+Shows assembly code for current line of C/C++ file.
+
+Here's the logic path it follows:
+
+- Is there a Makefile in this directory? Run `make bufname.o`.
+- Or is there a Makefile in a parent directory? Run `make -C .. bufname.o`.
+- Or is this a C file? Run `cc -g -O3 -c -o bufname.o bufname.c`
+- Or is this a C++ file? Run `c++ -g -O3 -c -o bufname.o bufname.c`
+- If build failed, display errors in compile-mode.
+- Run objdump inside a new window while maintaining focus.
+- Jump to line matching current line.
+
+If FILE and LINE are not specified, the current editing location
+is used.
+
+\(fn &optional FILE LINE)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "disaster" '("disaster-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/diffview-20150929.511/diffview-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -19863,17 +22937,6 @@ Visit `https://github.com/liblit/demangle-mode/issues' or use
 
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "delim-kill" '("delim-")))
-
-
-)
-(let ((load-file-name "/home/lk/.emacs.d/elpa/db-20140421.2111/db-autoloads.el"))
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/db-20140421.2111/db-autoloads.el") (car load-path))))
-
-
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "db" '("db-" "db/")))
 
 
 )
@@ -19959,21 +23022,52 @@ See `ctags-auto-update-mode' for more information on Ctags-Auto-Update mode.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/ctable-20171006.11/ctable-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cquery-20180811.2131/cquery-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ctable-20171006.11/ctable-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cquery-20180811.2131/cquery-autoloads.el") (car load-path))))
+
+
+ (autoload 'lsp-cquery-enable "cquery")
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery" '("cquery-")))
 
 
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ctable" '("ctbl:")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-call-hierarchy" '("cquery-call-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-code-lens" '("cquery-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-common" '("cquery--")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-inheritance-hierarchy" '("cquery-inheritance-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-member-hierarchy" '("cquery-member-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-semantic-highlighting" '("cquery-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cquery-tree" '("cquery-tree-")))
+
+
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/cpputils-cmake-20170819.959/cpputils-cmake-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cpputils-cmake-20181006.328/cpputils-cmake-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cpputils-cmake-20170819.959/cpputils-cmake-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cpputils-cmake-20181006.328/cpputils-cmake-autoloads.el") (car load-path))))
 
 
 
@@ -20093,6 +23187,17 @@ Similar to `counsel-etags-grep' but grep symbol at point.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/concurrent-20161229.330/concurrent-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/concurrent-20161229.330/concurrent-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "concurrent" '("cc:")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/company-ycmd-20180520.1053/company-ycmd-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -20161,6 +23266,65 @@ configuration.  You can customize this behavior with
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-statistics" '("company-s")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-rtags-20180730.338/company-rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-rtags-20180730.338/company-rtags-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-rtags" '("company-rtags")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-racer-20171205.310/company-racer-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-racer-20171205.310/company-racer-autoloads.el") (car load-path))))
+
+
+
+(autoload 'company-racer "company-racer" "\
+`company-mode' completion back-end for racer.
+Provide completion info according to COMMAND and ARG.  IGNORED, not used.
+
+\(fn COMMAND &optional ARG &rest IGNORED)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-racer" '("company-racer-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-posframe-20180610.1710/company-posframe-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-posframe-20180610.1710/company-posframe-autoloads.el") (car load-path))))
+
+
+
+(defvar company-posframe-mode nil "\
+Non-nil if Company-Posframe mode is enabled.
+See the `company-posframe-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `company-posframe-mode'.")
+
+(custom-autoload 'company-posframe-mode "company-posframe" nil)
+
+(autoload 'company-posframe-mode "company-posframe" "\
+company-posframe minor mode.
+
+If called interactively, enable Company-Posframe mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-posframe" '("company-posframe-")))
 
 
 )
@@ -20258,6 +23422,37 @@ include these commands by default.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/company-flx-20180103.518/company-flx-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/company-flx-20180103.518/company-flx-autoloads.el") (car load-path))))
+
+
+
+(defvar company-flx-mode nil "\
+Non-nil if Company-Flx mode is enabled.
+See the `company-flx-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `company-flx-mode'.")
+
+(custom-autoload 'company-flx-mode "company-flx" nil)
+
+(autoload 'company-flx-mode "company-flx" "\
+company-flx minor mode
+
+If called interactively, enable Company-Flx mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-flx" '("company-flx-")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/company-c-headers-20180814.1730/company-c-headers-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -20331,10 +23526,10 @@ if ARG is `toggle'; disable the mode otherwise.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/codesearch-20180508.1522/codesearch-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/codesearch-20181006.1431/codesearch-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/codesearch-20180508.1522/codesearch-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/codesearch-20181006.1431/codesearch-autoloads.el") (car load-path))))
 
 
 
@@ -20417,6 +23612,151 @@ if ARG is `toggle'; disable the mode otherwise.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cmake-project" '("cmake-project-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cmake-mode-20180709.1426/cmake-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cmake-mode-20180709.1426/cmake-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cmake-mode "cmake-mode" "\
+Major mode for editing CMake source files.
+
+\(fn)" t nil)
+
+(autoload 'cmake-command-run "cmake-mode" "\
+Runs the command cmake with the arguments specified.  The
+optional argument topic will be appended to the argument list.
+
+\(fn TYPE &optional TOPIC BUFFER)" t nil)
+
+(autoload 'cmake-help-list-commands "cmake-mode" "\
+Prints out a list of the cmake commands.
+
+\(fn)" t nil)
+
+(autoload 'cmake-help-command "cmake-mode" "\
+Prints out the help message for the command the cursor is on.
+
+\(fn)" t nil)
+
+(autoload 'cmake-help-module "cmake-mode" "\
+Prints out the help message for the module the cursor is on.
+
+\(fn)" t nil)
+
+(autoload 'cmake-help-variable "cmake-mode" "\
+Prints out the help message for the variable the cursor is on.
+
+\(fn)" t nil)
+
+(autoload 'cmake-help-property "cmake-mode" "\
+Prints out the help message for the property the cursor is on.
+
+\(fn)" t nil)
+
+(autoload 'cmake-help "cmake-mode" "\
+Queries for any of the four available help topics and prints out the appropriate page.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))
+
+(add-to-list 'auto-mode-alist '("\\.cmake\\'" . cmake-mode))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cmake-mode" '("cmake-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cmake-ide-20180713.1513/cmake-ide-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cmake-ide-20180713.1513/cmake-ide-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cmake-ide-setup "cmake-ide" "\
+Set up the Emacs hooks for working with CMake projects.
+
+\(fn)" nil nil)
+
+(autoload 'cmake-ide-maybe-run-cmake "cmake-ide" "\
+Run CMake if the compilation database JSON file is not found.
+
+\(fn)" t nil)
+
+(autoload 'cmake-ide-run-cmake "cmake-ide" "\
+Run CMake and set compiler flags for auto-completion and flycheck.
+This works by calling cmake in a temporary directory (or `cmake-ide-build-dir')
+ and parsing the JSON file deposited there with the compiler
+ flags.
+
+\(fn)" t nil)
+
+(autoload 'cmake-ide-load-db "cmake-ide" "\
+Load compilation DB and set flags for current buffer.
+
+\(fn)" t nil)
+
+(autoload 'cmake-ide-compile "cmake-ide" "\
+Compile the project.
+
+\(fn)" t nil)
+
+(autoload 'cmake-ide-maybe-start-rdm "cmake-ide" "\
+Start the rdm (rtags) server.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cmake-ide" '("cide--" "cmake-ide-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/cmake-font-lock-20170117.2025/cmake-font-lock-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/cmake-font-lock-20170117.2025/cmake-font-lock-autoloads.el") (car load-path))))
+
+
+
+(autoload 'cmake-font-lock-activate "cmake-font-lock" "\
+Activate advanced CMake colorization.
+
+To activate this every time a CMake file is opened, use the following:
+
+    (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
+
+\(fn)" t nil)
+(add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cmake-font-lock" '("cmake-font-lock-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/closure-lint-mode-20101118.2124/closure-lint-mode-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/closure-lint-mode-20101118.2124/closure-lint-mode-autoloads.el") (car load-path))))
+
+
+
+(autoload 'closure-lint-mode "closure-lint-mode" "\
+Closure Lint mode.
+     With no argument, this command toggles the mode.
+     Non-null prefix argument turns on the mode.
+     Null prefix argument turns off the mode.
+
+If called interactively, enable Closure-Lint mode if ARG is positive, and
+disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it
+if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "closure-lint-mode" '("closure-lint-")))
 
 
 )
@@ -21000,6 +24340,48 @@ non-nil; otherwise prompts the user to enter the directory.
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ccls-20181007.524/ccls-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ccls-20181007.524/ccls-autoloads.el") (car load-path))))
+
+
+ (autoload 'lsp-ccls-enable "ccls")
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls" '("ccls-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-call-hierarchy" '("ccls-call-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-code-lens" '("ccls-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-common" '("ccls--")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-inheritance-hierarchy" '("ccls-inheritance-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-member-hierarchy" '("ccls-member-hierarchy")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-semantic-highlighting" '("ccls-")))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ccls-tree" '("ccls-tree-")))
+
+
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/cargo-20180812.1218/cargo-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -21364,10 +24746,10 @@ See `better-shell-for-dir' for details on how shells are found or created.
 
 
 )
-(let ((load-file-name "/home/lk/.emacs.d/elpa/beacon-20180706.1725/beacon-autoloads.el"))
+(let ((load-file-name "/home/lk/.emacs.d/elpa/beacon-20181008.1350/beacon-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory "/home/lk/.emacs.d/elpa/beacon-20180706.1725/beacon-autoloads.el") (car load-path))))
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/beacon-20181008.1350/beacon-autoloads.el") (car load-path))))
 
 
 
@@ -21442,6 +24824,28 @@ compiled before it is run.
 \(fn)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "basic-c-compile" '("basic-c-compile-")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/avy-flycheck-20160720.1500/avy-flycheck-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/avy-flycheck-20160720.1500/avy-flycheck-autoloads.el") (car load-path))))
+
+
+
+(autoload 'avy-flycheck-goto-error "avy-flycheck" "\
+Jump to a flycheck syntax error.
+The window scope is determined by `avy-all-windows' (ARG negates it).
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'avy-flycheck-setup "avy-flycheck" "\
+Set up default keybindings.
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "avy-flycheck" '("avy-")))
 
 
 )
@@ -21588,6 +24992,17 @@ if ARG is `toggle'; disable the mode otherwise.
 \(fn &optional ARG)" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-highlight-symbol" '("ahs-" "auto-highlight-symbol-mode")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/auto-complete-exuberant-ctags-20140320.724/auto-complete-exuberant-ctags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/auto-complete-exuberant-ctags-20140320.724/auto-complete-exuberant-ctags-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-complete-exuberant-ctags" '("ac-exuberant-ctags-")))
 
 
 )
@@ -21801,6 +25216,33 @@ Align a let form so that the bindings neatly align into columns
 
 
 )
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ac-rtags-20170523.454/ac-rtags-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ac-rtags-20170523.454/ac-rtags-autoloads.el") (car load-path))))
+
+
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-rtags" '("ac-rtags-" "rtags-location-regx")))
+
+
+)
+(let ((load-file-name "/home/lk/.emacs.d/elpa/ac-racer-20170114.809/ac-racer-autoloads.el"))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory "/home/lk/.emacs.d/elpa/ac-racer-20170114.809/ac-racer-autoloads.el") (car load-path))))
+
+
+
+(autoload 'ac-racer-setup "ac-racer" "\
+
+
+\(fn)" t nil)
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-racer" '("ac-racer--")))
+
+
+)
 (let ((load-file-name "/home/lk/.emacs.d/elpa/ac-etags-20161001.1507/ac-etags-autoloads.el"))
 
 (add-to-list 'load-path (directory-file-name
@@ -21907,14 +25349,14 @@ Add `ac-source-capf' to `ac-sources' and enable `auto-complete' mode
 )
 (setq package-activated-list
   (append
-    '(dash s deferred request request-deferred epl pkg-info ycmd ycm yasnippet yasnippet-snippets yasnippet-classic-snippets yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color with-simulated-input async with-editor imenu-list window-purpose window-layout web-server a parseclj treepy walkclj vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist undo-tree shut-up undercover clojure-mode queue spinner sesman cider typed-clojure-mode tNFA heap trie tree-mode test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco tab-jump-out syntactic-close symbol-overlay ivy swiper sudo-ext sudo-edit string-edit stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh srefactor sr-speedbar sotlisp sotclojure snippet smartscan smartparens f popup dumb-jump smart-jump expand-region smart-forward smart-cursor-color smart-compile smart-comment macrostep slime company slime-company simple-httpd signal shell-toggle shell-switcher shell-command sexp-move sed-mode scheme-here scheme-complete sayid projectile markdown-mode graphql ghub git-commit magit-popup magit rustic rust-playground rust-mode replace-symbol replace-pairs fullframe repl-toggle readline-complete faceup racket-mode pos-tip racer quick-peek quack preproc-font-lock posframe popwin popup-complete pcache list-utils persistent-soft peg pcmpl-git pcmpl-args parinfer paren-face paredit packed package-safe-delete opencl-mode nrepl-sync highlight nrepl-eval-sexp-fu noflet multiple-cursors monroe modern-cpp-font-lock mmt minimal-session-saver mic-paren mc-extras maxframe matlab-mode helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode makey makefile-executor macro-math dash-functional flycheck lsp-mode lsp-ui lsp-rust lsp-clangd ht list-packages-ext lisp-extra-font-lock language-detection kv json-snatcher json-reformat json-mode jdecomp javap-mode hydra ivy-hydra counsel ivy-dired-history isend-mode irony irony-eldoc ipretty inline-docs inflections inf-clojure iedit ido-at-point hungry-delete htmlize hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-function-calls highlight-escape-sequences highlight-defined edn helm-clojuredocs google-c-style golden-ratio-scroll-screen gnome-c-style gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim git-command git-auto-commit-mode git-attr git function-args foreign-regexp font-lock-studio font-lock+ flyparens flymake-easy flymake-shell flymake-rust flymake-google-cpplint flymake-cursor flymake-cppcheck flycheck-ycmd flycheck-tip flycheck-swiftlint flycheck-rust flycheck-posframe flycheck-pos-tip flycheck-pkg-config flycheck-joker flycheck-irony flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elog elmacro elisp-sandbox elisp-lint elf-mode elein eldoc-overlay eldoc-eval el-sprunge el-autoyas clomacs auto-complete direx ejc-sql eide egg edebug-x ede-compdb ecb eacl dr-racket-like-unicode discover-my-major clj-refactor discover discover-clj-refactor diffview demangle-mode delim-kill db datomic-snippets ctags-update ctable cpputils-cmake counsel-etags company-ycmd company-ycm company-statistics company-math company-lsp company-irony-c-headers company-irony company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile cargo c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-highlight-symbol auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile android-mode align-cljlet ac-etags ac-clang ac-cider ac-capf ac-c-headers)
+    '(dash s deferred request request-deferred epl pkg-info ycmd ycm yasnippet yasnippet-snippets yasnippet-classic-snippets yafolding xtest xterm-title xterm-keybinder xterm-frobs xterm-color xcscope x86-lookup x509-mode with-simulated-input async with-editor imenu-list window-purpose window-layout web-server web a parseclj treepy walkclj vkill visual-regexp visual-regexp-steroids unkillable-scratch undohist undo-tree shut-up undercover clojure-mode queue spinner sesman cider typed-clojure-mode tNFA heap trie tree-mode thingopt test-simple fringe-helper test-case-mode test-c term-run term-manager term+ tab-group term+mux tco tablist tab-jump-out syntactic-close symbol-overlay ivy swiper sudo-ext sudo-edit string-edit strie stream strace-mode ssh-tunnels ssh-config-mode ssh-agency ssh srefactor sotlisp sotclojure snippet smartscan smartparens f popup dumb-jump smart-jump expand-region smart-forward smart-cursor-color smart-compile smart-comment macrostep slime company slime-company simple-httpd signal shell-toggle shell-switcher shell-command sexp-move sequences sed-mode scheme-here scheme-complete sayid projectile markdown-mode graphql ghub git-commit magit-popup magit rustic rust-playground rust-mode rtags restart-emacs replace-symbol replace-pairs fullframe repl-toggle readline-complete faceup racket-mode pos-tip racer quack preproc-font-lock posframe popwin popup-complete pcache list-utils persistent-soft peg noflet kv creole fakir db elnode peek-mode pdf-tools pcmpl-git pcmpl-args parinfer paren-face paredit packed package-safe-delete opencl-mode ob-rust nrepl-sync highlight nrepl-eval-sexp-fu esxml nov nasm-mode multiple-cursors monroe modern-cpp-font-lock mmt minimap minimal-session-saver mic-paren mc-extras maxframe helm-core helm math-symbols math-symbol-lists mark-multiple manage-minor-mode malinka makey makefile-executor macro-math dash-functional flycheck lsp-mode lsp-ui lsp-rust lsp-clangd log4e ht list-packages-ext lisp-extra-font-lock levenshtein language-detection json-snatcher json-reformat json-mode jdecomp javap-mode javadoc-lookup java-imports hydra ivy-hydra counsel ivy-dired-history isearch-symbol-at-point irony irony-eldoc ipretty inflections inf-clojure iedit ido-at-point htmlize hippie-namespace hippie-exp-ext highlight-unique-symbol highlight-thing highlight-symbol highlight-stages highlight-refontification highlight-quoted highlight-parentheses highlight-operators highlight-function-calls highlight-escape-sequences highlight-defined helm-xref helm-rtags helm-proc helm-mode-manager helm-gtags helm-frame helm-flymake helm-flycheck helm-etags-plus helm-cscope helm-company helm-codesearch edn helm-clojuredocs helm-cider-history helm-cider helm-c-yasnippet google-c-style golden-ratio-scroll-screen gnome-c-style gited gitconfig-mode gitconfig git-wip-timemachine git-timemachine git-msg-prefix git-messenger git-link git-lens git-io git-dwim git-command git-auto-commit-mode git-attr git ggtags fuzzy function-args foreign-regexp font-lock-studio font-lock-profiler font-lock+ fn flyparens flymake-easy flymake-shell flymake-rust flymake-racket flymake-gradle flymake-google-cpplint flymake-cursor flymake-cppcheck flycheck-ycmd flycheck-tip flycheck-swiftlint flycheck-rust flycheck-rtags flycheck-posframe flycheck-pos-tip flycheck-popup-tip flycheck-pkg-config flycheck-joker flycheck-irony flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clojure flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms flx flx-isearch flx-ido evalator evalator-clojure eval-sexp-fu avy ace-window eval-in-repl eval-expr eterm-256color es-lib elmacro elisp-sandbox elisp-lint elf-mode elein eldoc-eval el-sprunge ctable anaphora el-init el-init-viewer el-get el-autoyas clomacs auto-complete direx ejc-sql eide eglot edebug-x ede-compdb ecb eacl dr-racket-like-unicode discover-my-major clj-refactor discover discover-clj-refactor disaster diffview demangle-mode delim-kill datomic-snippets ctags-update cquery cpputils-cmake counsel-etags concurrent company-ycmd company-ycm company-statistics company-rtags company-racer company-posframe company-math company-lsp company-irony-c-headers company-irony company-flx company-c-headers common-lisp-snippets commenter comint-intercept codesearch codebug cmake-project cmake-mode cmake-ide cmake-font-lock closure-lint-mode clojure-snippets clojure-quick-repls clojure-mode-extra-font-locking clojure-cheatsheet clojars cljsbuild-mode cljr-helm clang-format cl-lib-highlight cl-format cider-spy cider-hydra cider-eval-sexp-fu cider-decompile choice-program charmap chapel-mode cff cedit cd-compile ccls cargo c-eldoc build-status build-helper buffer-manage bshell better-shell beacon basic-c-compile avy-flycheck autodisass-llvm-bitcode auto-shell-command auto-minor-mode auto-highlight-symbol auto-complete-exuberant-ctags auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-compile android-mode align-cljlet ac-rtags ac-racer ac-etags ac-clang ac-cider ac-capf ac-c-headers)
     package-activated-list))
 (progn
   (require 'info)
   (info-initialize)
   (setq Info-directory-list
     (append
-      '("/home/lk/.emacs.d/elpa/magit-20180920.2138" "/home/lk/.emacs.d/elpa/magit-popup-20180726.2037" "/home/lk/.emacs.d/elpa/ghub-20180914.802" "/home/lk/.emacs.d/elpa/slime-20180903.2109" "/home/lk/.emacs.d/elpa/ivy-20180917.2237")
+      '("/home/lk/.emacs.d/elpa/magit-20181009.8" "/home/lk/.emacs.d/elpa/magit-popup-20181003.921" "/home/lk/.emacs.d/elpa/ghub-20181003.1456" "/home/lk/.emacs.d/elpa/slime-20180923.1848" "/home/lk/.emacs.d/elpa/ivy-20180926.1249" "/home/lk/.emacs.d/elpa/with-editor-20181008.2142")
       Info-directory-list)))
 
 ;; Local Variables:

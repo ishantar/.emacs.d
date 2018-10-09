@@ -45,7 +45,7 @@
 
 This should be a list of strings, the first string being the
 executable, and the remaining strings being the arguments to this
-executable.
+qexecutable.
 
 If this variable is nil, lsp-rust will try to use the RLS located
 at the environment variable RLS_ROOT, if set."
@@ -100,7 +100,7 @@ The explaination comes from 'rustc --explain=ID'."
   "Return the command used to start the RLS for defining the LSP Rust client."
   (or lsp-rust-rls-command
       (-when-let (rls-root (getenv "RLS_ROOT"))
-        `("cargo" "+nightly" "run" "--quiet"
+        `("cargo" "+stable" "run" "--quiet"
           ,(concat "--manifest-path="
                    (concat
                     (file-name-as-directory (expand-file-name rls-root))

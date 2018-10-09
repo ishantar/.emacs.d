@@ -1,10 +1,12 @@
 
+(customize-set-value 'gc-cons-threshold 268435456) ;; temporary init-time value 
+
 (custom-set-variables
   '(package-enable-at-startup 't)
   '(package-quickstart 't)
   '(package-user-dir "~/.emacs.d/elpa")
   '(package-quickstart-file "~/.emacs.d/package-quickstart.el")
-
+  '(package-load-list '(all))
   '(sp-clojure-modes
      '('cider-repl-mode 'clojure-mode 'clojurec-mode 'clojurescript-mode 'clojurex-mode 'inf-clojure-mode 'cider-clojure-interaction-mode))
   

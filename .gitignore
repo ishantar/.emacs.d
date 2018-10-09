@@ -10,3 +10,5 @@ auto-backup-list/**
 emms/history
 eshell/history
 elpa/gnupg/**
+semanticdb/*
+company-statistics-cache.el

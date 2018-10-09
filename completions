@@ -6,4 +6,5 @@
 ;;    If it is t, the completion will never be pruned from the file.
 ;;    Otherwise it is in hours since origin.
 
-("cider-result-overlay-face" . 426248)
+
+nil
