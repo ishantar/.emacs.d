@@ -103,7 +103,7 @@
   '(secondary-selection ((t (:background "SkyBlue4"))))
   '(semantic-unmatched-syntax-face ((t (:underline "#e9967a"))))
   '(semantic-highlight-func-current-tag-face ((t (:background "#414f5a" :underline "#56656f"))))
-  '(semantic-idle-symbol-highlight ((t (:inherit eldoc-highlight-function-argument :underline (:color "#727272" :style wave) :weight bold))))
+  '(semantic-idle-symbol-highlight ((t (:underline (:color "#727272" :style wave) :weight bold))))
   '(semantic-tag-boundary-face ((t (:overline "#480068" :underline "#480068"))))
   '(shadow ((t (:foreground "#a3a3a3"))))
   '(show-paren-match ((t (:weight bold :underline (:color "#00efff" :style line) :overline "#00dfff" :box nil :inverse-video nil :foreground "#c3d3e3" :background  "#245281"))))

@@ -153,7 +153,7 @@
  '(cursor-in-non-selected-windows 'hollow)
  '(custom-raised-buttons t)
  '(custom-safe-themes
-    '("1166c0abb276fd02ac59b057e5e84797f384f64260cc4b9bc76951a3ebf7005d" default))
+    '("147cae96a3477db25d2dfaaabbaded8fc20086f55b35af6ab91cb66240a3c62d" default))
  '(dash-enable-fontlock t)
  '(default-frame-alist '((left-fringe . 8) (right-fringe . 4)))
  '(dired-hide-details-hide-information-lines nil)
@@ -229,7 +229,7 @@
  '(global-semantic-highlight-func-mode t)
  '(global-semantic-idle-breadcrumbs-mode nil nil (semantic/idle))
  '(global-semantic-idle-completions-mode t nil (semantic/idle))
- '(global-semantic-idle-local-symbol-highlight-mode t nil (semantic/idle))
+ '(global-semantic-idle-local-symbol-highlight-mode nil nil (semantic/idle))
  '(global-semantic-idle-scheduler-mode t)
  '(global-semantic-idle-summary-mode t)
  '(global-semantic-mru-bookmark-mode t)
@@ -356,7 +356,7 @@
        ("semantic-decoration-on-private-members")
        ("semantic-tag-boundary" . t)))
  '(semantic-default-submodes
-    '(global-semantic-idle-completions-mode global-semantic-idle-scheduler-mode global-semanticdb-minor-mode global-semantic-idle-summary-mode global-semantic-mru-bookmark-mode global-cedet-m3-minor-mode global-semantic-idle-local-symbol-highlight-mode global-semantic-highlight-edits-mode))
+    '(global-semantic-idle-completions-mode global-semantic-idle-scheduler-mode global-semanticdb-minor-mode global-semantic-idle-summary-mode global-semantic-mru-bookmark-mode global-cedet-m3-minor-mode global-semantic-highlight-edits-mode))
  '(semantic-displayor-tooltip-mode 'verbose)
  '(semantic-elisp-store-documentation-in-tag t)
  '(semantic-ia-completion-format-tag-function 'semantic-format-tag-summarize-with-file)
