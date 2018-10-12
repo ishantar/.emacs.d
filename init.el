@@ -28,15 +28,20 @@
  ;; If there is more than one, they won't work right.
  '(Info-breadcrumbs-depth 6)
  '(ac-auto-show-menu 0.25)
- '(ac-auto-start 1)
+ '(ac-auto-start nil)
  '(ac-candidate-limit nil)
  '(ac-delay 0.25)
+ '(ac-dictionary-directories
+    '("/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/"))
+ '(ac-dictionary-files
+    '("/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/ada-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/c++-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/c-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/caml-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/clojure-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/clojurescript-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/coq-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/css-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/erlang-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/ess-julia-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/go-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/haskell-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/java-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/js-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/julia-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/lua-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/nim-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/objc-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/octave-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/php-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/python-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/qml-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/ruby-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/scala-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/scheme-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/sclang-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/sh-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/swift-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/tcl-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/ts-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/tuareg-mode" "/home/lk/.emacs.d/elpa/auto-complete-20170125.245/dict/verilog-mode"))
  '(ac-etags-requires 1)
+ '(ac-expand-on-auto-complete t)
  '(ac-flycheck-poll-completion-end-interval 0.5)
  '(ac-modes
     '(emacs-lisp-mode lisp-mode lisp-interaction-mode slime-repl-mode nim-mode c-mode cc-mode c++-mode objc-mode swift-mode go-mode java-mode malabar-mode clojure-mode clojurescript-mode cider-repl-node scala-mode scheme-mode ocaml-mode tuareg-mode coq-mode haskell-mode agda-mode agda2-mode perl-mode cperl-mode python-mode ruby-mode lua-mode tcl-mode ecmascript-mode javascript-mode js-mode js-jsx-mode js2-mode js2-jsx-mode coffee-mode php-mode css-mode scss-mode less-css-mode elixir-mode makefile-mode sh-mode fortran-mode f90-mode ada-mode xml-mode sgml-mode web-mode ts-mode sclang-mode verilog-mode qml-mode apples-mode))
  '(ac-non-trigger-commands
-    '(*table--cell-self-insert-command electric-buffer-list self-insert-command newline))
+    '(*table--cell-self-insert-command electric-buffer-list newline))
  '(ac-quick-help-delay 1.0)
  '(ac-stop-flymake-on-completing t)
  '(ac-trigger-commands
@@ -44,6 +49,7 @@
  '(ac-trigger-key nil)
  '(ac-use-fuzzy t)
  '(ac-use-menu-map t)
+ '(ac-use-overriding-local-map nil)
  '(ahs-face-check-include-overlay t)
  '(ahs-idle-interval 1.2)
  '(ahs-inhibit-face-list
@@ -133,16 +139,20 @@
  '(comint-scroll-show-maximum-output nil)
  '(comint-terminfo-terminal "eterm-color")
  '(comint-use-prompt-regexp nil)
- '(company-auto-complete t)
+ '(company-auto-complete nil)
+ '(company-auto-complete-chars '(32 95 40))
+ '(company-begin-commands t)
  '(company-c-headers-path-user '(".."))
+ '(company-clang-executable "clang")
  '(company-cmake-executable "/usr/bin/cmake")
  '(company-dabbrev-code-everywhere t)
  '(company-dabbrev-minimum-length 2)
  '(company-idle-delay 0.25)
  '(company-lighter-base "company")
  '(company-minimum-prefix-length 1)
+ '(company-posframe-mode t nil (company-posframe))
  '(company-require-match nil)
- '(company-show-numbers nil)
+ '(company-show-numbers t)
  '(company-statistics-mode t)
  '(company-tooltip-idle-delay 0.25)
  '(completion-styles '(basic partial-completion emacs22 substring))
@@ -173,6 +183,7 @@
  '(eldoc-mode-line-stop-rolling-on-input nil)
  '(eldoc-show-in-mode-line-delay 15)
  '(electric-indent-mode nil)
+ '(electric-pair-preserve-balance nil)
  '(emacs-lisp-mode-hook
     '(semantic-default-elisp-setup checkdoc-minor-mode edebug-x-mode))
  '(erc-insert-pre-hook '(0))
@@ -210,7 +221,7 @@
  '(flymake-error-bitmap '(hollow-right-triangle compilation-error))
  '(flymake-fringe-indicator-position 'left-fringe)
  '(flymake-note-bitmap '(flymake-double-exclamation-mark flycheck-error-list-info))
- '(flymake-proc-compilation-prevents-syntax-check nil)
+ '(flymake-proc-compilation-prevents-syntax-check t)
  '(flymake-warning-bitmap '(hollow-right-triangle compilation-warning))
  '(fringe-mode nil nil (fringe))
  '(garbage-collection-messages nil)
@@ -284,6 +295,7 @@
  '(load-prefer-newer t)
  '(lsp-after-initialize-hook
     '(lsp-rust--set-configuration lsp-rust-set-config rust-lsp-set-configuration rustic-lsp-set-config))
+ '(lsp-print-io t)
  '(lsp-project-whitelist
     '("^/home/lk/self/projects/lang_rust/tut/libtut/$" "^/home/lk/self/projects/\\([^/]\\|/.[^\\/\\.]\\|/[^.]\\)*"))
  '(lsp-rust-rls-command '("rustup" "run" "stable" "rls"))
@@ -304,6 +316,7 @@
  '(lsp-ui-sideline-show-code-actions t)
  '(lsp-ui-sideline-show-symbol nil)
  '(lsp-ui-sideline-update-mode 'line)
+ '(lv-use-separator t)
  '(magit-auto-revert-mode nil)
  '(max-mini-window-height 0.7)
  '(mc/edit-lines-empty-lines 'ignore)
@@ -329,6 +342,7 @@
     '(lisp-mode emacs-lisp-mode lisp-interaction-mode ielm-mode scheme-mode inferior-scheme-mode clojure-mode cider-repl-mode nrepl-mode arc-mode inferior-arc-mode c-mode rust-mode rustic-mode))
  '(paren-face-regexp "[][(){}]")
  '(proced-after-send-signal-hook '(proced-revert))
+ '(proced-tree-flag t)
  '(prog-mode-hook
     '(auto-complete-mode flycheck-mode yas-minor-mode symbol-overlay-mode paren-face-mode))
  '(quick-peek-position 'above)
@@ -341,6 +355,8 @@
  '(rustic-format-on-save nil)
  '(rustic-indent-where-clause t)
  '(rustic-rls-pkg 'lsp-mode)
+ '(save-completions-file-name "~/.emacs.d/completions")
+ '(save-completions-flag nil)
  '(save-completions-retention-time 128)
  '(scalable-fonts-allowed t)
  '(scheme-program-name "racket")
@@ -483,7 +499,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(company-template-field ((t (:background "#305e5b" :foreground "#262e1b"))))
+ '(company-tooltip ((t (:background "#407b7b" :foreground "#222a19")))))
 
 
 

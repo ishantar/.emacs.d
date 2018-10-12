@@ -12,3 +12,5 @@ eshell/history
 elpa/gnupg/**
 semanticdb/*
 company-statistics-cache.el
+request/**
+request/
