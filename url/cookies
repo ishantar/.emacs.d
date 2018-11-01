@@ -1,0 +1,20 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".reddit.com"
+   [url-cookie "rseor3" "true" "Thu, 08 Nov 2018 06:59:54 GMT" "/" ".reddit.com" nil]
+   [url-cookie "rabt" "" "Thu, 08 Nov 2018 06:59:54 GMT" "/" ".reddit.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("reddit.com"
+   [url-cookie "edgebucket" "F7jPwPG7wuj9KA6MsU" "Thu Oct 08 06:59:53 2020 GMT" "/" "reddit.com" t])
+  (".reddit.com"
+    [url-cookie "loid" "00000000002dlnanmj.2.1539068393422.Z0FBQUFBQmJ2RkhweVhzX1pQdW9Lc2szaXQyenRISldtZ19KUkp6bzlQcVVMX3FVWGJCdHAwNXZ2c1E3OVFub3BUSC1HLXBHLTBLcklWUERKRGdac2dHSTM1cmJrUi1pS1BWM2QyZHVnWV9hSEtzbnREMXZKZVh4R2o4OGZvWDRTaVRvczZFZ2NLZEo" "Fri, 09 Oct 2020 06:59:53 GMT" "/" ".reddit.com" t]
+    [url-cookie "token" "eyJhY2Nlc3NUb2tlbiI6Ii05M0l3dE1JekhLWThsV1lhZ0N4S3VQZFNmQkkiLCJ0b2tlblR5cGUiOiJiZWFyZXIiLCJleHBpcmVzIjoiMjAxOC0xMC0wOVQwNzo1OTo1My40MzNaIiwicmVmcmVzaFRva2VuIjoiLXVKRHRuRFVlWXIxOWJFRExfR3dFblVJMjF0WSIsInNjb3BlIjoiKiIsInVuc2FmZUxvZ2dlZE91dCI6dHJ1ZX0=.2" "Fri, 09 Oct 2020 06:59:53 GMT" "/" ".reddit.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

@@ -1,0 +1,121 @@
+(defmacro fmap (&rest flist)
+  (mapc 'funcall flist))
+
+
+(defun custom-set-hook-function (SYM &optional VAL)
+  "SYM must be quoted"
+  (fset SYM 
+          (lambda nil (mapcar 'funcall (symbol-value SYM))))
+  (put SYM 'saved-value 
+             (or VAL 
+                 (get SYM 'customized-value)
+                 (get SYM 'saved-value)
+                 (get SYM 'standard-value))))
+
+(mapc (lambda (HOOK) (add-hook 'rustic-mode-hook HOOK)) '(racer-mode cargo-minor-mode lsp-mode lsp-rust-enable lsp-ui-mode lsp-ui-sideline-mode lsp-ui-doc-mode rustic-flycheck-setup flycheck-rust-setup flycheck-mode flymake-mode symbol-overlay-mode))
+
+
+
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+
+
+(defun  term-window-setup  ()
+   (interactive)
+   (progn
+     (setenv "LINES" (string (- (window-height) 8) ))
+     (setenv "COLUMNS" (string (- (window-width) 4) ))
+     (shell-command "PS1=$(echo '[$?] [${PWD}] $ \n' )")
+     (shell-command "stty rows `echo $LINES` cols `echo $COLUMNS`")) )
+
+
+;; c-mode-hook global-eldoc-overlay-disable eldoc-overlay-disable
+;; dired-mode-hook << dired-hide-details-mode 
+;; emacs-lisp-mode-hook << completion-lisp-mode-hook
+;; flycheck-mode-hook << flycheck-mode-set-explicitly 
+;; lisp-mode-hook << completion-lisp-mode-hook
+;;  '(egg-background-idle-period 240)
+;;  '(eldoc-overlay-in-minibuffer-flag nil)
+;;  '(global-linum-mode nil)
+;;  '(package-enable-at-startup 't)
+;;  '(speedbar-directory-unshown-regexp "")
+;;  '(speedbar-file-unshown-regexp "")
+(directory-files (concat (file-name-directory (locate-library auto-complete)) "dict/") t "\\([.][^.].*\\)\\|\\([^.].*\\)\\|\\([.][.].+\\)")
+
+
+
+
+(directory-files (concat (file-name-directory (locate-library "auto-complete")) "dict/") t "\\([.][^.].*\\)\\|\\([^.].*\\)\\|\\([.][.].+\\)")
+
+
+
+
+
+e = adjustive linear search tolerance (:= max radix error) 
+
+e = a - ( ((p-1)/m) + 1 )
+
+
+
+'(keymap
+  (19 . ac-isearch)    ;; C-s (apparently...)
+  (16 . ac-previous)
+  (14 . ac-next)
+  (13 . ac-complete))   ;; 13 = CR
+'(keymap
+  (C-up . ac-quick-help-scroll-up)
+  (C-down . ac-quick-help-scroll-down)
+  (67108927 . ac-help)
+  (M-f1 . ac-persist-help)
+  (f1 . ac-help)
+  (up . ac-previous)
+  (down . ac-next))
+
+  '(keymap 
+  ;; number keys complete menu items by index
+    (57 . ac-complete-select-9)
+    (56 . ac-complete-select-8)
+    (55 . ac-complete-select-7)
+    (54 . ac-complete-select-6)
+    (53 . ac-complete-select-5)
+    (52 . ac-complete-select-4)
+    (51 . ac-complete-select-3)
+    (50 . ac-complete-select-2)
+    (49 . ac-complete-select-1))
+
+ '( 
+    (16 . ac-quick-help-scroll-up)
+    (14 . ac-quick-help-scroll-down)
+    (67108927 . ac-persist-help)
+    (9 . auto-complete)         ; 9 = TAB
+
+  (up . ac-previous)
+  (down . ac-next)
+  ((kbd "RET") . ac-complete)
+  (13 . ac-complete)        ; CR
+  ((kbd "TAB") . ac-expand)
+  (9 . ac-expand))          ; TAB
+
+
+
+;; ;;
+;; AC NON TRIGGER COMMANDS
+;; *table--cell-self-insert-command
+;; electric-buffer-list
+;; ;;self-insert-command
+;; newline
+
+
+;; AC TRIGGER COMMANDS
+;; widget-forward
+;; indent-for-tab-command
+;; insert-tab
+;; indent-relative-maybe
+
+;; AC AUTO START
+;; ;>> never
+
+
+
+;; ac-trigger-commands-on-completing: 
+;; '(delete-backward-char backward-delete-char backward-delete-char-untabify autopair-backspace paredit-backward-delete paredit-backward-delete-word)

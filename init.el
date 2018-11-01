@@ -1,5 +1,7 @@
-;; (require 'package)
 
+(unless (directory-files "/tmp/" '() "emacs" ) (mkdir "/tmp/emacs"))
+
+;; (require 'package)
 
 (let* ( (no-ssl (and (memq system-type '(windows-nt ms-dos))
                       (not (gnutls-available-p)) ))
@@ -11,13 +13,8 @@
       (when  (< emacs-major-version 24)
          (add-to-list 'package-archives
             '("gnu" . (concat proto "://elpa.gnu.org/packages/"))) )  )
-
        ; 
- 
 ;; (package-initialize)
-
-
-(unless (directory-files "/tmp/" '() "emacs" ) (mkdir "/tmp/emacs"))
 
 
 
@@ -27,7 +24,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(Info-breadcrumbs-depth 6)
- '(ac-auto-show-menu 0.25)
+ '(ac-auto-show-menu 1.5)
  '(ac-auto-start nil)
  '(ac-candidate-limit nil)
  '(ac-delay 0.25)
@@ -139,37 +136,39 @@
  '(comint-scroll-show-maximum-output nil)
  '(comint-terminfo-terminal "eterm-color")
  '(comint-use-prompt-regexp nil)
- '(company-auto-complete nil)
- '(company-auto-complete-chars '(32 95 40))
+ '(company-auto-complete t)
+ '(company-auto-complete-chars nil)
  '(company-begin-commands t)
  '(company-c-headers-path-user '(".."))
  '(company-clang-executable "clang")
  '(company-cmake-executable "/usr/bin/cmake")
  '(company-dabbrev-code-everywhere t)
  '(company-dabbrev-minimum-length 2)
- '(company-idle-delay 0.25)
+ '(company-frontends '(company-pseudo-tooltip-frontend))
+ '(company-idle-delay 1.5)
  '(company-lighter-base "company")
  '(company-minimum-prefix-length 1)
  '(company-posframe-mode t nil (company-posframe))
  '(company-require-match nil)
  '(company-show-numbers t)
  '(company-statistics-mode t)
- '(company-tooltip-idle-delay 0.25)
+ '(company-tooltip-idle-delay 1.5)
  '(completion-styles '(basic partial-completion emacs22 substring))
  '(completions-merging-modes '(lisp c emacs-lisp))
  '(confirm-kill-emacs 'y-or-n-p)
+ '(cquery-executable "/usr/local/bin/clang-query")
  '(cua-mode t nil (cua-base))
  '(cua-normal-cursor-color "light grey")
  '(cursor-in-non-selected-windows 'hollow)
  '(custom-raised-buttons t)
  '(custom-safe-themes
-    '("147cae96a3477db25d2dfaaabbaded8fc20086f55b35af6ab91cb66240a3c62d" default))
+    '("978810ffb763eb1090534d9faf50bc279e088c9a1cdc1666aac24375521e78b1" default))
  '(dash-enable-fontlock t)
  '(default-frame-alist '((left-fringe . 8) (right-fringe . 4)))
  '(dired-hide-details-hide-information-lines nil)
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-listing-switches "-alh")
- '(dired-mode-hook '(visual-line-mode toggle-truncate-lines))
+ '(dired-listing-switches "-ahlF")
+ '(dired-mode-hook '(visual-line-mode dired-hide-details-mode))
  '(display-line-numbers t)
  '(display-line-numbers-width 3)
  '(dynamic-completion-mode t)
@@ -265,7 +264,7 @@
  '(inline-docs-indicator-symbol ":/")
  '(inline-docs-prefix-symbol 32)
  '(irony-completion-trigger-commands
-    '(indent-relative-maybe newline-and-indent insert-tab indent-for-tab-command ac-expand auto-complete))
+    '(indent-relative-maybe newline-and-indent insert-tab indent-for-tab-command ac-expand auto-complete company-capf))
  '(irony-eldoc-strip-underscores nil)
  '(irony-eldoc-use-unicode t)
  '(irony-lang-compile-option-alist
@@ -274,7 +273,7 @@
        (objc-mode . "objective-c")))
  '(irony-lighter " irony")
  '(irony-server-build-dir "/tmp/emacs/irony-server")
- '(irony-server-install-prefix "~/bin/")
+ '(irony-server-install-prefix "~/")
  '(irony-server-source-dir
     (funcall
       #'(lambda nil
@@ -285,7 +284,6 @@
  '(irony-supported-major-modes '(c-mode c++-mode objc-mode))
  '(line-number-display-limit-width 14)
  '(line-spacing 0.11)
- '(linum-format "%4d")
  '(lisp-body-indent 3)
  '(lisp-extra-font-lock-global-mode t)
  '(lisp-extra-font-lock-modes '(emacs-lisp-mode lisp-mode lisp-interaction-mode))
@@ -336,7 +334,7 @@
  '(package-quickstart 't)
  '(package-quickstart-file "~/.emacs.d/package-quickstart.el")
  '(package-selected-packages
-    '(company-flx flx flx-ido flx-isearch fuzzy fn minimap flymake-gradle flymake-racket ac-racer ac-rtags anaphora auto-complete-exuberant-ctags avy-flycheck closure-lint-mode cmake-font-lock cmake-ide cmake-mode company-posframe company-racer company-rtags concurrent disaster el-get el-init el-init-viewer flycheck-popup-tip flycheck-rtags font-lock-profiler ggtags helm-c-yasnippet helm-cider helm-cider-history helm-codesearch helm-company helm-cscope helm-etags-plus helm-flycheck helm-flymake helm-frame helm-gtags helm-mode-manager helm-proc helm-rtags helm-xref isearch-symbol-at-point java-imports javadoc-lookup malinka nasm-mode nov pdf-tools peek-mode restart-emacs rtags sequences strie thingopt x509-mode x86-lookup xcscope ccls cquery ob-rust eglot yasnippet-snippets flycheck-ycmd ac-etags android-mode company-ycm company-ycmd cpputils-cmake datomic-snippets eldoc-eval elein cmake-project demangle-mode flymake-google-cpplint gnome-c-style ycm company-irony-c-headers company-irony irony-eldoc flycheck-irony company-lsp replace-pairs replace-symbol sayid sed-mode sexp-move slime slime-company smart-jump smartscan symbol-overlay syntactic-close tab-jump-out undo-tree yasnippet-classic-snippets flycheck-pos-tip flycheck-posframe discover-clj-refactor sotclojure walkclj lisp-extra-font-lock jdecomp lsp-clangd lsp-ui lsp-rust lsp-mode cargo flycheck-rust flymake-rust racer rust-mode rust-playground rustic trie srefactor flycheck-joker cider clj-refactor cljr-helm cljsbuild-mode clomacs ejc-sql el-autoyas helm-clojuredocs parinfer parseclj typed-clojure-mode mc-extras ac-cider cider-decompile cider-eval-sexp-fu cider-spy evalator-clojure javap-mode nrepl-eval-sexp-fu cider-hydra clojars clojure-cheatsheet clojure-quick-repls flycheck-clojure nrepl-sync monroe eterm-256color align-cljlet clojure-mode clojure-mode-extra-font-locking clojure-snippets inf-clojure foreign-regexp unkillable-scratch visual-regexp visual-regexp-steroids delim-kill company-math company-statistics counsel-etags ac-capf auto-minor-mode beacon better-shell readline-complete repl-toggle shell-command ssh ssh-agency ssh-config-mode ssh-tunnels test-simple undercover undohist yafolding ac-c-headers build-helper build-status diffview flycheck flycheck-swiftlint flymake-shell function-args git git-attr git-auto-commit-mode git-command git-commit git-dwim git-io git-lens git-link git-messenger git-msg-prefix git-timemachine git-wip-timemachine gitconfig gitconfig-mode gited ido-at-point ipretty ivy-dired-history json-mode makefile-executor math-symbol-lists math-symbols modern-cpp-font-lock package-safe-delete pcmpl-args pcmpl-git popup-complete company-c-headers company window-layout window-purpose vkill with-simulated-input xterm-frobs xterm-title paren-face scheme-complete shell-switcher shell-toggle signal smart-comment smart-compile smart-cursor-color smart-forward snippet sotlisp strace-mode stream string-edit sudo-edit sudo-ext tco iedit list-packages-ext macro-math macrostep manage-minor-mode maxframe mic-paren minimal-session-saver mmt es-lib eval-expr eval-in-repl eval-sexp-fu heap highlight-defined highlight-escape-sequences highlight-function-calls highlight-operators highlight-parentheses highlight-quoted highlight-refontification highlight-stages highlight-symbol highlight-thing highlight-unique-symbol hippie-exp-ext hippie-namespace ctable ctags-update dash-functional db discover discover-my-major dr-racket-like-unicode eacl ecb ede-compdb edebug-x eide el-sprunge elf-mode elisp-lint elisp-sandbox elmacro auto-compile auto-complete-chunk auto-highlight-symbol auto-shell-command autodisass-llvm-bitcode bshell c-eldoc cd-compile cedit cff chapel-mode charmap cl-format cl-generic cl-lib cl-lib-highlight cl-print codebug codesearch comint-intercept commenter common-lisp-snippets auto-complete-c-headers google-c-style opencl-mode preproc-font-lock basic-c-compile flycheck-pkg-config flycheck-tip flymake-cursor ivy-hydra language-detection mark-multiple scheme-here term+ term+mux term-manager test-c test-case-mode tree-mode xterm-color xterm-keybinder xtest quack racket-mode golden-ratio-scroll-screen font-lock-studio font-lock+ flyparens flymake-cppcheck flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms clang-format auto-complete-clang-async auto-complete-clang ac-clang))
+    '(llvm-mode company-flx flx flx-ido flx-isearch fuzzy fn minimap flymake-gradle flymake-racket ac-racer ac-rtags anaphora auto-complete-exuberant-ctags avy-flycheck closure-lint-mode cmake-font-lock cmake-ide cmake-mode company-posframe company-racer company-rtags concurrent disaster el-get el-init el-init-viewer flycheck-popup-tip flycheck-rtags font-lock-profiler ggtags helm-c-yasnippet helm-cider helm-cider-history helm-codesearch helm-company helm-cscope helm-etags-plus helm-flycheck helm-flymake helm-frame helm-gtags helm-mode-manager helm-proc helm-rtags helm-xref isearch-symbol-at-point java-imports javadoc-lookup malinka nasm-mode nov pdf-tools peek-mode restart-emacs rtags sequences strie thingopt x509-mode x86-lookup xcscope ccls cquery ob-rust eglot yasnippet-snippets flycheck-ycmd ac-etags android-mode company-ycm company-ycmd cpputils-cmake datomic-snippets eldoc-eval elein cmake-project demangle-mode flymake-google-cpplint gnome-c-style ycm company-irony-c-headers company-irony irony-eldoc flycheck-irony company-lsp replace-pairs replace-symbol sayid sed-mode sexp-move slime slime-company smart-jump smartscan symbol-overlay syntactic-close tab-jump-out undo-tree yasnippet-classic-snippets flycheck-pos-tip flycheck-posframe discover-clj-refactor sotclojure walkclj lisp-extra-font-lock jdecomp lsp-clangd lsp-ui lsp-rust lsp-mode cargo flycheck-rust flymake-rust racer rust-mode rust-playground rustic trie srefactor flycheck-joker cider clj-refactor cljr-helm cljsbuild-mode clomacs ejc-sql el-autoyas helm-clojuredocs parinfer parseclj typed-clojure-mode mc-extras ac-cider cider-decompile cider-eval-sexp-fu cider-spy evalator-clojure javap-mode nrepl-eval-sexp-fu cider-hydra clojars clojure-cheatsheet clojure-quick-repls flycheck-clojure nrepl-sync monroe eterm-256color align-cljlet clojure-mode clojure-mode-extra-font-locking clojure-snippets inf-clojure foreign-regexp unkillable-scratch visual-regexp visual-regexp-steroids delim-kill company-math company-statistics counsel-etags ac-capf auto-minor-mode beacon better-shell readline-complete repl-toggle shell-command ssh ssh-agency ssh-config-mode ssh-tunnels test-simple undercover undohist yafolding ac-c-headers build-helper build-status diffview flycheck flycheck-swiftlint flymake-shell function-args git git-attr git-auto-commit-mode git-command git-commit git-dwim git-io git-lens git-link git-messenger git-msg-prefix git-timemachine git-wip-timemachine gitconfig gitconfig-mode gited ido-at-point ipretty ivy-dired-history json-mode makefile-executor math-symbol-lists math-symbols modern-cpp-font-lock package-safe-delete pcmpl-args pcmpl-git popup-complete company-c-headers company window-layout window-purpose vkill with-simulated-input xterm-frobs xterm-title paren-face scheme-complete shell-switcher shell-toggle signal smart-comment smart-compile smart-cursor-color smart-forward snippet sotlisp strace-mode stream string-edit sudo-edit sudo-ext tco iedit list-packages-ext macro-math macrostep manage-minor-mode maxframe mic-paren minimal-session-saver mmt es-lib eval-expr eval-in-repl eval-sexp-fu heap highlight-defined highlight-escape-sequences highlight-function-calls highlight-operators highlight-parentheses highlight-quoted highlight-refontification highlight-stages highlight-symbol highlight-thing highlight-unique-symbol hippie-exp-ext hippie-namespace ctable ctags-update dash-functional db discover discover-my-major dr-racket-like-unicode eacl ecb ede-compdb edebug-x eide el-sprunge elf-mode elisp-lint elisp-sandbox elmacro auto-compile auto-complete-chunk auto-highlight-symbol auto-shell-command autodisass-llvm-bitcode bshell c-eldoc cd-compile cedit cff chapel-mode charmap cl-format cl-generic cl-lib cl-lib-highlight cl-print codebug codesearch comint-intercept commenter common-lisp-snippets auto-complete-c-headers google-c-style opencl-mode preproc-font-lock basic-c-compile flycheck-pkg-config flycheck-tip flymake-cursor ivy-hydra language-detection mark-multiple scheme-here term+ term+mux term-manager test-c test-case-mode tree-mode xterm-color xterm-keybinder xtest quack racket-mode golden-ratio-scroll-screen font-lock-studio font-lock+ flyparens flymake-cppcheck flycheck-inline flycheck-cstyle flycheck-color-mode-line flycheck-clangcheck flycheck-clang-tidy flycheck-clang-analyzer flycheck-checkbashisms clang-format auto-complete-clang-async auto-complete-clang ac-clang))
  '(package-user-dir "~/.emacs.d/elpa")
  '(paren-face-modes
     '(lisp-mode emacs-lisp-mode lisp-interaction-mode ielm-mode scheme-mode inferior-scheme-mode clojure-mode cider-repl-mode nrepl-mode arc-mode inferior-arc-mode c-mode rust-mode rustic-mode))
@@ -344,7 +342,7 @@
  '(proced-after-send-signal-hook '(proced-revert))
  '(proced-tree-flag t)
  '(prog-mode-hook
-    '(auto-complete-mode flycheck-mode yas-minor-mode symbol-overlay-mode paren-face-mode))
+    '(auto-complete-mode flycheck-mode yas-minor-mode symbol-overlay-mode paren-face-mode company-mode))
  '(quick-peek-position 'above)
  '(rtags-display-summary-as-tooltip t)
  '(rust-always-locate-project-on-open t)
@@ -499,8 +497,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-template-field ((t (:background "#305e5b" :foreground "#262e1b"))))
- '(company-tooltip ((t (:background "#407b7b" :foreground "#222a19")))))
+ )
 
 
 
@@ -595,103 +592,89 @@
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ; compiled-init automation 
 
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ; conveniences
+
+(defalias 'λ 'lambda)
+ 
+(fset 'yes-or-no-p 'y-or-n-p)
+ 
 (defun compile-init ()
   (interactive)
   (byte-compile-file "~/.emacs.d/init.el"))
-
+ ;
 (add-hook 'kill-emacs-hook 'compile-init)
-
-(defalias 'λ 'lambda)
-;(fset 'λ (symbol-function 'lambda ))
-
-(fset 'yes-or-no-p 'y-or-n-p)
 
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ;  mapping hotkeys
+;; ;  hotkeys
 
 
 ; ;  lambda
  (global-set-key         (kbd "s-("  )
    (λ () (interactive)     (insert-char #x03BB) ))
 
-
 ; ;  managing windows
- (global-set-key         (kbd "M-s-1")
-   (λ () (interactive)      (split-window-right) ))
- (global-set-key         (kbd "M-s-2")
-   (λ () (interactive)      (split-window-below) ))
- (global-set-key         (kbd "C-s-2")
-   (λ () (interactive)      (make-frame) ))
+ (global-set-key  (kbd "M-s-1")  'split-window-right)
+ (global-set-key  (kbd "M-s-2")  'split-window-below)
+ (global-set-key  (kbd "C-s-2")  'make-frame)
 ;
- (global-set-key         (kbd "M-s-3")
+ (global-set-key  (kbd "M-s-3")
    (λ () (interactive)      (delete-window (next-window)) ))
- (global-set-key         (kbd "M-s-`")
+ (global-set-key  (kbd "M-s-`")
    (λ () (interactive)      (delete-window) ))
- (global-set-key         (kbd "C-s-`")
+ (global-set-key  (kbd "C-s-`")
    (λ () (interactive)      (delete-frame (selected-frame)) ))
 ;
- (global-set-key         (kbd "s-w")
+ (global-set-key  (kbd "s-w")
    (λ () (interactive)      (select-window (next-window)) ))
- (global-set-key         (kbd "s-q")
+ (global-set-key  (kbd "s-q")
    (λ () (interactive)      (select-window (previous-window)) ))
- (global-set-key         (kbd "s-e")
+ (global-set-key  (kbd "s-e")
    (λ () (interactive)      (other-frame 1) ))
+;
+ (global-set-key (kbd "M-s-<tab>")  'ace-swap-window)
  
 
-
 ; ;  managing buffers
- (global-set-key         (kbd "M-s-q")
-   (λ () (interactive)      (next-buffer) ))
- (global-set-key         (kbd "M-s-w")
-   (λ () (interactive)      (previous-buffer) ))
- (global-set-key         (kbd "M-s-s")
-   (λ () (interactive)      (bury-buffer) ))
- (global-set-key         (kbd "M-s-a")
-   (λ () (interactive)      (kill-this-buffer) ))
- (global-set-key         (kbd "M-s-d")
-   (λ () (interactive)      (kill-buffer-and-window) ))
+ (global-set-key  (kbd "M-s-q")  'next-buffer)
+ (global-set-key  (kbd "M-s-w")  'previous-buffer)
+ (global-set-key  (kbd "M-s-s")  'bury-buffer)
+ (global-set-key  (kbd "M-s-a")  'kill-this-buffer)
+ (global-set-key  (kbd "M-s-d")  'kill-buffer-and-window)
 
-; ;  rectangles/multiple cursors
- (global-set-key         (kbd "C-s-z")
-   (λ () (interactive)      (rectangle-mark-mode) ))
 
+; ;  multiple cursors
  (require 'multiple-cursors)
  (define-key mc/keymap (kbd "<return>") 'nil)
- (global-set-key         (kbd "M-s-<up>")
-   (λ () (interactive)      (progn 
-                               (mc/create-fake-cursor-at-point)
-                               (mc/freeze-fake-cursors)
-                               (forward-line -1) )))
-                               ;;(previous-line) )))
- (global-set-key         (kbd "M-s-<down>")
-   (λ () (interactive)      (progn
-                               (mc/create-fake-cursor-at-point)
-                               (mc/freeze-fake-cursors)
-                               (forward-line 1) )))
-                               ;;(next-line) )))
- (global-set-key         (kbd "M-s-<right>")
-   (λ () (interactive)      (progn 
-                               (mc/unfreeze-fake-cursors)
-                               (mc/cycle-backward)
-                               (mc/remove-current-cursor)
-                               (mc/freeze-fake-cursors) )))
- (global-set-key         (kbd "M-s-<left>")
-   (λ () (interactive)      (progn 
-                               (mc/unfreeze-fake-cursors)
-                               (mc/remove-current-cursor) )))
- (global-set-key         (kbd "M-s-<kp-1>")
-   (λ () (interactive)      (mc/freeze-fake-cursors) ))
- (global-set-key         (kbd "M-s-<kp-0>")
-   (λ () (interactive)      (mc/unfreeze-fake-cursors) ))
- (global-set-key         (kbd "M-s-<kp-2>")
-                            'mc/mark-more-like-this-extended )
+;
+ (global-set-key  (kbd "M-s-<up>")    (λ () (interactive)
+                                        (progn (mc/create-fake-cursor-at-point)
+                                                (mc/freeze-fake-cursors)
+                                                (forward-line -1) )))
+ (global-set-key  (kbd "M-s-<down>")  (λ () (interactive)
+                                        (progn (mc/create-fake-cursor-at-point)
+                                                (mc/freeze-fake-cursors)
+                                                (forward-line 1) )))
+ (global-set-key  (kbd "M-s-<right>") (λ () (interactive)
+                                        (progn (mc/unfreeze-fake-cursors)
+                                                (mc/cycle-backward)
+                                                (mc/remove-current-cursor)
+                                                (mc/freeze-fake-cursors) )))
+ (global-set-key  (kbd "M-s-<left>")  (λ () (interactive)      
+                                                (progn (mc/unfreeze-fake-cursors)
+                                                        (mc/remove-current-cursor) )))
+ (global-set-key  (kbd "M-s-<kp-1>")  'mc/freeze-fake-cursors) 
+ (global-set-key  (kbd "M-s-<kp-0>")  'mc/unfreeze-fake-cursors)
+ (global-set-key  (kbd "M-s-<kp-2>")  'mc/mark-more-like-this-extended)
 
-
+; ;  rectangle
+ (global-set-key  (kbd "C-s-z")  'rectangle-mark-mode)
 
 ; ;  kmacro
  (global-set-key         (kbd "M-s-'")     
@@ -720,10 +703,10 @@
 
 
 ; ;  autocompletion?
- (global-set-key    (kbd "C-<tab>")   'company-complete)
+ (global-set-key (kbd "<backtab>") 'company-capf)
 
 
 
 
 ; ;  reduce from init-time value (set in early-init.el)
-(customize-set-value 'gc-cons-threshold 8388608) 
+  (customize-set-value 'gc-cons-threshold 8388608) 
