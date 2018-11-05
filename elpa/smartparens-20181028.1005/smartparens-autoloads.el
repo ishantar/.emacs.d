@@ -6,7 +6,8 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "smartparens" "smartparens.el" (0 0 0 0))
+;;;### (autoloads nil "smartparens" "smartparens.el" (23520 4613
+;;;;;;  972499 382000))
 ;;; Generated autoloads from smartparens.el
 
 (autoload 'sp-cheat-sheet "smartparens" "\

@@ -704,6 +704,19 @@ default, which should be the most verbose option available.")
   :group 'editing
   :prefix "sp-")
 
+(defvar sp-config-hook nil)
+
+(defcustom sp-config-hook-features '(smartparens-config)
+    "" ;; FIXME: explain set fn
+    :type '(repeat symbol)
+    :group 'smartparens
+    :set (lambda (NM VL)
+           (set-default NM VL)
+           (setq sp-config-hook 
+             (mapcar 
+              (lambda (SYM) (eval `(lambda () (require ',SYM))))
+              (eval NM)))))
+
 ;;;###autoload
 (define-minor-mode smartparens-mode
   "Toggle smartparens mode.
@@ -717,13 +730,14 @@ You can enable pre-set bindings by customizing
   :lighter (" SP" (:eval (if smartparens-strict-mode "/s" "")))
   :group 'smartparens
   :keymap smartparens-mode-map
-  (if smartparens-mode
-      (progn
-        (sp--init)
-        (add-hook 'self-insert-uses-region-functions 'sp-wrap--can-wrap-p nil 'local)
-        (run-hooks 'smartparens-enabled-hook))
-    (remove-hook 'self-insert-uses-region-functions 'sp-wrap--can-wrap-p 'local)
-    (run-hooks 'smartparens-disabled-hook)))
+  (progn (run-hooks 'sp-config-hook)
+          (if smartparens-mode
+              (progn
+                (sp--init)
+                 (add-hook 'self-insert-uses-region-functions 'sp-wrap--can-wrap-p nil 'local)
+                 (run-hooks 'smartparens-enabled-hook))
+            (remove-hook 'self-insert-uses-region-functions 'sp-wrap--can-wrap-p 'local)
+            (run-hooks 'smartparens-disabled-hook))))
 
 (defvar smartparens-strict-mode-map
   (let ((map (make-sparse-keymap)))
@@ -757,25 +771,28 @@ When strict mode is active, this is indicated with \"/s\"
 after the smartparens indicator in the mode list."
   :init-value nil
   :group 'smartparens
-  (if smartparens-strict-mode
-      (progn
-        (unless smartparens-mode
-          (smartparens-mode 1))
-        (unless (-find-indices (lambda (it) (eq (car it) 'smartparens-strict-mode)) minor-mode-overriding-map-alist)
-          (setq minor-mode-overriding-map-alist
-                (cons `(smartparens-strict-mode . ,smartparens-strict-mode-map) minor-mode-overriding-map-alist)))
-        (put 'sp-backward-delete-char 'delete-selection 'sp--delete-selection-supersede-p)
-        (put 'sp-delete-char 'delete-selection 'sp--delete-selection-supersede-p)
-        (add-hook 'self-insert-uses-region-functions 'sp--self-insert-uses-region-strict-p nil 'local)
-        (setq sp-autoskip-closing-pair 'always))
-    (setq minor-mode-overriding-map-alist
-          (-remove (lambda (it) (eq (car it) 'smartparens-strict-mode)) minor-mode-overriding-map-alist))
-    (put 'sp-backward-delete-char 'delete-selection 'supersede)
-    (put 'sp-delete-char 'delete-selection 'supersede)
-    (remove-hook 'self-insert-uses-region-functions 'sp--self-insert-uses-region-strict-p 'local)
-    (let ((std-val (car (plist-get (symbol-plist 'sp-autoskip-closing-pair) 'standard-value)))
-          (saved-val (car (plist-get (symbol-plist 'sp-autoskip-closing-pair) 'saved-value))))
-      (setq sp-autoskip-closing-pair (eval (or saved-val std-val))))))
+  (progn (run-hooks 'sp-config-hook) 
+          (if smartparens-strict-mode
+              (progn
+                (unless smartparens-mode
+                  (smartparens-mode 1))
+                 (unless (-find-indices (lambda (it) (eq (car it) 'smartparens-strict-mode)) minor-mode-overriding-map-alist)
+                   (setq minor-mode-overriding-map-alist
+                         (cons `(smartparens-strict-mode . ,smartparens-strict-mode-map) minor-mode-overriding-map-alist)))
+                 (put 'sp-backward-delete-char 'delete-selection 'sp--delete-selection-supersede-p)
+                 (put 'sp-delete-char 'delete-selection 'sp--delete-selection-supersede-p)
+                 (add-hook 'self-insert-uses-region-functions 'sp--self-insert-uses-region-strict-p nil 'local)
+                 (setq sp-autoskip-closing-pair 'always))
+            (setq minor-mode-overriding-map-alist
+                  (-remove (lambda (it) (eq (car it) 'smartparens-strict-mode)) minor-mode-overriding-map-alist))
+             (put 'sp-backward-delete-char 'delete-selection 'supersede)
+             (put 'sp-delete-char 'delete-selection 'supersede)
+             (remove-hook 'self-insert-uses-region-functions 'sp--self-insert-uses-region-strict-p 'local)
+             (let ((std-val 
+                      (car (plist-get (symbol-plist 'sp-autoskip-closing-pair) 'standard-value)))
+                   (saved-val 
+                     (car (plist-get (symbol-plist 'sp-autoskip-closing-pair) 'saved-value))))
+              (setq sp-autoskip-closing-pair (eval (or saved-val std-val)))))))
 
 ;;;###autoload
 (define-globalized-minor-mode smartparens-global-strict-mode
@@ -923,59 +940,25 @@ MODES."
   smartparens-mode
   turn-on-smartparens-mode)
 
-(defvar sp-config-hook nil)
-
-(defcustom sp-config-hook-features '(smartparens-config)
-    "" ;; FIXME: explain set fn
-    :type '(repeat symbol)
-    :group 'smartparens
-    :set (lambda (NM VL)
-           (set-default NM VL)
-           (setq sp-config-hook 
-             (mapcar 
-              (lambda (SYM) (eval `(lambda () (require ',SYM))))
-              (eval NM)))))
-
 ;;;###autoload
 (defun turn-on-smartparens-mode ()
-  "Turn on `smartparens-mode'.
+  "Turn on smartparens-mode'.
 
-This function is used to turn on `smartparens-global-mode'.
+This function is used to turn on smartparens-global-mode'.
 
-By default `smartparens-global-mode' ignores buffers with
-`mode-class' set to special, but only if they are also not comint
+By default smartparens-global-mode' ignores buffers with
+mode-class' set to special, but only if they are also not comint
 buffers.
 
-Additionally, buffers on `sp-ignore-modes-list' are ignored.
+Additionally, buffers on sp-ignore-modes-list' are ignored.
 
 You can still turn on smartparens in these mode manually (or
-in mode's startup-hook etc.) by calling `smartparens-mode'."
+in mode's startup-hook etc.) by calling smartparens-mode'."
   (interactive)
   (unless (or (member major-mode sp-ignore-modes-list)
               (and (not (derived-mode-p 'comint-mode))
                    (eq (get major-mode 'mode-class) 'special)))
-    (progn (run-hooks 'sp-config-hook)
-           (smartparens-mode t)) ))
-
-;; (defun turn-on-smartparens-mode ()
-;;   "Turn on smartparens-mode'.
-
-;; This function is used to turn on smartparens-global-mode'.
-
-;; By default smartparens-global-mode' ignores buffers with
-;; mode-class' set to special, but only if they are also not comint
-;; buffers.
-
-;; Additionally, buffers on sp-ignore-modes-list' are ignored.
-
-;; You can still turn on smartparens in these mode manually (or
-;; in mode's startup-hook etc.) by calling smartparens-mode'."
-;;   (interactive)
-;;   (unless (or (member major-mode sp-ignore-modes-list)
-;;               (and (not (derived-mode-p 'comint-mode))
-;;                    (eq (get major-mode 'mode-class) 'special)))
-;;     (smartparens-mode t)))
-
+    (smartparens-mode t)))
 
 ;;;###autoload
 (defun turn-off-smartparens-mode ()
@@ -9377,13 +9360,14 @@ a pair.  This mode works similarly to `show-paren-mode', but
 support custom pairs."
   :init-value nil
   :group 'show-smartparens
-  (if show-smartparens-mode
-      (unless sp-show-pair-idle-timer
-        (setq sp-show-pair-idle-timer
-              (run-with-idle-timer sp-show-pair-delay t
-                                   'sp-show--pair-function)))
-    (when sp-show-pair-overlays
-      (sp-show--pair-delete-overlays))))
+  (progn (run-hooks 'sp-config-hook)
+          (if show-smartparens-mode
+              (unless sp-show-pair-idle-timer
+                (setq sp-show-pair-idle-timer
+                      (run-with-idle-timer sp-show-pair-delay t
+                                           'sp-show--pair-function)))
+            (when sp-show-pair-overlays
+              (sp-show--pair-delete-overlays)))))
 
 ;;;###autoload
 (define-globalized-minor-mode show-smartparens-global-mode
