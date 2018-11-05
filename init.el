@@ -82,7 +82,7 @@
  '(c-max-one-liner-length 102)
  '(c-mode-common-hook nil)
  '(c-mode-hook
-   '(macrostep-c-mode-hook semantic-default-c-setup irony-mode irony-eldoc flycheck-clang-analyzer-setup flycheck-cstyle-setup flycheck-irony-setup cwarn-mode ac-etags-setup ac-etags-ac-setup ac-setup c-turn-on-eldoc-mode highlight-operators-mode) t)
+   '(macrostep-c-mode-hook semantic-default-c-setup irony-mode irony-eldoc flycheck-clang-analyzer-setup flycheck-cstyle-setup flycheck-irony-setup cwarn-mode ac-etags-setup ac-etags-ac-setup ac-setup c-turn-on-eldoc-mode highlight-operators-mode))
  '(c-tab-always-indent nil)
  '(cargo-process--command-flags "+stable")
  '(cargo-process--enable-rust-backtrace 1)
@@ -418,6 +418,7 @@
  '(smartparens-global-mode t)
  '(sp-clojure-modes
    '(cider-repl-mode clojure-mode clojurec-mode clojurescript-mode clojurex-mode inf-clojure-mode cider-clojure-interaction-mode))
+ '(sp-config-hook-features '(smartparens-config))
  '(sp-lisp-modes
    '(cider-repl-mode clojure-mode clojurec-mode clojurescript-mode clojurex-mode common-lisp-mode emacs-lisp-mode eshell-mode geiser-repl-mode gerbil-mode inf-clojure-mode inferior-emacs-lisp-mode inferior-lisp-mode inferior-scheme-mode lisp-interaction-mode lisp-mode monroe-mode racket-mode racket-repl-mode scheme-interaction-mode scheme-mode slime-repl-mode stumpwm-mode cider-clojure-interaction-mode))
  '(tab-always-indent 'nil)

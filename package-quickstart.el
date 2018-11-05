@@ -4313,18 +4313,18 @@ See `smartparens-mode' for more information on Smartparens mode.
 \(fn &optional ARG)" t nil)
 
 (autoload 'turn-on-smartparens-mode "smartparens" "\
-Turn on `smartparens-mode'.
+Turn on smartparens-mode'.
 
-This function is used to turn on `smartparens-global-mode'.
+This function is used to turn on smartparens-global-mode'.
 
-By default `smartparens-global-mode' ignores buffers with
-`mode-class' set to special, but only if they are also not comint
+By default smartparens-global-mode' ignores buffers with
+mode-class' set to special, but only if they are also not comint
 buffers.
 
-Additionally, buffers on `sp-ignore-modes-list' are ignored.
+Additionally, buffers on sp-ignore-modes-list' are ignored.
 
 You can still turn on smartparens in these mode manually (or
-in mode's startup-hook etc.) by calling `smartparens-mode'.
+in mode's startup-hook etc.) by calling smartparens-mode'.
 
 \(fn)" t nil)
 
