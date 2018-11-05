@@ -706,16 +706,27 @@ default, which should be the most verbose option available.")
 
 (defvar sp-config-hook nil)
 
-(defcustom sp-config-hook-features '(smartparens-config)
-    "" ;; FIXME: explain set fn
-    :type '(repeat symbol)
-    :group 'smartparens
-    :set (lambda (NM VL)
-           (set-default NM VL)
-           (setq sp-config-hook 
-             (mapcar 
-              (lambda (SYM) (eval `(lambda () (require ',SYM))))
-              (eval NM)))))
+(defcustom sp-config-options '(smartparens-config)
+  "Setting this variable directly outside of Customize will not take effect:
+    to configure this option from lisp code, set `sp-config-hook' to either
+    nil (no additional settings), or to a list of functions that each take
+    no arguments.  To use the default configuration, the first of these
+    functions should call `(require 'smartparens-config)'"
+
+  :type '(choice (const "no additional settings" nil)
+                 (set :tag "set configuration options:"
+                      (const :tag "use the default config for language-specific settings" 
+                             smartparens-config)
+                      (function :tag "set a personal configuration function")))
+  :group 'smartparens
+  :set (lambda (NAME VAL)  (let ((c (car VAL)))
+          (prog1 
+            (set-default NAME VAL)
+             (and c (if (functionp c)
+                           (setq sp-config-hook '(c))
+                      (setq sp-config-hook 
+                        (cons (lambda () (require 'smartparens-config))
+                               (and (cadr VAL) (list (cadr VAL))))) ))))))
 
 ;;;###autoload
 (define-minor-mode smartparens-mode
