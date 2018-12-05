@@ -1,0 +1,150 @@
+############### Tue Nov 20 22:18:23 EST 2018
+Updating '.':
+At revision 347376.
+
+
+############### Wed Nov 28 14:50:38 EST 2018
+Updating '.':
+D    test/libcxx/experimental/containers
+D    test/std/containers/views/span.comparison
+D    include/experimental/dynarray
+U    test/std/utilities/variant/variant.variant/variant.status/valueless_by_exception.pass.cpp
+U    utils/libcxx/test/format.py
+U    include/__config
+U    test/std/language.support/support.dynamic/new.delete/new.delete.single/new_align_val_t_nothrow.pass.cpp
+U    test/std/containers/sequences/array/size_and_alignment.pass.cpp
+U    test/std/utilities/any/any.nonmembers/any.cast/any_cast_request_invalid_value_category.fail.cpp
+U    test/std/utilities/any/any.nonmembers/any.cast/const_correctness.fail.cpp
+U    test/std/utilities/variant/variant.variant/variant.status/index.pass.cpp
+U    test/support/counting_predicates.hpp
+U    include/experimental/coroutine
+U    include/locale
+U    include/span
+U    include/istream
+U    utils/libcxx/test/config.py
+U    lib/abi/CHANGELOG.TXT
+U    lib/abi/x86_64-unknown-linux-gnu.v1.abilist
+U    lib/CMakeLists.txt
+U    test/libcxx/language.support/support.dynamic/libcpp_deallocate.sh.cpp
+U    test/libcxx/language.support/support.dynamic/new_faligned_allocation.sh.cpp
+A    test/libcxx/libcpp_alignof.pass.cpp
+U    test/libcxx/double_include.sh.cpp
+U    test/libcxx/min_max_macros.sh.cpp
+A    test/libcxx/strings/basic.string/string.modifiers/resize_default_initialized.pass.cpp
+U    test/std/strings/basic.string/string.capacity/reserve.pass.cpp
+U    test/std/depr/depr.str.strstreams/depr.strstreambuf/depr.strstreambuf.members/overflow.pass.cpp
+U    test/std/input.output/iostream.format/input.streams/istream.formatted/istream_extractors/signed_char_pointer.pass.cpp
+U    test/std/input.output/iostream.format/input.streams/istream.formatted/istream_extractors/wchar_t_pointer.pass.cpp
+U    test/std/input.output/iostream.format/input.streams/istream.formatted/istream_extractors/unsigned_char_pointer.pass.cpp
+U    test/std/input.output/iostream.format/input.streams/istream.unformatted/seekg_off.pass.cpp
+U    test/std/input.output/iostream.format/output.streams/ostream.formatted/ostream.inserters.arithmetic/minmax_showbase.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.array/new_align_val_t.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.array/delete_align_val_t_replace.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.array/new_align_val_t_nothrow_replace.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.array/new_align_val_t_nothrow.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.single/new_align_val_t.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.single/delete_align_val_t_replace.pass.cpp
+U    test/std/language.support/support.dynamic/new.delete/new.delete.single/new_align_val_t_nothrow_replace.pass.cpp
+U    test/std/containers/sequences/vector/vector.modifiers/insert_iter_iter_iter.pass.cpp
+U    test/std/utilities/meta/meta.trans/meta.trans.other/aligned_storage.pass.cpp
+U    test/std/utilities/any/any.nonmembers/any.cast/not_copy_constructible.fail.cpp
+U    test/std/utilities/variant/variant.variant/variant.ctor/default.pass.cpp
+U    test/support/test_macros.h
+U    include/memory
+U    include/string
+U    include/algorithm
+U    include/__sso_allocator
+U    include/string_view
+U    include/exception
+U    include/module.modulemap
+U    include/type_traits
+U    include/CMakeLists.txt
+U    docs/ReleaseNotes.rst
+U    www/cxx2a_status.html
+U    include/valarray
+U    src/filesystem/filesystem_common.h
+Updated to revision 347796.
+
+
+############### Mon Dec  3 16:13:38 EST 2018
+Updating '.':
+D    test/libcxx/libcpp_alignof.pass.cpp
+D    test/libcxx/language.support/support.dynamic/alloc.errors
+U    test/std/containers/sequences/array/size_and_alignment.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_signed.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/radix.pass.cpp
+U    test/std/thread/futures/futures.async/async_race.38682.pass.cpp
+U    test/std/utilities/meta/meta.trans/meta.trans.other/aligned_storage.pass.cpp
+U    test/support/test_macros.h
+U    test/std/language.support/support.limits/limits/numeric.limits.members/lowest.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/has_denorm_loss.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/digits.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/denorm_min.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_exact.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/max_exponent10.pass.cpp
+U    docs/ReleaseNotes.rst
+U    lib/libc++abi2.exp
+U    lib/abi/CHANGELOG.TXT
+U    lib/abi/x86_64-apple-darwin.v1.abilist
+U    lib/abi/x86_64-apple-darwin.v2.abilist
+U    test/libcxx/language.support/support.dynamic/libcpp_deallocate.sh.cpp
+U    test/libcxx/language.support/support.dynamic/new_faligned_allocation.sh.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/min.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/digits10.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/max.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_integer.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/infinity.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/const_data_members.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/traps.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_modulo.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_iec559.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/tinyness_before.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/round_error.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/has_signaling_NaN.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/min_exponent.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/max_exponent.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/signaling_NaN.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/round_style.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/epsilon.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/is_bounded.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/has_quiet_NaN.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/quiet_NaN.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/has_infinity.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/max_digits10.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/min_exponent10.pass.cpp
+U    test/std/language.support/support.limits/limits/numeric.limits.members/has_denorm.pass.cpp
+U    include/__sso_allocator
+U    include/experimental/coroutine
+U    include/valarray
+U    include/memory
+A    test/std/utilities/function.objects/refwrap/unwrap_ref_decay.pass.cpp
+A    test/std/utilities/function.objects/refwrap/unwrap_reference.pass.cpp
+U    test/std/utilities/meta/meta.unary/meta.unary.cat/is_integral.pass.cpp
+U    include/limits
+U    include/type_traits
+U    include/new
+U    src/support/runtime/exception_fallback.ipp
+U    include/utility
+U    include/__config
+U    www/cxx2a_status.html
+U    src/support/runtime/exception_msvc.ipp
+U    src/support/runtime/exception_glibcxx.ipp
+U    include/functional
+U    include/tuple
+U    src/support/runtime/exception_libcxxrt.ipp
+Updated to revision 348190.
+
+
+############### Mon Dec  3 17:18:12 EST 2018
+Updating '.':
+At revision 348197.
+
+
+############### Tue Dec  4 09:37:19 EST 2018
+Updating '.':
+At revision 348266.
+
+
+############### Tue Dec  4 09:38:06 EST 2018
+Updating '.':
+At revision 348266.

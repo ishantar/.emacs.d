@@ -1,0 +1,196 @@
+############### Tue Nov 20 22:18:23 EST 2018
+Updating '.':
+At revision 347376.
+
+
+############### Wed Nov 28 14:51:53 EST 2018
+Updating '.':
+U    unittests/tools/CMakeLists.txt
+U    CMakeLists.txt
+U    cmake/modules/AddLLDB.cmake
+A    lit/Driver
+A    lit/Driver/Inputs
+U    tools/debugserver/source/CMakeLists.txt
+U    tools/debugserver/CMakeLists.txt
+U    unittests/Host/FileSystemTest.cpp
+U    unittests/Utility/CMakeLists.txt
+A    unittests/Utility/ReproducerTest.cpp
+U    lldb.xcodeproj/project.pbxproj
+U    packages/Python/lldbsuite/test/functionalities/data-formatter/varscript_formatting/TestDataFormatterVarScriptFormatting.py
+U    packages/Python/lldbsuite/test/expression_command/radar_43822994/TestScopedEnumType.py
+U    test/CMakeLists.txt
+U    include/lldb/Core/Debugger.h
+U    include/lldb/Utility/Reproducer.h
+U    include/lldb/API/SBDebugger.h
+U    scripts/interface/SBDebugger.i
+U    lit/CMakeLists.txt
+U    lit/helper/toolchain.py
+A    lit/Driver/TestCommands.test
+A    lit/Driver/Inputs/Print0.in
+A    lit/Driver/Inputs/Print2.in
+A    lit/Driver/Inputs/Print4.in
+A    lit/Driver/Inputs/Print6.in
+A    lit/Driver/TestNoUseColor.test
+U    tools/driver/Driver.cpp
+U    tools/driver/CMakeLists.txt
+U    tools/driver/Driver.h
+A    tools/driver/Options.td
+U    source/Utility/CMakeLists.txt
+U    source/Utility/Reproducer.cpp
+U    source/Symbol/ClangASTImporter.cpp
+U    source/Core/Debugger.cpp
+U    source/Host/CMakeLists.txt
+U    source/Plugins/SymbolFile/DWARF/SymbolFileDWARFDebugMap.cpp
+U    source/Symbol/ClangASTContext.cpp
+U    source/Core/IOHandler.cpp
+U    source/API/SBDebugger.cpp
+U    source/Commands/CommandObjectReproducer.cpp
+U    source/Plugins/Process/gdb-remote/ProcessGDBRemote.cpp
+Updated to revision 347796.
+
+
+############### Mon Dec  3 16:13:55 EST 2018
+Updating '.':
+U    include/lldb/Host/HostInfoBase.h
+A    lit/Reproducer
+A    lit/Reproducer/Inputs
+A    lit/Reproducer/Inputs/simple.c
+U    cmake/modules/LLDBStandalone.cmake
+U    include/lldb/Utility/Reproducer.h
+U    include/lldb/Symbol/SymbolFile.h
+U    include/lldb/Symbol/SymbolVendor.h
+U    include/lldb/API/SBDefines.h
+U    include/lldb/API/SBDebugger.h
+U    include/lldb/API/SBModule.h
+U    include/lldb/API/SBFileSpec.h
+A    include/lldb/API/SBInitializerOptions.h
+U    include/lldb/API/SBThread.h
+U    include/lldb/Target/Thread.h
+U    include/lldb/Target/StackFrameRecognizer.h
+U    include/lldb/Initialization/SystemLifetimeManager.h
+U    include/lldb/Initialization/SystemInitializerCommon.h
+U    include/lldb/Initialization/SystemInitializer.h
+U    include/lldb/Core/Debugger.h
+A    scripts/interface/SBInitializerOptions.i
+U    scripts/interface/SBDebugger.i
+U    scripts/interface/SBModule.i
+U    scripts/lldb.swig
+A    lit/Reproducer/Inputs/GDBRemoteCapture.in
+A    lit/Reproducer/Inputs/GDBRemoteReplay.in
+A    lit/Reproducer/TestDriverOptions.test
+A    lit/Reproducer/TestGDBRemoteRepro.test
+A    lit/helper/build.py
+A    lit/Driver/TestCore.test
+A    lit/Breakpoint/Inputs/split-dwarf-5-addrbase.dwo.yaml
+A    lit/Breakpoint/Inputs/split-dwarf5-debug-stroffsets-file2.dwo.yaml
+A    lit/Breakpoint/Inputs/split-dwarf5-debug-stroffsets-main.yaml
+U    lit/SymbolFile/NativePDB/globals-bss.cpp
+U    lit/SymbolFile/NativePDB/global-classes.cpp
+A    lit/Breakpoint/split-dwarf-5-addrbase.test
+U    lit/SymbolFile/NativePDB/source-list.cpp
+U    lit/SymbolFile/NativePDB/tag-types.cpp
+U    lit/helper/toolchain.py
+A    lit/Driver/TestFile.test
+A    lit/Breakpoint/Inputs/split-dwarf5-debug-stroffsets-file1.dwo.yaml
+A    lit/Breakpoint/Inputs/split-dwarf-5-addrbase.yaml
+A    lit/Breakpoint/split-dwarf5-debug-stroffsets.test
+U    lit/SymbolFile/NativePDB/simple-breakpoints.cpp
+U    lit/SymbolFile/NativePDB/s_constant.cpp
+U    lit/SymbolFile/NativePDB/function-types-builtins.cpp
+U    lit/SymbolFile/NativePDB/function-types-classes.cpp
+A    lit/SymbolFile/PDB/expressions.test
+A    lit/SymbolFile/PDB/Inputs/ExpressionsTest2.script
+U    source/Plugins/SymbolFile/DWARF/DWARFUnit.h
+U    source/Plugins/SymbolFile/PDB/SymbolFilePDB.cpp
+U    source/Plugins/Process/Windows/Common/ProcessWindows.cpp
+U    source/Plugins/LanguageRuntime/ObjC/AppleObjCRuntime/AppleObjCRuntimeV1.cpp
+U    source/Target/Thread.cpp
+U    source/Initialization/SystemInitializerCommon.cpp
+U    source/API/SystemInitializerFull.cpp
+U    source/Host/common/HostInfoBase.cpp
+U    lit/SymbolFile/NativePDB/globals-fundamental.cpp
+U    lit/SymbolFile/NativePDB/bitfields.cpp
+A    lit/SymbolFile/PDB/Inputs/ExpressionsTest0.script
+U    source/Commands/CommandObjectReproducer.cpp
+U    lit/SymbolFile/NativePDB/disassembly.cpp
+U    lit/SymbolFile/NativePDB/nested-types.cpp
+A    lit/SymbolFile/PDB/Inputs/ExpressionsTest.cpp
+U    source/Expression/IRExecutionUnit.cpp
+U    source/Plugins/SymbolFile/DWARF/DWARFFormValue.cpp
+U    source/Plugins/SymbolFile/PDB/PDBASTParser.h
+U    source/Plugins/Process/Windows/Common/RegisterContextWindows.cpp
+U    source/Plugins/LanguageRuntime/ObjC/AppleObjCRuntime/AppleObjCRuntimeV2.cpp
+U    lit/SymbolFile/NativePDB/function-types-calling-conv.cpp
+U    lit/SymbolFile/NativePDB/ast-reconstruction.cpp
+A    lit/SymbolFile/PDB/Inputs/ExpressionsTest1.script
+A    packages/Python/lldbsuite/test/macosx/load-kext
+A    packages/Python/lldbsuite/test/functionalities/expr-entry-bp
+U    source/API/SystemInitializerFull.h
+U    tools/lldb-test/lldb-test.cpp
+U    tools/driver/CMakeLists.txt
+U    tools/lldb-server/SystemInitializerLLGS.cpp
+U    unittests/SymbolFile/PDB/SymbolFilePDBTests.cpp
+A    packages/Python/lldbsuite/test/macosx/load-kext/TestLoadKext.py
+A    packages/Python/lldbsuite/test/functionalities/expr-entry-bp/Makefile
+D    packages/Python/lldbsuite/test/functionalities/reproducer/gdb-remote/TestGdbRemoteReproducer.py
+D    packages/Python/lldbsuite/test/functionalities/reproducer/gdb-remote/Makefile
+U    source/Commands/CommandObjectThread.cpp
+U    source/Plugins/SymbolFile/PDB/PDBASTParser.cpp
+U    source/Plugins/ObjectFile/PECOFF/ObjectFilePECOFF.cpp
+U    source/Plugins/LanguageRuntime/ObjC/AppleObjCRuntime/AppleObjCRuntime.h
+U    source/Symbol/SymbolVendor.cpp
+U    source/Initialization/SystemLifetimeManager.cpp
+U    source/API/SBModule.cpp
+U    source/API/SBThread.cpp
+U    tools/lldb-test/SystemInitializerTest.cpp
+U    tools/driver/Driver.cpp
+U    tools/debugserver/CMakeLists.txt
+U    unittests/Utility/ReproducerTest.cpp
+U    packages/Python/lldbsuite/test/lang/objc/exceptions/TestObjCExceptions.py
+A    packages/Python/lldbsuite/test/functionalities/expr-entry-bp/TestExprEntryBP.py
+U    source/Plugins/SymbolFile/DWARF/DWARFUnit.cpp
+U    source/Plugins/SymbolFile/PDB/SymbolFilePDB.h
+U    source/Plugins/LanguageRuntime/ObjC/AppleObjCRuntime/AppleObjCRuntime.cpp
+U    source/Utility/Reproducer.cpp
+U    source/Target/StopInfo.cpp
+U    source/Core/Debugger.cpp
+A    source/API/SBInitializerOptions.cpp
+U    tools/driver/Platform.h
+U    tools/driver/Options.td
+U    tools/lldb-server/lldb-server.cpp
+U    packages/Python/lldbsuite/test/make/Makefile.rules
+A    packages/Python/lldbsuite/test/functionalities/expr-entry-bp/main.c
+U    source/Target/StackFrameRecognizer.cpp
+U    source/Core/Address.cpp
+U    source/API/SBDebugger.cpp
+U    source/API/CMakeLists.txt
+U    tools/lldb-test/SystemInitializerTest.h
+U    tools/driver/Driver.h
+U    tools/lldb-server/SystemInitializerLLGS.h
+U    lldb.xcodeproj/project.pbxproj
+A    packages/Python/lldbsuite/test/macosx/load-kext/mykext.yaml
+U    packages/Python/lldbsuite/test/lldbutil.py
+U    packages/Python/lldbsuite/test/functionalities/breakpoint/require_hw_breakpoints/TestRequireHWBreakpoints.py
+Updated to revision 348190.
+
+
+############### Mon Dec  3 17:18:12 EST 2018
+Updating '.':
+At revision 348197.
+
+
+############### Tue Dec  4 09:37:20 EST 2018
+Updating '.':
+U    packages/Python/lldbsuite/test/expression_command/options/main.cpp
+U    packages/Python/lldbsuite/test/expression_command/options/TestExprOptions.py
+U    source/Plugins/ExpressionParser/Clang/ClangASTSource.cpp
+U    source/Plugins/ExpressionParser/Clang/ClangExpressionParser.cpp
+U    source/Plugins/Platform/MacOSX/PlatformDarwin.cpp
+U    source/Host/common/MonitoringProcessLauncher.cpp
+U    unittests/tools/lldb-server/tests/TestBase.h
+Updated to revision 348266.
+
+
+############### Tue Dec  4 09:38:06 EST 2018
+Updating '.':
+At revision 348266.

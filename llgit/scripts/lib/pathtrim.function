@@ -1,0 +1,29 @@
+### lib/pathtrim.function
+
+function pathtrim() {
+  cond=1
+  str=${1}
+
+  while ((cond)); do
+   case $str in
+
+       *//*)
+         str=${str/*\/\//\/};;
+
+       *+([^./])*([^/])/../*)
+         str=${str/\/*([^\/])+([^.\/])*([^\/])\/..\//\/};;
+
+       *+([^/])/?(.))
+         str=${str%/?(.)};;
+
+       *+([^./])*([^/])/..)
+         str=${str%%+([^\/])\/..};;
+
+       */./*)
+         str=${str//\/.\//\/};;
+
+       *)  echo $str
+           cond=0;;
+     esac
+    done
+ }

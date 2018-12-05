@@ -1,0 +1,72 @@
+#! /bin/sh
+
+
+function check_updates()  {
+
+   echo -e "\\n$(cat ~/self/workbench/llvm-project/svn/.progress)\\n"
+
+   tail -n 1 ~/self/workbench/llvm-project/svn/log/* |
+      sed '/^=/{
+		 s/\/.*log\/\(.*\).log/\1....:....:./
+		 s/[ <>=.:]/ /g
+		 s/\(.\{17\}\).*$/\1/
+		 N
+		 s/\([0-9]*\)\.$/\1/
+		 s/\(.*\)\n.*\(rev.*\| ?[ADUCGER].*\)$/\1\t \2/
+
+		}'
+ }
+
+
+function update_repositories()  {
+
+   cd $(dirname $(echo $0))
+   export logdir="${PWD}/log"
+
+   [  "$(sed -n '1s/\(.*\).\{10\}/\1/p' .progress)" \
+    = "$(sed -n '4s/\(.*\).\{10\}/\1/p' .progress)"  ] \
+	  || mv .progress .prev-update
+
+
+   echo -e "############### $(date)\nupdate start...\n" \
+	   >  .progress \
+  \
+   && find ../llvm-source -type d -name .svn -exec sh -c ' \
+		    cd "{}/.." \
+		 && echo -e "\\n\\n############### $(date)" >> "${logdir}/$(basename $PWD).log" \
+		 && svn up &>> "${logdir}/$(basename $PWD).log" \
+		  &' \; \
+  \
+    & wait \
+   && echo -e "...finished\\n############### $(date)"  &>> .progress
+ }
+
+
+function read_cmdline()  {
+
+   if ! (($#)); then
+      update_repositories
+    else
+
+      shopt -s extglob
+      declare -i iparam=$(($# - 1))
+      declare -a opts=($@)
+      declare run_list
+
+      while [ $iparam -ge 0 ];  do
+	iparam=$((iparam - 1))
+
+        case  "${opts[iparam]#-}"
+          in
+            c|-check)    run_list=${run_list}${run_list:+$'\n'}"check_updates";;
+            u|-update)   run_list=${run_list}${run_list:+$'\n'}"update_repositories";;
+	    cu|uc)	 run_list=${run_list}${run_list:+$'\n'}"check_updates"$'\n'"update_repositories";;
+         esac
+       done
+
+       eval " $(echo "${run_list#$'\n'}" | sort | uniq)"
+   fi
+ }
+
+read_cmdline "$@"
+

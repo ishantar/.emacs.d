@@ -1,0 +1,101 @@
+############### Tue Nov 20 22:18:23 EST 2018
+Updating '.':
+At revision 347376.
+
+
+############### Wed Nov 28 14:50:34 EST 2018
+Updating '.':
+U    lib/sanitizer_common/sanitizer_platform_interceptors.h
+D    test/sanitizer_common/TestCases/NetBSD/setvbuf.cc
+U    cmake/Modules/HandleCompilerRT.cmake
+U    lib/xray/xray_fdr_logging.cc
+U    test/profile/Posix/instrprof-gcov-fork.test
+A    test/tsan/Linux/thread_timedjoin.c
+A    test/sanitizer_common/TestCases/Posix/setvbuf.cc
+U    cmake/config-ix.cmake
+U    lib/tsan/rtl/tsan_rtl_thread.cc
+U    lib/tsan/rtl/tsan_interceptors_mac.cc
+U    lib/tsan/rtl/tsan_rtl.h
+U    lib/tsan/rtl/tsan_interceptors.cc
+U    lib/tsan/check_analyze.sh
+U    lib/ubsan/ubsan_handlers.cc
+U    lib/ubsan/ubsan_flags.inc
+U    lib/sanitizer_common/sanitizer_coverage_fuchsia.cc
+U    lib/sanitizer_common/sanitizer_thread_registry.h
+U    lib/sanitizer_common/sanitizer_symbolizer_fuchsia.h
+U    lib/sanitizer_common/sanitizer_platform_limits_posix.cc
+U    lib/sanitizer_common/sanitizer_platform_limits_netbsd.cc
+U    lib/sanitizer_common/sanitizer_platform_limits_posix.h
+U    lib/sanitizer_common/sanitizer_thread_registry.cc
+U    lib/sanitizer_common/tests/CMakeLists.txt
+U    lib/sanitizer_common/sanitizer_platform_limits_netbsd.h
+U    lib/sanitizer_common/sanitizer_common_interceptors.inc
+U    lib/xray/xray_basic_logging.cc
+U    lib/xray/xray_x86_64.cc
+U    lib/xray/xray_allocator.h
+U    lib/xray/xray_tsc.h
+U    lib/xray/xray_utils.cc
+U    lib/xray/xray_interface.cc
+U    lib/xray/xray_utils.h
+U    lib/xray/xray_buffer_queue.cc
+U    lib/builtins/cpu_model.c
+A    test/tsan/Linux/thread_tryjoin.c
+U    test/ubsan/TestCases/Integer/no-recover.cpp
+U    test/xray/TestCases/Posix/fdr-reinit.cc
+Updated to revision 347796.
+
+
+############### Mon Dec  3 16:13:38 EST 2018
+Updating '.':
+U    test/asan/TestCases/Windows/dll_host.cc
+U    lib/sanitizer_common/sanitizer_file.h
+U    lib/sanitizer_common/sanitizer_common_interceptors.inc
+U    lib/sanitizer_common/sanitizer_platform_interceptors.h
+U    lib/sanitizer_common/sanitizer_rtems.cc
+U    lib/sanitizer_common/sanitizer_win.cc
+U    lib/sanitizer_common/sanitizer_platform.h
+U    lib/sanitizer_common/sanitizer_posix.cc
+U    lib/asan/asan_internal.h
+U    lib/asan/asan_malloc_mac.cc
+U    lib/asan/asan_rtems.cc
+U    lib/asan/asan_win.cc
+U    lib/asan/asan_linux.cc
+U    lib/asan/asan_fuchsia.cc
+U    lib/asan/asan_rtl.cc
+A    test/.clang-format
+U    test/profile/instrprof-darwin-exports.c
+U    test/sanitizer_common/ios_commands/iossim_run.py
+U    test/sanitizer_common/TestCases/Linux/ill.cc
+U    test/sanitizer_common/TestCases/Linux/signal_segv_handler.cc
+U    test/sanitizer_common/TestCases/Linux/assert.cc
+U    test/sanitizer_common/TestCases/Linux/allow_user_segv.cc
+U    test/sanitizer_common/TestCases/Posix/dump_instruction_bytes.cc
+A    test/sanitizer_common/TestCases/NetBSD/getvfsstat.cc
+A    test/asan/TestCases/Darwin/init_for_dlopen.cc
+U    test/asan/TestCases/Linux/preinstalled_signal.cc
+Updated to revision 348190.
+
+
+############### Mon Dec  3 17:18:12 EST 2018
+Updating '.':
+At revision 348197.
+
+
+############### Tue Dec  4 09:37:19 EST 2018
+Updating '.':
+D    lib/builtins/arm64
+U    lib/sanitizer_common/tests/sanitizer_allocator_test.cc
+U    lib/sanitizer_common/sanitizer_fuchsia.cc
+U    lib/sanitizer_common/sanitizer_platform_limits_netbsd.h
+U    lib/sanitizer_common/sanitizer_platform_limits_netbsd.cc
+U    lib/sanitizer_common/sanitizer_common_interceptors.inc
+U    lib/sanitizer_common/sanitizer_platform_interceptors.h
+A    test/sanitizer_common/TestCases/NetBSD/regex.cc
+A    test/sanitizer_common/TestCases/NetBSD/sysctl.cc
+A    test/sanitizer_common/TestCases/NetBSD/fts.cc
+Updated to revision 348266.
+
+
+############### Tue Dec  4 09:38:06 EST 2018
+Updating '.':
+At revision 348266.

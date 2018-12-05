@@ -1,0 +1,69 @@
+~/self/workbench/llvm/llvm-source/llvm
+	## http://llvm.org/svn/llvm-project/llvm/trunk
+~/self/workbench/llvm/llvm-source/test-suite
+	## http://llvm.org/svn/llvm-project/test-suite/trunk
+~/self/workbench/llvm/llvm-source/lldb
+	## http://llvm.org/svn/llvm-project/lldb/trunk/
+~/self/workbench/llvm/llvm-source/llvm/projects/compiler-rt
+	## http://llvm.org/svn/llvm-project/compiler-rt/trunk/
+~/self/workbench/llvm/llvm-source/llvm/projects/libcxx
+	## http://llvm.org/svn/llvm-project/libcxx/trunk
+~/self/workbench/llvm/llvm-source/llvm/projects/libcxxabi
+	## http://llvm.org/svn/llvm-project/libcxxabi/trunk
+~/self/workbench/llvm/llvm-source/llvm/projects/libunwind
+	## http://llvm.org/svn/llvm-project/libunwind/trunk/
+~/self/workbench/llvm/llvm-source/projects/parallel-libs
+	## http://llvm.org/svn/llvm-project/parallel-libs/trunk/
+~/self/workbench/llvm/llvm-source/llvm/tools/llvm/tools/clang
+	## http://llvm.org/svn/llvm-project/cfe/trunk/
+~/self/workbench/llvm/llvm-source/llvm/tools/llvm/tools/clang/tools/extra
+	## http://llvm.org/svn/llvm-project/clang-tools-extra/trunk/
+~/self/workbench/llvm/llvm-source/llvm/tools/lld
+	## http://llvm.org/svn/llvm-project/lld/trunk
+~/self/workbench/llvm/llvm-source/llvm/tools/polly
+	## http://llvm.org/svn/llvm-project/polly/trunk/
+
+
+
+llvm/
+ |
+ `----	build/
+ |	 |
+ |	 `----	buildX/
+ |	 |
+ |	 `----	buildY/
+ |
+ `----	llvm-source/
+ |	 |
+ |	 `----@	lldb/
+ |	 |
+ |	 `----@	llvm/
+ |	 |	 |
+ |	 |	 `----	projects/
+ |	 |	 |	 |
+ |	 |	 |	 `----@	compiler-rt/
+ |	 |	 |	 |
+ |	 |	 |	 `----@	libcxx/
+ |	 |	 |	 |
+ |	 |	 |	 `----@	libcxxabi/
+ |	 |	 |	 |
+ |	 |	 |	 `----@	libunwind/
+ |	 |	 |	 |
+ |	 |	 |	 `----@	parallel-libs/
+ |	 |	 |	 
+ |	 |	 `----	tools/
+ |	 |		 |
+ |	 |		 `----@	clang/
+ |	 |		 |	 |
+ |	 |		 |	 `----	tools/
+ |	 |		 |		 |
+ |	 |		 |		 `----@	extra/
+ |	 |		 `----@	lld/
+ |	 |		 |
+ |	 |		 `----@	polly/
+ |	 |
+ |	 `----@	test-suite/
+ |
+ `----	svn/
+	 |
+	 `----	log/

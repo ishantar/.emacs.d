@@ -1,0 +1,23 @@
+###       lib/get_objdir.function
+
+#include  lib/pathtrim.function
+
+
+function __do_get_objdir()  {
+
+   getopts :a:b:c OPTNAME
+     OPTARG=$(pathtrim ${OPTARG})
+
+     case $OPTNAME in
+        b)   OPTARG=${builds}/${OPTARG/*(*([^\/])\/)} ;;
+        c|?) OPTARG=${OPTARG:-${PWD}} ;;
+        :)   1>&2 echo "error: misspecified option -${OPTARG}"
+                  return 1;;
+      esac
+   echo ${OPTARG}
+ }
+
+
+function get_objdir() {
+    echo $(__do_get_objdir ${@}  ||  exit 1)
+ }
