@@ -1,2 +1,0 @@
-;;; -*- no-byte-compile: t -*-
-(define-package "nov" "20181023.855" "Featureful EPUB reader mode" '((dash "2.12.0") (esxml "0.3.3") (emacs "24.4")) :commit "2a24915bed45364f83aa672c191418a01b4b6d83" :keywords '("hypermedia" "multimedia" "epub") :authors '(("Vasilij Schneidermann" . "mail@vasilij.de")) :maintainer '("Vasilij Schneidermann" . "mail@vasilij.de") :url "https://github.com/wasamasa/nov.el")

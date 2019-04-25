@@ -3,27 +3,28 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-         query-replace
-         ))
+        query-replace
+        ))
 
 (setq mc/cmds-to-run-once
       '(
-         c-electric-paren
-         c-electric-semi&comma
-         c-electric-slash
-         c-electric-star
-         cua-scroll-up
-         eval-print-last-sexp
-         indent-for-tab-command
-         mode-line-minor-mode-help
-         mouse-set-region
-         overwrite-mode
-         rectangle-left-char
-         rectangle-next-line
-         rectangle-previous-line
-         rectangle-right-char
-         scroll-bar-toolkit-horizontal-scroll
-         toggle-input-method
-         undefined
-         widget-button-click
-         ))
+        beginning-of-buffer
+        c-electric-paren
+        c-electric-semi&comma
+        c-electric-slash
+        c-electric-star
+        cua-scroll-up
+        eval-print-last-sexp
+        indent-for-tab-command
+        mode-line-minor-mode-help
+        mouse-set-region
+        overwrite-mode
+        rectangle-left-char
+        rectangle-next-line
+        rectangle-previous-line
+        rectangle-right-char
+        scroll-bar-toolkit-horizontal-scroll
+        toggle-input-method
+        undefined
+        widget-button-click
+        ))

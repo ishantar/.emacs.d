@@ -1,21 +1,0 @@
-;;; smartparens-autoloads-el --- automatically extracted autoloads
-;;
-;;; Code:
-
-
-;;;### (autoloads nil "smartparens" "smartparens.elc" (23520 4621
-;;;;;;  652614 633000))
-;;; Generated autoloads from smartparens.elc
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "smartparens" '("make-sp-state" "show-smartparens-" "smartparens-" "sp-" "turn-o")))
-
-;;;***
-
-(provide 'smartparens-autoloads-el)
-;; Local Variables:
-;; version-control: never
-;; no-byte-compile: t
-;; no-update-autoloads: t
-;; coding: utf-8
-;; End:
-;;; smartparens-autoloads-el ends here

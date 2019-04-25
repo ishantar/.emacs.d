@@ -64,10 +64,13 @@
   '(flycheck-inline-error ((t (:inherit (highlight error) :underline nil :weight normal))))
   '(flycheck-inline-info ((t (:inherit highlight :foreground "goldenrod1" :underline nil :weight normal))))
   '(flycheck-inline-warning ((t (:inherit (compilation-warning flycheck-inline-error) :underline nil))))
+  '(flycheck-posframe-background-face ((t (:inherit default))))
+  '(flycheck-posframe-error-face ((t (:inherit flycheck-inline-error))))
+  '(flycheck-posframe-info-face ((t (:inherit flycheck-inline-info))))
+  '(flycheck-posframe-warning-face ((t (:inherit flycheck-inline-warning))))
   '(flycheck-warning ((t (:inherit highlight))))
   '(flymake-error ((t (:inherit flycheck-error))))
   '(flymake-warning ((t (:inherit font-lock-warning-face))))
-
   '(font-lock-builtin-face ((t (:foreground "#23ffef" :weight extra-bold))))
   '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
   '(font-lock-comment-face ((t (:foreground "#74af68" :slant italic))))
@@ -95,6 +98,7 @@
   '(line-number ((t (:inherit (default shadow\  hl-line) :foreground "#8b8682" :slant normal :height 110 :width condensed))))
   '(linum ((t (:inherit (default hl-line) :stipple nil :foreground "#8b8682" :strike-through nil :overline nil :slant normal :height 110 :width condensed))))
   '(lsp-face-highlight-textual ((t (:inherit (semantic-idle-symbol-highlight lazy-highlight)))))
+  '(lsp-ui-doc-header ((t (:background "medium purple" :foreground "black"))))
   '(mc/cursor-face ((t (:background "cyan4" :inverse-video nil :box (:line-width 1 :color "#55cc66" :style released-button)))))
   '(mode-line-inactive ((t (:inherit mode-line :background "grey30" :foreground "grey80" :box (:line-width 1 :color "grey40" :style released-button) :overline nil :weight light))))
   '(mode-line ((t (:background "#212931" :foreground "#eeeeec" :box (:line-width 1 :color "#365979" :style released-button) :overline "dark violet"))))
@@ -124,4 +128,3 @@
  )
 
 (provide-theme 'local-faces)
-
