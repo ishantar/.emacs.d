@@ -29,19 +29,12 @@
 \(fn KEY-SEQUENCE)" t nil)
 
 (autoload 'es-push-line "es-lib-core-functions" "\
-beginning-of-line + open line.
-
-\(fn)" t nil)
+beginning-of-line + open line." t nil)
 
 (autoload 'es-jump-line "es-lib-core-functions" "\
-end-of-line + newline.
+end-of-line + newline." t nil)
 
-\(fn)" t nil)
-
-(autoload 'es-new-empty-buffer "es-lib-core-functions" "\
-
-
-\(fn)" t nil)
+(autoload 'es-new-empty-buffer "es-lib-core-functions" nil t nil)
 
 (defvar es-highlighter-colors '("DeepPink" "cyan" "MediumPurple1" "SpringGreen1" "DarkOrange" "HotPink1" "RoyalBlue1" "OliveDrab"))
 
@@ -57,9 +50,7 @@ end-of-line + newline.
 
 (autoload 'es-c-expand-region "es-lib-core-functions" "\
 A simplee version of expand-region for c-like languages.
-Marks the symbol on first call, then marks the statement.
-
-\(fn)" t nil)
+Marks the symbol on first call, then marks the statement." t nil)
 
 (autoload 'es-comment-dwim "es-lib-core-functions" "\
 
@@ -77,14 +68,9 @@ Choose from a concatenated list of buffers and recent files.
 \(fn &optional THIS-MODE-ONLY)" t nil)
 
 (autoload 'es-manage-unsaved-buffers "es-lib-core-functions" "\
-Similar to what happends when emacs is about to quit.
+Similar to what happends when emacs is about to quit." t nil)
 
-\(fn)" t nil)
-
-(autoload 'es-query-replace-symbol-at-point "es-lib-core-functions" "\
-
-
-\(fn)" t nil)
+(autoload 'es-query-replace-symbol-at-point "es-lib-core-functions" nil t nil)
 
 (autoload 'es-ack-replace-symbol "es-lib-core-functions" "\
 Repalace symbol at point, or region contents in multiple

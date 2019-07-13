@@ -81,21 +81,15 @@ pressing `'' (quote) will let the user visit all shell
 buffers (this is actually done by `sswitcher--switch-partially'.
 
 If there is no shell buffer or if the only shell buffer is the
-current buffer, propose the creation of a new shell buffer.
-
-\(fn)" t nil)
+current buffer, propose the creation of a new shell buffer." t nil)
 
 (autoload 'shell-switcher-switch-buffer-other-window "shell-switcher" "\
 Switch to the most recently accessed buffer in another window.
 Same as `shell-switcher-switch-buffer' but change another
-window.
-
-\(fn)" t nil)
+window." t nil)
 
 (autoload 'shell-switcher-new-shell "shell-switcher" "\
-Unconditionally create and display a new shell buffer.
-
-\(fn)" t nil)
+Unconditionally create and display a new shell buffer." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "shell-switcher" '("shell-switcher-" "sswitcher--")))
 

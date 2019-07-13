@@ -12,9 +12,7 @@
 (autoload 'ssh-agency-ensure "ssh-agency" "\
 Start ssh-agent and add keys, as needed.
 
-Intended to be added to `magit-credential-hook'.
-
-\(fn)" nil nil)
+Intended to be added to `magit-credential-hook'." nil nil)
 
 (add-hook 'magit-credential-hook 'ssh-agency-ensure)
 

@@ -11,14 +11,10 @@
 ;;; Generated autoloads from highlight-escape-sequences.el
 
 (autoload 'turn-on-hes-mode "highlight-escape-sequences" "\
-Turn on highlighting of escape sequences.
-
-\(fn)" t nil)
+Turn on highlighting of escape sequences." t nil)
 
 (autoload 'turn-off-hes-mode "highlight-escape-sequences" "\
-Turn off highlighting of escape sequences
-
-\(fn)" t nil)
+Turn off highlighting of escape sequences" t nil)
 
 (defvar hes-mode nil "\
 Non-nil if Hes mode is enabled.

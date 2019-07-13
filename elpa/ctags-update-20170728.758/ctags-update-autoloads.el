@@ -29,9 +29,7 @@ if ARG is `toggle'; disable the mode otherwise.
 \(fn &optional ARG)" t nil)
 
 (autoload 'turn-on-ctags-auto-update-mode "ctags-update" "\
-turn on `ctags-auto-update-mode'.
-
-\(fn)" t nil)
+turn on `ctags-auto-update-mode'." t nil)
 
 (defvar ctags-global-auto-update-mode nil "\
 Non-nil if Ctags-Global-Auto-Update mode is enabled.

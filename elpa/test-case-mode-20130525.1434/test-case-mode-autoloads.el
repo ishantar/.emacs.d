@@ -37,9 +37,7 @@ and `test-case-mode-line-info-position'.
 \(fn &optional ARG)" t nil)
 
 (autoload 'enable-test-case-mode-if-test "test-case-mode" "\
-Turns on ``test-case-mode'' if this buffer is a recognized test.
-
-\(fn)" nil nil)
+Turns on ``test-case-mode'' if this buffer is a recognized test." nil nil)
 (add-hook 'find-file-hook 'enable-test-case-mode-if-test)
 
 (autoload 'test-case-find-all-tests "test-case-mode" "\

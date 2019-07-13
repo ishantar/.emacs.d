@@ -10,20 +10,14 @@
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from evalator-clojure.el
 
-(autoload 'evalator-clojure-context "evalator-clojure" "\
-
-
-\(fn)" nil nil)
+(autoload 'evalator-clojure-context "evalator-clojure" nil nil nil)
 
 (autoload 'evalator-clojure "evalator-clojure" "\
 
 
 \(fn &optional MODE)" t nil)
 
-(autoload 'evalator-clojure-explicit "evalator-clojure" "\
-
-
-\(fn)" t nil)
+(autoload 'evalator-clojure-explicit "evalator-clojure" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "evalator-clojure" '("evalator-clojure-")))
 

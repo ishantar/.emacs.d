@@ -16,9 +16,7 @@ The window scope is determined by `avy-all-windows' (ARG negates it).
 \(fn &optional ARG)" t nil)
 
 (autoload 'avy-flycheck-setup "avy-flycheck" "\
-Set up default keybindings.
-
-\(fn)" t nil)
+Set up default keybindings." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "avy-flycheck" '("avy-")))
 

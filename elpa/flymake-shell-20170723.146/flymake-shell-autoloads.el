@@ -10,9 +10,7 @@
 ;;; Generated autoloads from flymake-shell.el
 
 (autoload 'flymake-shell-load "flymake-shell" "\
-Configure flymake mode to check the current buffer's shell-script syntax.
-
-\(fn)" t nil)
+Configure flymake mode to check the current buffer's shell-script syntax." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-shell" '("flymake-shell-")))
 

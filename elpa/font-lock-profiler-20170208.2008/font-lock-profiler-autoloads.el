@@ -16,14 +16,10 @@ Profile font-lock from BEG to END and present report.
 \(fn BEG END)" t nil)
 
 (autoload 'font-lock-profiler-buffer "font-lock-profiler" "\
-Profile font-locking buffer and present report.
-
-\(fn)" t nil)
+Profile font-locking buffer and present report." t nil)
 
 (autoload 'font-lock-profiler-start "font-lock-profiler" "\
-Start recording font-lock profiling information.
-
-\(fn)" t nil)
+Start recording font-lock profiling information." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "font-lock-profiler" '("font-lock-profiler-")))
 

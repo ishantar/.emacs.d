@@ -13,9 +13,7 @@
 (autoload 'dr-racket-like-unicode-char "dr-racket-like-unicode" "\
 Transform the TeX-style code immediately prior to point into Unicode.
 
-Customize `dr-racket-like-unicode-table' to change the collection of unicode symbols.
-
-\(fn)" t nil)
+Customize `dr-racket-like-unicode-table' to change the collection of unicode symbols." t nil)
 
 (autoload 'dr-racket-like-unicode-mode "dr-racket-like-unicode" "\
 A minor mode for writing Unicode as in DrDr-Racket.

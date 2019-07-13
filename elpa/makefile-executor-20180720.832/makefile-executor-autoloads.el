@@ -22,9 +22,7 @@ Choose a Makefile target from all of the Makefiles in the project.
 
 If there are several Makefiles, a prompt to select one of them is shown.
 If so, the parent directory of the closest Makefile is added
-as initial input for convenience in executing the most relevant Makefile.
-
-\(fn)" t nil)
+as initial input for convenience in executing the most relevant Makefile." t nil)
 
 (autoload 'makefile-executor-execute-dedicated-buffer "makefile-executor" "\
 Runs a makefile target in a dedicated compile buffer.
@@ -45,9 +43,7 @@ argument is given, always prompt.
 \(fn ARG)" t nil)
 
 (autoload 'makefile-executor-goto-makefile "makefile-executor" "\
-Interactively choose a Makefile to visit.
-
-\(fn)" t nil)
+Interactively choose a Makefile to visit." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "makefile-executor" '("makefile-executor-")))
 

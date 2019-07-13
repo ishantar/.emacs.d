@@ -15,40 +15,25 @@
 
 \(fn MSG)" nil nil)
 
-(autoload 'ascmd:toggle "auto-shell-command" "\
-
-
-\(fn)" t nil)
+(autoload 'ascmd:toggle "auto-shell-command" nil t nil)
 
 (autoload 'ascmd:add "auto-shell-command" "\
 
 
 \(fn &optional V)" t nil)
 
-(autoload 'ascmd:remove "auto-shell-command" "\
+(autoload 'ascmd:remove "auto-shell-command" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'ascmd:remove-all "auto-shell-command" "\
-
-
-\(fn)" t nil)
+(autoload 'ascmd:remove-all "auto-shell-command" nil t nil)
 
 (autoload 'ascmd:popup "auto-shell-command" "\
 
 
 \(fn N)" t nil)
 
-(autoload 'ascmd:exec "auto-shell-command" "\
+(autoload 'ascmd:exec "auto-shell-command" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'ascmd:process-count-clear "auto-shell-command" "\
-
-
-\(fn)" t nil)
+(autoload 'ascmd:process-count-clear "auto-shell-command" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "auto-shell-command" '("ascmd:")))
 

@@ -10,14 +10,10 @@
 ;;; Generated autoloads from charmap.el
 
 (autoload 'charmap "charmap" "\
-Display a specified unicode block.
-
-\(fn)" t nil)
+Display a specified unicode block." t nil)
 
 (autoload 'charmap-all "charmap" "\
-Display entire unicode table.
-
-\(fn)" t nil)
+Display entire unicode table." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "charmap" '("charmap-" "with-charmap-buffer")))
 

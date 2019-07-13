@@ -16,9 +16,7 @@ This function uses the variables `basic-c-compile-compiler',
 `basic-c-compile-all-files' and `basic-c-compile-compiler-flags'.
 It uses `basic-c-compile--files-to-compile' in conjunction with
 `basic-c-compiler-all-files' to determine files to be the
-Makefile's INFILE.
-
-\(fn)" t nil)
+Makefile's INFILE." t nil)
 
 (autoload 'basic-c-compile-file "basic-c-compile" "\
 Compile file with or without a Makefile.
@@ -27,17 +25,13 @@ Makefile of not.  If you say yes ('y') and there is no Makefile
 in the directory then one is make using
 `basic-c-compile--makefile'.  The presence of a outfile is
 check for, if there is not one then 'rebuild' is called,
-otherwise 'build' is called.
-
-\(fn)" t nil)
+otherwise 'build' is called." t nil)
 
 (autoload 'basic-c-compile-run-c "basic-c-compile" "\
 Run the program.
 If the C source file is new than the outfile and
 `basic-c-compile-auto-comp' is true, then the file will be
-compiled before it is run.
-
-\(fn)" t nil)
+compiled before it is run." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "basic-c-compile" '("basic-c-compile-")))
 

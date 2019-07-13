@@ -10,9 +10,7 @@
 ;;; Generated autoloads from git-attr.el
 
 (autoload 'git-attr "git-attr" "\
-Get git attributes for current buffer file and set in buffer local variable `git-attr'.
-
-\(fn)" t nil)
+Get git attributes for current buffer file and set in buffer local variable `git-attr'." t nil)
 
 (autoload 'git-attr-get "git-attr" "\
 Get the git attribute named ATTR for the file in current buffer.
@@ -33,9 +31,7 @@ Get the git attribute named ATTR for the file in current buffer.
 ;;; Generated autoloads from git-attr-linguist.el
 
 (autoload 'git-attr-linguist "git-attr-linguist" "\
-Make vendored and generated files read only.
-
-\(fn)" nil nil)
+Make vendored and generated files read only." nil nil)
 
 (add-hook 'find-file-hook 'git-attr-linguist)
 

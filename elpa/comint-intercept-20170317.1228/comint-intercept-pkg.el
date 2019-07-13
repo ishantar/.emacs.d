@@ -1,2 +1,2 @@
-;;; -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.emacs.d/elpa/comint-intercept-20170317.1228/comint-intercept.el  -*- no-byte-compile: t -*-
 (define-package "comint-intercept" "20170317.1228" "Intercept input in comint-mode" '((emacs "24.3")) :commit "a329abf01fa8e0c6b02b46b29bcb421a21120dc5" :keywords '("processes" "terminals") :authors '(("\"Huang, Ying\"" . "huang.ying.caritas@gmail.com")) :maintainer '("\"Huang, Ying\"" . "huang.ying.caritas@gmail.com") :url "https://github.com/hying-caritas/comint-intercept")

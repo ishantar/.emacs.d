@@ -11,14 +11,10 @@
 ;;; Generated autoloads from rust-playground.el
 
 (autoload 'rust-playground "rust-playground" "\
-Run playground for Rust language in a new buffer.
-
-\(fn)" t nil)
+Run playground for Rust language in a new buffer." t nil)
 
 (autoload 'rust-playground-rm "rust-playground" "\
-Remove files of the current snippet together with directory of this snippet.
-
-\(fn)" t nil)
+Remove files of the current snippet together with directory of this snippet." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "rust-playground" '("in-rust-playground" "rust-playground-")))
 

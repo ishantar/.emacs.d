@@ -13,9 +13,7 @@
 (autoload 'git-msg-prefix "git-msg-prefix" "\
 Insert the relevant part of the chosen commit.
 Relevant meaning the result of `git-msg-prefix-regex'
-substitution.
-
-\(fn)" t nil)
+substitution." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-msg-prefix" '("git-msg-prefix-")))
 

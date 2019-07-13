@@ -37,14 +37,10 @@ The following options are settable via toggling functions (look at the
 documentation of these options for the names of these functions):
   `paren-match-quoted-paren'
   `paren-match-paired-delimiter'
-  `paren-open-paren-context-backward'
-
-\(fn)" t nil)
+  `paren-open-paren-context-backward'" t nil)
 
 (autoload 'paren-deactivate "mic-paren" "\
-Deactivate mic-paren parenthesis highlighting.
-
-\(fn)" t nil)
+Deactivate mic-paren parenthesis highlighting." t nil)
 
 (autoload 'paren-toggle-matching-paired-delimiter "mic-paren" "\
 Toggle matching paired delimiter.

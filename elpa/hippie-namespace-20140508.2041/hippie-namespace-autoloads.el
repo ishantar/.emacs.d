@@ -34,9 +34,7 @@ If the point is in the namespace or non-namespace portion of
 a symbol, mark only that portion of the symbol.
 
 If the point is in a symbol which does not match a namespace,
-there is no effect.
-
-\(fn)" t nil)
+there is no effect." t nil)
 
 (autoload 'hippie-namespace-mode "hippie-namespace" "\
 Turn on hippie-namespace-mode.

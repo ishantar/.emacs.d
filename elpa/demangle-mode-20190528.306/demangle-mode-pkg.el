@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.emacs.d/elpa/demangle-mode-20190528.306/demangle-mode.el  -*- no-byte-compile: t -*-
+(define-package "demangle-mode" "20190528.306" "Automatically demangle C++ symbols" '((cl-lib "0.1") (emacs "24")) :commit "06903d731dfde110e10b979dcc7624ef6dbb5ac8" :keywords '("c" "tools") :authors '(("Ben Liblit" . "liblit@acm.org")) :maintainer '("Ben Liblit" . "liblit@acm.org") :url "https://github.com/liblit/demangle-mode")

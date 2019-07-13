@@ -11,9 +11,7 @@
 
 (autoload 'shell-toggle-cd "shell-toggle" "\
 Call `shell-toggle' with a prefix argument.
-See command `shell-toggle'.
-
-\(fn)" t nil)
+See command `shell-toggle'." t nil)
 
 (autoload 'shell-toggle "shell-toggle" "\
 Toggle between the shell buffer and whatever buffer you are editing.

@@ -11,14 +11,10 @@
 ;;; Generated autoloads from helm-clojuredocs.el
 
 (autoload 'helm-clojuredocs "helm-clojuredocs" "\
-Preconfigured `helm' for searching in clojuredocs.org
-
-\(fn)" t nil)
+Preconfigured `helm' for searching in clojuredocs.org" t nil)
 
 (autoload 'helm-clojuredocs-at-point "helm-clojuredocs" "\
-Preconfigured `helm' for searching in clojuredocs.org with symbol at point
-
-\(fn)" t nil)
+Preconfigured `helm' for searching in clojuredocs.org with symbol at point" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-clojuredocs" '("helm-")))
 

@@ -1,2 +1,2 @@
-;;; -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.emacs.d/elpa/elisp-sandbox-20131116.1842/elisp-sandbox.el  -*- no-byte-compile: t -*-
 (define-package "elisp-sandbox" "20131116.1842" "Evaluate EmacsLisp expressions in a sandbox" 'nil :commit "d894d68934ef09c42f72ac4e1173a0bedc23f139" :keywords '("lisp") :authors '(("Joel McCracken <mccracken.joel@gmail.com>, D. Goel" . "deego@gnufans.org")) :maintainer '("Joel McCracken <mccracken.joel@gmail.com>, D. Goel" . "deego@gnufans.org") :url "https://github.com/joelmccracken/elisp-sandbox")

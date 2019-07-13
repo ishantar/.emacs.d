@@ -17,14 +17,10 @@ project.
 \(fn &optional PREFIX)" t nil)
 
 (autoload 'elein-kill-swank "elein" "\
-Kill swank process started by lein swank.
-
-\(fn)" t nil)
+Kill swank process started by lein swank." t nil)
 
 (autoload 'elein-reswank "elein" "\
-Kill current lisp, restart lein swank and connect slime to it.
-
-\(fn)" t nil)
+Kill current lisp, restart lein swank and connect slime to it." t nil)
 
 (autoload 'elein-run-cmd "elein" "\
 Run 'lein ARGS' using `compile' in the project root directory.

@@ -10,14 +10,10 @@
 ;;; Generated autoloads from maxframe.el
 
 (autoload 'w32-maximize-frame "maxframe" "\
-Maximize the current frame (windows only)
-
-\(fn)" t nil)
+Maximize the current frame (windows only)" t nil)
 
 (autoload 'w32-restore-frame "maxframe" "\
-Restore a minimized/maximized frame (windows only)
-
-\(fn)" t nil)
+Restore a minimized/maximized frame (windows only)" t nil)
 
 (autoload 'x-maximize-frame "maxframe" "\
 Maximize the current frame (x or mac only)

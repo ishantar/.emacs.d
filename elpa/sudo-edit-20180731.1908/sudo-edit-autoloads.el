@@ -11,9 +11,7 @@
 
 (autoload 'sudo-edit-set-header "sudo-edit" "\
 *Display a warning in header line of the current buffer.
-This function is suitable to add to `find-file-hook' and `dired-file-hook'.
-
-\(fn)" nil nil)
+This function is suitable to add to `find-file-hook' and `dired-file-hook'." nil nil)
 
 (defvar sudo-edit-indicator-mode nil "\
 Non-nil if Sudo-Edit-Indicator mode is enabled.

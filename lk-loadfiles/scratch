@@ -1,0 +1,31 @@
+;; (defun mapquote (LIST)
+;;   (let ((RESULT (cons nil nil))
+;;         (recfn (λ (args head tail)
+;;                  (setcdr tail (cons `(quote ,(car args)) nil))
+;;                  (if (cdr args)
+;;                      (funcall recfn (cdr args) head (cdr tail))
+;;                     head)) ))
+;;      (cdr (funcall recfn LIST RESULT RESULT)) ))
+
+;; (defmacro mapquote (LIST &optional NOT-FIRST)
+;;   (if (! (listp LIST))
+;;             `'',LIST
+;;         (let* ((HEAD (cons nil nil))
+;;                (recfn (λ (args head tail)
+;;                         (let ((argl (if (listp args) args (cons args nil))))
+;;                           (setcdr tail (cons `(quote ,(car argl)) nil))
+;;                           (if (cdr argl)
+;;                                  (funcall recfn (cdr argl) head (cdr tail))
+;;                               head)) ))
+;;                (RESULT `',(cdr (funcall recfn LIST HEAD HEAD)) ))
+;;           (if NOT-FIRST
+;;                 `(cons ,(car (cadr RESULT)) (cdadr ',RESULT))
+;;              RESULT) )))
+
+
+
+;; (defmacro else (&rest BODY)
+;;   (eval  (cons 'progn (mapquote BODY)) ))
+  
+;; (defmacro elif (IF THEN &optional ELSE)
+;;   (eval  (cons 'if (mapquote `(,(eval IF) ,THEN ,ELSE))) ))

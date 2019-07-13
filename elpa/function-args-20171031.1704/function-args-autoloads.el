@@ -22,9 +22,7 @@ if ARG is `toggle'; disable the mode otherwise.
 \(fn &optional ARG)" t nil)
 
 (autoload 'fa-config-default "function-args" "\
-Set up default key bindings.
-
-\(fn)" nil nil)
+Set up default key bindings." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "function-args" '("fa-" "filter" "function-args-mode-map" "moo-" "turn-on-function-args-mode")))
 

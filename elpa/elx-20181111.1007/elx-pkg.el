@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.emacs.d/elpa/elx-20181111.1007/elx.el  -*- no-byte-compile: t -*-
+(define-package "elx" "20181111.1007" "extract information from Emacs Lisp libraries" '((emacs "25.1")) :commit "c554db7e7f2c0c8a503def7739b8205193ba821f" :keywords '("docs" "libraries" "packages") :authors '(("Jonas Bernoulli" . "jonas@bernoul.li")) :maintainer '("Jonas Bernoulli" . "jonas@bernoul.li") :url "https://github.com/emacscollective/elx")

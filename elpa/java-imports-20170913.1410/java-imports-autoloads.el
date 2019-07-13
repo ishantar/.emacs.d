@@ -12,15 +12,11 @@
 (autoload 'java-imports-scan-file "java-imports" "\
 Scans a java-mode buffer, adding any import class -> package
 mappings to the import cache. If called with a prefix arguments
-overwrites any existing cache entries for the file.
-
-\(fn)" t nil)
+overwrites any existing cache entries for the file." t nil)
 
 (autoload 'java-imports-list-imports "java-imports" "\
 Return a list of all fully-qualified packages in the current
-Java-mode buffer
-
-\(fn)" t nil)
+Java-mode buffer" t nil)
 
 (autoload 'java-imports-add-import-with-package "java-imports" "\
 Add an import for the class for the name and package. Uses no caching.
@@ -45,9 +41,7 @@ already-existing class name.
 Add an import statement for the class at point. If no class is
 found, prompt for the class name. If the class's package already
 exists in the cache, add it and return, otherwise prompt for the
-package and cache it for future statements.
-
-\(fn)" t nil)
+package and cache it for future statements." t nil)
 
 (autoload 'java-imports-scan-local-jars "java-imports" "\
 

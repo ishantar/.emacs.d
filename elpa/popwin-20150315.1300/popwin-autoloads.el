@@ -37,15 +37,11 @@ Same as `pop-to-buffer' except that this function will use
 Call the following command interactively with letting
 `popwin:special-display-config' be
 `popwin:universal-display-config'. This will be useful when
-displaying buffers in popup windows temporarily.
-
-\(fn)" t nil)
+displaying buffers in popup windows temporarily." t nil)
 
 (autoload 'popwin:one-window "popwin" "\
 Delete other window than the popup window. C-g restores the
-original window configuration.
-
-\(fn)" t nil)
+original window configuration." t nil)
 
 (autoload 'popwin:popup-buffer-tail "popwin" "\
 Same as `popwin:popup-buffer' except that the buffer will be
@@ -65,9 +61,7 @@ Edit file FILENAME with popup window by
 \(fn FILE &optional WILDCARD)" t nil)
 
 (autoload 'popwin:messages "popwin" "\
-Display *Messages* buffer in a popup window.
-
-\(fn)" t nil)
+Display *Messages* buffer in a popup window." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "popwin" '("popwin")))
 

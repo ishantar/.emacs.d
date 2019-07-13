@@ -11,9 +11,7 @@
 ;;; Generated autoloads from helm-cider-history.el
 
 (autoload 'helm-cider-history "helm-cider-history" "\
-Show `cider-input-history` in `helm`.
-
-\(fn)" t nil)
+Show `cider-input-history` in `helm`." t nil)
 
 ;;;***
 

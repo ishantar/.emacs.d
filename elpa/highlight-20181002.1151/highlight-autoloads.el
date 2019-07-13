@@ -145,14 +145,10 @@ erase the face represented by the Nth entry of
 \(fn START-EVENT &optional FACE-NB)" t nil)
 
 (autoload 'hlt-highlighter-mouse "highlight" "\
-Same as `hlt-highlighter', but for binding to a menu item.
-
-\(fn)" t nil)
+Same as `hlt-highlighter', but for binding to a menu item." t nil)
 
 (autoload 'hlt-eraser-mouse "highlight" "\
-Same as `hlt-eraser', but for binding to a menu item.
-
-\(fn)" t nil)
+Same as `hlt-eraser', but for binding to a menu item." t nil)
 
 (autoload 'hlt-highlight "highlight" "\
 Highlight or unhighlight.
@@ -530,9 +526,7 @@ Optional arg MSGP non-nil means display a progress message.
 (autoload 'hlt-toggle-use-overlays-flag "highlight" "\
 Toggle `hlt-use-overlays-flag'.
 If the current value is non-nil, it is set to nil.
-If the current value is nil, it is set to the last non-nil value.
-
-\(fn)" t nil)
+If the current value is nil, it is set to the last non-nil value." t nil)
 
 (defalias 'hlt-paste-props 'hlt-yank-props)
 

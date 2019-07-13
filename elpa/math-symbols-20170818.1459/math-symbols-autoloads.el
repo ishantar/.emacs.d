@@ -219,10 +219,7 @@ Interactively input math characters from symbols.
 
 \(fn NAME)" t nil)
 
-(autoload 'math-symbols-helm "math-symbols" "\
-
-
-\(fn)" t nil)
+(autoload 'math-symbols-helm "math-symbols" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "math-symbols" '("math-symbols-")))
 

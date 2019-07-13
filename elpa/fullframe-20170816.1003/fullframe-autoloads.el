@@ -10,14 +10,10 @@
 ;;; Generated autoloads from fullframe.el
 
 (autoload 'fullframe/current-buffer-window-config "fullframe" "\
-Return the window-configuration stored for the current buffer.
-
-\(fn)" nil nil)
+Return the window-configuration stored for the current buffer." nil nil)
 
 (autoload 'fullframe/erase-current-buffer-window-config "fullframe" "\
-Forget the window config associated with the current buffer.
-
-\(fn)" nil nil)
+Forget the window config associated with the current buffer." nil nil)
 
 (autoload 'fullframe/set-current-buffer-window-config "fullframe" "\
 Associate the current buffer with the window-configuration WCONF.

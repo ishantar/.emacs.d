@@ -11,14 +11,9 @@
 ;;; Generated autoloads from readline-complete.el
 
 (autoload 'ac-rlc-setup-sources "readline-complete" "\
-Add me to shell-mode-hook!
+Add me to shell-mode-hook!" nil nil)
 
-\(fn)" nil nil)
-
-(autoload 'ac-rlc-prefix-shell-dispatcher "readline-complete" "\
-
-
-\(fn)" nil nil)
+(autoload 'ac-rlc-prefix-shell-dispatcher "readline-complete" nil nil nil)
 
 (eval-after-load 'auto-complete '(eval '(ac-define-source shell '((candidates . rlc-candidates) (prefix . ac-rlc-prefix-shell-dispatcher) (requires . 0)))))
 

@@ -10,9 +10,7 @@
 ;;; Generated autoloads from build-helper.el
 
 (autoload 'build-helper-setup "build-helper" "\
-Setup build-helper.
-
-\(fn)" nil nil)
+Setup build-helper." nil nil)
 
 (autoload 'build-helper-re-run "build-helper" "\
 Run the last command or functions associated with a TARGET.
@@ -32,34 +30,22 @@ This compile command will be executed from the function `projectile-project-root
 \(fn TARGET)" t nil)
 
 (autoload 'build-helper-re-run-test "build-helper" "\
-Run `build-helper-re-run' with target test.
-
-\(fn)" t nil)
+Run `build-helper-re-run' with target test." t nil)
 
 (autoload 'build-helper-re-run-build "build-helper" "\
-Run `build-helper-re-run' with target build.
-
-\(fn)" t nil)
+Run `build-helper-re-run' with target build." t nil)
 
 (autoload 'build-helper-re-run-run "build-helper" "\
-Run `build-helper-re-run' with target run.
-
-\(fn)" t nil)
+Run `build-helper-re-run' with target run." t nil)
 
 (autoload 'build-helper-run-test "build-helper" "\
-Run `build-helper-run' with target test.
-
-\(fn)" t nil)
+Run `build-helper-run' with target test." t nil)
 
 (autoload 'build-helper-run-build "build-helper" "\
-Run `build-helper-run' with target build.
-
-\(fn)" t nil)
+Run `build-helper-run' with target build." t nil)
 
 (autoload 'build-helper-run-run "build-helper" "\
-Run `build-helper-run' with target run.
-
-\(fn)" t nil)
+Run `build-helper-run' with target run." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "build-helper" '("build-helper-")))
 

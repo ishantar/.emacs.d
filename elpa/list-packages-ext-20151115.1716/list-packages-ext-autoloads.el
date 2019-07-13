@@ -54,24 +54,16 @@ package, or list of packages if the region is active.
 \(fn TAGLIST &optional ADD)" t nil)
 
 (autoload 'lpe:hide-package "list-packages-ext" "\
-Hides a package from the package list (applying the 'hidden' tag).
-
-\(fn)" t nil)
+Hides a package from the package list (applying the 'hidden' tag)." t nil)
 
 (autoload 'lpe:apply-last-tags "list-packages-ext" "\
-Apply the last tags applied with `lpe:tag'.
-
-\(fn)" t nil)
+Apply the last tags applied with `lpe:tag'." t nil)
 
 (autoload 'lpe:star "list-packages-ext" "\
-Toggles the starred tag to the current package or the packages in region if it is active.
-
-\(fn)" t nil)
+Toggles the starred tag to the current package or the packages in region if it is active." t nil)
 
 (autoload 'lpe:show-hidden-toggle "list-packages-ext" "\
-Toggles showing of hidden packages.
-
-\(fn)" t nil)
+Toggles showing of hidden packages." t nil)
 
 (autoload 'lpe:filter-by-tag-expr "list-packages-ext" "\
 Filters the list of packages with FILTER-STR.
@@ -92,29 +84,18 @@ To activate searching in the package summary, see `lpe:search-in-summary-toggle'
 \(fn REGEX)" t nil)
 
 (autoload 'lpe:search-in-summary-toggle "list-packages-ext" "\
-Toggles searching in package summary with `lpe:filter-with-regex'.
-
-\(fn)" t nil)
+Toggles searching in package summary with `lpe:filter-with-regex'." t nil)
 
 (autoload 'lpe:filters-history-forward "list-packages-ext" "\
-Goes forward to the next search in the search history.
-
-\(fn)" t nil)
+Goes forward to the next search in the search history." t nil)
 
 (autoload 'lpe:filters-history-backward "list-packages-ext" "\
-Goes back to the previous search.
-
-\(fn)" t nil)
+Goes back to the previous search." t nil)
 
 (autoload 'lpe:refresh "list-packages-ext" "\
-Refreshes the buffer.
+Refreshes the buffer." t nil)
 
-\(fn)" t nil)
-
-(autoload 'lpe::post-command-hook "list-packages-ext" "\
-
-
-\(fn)" nil nil)
+(autoload 'lpe::post-command-hook "list-packages-ext" nil nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "list-packages-ext" '("list-packages-ext-mode-" "lpe:")))
 

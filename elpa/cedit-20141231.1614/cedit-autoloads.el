@@ -52,63 +52,47 @@ foo; {|bar;} baz;  =>  ERROR
 (autoload 'cedit-down-block "cedit" "\
 go down into block
 |else{foo; bar;}  =>  else{|foo; bar;}
-|foo;  =>  ERROR
-
-\(fn)" t nil)
+|foo;  =>  ERROR" t nil)
 
 (autoload 'cedit-up-block-backward "cedit" "\
 go backward out of block.
 if called at top-level, goto beginning of the first statement.
 do{foo; bar; b|az;}  =>  |do{foo; bar; baz;}
- foo; bar; b|az;   =>   |foo; bar; baz;
-
-\(fn)" t nil)
+ foo; bar; b|az;   =>   |foo; bar; baz;" t nil)
 
 (autoload 'cedit-up-block-forward "cedit" "\
 go forward out of block.
 if called at top-level, goto end of the last statement.
 do{foo; bar; b|az;}  =>  do{foo; bar; baz;}|
- foo; bar; b|az;   =>   foo; bar; baz;|
-
-\(fn)" t nil)
+ foo; bar; b|az;   =>   foo; bar; baz;|" t nil)
 
 (autoload 'cedit-slurp "cedit" "\
 slurp statement
 {fo|o; bar;} baz;  =>  {fo|o, bar;} baz;
                    =>  {fo|o, bar; baz;}
-                   =>  {fo|o, bar, baz;}
-
-\(fn)" t nil)
+                   =>  {fo|o, bar, baz;}" t nil)
 
 (autoload 'cedit-wrap-brace "cedit" "\
 wrap statement with brace
-to wrap two or more statements, mark them
-
-\(fn)" t nil)
+to wrap two or more statements, mark them" t nil)
 
 (autoload 'cedit-barf "cedit" "\
 barf statement
 {fo|o, bar; baz;}  =>  {fo|o; bar; baz;}
                    =>  {fo|o; bar;} baz;
-                   =>  {fo|o;} bar; baz;
-
-\(fn)" t nil)
+                   =>  {fo|o;} bar; baz;" t nil)
 
 (autoload 'cedit-splice-killing-backward "cedit" "\
 splice statements killing preceding statements
 {foo; bar, b|az, foobar;}  =>  {foo; |baz, foobar;}
                            =>  {|baz, foobar;}
-                           =>  baz, foobar;
-
-\(fn)" t nil)
+                           =>  baz, foobar;" t nil)
 
 (autoload 'cedit-raise "cedit" "\
 raise statement
 {foo; bar, b|az, foobar;}  =>  {foo; |baz;}
                            =>  baz;
-to raise statement, in case comma-expr is also able to be raise, mark it.
-
-\(fn)" t nil)
+to raise statement, in case comma-expr is also able to be raise, mark it." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cedit" '("cedit-")))
 

@@ -126,9 +126,7 @@ This command can only be called from within a `buff-menu' buffer.
 Optionally save session data at shutdown time.
 
 This function has not effect unless the variable
-`minimal-session-saver-store-on-exit' is non-nil.
-
-\(fn)" nil nil)
+`minimal-session-saver-store-on-exit' is non-nil." nil nil)
 
 (when minimal-session-saver-store-on-exit (add-hook 'kill-emacs-hook 'minimal-session-saver-kill-emacs-hook))
 

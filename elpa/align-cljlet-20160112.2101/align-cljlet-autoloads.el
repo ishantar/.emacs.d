@@ -10,9 +10,7 @@
 ;;; Generated autoloads from align-cljlet.el
 
 (autoload 'align-cljlet "align-cljlet" "\
-Align a let form so that the bindings neatly align into columns
-
-\(fn)" t nil)
+Align a let form so that the bindings neatly align into columns" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "align-cljlet" '("acl-" "defroute-columns")))
 

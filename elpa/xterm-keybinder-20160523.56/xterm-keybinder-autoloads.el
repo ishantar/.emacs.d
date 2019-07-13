@@ -11,14 +11,10 @@
 ;;; Generated autoloads from xterm-keybinder.el
 
 (autoload 'xterm-keybinder-setup "xterm-keybinder" "\
-Enable Emacs keybinds even in the xterm terminal Emacs.
-
-\(fn)" t nil)
+Enable Emacs keybinds even in the xterm terminal Emacs." t nil)
 
 (autoload 'urxvt-keybinder-insert "xterm-keybinder" "\
-Insert urxvt setting.
-
-\(fn)" t nil)
+Insert urxvt setting." t nil)
 
 (autoload 'urxvt-change-font-size "xterm-keybinder" "\
 Change font size in URxvt.

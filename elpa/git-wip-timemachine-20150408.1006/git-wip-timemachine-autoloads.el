@@ -11,14 +11,10 @@
 ;;; Generated autoloads from git-wip-timemachine.el
 
 (autoload 'git-wip-timemachine "git-wip-timemachine" "\
-Enable git-wip timemachine for file of current buffer.
-
-\(fn)" t nil)
+Enable git-wip timemachine for file of current buffer." t nil)
 
 (autoload 'git-wip-timemachine-toggle "git-wip-timemachine" "\
-Toggle `git-wip-timemachine' mode.
-
-\(fn)" t nil)
+Toggle `git-wip-timemachine' mode." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-wip-timemachine" '("git-wip-timemachine-")))
 

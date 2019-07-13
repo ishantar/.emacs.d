@@ -13,9 +13,7 @@
 Offer contextual menu with actions based on current tag in scope.
 
 Each menu item added returns a token for what type of refactoring
-to perform.
-
-\(fn)" t nil)
+to perform." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "srefactor" '("srefactor-")))
 

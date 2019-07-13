@@ -9,10 +9,7 @@
 ;;;### (autoloads nil "cljr-helm" "cljr-helm.el" (0 0 0 0))
 ;;; Generated autoloads from cljr-helm.el
 
-(autoload 'cljr-helm "cljr-helm" "\
-
-
-\(fn)" t nil)
+(autoload 'cljr-helm "cljr-helm" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cljr-helm" '("cljr-helm-candidates" "helm-source-cljr")))
 

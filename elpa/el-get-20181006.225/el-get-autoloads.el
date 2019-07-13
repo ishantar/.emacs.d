@@ -10,9 +10,7 @@
 ;;; Generated autoloads from el-get.el
 
 (autoload 'el-get-version "el-get" "\
-Message the current el-get version
-
-\(fn)" t nil)
+Message the current el-get version" t nil)
 
 (autoload 'el-get-install "el-get" "\
 Cause the named PACKAGE to be installed after all of its
@@ -38,9 +36,7 @@ Update all installed packages of type TYPE.
 \(fn TYPE)" t nil)
 
 (autoload 'el-get-self-update "el-get" "\
-Update el-get itself.  The standard recipe takes care of reloading the code.
-
-\(fn)" t nil)
+Update el-get itself.  The standard recipe takes care of reloading the code." t nil)
 
 (autoload 'el-get-remove "el-get" "\
 Remove any PACKAGE that is know to be installed or required.
@@ -71,9 +67,7 @@ Compute the checksum of the given package, and put it in the kill-ring
 (autoload 'el-get-self-checksum "el-get" "\
 Compute the checksum of the running version of el-get itself.
 
-Also put the checksum in the kill-ring.
-
-\(fn)" t nil)
+Also put the checksum in the kill-ring." t nil)
 
 (autoload 'el-get "el-get" "\
 Ensure that packages have been downloaded once and init them as needed.
@@ -233,9 +227,7 @@ object or a file path.
 ;;; Generated autoloads from el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get-list-packages" "\
-Display a list of packages.
-
-\(fn)" t nil)
+Display a list of packages." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get-list-packages" '("el-get-")))
 

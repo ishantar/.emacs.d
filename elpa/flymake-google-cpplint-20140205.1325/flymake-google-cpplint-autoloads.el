@@ -11,9 +11,7 @@
 ;;; Generated autoloads from flymake-google-cpplint.el
 
 (autoload 'flymake-google-cpplint-load "flymake-google-cpplint" "\
-Configure flymake mode to check the current buffer's C/C++ source.
-
-\(fn)" t nil)
+Configure flymake mode to check the current buffer's C/C++ source." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-google-cpplint" '("flymake-google-cpplint-")))
 

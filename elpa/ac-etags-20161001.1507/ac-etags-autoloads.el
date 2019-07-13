@@ -10,19 +10,11 @@
 ;;; Generated autoloads from ac-etags.el
 
 (autoload 'ac-etags-ac-setup "ac-etags" "\
-Add `ac-source-etags' to `ac-sources' and enable `auto-complete' mode
+Add `ac-source-etags' to `ac-sources' and enable `auto-complete' mode" t nil)
 
-\(fn)" t nil)
+(autoload 'ac-etags-clear-cache "ac-etags" nil t nil)
 
-(autoload 'ac-etags-clear-cache "ac-etags" "\
-
-
-\(fn)" t nil)
-
-(autoload 'ac-etags-setup "ac-etags" "\
-
-
-\(fn)" t nil)
+(autoload 'ac-etags-setup "ac-etags" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-etags" '("ac-etags-")))
 

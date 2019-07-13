@@ -19,9 +19,7 @@ there.  With prefix argument, get a sudo shell.
 Reopen the current file, directory, or shell as root.
 For files and dired buffers, the non-sudo buffer is replaced with
 a sudo buffer.  For shells, a sudo shell is opened but the
-non-sudo shell is left in tact.
-
-\(fn)" t nil)
+non-sudo shell is left in tact." t nil)
 
 (autoload 'better-shell-shell "better-shell" "\
 Pop to an appropriate shell.
@@ -33,9 +31,7 @@ directory.
 
 (autoload 'better-shell-for-projectile-root "better-shell" "\
 Find or create a shell in the projectile root.
-See `better-shell-for-dir' for details on how shells are found or created.
-
-\(fn)" t nil)
+See `better-shell-for-dir' for details on how shells are found or created." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "better-shell" '("better-shell-")))
 

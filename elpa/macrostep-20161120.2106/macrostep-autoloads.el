@@ -48,10 +48,7 @@ behaviors.
 ;;;### (autoloads nil "macrostep-c" "macrostep-c.el" (0 0 0 0))
 ;;; Generated autoloads from macrostep-c.el
 
-(autoload 'macrostep-c-mode-hook "macrostep-c" "\
-
-
-\(fn)" nil nil)
+(autoload 'macrostep-c-mode-hook "macrostep-c" nil nil nil)
 
 (add-hook 'c-mode-hook #'macrostep-c-mode-hook)
 

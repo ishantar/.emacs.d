@@ -17,6 +17,7 @@
         eval-print-last-sexp
         indent-for-tab-command
         mode-line-minor-mode-help
+        mouse-buffer-menu
         mouse-set-region
         overwrite-mode
         rectangle-left-char

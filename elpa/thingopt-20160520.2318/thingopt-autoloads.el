@@ -31,25 +31,15 @@ things in `upward-mark-thing-list'.  It is recommended to put
 smaller things (e.g. word, symbol) before larger
 things (e.g. list, paragraph) in `upward-mark-thing-list'.  When
 this is called enough times to get to the end of the list, it
-wraps back to the first type of thing.
-
-\(fn)" t nil)
+wraps back to the first type of thing." t nil)
 
 (autoload 'upward-isearch-thing "thingopt" "\
 Much like `upward-mark-thing', but adds THING to the isearch string.
-This should be invoked while isearch is active.  Clobbers the current isearch string.
+This should be invoked while isearch is active.  Clobbers the current isearch string." t nil)
 
-\(fn)" t nil)
+(autoload 'kill-region-dwim "thingopt" nil t nil)
 
-(autoload 'kill-region-dwim "thingopt" "\
-
-
-\(fn)" t nil)
-
-(autoload 'kill-ring-save-dwim "thingopt" "\
-
-
-\(fn)" t nil)
+(autoload 'kill-ring-save-dwim "thingopt" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "thingopt" '("backward-" "bounds-of-up-list-at-point" "define-thing-commands" "forward-" "kill-" "list-thing" "read-thing" "reset-upward-bounds-of-thing" "string-face-p" "thing" "upward-")))
 

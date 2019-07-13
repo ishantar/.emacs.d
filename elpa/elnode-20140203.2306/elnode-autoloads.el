@@ -151,9 +151,7 @@ load.  If the variable `elnode-init-port' is set then this
 function will launch a server on it.
 
 The server is started with `elnode-hostpath-default-handler' as
-the handler and listening on `elnode-init-host'
-
-\(fn)" t nil)
+the handler and listening on `elnode-init-host'" t nil)
 
 (defvar elnode-do-init nil "\
 Should elnode start a server on load?
@@ -284,9 +282,7 @@ This is where elnode-wikiserver serves wiki files from.")
 (custom-autoload 'elnode-wikiserver-wikiroot "elnode-wiki" t)
 
 (autoload 'elnode-wikiserver-test "elnode-wiki" "\
-Test whether we should serve Wiki or not.
-
-\(fn)" nil nil)
+Test whether we should serve Wiki or not." nil nil)
 
 (autoload 'elnode-wikiserver "elnode-wiki" "\
 Serve Wiki pages from `elnode-wikiserver-wikiroot'.

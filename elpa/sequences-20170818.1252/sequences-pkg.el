@@ -1,2 +1,2 @@
-;;; -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.emacs.d/elpa/sequences-20170818.1252/sequences.el  -*- no-byte-compile: t -*-
 (define-package "sequences" "20170818.1252" "Ports of some Clojure sequence functions." '((emacs "24")) :commit "564ebbd93b0beea4e75acfbf824350e90b5d5738" :keywords '("convenience") :authors '(("Tim Visher" . "tim.visher@gmail.com")) :maintainer '("Tim Visher" . "tim.visher@gmail.com"))

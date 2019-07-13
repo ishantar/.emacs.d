@@ -10,15 +10,9 @@
 ;;;;;;  0))
 ;;; Generated autoloads from cpputils-cmake.el
 
-(autoload 'cppcm-get-exe-path-current-buffer "cpputils-cmake" "\
+(autoload 'cppcm-get-exe-path-current-buffer "cpputils-cmake" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'cppcm-version "cpputils-cmake" "\
-
-
-\(fn)" t nil)
+(autoload 'cppcm-version "cpputils-cmake" nil t nil)
 
 (autoload 'cppcm-compile "cpputils-cmake" "\
 Compile the executable/library in current directory,
@@ -29,14 +23,10 @@ by customize `cppcm-compile-list'.
 \(fn &optional PREFIX)" t nil)
 
 (autoload 'cppcm-recompile "cpputils-cmake" "\
-Run 'make clean && compile'.
-
-\(fn)" t nil)
+Run 'make clean && compile'." t nil)
 
 (autoload 'cppcm-reload-all "cpputils-cmake" "\
-Reload and reproduce everything.
-
-\(fn)" t nil)
+Reload and reproduce everything." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "cpputils-cmake" '("cppcm-")))
 

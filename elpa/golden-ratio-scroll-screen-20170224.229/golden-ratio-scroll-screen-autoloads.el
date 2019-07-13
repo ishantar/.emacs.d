@@ -11,14 +11,10 @@
 ;;; Generated autoloads from golden-ratio-scroll-screen.el
 
 (autoload 'golden-ratio-scroll-screen-up "golden-ratio-scroll-screen" "\
-scroll half screen up
-
-\(fn)" t nil)
+scroll half screen up" t nil)
 
 (autoload 'golden-ratio-scroll-screen-down "golden-ratio-scroll-screen" "\
-scroll half screen down
-
-\(fn)" t nil)
+scroll half screen down" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "golden-ratio-scroll-screen" '("golden-ratio-scroll-")))
 

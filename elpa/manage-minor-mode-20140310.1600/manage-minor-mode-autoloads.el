@@ -10,10 +10,7 @@
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from manage-minor-mode.el
 
-(autoload 'manage-minor-mode-set "manage-minor-mode" "\
-
-
-\(fn)" nil nil)
+(autoload 'manage-minor-mode-set "manage-minor-mode" nil nil nil)
 
 (autoload 'manage-minor-mode "manage-minor-mode" "\
 
@@ -26,8 +23,7 @@ Eradicate all minor-modes in the current buffer.
 This command may cause unexpected effect even to other buffers.
 However, don't worry, restore command exists:
  `manage-minor-mode-restore-from-bals'.
-
-\(fn)" t nil)
+" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "manage-minor-mode" '("manage-minor-mode-")))
 

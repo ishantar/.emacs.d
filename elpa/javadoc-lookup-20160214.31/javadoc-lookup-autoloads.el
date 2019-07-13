@@ -11,16 +11,12 @@
 ;;; Generated autoloads from javadoc-import.el
 
 (autoload 'javadoc-sort-imports "javadoc-import" "\
-Sort the imports in the import section in proper order.
-
-\(fn)" t nil)
+Sort the imports in the import section in proper order." t nil)
 
 (define-obsolete-function-alias 'sort-java-imports 'javadoc-sort-imports "1.1.0")
 
 (autoload 'javadoc-add-import "javadoc-import" "\
-Insert an import statement at import section at the top of the file.
-
-\(fn)" t nil)
+Insert an import statement at import section at the top of the file." t nil)
 
 (define-obsolete-function-alias 'add-java-import 'javadoc-add-import "1.1.0")
 

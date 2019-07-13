@@ -10,15 +10,9 @@
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from datomic-snippets.el
 
-(autoload 'datomic-snippets-show-docs-at-point "datomic-snippets" "\
+(autoload 'datomic-snippets-show-docs-at-point "datomic-snippets" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'datomic-snippets-initialize "datomic-snippets" "\
-
-
-\(fn)" nil nil)
+(autoload 'datomic-snippets-initialize "datomic-snippets" nil nil nil)
 
 (eval-after-load "yasnippet" '(datomic-snippets-initialize))
 

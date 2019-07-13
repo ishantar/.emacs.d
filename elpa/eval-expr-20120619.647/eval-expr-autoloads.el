@@ -59,9 +59,7 @@ or `prin1' for unformatted results.")
 (custom-autoload 'eval-expr-print-function "eval-expr" t)
 
 (autoload 'eval-expr-install "eval-expr" "\
-Replace standard eval-expression command with enhanced eval-expr.
-
-\(fn)" t nil)
+Replace standard eval-expression command with enhanced eval-expr." t nil)
 
 (autoload 'eval-expr "eval-expr" "\
 Evaluate EXPRESSION and print value in minibuffer, temp, or current buffer.

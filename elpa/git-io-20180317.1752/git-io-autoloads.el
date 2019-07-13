@@ -10,9 +10,7 @@
 ;;; Generated autoloads from git-io.el
 
 (autoload 'git-io-shorten "git-io" "\
-Replace thing at point with shortened URL.
-
-\(fn)" t nil)
+Replace thing at point with shortened URL." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "git-io" '("git-io-")))
 

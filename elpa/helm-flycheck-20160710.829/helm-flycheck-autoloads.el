@@ -10,9 +10,7 @@
 ;;; Generated autoloads from helm-flycheck.el
 
 (autoload 'helm-flycheck "helm-flycheck" "\
-Show flycheck errors with `helm'.
-
-\(fn)" t nil)
+Show flycheck errors with `helm'." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-flycheck" '("helm-")))
 

@@ -10,9 +10,7 @@
 ;;; Generated autoloads from el-autoyas.el
 
 (autoload 'el-autoyas-enable "el-autoyas" "\
-Load and activate package.
-
-\(fn)" t nil)
+Load and activate package." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-autoyas" '("el-autoyas-")))
 

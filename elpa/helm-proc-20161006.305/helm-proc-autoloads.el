@@ -10,9 +10,7 @@
 ;;; Generated autoloads from helm-proc.el
 
 (autoload 'helm-proc "helm-proc" "\
-Preconfigured helm for processes.
-
-\(fn)" t nil)
+Preconfigured helm for processes." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-proc" '("helm-")))
 

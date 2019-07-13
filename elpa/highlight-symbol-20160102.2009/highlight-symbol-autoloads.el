@@ -31,14 +31,10 @@ element in of `highlight-symbol-faces'.
 \(fn &optional SYMBOL)" t nil)
 
 (autoload 'highlight-symbol-remove-all "highlight-symbol" "\
-Remove symbol highlighting in buffer.
-
-\(fn)" t nil)
+Remove symbol highlighting in buffer." t nil)
 
 (autoload 'highlight-symbol-list-all "highlight-symbol" "\
-List all symbols highlighted in the buffer.
-
-\(fn)" t nil)
+List all symbols highlighted in the buffer." t nil)
 
 (autoload 'highlight-symbol-count "highlight-symbol" "\
 Print the number of occurrences of symbol at point.
@@ -46,24 +42,16 @@ Print the number of occurrences of symbol at point.
 \(fn &optional SYMBOL MESSAGE-P)" t nil)
 
 (autoload 'highlight-symbol-next "highlight-symbol" "\
-Jump to the next location of the symbol at point within the buffer.
-
-\(fn)" t nil)
+Jump to the next location of the symbol at point within the buffer." t nil)
 
 (autoload 'highlight-symbol-prev "highlight-symbol" "\
-Jump to the previous location of the symbol at point within the buffer.
-
-\(fn)" t nil)
+Jump to the previous location of the symbol at point within the buffer." t nil)
 
 (autoload 'highlight-symbol-next-in-defun "highlight-symbol" "\
-Jump to the next location of the symbol at point within the defun.
-
-\(fn)" t nil)
+Jump to the next location of the symbol at point within the defun." t nil)
 
 (autoload 'highlight-symbol-prev-in-defun "highlight-symbol" "\
-Jump to the previous location of the symbol at point within the defun.
-
-\(fn)" t nil)
+Jump to the previous location of the symbol at point within the defun." t nil)
 
 (autoload 'highlight-symbol-nav-mode "highlight-symbol" "\
 Navigate occurrences of the symbol at point.

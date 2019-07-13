@@ -10,9 +10,7 @@
 ;;; Generated autoloads from smart-comment.el
 
 (autoload 'smart-comment-cleanup "smart-comment" "\
-Remove lines marked for deletion.
-
-\(fn)" t nil)
+Remove lines marked for deletion." t nil)
 
 (autoload 'smart-comment-mark-line "smart-comment" "\
 Mark a line for deletion. ARG is ignored.

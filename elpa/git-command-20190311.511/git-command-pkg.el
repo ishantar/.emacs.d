@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.emacs.d/elpa/git-command-20190311.511/git-command.el  -*- no-byte-compile: t -*-
+(define-package "git-command" "20190311.511" "Git Command-Line interface" '((term-run "0.1.4") (with-editor "2.3.1")) :commit "89169f4b8e8d2546cac81d38bf584764e630812e" :keywords '("utility" "git") :authors '(("10sr <8slashes+el [at] gmail [dot] com>")) :maintainer '("10sr <8slashes+el [at] gmail [dot] com>") :url "https://github.com/10sr/git-command-el")

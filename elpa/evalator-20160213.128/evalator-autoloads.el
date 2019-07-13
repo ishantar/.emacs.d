@@ -10,14 +10,10 @@
 ;;; Generated autoloads from evalator.el
 
 (autoload 'evalator-insert-equiv-expr "evalator" "\
-Insert the equivalent expression of the previous evalator session into the current buffer.
-
-\(fn)" t nil)
+Insert the equivalent expression of the previous evalator session into the current buffer." t nil)
 
 (autoload 'evalator-resume "evalator" "\
-Resume last evalator session.
-
-\(fn)" t nil)
+Resume last evalator session." t nil)
 
 (autoload 'evalator "evalator" "\
 Start an evalator session.
@@ -78,10 +74,7 @@ expression of the session to be generated through
 ;;;;;;  0))
 ;;; Generated autoloads from evalator-elisp.el
 
-(autoload 'evalator-elisp-context "evalator-elisp" "\
-
-
-\(fn)" nil nil)
+(autoload 'evalator-elisp-context "evalator-elisp" nil nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "evalator-elisp" '("evalator-elisp-")))
 

@@ -29,9 +29,7 @@ in the minibuffer.
 \(fn &optional COUNT)" t nil)
 
 (autoload 'elmacro-clear-command-history "elmacro" "\
-Clear the list of recorded commands.
-
-\(fn)" t nil)
+Clear the list of recorded commands." t nil)
 
 (defvar elmacro-mode nil "\
 Non-nil if elmacro mode is enabled.

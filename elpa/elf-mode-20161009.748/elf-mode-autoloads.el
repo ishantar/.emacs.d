@@ -9,10 +9,7 @@
 ;;;### (autoloads nil "elf-mode" "elf-mode.el" (0 0 0 0))
 ;;; Generated autoloads from elf-mode.el
 
-(autoload 'elf-mode "elf-mode" "\
-
-
-\(fn)" t nil)
+(autoload 'elf-mode "elf-mode" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "elf-mode" '("elf-")))
 

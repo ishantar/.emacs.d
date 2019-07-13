@@ -19,26 +19,18 @@ breakpoint is set.
 
 (autoload 'edebug-x-evaluate-function "edebug-x" "\
 Evaluate function on line.
-This removes all breakpoints in this function.
-
-\(fn)" t nil)
+This removes all breakpoints in this function." t nil)
 
 (autoload 'edebug-x-show-data "edebug-x" "\
 Display instrumented functions and edebug breakpoints.
 Frame is split into two vertically showing the tabluated buffers
-for each.
-
-\(fn)" t nil)
+for each." t nil)
 
 (autoload 'edebug-x-show-breakpoints "edebug-x" "\
-Display breakpoints in a tabulated list buffer.
-
-\(fn)" t nil)
+Display breakpoints in a tabulated list buffer." t nil)
 
 (autoload 'edebug-x-show-instrumented "edebug-x" "\
-Display instrumented functions in a tabluated list buffer.
-
-\(fn)" t nil)
+Display instrumented functions in a tabluated list buffer." t nil)
 
 (autoload 'edebug-x-mode "edebug-x" "\
 A minor mode that makes it easier to use Edebug

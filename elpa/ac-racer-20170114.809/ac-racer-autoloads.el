@@ -9,10 +9,7 @@
 ;;;### (autoloads nil "ac-racer" "ac-racer.el" (0 0 0 0))
 ;;; Generated autoloads from ac-racer.el
 
-(autoload 'ac-racer-setup "ac-racer" "\
-
-
-\(fn)" t nil)
+(autoload 'ac-racer-setup "ac-racer" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-racer" '("ac-racer--")))
 

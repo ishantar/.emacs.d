@@ -31,9 +31,7 @@ if ARG is `toggle'; disable the mode otherwise.
 (autoload 'sotclojure-turn-on-everywhere "sotclojure-on" "\
 Call-once function to turn on sotclojure everywhere.
 Calls `sotclojure-mode' on all `clojure-mode' buffers, and sets
-up a hook and abbrevs.
-
-\(fn)" nil nil)
+up a hook and abbrevs." nil nil)
 
 (eval-after-load 'sotlisp '(speed-of-thought-hook-in #'sotclojure-turn-on-everywhere #'sotclojure-turn-off-everywhere))
 

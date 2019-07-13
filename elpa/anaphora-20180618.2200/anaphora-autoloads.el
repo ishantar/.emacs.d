@@ -219,10 +219,6 @@ DIVIDEND, DIVISOR, and DIVISORS are otherwise as documented for `/'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("anaphora-pkg.el") (0 0 0 0))
-
-;;;***
-
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t

@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.emacs.d/elpa/pcmpl-args-20190223.1613/pcmpl-args.el  -*- no-byte-compile: t -*-
+(define-package "pcmpl-args" "20190223.1613" "Enhanced shell command completion" 'nil :commit "0b8a05fc6e370fa9c466250659619f8d6b53d446" :keywords '("abbrev" "completion" "convenience" "processes" "terminals" "unix") :authors '(("Jonathan Waltman" . "jonathan.waltman@gmail.com")) :maintainer '("Jonathan Waltman" . "jonathan.waltman@gmail.com") :url "https://github.com/JonWaltman/pcmpl-args.el")

@@ -10,14 +10,10 @@
 ;;; Generated autoloads from smartscan.el
 
 (autoload 'smartscan-symbol-go-forward "smartscan" "\
-Jumps forward to the next symbol at point
-
-\(fn)" t nil)
+Jumps forward to the next symbol at point" t nil)
 
 (autoload 'smartscan-symbol-go-backward "smartscan" "\
-Jumps backward to the previous symbol at point
-
-\(fn)" t nil)
+Jumps backward to the previous symbol at point" t nil)
 
 (autoload 'smartscan-symbol-replace "smartscan" "\
 Replaces the symbol at point with another string in the entire buffer.

@@ -1,0 +1,80 @@
+#! /usr/bin/ash
+
+
+remove_keyfile()  {
+
+   local target=${1}
+   local blockstat=$(stat -c '%B %b' ${target}.key)
+
+   if [ -b /dev/mapper/${target} ]; then
+     dd if=/dev/zero of=${target}.key status=none \
+         bs=${blockstat%% *} count=${blockstat##* }  &&
+     rm ${target}.key
+   fi
+ }
+
+
+open_nonboot()  {
+
+   local target=${1}
+   local target_dev=$(blkid -l  -o device -t PARTLABEL=c${target})
+   local tries=0
+
+   cryptsetup open --type luks2  ${target_dev} ${target} \
+              --key-slot 1  --key-file ${target}.key \
+    && {
+       remove_keyfile ${target}
+   }|| { 
+       if [ $tries -lt 5 ]; then
+           tries=$((tries + 1))
+           open_nonboot ${target}
+       fi
+   }
+ }
+
+
+open_boot()  {
+
+   local target=${1}
+   local boot_dev=$(blkid -l  -o device  -t PARTLABEL=c${target})
+   local tries=0
+
+   cryptsetup open --type plain  ${boot_dev} ${target} \
+              --offset 137216  --skip 133120  --size 1699807 \
+              --cipher aes-xts-plain64  --key-file ${target}.key \
+    && {
+      remove_keyfile ${target}
+   }|| { 
+       if [ $tries -lt 5 ]; then
+           tries=$((tries + 1))
+           open_boot ${target}
+       fi
+   }
+ }
+
+
+run_hook()  {
+
+   [ -d /run/cryptsetup ]   ||
+      mkdir /run/cryptsetup
+   trap 'chld_cnt=${chld_cnt%:}' 17     ## tst
+
+   local chld_cnt=:                     ## tst
+   (open_boot ${cryptboot}) &
+
+   for e in ${cryptdevs//:/ }; do
+      chld_cnt=:${chld_cnt}             ## tst
+      (open_nonboot ${e}) &
+   done
+   
+######################################### tst 
+   local limit=0
+   while [[ "${chld_cnt}" != "" && $((limit & ~1048575)) -eq 0 ]]; do
+      limit=$((limit + 1))
+      [ $((limit & 131071)) -eq 0 ] &&
+          echo -e $((limit & ~131071))\\t $chld_cnt
+   done
+
+   trap - 17
+
+ }

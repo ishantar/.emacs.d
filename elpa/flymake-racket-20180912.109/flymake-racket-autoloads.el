@@ -11,14 +11,10 @@
 ;;; Generated autoloads from flymake-racket.el
 
 (autoload 'flymake-racket-setup "flymake-racket" "\
-Set up Flymake for Racket.
-
-\(fn)" t nil)
+Set up Flymake for Racket." t nil)
 
 (autoload 'flymake-racket-add-hook "flymake-racket" "\
-Add `flymake-racket-lint' to `flymake-diagnostic-functions'.
-
-\(fn)" nil nil)
+Add `flymake-racket-lint' to `flymake-diagnostic-functions'." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flymake-racket" '("flymake-racket-")))
 

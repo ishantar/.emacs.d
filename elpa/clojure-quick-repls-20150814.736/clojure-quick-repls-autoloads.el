@@ -11,9 +11,7 @@
 ;;; Generated autoloads from clojure-quick-repls.el
 
 (autoload 'clojure-quick-repls-connect "clojure-quick-repls" "\
-Launch Clojure and ClojureScript repls for the current project
-
-\(fn)" t nil)
+Launch Clojure and ClojureScript repls for the current project" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clojure-quick-repls" '("clojure-quick-repls-")))
 

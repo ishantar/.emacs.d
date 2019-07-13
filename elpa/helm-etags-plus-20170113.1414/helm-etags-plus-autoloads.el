@@ -16,19 +16,13 @@ Find Tag using `etags' and `helm'
 \(fn &optional ARG)" t nil)
 
 (autoload 'helm-etags-plus-history-go-back "helm-etags-plus" "\
-Go Back.
-
-\(fn)" t nil)
+Go Back." t nil)
 
 (autoload 'helm-etags-plus-history-go-forward "helm-etags-plus" "\
-Go Forward.
-
-\(fn)" t nil)
+Go Forward." t nil)
 
 (autoload 'helm-etags-plus-history "helm-etags-plus" "\
-show all tag historys using `helm'
-
-\(fn)" t nil)
+show all tag historys using `helm'" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-etags-plus" '("helm-etags-plus-")))
 

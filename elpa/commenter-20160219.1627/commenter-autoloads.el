@@ -10,9 +10,7 @@
 ;;; Generated autoloads from commenter.el
 
 (autoload 'commenter-setup "commenter" "\
-Add advises to ‘comment-normalize-vars’.
-
-\(fn)" nil nil)
+Add advises to ‘comment-normalize-vars’." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "commenter" '("commenter-")))
 

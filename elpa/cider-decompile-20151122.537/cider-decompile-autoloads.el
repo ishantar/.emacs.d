@@ -11,9 +11,7 @@
 ;;; Generated autoloads from cider-decompile.el
 
 (autoload 'cider-decompile-func "cider-decompile" "\
-Asks for the func name (FN-NAME) in the current namespace.and decompiles.
-
-\(fn)" t nil)
+Asks for the func name (FN-NAME) in the current namespace.and decompiles." t nil)
 
 (autoload 'cider-decompile-ns-func "cider-decompile" "\
 Asks for the func name (FN-NAME) in a specific namespace and decompiles it.

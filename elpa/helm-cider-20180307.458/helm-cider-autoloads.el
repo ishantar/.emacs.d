@@ -95,9 +95,7 @@ if ARG is `toggle'; disable the mode otherwise.
 ;;; Generated autoloads from helm-cider-cheatsheet.el
 
 (autoload 'helm-cider-cheatsheet "helm-cider-cheatsheet" "\
-Use Helm to show a Clojure cheatsheet.
-
-\(fn)" t nil)
+Use Helm to show a Clojure cheatsheet." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-cheatsheet" '("helm-cider-cheatsheet--")))
 
@@ -124,9 +122,7 @@ This function is meant to be one of `helm-cider-repl-history-actions'.
 \(fn CANDIDATE)" nil nil)
 
 (autoload 'helm-cider-repl-history "helm-cider-repl" "\
-Helm interface to CIDER REPL history.
-
-\(fn)" t nil)
+Helm interface to CIDER REPL history." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-cider-repl" '("helm-cider-repl-")))
 

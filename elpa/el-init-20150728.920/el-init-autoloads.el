@@ -10,9 +10,7 @@
 ;;; Generated autoloads from el-init.el
 
 (autoload 'el-init-provide "el-init" "\
-Call `provide' with the file name as a feature name.
-
-\(fn)" nil nil)
+Call `provide' with the file name as a feature name." nil nil)
 
 (autoload 'el-init-load "el-init" "\
 Load configuration files in DIRECTORY with `require'.
@@ -33,10 +31,6 @@ The mechanism:
 \(fn DIRECTORY &key (SUBDIRECTORIES el-init-subdirectories) (WRAPPERS el-init-wrappers) (OVERRIDE-ONLY-INIT-FILES el-init-override-only-init-files-p) (OVERRIDE el-init-overridep))" nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-init" '("el-init-")))
-
-;;;***
-
-;;;### (autoloads nil nil ("el-init-pkg.el") (0 0 0 0))
 
 ;;;***
 

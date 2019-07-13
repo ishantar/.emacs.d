@@ -10,20 +10,11 @@
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from helm-mode-manager.el
 
-(autoload 'helm-enable-minor-mode "helm-mode-manager" "\
+(autoload 'helm-enable-minor-mode "helm-mode-manager" nil t nil)
 
+(autoload 'helm-disable-minor-mode "helm-mode-manager" nil t nil)
 
-\(fn)" t nil)
-
-(autoload 'helm-disable-minor-mode "helm-mode-manager" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-switch-major-mode "helm-mode-manager" "\
-
-
-\(fn)" t nil)
+(autoload 'helm-switch-major-mode "helm-mode-manager" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-mode-manager" '("helm-mode-manager-")))
 

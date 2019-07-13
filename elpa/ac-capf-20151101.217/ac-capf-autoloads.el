@@ -10,9 +10,7 @@
 ;;; Generated autoloads from ac-capf.el
 
 (autoload 'ac-capf-setup "ac-capf" "\
-Add `ac-source-capf' to `ac-sources' and enable `auto-complete' mode
-
-\(fn)" t nil)
+Add `ac-source-capf' to `ac-sources' and enable `auto-complete' mode" t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-capf" '("ac-capf--candidates")))
 

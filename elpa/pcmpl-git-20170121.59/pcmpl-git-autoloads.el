@@ -10,9 +10,7 @@
 ;;; Generated autoloads from pcmpl-git.el
 
 (autoload 'pcomplete/git "pcmpl-git" "\
-Completion rules for the `git' command.
-
-\(fn)" nil nil)
+Completion rules for the `git' command." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pcmpl-git" '("pcmpl-git-")))
 

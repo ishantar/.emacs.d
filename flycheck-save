@@ -1,0 +1,3 @@
+c-mode-hook     flycheck-cstyle-setup
+                flycheck-clang-analyzer-setup
+                flycheck-irony-setup

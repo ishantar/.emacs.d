@@ -10,9 +10,7 @@
 ;;; Generated autoloads from codebug.el
 
 (autoload 'codebug "codebug" "\
-Run CodeBug.
-
-\(fn)" t nil)
+Run CodeBug." t nil)
 
 ;;;***
 

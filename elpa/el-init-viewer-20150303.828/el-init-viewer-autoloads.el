@@ -10,15 +10,9 @@
 ;;;;;;  0))
 ;;; Generated autoloads from el-init-viewer.el
 
-(autoload 'el-init-viewer "el-init-viewer" "\
+(autoload 'el-init-viewer "el-init-viewer" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'el-init-viewer-eval-after-load "el-init-viewer" "\
-
-
-\(fn)" t nil)
+(autoload 'el-init-viewer-eval-after-load "el-init-viewer" nil t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-init-viewer" '("el-init-viewer-")))
 

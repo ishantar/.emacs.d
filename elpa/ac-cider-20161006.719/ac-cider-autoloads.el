@@ -23,14 +23,10 @@ Auto-complete source for CIDER buffers.")
 
 (autoload 'ac-cider-setup "ac-cider" "\
 Add the CIDER completion source to the front of `ac-sources'.
-This affects only the current buffer.
-
-\(fn)" t nil)
+This affects only the current buffer." t nil)
 
 (autoload 'ac-cider-popup-doc "ac-cider" "\
-A popup alternative to `cider-doc'.
-
-\(fn)" t nil)
+A popup alternative to `cider-doc'." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ac-cider" '("ac-cider-")))
 
