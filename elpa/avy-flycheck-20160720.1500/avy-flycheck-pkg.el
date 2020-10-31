@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/avy-flycheck-20160720.1500/avy-flycheck.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/avy-flycheck-20160720.1500/avy-flycheck.el  -*- no-byte-compile: t -*-
 (define-package "avy-flycheck" "20160720.1500" "Jump to and fix syntax errors using `flycheck' with `avy' interface" '((emacs "24.1") (flycheck "0.14") (seq "1.11") (avy "0.4.0")) :commit "5522f3bbbed1801d9278ed696ec0cbba38352985" :keywords '("tools" "convenience" "avy" "flycheck") :authors '(("Xu Ma" . "magicdirac@gmail.com")) :maintainer '("Xu Ma" . "magicdirac@gmail.com") :url "https://github.com/magicdirac/avy-flycheck")

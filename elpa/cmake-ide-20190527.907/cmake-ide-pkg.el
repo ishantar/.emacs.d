@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/cmake-ide-20190527.907/cmake-ide.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/cmake-ide-20190527.907/cmake-ide.el  -*- no-byte-compile: t -*-
 (define-package "cmake-ide" "20190527.907" "Calls CMake to find out include paths and other compiler flags" '((emacs "24.4") (cl-lib "0.5") (seq "1.11") (levenshtein "0") (s "1.11.0")) :commit "6fc593e47d28bfe531d1029f61e4efeb2eefe982" :keywords '("languages") :authors '(("Atila Neves" . "atila.neves@gmail.com")) :maintainer '("Atila Neves" . "atila.neves@gmail.com") :url "http://github.com/atilaneves/cmake-ide")

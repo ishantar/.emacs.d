@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/el-init-viewer-20150303.828/el-init-viewer.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/el-init-viewer-20150303.828/el-init-viewer.el  -*- no-byte-compile: t -*-
 (define-package "el-init-viewer" "20150303.828" "Record viewer for el-init" '((emacs "24") (cl-lib "0.5") (ctable "0.1.2") (dash "2.10.0") (anaphora "1.0.0") (el-init "0.1.4")) :commit "8a2ab457586962bde0da2a1c56a37ce6363ae690" :authors '(("Hiroki YAMAKAWA" . "s06139@gmail.com")) :maintainer '("Hiroki YAMAKAWA" . "s06139@gmail.com") :url "https://github.com/HKey/el-init-viewer")

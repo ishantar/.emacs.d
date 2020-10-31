@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/nrepl-eval-sexp-fu-20140311.1041/nrepl-eval-sexp-fu.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/nrepl-eval-sexp-fu-20140311.1041/nrepl-eval-sexp-fu.el  -*- no-byte-compile: t -*-
 (define-package "nrepl-eval-sexp-fu" "20140311.1041" "Tiny functionality enhancements for evaluating sexps." '((highlight "0.0.0") (smartparens "0.0.0") (thingatpt "0.0.0")) :commit "3a24b7d4bca13e87c987a4ddd212da914ff59191" :keywords '("lisp" "highlight" "convenience") :authors '(("Takeshi Banse" . "takebi@laafc.net")) :maintainer '("Takeshi Banse" . "takebi@laafc.net"))

@@ -1,5 +1,5 @@
 
-(eval-and-compile
+;;(eval-and-compile
   
 (defun
    regexp-kill-buffers-named  (REGEX &optional output-temp-buffer)
@@ -35,103 +35,107 @@
        (buffer-list)
         nil )))
 
+;;)
+;; (print
+;; (symbol-function 'regexp-kill-buffers-named)
+;; (current-buffer))
 
 ;; tests!
 
-(defun test--regexp-kill-buffers-named () 
+;; (defun test--regexp-kill-buffers-named () 
 
-  (eval `(let*-while-cond
+;;   (eval `(let*-while-cond
 
-     (test-result-buffer
-             (progn
-                 (with-output-to-temp-buffer "*test results*" nil )
-                 (select-window (get-buffer-window "*test results*"))
-                 (read-only-mode 'toggle)
-                 (window-buffer) ))
+;;      (test-result-buffer
+;;              (progn
+;;                  (with-output-to-temp-buffer "*test results*" nil )
+;;                  (select-window (get-buffer-window "*test results*"))
+;;                  (read-only-mode 'toggle)
+;;                  (window-buffer) ))
 
-      (return-value-expected
-             '("tmp1" "tmp2" "tmp3") )
+;;       (return-value-expected
+;;              '("tmp1" "tmp2" "tmp3") )
 
-      (return-value-interactive-actual
-             (progn
-                 (find-file "~/tmp1")
-                 (find-file "~/tmp2")
-                 (find-file "~/tmp3")
-                 (regexp-kill-buffers-named "tmp" t))
-             (princ
-               "FAIL (interactive):  regexp-kill-buffers-named returned nil.\n"
-               test-result-buffer) )
+;;       (return-value-interactive-actual
+;;              (progn
+;;                  (find-file "~/tmp1")
+;;                  (find-file "~/tmp2")
+;;                  (find-file "~/tmp3")
+;;                  (regexp-kill-buffers-named "tmp" t))
+;;              (princ
+;;                "FAIL (interactive):  regexp-kill-buffers-named returned nil.\n"
+;;                test-result-buffer) )
 
-      (return-value-interactive-check
-             (equal
-               return-value-expected
-               return-value-interactive-actual )
-             (princ
-               (concat
-                 "FAIL (interactive):  unexpected return value.\n"
-                 return-value-actual )
-               test-result-buffer) )
+;;       (return-value-interactive-check
+;;              (equal
+;;                return-value-expected
+;;                return-value-interactive-actual )
+;;              (princ
+;;                (concat
+;;                  "FAIL (interactive):  unexpected return value.\n"
+;;                  return-value-actual )
+;;                test-result-buffer) )
 
-      (buffer-output-expected
-             "tmp3\ntmp2\ntmp1\n\n" )
+;;       (buffer-output-expected
+;;              "tmp3\ntmp2\ntmp1\n\n" )
 
-      (buffer-output-interactive-actual
-             (and (get-buffer "*buffers killed*")
-                  (select-window (get-buffer-window "*buffers killed*") )
-                  (buffer-string) )
-             (princ
-               "FAIL (interactive):  empty temp buffer or temp buffer not created.\n"
-               test-result-buffer) )
+;;       (buffer-output-interactive-actual
+;;              (and (get-buffer "*buffers killed*")
+;;                   (select-window (get-buffer-window "*buffers killed*") )
+;;                   (buffer-string) )
+;;              (princ
+;;                "FAIL (interactive):  empty temp buffer or temp buffer not created.\n"
+;;                test-result-buffer) )
 
-      (buffer-output-interactive-check
-             (equal
-               buffer-output-expected
-               buffer-output-interactive-actual)
-             (princ 
-               (concat
-                 "FAIL (interactive):  unexpected buffer output.\n"
-                 buffer-output-interactive-actual)
-               test-result-buffer) )
+;;       (buffer-output-interactive-check
+;;              (equal
+;;                buffer-output-expected
+;;                buffer-output-interactive-actual)
+;;              (princ 
+;;                (concat
+;;                  "FAIL (interactive):  unexpected buffer output.\n"
+;;                  buffer-output-interactive-actual)
+;;                test-result-buffer) )
 
-      (test-results-interactive
-             (and  (kill-buffer "*buffers killed*")
-                    "Interactive tests passed.\n")
-             (princ
-               "FAIL:  interactive tests passed, killing output buffer failed.\n"
-               test-result-buffer))
+;;       (test-results-interactive
+;;              (and  (kill-buffer "*buffers killed*")
+;;                     "Interactive tests passed.\n")
+;;              (princ
+;;                "FAIL:  interactive tests passed, killing output buffer failed.\n"
+;;                test-result-buffer))
 
-      (return-value-noninteractive-actual
-             (progn
-                 (find-file "~/tmp1")
-                 (find-file "~/tmp2")
-                 (find-file "~/tmp3")
-                 (regexp-kill-buffers-named "tmp"))
-             (princ
-               "FAIL (noninteractive):  regexp-kill-buffers-named returned nil.\n"
-               test-result-buffer) )
+;;       (return-value-noninteractive-actual
+;;              (progn
+;;                  (find-file "~/tmp1")
+;;                  (find-file "~/tmp2")
+;;                  (find-file "~/tmp3")
+;;                  (regexp-kill-buffers-named "tmp"))
+;;              (princ
+;;                "FAIL (noninteractive):  regexp-kill-buffers-named returned nil.\n"
+;;                test-result-buffer) )
 
-      (return-value-noninteractive-check
-             (equal
-               return-value-expected
-               return-value-noninteractive-actual )
-             (princ
-               (concat
-                 "FAIL (noninteractive):  unexpected return value.\n"
-                 return-value-noninteractive-actual )
-               test-result-buffer) )
+;;       (return-value-noninteractive-check
+;;              (equal
+;;                return-value-expected
+;;                return-value-noninteractive-actual )
+;;              (princ
+;;                (concat
+;;                  "FAIL (noninteractive):  unexpected return value.\n"
+;;                  return-value-noninteractive-actual )
+;;                test-result-buffer) )
 
-      (buffer-output-noninteractive-check
-             (not (get-buffer "*buffers killed*"))
-             (princ 
-               "FAIL (noninteractive):  output buffer created.\n"
-               test-result-buffer) )
+;;       (buffer-output-noninteractive-check
+;;              (not (get-buffer "*buffers killed*"))
+;;              (princ 
+;;                "FAIL (noninteractive):  output buffer created.\n"
+;;                test-result-buffer) )
 
-      (test-results-noninteractive
-             "Noninteractive tests passed.\n" )
+;;       (test-results-noninteractive
+;;              "Noninteractive tests passed.\n" )
 
-      (:default 
-             (princ
-               (concat
-                 test-results-interactive
-                 test-results-noninteractive )
-               test-result-buffer)) )) ))
+;;       (:default 
+;;              (princ
+;;                (concat
+;;                  test-results-interactive
+;;                  test-results-noninteractive )
+;;                test-result-buffer)) )) ))

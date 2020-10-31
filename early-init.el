@@ -4,8 +4,8 @@
 (custom-set-variables
   '(package-enable-at-startup 't)
   '(package-quickstart 't)
-  '(package-user-dir "~/.emacs.d/elpa")
-  '(package-quickstart-file "~/.emacs.d/package-quickstart.el")
+  '(package-user-dir "~/.config/emacs/elpa")
+  '(package-quickstart-file "~/.config/emacs/package-quickstart.el")
   '(package-load-list '(all))
   '(sp-clojure-modes
      '('cider-repl-mode 'clojure-mode 'clojurec-mode 'clojurescript-mode 'clojurex-mode 'inf-clojure-mode 'cider-clojure-interaction-mode))

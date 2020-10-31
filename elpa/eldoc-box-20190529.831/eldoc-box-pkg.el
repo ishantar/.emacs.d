@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/eldoc-box-20190529.831/eldoc-box.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/eldoc-box-20190529.831/eldoc-box.el  -*- no-byte-compile: t -*-
 (define-package "eldoc-box" "20190529.831" "Display documentation in childframe" '((emacs "26.1")) :commit "c97fe860fa2a5b957a25219172ab596b2f4fc95b" :authors '(("Sebastien Chapuis" . "sebastien@chapu.is")) :maintainer '("Yuan Fu" . "casouri@gmail.com") :url "https://github.com/casouri/eldoc-box")

@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/list-packages-ext-20151115.1716/list-packages-ext.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/list-packages-ext-20151115.1716/list-packages-ext.el  -*- no-byte-compile: t -*-
 (define-package "list-packages-ext" "20151115.1716" "Extras for list-packages" '((s "1.6.0") (ht "1.5.0") (persistent-soft "0.8.6")) :commit "b4dd644e4369c9aa66f5bb8895ea49ebbfd0a27a" :keywords '("convenience" "tools") :authors '(("Alessandro Piras" . "laynor@gmail.com")) :maintainer '("Alessandro Piras" . "laynor@gmail.com"))

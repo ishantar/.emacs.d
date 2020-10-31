@@ -9365,7 +9365,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-     0.289 ( 0.014 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 45) = 45
+     0.289 ( 0.014 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 45) = 45
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9383,7 +9383,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    26.533 ( 0.015 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1066) = 1066
+    26.533 ( 0.015 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1066) = 1066
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9401,7 +9401,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    26.561 ( 0.014 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1640) = 1640
+    26.561 ( 0.014 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1640) = 1640
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9419,7 +9419,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    26.587 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 489) = 489
+    26.587 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 489) = 489
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9437,7 +9437,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.129 ( 0.009 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1557) = 1557
+    27.129 ( 0.009 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1557) = 1557
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9455,7 +9455,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.150 ( 0.011 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1103) = 1103
+    27.150 ( 0.011 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1103) = 1103
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9473,7 +9473,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.173 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 505) = 505
+    27.173 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 505) = 505
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9491,7 +9491,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.189 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 515) = 515
+    27.189 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 515) = 515
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9509,7 +9509,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.206 ( 0.004 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 537) = 537
+    27.206 ( 0.004 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 537) = 537
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9527,7 +9527,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.222 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1103) = 1103
+    27.222 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1103) = 1103
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9545,7 +9545,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.249 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 441) = 441
+    27.249 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 441) = 441
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9563,7 +9563,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.265 ( 0.010 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 505) = 505
+    27.265 ( 0.010 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 505) = 505
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9581,7 +9581,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.287 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 515) = 515
+    27.287 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 515) = 515
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9599,7 +9599,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.303 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1081) = 1081
+    27.303 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1081) = 1081
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9617,7 +9617,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.319 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 559) = 559
+    27.319 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 559) = 559
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9635,7 +9635,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.350 ( 0.006 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 506) = 506
+    27.350 ( 0.006 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 506) = 506
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9653,7 +9653,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.368 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 1054) = 1054
+    27.368 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 1054) = 1054
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9671,7 +9671,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.384 ( 0.008 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 545) = 545
+    27.384 ( 0.008 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 545) = 545
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9689,7 +9689,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    27.404 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 560) = 560
+    27.404 ( 0.005 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 560) = 560
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262
@@ -9707,7 +9707,7 @@ unwind: find_proc_info dso /usr/lib/libpthread-2.29.so
 unwind: no map for 7fcd26486098
 unwind: access_mem 0x7fcd26486098 not inside range 0x7ffc9662f038-0x7ffc96630000
 unwind: __libc_write:ip = 0x7fcd264811c5 (0x111c5)
-    42.561 ( 0.017 ms): cat/9296 write(fd: 1</home/lk/.emacs.d/gcp.o>, buf: 0x7fcd2649d000, count: 88) = 88
+    42.561 ( 0.017 ms): cat/9296 write(fd: 1</home/lk/.config/emacs/gcp.o>, buf: 0x7fcd2649d000, count: 88) = 88
                                        syscall_slow_exit_work ([kernel.kallsyms])
                                        __libc_write (/usr/lib/libpthread-2.29.so)
 unwind: reg 16, val 7fcd26481262

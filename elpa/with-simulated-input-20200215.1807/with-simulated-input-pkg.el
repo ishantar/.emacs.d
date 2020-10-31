@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.config/emacs/elpa/with-simulated-input-20200215.1807/with-simulated-input.el  -*- no-byte-compile: t -*-
+(define-package "with-simulated-input" "20200215.1807" "A macro to simulate user input non-interactively" '((emacs "24.4")) :commit "29173588751eeb33d2392d380b26648b2e213438" :keywords '("lisp" "tools" "extensions") :authors '(("Ryan C. Thompson")) :maintainer '("Ryan C. Thompson") :url "https://github.com/DarwinAwardWinner/with-simulated-input")

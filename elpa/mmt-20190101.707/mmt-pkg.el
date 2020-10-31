@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/mmt-20190101.707/mmt.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/mmt-20190101.707/mmt.el  -*- no-byte-compile: t -*-
 (define-package "mmt" "20190101.707" "Missing macro tools for Emacs Lisp" '((emacs "24.1") (cl-lib "0.3")) :commit "524ecbe637e558c92873a5c5df746c62cbd31b42" :keywords '("macro" "emacs-lisp") :authors '(("Mark Karpov" . "markkarpov92@gmail.com")) :maintainer '("Mark Karpov" . "markkarpov92@gmail.com") :url "https://github.com/mrkkrp/mmt")

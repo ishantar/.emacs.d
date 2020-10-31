@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.config/emacs/elpa/auto-complete-1.5.1/auto-complete.el  -*- no-byte-compile: t -*-
+(define-package "auto-complete" "1.5.1" "Auto Completion for GNU Emacs" 'nil :authors '(("Tomohiro Matsuyama" . "m2ym.pub@gmail.com")) :maintainer '("Tomohiro Matsuyama" . "m2ym.pub@gmail.com") :keywords '("completion" "convenience") :url "https://github.com/auto-complete/auto-complete")

@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/makefile-executor-20180720.832/makefile-executor.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/makefile-executor-20180720.832/makefile-executor.el  -*- no-byte-compile: t -*-
 (define-package "makefile-executor" "20180720.832" "Commands for conveniently running makefile targets" '((emacs "24.3") (dash "2.11.0") (f "0.11.0") (s "1.10.0")) :commit "9a7d78f814a4b372d8f8179819cb1b37b83b1973" :keywords '("processes") :authors '(("Lowe Thiderman" . "lowe.thiderman@gmail.com")) :maintainer '("Lowe Thiderman" . "lowe.thiderman@gmail.com") :url "https://github.com/thiderman/makefile-executor.el")

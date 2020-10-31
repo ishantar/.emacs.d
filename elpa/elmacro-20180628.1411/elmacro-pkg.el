@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/elmacro-20180628.1411/elmacro.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/elmacro-20180628.1411/elmacro.el  -*- no-byte-compile: t -*-
 (define-package "elmacro" "20180628.1411" "Convert keyboard macros to emacs lisp" '((s "1.11.0") (dash "2.13.0")) :commit "89b9b0feabafd01fee48111d67131c4c9b5fed9a" :keywords '("macro" "elisp" "convenience") :authors '(("Philippe Vaucher" . "philippe.vaucher@gmail.com")) :maintainer '("Philippe Vaucher" . "philippe.vaucher@gmail.com") :url "https://github.com/Silex/elmacro")

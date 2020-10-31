@@ -1,2 +1,2 @@
-;;; Generated package description from /home/lk/.emacs.d/elpa/eacl-20190519.620/eacl.el  -*- no-byte-compile: t -*-
+;;; Generated package description from /home/lk/.config/emacs/elpa/eacl-20190519.620/eacl.el  -*- no-byte-compile: t -*-
 (define-package "eacl" "20190519.620" "Auto-complete lines by grepping project" '((emacs "24.3") (ivy "0.9.1")) :commit "1a32676165c0e63dc85470272efaccd5f497870a" :keywords '("abbrev" "convenience" "matching") :authors '(("Chen Bin <chenbin DOT sh AT gmail DOT com>")) :maintainer '("Chen Bin <chenbin DOT sh AT gmail DOT com>") :url "http://github.com/redguardtoo/eacl")

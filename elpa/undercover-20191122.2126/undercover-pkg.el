@@ -1,0 +1,2 @@
+;;; Generated package description from /home/lk/.config/emacs/elpa/undercover-20191122.2126/undercover.el  -*- no-byte-compile: t -*-
+(define-package "undercover" "20191122.2126" "Test coverage library for Emacs Lisp" '((emacs "24") (dash "2.0.0") (shut-up "0.3.2")) :commit "9f4fbd04cd25c61397a7058bf2bad33c7b669aa4" :keywords '("lisp" "tests" "coverage" "tools") :authors '(("Sviridov Alexander" . "sviridov.vmi@gmail.com")) :maintainer '("Sviridov Alexander" . "sviridov.vmi@gmail.com") :url "https://github.com/sviridov/undercover.el")
